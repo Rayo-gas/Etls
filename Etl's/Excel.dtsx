@@ -11,16 +11,16 @@
   DTS:LocaleID="9226"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="143"
-  DTS:VersionGUID="{374E0B55-98BB-4E5C-BA64-F6FD327092B6}">
+  DTS:VersionBuild="145"
+  DTS:VersionGUID="{A79CB105-682C-45C9-AE94-BF171FC91179}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
     <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[192.168.0.139\BODEGA.DataStaye]"
+      DTS:refId="Package.ConnectionManagers[DataStaye]"
       DTS:CreationName="OLEDB"
       DTS:DTSID="{BDBD6173-2652-446D-B177-36CFB0BD907B}"
-      DTS:ObjectName="192.168.0.139\BODEGA.DataStaye">
+      DTS:ObjectName="DataStaye">
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
@@ -29,34 +29,10 @@
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Administrador de conexiones con Excel]"
-      DTS:CreationName="EXCEL"
-      DTS:DTSID="{9C36C20F-B20F-4752-A1B4-A60CF977E0F1}"
-      DTS:ObjectName="Administrador de conexiones con Excel">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectRetryCount="0"
-          DTS:ConnectRetryInterval="0"
-          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\jesus.vargas\Downloads\Lineas RAyogas.xlsx;Extended Properties=&quot;EXCEL 8.0;HDR=YES&quot;;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Administrador de conexiones con Excel 1]"
-      DTS:CreationName="EXCEL"
-      DTS:DTSID="{F8B17121-36CE-4937-8217-3DDDC8447DB4}"
-      DTS:ObjectName="Administrador de conexiones con Excel 1">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectRetryCount="0"
-          DTS:ConnectRetryInterval="0"
-          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=D:\Rayogas\Sistemas de Información - Estrategia de Datos\Consumo claro\Lineas RAyogas.xls;Extended Properties=&quot;EXCEL 8.0;HDR=YES&quot;;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[dato]"
+      DTS:refId="Package.ConnectionManagers[Dato]"
       DTS:CreationName="EXCEL"
       DTS:DTSID="{F6A46168-94D8-45F2-8386-73FDF191E912}"
-      DTS:ObjectName="dato">
+      DTS:ObjectName="Dato">
       <DTS:PropertyExpression
         DTS:Name="ExcelFilePath">@[User::ExcelDatosFull]</DTS:PropertyExpression>
       <DTS:ObjectData>
@@ -67,10 +43,22 @@
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[voz]"
+      DTS:refId="Package.ConnectionManagers[Lineas]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{F8B17121-36CE-4937-8217-3DDDC8447DB4}"
+      DTS:ObjectName="Lineas">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=D:\Rayogas\Sistemas de Información - Estrategia de Datos\Consumo claro\Lineas RAyogas.xls;Extended Properties=&quot;EXCEL 8.0;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Voz]"
       DTS:CreationName="EXCEL"
       DTS:DTSID="{3ED09DF6-669B-4DA8-A2B3-4970949B5984}"
-      DTS:ObjectName="voz">
+      DTS:ObjectName="Voz">
       <DTS:PropertyExpression
         DTS:Name="ExcelFilePath">@[User::ExcelVozFull]</DTS:PropertyExpression>
       <DTS:ObjectData>
@@ -788,8 +776,8 @@
                   <connections>
                     <connection
                       refId="Package\CBF_CLaro_Datos_Excel\DFT_Carga_Archivo_datos\DOLEDB_ClaroDato.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[192.168.0.139\BODEGA.DataStaye]"
-                      connectionManagerRefId="Package.ConnectionManagers[192.168.0.139\BODEGA.DataStaye]"
+                      connectionManagerID="Package.ConnectionManagers[DataStaye]"
+                      connectionManagerRefId="Package.ConnectionManagers[DataStaye]"
                       description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
                       name="OleDbConnection" />
                   </connections>
@@ -1037,8 +1025,8 @@
                   <connections>
                     <connection
                       refId="Package\CBF_CLaro_Datos_Excel\DFT_Carga_Archivo_datos\OE_ClaroDatos.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[dato]"
-                      connectionManagerRefId="Package.ConnectionManagers[dato]"
+                      connectionManagerID="Package.ConnectionManagers[Dato]"
+                      connectionManagerRefId="Package.ConnectionManagers[Dato]"
                       description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
                       name="OleDbConnection" />
                   </connections>
@@ -2063,8 +2051,8 @@
                   <connections>
                     <connection
                       refId="Package\CBF_CLaro_Voz_Excel\DFT_Carga_Archivo_Voz\DOLEDB_ClaroVoz.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[192.168.0.139\BODEGA.DataStaye]"
-                      connectionManagerRefId="Package.ConnectionManagers[192.168.0.139\BODEGA.DataStaye]"
+                      connectionManagerID="Package.ConnectionManagers[DataStaye]"
+                      connectionManagerRefId="Package.ConnectionManagers[DataStaye]"
                       description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
                       name="OleDbConnection" />
                   </connections>
@@ -2416,8 +2404,8 @@
                   <connections>
                     <connection
                       refId="Package\CBF_CLaro_Voz_Excel\DFT_Carga_Archivo_Voz\OE_ClaroVoz.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[voz]"
-                      connectionManagerRefId="Package.ConnectionManagers[voz]"
+                      connectionManagerID="Package.ConnectionManagers[Voz]"
+                      connectionManagerRefId="Package.ConnectionManagers[Voz]"
                       description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
                       name="OleDbConnection" />
                   </connections>
@@ -3202,8 +3190,8 @@
               <connections>
                 <connection
                   refId="Package\DFT_Carga_LineasRayogas\DOLEDB_Lineas.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[192.168.0.139\BODEGA.DataStaye]"
-                  connectionManagerRefId="Package.ConnectionManagers[192.168.0.139\BODEGA.DataStaye]"
+                  connectionManagerID="Package.ConnectionManagers[DataStaye]"
+                  connectionManagerRefId="Package.ConnectionManagers[DataStaye]"
                   description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
                   name="OleDbConnection" />
               </connections>
@@ -3387,8 +3375,8 @@
               <connections>
                 <connection
                   refId="Package\DFT_Carga_LineasRayogas\OE_Lineas.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[Administrador de conexiones con Excel 1]"
-                  connectionManagerRefId="Package.ConnectionManagers[Administrador de conexiones con Excel 1]"
+                  connectionManagerID="Package.ConnectionManagers[Lineas]"
+                  connectionManagerRefId="Package.ConnectionManagers[Lineas]"
                   description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
                   name="OleDbConnection" />
               </connections>
@@ -3674,7 +3662,7 @@
         <NodeLayout
           Size="194,42"
           Id="Package\CBF_CLaro_Voz_Excel\DFT_Carga_Archivo_Voz"
-          TopLeft="15,21" />
+          TopLeft="15,22" />
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
@@ -3689,7 +3677,7 @@
         <NodeLayout
           Size="158,42"
           Id="Package\TESQL_Truncate"
-          TopLeft="35,132" />
+          TopLeft="62,136" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción]"
           TopLeft="708,155.5">
@@ -3714,18 +3702,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción 1]"
-          TopLeft="193,155.5">
+          TopLeft="220,157.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="55,0"
+              EndConnector="28,0"
               Start="0,0"
-              End="47.5,0">
+              End="20.5,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="47.5,0" />
+                    End="20.5,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -3763,7 +3751,7 @@
     design-time-name="Package\CBF_CLaro_Datos_Excel\DFT_Carga_Archivo_datos">
     <LayoutInfo>
       <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="134,42"
           Id="Package\CBF_CLaro_Datos_Excel\DFT_Carga_Archivo_datos\CD_Periodo"
@@ -3803,9 +3791,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -3827,9 +3813,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -3851,9 +3835,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -3875,9 +3857,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
