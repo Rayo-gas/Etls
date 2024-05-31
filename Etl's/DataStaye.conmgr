@@ -1,0 +1,12 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="DataStaye"
+  DTS:DTSID="{BDBD6173-2652-446D-B177-36CFB0BD907B}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=192.168.0.139\BODEGA;Initial Catalog=DataStage;Provider=SQLOLEDB.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Package-{BDBD6173-2652-446D-B177-36CFB0BD907B}192.168.0.139\BODEGA.DataStaye;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
