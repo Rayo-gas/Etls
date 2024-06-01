@@ -11,8 +11,8 @@
   DTS:LocaleID="9226"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="158"
-  DTS:VersionGUID="{98B64B68-AE1A-4291-8370-7F01FD134400}">
+  DTS:VersionBuild="159"
+  DTS:VersionGUID="{4A23E409-8AC1-4008-9432-7869DBC077B8}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -26,239 +26,6 @@
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
           DTS:ConnectionString="Data Source=192.168.0.139\BODEGA;Initial Catalog=DataStage;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package-{F969E5F0-ED10-48A1-9AD7-51F9863F78B9}192.168.0.139\BODEGA.DataStage;Auto Translate=False;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Administrador de conexiones con Excel]"
-      DTS:CreationName="EXCEL"
-      DTS:DTSID="{6A5F160C-AEC8-4455-9B96-5CC2CDBA774F}"
-      DTS:ObjectName="Administrador de conexiones con Excel">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectRetryCount="0"
-          DTS:ConnectRetryInterval="0"
-          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=D:\Rayogas\Sistemas de Información - Estrategia de Datos\Fuentes de Informacion\Xls\Mantenimiento\Wizeo.xls;Extended Properties=&quot;Excel 8.0;HDR=YES&quot;;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Administrador de conexiones con Excel 1]"
-      DTS:CreationName="EXCEL"
-      DTS:DTSID="{E63CF6BE-4071-4C73-BEDB-BFCBA900F39A}"
-      DTS:ObjectName="Administrador de conexiones con Excel 1">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectRetryCount="0"
-          DTS:ConnectRetryInterval="0"
-          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\jesus.vargas\Downloads\Detalle SUBSIDIOS GLP1.xls;Extended Properties=&quot;Excel 8.0;HDR=YES&quot;;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Administrador de conexiones de archivos planos]"
-      DTS:CreationName="FLATFILE"
-      DTS:DTSID="{E2BC42DD-BA63-45E7-B2FB-55268F9F9F93}"
-      DTS:ObjectName="Administrador de conexiones de archivos planos">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:Format="Delimited"
-          DTS:LocaleID="9226"
-          DTS:HeaderRowDelimiter="_x000D__x000A_"
-          DTS:ColumnNamesInFirstDataRow="True"
-          DTS:RowDelimiter=""
-          DTS:TextQualifier="_x003C_none_x003E_"
-          DTS:CodePage="1252"
-          DTS:ConnectionString="D:\Rayogas\Sistemas de Información - Estrategia de Datos\Fuentes de Informacion\Csv\Comercial\Detalle SUBSIDIOS GLP.csv">
-          <DTS:FlatFileColumns>
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Columna 0"
-              DTS:DTSID="{F8651164-814B-4FD0-8FEB-66387D68E9D7}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="programa"
-              DTS:DTSID="{E026F6BC-F067-4E97-B685-8F674465FE70}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="aprobacion"
-              DTS:DTSID="{8A5AAAC7-60F0-4148-B796-41F0832ADDFE}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="departamento"
-              DTS:DTSID="{09F72B4C-3127-4D3C-9F5B-233D99EB5AA9}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="municipio"
-              DTS:DTSID="{6BB36F5C-F9B5-466B-8364-B8279FF46E8C}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="estrato"
-              DTS:DTSID="{E3D8256C-514F-4131-B4D5-8B76B3350D2A}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="beneficiario"
-              DTS:DTSID="{CFF68435-38B6-4051-A580-928E0939A5F4}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="fecha"
-              DTS:DTSID="{98B3522C-8456-4512-982D-C3AF3A23BCF1}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="anio"
-              DTS:DTSID="{46D173ED-8FA3-4DE0-811A-774C8F756974}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="mes"
-              DTS:DTSID="{E0630467-09A3-401D-A0D3-5B178FC85A9C}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="dia"
-              DTS:DTSID="{0EB435D2-4316-4377-A26C-1CB1DFACA0E2}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="capacidad"
-              DTS:DTSID="{807165A2-07C8-4F4F-9A95-1BD3BF5CE9EB}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="valor"
-              DTS:DTSID="{BD869786-72C3-449C-A6CC-ACE7922A4591}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="subsidio"
-              DTS:DTSID="{6E372809-F33A-4598-873C-BA0A4C6E4E3F}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="vendedor"
-              DTS:DTSID="{F0522EE5-2BBB-4987-B15A-A9F26BFDC5D6}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="empresa"
-              DTS:DTSID="{31E66F29-235B-4159-9B27-643DC99AF8D6}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="nif"
-              DTS:DTSID="{A8050C0C-507E-4441-8475-924037D334B2}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="latitud"
-              DTS:DTSID="{4F8FFE1E-B02B-432D-B671-6BC26D2F982B}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="longitud"
-              DTS:DTSID="{9340FA44-27EA-4858-98C4-7E10214ECD2C}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="factura"
-              DTS:DTSID="{F1640E74-0746-478F-824E-407CF0A1361F}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x000D__x000A_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="anulacion"
-              DTS:DTSID="{97511B75-4B76-49E6-A7A0-31FBDC23AA6E}"
-              DTS:CreationName="" />
-          </DTS:FlatFileColumns>
-        </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -288,6 +55,18 @@
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Subsidios]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{E63CF6BE-4071-4C73-BEDB-BFCBA900F39A}"
+      DTS:ObjectName="Subsidios">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\jesus.vargas\Downloads\Detalle SUBSIDIOS GLP1.xls;Extended Properties=&quot;Excel 8.0;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[Voz]"
       DTS:CreationName="EXCEL"
       DTS:DTSID="{3ED09DF6-669B-4DA8-A2B3-4970949B5984}"
@@ -299,6 +78,18 @@
           DTS:ConnectRetryCount="0"
           DTS:ConnectRetryInterval="0"
           DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=D:\Rayogas\Sistemas de Información - Estrategia de Datos\Fuentes de Informacion\Xls\TI\Consumo claro\Voz\inicio.xls;Extended Properties=&quot;EXCEL 8.0;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Wizeo]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{6A5F160C-AEC8-4455-9B96-5CC2CDBA774F}"
+      DTS:ObjectName="Wizeo">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=D:\Rayogas\Sistemas de Información - Estrategia de Datos\Fuentes de Informacion\Xls\Mantenimiento\Wizeo.xls;Extended Properties=&quot;Excel 8.0;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
@@ -3145,36 +2936,36 @@
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="programa"
-                      lineageId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].Columns[programa]" />
+                      lineageId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].Columns[programa]" />
                     <inputColumn
                       refId="Package\DFT_Carga_ SUBSIDIOS\DC_ SUBSIDIOS.Inputs[Entrada de conversión de datos].Columns[departamento]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="departamento"
-                      lineageId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].Columns[departamento]" />
+                      lineageId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].Columns[departamento]" />
                     <inputColumn
                       refId="Package\DFT_Carga_ SUBSIDIOS\DC_ SUBSIDIOS.Inputs[Entrada de conversión de datos].Columns[municipio]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="municipio"
-                      lineageId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].Columns[municipio]" />
+                      lineageId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].Columns[municipio]" />
                     <inputColumn
                       refId="Package\DFT_Carga_ SUBSIDIOS\DC_ SUBSIDIOS.Inputs[Entrada de conversión de datos].Columns[empresa]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="empresa"
-                      lineageId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].Columns[empresa]" />
+                      lineageId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].Columns[empresa]" />
                     <inputColumn
                       refId="Package\DFT_Carga_ SUBSIDIOS\DC_ SUBSIDIOS.Inputs[Entrada de conversión de datos].Columns[anulacion]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="anulacion"
-                      lineageId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].Columns[anulacion]" />
+                      lineageId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].Columns[anulacion]" />
                     <inputColumn
                       refId="Package\DFT_Carga_ SUBSIDIOS\DC_ SUBSIDIOS.Inputs[Entrada de conversión de datos].Columns[factura]"
                       cachedDataType="r8"
                       cachedName="factura"
-                      lineageId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].Columns[factura]" />
+                      lineageId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].Columns[factura]" />
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
@@ -3201,7 +2992,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Especifica la columna de entrada usada como origen de datos para la conversión."
-                          name="SourceInputColumnLineageID">#{Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].Columns[programa]}</property>
+                          name="SourceInputColumnLineageID">#{Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].Columns[programa]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
@@ -3223,7 +3014,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Especifica la columna de entrada usada como origen de datos para la conversión."
-                          name="SourceInputColumnLineageID">#{Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].Columns[departamento]}</property>
+                          name="SourceInputColumnLineageID">#{Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].Columns[departamento]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
@@ -3245,7 +3036,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Especifica la columna de entrada usada como origen de datos para la conversión."
-                          name="SourceInputColumnLineageID">#{Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].Columns[municipio]}</property>
+                          name="SourceInputColumnLineageID">#{Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].Columns[municipio]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
@@ -3267,7 +3058,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Especifica la columna de entrada usada como origen de datos para la conversión."
-                          name="SourceInputColumnLineageID">#{Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].Columns[empresa]}</property>
+                          name="SourceInputColumnLineageID">#{Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].Columns[empresa]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
@@ -3289,7 +3080,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Especifica la columna de entrada usada como origen de datos para la conversión."
-                          name="SourceInputColumnLineageID">#{Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].Columns[anulacion]}</property>
+                          name="SourceInputColumnLineageID">#{Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].Columns[anulacion]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
@@ -3311,7 +3102,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Especifica la columna de entrada usada como origen de datos para la conversión."
-                          name="SourceInputColumnLineageID">#{Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].Columns[factura]}</property>
+                          name="SourceInputColumnLineageID">#{Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].Columns[factura]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
@@ -3422,87 +3213,87 @@
                       cachedDataType="r8"
                       cachedName="aprobacion"
                       externalMetadataColumnId="Package\DFT_Carga_ SUBSIDIOS\DOLEDB_ SUBSIDIOS.Inputs[Entrada de destino de OLE DB].ExternalColumns[Aprobacion]"
-                      lineageId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].Columns[aprobacion]" />
+                      lineageId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].Columns[aprobacion]" />
                     <inputColumn
                       refId="Package\DFT_Carga_ SUBSIDIOS\DOLEDB_ SUBSIDIOS.Inputs[Entrada de destino de OLE DB].Columns[estrato]"
                       cachedDataType="r8"
                       cachedName="estrato"
                       externalMetadataColumnId="Package\DFT_Carga_ SUBSIDIOS\DOLEDB_ SUBSIDIOS.Inputs[Entrada de destino de OLE DB].ExternalColumns[Estrato]"
-                      lineageId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].Columns[estrato]" />
+                      lineageId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].Columns[estrato]" />
                     <inputColumn
                       refId="Package\DFT_Carga_ SUBSIDIOS\DOLEDB_ SUBSIDIOS.Inputs[Entrada de destino de OLE DB].Columns[beneficiario]"
                       cachedDataType="r8"
                       cachedName="beneficiario"
                       externalMetadataColumnId="Package\DFT_Carga_ SUBSIDIOS\DOLEDB_ SUBSIDIOS.Inputs[Entrada de destino de OLE DB].ExternalColumns[Beneficiario]"
-                      lineageId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].Columns[beneficiario]" />
+                      lineageId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].Columns[beneficiario]" />
                     <inputColumn
                       refId="Package\DFT_Carga_ SUBSIDIOS\DOLEDB_ SUBSIDIOS.Inputs[Entrada de destino de OLE DB].Columns[fecha]"
                       cachedDataType="date"
                       cachedName="fecha"
                       externalMetadataColumnId="Package\DFT_Carga_ SUBSIDIOS\DOLEDB_ SUBSIDIOS.Inputs[Entrada de destino de OLE DB].ExternalColumns[Fecha]"
-                      lineageId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].Columns[fecha]" />
+                      lineageId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].Columns[fecha]" />
                     <inputColumn
                       refId="Package\DFT_Carga_ SUBSIDIOS\DOLEDB_ SUBSIDIOS.Inputs[Entrada de destino de OLE DB].Columns[anio]"
                       cachedDataType="r8"
                       cachedName="anio"
                       externalMetadataColumnId="Package\DFT_Carga_ SUBSIDIOS\DOLEDB_ SUBSIDIOS.Inputs[Entrada de destino de OLE DB].ExternalColumns[Anio]"
-                      lineageId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].Columns[anio]" />
+                      lineageId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].Columns[anio]" />
                     <inputColumn
                       refId="Package\DFT_Carga_ SUBSIDIOS\DOLEDB_ SUBSIDIOS.Inputs[Entrada de destino de OLE DB].Columns[mes]"
                       cachedDataType="r8"
                       cachedName="mes"
                       externalMetadataColumnId="Package\DFT_Carga_ SUBSIDIOS\DOLEDB_ SUBSIDIOS.Inputs[Entrada de destino de OLE DB].ExternalColumns[Mes]"
-                      lineageId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].Columns[mes]" />
+                      lineageId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].Columns[mes]" />
                     <inputColumn
                       refId="Package\DFT_Carga_ SUBSIDIOS\DOLEDB_ SUBSIDIOS.Inputs[Entrada de destino de OLE DB].Columns[dia]"
                       cachedDataType="r8"
                       cachedName="dia"
                       externalMetadataColumnId="Package\DFT_Carga_ SUBSIDIOS\DOLEDB_ SUBSIDIOS.Inputs[Entrada de destino de OLE DB].ExternalColumns[Dia]"
-                      lineageId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].Columns[dia]" />
+                      lineageId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].Columns[dia]" />
                     <inputColumn
                       refId="Package\DFT_Carga_ SUBSIDIOS\DOLEDB_ SUBSIDIOS.Inputs[Entrada de destino de OLE DB].Columns[capacidad]"
                       cachedDataType="r8"
                       cachedName="capacidad"
                       externalMetadataColumnId="Package\DFT_Carga_ SUBSIDIOS\DOLEDB_ SUBSIDIOS.Inputs[Entrada de destino de OLE DB].ExternalColumns[Capacidad]"
-                      lineageId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].Columns[capacidad]" />
+                      lineageId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].Columns[capacidad]" />
                     <inputColumn
                       refId="Package\DFT_Carga_ SUBSIDIOS\DOLEDB_ SUBSIDIOS.Inputs[Entrada de destino de OLE DB].Columns[valor]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="valor"
                       externalMetadataColumnId="Package\DFT_Carga_ SUBSIDIOS\DOLEDB_ SUBSIDIOS.Inputs[Entrada de destino de OLE DB].ExternalColumns[Valor]"
-                      lineageId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].Columns[valor]" />
+                      lineageId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].Columns[valor]" />
                     <inputColumn
                       refId="Package\DFT_Carga_ SUBSIDIOS\DOLEDB_ SUBSIDIOS.Inputs[Entrada de destino de OLE DB].Columns[subsidio]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="subsidio"
                       externalMetadataColumnId="Package\DFT_Carga_ SUBSIDIOS\DOLEDB_ SUBSIDIOS.Inputs[Entrada de destino de OLE DB].ExternalColumns[Subsidio]"
-                      lineageId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].Columns[subsidio]" />
+                      lineageId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].Columns[subsidio]" />
                     <inputColumn
                       refId="Package\DFT_Carga_ SUBSIDIOS\DOLEDB_ SUBSIDIOS.Inputs[Entrada de destino de OLE DB].Columns[vendedor]"
                       cachedDataType="r8"
                       cachedName="vendedor"
                       externalMetadataColumnId="Package\DFT_Carga_ SUBSIDIOS\DOLEDB_ SUBSIDIOS.Inputs[Entrada de destino de OLE DB].ExternalColumns[Vendedor]"
-                      lineageId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].Columns[vendedor]" />
+                      lineageId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].Columns[vendedor]" />
                     <inputColumn
                       refId="Package\DFT_Carga_ SUBSIDIOS\DOLEDB_ SUBSIDIOS.Inputs[Entrada de destino de OLE DB].Columns[nif]"
                       cachedDataType="r8"
                       cachedName="nif"
                       externalMetadataColumnId="Package\DFT_Carga_ SUBSIDIOS\DOLEDB_ SUBSIDIOS.Inputs[Entrada de destino de OLE DB].ExternalColumns[Nif]"
-                      lineageId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].Columns[nif]" />
+                      lineageId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].Columns[nif]" />
                     <inputColumn
                       refId="Package\DFT_Carga_ SUBSIDIOS\DOLEDB_ SUBSIDIOS.Inputs[Entrada de destino de OLE DB].Columns[latitud]"
                       cachedDataType="r8"
                       cachedName="latitud"
                       externalMetadataColumnId="Package\DFT_Carga_ SUBSIDIOS\DOLEDB_ SUBSIDIOS.Inputs[Entrada de destino de OLE DB].ExternalColumns[Latitud]"
-                      lineageId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].Columns[latitud]" />
+                      lineageId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].Columns[latitud]" />
                     <inputColumn
                       refId="Package\DFT_Carga_ SUBSIDIOS\DOLEDB_ SUBSIDIOS.Inputs[Entrada de destino de OLE DB].Columns[longitud]"
                       cachedDataType="r8"
                       cachedName="longitud"
                       externalMetadataColumnId="Package\DFT_Carga_ SUBSIDIOS\DOLEDB_ SUBSIDIOS.Inputs[Entrada de destino de OLE DB].ExternalColumns[Longitud]"
-                      lineageId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].Columns[longitud]" />
+                      lineageId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].Columns[longitud]" />
                     <inputColumn
                       refId="Package\DFT_Carga_ SUBSIDIOS\DOLEDB_ SUBSIDIOS.Inputs[Entrada de destino de OLE DB].Columns[Programa]"
                       cachedCodepage="1252"
@@ -3685,11 +3476,11 @@
               </outputs>
             </component>
             <component
-              refId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel"
+              refId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO"
               componentClassID="Microsoft.ExcelSource"
               contactInfo="Origen de Excel;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;1"
               description="Origen de Excel"
-              name="Origen de Excel"
+              name="OE_SUBSIDIO"
               usesDispositions="true"
               version="1">
               <properties>
@@ -3726,422 +3517,422 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[Administrador de conexiones con Excel 1]"
-                  connectionManagerRefId="Package.ConnectionManagers[Administrador de conexiones con Excel 1]"
+                  refId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Subsidios]"
+                  connectionManagerRefId="Package.ConnectionManagers[Subsidios]"
                   description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
                   name="OleDbConnection" />
               </connections>
               <outputs>
                 <output
-                  refId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel]"
+                  refId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel]"
                   name="Salida de origen de Excel">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].Columns[programa]"
+                      refId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].Columns[programa]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[programa]"
+                      externalMetadataColumnId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].ExternalColumns[programa]"
                       length="255"
-                      lineageId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].Columns[programa]"
+                      lineageId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].Columns[programa]"
                       name="programa"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].Columns[aprobacion]"
+                      refId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].Columns[aprobacion]"
                       dataType="r8"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[aprobacion]"
-                      lineageId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].Columns[aprobacion]"
+                      externalMetadataColumnId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].ExternalColumns[aprobacion]"
+                      lineageId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].Columns[aprobacion]"
                       name="aprobacion"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].Columns[departamento]"
+                      refId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].Columns[departamento]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[departamento]"
+                      externalMetadataColumnId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].ExternalColumns[departamento]"
                       length="255"
-                      lineageId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].Columns[departamento]"
+                      lineageId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].Columns[departamento]"
                       name="departamento"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].Columns[municipio]"
+                      refId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].Columns[municipio]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[municipio]"
+                      externalMetadataColumnId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].ExternalColumns[municipio]"
                       length="255"
-                      lineageId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].Columns[municipio]"
+                      lineageId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].Columns[municipio]"
                       name="municipio"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].Columns[estrato]"
+                      refId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].Columns[estrato]"
                       dataType="r8"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[estrato]"
-                      lineageId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].Columns[estrato]"
+                      externalMetadataColumnId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].ExternalColumns[estrato]"
+                      lineageId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].Columns[estrato]"
                       name="estrato"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].Columns[beneficiario]"
+                      refId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].Columns[beneficiario]"
                       dataType="r8"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[beneficiario]"
-                      lineageId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].Columns[beneficiario]"
+                      externalMetadataColumnId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].ExternalColumns[beneficiario]"
+                      lineageId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].Columns[beneficiario]"
                       name="beneficiario"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].Columns[fecha]"
+                      refId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].Columns[fecha]"
                       dataType="date"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[fecha]"
-                      lineageId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].Columns[fecha]"
+                      externalMetadataColumnId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].ExternalColumns[fecha]"
+                      lineageId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].Columns[fecha]"
                       name="fecha"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].Columns[anio]"
+                      refId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].Columns[anio]"
                       dataType="r8"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[anio]"
-                      lineageId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].Columns[anio]"
+                      externalMetadataColumnId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].ExternalColumns[anio]"
+                      lineageId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].Columns[anio]"
                       name="anio"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].Columns[mes]"
+                      refId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].Columns[mes]"
                       dataType="r8"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[mes]"
-                      lineageId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].Columns[mes]"
+                      externalMetadataColumnId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].ExternalColumns[mes]"
+                      lineageId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].Columns[mes]"
                       name="mes"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].Columns[dia]"
+                      refId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].Columns[dia]"
                       dataType="r8"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[dia]"
-                      lineageId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].Columns[dia]"
+                      externalMetadataColumnId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].ExternalColumns[dia]"
+                      lineageId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].Columns[dia]"
                       name="dia"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].Columns[capacidad]"
+                      refId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].Columns[capacidad]"
                       dataType="r8"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[capacidad]"
-                      lineageId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].Columns[capacidad]"
+                      externalMetadataColumnId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].ExternalColumns[capacidad]"
+                      lineageId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].Columns[capacidad]"
                       name="capacidad"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].Columns[valor]"
+                      refId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].Columns[valor]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[valor]"
+                      externalMetadataColumnId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].ExternalColumns[valor]"
                       length="255"
-                      lineageId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].Columns[valor]"
+                      lineageId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].Columns[valor]"
                       name="valor"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].Columns[subsidio]"
+                      refId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].Columns[subsidio]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[subsidio]"
+                      externalMetadataColumnId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].ExternalColumns[subsidio]"
                       length="255"
-                      lineageId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].Columns[subsidio]"
+                      lineageId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].Columns[subsidio]"
                       name="subsidio"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].Columns[vendedor]"
+                      refId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].Columns[vendedor]"
                       dataType="r8"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[vendedor]"
-                      lineageId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].Columns[vendedor]"
+                      externalMetadataColumnId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].ExternalColumns[vendedor]"
+                      lineageId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].Columns[vendedor]"
                       name="vendedor"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].Columns[empresa]"
+                      refId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].Columns[empresa]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[empresa]"
+                      externalMetadataColumnId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].ExternalColumns[empresa]"
                       length="255"
-                      lineageId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].Columns[empresa]"
+                      lineageId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].Columns[empresa]"
                       name="empresa"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].Columns[nif]"
+                      refId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].Columns[nif]"
                       dataType="r8"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[nif]"
-                      lineageId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].Columns[nif]"
+                      externalMetadataColumnId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].ExternalColumns[nif]"
+                      lineageId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].Columns[nif]"
                       name="nif"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].Columns[latitud]"
+                      refId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].Columns[latitud]"
                       dataType="r8"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[latitud]"
-                      lineageId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].Columns[latitud]"
+                      externalMetadataColumnId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].ExternalColumns[latitud]"
+                      lineageId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].Columns[latitud]"
                       name="latitud"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].Columns[longitud]"
+                      refId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].Columns[longitud]"
                       dataType="r8"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[longitud]"
-                      lineageId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].Columns[longitud]"
+                      externalMetadataColumnId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].ExternalColumns[longitud]"
+                      lineageId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].Columns[longitud]"
                       name="longitud"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].Columns[factura]"
+                      refId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].Columns[factura]"
                       dataType="r8"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[factura]"
-                      lineageId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].Columns[factura]"
+                      externalMetadataColumnId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].ExternalColumns[factura]"
+                      lineageId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].Columns[factura]"
                       name="factura"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].Columns[anulacion]"
+                      refId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].Columns[anulacion]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[anulacion]"
+                      externalMetadataColumnId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].ExternalColumns[anulacion]"
                       length="255"
-                      lineageId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].Columns[anulacion]"
+                      lineageId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].Columns[anulacion]"
                       name="anulacion"
                       truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[F1]"
+                      refId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].ExternalColumns[F1]"
                       dataType="r8"
                       name="F1" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[programa]"
+                      refId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].ExternalColumns[programa]"
                       dataType="wstr"
                       length="255"
                       name="programa" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[aprobacion]"
+                      refId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].ExternalColumns[aprobacion]"
                       dataType="r8"
                       name="aprobacion" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[departamento]"
+                      refId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].ExternalColumns[departamento]"
                       dataType="wstr"
                       length="255"
                       name="departamento" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[municipio]"
+                      refId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].ExternalColumns[municipio]"
                       dataType="wstr"
                       length="255"
                       name="municipio" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[estrato]"
+                      refId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].ExternalColumns[estrato]"
                       dataType="r8"
                       name="estrato" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[beneficiario]"
+                      refId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].ExternalColumns[beneficiario]"
                       dataType="r8"
                       name="beneficiario" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[fecha]"
+                      refId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].ExternalColumns[fecha]"
                       dataType="date"
                       name="fecha" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[anio]"
+                      refId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].ExternalColumns[anio]"
                       dataType="r8"
                       name="anio" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[mes]"
+                      refId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].ExternalColumns[mes]"
                       dataType="r8"
                       name="mes" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[dia]"
+                      refId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].ExternalColumns[dia]"
                       dataType="r8"
                       name="dia" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[capacidad]"
+                      refId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].ExternalColumns[capacidad]"
                       dataType="r8"
                       name="capacidad" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[valor]"
+                      refId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].ExternalColumns[valor]"
                       dataType="wstr"
                       length="255"
                       name="valor" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[subsidio]"
+                      refId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].ExternalColumns[subsidio]"
                       dataType="wstr"
                       length="255"
                       name="subsidio" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[vendedor]"
+                      refId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].ExternalColumns[vendedor]"
                       dataType="r8"
                       name="vendedor" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[empresa]"
+                      refId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].ExternalColumns[empresa]"
                       dataType="wstr"
                       length="255"
                       name="empresa" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[nif]"
+                      refId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].ExternalColumns[nif]"
                       dataType="r8"
                       name="nif" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[latitud]"
+                      refId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].ExternalColumns[latitud]"
                       dataType="r8"
                       name="latitud" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[longitud]"
+                      refId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].ExternalColumns[longitud]"
                       dataType="r8"
                       name="longitud" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[factura]"
+                      refId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].ExternalColumns[factura]"
                       dataType="r8"
                       name="factura" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[anulacion]"
+                      refId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel].ExternalColumns[anulacion]"
                       dataType="wstr"
                       length="255"
                       name="anulacion" />
                   </externalMetadataColumns>
                 </output>
                 <output
-                  refId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de error de origen de Excel]"
+                  refId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de error de origen de Excel]"
                   isErrorOut="true"
                   name="Salida de error de origen de Excel">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[programa]"
+                      refId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de error de origen de Excel].Columns[programa]"
                       dataType="wstr"
                       length="255"
-                      lineageId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[programa]"
+                      lineageId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de error de origen de Excel].Columns[programa]"
                       name="programa" />
                     <outputColumn
-                      refId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[aprobacion]"
+                      refId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de error de origen de Excel].Columns[aprobacion]"
                       dataType="r8"
-                      lineageId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[aprobacion]"
+                      lineageId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de error de origen de Excel].Columns[aprobacion]"
                       name="aprobacion" />
                     <outputColumn
-                      refId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[departamento]"
+                      refId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de error de origen de Excel].Columns[departamento]"
                       dataType="wstr"
                       length="255"
-                      lineageId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[departamento]"
+                      lineageId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de error de origen de Excel].Columns[departamento]"
                       name="departamento" />
                     <outputColumn
-                      refId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[municipio]"
+                      refId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de error de origen de Excel].Columns[municipio]"
                       dataType="wstr"
                       length="255"
-                      lineageId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[municipio]"
+                      lineageId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de error de origen de Excel].Columns[municipio]"
                       name="municipio" />
                     <outputColumn
-                      refId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[estrato]"
+                      refId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de error de origen de Excel].Columns[estrato]"
                       dataType="r8"
-                      lineageId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[estrato]"
+                      lineageId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de error de origen de Excel].Columns[estrato]"
                       name="estrato" />
                     <outputColumn
-                      refId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[beneficiario]"
+                      refId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de error de origen de Excel].Columns[beneficiario]"
                       dataType="r8"
-                      lineageId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[beneficiario]"
+                      lineageId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de error de origen de Excel].Columns[beneficiario]"
                       name="beneficiario" />
                     <outputColumn
-                      refId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[fecha]"
+                      refId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de error de origen de Excel].Columns[fecha]"
                       dataType="date"
-                      lineageId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[fecha]"
+                      lineageId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de error de origen de Excel].Columns[fecha]"
                       name="fecha" />
                     <outputColumn
-                      refId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[anio]"
+                      refId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de error de origen de Excel].Columns[anio]"
                       dataType="r8"
-                      lineageId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[anio]"
+                      lineageId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de error de origen de Excel].Columns[anio]"
                       name="anio" />
                     <outputColumn
-                      refId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[mes]"
+                      refId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de error de origen de Excel].Columns[mes]"
                       dataType="r8"
-                      lineageId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[mes]"
+                      lineageId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de error de origen de Excel].Columns[mes]"
                       name="mes" />
                     <outputColumn
-                      refId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[dia]"
+                      refId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de error de origen de Excel].Columns[dia]"
                       dataType="r8"
-                      lineageId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[dia]"
+                      lineageId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de error de origen de Excel].Columns[dia]"
                       name="dia" />
                     <outputColumn
-                      refId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[capacidad]"
+                      refId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de error de origen de Excel].Columns[capacidad]"
                       dataType="r8"
-                      lineageId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[capacidad]"
+                      lineageId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de error de origen de Excel].Columns[capacidad]"
                       name="capacidad" />
                     <outputColumn
-                      refId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[valor]"
+                      refId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de error de origen de Excel].Columns[valor]"
                       dataType="wstr"
                       length="255"
-                      lineageId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[valor]"
+                      lineageId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de error de origen de Excel].Columns[valor]"
                       name="valor" />
                     <outputColumn
-                      refId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[subsidio]"
+                      refId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de error de origen de Excel].Columns[subsidio]"
                       dataType="wstr"
                       length="255"
-                      lineageId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[subsidio]"
+                      lineageId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de error de origen de Excel].Columns[subsidio]"
                       name="subsidio" />
                     <outputColumn
-                      refId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[vendedor]"
+                      refId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de error de origen de Excel].Columns[vendedor]"
                       dataType="r8"
-                      lineageId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[vendedor]"
+                      lineageId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de error de origen de Excel].Columns[vendedor]"
                       name="vendedor" />
                     <outputColumn
-                      refId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[empresa]"
+                      refId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de error de origen de Excel].Columns[empresa]"
                       dataType="wstr"
                       length="255"
-                      lineageId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[empresa]"
+                      lineageId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de error de origen de Excel].Columns[empresa]"
                       name="empresa" />
                     <outputColumn
-                      refId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[nif]"
+                      refId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de error de origen de Excel].Columns[nif]"
                       dataType="r8"
-                      lineageId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[nif]"
+                      lineageId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de error de origen de Excel].Columns[nif]"
                       name="nif" />
                     <outputColumn
-                      refId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[latitud]"
+                      refId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de error de origen de Excel].Columns[latitud]"
                       dataType="r8"
-                      lineageId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[latitud]"
+                      lineageId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de error de origen de Excel].Columns[latitud]"
                       name="latitud" />
                     <outputColumn
-                      refId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[longitud]"
+                      refId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de error de origen de Excel].Columns[longitud]"
                       dataType="r8"
-                      lineageId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[longitud]"
+                      lineageId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de error de origen de Excel].Columns[longitud]"
                       name="longitud" />
                     <outputColumn
-                      refId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[factura]"
+                      refId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de error de origen de Excel].Columns[factura]"
                       dataType="r8"
-                      lineageId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[factura]"
+                      lineageId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de error de origen de Excel].Columns[factura]"
                       name="factura" />
                     <outputColumn
-                      refId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[anulacion]"
+                      refId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de error de origen de Excel].Columns[anulacion]"
                       dataType="wstr"
                       length="255"
-                      lineageId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[anulacion]"
+                      lineageId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de error de origen de Excel].Columns[anulacion]"
                       name="anulacion" />
                     <outputColumn
-                      refId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[ErrorCode]"
+                      refId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de error de origen de Excel].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[ErrorCode]"
+                      lineageId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de error de origen de Excel].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[ErrorColumn]"
+                      refId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de error de origen de Excel].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[ErrorColumn]"
+                      lineageId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de error de origen de Excel].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -4160,7 +3951,7 @@
               refId="Package\DFT_Carga_ SUBSIDIOS.Paths[Salida de origen de Excel]"
               endId="Package\DFT_Carga_ SUBSIDIOS\DC_ SUBSIDIOS.Inputs[Entrada de conversión de datos]"
               name="Salida de origen de Excel"
-              startId="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel.Outputs[Salida de origen de Excel]" />
+              startId="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO.Outputs[Salida de origen de Excel]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -6174,8 +5965,8 @@
               <connections>
                 <connection
                   refId="Package\DFT_Carga_Wizeo\OE_Wizeo.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[Administrador de conexiones con Excel]"
-                  connectionManagerRefId="Package.ConnectionManagers[Administrador de conexiones con Excel]"
+                  connectionManagerID="Package.ConnectionManagers[Wizeo]"
+                  connectionManagerRefId="Package.ConnectionManagers[Wizeo]"
                   description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
                   name="OleDbConnection" />
               </connections>
@@ -6906,21 +6697,21 @@
         <NodeLayout
           Size="165,42"
           Id="Package\DFT_Carga_Wizeo"
-          TopLeft="801,436" />
+          TopLeft="798,429" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción 3]"
-          TopLeft="882.5,395">
+          TopLeft="881,395">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,41"
+              EndConnector="0,34"
               Start="0,0"
-              End="0,33.5">
+              End="0,26.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,33.5" />
+                    End="0,26.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -6932,7 +6723,7 @@
         <NodeLayout
           Size="194,42"
           Id="Package\DFT_Carga_ SUBSIDIOS"
-          TopLeft="534,439" />
+          TopLeft="508,422" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción 1]"
           TopLeft="602,133">
@@ -6957,18 +6748,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción 4]"
-          TopLeft="801,458.5">
+          TopLeft="798,446.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-73,0"
+              EndConnector="-96,0"
               Start="0,0"
-              End="-65.5,0">
+              End="-88.5,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="-65.5,0" />
+                    End="-88.5,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -7454,35 +7245,23 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <NodeLayout
-          Size="153,42"
-          Id="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel"
-          TopLeft="595,50" />
+          Size="146,42"
+          Id="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO"
+          TopLeft="589,75" />
         <EdgeLayout
           Id="Package\DFT_Carga_ SUBSIDIOS.Paths[Salida de origen de Excel]"
-          TopLeft="671.5,92">
+          TopLeft="661.5,117">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-10.5,65"
+              EndConnector="0,40"
               Start="0,0"
-              End="-10.5,57.5">
+              End="0,32.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,28.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,28.5"
-                    Point2="0,32.5"
-                    Point3="-4,32.5" />
-                  <mssgle:LineSegment
-                    End="-6.5,32.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-6.5,32.5"
-                    Point2="-10.5,32.5"
-                    Point3="-10.5,36.5" />
-                  <mssgle:LineSegment
-                    End="-10.5,57.5" />
+                    End="0,32.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -7508,7 +7287,7 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\DFT_Carga_ SUBSIDIOS\Origen de Excel">
+    design-time-name="Package\DFT_Carga_ SUBSIDIOS\OE_SUBSIDIO">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
