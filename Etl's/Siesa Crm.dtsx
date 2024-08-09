@@ -11,24 +11,10 @@
   DTS:LocaleID="9226"
   DTS:ObjectName="Siesa Crm"
   DTS:PackageType="5"
-  DTS:VersionBuild="4"
-  DTS:VersionGUID="{3D8BD792-7BFB-426D-BA22-5FE37B958BB3}">
+  DTS:VersionBuild="5"
+  DTS:VersionGUID="{385D3299-436D-4172-878E-F56CAD29D1FE}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
-  <DTS:ConnectionManagers>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[192.168.0.139\BODEGA.CRM]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{B4C05557-1818-4CF2-AB8D-9E14B6CE567E}"
-      DTS:ObjectName="192.168.0.139\BODEGA.CRM">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectRetryCount="1"
-          DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=192.168.0.139\BODEGA;Initial Catalog=CRM;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Siesa Crm-{B4C05557-1818-4CF2-AB8D-9E14B6CE567E}192.168.0.139\BODEGA.CRM;Auto Translate=False;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-  </DTS:ConnectionManagers>
   <DTS:Variables />
   <DTS:Executables>
     <DTS:Executable
@@ -96,8 +82,8 @@
               <connections>
                 <connection
                   refId="Package\DFT_CargarTablas_CRM\OLEDBS_acl_actions.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[192.168.0.139\BODEGA.CRM]"
-                  connectionManagerRefId="Package.ConnectionManagers[192.168.0.139\BODEGA.CRM]"
+                  connectionManagerID="{B4C05557-1818-4CF2-AB8D-9E14B6CE567E}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[CRM]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -492,8 +478,8 @@
               <connections>
                 <connection
                   refId="Package\DFT_CargarTablas_CRM\OLEDB_acl_actions.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[192.168.0.139\BODEGA.CRM]"
-                  connectionManagerRefId="Package.ConnectionManagers[192.168.0.139\BODEGA.CRM]"
+                  connectionManagerID="{B4C05557-1818-4CF2-AB8D-9E14B6CE567E}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[CRM]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
