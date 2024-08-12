@@ -1,0 +1,1205 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="4/22/2024 7:52:33 AM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="JVARGAS-1"
+  DTS:CreatorName="RAYOGAS\jesus.vargas"
+  DTS:DTSID="{6D0C54C6-DE05-4E92-A564-C6D3995C3D83}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5467.0"
+  DTS:LocaleID="9226"
+  DTS:ObjectName="Package1"
+  DTS:PackageType="5"
+  DTS:VersionBuild="12"
+  DTS:VersionGUID="{8AB93AA5-76B7-45B1-BACD-E55D9683E5DC}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\DFT_CargarTablas_ERP"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{1DBE9A7B-8F29-46DC-B642-D47F84E5CA08}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="DFT_CargarTablas_ERP"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="OLEDBS_T200_mm_Terceros"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[t200_mm_terceros]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Connections[OleDbConnection]"
+                  connectionManagerID="{8D75FCB9-7B39-4752-9F37-9DC75F0C4E1C}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[SIESA]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].Columns[f200_id_cia]"
+                      dataType="i2"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].ExternalColumns[f200_id_cia]"
+                      lineageId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].Columns[f200_id_cia]"
+                      name="f200_id_cia"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].Columns[f200_rowid]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].ExternalColumns[f200_rowid]"
+                      lineageId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].Columns[f200_rowid]"
+                      name="f200_rowid"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].Columns[f200_id]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].ExternalColumns[f200_id]"
+                      length="15"
+                      lineageId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].Columns[f200_id]"
+                      name="f200_id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].Columns[f200_nit]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].ExternalColumns[f200_nit]"
+                      length="25"
+                      lineageId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].Columns[f200_nit]"
+                      name="f200_nit"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].Columns[f200_dv_nit]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].ExternalColumns[f200_dv_nit]"
+                      length="3"
+                      lineageId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].Columns[f200_dv_nit]"
+                      name="f200_dv_nit"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].Columns[f200_id_tipo_ident]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].ExternalColumns[f200_id_tipo_ident]"
+                      length="1"
+                      lineageId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].Columns[f200_id_tipo_ident]"
+                      name="f200_id_tipo_ident"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].Columns[f200_ind_tipo_tercero]"
+                      dataType="i2"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].ExternalColumns[f200_ind_tipo_tercero]"
+                      lineageId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].Columns[f200_ind_tipo_tercero]"
+                      name="f200_ind_tipo_tercero"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].Columns[f200_razon_social]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].ExternalColumns[f200_razon_social]"
+                      length="100"
+                      lineageId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].Columns[f200_razon_social]"
+                      name="f200_razon_social"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].Columns[f200_apellido1]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].ExternalColumns[f200_apellido1]"
+                      length="30"
+                      lineageId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].Columns[f200_apellido1]"
+                      name="f200_apellido1"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].Columns[f200_apellido2]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].ExternalColumns[f200_apellido2]"
+                      length="30"
+                      lineageId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].Columns[f200_apellido2]"
+                      name="f200_apellido2"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].Columns[f200_nombres]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].ExternalColumns[f200_nombres]"
+                      length="40"
+                      lineageId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].Columns[f200_nombres]"
+                      name="f200_nombres"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].Columns[f200_rowid_contacto]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].ExternalColumns[f200_rowid_contacto]"
+                      lineageId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].Columns[f200_rowid_contacto]"
+                      name="f200_rowid_contacto"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].Columns[f200_ind_cliente]"
+                      dataType="i2"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].ExternalColumns[f200_ind_cliente]"
+                      lineageId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].Columns[f200_ind_cliente]"
+                      name="f200_ind_cliente"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].Columns[f200_ind_proveedor]"
+                      dataType="i2"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].ExternalColumns[f200_ind_proveedor]"
+                      lineageId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].Columns[f200_ind_proveedor]"
+                      name="f200_ind_proveedor"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].Columns[f200_ind_empleado]"
+                      dataType="i2"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].ExternalColumns[f200_ind_empleado]"
+                      lineageId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].Columns[f200_ind_empleado]"
+                      name="f200_ind_empleado"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].Columns[f200_ind_accionista]"
+                      dataType="i2"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].ExternalColumns[f200_ind_accionista]"
+                      lineageId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].Columns[f200_ind_accionista]"
+                      name="f200_ind_accionista"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].Columns[f200_ind_otros]"
+                      dataType="i2"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].ExternalColumns[f200_ind_otros]"
+                      lineageId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].Columns[f200_ind_otros]"
+                      name="f200_ind_otros"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].Columns[f200_ind_interno]"
+                      dataType="i2"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].ExternalColumns[f200_ind_interno]"
+                      lineageId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].Columns[f200_ind_interno]"
+                      name="f200_ind_interno"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].Columns[f200_nombre_est]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].ExternalColumns[f200_nombre_est]"
+                      length="100"
+                      lineageId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].Columns[f200_nombre_est]"
+                      name="f200_nombre_est"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].Columns[f200_fecha_nacimiento]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].ExternalColumns[f200_fecha_nacimiento]"
+                      lineageId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].Columns[f200_fecha_nacimiento]"
+                      name="f200_fecha_nacimiento"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].Columns[f200_id_ciiu]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].ExternalColumns[f200_id_ciiu]"
+                      length="4"
+                      lineageId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].Columns[f200_id_ciiu]"
+                      name="f200_id_ciiu"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].Columns[f200_rowid_movto_entidad]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].ExternalColumns[f200_rowid_movto_entidad]"
+                      lineageId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].Columns[f200_rowid_movto_entidad]"
+                      name="f200_rowid_movto_entidad"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].Columns[f200_ind_estado]"
+                      dataType="i2"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].ExternalColumns[f200_ind_estado]"
+                      lineageId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].Columns[f200_ind_estado]"
+                      name="f200_ind_estado"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].Columns[f200_rowid_foto]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].ExternalColumns[f200_rowid_foto]"
+                      lineageId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].Columns[f200_rowid_foto]"
+                      name="f200_rowid_foto"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].Columns[f200_ind_no_domiciliado]"
+                      dataType="i2"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].ExternalColumns[f200_ind_no_domiciliado]"
+                      lineageId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].Columns[f200_ind_no_domiciliado]"
+                      name="f200_ind_no_domiciliado"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].Columns[f200_ts]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].ExternalColumns[f200_ts]"
+                      lineageId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].Columns[f200_ts]"
+                      name="f200_ts"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].Columns[f200_ind_gum_unificado]"
+                      dataType="i2"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].ExternalColumns[f200_ind_gum_unificado]"
+                      lineageId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].Columns[f200_ind_gum_unificado]"
+                      name="f200_ind_gum_unificado"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].Columns[f200_ind_unificado]"
+                      dataType="i2"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].ExternalColumns[f200_ind_unificado]"
+                      lineageId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].Columns[f200_ind_unificado]"
+                      name="f200_ind_unificado"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].ExternalColumns[f200_id_cia]"
+                      dataType="i2"
+                      name="f200_id_cia" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].ExternalColumns[f200_rowid]"
+                      dataType="i4"
+                      name="f200_rowid" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].ExternalColumns[f200_id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="15"
+                      name="f200_id" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].ExternalColumns[f200_nit]"
+                      codePage="1252"
+                      dataType="str"
+                      length="25"
+                      name="f200_nit" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].ExternalColumns[f200_dv_nit]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3"
+                      name="f200_dv_nit" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].ExternalColumns[f200_id_tipo_ident]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="f200_id_tipo_ident" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].ExternalColumns[f200_ind_tipo_tercero]"
+                      dataType="i2"
+                      name="f200_ind_tipo_tercero" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].ExternalColumns[f200_razon_social]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="f200_razon_social" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].ExternalColumns[f200_apellido1]"
+                      codePage="1252"
+                      dataType="str"
+                      length="30"
+                      name="f200_apellido1" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].ExternalColumns[f200_apellido2]"
+                      codePage="1252"
+                      dataType="str"
+                      length="30"
+                      name="f200_apellido2" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].ExternalColumns[f200_nombres]"
+                      codePage="1252"
+                      dataType="str"
+                      length="40"
+                      name="f200_nombres" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].ExternalColumns[f200_rowid_contacto]"
+                      dataType="i4"
+                      name="f200_rowid_contacto" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].ExternalColumns[f200_ind_cliente]"
+                      dataType="i2"
+                      name="f200_ind_cliente" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].ExternalColumns[f200_ind_proveedor]"
+                      dataType="i2"
+                      name="f200_ind_proveedor" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].ExternalColumns[f200_ind_empleado]"
+                      dataType="i2"
+                      name="f200_ind_empleado" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].ExternalColumns[f200_ind_accionista]"
+                      dataType="i2"
+                      name="f200_ind_accionista" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].ExternalColumns[f200_ind_otros]"
+                      dataType="i2"
+                      name="f200_ind_otros" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].ExternalColumns[f200_ind_interno]"
+                      dataType="i2"
+                      name="f200_ind_interno" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].ExternalColumns[f200_nombre_est]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="f200_nombre_est" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].ExternalColumns[f200_fecha_nacimiento]"
+                      dataType="dbTimeStamp"
+                      name="f200_fecha_nacimiento" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].ExternalColumns[f200_id_ciiu]"
+                      codePage="1252"
+                      dataType="str"
+                      length="4"
+                      name="f200_id_ciiu" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].ExternalColumns[f200_rowid_movto_entidad]"
+                      dataType="i4"
+                      name="f200_rowid_movto_entidad" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].ExternalColumns[f200_ind_estado]"
+                      dataType="i2"
+                      name="f200_ind_estado" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].ExternalColumns[f200_rowid_foto]"
+                      dataType="i4"
+                      name="f200_rowid_foto" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].ExternalColumns[f200_ind_no_domiciliado]"
+                      dataType="i2"
+                      name="f200_ind_no_domiciliado" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].ExternalColumns[f200_ts]"
+                      dataType="dbTimeStamp"
+                      name="f200_ts" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].ExternalColumns[f200_ind_gum_unificado]"
+                      dataType="i2"
+                      name="f200_ind_gum_unificado" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].ExternalColumns[f200_ind_unificado]"
+                      dataType="i2"
+                      name="f200_ind_unificado" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Error Output].Columns[f200_id_cia]"
+                      dataType="i2"
+                      lineageId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Error Output].Columns[f200_id_cia]"
+                      name="f200_id_cia" />
+                    <outputColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Error Output].Columns[f200_rowid]"
+                      dataType="i4"
+                      lineageId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Error Output].Columns[f200_rowid]"
+                      name="f200_rowid" />
+                    <outputColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Error Output].Columns[f200_id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="15"
+                      lineageId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Error Output].Columns[f200_id]"
+                      name="f200_id" />
+                    <outputColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Error Output].Columns[f200_nit]"
+                      codePage="1252"
+                      dataType="str"
+                      length="25"
+                      lineageId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Error Output].Columns[f200_nit]"
+                      name="f200_nit" />
+                    <outputColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Error Output].Columns[f200_dv_nit]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3"
+                      lineageId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Error Output].Columns[f200_dv_nit]"
+                      name="f200_dv_nit" />
+                    <outputColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Error Output].Columns[f200_id_tipo_ident]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      lineageId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Error Output].Columns[f200_id_tipo_ident]"
+                      name="f200_id_tipo_ident" />
+                    <outputColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Error Output].Columns[f200_ind_tipo_tercero]"
+                      dataType="i2"
+                      lineageId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Error Output].Columns[f200_ind_tipo_tercero]"
+                      name="f200_ind_tipo_tercero" />
+                    <outputColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Error Output].Columns[f200_razon_social]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Error Output].Columns[f200_razon_social]"
+                      name="f200_razon_social" />
+                    <outputColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Error Output].Columns[f200_apellido1]"
+                      codePage="1252"
+                      dataType="str"
+                      length="30"
+                      lineageId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Error Output].Columns[f200_apellido1]"
+                      name="f200_apellido1" />
+                    <outputColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Error Output].Columns[f200_apellido2]"
+                      codePage="1252"
+                      dataType="str"
+                      length="30"
+                      lineageId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Error Output].Columns[f200_apellido2]"
+                      name="f200_apellido2" />
+                    <outputColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Error Output].Columns[f200_nombres]"
+                      codePage="1252"
+                      dataType="str"
+                      length="40"
+                      lineageId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Error Output].Columns[f200_nombres]"
+                      name="f200_nombres" />
+                    <outputColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Error Output].Columns[f200_rowid_contacto]"
+                      dataType="i4"
+                      lineageId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Error Output].Columns[f200_rowid_contacto]"
+                      name="f200_rowid_contacto" />
+                    <outputColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Error Output].Columns[f200_ind_cliente]"
+                      dataType="i2"
+                      lineageId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Error Output].Columns[f200_ind_cliente]"
+                      name="f200_ind_cliente" />
+                    <outputColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Error Output].Columns[f200_ind_proveedor]"
+                      dataType="i2"
+                      lineageId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Error Output].Columns[f200_ind_proveedor]"
+                      name="f200_ind_proveedor" />
+                    <outputColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Error Output].Columns[f200_ind_empleado]"
+                      dataType="i2"
+                      lineageId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Error Output].Columns[f200_ind_empleado]"
+                      name="f200_ind_empleado" />
+                    <outputColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Error Output].Columns[f200_ind_accionista]"
+                      dataType="i2"
+                      lineageId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Error Output].Columns[f200_ind_accionista]"
+                      name="f200_ind_accionista" />
+                    <outputColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Error Output].Columns[f200_ind_otros]"
+                      dataType="i2"
+                      lineageId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Error Output].Columns[f200_ind_otros]"
+                      name="f200_ind_otros" />
+                    <outputColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Error Output].Columns[f200_ind_interno]"
+                      dataType="i2"
+                      lineageId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Error Output].Columns[f200_ind_interno]"
+                      name="f200_ind_interno" />
+                    <outputColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Error Output].Columns[f200_nombre_est]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Error Output].Columns[f200_nombre_est]"
+                      name="f200_nombre_est" />
+                    <outputColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Error Output].Columns[f200_fecha_nacimiento]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Error Output].Columns[f200_fecha_nacimiento]"
+                      name="f200_fecha_nacimiento" />
+                    <outputColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Error Output].Columns[f200_id_ciiu]"
+                      codePage="1252"
+                      dataType="str"
+                      length="4"
+                      lineageId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Error Output].Columns[f200_id_ciiu]"
+                      name="f200_id_ciiu" />
+                    <outputColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Error Output].Columns[f200_rowid_movto_entidad]"
+                      dataType="i4"
+                      lineageId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Error Output].Columns[f200_rowid_movto_entidad]"
+                      name="f200_rowid_movto_entidad" />
+                    <outputColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Error Output].Columns[f200_ind_estado]"
+                      dataType="i2"
+                      lineageId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Error Output].Columns[f200_ind_estado]"
+                      name="f200_ind_estado" />
+                    <outputColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Error Output].Columns[f200_rowid_foto]"
+                      dataType="i4"
+                      lineageId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Error Output].Columns[f200_rowid_foto]"
+                      name="f200_rowid_foto" />
+                    <outputColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Error Output].Columns[f200_ind_no_domiciliado]"
+                      dataType="i2"
+                      lineageId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Error Output].Columns[f200_ind_no_domiciliado]"
+                      name="f200_ind_no_domiciliado" />
+                    <outputColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Error Output].Columns[f200_ts]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Error Output].Columns[f200_ts]"
+                      name="f200_ts" />
+                    <outputColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Error Output].Columns[f200_ind_gum_unificado]"
+                      dataType="i2"
+                      lineageId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Error Output].Columns[f200_ind_gum_unificado]"
+                      name="f200_ind_gum_unificado" />
+                    <outputColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Error Output].Columns[f200_ind_unificado]"
+                      dataType="i2"
+                      lineageId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Error Output].Columns[f200_ind_unificado]"
+                      name="f200_ind_unificado" />
+                    <outputColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\DFT_CargarTablas_ERP\OLEDB_T200_mm_Terceros"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLEDB_T200_mm_Terceros"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[T200_mm_Terceros]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\DFT_CargarTablas_ERP\OLEDB_T200_mm_Terceros.Connections[OleDbConnection]"
+                  connectionManagerID="{F969E5F0-ED10-48A1-9AD7-51F9863F78B9}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[DataStage]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\DFT_CargarTablas_ERP\OLEDB_T200_mm_Terceros.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDB_T200_mm_Terceros.Inputs[OLE DB Destination Input].Columns[f200_id_cia]"
+                      cachedDataType="i2"
+                      cachedName="f200_id_cia"
+                      externalMetadataColumnId="Package\DFT_CargarTablas_ERP\OLEDB_T200_mm_Terceros.Inputs[OLE DB Destination Input].ExternalColumns[f200_id_cia]"
+                      lineageId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].Columns[f200_id_cia]" />
+                    <inputColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDB_T200_mm_Terceros.Inputs[OLE DB Destination Input].Columns[f200_rowid]"
+                      cachedDataType="i4"
+                      cachedName="f200_rowid"
+                      externalMetadataColumnId="Package\DFT_CargarTablas_ERP\OLEDB_T200_mm_Terceros.Inputs[OLE DB Destination Input].ExternalColumns[f200_rowid]"
+                      lineageId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].Columns[f200_rowid]" />
+                    <inputColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDB_T200_mm_Terceros.Inputs[OLE DB Destination Input].Columns[f200_id]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="15"
+                      cachedName="f200_id"
+                      externalMetadataColumnId="Package\DFT_CargarTablas_ERP\OLEDB_T200_mm_Terceros.Inputs[OLE DB Destination Input].ExternalColumns[f200_id]"
+                      lineageId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].Columns[f200_id]" />
+                    <inputColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDB_T200_mm_Terceros.Inputs[OLE DB Destination Input].Columns[f200_nit]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="25"
+                      cachedName="f200_nit"
+                      externalMetadataColumnId="Package\DFT_CargarTablas_ERP\OLEDB_T200_mm_Terceros.Inputs[OLE DB Destination Input].ExternalColumns[f200_nit]"
+                      lineageId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].Columns[f200_nit]" />
+                    <inputColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDB_T200_mm_Terceros.Inputs[OLE DB Destination Input].Columns[f200_dv_nit]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="3"
+                      cachedName="f200_dv_nit"
+                      externalMetadataColumnId="Package\DFT_CargarTablas_ERP\OLEDB_T200_mm_Terceros.Inputs[OLE DB Destination Input].ExternalColumns[f200_dv_nit]"
+                      lineageId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].Columns[f200_dv_nit]" />
+                    <inputColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDB_T200_mm_Terceros.Inputs[OLE DB Destination Input].Columns[f200_id_tipo_ident]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1"
+                      cachedName="f200_id_tipo_ident"
+                      externalMetadataColumnId="Package\DFT_CargarTablas_ERP\OLEDB_T200_mm_Terceros.Inputs[OLE DB Destination Input].ExternalColumns[f200_id_tipo_ident]"
+                      lineageId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].Columns[f200_id_tipo_ident]" />
+                    <inputColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDB_T200_mm_Terceros.Inputs[OLE DB Destination Input].Columns[f200_ind_tipo_tercero]"
+                      cachedDataType="i2"
+                      cachedName="f200_ind_tipo_tercero"
+                      externalMetadataColumnId="Package\DFT_CargarTablas_ERP\OLEDB_T200_mm_Terceros.Inputs[OLE DB Destination Input].ExternalColumns[f200_ind_tipo_tercero]"
+                      lineageId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].Columns[f200_ind_tipo_tercero]" />
+                    <inputColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDB_T200_mm_Terceros.Inputs[OLE DB Destination Input].Columns[f200_razon_social]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="f200_razon_social"
+                      externalMetadataColumnId="Package\DFT_CargarTablas_ERP\OLEDB_T200_mm_Terceros.Inputs[OLE DB Destination Input].ExternalColumns[f200_razon_social]"
+                      lineageId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].Columns[f200_razon_social]" />
+                    <inputColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDB_T200_mm_Terceros.Inputs[OLE DB Destination Input].Columns[f200_apellido1]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="30"
+                      cachedName="f200_apellido1"
+                      externalMetadataColumnId="Package\DFT_CargarTablas_ERP\OLEDB_T200_mm_Terceros.Inputs[OLE DB Destination Input].ExternalColumns[f200_apellido1]"
+                      lineageId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].Columns[f200_apellido1]" />
+                    <inputColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDB_T200_mm_Terceros.Inputs[OLE DB Destination Input].Columns[f200_apellido2]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="30"
+                      cachedName="f200_apellido2"
+                      externalMetadataColumnId="Package\DFT_CargarTablas_ERP\OLEDB_T200_mm_Terceros.Inputs[OLE DB Destination Input].ExternalColumns[f200_apellido2]"
+                      lineageId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].Columns[f200_apellido2]" />
+                    <inputColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDB_T200_mm_Terceros.Inputs[OLE DB Destination Input].Columns[f200_nombres]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="40"
+                      cachedName="f200_nombres"
+                      externalMetadataColumnId="Package\DFT_CargarTablas_ERP\OLEDB_T200_mm_Terceros.Inputs[OLE DB Destination Input].ExternalColumns[f200_nombres]"
+                      lineageId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].Columns[f200_nombres]" />
+                    <inputColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDB_T200_mm_Terceros.Inputs[OLE DB Destination Input].Columns[f200_rowid_contacto]"
+                      cachedDataType="i4"
+                      cachedName="f200_rowid_contacto"
+                      externalMetadataColumnId="Package\DFT_CargarTablas_ERP\OLEDB_T200_mm_Terceros.Inputs[OLE DB Destination Input].ExternalColumns[f200_rowid_contacto]"
+                      lineageId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].Columns[f200_rowid_contacto]" />
+                    <inputColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDB_T200_mm_Terceros.Inputs[OLE DB Destination Input].Columns[f200_ind_cliente]"
+                      cachedDataType="i2"
+                      cachedName="f200_ind_cliente"
+                      externalMetadataColumnId="Package\DFT_CargarTablas_ERP\OLEDB_T200_mm_Terceros.Inputs[OLE DB Destination Input].ExternalColumns[f200_ind_cliente]"
+                      lineageId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].Columns[f200_ind_cliente]" />
+                    <inputColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDB_T200_mm_Terceros.Inputs[OLE DB Destination Input].Columns[f200_ind_proveedor]"
+                      cachedDataType="i2"
+                      cachedName="f200_ind_proveedor"
+                      externalMetadataColumnId="Package\DFT_CargarTablas_ERP\OLEDB_T200_mm_Terceros.Inputs[OLE DB Destination Input].ExternalColumns[f200_ind_proveedor]"
+                      lineageId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].Columns[f200_ind_proveedor]" />
+                    <inputColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDB_T200_mm_Terceros.Inputs[OLE DB Destination Input].Columns[f200_ind_empleado]"
+                      cachedDataType="i2"
+                      cachedName="f200_ind_empleado"
+                      externalMetadataColumnId="Package\DFT_CargarTablas_ERP\OLEDB_T200_mm_Terceros.Inputs[OLE DB Destination Input].ExternalColumns[f200_ind_empleado]"
+                      lineageId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].Columns[f200_ind_empleado]" />
+                    <inputColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDB_T200_mm_Terceros.Inputs[OLE DB Destination Input].Columns[f200_ind_accionista]"
+                      cachedDataType="i2"
+                      cachedName="f200_ind_accionista"
+                      externalMetadataColumnId="Package\DFT_CargarTablas_ERP\OLEDB_T200_mm_Terceros.Inputs[OLE DB Destination Input].ExternalColumns[f200_ind_accionista]"
+                      lineageId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].Columns[f200_ind_accionista]" />
+                    <inputColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDB_T200_mm_Terceros.Inputs[OLE DB Destination Input].Columns[f200_ind_otros]"
+                      cachedDataType="i2"
+                      cachedName="f200_ind_otros"
+                      externalMetadataColumnId="Package\DFT_CargarTablas_ERP\OLEDB_T200_mm_Terceros.Inputs[OLE DB Destination Input].ExternalColumns[f200_ind_otros]"
+                      lineageId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].Columns[f200_ind_otros]" />
+                    <inputColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDB_T200_mm_Terceros.Inputs[OLE DB Destination Input].Columns[f200_ind_interno]"
+                      cachedDataType="i2"
+                      cachedName="f200_ind_interno"
+                      externalMetadataColumnId="Package\DFT_CargarTablas_ERP\OLEDB_T200_mm_Terceros.Inputs[OLE DB Destination Input].ExternalColumns[f200_ind_interno]"
+                      lineageId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].Columns[f200_ind_interno]" />
+                    <inputColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDB_T200_mm_Terceros.Inputs[OLE DB Destination Input].Columns[f200_nombre_est]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="f200_nombre_est"
+                      externalMetadataColumnId="Package\DFT_CargarTablas_ERP\OLEDB_T200_mm_Terceros.Inputs[OLE DB Destination Input].ExternalColumns[f200_nombre_est]"
+                      lineageId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].Columns[f200_nombre_est]" />
+                    <inputColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDB_T200_mm_Terceros.Inputs[OLE DB Destination Input].Columns[f200_fecha_nacimiento]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="f200_fecha_nacimiento"
+                      externalMetadataColumnId="Package\DFT_CargarTablas_ERP\OLEDB_T200_mm_Terceros.Inputs[OLE DB Destination Input].ExternalColumns[f200_fecha_nacimiento]"
+                      lineageId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].Columns[f200_fecha_nacimiento]" />
+                    <inputColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDB_T200_mm_Terceros.Inputs[OLE DB Destination Input].Columns[f200_id_ciiu]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="4"
+                      cachedName="f200_id_ciiu"
+                      externalMetadataColumnId="Package\DFT_CargarTablas_ERP\OLEDB_T200_mm_Terceros.Inputs[OLE DB Destination Input].ExternalColumns[f200_id_ciiu]"
+                      lineageId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].Columns[f200_id_ciiu]" />
+                    <inputColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDB_T200_mm_Terceros.Inputs[OLE DB Destination Input].Columns[f200_rowid_movto_entidad]"
+                      cachedDataType="i4"
+                      cachedName="f200_rowid_movto_entidad"
+                      externalMetadataColumnId="Package\DFT_CargarTablas_ERP\OLEDB_T200_mm_Terceros.Inputs[OLE DB Destination Input].ExternalColumns[f200_rowid_movto_entidad]"
+                      lineageId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].Columns[f200_rowid_movto_entidad]" />
+                    <inputColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDB_T200_mm_Terceros.Inputs[OLE DB Destination Input].Columns[f200_ind_estado]"
+                      cachedDataType="i2"
+                      cachedName="f200_ind_estado"
+                      externalMetadataColumnId="Package\DFT_CargarTablas_ERP\OLEDB_T200_mm_Terceros.Inputs[OLE DB Destination Input].ExternalColumns[f200_ind_estado]"
+                      lineageId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].Columns[f200_ind_estado]" />
+                    <inputColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDB_T200_mm_Terceros.Inputs[OLE DB Destination Input].Columns[f200_rowid_foto]"
+                      cachedDataType="i4"
+                      cachedName="f200_rowid_foto"
+                      externalMetadataColumnId="Package\DFT_CargarTablas_ERP\OLEDB_T200_mm_Terceros.Inputs[OLE DB Destination Input].ExternalColumns[f200_rowid_foto]"
+                      lineageId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].Columns[f200_rowid_foto]" />
+                    <inputColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDB_T200_mm_Terceros.Inputs[OLE DB Destination Input].Columns[f200_ind_no_domiciliado]"
+                      cachedDataType="i2"
+                      cachedName="f200_ind_no_domiciliado"
+                      externalMetadataColumnId="Package\DFT_CargarTablas_ERP\OLEDB_T200_mm_Terceros.Inputs[OLE DB Destination Input].ExternalColumns[f200_ind_no_domiciliado]"
+                      lineageId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].Columns[f200_ind_no_domiciliado]" />
+                    <inputColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDB_T200_mm_Terceros.Inputs[OLE DB Destination Input].Columns[f200_ts]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="f200_ts"
+                      externalMetadataColumnId="Package\DFT_CargarTablas_ERP\OLEDB_T200_mm_Terceros.Inputs[OLE DB Destination Input].ExternalColumns[f200_ts]"
+                      lineageId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].Columns[f200_ts]" />
+                    <inputColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDB_T200_mm_Terceros.Inputs[OLE DB Destination Input].Columns[f200_ind_gum_unificado]"
+                      cachedDataType="i2"
+                      cachedName="f200_ind_gum_unificado"
+                      externalMetadataColumnId="Package\DFT_CargarTablas_ERP\OLEDB_T200_mm_Terceros.Inputs[OLE DB Destination Input].ExternalColumns[f200_ind_gum_unificado]"
+                      lineageId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].Columns[f200_ind_gum_unificado]" />
+                    <inputColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDB_T200_mm_Terceros.Inputs[OLE DB Destination Input].Columns[f200_ind_unificado]"
+                      cachedDataType="i2"
+                      cachedName="f200_ind_unificado"
+                      externalMetadataColumnId="Package\DFT_CargarTablas_ERP\OLEDB_T200_mm_Terceros.Inputs[OLE DB Destination Input].ExternalColumns[f200_ind_unificado]"
+                      lineageId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output].Columns[f200_ind_unificado]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDB_T200_mm_Terceros.Inputs[OLE DB Destination Input].ExternalColumns[f200_id_cia]"
+                      dataType="i2"
+                      name="f200_id_cia" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDB_T200_mm_Terceros.Inputs[OLE DB Destination Input].ExternalColumns[f200_rowid]"
+                      dataType="i4"
+                      name="f200_rowid" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDB_T200_mm_Terceros.Inputs[OLE DB Destination Input].ExternalColumns[f200_id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="15"
+                      name="f200_id" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDB_T200_mm_Terceros.Inputs[OLE DB Destination Input].ExternalColumns[f200_nit]"
+                      codePage="1252"
+                      dataType="str"
+                      length="25"
+                      name="f200_nit" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDB_T200_mm_Terceros.Inputs[OLE DB Destination Input].ExternalColumns[f200_dv_nit]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3"
+                      name="f200_dv_nit" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDB_T200_mm_Terceros.Inputs[OLE DB Destination Input].ExternalColumns[f200_id_tipo_ident]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="f200_id_tipo_ident" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDB_T200_mm_Terceros.Inputs[OLE DB Destination Input].ExternalColumns[f200_ind_tipo_tercero]"
+                      dataType="i2"
+                      name="f200_ind_tipo_tercero" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDB_T200_mm_Terceros.Inputs[OLE DB Destination Input].ExternalColumns[f200_razon_social]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="f200_razon_social" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDB_T200_mm_Terceros.Inputs[OLE DB Destination Input].ExternalColumns[f200_apellido1]"
+                      codePage="1252"
+                      dataType="str"
+                      length="30"
+                      name="f200_apellido1" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDB_T200_mm_Terceros.Inputs[OLE DB Destination Input].ExternalColumns[f200_apellido2]"
+                      codePage="1252"
+                      dataType="str"
+                      length="30"
+                      name="f200_apellido2" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDB_T200_mm_Terceros.Inputs[OLE DB Destination Input].ExternalColumns[f200_nombres]"
+                      codePage="1252"
+                      dataType="str"
+                      length="40"
+                      name="f200_nombres" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDB_T200_mm_Terceros.Inputs[OLE DB Destination Input].ExternalColumns[f200_rowid_contacto]"
+                      dataType="i4"
+                      name="f200_rowid_contacto" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDB_T200_mm_Terceros.Inputs[OLE DB Destination Input].ExternalColumns[f200_ind_cliente]"
+                      dataType="i2"
+                      name="f200_ind_cliente" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDB_T200_mm_Terceros.Inputs[OLE DB Destination Input].ExternalColumns[f200_ind_proveedor]"
+                      dataType="i2"
+                      name="f200_ind_proveedor" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDB_T200_mm_Terceros.Inputs[OLE DB Destination Input].ExternalColumns[f200_ind_empleado]"
+                      dataType="i2"
+                      name="f200_ind_empleado" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDB_T200_mm_Terceros.Inputs[OLE DB Destination Input].ExternalColumns[f200_ind_accionista]"
+                      dataType="i2"
+                      name="f200_ind_accionista" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDB_T200_mm_Terceros.Inputs[OLE DB Destination Input].ExternalColumns[f200_ind_otros]"
+                      dataType="i2"
+                      name="f200_ind_otros" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDB_T200_mm_Terceros.Inputs[OLE DB Destination Input].ExternalColumns[f200_ind_interno]"
+                      dataType="i2"
+                      name="f200_ind_interno" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDB_T200_mm_Terceros.Inputs[OLE DB Destination Input].ExternalColumns[f200_nombre_est]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="f200_nombre_est" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDB_T200_mm_Terceros.Inputs[OLE DB Destination Input].ExternalColumns[f200_fecha_nacimiento]"
+                      dataType="dbTimeStamp"
+                      name="f200_fecha_nacimiento" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDB_T200_mm_Terceros.Inputs[OLE DB Destination Input].ExternalColumns[f200_id_ciiu]"
+                      codePage="1252"
+                      dataType="str"
+                      length="4"
+                      name="f200_id_ciiu" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDB_T200_mm_Terceros.Inputs[OLE DB Destination Input].ExternalColumns[f200_rowid_movto_entidad]"
+                      dataType="i4"
+                      name="f200_rowid_movto_entidad" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDB_T200_mm_Terceros.Inputs[OLE DB Destination Input].ExternalColumns[f200_ind_estado]"
+                      dataType="i2"
+                      name="f200_ind_estado" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDB_T200_mm_Terceros.Inputs[OLE DB Destination Input].ExternalColumns[f200_rowid_foto]"
+                      dataType="i4"
+                      name="f200_rowid_foto" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDB_T200_mm_Terceros.Inputs[OLE DB Destination Input].ExternalColumns[f200_ind_no_domiciliado]"
+                      dataType="i2"
+                      name="f200_ind_no_domiciliado" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDB_T200_mm_Terceros.Inputs[OLE DB Destination Input].ExternalColumns[f200_ts]"
+                      dataType="dbTimeStamp"
+                      name="f200_ts" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDB_T200_mm_Terceros.Inputs[OLE DB Destination Input].ExternalColumns[f200_ind_gum_unificado]"
+                      dataType="i2"
+                      name="f200_ind_gum_unificado" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDB_T200_mm_Terceros.Inputs[OLE DB Destination Input].ExternalColumns[f200_ind_unificado]"
+                      dataType="i2"
+                      name="f200_ind_unificado" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\DFT_CargarTablas_ERP\OLEDB_T200_mm_Terceros.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\DFT_CargarTablas_ERP\OLEDB_T200_mm_Terceros.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDB_T200_mm_Terceros.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\DFT_CargarTablas_ERP\OLEDB_T200_mm_Terceros.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\DFT_CargarTablas_ERP\OLEDB_T200_mm_Terceros.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\DFT_CargarTablas_ERP\OLEDB_T200_mm_Terceros.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\DFT_CargarTablas_ERP.Paths[OLE DB Source Output]"
+              endId="Package\DFT_CargarTablas_ERP\OLEDB_T200_mm_Terceros.Inputs[OLE DB Destination Input]"
+              name="OLE DB Source Output"
+              startId="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros.Outputs[OLE DB Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--Esta sección CDATA contiene la información de diseño del paquete. Esta sección incluye información como, por ejemplo, las coordenadas (x,y), el ancho y el alto.-->
+<!--Si edita manualmente esta sección y comete un error, puede eliminarlo. -->
+<!--El paquete podrá cargarse normalmente, pero se perderá la información de diseño anterior y el diseñador reorganizará los elementos automáticamente en la superficie de diseño.-->
+<Objects
+  Version="8">
+  <!--Cada uno de los nodos siguientes contiene propiedades que no afectan al comportamiento en tiempo de ejecución.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="198.666666666667,42"
+          Id="Package\DFT_CargarTablas_ERP"
+          TopLeft="197.499997057021,61.578948527492" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\DFT_CargarTablas_ERP">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="217.333333333334,42.6666666666667"
+          Id="Package\DFT_CargarTablas_ERP\OLEDB_T200_mm_Terceros"
+          TopLeft="53.1249992083758,106.052633575125" />
+        <NodeLayout
+          Size="225.333333333334,42.6666666666667"
+          Id="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros"
+          TopLeft="42.4999993667007,15.0526318622758" />
+        <EdgeLayout
+          Id="Package\DFT_CargarTablas_ERP.Paths[OLE DB Source Output]"
+          TopLeft="158.479165954205,57.7192985289425">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,48.3333350461827"
+              Start="0,0"
+              End="0,40.8333350461827">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,40.8333350461827" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DFT_CargarTablas_ERP\OLEDB_T200_mm_Terceros">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
