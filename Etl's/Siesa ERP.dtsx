@@ -11,8 +11,8 @@
   DTS:LocaleID="9226"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="11"
-  DTS:VersionGUID="{FE8DD5FC-1A33-4743-AA14-D1937C48F689}">
+  DTS:VersionBuild="12"
+  DTS:VersionGUID="{8AB93AA5-76B7-45B1-BACD-E55D9683E5DC}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -1131,7 +1131,7 @@
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
         <NodeLayout
-          Size="198.666666666667,42.6666666666667"
+          Size="198.666666666667,42"
           Id="Package\DFT_CargarTablas_ERP"
           TopLeft="197.499997057021,61.578948527492" />
       </GraphLayout>
@@ -1143,13 +1143,13 @@
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="225.333333333334,42.6666666666667"
-          Id="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros"
-          TopLeft="42.4999993667007,15.0526318622758" />
-        <NodeLayout
           Size="217.333333333334,42.6666666666667"
           Id="Package\DFT_CargarTablas_ERP\OLEDB_T200_mm_Terceros"
           TopLeft="53.1249992083758,106.052633575125" />
+        <NodeLayout
+          Size="225.333333333334,42.6666666666667"
+          Id="Package\DFT_CargarTablas_ERP\OLEDBS_T200_mm_Terceros"
+          TopLeft="42.4999993667007,15.0526318622758" />
         <EdgeLayout
           Id="Package\DFT_CargarTablas_ERP.Paths[OLE DB Source Output]"
           TopLeft="158.479165954205,57.7192985289425">
