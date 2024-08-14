@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿<?xml version="1.0"?>
 <DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:ObjectName="DataStage"
@@ -9,4 +10,17 @@
       DTS:ConnectRetryInterval="5"
       DTS:ConnectionString="Data Source=192.168.0.139\BODEGA;Initial Catalog=DataStage;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package-{F969E5F0-ED10-48A1-9AD7-51F9863F78B9}192.168.0.139\BODEGA.DataStage;Auto Translate=False;" />
   </DTS:ObjectData>
+=======
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="DataStage"
+  DTS:DTSID="{F969E5F0-ED10-48A1-9AD7-51F9863F78B9}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=192.168.0.139\BODEGA;Initial Catalog=DataStage;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package-{F969E5F0-ED10-48A1-9AD7-51F9863F78B9}192.168.0.139\BODEGA.DataStage;Auto Translate=False;" />
+  </DTS:ObjectData>
+>>>>>>> Add files via upload
 </DTS:ConnectionManager>

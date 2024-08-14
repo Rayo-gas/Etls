@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="CRM"
+  DTS:DTSID="{B4C05557-1818-4CF2-AB8D-9E14B6CE567E}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=192.168.0.139\BODEGA;Initial Catalog=CRM;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Siesa Crm-{B4C05557-1818-4CF2-AB8D-9E14B6CE567E}192.168.0.139\BODEGA.CRM;Auto Translate=False;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
