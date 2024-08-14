@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+﻿<?xml version="1.0"?>
 <DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:refId="Package"
   DTS:CreationDate="8/12/2024 9:10:09 AM"
@@ -11,9 +11,2682 @@
   DTS:LocaleID="9226"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionGUID="{450BDB51-71D6-410C-8AF8-D041A7F9CEC7}">
+  DTS:VersionBuild="4"
+  DTS:VersionGUID="{794B3F8B-F9BC-4131-9341-9577E6EC5B5E}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
-  <DTS:Executables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\DFT_Insertar_Ituran"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{D08F1FC5-664F-4E0F-A475-1D090EEC9C28}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="DFT_Insertar_Ituran"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_001_Carros"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLEDBD_Tb_Ituran_001_Carros"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[Tb_Ituran_001_Carros]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_001_Carros.Connections[OleDbConnection]"
+                  connectionManagerID="{F969E5F0-ED10-48A1-9AD7-51F9863F78B9}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[DataStage]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_001_Carros.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_001_Carros.Inputs[OLE DB Destination Input].Columns[id]"
+                      cachedDataType="i4"
+                      cachedName="id"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_001_Carros.Inputs[OLE DB Destination Input].ExternalColumns[id]"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_001_Carros.Outputs[OLE DB Source Output].Columns[id]" />
+                    <inputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_001_Carros.Inputs[OLE DB Destination Input].Columns[Vehicle_Latitude]"
+                      cachedDataType="numeric"
+                      cachedName="Vehicle_Latitude"
+                      cachedPrecision="27"
+                      cachedScale="15"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_001_Carros.Inputs[OLE DB Destination Input].ExternalColumns[Vehicle_Latitude]"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_001_Carros.Outputs[OLE DB Source Output].Columns[Vehicle_Latitude]" />
+                    <inputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_001_Carros.Inputs[OLE DB Destination Input].Columns[Vehicle_Longitude]"
+                      cachedDataType="numeric"
+                      cachedName="Vehicle_Longitude"
+                      cachedPrecision="27"
+                      cachedScale="15"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_001_Carros.Inputs[OLE DB Destination Input].ExternalColumns[Vehicle_Longitude]"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_001_Carros.Outputs[OLE DB Source Output].Columns[Vehicle_Longitude]" />
+                    <inputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_001_Carros.Inputs[OLE DB Destination Input].Columns[vehicle_Angle]"
+                      cachedDataType="i4"
+                      cachedName="vehicle_Angle"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_001_Carros.Inputs[OLE DB Destination Input].ExternalColumns[vehicle_Angle]"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_001_Carros.Outputs[OLE DB Source Output].Columns[vehicle_Angle]" />
+                    <inputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_001_Carros.Inputs[OLE DB Destination Input].Columns[vehicle_Color]"
+                      cachedDataType="i4"
+                      cachedName="vehicle_Color"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_001_Carros.Inputs[OLE DB Destination Input].ExternalColumns[vehicle_Color]"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_001_Carros.Outputs[OLE DB Source Output].Columns[vehicle_Color]" />
+                    <inputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_001_Carros.Inputs[OLE DB Destination Input].Columns[vehicle_Tool_Tip]"
+                      cachedCodepage="1252"
+                      cachedDataType="text"
+                      cachedName="vehicle_Tool_Tip"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_001_Carros.Inputs[OLE DB Destination Input].ExternalColumns[vehicle_Tool_Tip]"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_001_Carros.Outputs[OLE DB Source Output].Columns[vehicle_Tool_Tip]" />
+                    <inputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_001_Carros.Inputs[OLE DB Destination Input].Columns[vehicle_Label]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="150"
+                      cachedName="vehicle_Label"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_001_Carros.Inputs[OLE DB Destination Input].ExternalColumns[vehicle_Label]"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_001_Carros.Outputs[OLE DB Source Output].Columns[vehicle_Label]" />
+                    <inputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_001_Carros.Inputs[OLE DB Destination Input].Columns[vehicle_Drive_type]"
+                      cachedDataType="i4"
+                      cachedName="vehicle_Drive_type"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_001_Carros.Inputs[OLE DB Destination Input].ExternalColumns[vehicle_Drive_type]"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_001_Carros.Outputs[OLE DB Source Output].Columns[vehicle_Drive_type]" />
+                    <inputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_001_Carros.Inputs[OLE DB Destination Input].Columns[event_Time]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="event_Time"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_001_Carros.Inputs[OLE DB Destination Input].ExternalColumns[event_Time]"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_001_Carros.Outputs[OLE DB Source Output].Columns[event_Time]" />
+                    <inputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_001_Carros.Inputs[OLE DB Destination Input].Columns[vehicle_Online_Status]"
+                      cachedDataType="i4"
+                      cachedName="vehicle_Online_Status"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_001_Carros.Inputs[OLE DB Destination Input].ExternalColumns[vehicle_Online_Status]"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_001_Carros.Outputs[OLE DB Source Output].Columns[vehicle_Online_Status]" />
+                    <inputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_001_Carros.Inputs[OLE DB Destination Input].Columns[rEGION_NAME]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="rEGION_NAME"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_001_Carros.Inputs[OLE DB Destination Input].ExternalColumns[rEGION_NAME]"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_001_Carros.Outputs[OLE DB Source Output].Columns[rEGION_NAME]" />
+                    <inputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_001_Carros.Inputs[OLE DB Destination Input].Columns[FechaEjecucion]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="FechaEjecucion"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_001_Carros.Inputs[OLE DB Destination Input].ExternalColumns[FechaEjecucion]"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_001_Carros.Outputs[OLE DB Source Output].Columns[FechaEjecucion]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_001_Carros.Inputs[OLE DB Destination Input].ExternalColumns[id]"
+                      dataType="i4"
+                      name="id" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_001_Carros.Inputs[OLE DB Destination Input].ExternalColumns[Vehicle_Latitude]"
+                      dataType="numeric"
+                      name="Vehicle_Latitude"
+                      precision="27"
+                      scale="15" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_001_Carros.Inputs[OLE DB Destination Input].ExternalColumns[Vehicle_Longitude]"
+                      dataType="numeric"
+                      name="Vehicle_Longitude"
+                      precision="27"
+                      scale="15" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_001_Carros.Inputs[OLE DB Destination Input].ExternalColumns[vehicle_Angle]"
+                      dataType="i4"
+                      name="vehicle_Angle" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_001_Carros.Inputs[OLE DB Destination Input].ExternalColumns[vehicle_Color]"
+                      dataType="i4"
+                      name="vehicle_Color" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_001_Carros.Inputs[OLE DB Destination Input].ExternalColumns[vehicle_Tool_Tip]"
+                      codePage="1252"
+                      dataType="text"
+                      name="vehicle_Tool_Tip" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_001_Carros.Inputs[OLE DB Destination Input].ExternalColumns[vehicle_Label]"
+                      codePage="1252"
+                      dataType="str"
+                      length="150"
+                      name="vehicle_Label" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_001_Carros.Inputs[OLE DB Destination Input].ExternalColumns[vehicle_Drive_type]"
+                      dataType="i4"
+                      name="vehicle_Drive_type" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_001_Carros.Inputs[OLE DB Destination Input].ExternalColumns[event_Time]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="event_Time" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_001_Carros.Inputs[OLE DB Destination Input].ExternalColumns[vehicle_Online_Status]"
+                      dataType="i4"
+                      name="vehicle_Online_Status" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_001_Carros.Inputs[OLE DB Destination Input].ExternalColumns[rEGION_NAME]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="rEGION_NAME" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_001_Carros.Inputs[OLE DB Destination Input].ExternalColumns[FechaEjecucion]"
+                      dataType="dbTimeStamp"
+                      name="FechaEjecucion" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_001_Carros.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_001_Carros.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_001_Carros.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_001_Carros.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_001_Carros.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_001_Carros.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLEDBD_Tb_Ituran_002_Viajes"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[Tb_Ituran_002_Viajes]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Connections[OleDbConnection]"
+                  connectionManagerID="{F969E5F0-ED10-48A1-9AD7-51F9863F78B9}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[DataStage]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].Columns[rowid]"
+                      cachedDataType="i4"
+                      cachedName="rowid"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].ExternalColumns[rowid]"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[rowid]" />
+                    <inputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].Columns[Id]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="Id"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].ExternalColumns[Id]"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[Id]" />
+                    <inputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].Columns[Id_Dispositivo]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="Id_Dispositivo"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].ExternalColumns[Id_Dispositivo]"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[Id_Dispositivo]" />
+                    <inputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].Columns[Nombre_Vehiculo]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="Nombre_Vehiculo"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].ExternalColumns[Nombre_Vehiculo]"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[Nombre_Vehiculo]" />
+                    <inputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].Columns[Placas_Vehiculo]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="10"
+                      cachedName="Placas_Vehiculo"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].ExternalColumns[Placas_Vehiculo]"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[Placas_Vehiculo]" />
+                    <inputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].Columns[Fecha_Inicio]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Fecha_Inicio"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].ExternalColumns[Fecha_Inicio]"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[Fecha_Inicio]" />
+                    <inputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].Columns[Fecha_Fin]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Fecha_Fin"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].ExternalColumns[Fecha_Fin]"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[Fecha_Fin]" />
+                    <inputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].Columns[Id_Conductor]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="Id_Conductor"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].ExternalColumns[Id_Conductor]"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[Id_Conductor]" />
+                    <inputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].Columns[Nombre_Conductor]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="Nombre_Conductor"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].ExternalColumns[Nombre_Conductor]"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[Nombre_Conductor]" />
+                    <inputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].Columns[Odometro_Inicial]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="200"
+                      cachedName="Odometro_Inicial"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].ExternalColumns[Odometro_Inicial]"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[Odometro_Inicial]" />
+                    <inputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].Columns[Odometro_Final]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="200"
+                      cachedName="Odometro_Final"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].ExternalColumns[Odometro_Final]"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[Odometro_Final]" />
+                    <inputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].Columns[Tipo_Viaje]"
+                      cachedDataType="i4"
+                      cachedName="Tipo_Viaje"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].ExternalColumns[Tipo_Viaje]"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[Tipo_Viaje]" />
+                    <inputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].Columns[Exceso_Velocidad]"
+                      cachedDataType="i4"
+                      cachedName="Exceso_Velocidad"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].ExternalColumns[Exceso_Velocidad]"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[Exceso_Velocidad]" />
+                    <inputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].Columns[Duracion_Exceso_Velocidad]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Duracion_Exceso_Velocidad"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].ExternalColumns[Duracion_Exceso_Velocidad]"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[Duracion_Exceso_Velocidad]" />
+                    <inputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].Columns[Ocurrencia_Exceso_Velocidad]"
+                      cachedDataType="i4"
+                      cachedName="Ocurrencia_Exceso_Velocidad"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].ExternalColumns[Ocurrencia_Exceso_Velocidad]"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[Ocurrencia_Exceso_Velocidad]" />
+                    <inputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].Columns[Horas_Motor_Inicial]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="Horas_Motor_Inicial"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].ExternalColumns[Horas_Motor_Inicial]"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[Horas_Motor_Inicial]" />
+                    <inputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].Columns[Horas_Motor_Final]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="Horas_Motor_Final"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].ExternalColumns[Horas_Motor_Final]"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[Horas_Motor_Final]" />
+                    <inputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].Columns[Tiempo_Inactividad]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="Tiempo_Inactividad"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].ExternalColumns[Tiempo_Inactividad]"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[Tiempo_Inactividad]" />
+                    <inputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].Columns[Ocurrencia_Tiempo_Inactividad]"
+                      cachedDataType="i4"
+                      cachedName="Ocurrencia_Tiempo_Inactividad"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].ExternalColumns[Ocurrencia_Tiempo_Inactividad]"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[Ocurrencia_Tiempo_Inactividad]" />
+                    <inputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].Columns[Velocidad_Superior]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="Velocidad_Superior"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].ExternalColumns[Velocidad_Superior]"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[Velocidad_Superior]" />
+                    <inputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].Columns[RPM_Superior]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="RPM_Superior"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].ExternalColumns[RPM_Superior]"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[RPM_Superior]" />
+                    <inputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].Columns[Duracion_Exceso_RPM]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="Duracion_Exceso_RPM"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].ExternalColumns[Duracion_Exceso_RPM]"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[Duracion_Exceso_RPM]" />
+                    <inputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].Columns[Combustible_Viaje]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="Combustible_Viaje"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].ExternalColumns[Combustible_Viaje]"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[Combustible_Viaje]" />
+                    <inputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].Columns[Combustible_Inactividad]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Combustible_Inactividad"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].ExternalColumns[Combustible_Inactividad]"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[Combustible_Inactividad]" />
+                    <inputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].Columns[Ocurrencia_Aceleracion]"
+                      cachedDataType="i4"
+                      cachedName="Ocurrencia_Aceleracion"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].ExternalColumns[Ocurrencia_Aceleracion]"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[Ocurrencia_Aceleracion]" />
+                    <inputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].Columns[Ocurrencia_Desaceleracion]"
+                      cachedDataType="i4"
+                      cachedName="Ocurrencia_Desaceleracion"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].ExternalColumns[Ocurrencia_Desaceleracion]"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[Ocurrencia_Desaceleracion]" />
+                    <inputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].Columns[Ocurrencia_Aceleracion_Curva]"
+                      cachedDataType="i4"
+                      cachedName="Ocurrencia_Aceleracion_Curva"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].ExternalColumns[Ocurrencia_Aceleracion_Curva]"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[Ocurrencia_Aceleracion_Curva]" />
+                    <inputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].Columns[Longitud_Inicial]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="Longitud_Inicial"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].ExternalColumns[Longitud_Inicial]"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[Longitud_Inicial]" />
+                    <inputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].Columns[Latitud_Inicial]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="Latitud_Inicial"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].ExternalColumns[Latitud_Inicial]"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[Latitud_Inicial]" />
+                    <inputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].Columns[Ubicacion_Inicial]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="Ubicacion_Inicial"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].ExternalColumns[Ubicacion_Inicial]"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[Ubicacion_Inicial]" />
+                    <inputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].Columns[Longitud_Final]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="Longitud_Final"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].ExternalColumns[Longitud_Final]"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[Longitud_Final]" />
+                    <inputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].Columns[Latitud_Final]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="Latitud_Final"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].ExternalColumns[Latitud_Final]"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[Latitud_Final]" />
+                    <inputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].Columns[Ubicacion_Final]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="Ubicacion_Final"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].ExternalColumns[Ubicacion_Final]"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[Ubicacion_Final]" />
+                    <inputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].Columns[Velocidad_Promedio]"
+                      cachedDataType="i4"
+                      cachedName="Velocidad_Promedio"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].ExternalColumns[Velocidad_Promedio]"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[Velocidad_Promedio]" />
+                    <inputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].Columns[PDI_Fin_Viaje]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="PDI_Fin_Viaje"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].ExternalColumns[PDI_Fin_Viaje]"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[PDI_Fin_Viaje]" />
+                    <inputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].Columns[FechaEjecucion]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="FechaEjecucion"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].ExternalColumns[FechaEjecucion]"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[FechaEjecucion]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].ExternalColumns[rowid]"
+                      dataType="i4"
+                      name="rowid" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].ExternalColumns[Id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Id" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].ExternalColumns[Id_Dispositivo]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Id_Dispositivo" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].ExternalColumns[Nombre_Vehiculo]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Nombre_Vehiculo" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].ExternalColumns[Placas_Vehiculo]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      name="Placas_Vehiculo" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].ExternalColumns[Fecha_Inicio]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Fecha_Inicio" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].ExternalColumns[Fecha_Fin]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Fecha_Fin" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].ExternalColumns[Id_Conductor]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Id_Conductor" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].ExternalColumns[Nombre_Conductor]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Nombre_Conductor" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].ExternalColumns[Odometro_Inicial]"
+                      codePage="1252"
+                      dataType="str"
+                      length="200"
+                      name="Odometro_Inicial" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].ExternalColumns[Odometro_Final]"
+                      codePage="1252"
+                      dataType="str"
+                      length="200"
+                      name="Odometro_Final" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].ExternalColumns[Tipo_Viaje]"
+                      dataType="i4"
+                      name="Tipo_Viaje" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].ExternalColumns[Exceso_Velocidad]"
+                      dataType="i4"
+                      name="Exceso_Velocidad" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].ExternalColumns[Duracion_Exceso_Velocidad]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Duracion_Exceso_Velocidad" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].ExternalColumns[Ocurrencia_Exceso_Velocidad]"
+                      dataType="i4"
+                      name="Ocurrencia_Exceso_Velocidad" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].ExternalColumns[Horas_Motor_Inicial]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Horas_Motor_Inicial" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].ExternalColumns[Horas_Motor_Final]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Horas_Motor_Final" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].ExternalColumns[Tiempo_Inactividad]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Tiempo_Inactividad" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].ExternalColumns[Ocurrencia_Tiempo_Inactividad]"
+                      dataType="i4"
+                      name="Ocurrencia_Tiempo_Inactividad" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].ExternalColumns[Velocidad_Superior]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Velocidad_Superior" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].ExternalColumns[RPM_Superior]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="RPM_Superior" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].ExternalColumns[Duracion_Exceso_RPM]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Duracion_Exceso_RPM" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].ExternalColumns[Combustible_Viaje]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Combustible_Viaje" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].ExternalColumns[Combustible_Inactividad]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Combustible_Inactividad" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].ExternalColumns[Ocurrencia_Aceleracion]"
+                      dataType="i4"
+                      name="Ocurrencia_Aceleracion" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].ExternalColumns[Ocurrencia_Desaceleracion]"
+                      dataType="i4"
+                      name="Ocurrencia_Desaceleracion" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].ExternalColumns[Ocurrencia_Aceleracion_Curva]"
+                      dataType="i4"
+                      name="Ocurrencia_Aceleracion_Curva" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].ExternalColumns[Longitud_Inicial]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Longitud_Inicial" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].ExternalColumns[Latitud_Inicial]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Latitud_Inicial" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].ExternalColumns[Ubicacion_Inicial]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Ubicacion_Inicial" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].ExternalColumns[Longitud_Final]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Longitud_Final" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].ExternalColumns[Latitud_Final]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Latitud_Final" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].ExternalColumns[Ubicacion_Final]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Ubicacion_Final" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].ExternalColumns[Velocidad_Promedio]"
+                      dataType="i4"
+                      name="Velocidad_Promedio" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].ExternalColumns[PDI_Fin_Viaje]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="PDI_Fin_Viaje" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input].ExternalColumns[FechaEjecucion]"
+                      dataType="dbTimeStamp"
+                      name="FechaEjecucion" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_003_Actualizar_Odometro"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLEDBD_Tb_Ituran_003_Actualizar_Odometro"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[Tb_Ituran_003_Actualizar_Odometro]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_003_Actualizar_Odometro.Connections[OleDbConnection]"
+                  connectionManagerID="{F969E5F0-ED10-48A1-9AD7-51F9863F78B9}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[DataStage]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_003_Actualizar_Odometro.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_003_Actualizar_Odometro.Inputs[OLE DB Destination Input].Columns[Rowid]"
+                      cachedDataType="i4"
+                      cachedName="Rowid"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_003_Actualizar_Odometro.Inputs[OLE DB Destination Input].ExternalColumns[Rowid]"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_003_Actualizar_Odometro.Outputs[OLE DB Source Output].Columns[Rowid]" />
+                    <inputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_003_Actualizar_Odometro.Inputs[OLE DB Destination Input].Columns[Placas_Vehiculo]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="10"
+                      cachedName="Placas_Vehiculo"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_003_Actualizar_Odometro.Inputs[OLE DB Destination Input].ExternalColumns[Placas_Vehiculo]"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_003_Actualizar_Odometro.Outputs[OLE DB Source Output].Columns[Placas_Vehiculo]" />
+                    <inputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_003_Actualizar_Odometro.Inputs[OLE DB Destination Input].Columns[Fecha]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Fecha"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_003_Actualizar_Odometro.Inputs[OLE DB Destination Input].ExternalColumns[Fecha]"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_003_Actualizar_Odometro.Outputs[OLE DB Source Output].Columns[Fecha]" />
+                    <inputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_003_Actualizar_Odometro.Inputs[OLE DB Destination Input].Columns[Odometro]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="200"
+                      cachedName="Odometro"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_003_Actualizar_Odometro.Inputs[OLE DB Destination Input].ExternalColumns[Odometro]"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_003_Actualizar_Odometro.Outputs[OLE DB Source Output].Columns[Odometro]" />
+                    <inputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_003_Actualizar_Odometro.Inputs[OLE DB Destination Input].Columns[Comentario]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="200"
+                      cachedName="Comentario"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_003_Actualizar_Odometro.Inputs[OLE DB Destination Input].ExternalColumns[Comentario]"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_003_Actualizar_Odometro.Outputs[OLE DB Source Output].Columns[Comentario]" />
+                    <inputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_003_Actualizar_Odometro.Inputs[OLE DB Destination Input].Columns[FechaEjecucion]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="FechaEjecucion"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_003_Actualizar_Odometro.Inputs[OLE DB Destination Input].ExternalColumns[FechaEjecucion]"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_003_Actualizar_Odometro.Outputs[OLE DB Source Output].Columns[FechaEjecucion]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_003_Actualizar_Odometro.Inputs[OLE DB Destination Input].ExternalColumns[Rowid]"
+                      dataType="i4"
+                      name="Rowid" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_003_Actualizar_Odometro.Inputs[OLE DB Destination Input].ExternalColumns[Placas_Vehiculo]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      name="Placas_Vehiculo" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_003_Actualizar_Odometro.Inputs[OLE DB Destination Input].ExternalColumns[Fecha]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Fecha" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_003_Actualizar_Odometro.Inputs[OLE DB Destination Input].ExternalColumns[Odometro]"
+                      codePage="1252"
+                      dataType="str"
+                      length="200"
+                      name="Odometro" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_003_Actualizar_Odometro.Inputs[OLE DB Destination Input].ExternalColumns[Comentario]"
+                      codePage="1252"
+                      dataType="str"
+                      length="200"
+                      name="Comentario" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_003_Actualizar_Odometro.Inputs[OLE DB Destination Input].ExternalColumns[FechaEjecucion]"
+                      dataType="dbTimeStamp"
+                      name="FechaEjecucion" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_003_Actualizar_Odometro.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_003_Actualizar_Odometro.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_003_Actualizar_Odometro.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_003_Actualizar_Odometro.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_003_Actualizar_Odometro.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_003_Actualizar_Odometro.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_001_Carros"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="OLEDBS_Tb_Ituran_001_Carros"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[Tb_Ituran_001_Carros]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_001_Carros.Connections[OleDbConnection]"
+                  connectionManagerID="{4632C0A1-E45F-4752-AF2F-EB57D4CFF5D6}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[REPOSITORIO_MTTO]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_001_Carros.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_001_Carros.Outputs[OLE DB Source Output].Columns[id]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_001_Carros.Outputs[OLE DB Source Output].ExternalColumns[id]"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_001_Carros.Outputs[OLE DB Source Output].Columns[id]"
+                      name="id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_001_Carros.Outputs[OLE DB Source Output].Columns[Vehicle_Latitude]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_001_Carros.Outputs[OLE DB Source Output].ExternalColumns[Vehicle_Latitude]"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_001_Carros.Outputs[OLE DB Source Output].Columns[Vehicle_Latitude]"
+                      name="Vehicle_Latitude"
+                      precision="27"
+                      scale="15"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_001_Carros.Outputs[OLE DB Source Output].Columns[Vehicle_Longitude]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_001_Carros.Outputs[OLE DB Source Output].ExternalColumns[Vehicle_Longitude]"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_001_Carros.Outputs[OLE DB Source Output].Columns[Vehicle_Longitude]"
+                      name="Vehicle_Longitude"
+                      precision="27"
+                      scale="15"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_001_Carros.Outputs[OLE DB Source Output].Columns[vehicle_Angle]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_001_Carros.Outputs[OLE DB Source Output].ExternalColumns[vehicle_Angle]"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_001_Carros.Outputs[OLE DB Source Output].Columns[vehicle_Angle]"
+                      name="vehicle_Angle"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_001_Carros.Outputs[OLE DB Source Output].Columns[vehicle_Color]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_001_Carros.Outputs[OLE DB Source Output].ExternalColumns[vehicle_Color]"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_001_Carros.Outputs[OLE DB Source Output].Columns[vehicle_Color]"
+                      name="vehicle_Color"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_001_Carros.Outputs[OLE DB Source Output].Columns[vehicle_Tool_Tip]"
+                      codePage="1252"
+                      dataType="text"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_001_Carros.Outputs[OLE DB Source Output].ExternalColumns[vehicle_Tool_Tip]"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_001_Carros.Outputs[OLE DB Source Output].Columns[vehicle_Tool_Tip]"
+                      name="vehicle_Tool_Tip"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_001_Carros.Outputs[OLE DB Source Output].Columns[vehicle_Label]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_001_Carros.Outputs[OLE DB Source Output].ExternalColumns[vehicle_Label]"
+                      length="150"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_001_Carros.Outputs[OLE DB Source Output].Columns[vehicle_Label]"
+                      name="vehicle_Label"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_001_Carros.Outputs[OLE DB Source Output].Columns[vehicle_Drive_type]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_001_Carros.Outputs[OLE DB Source Output].ExternalColumns[vehicle_Drive_type]"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_001_Carros.Outputs[OLE DB Source Output].Columns[vehicle_Drive_type]"
+                      name="vehicle_Drive_type"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_001_Carros.Outputs[OLE DB Source Output].Columns[event_Time]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_001_Carros.Outputs[OLE DB Source Output].ExternalColumns[event_Time]"
+                      length="50"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_001_Carros.Outputs[OLE DB Source Output].Columns[event_Time]"
+                      name="event_Time"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_001_Carros.Outputs[OLE DB Source Output].Columns[vehicle_Online_Status]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_001_Carros.Outputs[OLE DB Source Output].ExternalColumns[vehicle_Online_Status]"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_001_Carros.Outputs[OLE DB Source Output].Columns[vehicle_Online_Status]"
+                      name="vehicle_Online_Status"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_001_Carros.Outputs[OLE DB Source Output].Columns[rEGION_NAME]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_001_Carros.Outputs[OLE DB Source Output].ExternalColumns[rEGION_NAME]"
+                      length="50"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_001_Carros.Outputs[OLE DB Source Output].Columns[rEGION_NAME]"
+                      name="rEGION_NAME"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_001_Carros.Outputs[OLE DB Source Output].Columns[FechaEjecucion]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_001_Carros.Outputs[OLE DB Source Output].ExternalColumns[FechaEjecucion]"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_001_Carros.Outputs[OLE DB Source Output].Columns[FechaEjecucion]"
+                      name="FechaEjecucion"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_001_Carros.Outputs[OLE DB Source Output].ExternalColumns[id]"
+                      dataType="i4"
+                      name="id" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_001_Carros.Outputs[OLE DB Source Output].ExternalColumns[Vehicle_Latitude]"
+                      dataType="numeric"
+                      name="Vehicle_Latitude"
+                      precision="27"
+                      scale="15" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_001_Carros.Outputs[OLE DB Source Output].ExternalColumns[Vehicle_Longitude]"
+                      dataType="numeric"
+                      name="Vehicle_Longitude"
+                      precision="27"
+                      scale="15" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_001_Carros.Outputs[OLE DB Source Output].ExternalColumns[vehicle_Angle]"
+                      dataType="i4"
+                      name="vehicle_Angle" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_001_Carros.Outputs[OLE DB Source Output].ExternalColumns[vehicle_Color]"
+                      dataType="i4"
+                      name="vehicle_Color" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_001_Carros.Outputs[OLE DB Source Output].ExternalColumns[vehicle_Tool_Tip]"
+                      codePage="1252"
+                      dataType="text"
+                      name="vehicle_Tool_Tip" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_001_Carros.Outputs[OLE DB Source Output].ExternalColumns[vehicle_Label]"
+                      codePage="1252"
+                      dataType="str"
+                      length="150"
+                      name="vehicle_Label" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_001_Carros.Outputs[OLE DB Source Output].ExternalColumns[vehicle_Drive_type]"
+                      dataType="i4"
+                      name="vehicle_Drive_type" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_001_Carros.Outputs[OLE DB Source Output].ExternalColumns[event_Time]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="event_Time" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_001_Carros.Outputs[OLE DB Source Output].ExternalColumns[vehicle_Online_Status]"
+                      dataType="i4"
+                      name="vehicle_Online_Status" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_001_Carros.Outputs[OLE DB Source Output].ExternalColumns[rEGION_NAME]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="rEGION_NAME" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_001_Carros.Outputs[OLE DB Source Output].ExternalColumns[FechaEjecucion]"
+                      dataType="dbTimeStamp"
+                      name="FechaEjecucion" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_001_Carros.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_001_Carros.Outputs[OLE DB Source Error Output].Columns[id]"
+                      dataType="i4"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_001_Carros.Outputs[OLE DB Source Error Output].Columns[id]"
+                      name="id" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_001_Carros.Outputs[OLE DB Source Error Output].Columns[Vehicle_Latitude]"
+                      dataType="numeric"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_001_Carros.Outputs[OLE DB Source Error Output].Columns[Vehicle_Latitude]"
+                      name="Vehicle_Latitude"
+                      precision="27"
+                      scale="15" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_001_Carros.Outputs[OLE DB Source Error Output].Columns[Vehicle_Longitude]"
+                      dataType="numeric"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_001_Carros.Outputs[OLE DB Source Error Output].Columns[Vehicle_Longitude]"
+                      name="Vehicle_Longitude"
+                      precision="27"
+                      scale="15" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_001_Carros.Outputs[OLE DB Source Error Output].Columns[vehicle_Angle]"
+                      dataType="i4"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_001_Carros.Outputs[OLE DB Source Error Output].Columns[vehicle_Angle]"
+                      name="vehicle_Angle" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_001_Carros.Outputs[OLE DB Source Error Output].Columns[vehicle_Color]"
+                      dataType="i4"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_001_Carros.Outputs[OLE DB Source Error Output].Columns[vehicle_Color]"
+                      name="vehicle_Color" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_001_Carros.Outputs[OLE DB Source Error Output].Columns[vehicle_Tool_Tip]"
+                      codePage="1252"
+                      dataType="text"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_001_Carros.Outputs[OLE DB Source Error Output].Columns[vehicle_Tool_Tip]"
+                      name="vehicle_Tool_Tip" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_001_Carros.Outputs[OLE DB Source Error Output].Columns[vehicle_Label]"
+                      codePage="1252"
+                      dataType="str"
+                      length="150"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_001_Carros.Outputs[OLE DB Source Error Output].Columns[vehicle_Label]"
+                      name="vehicle_Label" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_001_Carros.Outputs[OLE DB Source Error Output].Columns[vehicle_Drive_type]"
+                      dataType="i4"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_001_Carros.Outputs[OLE DB Source Error Output].Columns[vehicle_Drive_type]"
+                      name="vehicle_Drive_type" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_001_Carros.Outputs[OLE DB Source Error Output].Columns[event_Time]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_001_Carros.Outputs[OLE DB Source Error Output].Columns[event_Time]"
+                      name="event_Time" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_001_Carros.Outputs[OLE DB Source Error Output].Columns[vehicle_Online_Status]"
+                      dataType="i4"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_001_Carros.Outputs[OLE DB Source Error Output].Columns[vehicle_Online_Status]"
+                      name="vehicle_Online_Status" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_001_Carros.Outputs[OLE DB Source Error Output].Columns[rEGION_NAME]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_001_Carros.Outputs[OLE DB Source Error Output].Columns[rEGION_NAME]"
+                      name="rEGION_NAME" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_001_Carros.Outputs[OLE DB Source Error Output].Columns[FechaEjecucion]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_001_Carros.Outputs[OLE DB Source Error Output].Columns[FechaEjecucion]"
+                      name="FechaEjecucion" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_001_Carros.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_001_Carros.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_001_Carros.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_001_Carros.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="OLEDBS_Tb_Ituran_002_Viajes"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[Tb_Ituran_002_Viajes]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Connections[OleDbConnection]"
+                  connectionManagerID="{4632C0A1-E45F-4752-AF2F-EB57D4CFF5D6}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[REPOSITORIO_MTTO]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[rowid]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].ExternalColumns[rowid]"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[rowid]"
+                      name="rowid"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[Id]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].ExternalColumns[Id]"
+                      length="100"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[Id]"
+                      name="Id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[Id_Dispositivo]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].ExternalColumns[Id_Dispositivo]"
+                      length="100"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[Id_Dispositivo]"
+                      name="Id_Dispositivo"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[Nombre_Vehiculo]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].ExternalColumns[Nombre_Vehiculo]"
+                      length="100"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[Nombre_Vehiculo]"
+                      name="Nombre_Vehiculo"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[Placas_Vehiculo]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].ExternalColumns[Placas_Vehiculo]"
+                      length="10"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[Placas_Vehiculo]"
+                      name="Placas_Vehiculo"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[Fecha_Inicio]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].ExternalColumns[Fecha_Inicio]"
+                      length="50"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[Fecha_Inicio]"
+                      name="Fecha_Inicio"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[Fecha_Fin]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].ExternalColumns[Fecha_Fin]"
+                      length="50"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[Fecha_Fin]"
+                      name="Fecha_Fin"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[Id_Conductor]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].ExternalColumns[Id_Conductor]"
+                      length="100"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[Id_Conductor]"
+                      name="Id_Conductor"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[Nombre_Conductor]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].ExternalColumns[Nombre_Conductor]"
+                      length="100"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[Nombre_Conductor]"
+                      name="Nombre_Conductor"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[Odometro_Inicial]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].ExternalColumns[Odometro_Inicial]"
+                      length="200"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[Odometro_Inicial]"
+                      name="Odometro_Inicial"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[Odometro_Final]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].ExternalColumns[Odometro_Final]"
+                      length="200"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[Odometro_Final]"
+                      name="Odometro_Final"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[Tipo_Viaje]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].ExternalColumns[Tipo_Viaje]"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[Tipo_Viaje]"
+                      name="Tipo_Viaje"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[Exceso_Velocidad]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].ExternalColumns[Exceso_Velocidad]"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[Exceso_Velocidad]"
+                      name="Exceso_Velocidad"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[Duracion_Exceso_Velocidad]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].ExternalColumns[Duracion_Exceso_Velocidad]"
+                      length="50"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[Duracion_Exceso_Velocidad]"
+                      name="Duracion_Exceso_Velocidad"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[Ocurrencia_Exceso_Velocidad]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].ExternalColumns[Ocurrencia_Exceso_Velocidad]"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[Ocurrencia_Exceso_Velocidad]"
+                      name="Ocurrencia_Exceso_Velocidad"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[Horas_Motor_Inicial]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].ExternalColumns[Horas_Motor_Inicial]"
+                      length="100"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[Horas_Motor_Inicial]"
+                      name="Horas_Motor_Inicial"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[Horas_Motor_Final]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].ExternalColumns[Horas_Motor_Final]"
+                      length="100"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[Horas_Motor_Final]"
+                      name="Horas_Motor_Final"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[Tiempo_Inactividad]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].ExternalColumns[Tiempo_Inactividad]"
+                      length="100"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[Tiempo_Inactividad]"
+                      name="Tiempo_Inactividad"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[Ocurrencia_Tiempo_Inactividad]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].ExternalColumns[Ocurrencia_Tiempo_Inactividad]"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[Ocurrencia_Tiempo_Inactividad]"
+                      name="Ocurrencia_Tiempo_Inactividad"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[Velocidad_Superior]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].ExternalColumns[Velocidad_Superior]"
+                      length="100"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[Velocidad_Superior]"
+                      name="Velocidad_Superior"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[RPM_Superior]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].ExternalColumns[RPM_Superior]"
+                      length="100"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[RPM_Superior]"
+                      name="RPM_Superior"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[Duracion_Exceso_RPM]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].ExternalColumns[Duracion_Exceso_RPM]"
+                      length="100"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[Duracion_Exceso_RPM]"
+                      name="Duracion_Exceso_RPM"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[Combustible_Viaje]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].ExternalColumns[Combustible_Viaje]"
+                      length="100"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[Combustible_Viaje]"
+                      name="Combustible_Viaje"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[Combustible_Inactividad]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].ExternalColumns[Combustible_Inactividad]"
+                      length="50"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[Combustible_Inactividad]"
+                      name="Combustible_Inactividad"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[Ocurrencia_Aceleracion]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].ExternalColumns[Ocurrencia_Aceleracion]"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[Ocurrencia_Aceleracion]"
+                      name="Ocurrencia_Aceleracion"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[Ocurrencia_Desaceleracion]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].ExternalColumns[Ocurrencia_Desaceleracion]"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[Ocurrencia_Desaceleracion]"
+                      name="Ocurrencia_Desaceleracion"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[Ocurrencia_Aceleracion_Curva]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].ExternalColumns[Ocurrencia_Aceleracion_Curva]"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[Ocurrencia_Aceleracion_Curva]"
+                      name="Ocurrencia_Aceleracion_Curva"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[Longitud_Inicial]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].ExternalColumns[Longitud_Inicial]"
+                      length="100"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[Longitud_Inicial]"
+                      name="Longitud_Inicial"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[Latitud_Inicial]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].ExternalColumns[Latitud_Inicial]"
+                      length="100"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[Latitud_Inicial]"
+                      name="Latitud_Inicial"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[Ubicacion_Inicial]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].ExternalColumns[Ubicacion_Inicial]"
+                      length="100"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[Ubicacion_Inicial]"
+                      name="Ubicacion_Inicial"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[Longitud_Final]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].ExternalColumns[Longitud_Final]"
+                      length="100"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[Longitud_Final]"
+                      name="Longitud_Final"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[Latitud_Final]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].ExternalColumns[Latitud_Final]"
+                      length="100"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[Latitud_Final]"
+                      name="Latitud_Final"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[Ubicacion_Final]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].ExternalColumns[Ubicacion_Final]"
+                      length="100"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[Ubicacion_Final]"
+                      name="Ubicacion_Final"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[Velocidad_Promedio]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].ExternalColumns[Velocidad_Promedio]"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[Velocidad_Promedio]"
+                      name="Velocidad_Promedio"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[PDI_Fin_Viaje]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].ExternalColumns[PDI_Fin_Viaje]"
+                      length="100"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[PDI_Fin_Viaje]"
+                      name="PDI_Fin_Viaje"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[FechaEjecucion]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].ExternalColumns[FechaEjecucion]"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].Columns[FechaEjecucion]"
+                      name="FechaEjecucion"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].ExternalColumns[rowid]"
+                      dataType="i4"
+                      name="rowid" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].ExternalColumns[Id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Id" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].ExternalColumns[Id_Dispositivo]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Id_Dispositivo" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].ExternalColumns[Nombre_Vehiculo]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Nombre_Vehiculo" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].ExternalColumns[Placas_Vehiculo]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      name="Placas_Vehiculo" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].ExternalColumns[Fecha_Inicio]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Fecha_Inicio" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].ExternalColumns[Fecha_Fin]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Fecha_Fin" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].ExternalColumns[Id_Conductor]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Id_Conductor" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].ExternalColumns[Nombre_Conductor]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Nombre_Conductor" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].ExternalColumns[Odometro_Inicial]"
+                      codePage="1252"
+                      dataType="str"
+                      length="200"
+                      name="Odometro_Inicial" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].ExternalColumns[Odometro_Final]"
+                      codePage="1252"
+                      dataType="str"
+                      length="200"
+                      name="Odometro_Final" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].ExternalColumns[Tipo_Viaje]"
+                      dataType="i4"
+                      name="Tipo_Viaje" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].ExternalColumns[Exceso_Velocidad]"
+                      dataType="i4"
+                      name="Exceso_Velocidad" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].ExternalColumns[Duracion_Exceso_Velocidad]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Duracion_Exceso_Velocidad" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].ExternalColumns[Ocurrencia_Exceso_Velocidad]"
+                      dataType="i4"
+                      name="Ocurrencia_Exceso_Velocidad" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].ExternalColumns[Horas_Motor_Inicial]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Horas_Motor_Inicial" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].ExternalColumns[Horas_Motor_Final]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Horas_Motor_Final" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].ExternalColumns[Tiempo_Inactividad]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Tiempo_Inactividad" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].ExternalColumns[Ocurrencia_Tiempo_Inactividad]"
+                      dataType="i4"
+                      name="Ocurrencia_Tiempo_Inactividad" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].ExternalColumns[Velocidad_Superior]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Velocidad_Superior" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].ExternalColumns[RPM_Superior]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="RPM_Superior" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].ExternalColumns[Duracion_Exceso_RPM]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Duracion_Exceso_RPM" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].ExternalColumns[Combustible_Viaje]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Combustible_Viaje" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].ExternalColumns[Combustible_Inactividad]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Combustible_Inactividad" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].ExternalColumns[Ocurrencia_Aceleracion]"
+                      dataType="i4"
+                      name="Ocurrencia_Aceleracion" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].ExternalColumns[Ocurrencia_Desaceleracion]"
+                      dataType="i4"
+                      name="Ocurrencia_Desaceleracion" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].ExternalColumns[Ocurrencia_Aceleracion_Curva]"
+                      dataType="i4"
+                      name="Ocurrencia_Aceleracion_Curva" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].ExternalColumns[Longitud_Inicial]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Longitud_Inicial" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].ExternalColumns[Latitud_Inicial]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Latitud_Inicial" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].ExternalColumns[Ubicacion_Inicial]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Ubicacion_Inicial" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].ExternalColumns[Longitud_Final]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Longitud_Final" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].ExternalColumns[Latitud_Final]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Latitud_Final" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].ExternalColumns[Ubicacion_Final]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Ubicacion_Final" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].ExternalColumns[Velocidad_Promedio]"
+                      dataType="i4"
+                      name="Velocidad_Promedio" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].ExternalColumns[PDI_Fin_Viaje]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="PDI_Fin_Viaje" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output].ExternalColumns[FechaEjecucion]"
+                      dataType="dbTimeStamp"
+                      name="FechaEjecucion" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Error Output].Columns[rowid]"
+                      dataType="i4"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Error Output].Columns[rowid]"
+                      name="rowid" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Error Output].Columns[Id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Error Output].Columns[Id]"
+                      name="Id" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Error Output].Columns[Id_Dispositivo]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Error Output].Columns[Id_Dispositivo]"
+                      name="Id_Dispositivo" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Error Output].Columns[Nombre_Vehiculo]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Error Output].Columns[Nombre_Vehiculo]"
+                      name="Nombre_Vehiculo" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Error Output].Columns[Placas_Vehiculo]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Error Output].Columns[Placas_Vehiculo]"
+                      name="Placas_Vehiculo" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Error Output].Columns[Fecha_Inicio]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Error Output].Columns[Fecha_Inicio]"
+                      name="Fecha_Inicio" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Error Output].Columns[Fecha_Fin]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Error Output].Columns[Fecha_Fin]"
+                      name="Fecha_Fin" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Error Output].Columns[Id_Conductor]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Error Output].Columns[Id_Conductor]"
+                      name="Id_Conductor" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Error Output].Columns[Nombre_Conductor]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Error Output].Columns[Nombre_Conductor]"
+                      name="Nombre_Conductor" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Error Output].Columns[Odometro_Inicial]"
+                      codePage="1252"
+                      dataType="str"
+                      length="200"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Error Output].Columns[Odometro_Inicial]"
+                      name="Odometro_Inicial" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Error Output].Columns[Odometro_Final]"
+                      codePage="1252"
+                      dataType="str"
+                      length="200"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Error Output].Columns[Odometro_Final]"
+                      name="Odometro_Final" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Error Output].Columns[Tipo_Viaje]"
+                      dataType="i4"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Error Output].Columns[Tipo_Viaje]"
+                      name="Tipo_Viaje" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Error Output].Columns[Exceso_Velocidad]"
+                      dataType="i4"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Error Output].Columns[Exceso_Velocidad]"
+                      name="Exceso_Velocidad" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Error Output].Columns[Duracion_Exceso_Velocidad]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Error Output].Columns[Duracion_Exceso_Velocidad]"
+                      name="Duracion_Exceso_Velocidad" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Error Output].Columns[Ocurrencia_Exceso_Velocidad]"
+                      dataType="i4"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Error Output].Columns[Ocurrencia_Exceso_Velocidad]"
+                      name="Ocurrencia_Exceso_Velocidad" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Error Output].Columns[Horas_Motor_Inicial]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Error Output].Columns[Horas_Motor_Inicial]"
+                      name="Horas_Motor_Inicial" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Error Output].Columns[Horas_Motor_Final]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Error Output].Columns[Horas_Motor_Final]"
+                      name="Horas_Motor_Final" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Error Output].Columns[Tiempo_Inactividad]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Error Output].Columns[Tiempo_Inactividad]"
+                      name="Tiempo_Inactividad" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Error Output].Columns[Ocurrencia_Tiempo_Inactividad]"
+                      dataType="i4"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Error Output].Columns[Ocurrencia_Tiempo_Inactividad]"
+                      name="Ocurrencia_Tiempo_Inactividad" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Error Output].Columns[Velocidad_Superior]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Error Output].Columns[Velocidad_Superior]"
+                      name="Velocidad_Superior" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Error Output].Columns[RPM_Superior]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Error Output].Columns[RPM_Superior]"
+                      name="RPM_Superior" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Error Output].Columns[Duracion_Exceso_RPM]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Error Output].Columns[Duracion_Exceso_RPM]"
+                      name="Duracion_Exceso_RPM" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Error Output].Columns[Combustible_Viaje]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Error Output].Columns[Combustible_Viaje]"
+                      name="Combustible_Viaje" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Error Output].Columns[Combustible_Inactividad]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Error Output].Columns[Combustible_Inactividad]"
+                      name="Combustible_Inactividad" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Error Output].Columns[Ocurrencia_Aceleracion]"
+                      dataType="i4"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Error Output].Columns[Ocurrencia_Aceleracion]"
+                      name="Ocurrencia_Aceleracion" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Error Output].Columns[Ocurrencia_Desaceleracion]"
+                      dataType="i4"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Error Output].Columns[Ocurrencia_Desaceleracion]"
+                      name="Ocurrencia_Desaceleracion" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Error Output].Columns[Ocurrencia_Aceleracion_Curva]"
+                      dataType="i4"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Error Output].Columns[Ocurrencia_Aceleracion_Curva]"
+                      name="Ocurrencia_Aceleracion_Curva" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Error Output].Columns[Longitud_Inicial]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Error Output].Columns[Longitud_Inicial]"
+                      name="Longitud_Inicial" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Error Output].Columns[Latitud_Inicial]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Error Output].Columns[Latitud_Inicial]"
+                      name="Latitud_Inicial" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Error Output].Columns[Ubicacion_Inicial]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Error Output].Columns[Ubicacion_Inicial]"
+                      name="Ubicacion_Inicial" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Error Output].Columns[Longitud_Final]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Error Output].Columns[Longitud_Final]"
+                      name="Longitud_Final" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Error Output].Columns[Latitud_Final]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Error Output].Columns[Latitud_Final]"
+                      name="Latitud_Final" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Error Output].Columns[Ubicacion_Final]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Error Output].Columns[Ubicacion_Final]"
+                      name="Ubicacion_Final" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Error Output].Columns[Velocidad_Promedio]"
+                      dataType="i4"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Error Output].Columns[Velocidad_Promedio]"
+                      name="Velocidad_Promedio" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Error Output].Columns[PDI_Fin_Viaje]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Error Output].Columns[PDI_Fin_Viaje]"
+                      name="PDI_Fin_Viaje" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Error Output].Columns[FechaEjecucion]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Error Output].Columns[FechaEjecucion]"
+                      name="FechaEjecucion" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_003_Actualizar_Odometro"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="OLEDBS_Tb_Ituran_003_Actualizar_Odometro"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[Tb_Ituran_003_Actualizar_Odometro]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_003_Actualizar_Odometro.Connections[OleDbConnection]"
+                  connectionManagerID="{4632C0A1-E45F-4752-AF2F-EB57D4CFF5D6}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[REPOSITORIO_MTTO]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_003_Actualizar_Odometro.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_003_Actualizar_Odometro.Outputs[OLE DB Source Output].Columns[Rowid]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_003_Actualizar_Odometro.Outputs[OLE DB Source Output].ExternalColumns[Rowid]"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_003_Actualizar_Odometro.Outputs[OLE DB Source Output].Columns[Rowid]"
+                      name="Rowid"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_003_Actualizar_Odometro.Outputs[OLE DB Source Output].Columns[Placas_Vehiculo]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_003_Actualizar_Odometro.Outputs[OLE DB Source Output].ExternalColumns[Placas_Vehiculo]"
+                      length="10"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_003_Actualizar_Odometro.Outputs[OLE DB Source Output].Columns[Placas_Vehiculo]"
+                      name="Placas_Vehiculo"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_003_Actualizar_Odometro.Outputs[OLE DB Source Output].Columns[Fecha]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_003_Actualizar_Odometro.Outputs[OLE DB Source Output].ExternalColumns[Fecha]"
+                      length="50"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_003_Actualizar_Odometro.Outputs[OLE DB Source Output].Columns[Fecha]"
+                      name="Fecha"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_003_Actualizar_Odometro.Outputs[OLE DB Source Output].Columns[Odometro]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_003_Actualizar_Odometro.Outputs[OLE DB Source Output].ExternalColumns[Odometro]"
+                      length="200"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_003_Actualizar_Odometro.Outputs[OLE DB Source Output].Columns[Odometro]"
+                      name="Odometro"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_003_Actualizar_Odometro.Outputs[OLE DB Source Output].Columns[Comentario]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_003_Actualizar_Odometro.Outputs[OLE DB Source Output].ExternalColumns[Comentario]"
+                      length="200"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_003_Actualizar_Odometro.Outputs[OLE DB Source Output].Columns[Comentario]"
+                      name="Comentario"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_003_Actualizar_Odometro.Outputs[OLE DB Source Output].Columns[FechaEjecucion]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_003_Actualizar_Odometro.Outputs[OLE DB Source Output].ExternalColumns[FechaEjecucion]"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_003_Actualizar_Odometro.Outputs[OLE DB Source Output].Columns[FechaEjecucion]"
+                      name="FechaEjecucion"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_003_Actualizar_Odometro.Outputs[OLE DB Source Output].ExternalColumns[Rowid]"
+                      dataType="i4"
+                      name="Rowid" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_003_Actualizar_Odometro.Outputs[OLE DB Source Output].ExternalColumns[Placas_Vehiculo]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      name="Placas_Vehiculo" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_003_Actualizar_Odometro.Outputs[OLE DB Source Output].ExternalColumns[Fecha]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Fecha" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_003_Actualizar_Odometro.Outputs[OLE DB Source Output].ExternalColumns[Odometro]"
+                      codePage="1252"
+                      dataType="str"
+                      length="200"
+                      name="Odometro" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_003_Actualizar_Odometro.Outputs[OLE DB Source Output].ExternalColumns[Comentario]"
+                      codePage="1252"
+                      dataType="str"
+                      length="200"
+                      name="Comentario" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_003_Actualizar_Odometro.Outputs[OLE DB Source Output].ExternalColumns[FechaEjecucion]"
+                      dataType="dbTimeStamp"
+                      name="FechaEjecucion" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_003_Actualizar_Odometro.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_003_Actualizar_Odometro.Outputs[OLE DB Source Error Output].Columns[Rowid]"
+                      dataType="i4"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_003_Actualizar_Odometro.Outputs[OLE DB Source Error Output].Columns[Rowid]"
+                      name="Rowid" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_003_Actualizar_Odometro.Outputs[OLE DB Source Error Output].Columns[Placas_Vehiculo]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_003_Actualizar_Odometro.Outputs[OLE DB Source Error Output].Columns[Placas_Vehiculo]"
+                      name="Placas_Vehiculo" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_003_Actualizar_Odometro.Outputs[OLE DB Source Error Output].Columns[Fecha]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_003_Actualizar_Odometro.Outputs[OLE DB Source Error Output].Columns[Fecha]"
+                      name="Fecha" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_003_Actualizar_Odometro.Outputs[OLE DB Source Error Output].Columns[Odometro]"
+                      codePage="1252"
+                      dataType="str"
+                      length="200"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_003_Actualizar_Odometro.Outputs[OLE DB Source Error Output].Columns[Odometro]"
+                      name="Odometro" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_003_Actualizar_Odometro.Outputs[OLE DB Source Error Output].Columns[Comentario]"
+                      codePage="1252"
+                      dataType="str"
+                      length="200"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_003_Actualizar_Odometro.Outputs[OLE DB Source Error Output].Columns[Comentario]"
+                      name="Comentario" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_003_Actualizar_Odometro.Outputs[OLE DB Source Error Output].Columns[FechaEjecucion]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_003_Actualizar_Odometro.Outputs[OLE DB Source Error Output].Columns[FechaEjecucion]"
+                      name="FechaEjecucion" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_003_Actualizar_Odometro.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_003_Actualizar_Odometro.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_003_Actualizar_Odometro.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_003_Actualizar_Odometro.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\DFT_Insertar_Ituran.Paths[OLE DB Source Output]"
+              endId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_001_Carros.Inputs[OLE DB Destination Input]"
+              name="OLE DB Source Output"
+              startId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_001_Carros.Outputs[OLE DB Source Output]" />
+            <path
+              refId="Package\DFT_Insertar_Ituran.Paths[OLE DB Source Output1]"
+              endId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes.Inputs[OLE DB Destination Input]"
+              name="OLE DB Source Output"
+              startId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes.Outputs[OLE DB Source Output]" />
+            <path
+              refId="Package\DFT_Insertar_Ituran.Paths[OLE DB Source Output2]"
+              endId="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_003_Actualizar_Odometro.Inputs[OLE DB Destination Input]"
+              name="OLE DB Source Output"
+              startId="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_003_Actualizar_Odometro.Outputs[OLE DB Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--Esta sección CDATA contiene la información de diseño del paquete. Esta sección incluye información como, por ejemplo, las coordenadas (x,y), el ancho y el alto.-->
+<!--Si edita manualmente esta sección y comete un error, puede eliminarlo. -->
+<!--El paquete podrá cargarse normalmente, pero se perderá la información de diseño anterior y el diseñador reorganizará los elementos automáticamente en la superficie de diseño.-->
+<Objects
+  Version="8">
+  <!--Cada uno de los nodos siguientes contiene propiedades que no afectan al comportamiento en tiempo de ejecución.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="176,42.6666666666667"
+          Id="Package\DFT_Insertar_Ituran"
+          TopLeft="606.874990956858,32.1578953421347" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\DFT_Insertar_Ituran">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="236,42.6666666666667"
+          Id="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_001_Carros"
+          TopLeft="308.12499540858,24.6315794109968" />
+        <NodeLayout
+          Size="233.333333333334,42.6666666666667"
+          Id="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes"
+          TopLeft="596.874991105869,26.6842110285799" />
+        <NodeLayout
+          Size="304,42.6666666666667"
+          Id="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_003_Actualizar_Odometro"
+          TopLeft="884.374986821786,28.0526321069686" />
+        <NodeLayout
+          Size="236,42.6666666666667"
+          Id="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_001_Carros"
+          TopLeft="309.374995389953,106.736844114319" />
+        <EdgeLayout
+          Id="Package\DFT_Insertar_Ituran.Paths[OLE DB Source Output]"
+          TopLeft="426.749995399267,67.2982460776634">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,39.438598036656"
+              Start="0,0"
+              End="0,31.938598036656">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,31.938598036656" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="233.333333333334,42.6666666666667"
+          Id="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes"
+          TopLeft="598.124991087243,112.210528427874" />
+        <EdgeLayout
+          Id="Package\DFT_Insertar_Ituran.Paths[OLE DB Source Output1]"
+          TopLeft="714.166657763223,69.3508776952465">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,42.8596507326278"
+              Start="0,0"
+              End="0,35.3596507326278">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,35.3596507326278" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="305.333333333334,42.6666666666667"
+          Id="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_003_Actualizar_Odometro"
+          TopLeft="883.124986840412,116.31579166304" />
+        <EdgeLayout
+          Id="Package\DFT_Insertar_Ituran.Paths[OLE DB Source Output2]"
+          TopLeft="1036.08332016443,70.7192987736352">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,45.5964928894052"
+              Start="0,0"
+              End="0,38.0964928894052">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,38.0964928894052" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_001_Carros">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_003_Actualizar_Odometro">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_001_Carros">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_003_Actualizar_Odometro">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
 </DTS:Executable>

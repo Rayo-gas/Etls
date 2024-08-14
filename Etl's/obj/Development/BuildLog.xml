@@ -2,23 +2,38 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>Etl's</Name>
-    <LastWriteTime>2024-08-09T20:43:52.7955009Z</LastWriteTime>
+    <LastWriteTime>2024-08-13T20:13:01.271884Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
       <Name>Excel.dtsx</Name>
-      <LastWriteTime>2024-08-09T19:58:18.200491Z</LastWriteTime>
+      <LastWriteTime>2024-08-12T14:02:49.8928637Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>Siesa Crm.dtsx</Name>
-      <LastWriteTime>2024-08-09T20:43:52.7589884Z</LastWriteTime>
+      <LastWriteTime>2024-08-12T14:02:49.8941962Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>Siesa ERP.dtsx</Name>
-      <LastWriteTime>2024-08-09T21:05:29.3995677Z</LastWriteTime>
+      <LastWriteTime>2024-08-12T14:04:19.2515293Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>CloudFleet.dtsx</Name>
+      <LastWriteTime>2024-08-14T22:10:23.8060778Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>ituran.dtsx</Name>
+      <LastWriteTime>2024-08-13T20:58:28.1710712Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Terpel.dtsx</Name>
+      <LastWriteTime>2024-08-13T20:58:41.6911885Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>
