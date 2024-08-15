@@ -11,8 +11,8 @@
   DTS:LocaleID="9226"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="61"
-  DTS:VersionGUID="{B3645B86-D955-4C3B-94FC-43AABFA54C17}">
+  DTS:VersionBuild="62"
+  DTS:VersionGUID="{524CF125-B89B-4E60-A155-56157ECC4F76}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -20339,7 +20339,7 @@
           PanelSize="685.333333333334,300"
           Size="685.333333333334,342.666666666667"
           Id="Package\CS_CloudFleet"
-          TopLeft="324.999995157123,120.421054898207" />
+          TopLeft="233.749996516854,111.52631788868" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -21035,6 +21035,240 @@
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\CS_CloudFleet\DFT_Insertar_CloudFleet_Grupo_11_12\OLEDBD_Tb_CloudFleet_011_Trabajo_Subsystem">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\CS_CloudFleet\DFT_Insertar_CloudFleet_Grupo_11_12\OLEDBS_Tb_CloudFleet_012_Respuesto">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\CS_CloudFleet\DFT_Insertar_CloudFleet_Grupo_11_12\OLEDBS_Tb_CloudFleet_011_Trabajo_Invoice">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\CS_CloudFleet\DFT_Insertar_CloudFleet_Grupo_11_12\OLEDBS_Tb_CloudFleet_012_Respuesto_Vendor">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\CS_CloudFleet\DFT_Insertar_CloudFleet_Grupo_11_12\OLEDBD_Tb_CloudFleet_011_Trabajo_System">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\CS_CloudFleet\DFT_Insertar_CloudFleet_Grupo_11_12\OLEDBS_Tb_CloudFleet_011_Trabajo_MaintenanceType">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\CS_CloudFleet\DFT_Insertar_CloudFleet_Grupo_11_12\OLEDBD_Tb_CloudFleet_012_Respuesto_Invoice">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\CS_CloudFleet\DFT_Insertar_CloudFleet_Grupo_11_12\OLEDBS_Tb_CloudFleet_011_Trabajo_Vendor">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\CS_CloudFleet\DFT_Insertar_CloudFleet_Grupo_11_12\OLEDBD_Tb_CloudFleet_011_Trabajo_Vendor">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\CS_CloudFleet\DFT_Insertar_CloudFleet_Grupo_11_12\OLEDBS_Tb_CloudFleet_011_Trabajo_System">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\CS_CloudFleet\DFT_Insertar_CloudFleet_Grupo_11_12\OLEDBS_Tb_CloudFleet_011_Trabajo_Subsystem">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\CS_CloudFleet\DFT_Insertar_CloudFleet_Grupo_11_12\OLEDBD_Tb_CloudFleet_011_Trabajo_Invoice">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\CS_CloudFleet\DFT_Insertar_CloudFleet_Grupo_11_12\OLEDBD_Tb_CloudFleet_012_Respuesto_Vendor">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\CS_CloudFleet\DFT_Insertar_CloudFleet_Grupo_11_12\OLEDBS_Tb_CloudFleet_012_Respuesto_Invoice">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\CS_CloudFleet\DFT_Insertar_CloudFleet_Grupo_11_12\OLEDBD_Tb_CloudFleet_012_Respuesto">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\CS_CloudFleet\DFT_Insertar_CloudFleet_Grupo_11_12\OLEDBD_Tb_CloudFleet_011_Trabajo_MaintenanceType">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\CS_CloudFleet\DFT_Insertar_CloudFleet_Grupo_11_12\OLEDBS_Tb_CloudFleet_011_Trabajo">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\CS_CloudFleet\DFT_Insertar_CloudFleet_Grupo_11_12\OLEDBD_Tb_CloudFleet_011_Trabajo">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\CS_CloudFleet\DFT_Insertar_CloudFleet_Grupo_2">
     <LayoutInfo>
@@ -22404,7 +22638,7 @@
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\CS_CloudFleet\DFT_Insertar_CloudFleet_Grupo_4_10\OLEDBS_ Tb_CloudFleet_007_Driver">
+    design-time-name="Package\CS_CloudFleet\DFT_Insertar_CloudFleet_Grupo_4_10\OLEDBS_Tb_CloudFleet_010_Novedades_Responsible">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -22418,6 +22652,19 @@
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\CS_CloudFleet\DFT_Insertar_CloudFleet_Grupo_4_10\OLEDBD_Tb_CloudFleet_005_CostCenter">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\CS_CloudFleet\DFT_Insertar_CloudFleet_Grupo_4_10\OLEDBS_Tb_CloudFleet_009_Group2">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -22469,7 +22716,59 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
+    design-time-name="Package\CS_CloudFleet\DFT_Insertar_CloudFleet_Grupo_4_10\OLEDBS_Tb_CloudFleet_010_Novedades_AssociatedLabor">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
     design-time-name="Package\CS_CloudFleet\DFT_Insertar_CloudFleet_Grupo_4_10\OLEDBD_Tb_CloudFleet_010_Novedades">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\CS_CloudFleet\DFT_Insertar_CloudFleet_Grupo_4_10\OLEDBS_Tb_CloudFleet_005_CostCenter">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\CS_CloudFleet\DFT_Insertar_CloudFleet_Grupo_4_10\OLEDBS_Tb_CloudFleet_006_CreatedBy">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\CS_CloudFleet\DFT_Insertar_CloudFleet_Grupo_4_10\OLEDBS_Tb_CloudFleet_008_Group1">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -22495,32 +22794,6 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\CS_CloudFleet\DFT_Insertar_CloudFleet_Grupo_4_10\OLEDBS_Tb_CloudFleet_010_Novedades_Reporter">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\CS_CloudFleet\DFT_Insertar_CloudFleet_Grupo_4_10\OLEDBS_Tb_CloudFleet_009_Group2">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
     design-time-name="Package\CS_CloudFleet\DFT_Insertar_CloudFleet_Grupo_4_10\OLEDBD_Tb_CloudFleet_010_Novedades_Responsible">
     <Properties>
       <Property>
@@ -22534,7 +22807,7 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\CS_CloudFleet\DFT_Insertar_CloudFleet_Grupo_4_10\OLEDBS_Tb_CloudFleet_010_Novedades_AssociatedLabor">
+    design-time-name="Package\CS_CloudFleet\DFT_Insertar_CloudFleet_Grupo_4_10\OLEDBS_Tb_CloudFleet_010_Novedades_Reporter">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -22573,46 +22846,7 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\CS_CloudFleet\DFT_Insertar_CloudFleet_Grupo_4_10\OLEDBS_Tb_CloudFleet_008_Group1">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\CS_CloudFleet\DFT_Insertar_CloudFleet_Grupo_4_10\OLEDBS_Tb_CloudFleet_006_CreatedBy">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\CS_CloudFleet\DFT_Insertar_CloudFleet_Grupo_4_10\OLEDBS_Tb_CloudFleet_005_CostCenter">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\CS_CloudFleet\DFT_Insertar_CloudFleet_Grupo_4_10\OLEDBS_Tb_CloudFleet_010_Novedades_Responsible">
+    design-time-name="Package\CS_CloudFleet\DFT_Insertar_CloudFleet_Grupo_4_10\OLEDBS_ Tb_CloudFleet_007_Driver">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -22652,240 +22886,6 @@
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\CS_CloudFleet\DFT_Insertar_CloudFleet_Grupo_4_10\OLEDBD_Tb_CloudFleet_004_City">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\CS_CloudFleet\DFT_Insertar_CloudFleet_Grupo_11_12\OLEDBS_Tb_CloudFleet_011_Trabajo">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\CS_CloudFleet\DFT_Insertar_CloudFleet_Grupo_11_12\OLEDBS_Tb_CloudFleet_011_Trabajo_Invoice">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\CS_CloudFleet\DFT_Insertar_CloudFleet_Grupo_11_12\OLEDBS_Tb_CloudFleet_011_Trabajo_MaintenanceType">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\CS_CloudFleet\DFT_Insertar_CloudFleet_Grupo_11_12\OLEDBS_Tb_CloudFleet_011_Trabajo_Subsystem">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\CS_CloudFleet\DFT_Insertar_CloudFleet_Grupo_11_12\OLEDBS_Tb_CloudFleet_011_Trabajo_System">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\CS_CloudFleet\DFT_Insertar_CloudFleet_Grupo_11_12\OLEDBS_Tb_CloudFleet_011_Trabajo_Vendor">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\CS_CloudFleet\DFT_Insertar_CloudFleet_Grupo_11_12\OLEDBS_Tb_CloudFleet_012_Respuesto">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\CS_CloudFleet\DFT_Insertar_CloudFleet_Grupo_11_12\OLEDBS_Tb_CloudFleet_012_Respuesto_Invoice">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\CS_CloudFleet\DFT_Insertar_CloudFleet_Grupo_11_12\OLEDBS_Tb_CloudFleet_012_Respuesto_Vendor">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\CS_CloudFleet\DFT_Insertar_CloudFleet_Grupo_11_12\OLEDBD_Tb_CloudFleet_011_Trabajo">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\CS_CloudFleet\DFT_Insertar_CloudFleet_Grupo_11_12\OLEDBD_Tb_CloudFleet_011_Trabajo_Invoice">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\CS_CloudFleet\DFT_Insertar_CloudFleet_Grupo_11_12\OLEDBD_Tb_CloudFleet_011_Trabajo_MaintenanceType">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\CS_CloudFleet\DFT_Insertar_CloudFleet_Grupo_11_12\OLEDBD_Tb_CloudFleet_011_Trabajo_Subsystem">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\CS_CloudFleet\DFT_Insertar_CloudFleet_Grupo_11_12\OLEDBD_Tb_CloudFleet_011_Trabajo_System">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\CS_CloudFleet\DFT_Insertar_CloudFleet_Grupo_11_12\OLEDBD_Tb_CloudFleet_011_Trabajo_Vendor">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\CS_CloudFleet\DFT_Insertar_CloudFleet_Grupo_11_12\OLEDBD_Tb_CloudFleet_012_Respuesto">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\CS_CloudFleet\DFT_Insertar_CloudFleet_Grupo_11_12\OLEDBD_Tb_CloudFleet_012_Respuesto_Invoice">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\CS_CloudFleet\DFT_Insertar_CloudFleet_Grupo_11_12\OLEDBD_Tb_CloudFleet_012_Respuesto_Vendor">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>

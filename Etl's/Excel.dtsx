@@ -11,8 +11,8 @@
   DTS:LocaleID="9226"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="216"
-  DTS:VersionGUID="{CA007BD1-DC03-405B-BDF4-D2F103AA3BC8}">
+  DTS:VersionBuild="217"
+  DTS:VersionGUID="{99B99032-AFDF-4541-ACCA-EC62A359BD16}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -6895,7 +6895,7 @@
           Id="Package\DFT_Carga_LineasRayogas"
           TopLeft="197.5,126" />
         <NodeLayout
-          Size="158,42"
+          Size="170.666666666667,42"
           Id="Package\TESQL_Truncate"
           TopLeft="222,37" />
         <EdgeLayout
@@ -6922,7 +6922,7 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción 1]"
-          TopLeft="300.75,79">
+          TopLeft="303.916666666667,79">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
