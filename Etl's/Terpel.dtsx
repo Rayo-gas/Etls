@@ -11,10 +11,24 @@
   DTS:LocaleID="9226"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="3"
-  DTS:VersionGUID="{29F23384-37CE-4DBB-824E-820C5D3C4EE4}">
+  DTS:VersionBuild="4"
+  DTS:VersionGUID="{2DDF0B2F-A149-4D68-8852-C3B2CA66313C}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[localhost]"
+      DTS:CreationName="MSOLAP100"
+      DTS:DTSID="{A7001C0C-0FE7-4225-AFE8-D38375CFE777}"
+      DTS:ObjectName="localhost">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Data Source=localhost;PROVIDER=MSOLAP;Impersonation Level=Impersonate;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
   <DTS:Variables />
   <DTS:Executables>
     <DTS:Executable
@@ -1305,14 +1319,14 @@
           <paths>
             <path
               refId="Package\DFT_Insertar_Terpel.Paths[OLE DB Source Output]"
-              endId="Package\DFT_Insertar_Terpel\OLEDBD_Tb_Terpel_001_Token.Inputs[OLE DB Destination Input]"
-              name="OLE DB Source Output"
-              startId="Package\DFT_Insertar_Terpel\OLEDBS_Tb_Terpel_001_Token.Outputs[OLE DB Source Output]" />
-            <path
-              refId="Package\DFT_Insertar_Terpel.Paths[OLE DB Source Output1]"
               endId="Package\DFT_Insertar_Terpel\OLEDBD_Tb_Terpel_002_Ventas.Inputs[OLE DB Destination Input]"
               name="OLE DB Source Output"
               startId="Package\DFT_Insertar_Terpel\OLEDBS_Tb_Terpel_002_Ventas.Outputs[OLE DB Source Output]" />
+            <path
+              refId="Package\DFT_Insertar_Terpel.Paths[OLE DB Source Output1]"
+              endId="Package\DFT_Insertar_Terpel\OLEDBD_Tb_Terpel_001_Token.Inputs[OLE DB Destination Input]"
+              name="OLE DB Source Output"
+              startId="Package\DFT_Insertar_Terpel\OLEDBS_Tb_Terpel_001_Token.Outputs[OLE DB Source Output]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -1343,45 +1357,23 @@
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
+          Size="241.333333333334,42.6666666666667"
+          Id="Package\DFT_Insertar_Terpel\OLEDBD_Tb_Terpel_002_Ventas"
+          TopLeft="611.249990891665,122.47368651579" />
+        <NodeLayout
           Size="237.333333333334,42.6666666666667"
           Id="Package\DFT_Insertar_Terpel\OLEDBS_Tb_Terpel_001_Token"
           TopLeft="289.374995687977,27.3684215677742" />
+        <NodeLayout
+          Size="240,42.6666666666667"
+          Id="Package\DFT_Insertar_Terpel\OLEDBS_Tb_Terpel_002_Ventas"
+          TopLeft="607.499990947545,22.5789477934138" />
         <NodeLayout
           Size="237.333333333334,42.6666666666667"
           Id="Package\DFT_Insertar_Terpel\OLEDBD_Tb_Terpel_001_Token"
           TopLeft="282.499995790422,122.47368651579" />
         <EdgeLayout
           Id="Package\DFT_Insertar_Terpel.Paths[OLE DB Source Output]"
-          TopLeft="404.604162405866,70.0350882344409">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,52.4385982813487"
-              Start="0,0"
-              End="0,44.9385982813487">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,44.9385982813487" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="240,42.6666666666667"
-          Id="Package\DFT_Insertar_Terpel\OLEDBS_Tb_Terpel_002_Ventas"
-          TopLeft="607.499990947545,22.5789477934138" />
-        <NodeLayout
-          Size="241.333333333334,42.6666666666667"
-          Id="Package\DFT_Insertar_Terpel\OLEDBD_Tb_Terpel_002_Ventas"
-          TopLeft="611.249990891665,122.47368651579" />
-        <EdgeLayout
-          Id="Package\DFT_Insertar_Terpel.Paths[OLE DB Source Output1]"
           TopLeft="729.708324252938,65.2456144600804">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -1394,6 +1386,28 @@
                   Capacity="5">
                   <mssgle:LineSegment
                     End="0,49.7280720557092" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\DFT_Insertar_Terpel.Paths[OLE DB Source Output1]"
+          TopLeft="404.604162405866,70.0350882344409">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,52.4385982813487"
+              Start="0,0"
+              End="0,44.9385982813487">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,44.9385982813487" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1457,5 +1471,9 @@
       </Property>
     </Properties>
   </PipelineComponentMetadata>
+  <ConnectionManager
+    design-time-name="Package.ConnectionManagers[localhost]">
+    <ProjectReferenceName></ProjectReferenceName>
+  </ConnectionManager>
 </Objects>]]></DTS:DesignTimeProperties>
 </DTS:Executable>
