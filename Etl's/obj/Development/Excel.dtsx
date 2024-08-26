@@ -11,8 +11,8 @@
   DTS:LocaleID="9226"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="239"
-  DTS:VersionGUID="{8CE068C3-A759-4F8D-8B04-7D414562B63F}">
+  DTS:VersionBuild="247"
+  DTS:VersionGUID="{63692972-44B2-4EAF-A242-C2A5D8ED3322}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -40,6 +40,18 @@
           DTS:ConnectRetryCount="0"
           DTS:ConnectRetryInterval="0"
           DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=D:\Rayogas\Sistemas de Información - Estrategia de Datos\7. Fuentes de Información\Xls\TI\Consumo claro\Lineas RAyogas.xls;Extended Properties=&quot;EXCEL 8.0;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[MesaAyuda]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{08030703-E7CA-45F3-BE1E-B64DF1C10AEF}"
+      DTS:ObjectName="MesaAyuda">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=D:\Rayogas\Sistemas de Información - Estrategia de Datos\7. Fuentes de Información\Xls\TI\Mesa de ayuda\Service desk.xls;Extended Properties=&quot;EXCEL 8.0;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -8874,6 +8886,455 @@
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
+      DTS:refId="Package\DFT_MesaAyuda"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{A910313C-009D-4F6E-B04F-5043C294490D}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="DFT_MesaAyuda"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\DFT_MesaAyuda\ES_MesaAyuda"
+              componentClassID="Microsoft.ExcelSource"
+              contactInfo="Excel Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Excel Source"
+              name="ES_MesaAyuda"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">Hoja1$</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mapping from parameters in the SQL command to variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\DFT_MesaAyuda\ES_MesaAyuda.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[MesaAyuda]"
+                  connectionManagerRefId="Package.ConnectionManagers[MesaAyuda]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\DFT_MesaAyuda\ES_MesaAyuda.Outputs[Excel Source Output]"
+                  name="Excel Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DFT_MesaAyuda\ES_MesaAyuda.Outputs[Excel Source Output].Columns[Categoría]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_MesaAyuda\ES_MesaAyuda.Outputs[Excel Source Output].ExternalColumns[Categoría]"
+                      length="255"
+                      lineageId="Package\DFT_MesaAyuda\ES_MesaAyuda.Outputs[Excel Source Output].Columns[Categoría]"
+                      name="Categoría"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_MesaAyuda\ES_MesaAyuda.Outputs[Excel Source Output].Columns[Hora de creación]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_MesaAyuda\ES_MesaAyuda.Outputs[Excel Source Output].ExternalColumns[Hora de creación]"
+                      length="255"
+                      lineageId="Package\DFT_MesaAyuda\ES_MesaAyuda.Outputs[Excel Source Output].Columns[Hora de creación]"
+                      name="Hora de creación"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_MesaAyuda\ES_MesaAyuda.Outputs[Excel Source Output].Columns[ID de la solicitud]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_MesaAyuda\ES_MesaAyuda.Outputs[Excel Source Output].ExternalColumns[ID de la solicitud]"
+                      length="255"
+                      lineageId="Package\DFT_MesaAyuda\ES_MesaAyuda.Outputs[Excel Source Output].Columns[ID de la solicitud]"
+                      name="ID de la solicitud"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_MesaAyuda\ES_MesaAyuda.Outputs[Excel Source Output].Columns[Solicitante]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_MesaAyuda\ES_MesaAyuda.Outputs[Excel Source Output].ExternalColumns[Solicitante]"
+                      length="255"
+                      lineageId="Package\DFT_MesaAyuda\ES_MesaAyuda.Outputs[Excel Source Output].Columns[Solicitante]"
+                      name="Solicitante"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_MesaAyuda\ES_MesaAyuda.Outputs[Excel Source Output].Columns[Técnico]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_MesaAyuda\ES_MesaAyuda.Outputs[Excel Source Output].ExternalColumns[Técnico]"
+                      length="255"
+                      lineageId="Package\DFT_MesaAyuda\ES_MesaAyuda.Outputs[Excel Source Output].Columns[Técnico]"
+                      name="Técnico"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_MesaAyuda\ES_MesaAyuda.Outputs[Excel Source Output].Columns[Subcategoría]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_MesaAyuda\ES_MesaAyuda.Outputs[Excel Source Output].ExternalColumns[Subcategoría]"
+                      length="255"
+                      lineageId="Package\DFT_MesaAyuda\ES_MesaAyuda.Outputs[Excel Source Output].Columns[Subcategoría]"
+                      name="Subcategoría"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_MesaAyuda\ES_MesaAyuda.Outputs[Excel Source Output].Columns[Modo de solicitud]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_MesaAyuda\ES_MesaAyuda.Outputs[Excel Source Output].ExternalColumns[Modo de solicitud]"
+                      length="255"
+                      lineageId="Package\DFT_MesaAyuda\ES_MesaAyuda.Outputs[Excel Source Output].Columns[Modo de solicitud]"
+                      name="Modo de solicitud"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\DFT_MesaAyuda\ES_MesaAyuda.Outputs[Excel Source Output].ExternalColumns[F1]"
+                      dataType="wstr"
+                      length="255"
+                      name="F1" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_MesaAyuda\ES_MesaAyuda.Outputs[Excel Source Output].ExternalColumns[Categoría]"
+                      dataType="wstr"
+                      length="255"
+                      name="Categoría" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_MesaAyuda\ES_MesaAyuda.Outputs[Excel Source Output].ExternalColumns[Hora de creación]"
+                      dataType="wstr"
+                      length="255"
+                      name="Hora de creación" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_MesaAyuda\ES_MesaAyuda.Outputs[Excel Source Output].ExternalColumns[ID de la solicitud]"
+                      dataType="wstr"
+                      length="255"
+                      name="ID de la solicitud" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_MesaAyuda\ES_MesaAyuda.Outputs[Excel Source Output].ExternalColumns[Solicitante]"
+                      dataType="wstr"
+                      length="255"
+                      name="Solicitante" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_MesaAyuda\ES_MesaAyuda.Outputs[Excel Source Output].ExternalColumns[Técnico]"
+                      dataType="wstr"
+                      length="255"
+                      name="Técnico" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_MesaAyuda\ES_MesaAyuda.Outputs[Excel Source Output].ExternalColumns[Subcategoría]"
+                      dataType="wstr"
+                      length="255"
+                      name="Subcategoría" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_MesaAyuda\ES_MesaAyuda.Outputs[Excel Source Output].ExternalColumns[Modo de solicitud]"
+                      dataType="wstr"
+                      length="255"
+                      name="Modo de solicitud" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_MesaAyuda\ES_MesaAyuda.Outputs[Excel Source Output].ExternalColumns[F9]"
+                      dataType="wstr"
+                      length="255"
+                      name="F9" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\DFT_MesaAyuda\ES_MesaAyuda.Outputs[Excel Source Error Output]"
+                  isErrorOut="true"
+                  name="Excel Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DFT_MesaAyuda\ES_MesaAyuda.Outputs[Excel Source Error Output].Columns[Categoría]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\DFT_MesaAyuda\ES_MesaAyuda.Outputs[Excel Source Error Output].Columns[Categoría]"
+                      name="Categoría" />
+                    <outputColumn
+                      refId="Package\DFT_MesaAyuda\ES_MesaAyuda.Outputs[Excel Source Error Output].Columns[Hora de creación]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\DFT_MesaAyuda\ES_MesaAyuda.Outputs[Excel Source Error Output].Columns[Hora de creación]"
+                      name="Hora de creación" />
+                    <outputColumn
+                      refId="Package\DFT_MesaAyuda\ES_MesaAyuda.Outputs[Excel Source Error Output].Columns[ID de la solicitud]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\DFT_MesaAyuda\ES_MesaAyuda.Outputs[Excel Source Error Output].Columns[ID de la solicitud]"
+                      name="ID de la solicitud" />
+                    <outputColumn
+                      refId="Package\DFT_MesaAyuda\ES_MesaAyuda.Outputs[Excel Source Error Output].Columns[Solicitante]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\DFT_MesaAyuda\ES_MesaAyuda.Outputs[Excel Source Error Output].Columns[Solicitante]"
+                      name="Solicitante" />
+                    <outputColumn
+                      refId="Package\DFT_MesaAyuda\ES_MesaAyuda.Outputs[Excel Source Error Output].Columns[Técnico]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\DFT_MesaAyuda\ES_MesaAyuda.Outputs[Excel Source Error Output].Columns[Técnico]"
+                      name="Técnico" />
+                    <outputColumn
+                      refId="Package\DFT_MesaAyuda\ES_MesaAyuda.Outputs[Excel Source Error Output].Columns[Subcategoría]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\DFT_MesaAyuda\ES_MesaAyuda.Outputs[Excel Source Error Output].Columns[Subcategoría]"
+                      name="Subcategoría" />
+                    <outputColumn
+                      refId="Package\DFT_MesaAyuda\ES_MesaAyuda.Outputs[Excel Source Error Output].Columns[Modo de solicitud]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\DFT_MesaAyuda\ES_MesaAyuda.Outputs[Excel Source Error Output].Columns[Modo de solicitud]"
+                      name="Modo de solicitud" />
+                    <outputColumn
+                      refId="Package\DFT_MesaAyuda\ES_MesaAyuda.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\DFT_MesaAyuda\ES_MesaAyuda.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\DFT_MesaAyuda\ES_MesaAyuda.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\DFT_MesaAyuda\ES_MesaAyuda.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\DFT_MesaAyuda\OLEDBD_MesaAyuda"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLEDBD_MesaAyuda"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[xls].[MesaAyuda]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\DFT_MesaAyuda\OLEDBD_MesaAyuda.Connections[OleDbConnection]"
+                  connectionManagerID="{F969E5F0-ED10-48A1-9AD7-51F9863F78B9}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[DataStage]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\DFT_MesaAyuda\OLEDBD_MesaAyuda.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\DFT_MesaAyuda\OLEDBD_MesaAyuda.Inputs[OLE DB Destination Input].Columns[Categoría]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Categoría"
+                      externalMetadataColumnId="Package\DFT_MesaAyuda\OLEDBD_MesaAyuda.Inputs[OLE DB Destination Input].ExternalColumns[Categoría]"
+                      lineageId="Package\DFT_MesaAyuda\ES_MesaAyuda.Outputs[Excel Source Output].Columns[Categoría]" />
+                    <inputColumn
+                      refId="Package\DFT_MesaAyuda\OLEDBD_MesaAyuda.Inputs[OLE DB Destination Input].Columns[Solicitante]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Solicitante"
+                      externalMetadataColumnId="Package\DFT_MesaAyuda\OLEDBD_MesaAyuda.Inputs[OLE DB Destination Input].ExternalColumns[Solicitante]"
+                      lineageId="Package\DFT_MesaAyuda\ES_MesaAyuda.Outputs[Excel Source Output].Columns[Solicitante]" />
+                    <inputColumn
+                      refId="Package\DFT_MesaAyuda\OLEDBD_MesaAyuda.Inputs[OLE DB Destination Input].Columns[Técnico]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Técnico"
+                      externalMetadataColumnId="Package\DFT_MesaAyuda\OLEDBD_MesaAyuda.Inputs[OLE DB Destination Input].ExternalColumns[Técnico]"
+                      lineageId="Package\DFT_MesaAyuda\ES_MesaAyuda.Outputs[Excel Source Output].Columns[Técnico]" />
+                    <inputColumn
+                      refId="Package\DFT_MesaAyuda\OLEDBD_MesaAyuda.Inputs[OLE DB Destination Input].Columns[Subcategoría]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Subcategoría"
+                      externalMetadataColumnId="Package\DFT_MesaAyuda\OLEDBD_MesaAyuda.Inputs[OLE DB Destination Input].ExternalColumns[Subcategoría]"
+                      lineageId="Package\DFT_MesaAyuda\ES_MesaAyuda.Outputs[Excel Source Output].Columns[Subcategoría]" />
+                    <inputColumn
+                      refId="Package\DFT_MesaAyuda\OLEDBD_MesaAyuda.Inputs[OLE DB Destination Input].Columns[Hora de creación]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Hora de creación"
+                      externalMetadataColumnId="Package\DFT_MesaAyuda\OLEDBD_MesaAyuda.Inputs[OLE DB Destination Input].ExternalColumns[HoraCreación]"
+                      lineageId="Package\DFT_MesaAyuda\ES_MesaAyuda.Outputs[Excel Source Output].Columns[Hora de creación]" />
+                    <inputColumn
+                      refId="Package\DFT_MesaAyuda\OLEDBD_MesaAyuda.Inputs[OLE DB Destination Input].Columns[ID de la solicitud]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="ID de la solicitud"
+                      externalMetadataColumnId="Package\DFT_MesaAyuda\OLEDBD_MesaAyuda.Inputs[OLE DB Destination Input].ExternalColumns[IdSolicitud]"
+                      lineageId="Package\DFT_MesaAyuda\ES_MesaAyuda.Outputs[Excel Source Output].Columns[ID de la solicitud]" />
+                    <inputColumn
+                      refId="Package\DFT_MesaAyuda\OLEDBD_MesaAyuda.Inputs[OLE DB Destination Input].Columns[Modo de solicitud]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Modo de solicitud"
+                      externalMetadataColumnId="Package\DFT_MesaAyuda\OLEDBD_MesaAyuda.Inputs[OLE DB Destination Input].ExternalColumns[ModoSolicitud]"
+                      lineageId="Package\DFT_MesaAyuda\ES_MesaAyuda.Outputs[Excel Source Output].Columns[Modo de solicitud]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\DFT_MesaAyuda\OLEDBD_MesaAyuda.Inputs[OLE DB Destination Input].ExternalColumns[Categoría]"
+                      dataType="wstr"
+                      length="255"
+                      name="Categoría" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_MesaAyuda\OLEDBD_MesaAyuda.Inputs[OLE DB Destination Input].ExternalColumns[Solicitante]"
+                      dataType="wstr"
+                      length="255"
+                      name="Solicitante" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_MesaAyuda\OLEDBD_MesaAyuda.Inputs[OLE DB Destination Input].ExternalColumns[Técnico]"
+                      dataType="wstr"
+                      length="255"
+                      name="Técnico" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_MesaAyuda\OLEDBD_MesaAyuda.Inputs[OLE DB Destination Input].ExternalColumns[Subcategoría]"
+                      dataType="wstr"
+                      length="255"
+                      name="Subcategoría" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_MesaAyuda\OLEDBD_MesaAyuda.Inputs[OLE DB Destination Input].ExternalColumns[HoraCreación]"
+                      dataType="wstr"
+                      length="255"
+                      name="HoraCreación" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_MesaAyuda\OLEDBD_MesaAyuda.Inputs[OLE DB Destination Input].ExternalColumns[IdSolicitud]"
+                      dataType="wstr"
+                      length="255"
+                      name="IdSolicitud" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_MesaAyuda\OLEDBD_MesaAyuda.Inputs[OLE DB Destination Input].ExternalColumns[ModoSolicitud]"
+                      dataType="wstr"
+                      length="255"
+                      name="ModoSolicitud" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\DFT_MesaAyuda\OLEDBD_MesaAyuda.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\DFT_MesaAyuda\OLEDBD_MesaAyuda.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DFT_MesaAyuda\OLEDBD_MesaAyuda.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\DFT_MesaAyuda\OLEDBD_MesaAyuda.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\DFT_MesaAyuda\OLEDBD_MesaAyuda.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\DFT_MesaAyuda\OLEDBD_MesaAyuda.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\DFT_MesaAyuda.Paths[Excel Source Output]"
+              endId="Package\DFT_MesaAyuda\OLEDBD_MesaAyuda.Inputs[OLE DB Destination Input]"
+              name="Excel Source Output"
+              startId="Package\DFT_MesaAyuda\ES_MesaAyuda.Outputs[Excel Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
       DTS:refId="Package\TESQL_Truncate"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Tarea Ejecutar SQL"
@@ -8948,6 +9409,14 @@
       DTS:LogicalAnd="True"
       DTS:ObjectName="Restricción 5"
       DTS:To="Package\DFT_Carga_PresupuestosPorVendedor" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción 6]"
+      DTS:CreationName=""
+      DTS:DTSID="{A9C61477-3B1F-4FCE-8E77-C6A373887720}"
+      DTS:From="Package\DFT_Carga_PresupuestosPorVendedor"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción 6"
+      DTS:To="Package\DFT_MesaAyuda" />
   </DTS:PrecedenceConstraints>
   <DTS:EventHandlers>
     <DTS:EventHandler
@@ -9024,7 +9493,7 @@
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="224,121.333333333334"
+          PanelSize="224,122"
           Size="224,164.666666666667"
           Id="Package\CBF_Wizeo"
           TopLeft="1050.99999091029,208.5" />
@@ -9033,9 +9502,17 @@
           Id="Package\DFT_Carga_LineasRayogas"
           TopLeft="543.624990938232,135.578947548721" />
         <NodeLayout
+          Size="269.333333333334,42.6666666666667"
+          Id="Package\DFT_Carga_PresupuestosPorVendedor"
+          TopLeft="543.124991906806,468.684219348134" />
+        <NodeLayout
           Size="172,42.6666666666667"
           Id="Package\DFT_Carga_Terpel"
           TopLeft="852.374983394519,466.631587730551" />
+        <NodeLayout
+          Size="162.666666666667,42.6666666666667"
+          Id="Package\DFT_MesaAyuda"
+          TopLeft="574.374991441146,561.736852678566" />
         <NodeLayout
           Size="170.666666666667,42"
           Id="Package\TESQL_Truncate"
@@ -9172,24 +9649,54 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="269.333333333334,42.6666666666667"
-          Id="Package\DFT_Carga_PresupuestosPorVendedor"
-          TopLeft="543.749991897493,466.631587730551" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción 5]"
-          TopLeft="852.374983394519,487.964921063884">
+          TopLeft="852.374983394519,488.991236872676">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-39.2916581636921,0"
+              EndConnector="-39.9166581543793,0"
               Start="0,0"
-              End="-31.7916581636921,0">
+              End="-32.4166581543793,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="-31.7916581636921,0" />
+                    End="-32.4166581543793,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción 6]"
+          TopLeft="677.791658573473,511.350886014801">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-22.0833337989936,50.3859666637653"
+              Start="0,0"
+              End="-22.0833337989936,42.8859666637653">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,21.1929833318826" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,21.1929833318826"
+                    Point2="0,25.1929833318826"
+                    Point3="-4,25.1929833318826" />
+                  <mssgle:LineSegment
+                    End="-18.0833337989936,25.1929833318826" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-18.0833337989936,25.1929833318826"
+                    Point2="-22.0833337989936,25.1929833318826"
+                    Point3="-22.0833337989936,29.1929833318826" />
+                  <mssgle:LineSegment
+                    End="-22.0833337989936,42.8859666637653" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -9205,7 +9712,7 @@
     design-time-name="Package\CBF_CLaro_Datos_Excel\DFT_Carga_Archivo_datos">
     <LayoutInfo>
       <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="134,42"
           Id="Package\CBF_CLaro_Datos_Excel\DFT_Carga_Archivo_datos\CD_Periodo"
@@ -9245,7 +9752,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -9267,7 +9776,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -9289,7 +9800,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -9311,7 +9824,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -9347,7 +9862,7 @@
     design-time-name="Package\CBF_CLaro_Voz_Excel\DFT_Carga_Archivo_Voz">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="156,42"
           Id="Package\CBF_CLaro_Voz_Excel\DFT_Carga_Archivo_Voz\OE_ClaroVoz"
@@ -9383,7 +9898,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -9405,7 +9922,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -9427,7 +9946,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -9450,7 +9971,7 @@
     design-time-name="Package\CBF_Subsidios\DFT_Carga_Subsidios">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="148,42.6666666666667"
           Id="Package\CBF_Subsidios\DFT_Carga_Subsidios\OE_Subsidios"
@@ -9482,7 +10003,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -9504,7 +10027,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -9527,7 +10052,7 @@
     design-time-name="Package\CBF_Wizeo\DFT_Carga_Wizeo">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="126.666666666667,42"
           Id="Package\CBF_Wizeo\DFT_Carga_Wizeo\OE_Wizeo"
@@ -9559,7 +10084,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -9581,7 +10108,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -9604,7 +10133,7 @@
     design-time-name="Package\DFT_Carga_LineasRayogas">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="128,42"
           Id="Package\DFT_Carga_LineasRayogas\OE_Lineas"
@@ -9636,7 +10165,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -9658,7 +10189,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -9678,18 +10211,112 @@
     </Properties>
   </PipelineComponentMetadata>
   <TaskHost
+    design-time-name="Package\DFT_Carga_PresupuestosPorVendedor">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="264,42.6666666666667"
+          Id="Package\DFT_Carga_PresupuestosPorVendedor\OE_Carga_PresupuestosPorVendedor"
+          TopLeft="1223,89" />
+        <NodeLayout
+          Size="232,42.6666666666667"
+          Id="Package\DFT_Carga_PresupuestosPorVendedor\DC_ PresupuestosPorVendedor"
+          TopLeft="1238,191.666666666667" />
+        <NodeLayout
+          Size="260,42.6666666666667"
+          Id="Package\DFT_Carga_PresupuestosPorVendedor\DOLEDB_ PresupuestosPorVendedor"
+          TopLeft="1223,280.666666666667" />
+        <EdgeLayout
+          Id="Package\DFT_Carga_PresupuestosPorVendedor.Paths[Excel Source Output]"
+          TopLeft="1354.5,131.666666666667">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\DFT_Carga_PresupuestosPorVendedor.Paths[Salida de conversión de datos]"
+          TopLeft="1353.5,234.333333333333">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,46.3333333333333"
+              Start="0,0"
+              End="0,38.8333333333333">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,38.8333333333333" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\DFT_Carga_PresupuestosPorVendedor\OE_Carga_PresupuestosPorVendedor">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DFT_Carga_PresupuestosPorVendedor\DOLEDB_ PresupuestosPorVendedor">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
     design-time-name="Package\DFT_Carga_Terpel">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="131.333333333334,42.6666666666667"
-          Id="Package\DFT_Carga_Terpel\OE_Terpel"
-          TopLeft="1103.00000722706,45.421052451279" />
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="162.666666666667,42.6666666666667"
           Id="Package\DFT_Carga_Terpel\DOLEDB_ Terpel"
           TopLeft="1089.00000722706,222.087719117946" />
+        <NodeLayout
+          Size="131.333333333334,42.6666666666667"
+          Id="Package\DFT_Carga_Terpel\OE_Terpel"
+          TopLeft="1103.00000722706,45.421052451279" />
         <NodeLayout
           Size="134,42.6666666666667"
           Id="Package\DFT_Carga_Terpel\DC_ Terpel"
@@ -9713,7 +10340,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -9735,25 +10364,14 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\DFT_Carga_Terpel\OE_Terpel">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\DFT_Carga_Terpel\DOLEDB_ Terpel">
     <Properties>
@@ -9767,59 +10385,46 @@
       </Property>
     </Properties>
   </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DFT_Carga_Terpel\OE_Terpel">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
-    design-time-name="Package\DFT_Carga_PresupuestosPorVendedor">
+    design-time-name="Package\DFT_MesaAyuda">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="264,42.6666666666667"
-          Id="Package\DFT_Carga_PresupuestosPorVendedor\OE_Carga_PresupuestosPorVendedor"
-          TopLeft="1223,89" />
+          Size="156,42.6666666666667"
+          Id="Package\DFT_MesaAyuda\ES_MesaAyuda"
+          TopLeft="689.374989727512,49.2631588219936" />
         <NodeLayout
-          Size="260,42.6666666666667"
-          Id="Package\DFT_Carga_PresupuestosPorVendedor\DOLEDB_ PresupuestosPorVendedor"
-          TopLeft="1223,280.666666666667" />
-        <NodeLayout
-          Size="232,42.6666666666667"
-          Id="Package\DFT_Carga_PresupuestosPorVendedor\DC_ PresupuestosPorVendedor"
-          TopLeft="1238,191.666666666667" />
+          Size="185.333333333334,42.6666666666667"
+          Id="Package\DFT_MesaAyuda\OLEDBD_MesaAyuda"
+          TopLeft="679.374989876524,164.89473994584" />
         <EdgeLayout
-          Id="Package\DFT_Carga_PresupuestosPorVendedor.Paths[Salida de conversión de datos]"
-          TopLeft="1353.5,234.333333333333">
+          Id="Package\DFT_MesaAyuda.Paths[Excel Source Output]"
+          TopLeft="769.708323135351,91.9298254886603">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,46.3333333333333"
+              EndConnector="0,72.9649144571793"
               Start="0,0"
-              End="0,38.8333333333333">
+              End="0,65.4649144571793">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,38.8333333333333" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\DFT_Carga_PresupuestosPorVendedor.Paths[Excel Source Output]"
-          TopLeft="1354.5,131.666666666667">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
+                    End="0,65.4649144571793" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -9832,7 +10437,7 @@
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\DFT_Carga_PresupuestosPorVendedor\OE_Carga_PresupuestosPorVendedor">
+    design-time-name="Package\DFT_MesaAyuda\ES_MesaAyuda">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -9845,7 +10450,7 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\DFT_Carga_PresupuestosPorVendedor\DOLEDB_ PresupuestosPorVendedor">
+    design-time-name="Package\DFT_MesaAyuda\OLEDBD_MesaAyuda">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
