@@ -2,43 +2,43 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>Etl's</Name>
-    <LastWriteTime>2024-08-26T18:51:20.3768123Z</LastWriteTime>
+    <LastWriteTime>2024-08-27T15:35:25.403913Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
       <Name>Excel.dtsx</Name>
-      <LastWriteTime>2024-08-26T16:08:40.9034213Z</LastWriteTime>
+      <LastWriteTime>2024-08-26T21:33:31.5274519Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>Siesa Crm.dtsx</Name>
-      <LastWriteTime>2024-08-20T18:14:13.3839653Z</LastWriteTime>
+      <LastWriteTime>2024-08-26T21:33:31.5274519Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>CloudFleet.dtsx</Name>
-      <LastWriteTime>2024-08-15T14:20:26.2886488Z</LastWriteTime>
+      <LastWriteTime>2024-08-26T21:33:31.5118256Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>ituran.dtsx</Name>
-      <LastWriteTime>2024-08-15T12:18:12.0800596Z</LastWriteTime>
+      <LastWriteTime>2024-08-26T21:33:31.558698Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>Terpel.dtsx</Name>
-      <LastWriteTime>2024-08-23T21:01:57.8330135Z</LastWriteTime>
+      <LastWriteTime>2024-08-27T16:47:44.105766Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>MySql.dtsx</Name>
-      <LastWriteTime>2024-08-23T21:02:06.5809893Z</LastWriteTime>
+      <LastWriteTime>2024-08-26T21:33:31.5274519Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>Siesa ERP.dtsx</Name>
-      <LastWriteTime>2024-08-26T19:44:21.6488762Z</LastWriteTime>
+      <LastWriteTime>2024-08-27T16:47:46.3380411Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>

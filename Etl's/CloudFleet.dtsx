@@ -11,8 +11,8 @@
   DTS:LocaleID="9226"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="62"
-  DTS:VersionGUID="{524CF125-B89B-4E60-A155-56157ECC4F76}">
+  DTS:VersionBuild="63"
+  DTS:VersionGUID="{3CC70A3C-B755-419B-982A-65D926D49510}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -10863,8 +10863,8 @@
                   <connections>
                     <connection
                       refId="Package\CS_CloudFleet\DFT_Insertar_CloudFleet_Grupo_3\OLEDBD_Tb_CloudFleet_003_Check_Images_CreatedBy.Connections[OleDbConnection]"
-                      connectionManagerID="{B4C05557-1818-4CF2-AB8D-9E14B6CE567E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[CRM]"
+                      connectionManagerID="{F969E5F0-ED10-48A1-9AD7-51F9863F78B9}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[DataStage]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -11700,8 +11700,8 @@
                   <connections>
                     <connection
                       refId="Package\CS_CloudFleet\DFT_Insertar_CloudFleet_Grupo_3\OLEDBD_Tb_CloudFleet_003_Check_Variable.Connections[OleDbConnection]"
-                      connectionManagerID="{B4C05557-1818-4CF2-AB8D-9E14B6CE567E}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[CRM]"
+                      connectionManagerID="{F969E5F0-ED10-48A1-9AD7-51F9863F78B9}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[DataStage]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -21571,7 +21571,7 @@
     design-time-name="Package\CS_CloudFleet\DFT_Insertar_CloudFleet_Grupo_3">
     <LayoutInfo>
       <GraphLayout
-        Capacity="64" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="64" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="436,42.6666666666667"
           Id="Package\CS_CloudFleet\DFT_Insertar_CloudFleet_Grupo_3\OLEDBS_Tb_CloudFleet_003_Check_Variable_MaintenanceIssue_Priority"
@@ -21635,7 +21635,7 @@
         <NodeLayout
           Size="356,42.6666666666667"
           Id="Package\CS_CloudFleet\DFT_Insertar_CloudFleet_Grupo_3\OLEDBS_Tb_CloudFleet_003_Check_Images_CreatedBy"
-          TopLeft="663.999990984797,30.719296326708" />
+          TopLeft="664.624990975484,30.719296326708" />
         <NodeLayout
           Size="448,42.6666666666667"
           Id="Package\CS_CloudFleet\DFT_Insertar_CloudFleet_Grupo_3\OLEDBS_Tb_CloudFleet_003_Check_Variable_MaintenanceIssue_TaskMain"
@@ -21695,9 +21695,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -21719,9 +21717,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -21743,9 +21739,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -21767,9 +21761,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -21791,9 +21783,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -21815,9 +21805,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -21839,9 +21827,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -21863,9 +21849,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -21887,9 +21871,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -21911,14 +21893,12 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\CS_CloudFleet\DFT_Insertar_CloudFleet_Grupo_3.Paths[OLE DB Source Output2]"
-          TopLeft="841.999990984798,73.3859629933747">
+          TopLeft="842.312490980141,73.3859629933747">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -21935,9 +21915,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -21959,9 +21937,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -21983,9 +21959,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
