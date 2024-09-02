@@ -2,7 +2,7 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>Etl's</Name>
-    <LastWriteTime>2024-08-29T13:37:39.4221834Z</LastWriteTime>
+    <LastWriteTime>2024-09-02T12:43:56.4649799Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
@@ -38,7 +38,12 @@
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>Siesa ERP.dtsx</Name>
-      <LastWriteTime>2024-08-30T19:13:55.1662054Z</LastWriteTime>
+      <LastWriteTime>2024-09-02T12:46:18.8730264Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Siesa ERP 1.dtsx</Name>
+      <LastWriteTime>2024-09-02T12:45:13.7335924Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>
