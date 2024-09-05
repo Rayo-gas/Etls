@@ -11,8 +11,8 @@
   DTS:LocaleID="9226"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="250"
-  DTS:VersionGUID="{0E8DE111-75BE-4694-905D-DA0D397DAE12}">
+  DTS:VersionBuild="259"
+  DTS:VersionGUID="{36F5A27F-7F5F-470E-AB40-D4CAA3E6855C}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -51,7 +51,7 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="0"
           DTS:ConnectRetryInterval="0"
-          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=D:\Rayogas\Sistemas de Información - Estrategia de Datos\7. Fuentes de Información\Xls\TI\Mesa de ayuda\Service desk.xls;Extended Properties=&quot;Excel 8.0;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=D:\Rayogas\Sistemas de Información - Estrategia de Datos\7. Fuentes de Información\Xls\TI\Mesa de ayuda\Service desk.xls;Extended Properties=&quot;EXCEL 8.0;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -75,7 +75,7 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="0"
           DTS:ConnectRetryInterval="0"
-          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=D:\Rayogas\Sistemas de Información - Estrategia de Datos\7. Fuentes de Información\Xls\TI\Mesa de ayuda\satisfaccion de usuario.xls;Extended Properties=&quot;Excel 8.0;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=D:\Rayogas\Sistemas de Información - Estrategia de Datos\7. Fuentes de Información\Xls\TI\Mesa de ayuda\satisfaccion de usuario.xls;Extended Properties=&quot;EXCEL 8.0;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -3236,7 +3236,7 @@
                           dataType="str"
                           errorOrTruncationOperation="Conversión"
                           errorRowDisposition="FailComponent"
-                          length="50"
+                          length="250"
                           lineageId="Package\CBF_Subsidios\DFT_Carga_Subsidios\DC_ Subsidios.Outputs[Salida de conversión de datos].Columns[Anulacion]"
                           name="Anulacion"
                           truncationRowDisposition="FailComponent">
@@ -3495,7 +3495,7 @@
                           refId="Package\CBF_Subsidios\DFT_Carga_Subsidios\DOLEDB_ Subsidios.Inputs[Entrada de destino de OLE DB].Columns[Anulacion]"
                           cachedCodepage="1252"
                           cachedDataType="str"
-                          cachedLength="50"
+                          cachedLength="250"
                           cachedName="Anulacion"
                           externalMetadataColumnId="Package\CBF_Subsidios\DFT_Carga_Subsidios\DOLEDB_ Subsidios.Inputs[Entrada de destino de OLE DB].ExternalColumns[Anulacion]"
                           lineageId="Package\CBF_Subsidios\DFT_Carga_Subsidios\DC_ Subsidios.Outputs[Salida de conversión de datos].Columns[Anulacion]" />
@@ -3610,7 +3610,7 @@
                           refId="Package\CBF_Subsidios\DFT_Carga_Subsidios\DOLEDB_ Subsidios.Inputs[Entrada de destino de OLE DB].ExternalColumns[Anulacion]"
                           codePage="1252"
                           dataType="str"
-                          length="50"
+                          length="250"
                           name="Anulacion" />
                       </externalMetadataColumns>
                     </input>
@@ -9909,14 +9909,14 @@
         <NodeLayout
           Size="188,42"
           Id="Package\CBF_Subsidios\DFT_Carga_Subsidios"
-          TopLeft="19.7500000186267,26.6666666666667" />
+          TopLeft="19.7500000186267,25.9824561274724" />
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
           PanelSize="220,122.666666666667"
           Size="220,166"
           Id="Package\CBF_Subsidios"
-          TopLeft="1304.12498721295,211.394733339136" />
+          TopLeft="1304.12498721295,210.710522799942" />
         <NodeLayout
           Size="165.333333333334,42"
           Id="Package\CBF_Wizeo\DFT_Carga_Wizeo"
@@ -9944,6 +9944,10 @@
           Size="162.666666666667,42.6666666666667"
           Id="Package\DFT_MesaAyuda"
           TopLeft="821.249987762422,422.157902682917" />
+        <NodeLayout
+          Size="198.666666666667,42.6666666666667"
+          Id="Package\DFT_satisfaccionUsuario"
+          TopLeft="581.2499913387,425.578955378889" />
         <NodeLayout
           Size="170.666666666667,42"
           Id="Package\TESQL_Truncate"
@@ -10038,18 +10042,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción 3]"
-          TopLeft="1274.99999091029,292.614033336235">
+          TopLeft="1274.99999091029,292.271928066638">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="29.1249963026564,0"
+              EndConnector="29.1249963026632,0"
               Start="0,0"
-              End="21.6249963026564,0">
+              End="21.6249963026632,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="21.6249963026564,0" />
+                    End="21.6249963026632,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -10060,18 +10064,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción 4]"
-          TopLeft="1416.5624817228,377.394733339136">
+          TopLeft="1416.5624817228,376.710522799942">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,45.4473798829764"
+              EndConnector="0,46.13159042217"
               Start="0,0"
-              End="0,37.9473798829764">
+              End="0,38.63159042217">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,37.9473798829764" />
+                    End="0,38.63159042217" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -10124,10 +10128,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="198.666666666667,42.6666666666667"
-          Id="Package\DFT_satisfaccionUsuario"
-          TopLeft="581.2499913387,425.578955378889" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción 7]"
           TopLeft="821.249987762422,445.201762364237">
@@ -10416,7 +10416,7 @@
     design-time-name="Package\CBF_Subsidios\DFT_Carga_Subsidios">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="148,42.6666666666667"
           Id="Package\CBF_Subsidios\DFT_Carga_Subsidios\OE_Subsidios"
@@ -10448,9 +10448,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -10472,9 +10470,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -10482,6 +10478,19 @@
   </TaskHost>
   <PipelineComponentMetadata
     design-time-name="Package\CBF_Subsidios\DFT_Carga_Subsidios\OE_Subsidios">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\CBF_Subsidios\DFT_Carga_Subsidios\DOLEDB_ Subsidios">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -10847,15 +10856,15 @@
     design-time-name="Package\DFT_MesaAyuda">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="156,42.6666666666667"
-          Id="Package\DFT_MesaAyuda\ES_MesaAyuda"
-          TopLeft="689.374989727512,49.2631588219936" />
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="185.333333333334,42.6666666666667"
           Id="Package\DFT_MesaAyuda\OLEDBD_MesaAyuda"
           TopLeft="679.374989876524,164.89473994584" />
+        <NodeLayout
+          Size="156,42.6666666666667"
+          Id="Package\DFT_MesaAyuda\ES_MesaAyuda"
+          TopLeft="689.374989727512,49.2631588219936" />
         <EdgeLayout
           Id="Package\DFT_MesaAyuda.Paths[Excel Source Output]"
           TopLeft="769.708323135351,91.9298254886603">
@@ -10875,7 +10884,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -10911,7 +10922,7 @@
     design-time-name="Package\DFT_satisfaccionUsuario">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="192,42.6666666666667"
           Id="Package\DFT_satisfaccionUsuario\ES_satisfaccionUsuario"
@@ -10939,7 +10950,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
