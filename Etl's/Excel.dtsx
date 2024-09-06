@@ -11,8 +11,8 @@
   DTS:LocaleID="9226"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="259"
-  DTS:VersionGUID="{36F5A27F-7F5F-470E-AB40-D4CAA3E6855C}">
+  DTS:VersionBuild="262"
+  DTS:VersionGUID="{0C9732CA-9FF8-403B-8F3C-6E68EF634B4E}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -9771,7 +9771,7 @@
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{F969E5F0-ED10-48A1-9AD7-51F9863F78B9}"
-          SQLTask:SqlStatementSource="TRUNCATE TABLE xls.LineasRAyogas;&#xA;TRUNCATE TABLE xls.ClaroVoz;&#xA;TRUNCATE TABLE xls.ClaroDatos;&#xA;TRUNCATE TABLE xls.Wizeo;&#xA;TRUNCATE TABLE xls.Subsidio;&#xA;TRUNCATE TABLE dbo.Terpel;&#xA;TRUNCATE TABLE xls.PresupuestoVendedor;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:SqlStatementSource="TRUNCATE TABLE xls.LineasRAyogas;&#xA;TRUNCATE TABLE xls.ClaroVoz;&#xA;TRUNCATE TABLE xls.ClaroDatos;&#xA;TRUNCATE TABLE xls.Wizeo;&#xA;TRUNCATE TABLE xls.Subsidio;&#xA;TRUNCATE TABLE dbo.Terpel;&#xA;TRUNCATE TABLE xls.PresupuestoVendedor;&#xA;TRUNCATE TABLE xls.MesaAyuda;&#xA;TRUNCATE TABLE xls.SatisfaccionUsuario;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
   </DTS:Executables>
@@ -9909,14 +9909,14 @@
         <NodeLayout
           Size="188,42"
           Id="Package\CBF_Subsidios\DFT_Carga_Subsidios"
-          TopLeft="19.7500000186267,25.9824561274724" />
+          TopLeft="23.4999999627478,40.3508774505539" />
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="220,122.666666666667"
-          Size="220,166"
+          PanelSize="226.666666666667,138"
+          Size="226.666666666667,181.333333333334"
           Id="Package\CBF_Subsidios"
-          TopLeft="1304.12498721295,210.710522799942" />
+          TopLeft="1307.87498715707,194.289469859277" />
         <NodeLayout
           Size="165.333333333334,42"
           Id="Package\CBF_Wizeo\DFT_Carga_Wizeo"
@@ -9949,7 +9949,7 @@
           Id="Package\DFT_satisfaccionUsuario"
           TopLeft="581.2499913387,425.578955378889" />
         <NodeLayout
-          Size="170.666666666667,42"
+          Size="162.666666666667,42.6666666666667"
           Id="Package\TESQL_Truncate"
           TopLeft="557.499991096556,65.0526321069686" />
         <EdgeLayout
@@ -9976,18 +9976,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción 1]"
-          TopLeft="644.729157684061,107.052632106969">
+          TopLeft="642.729157684061,107.719298773635">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,28.5263154417524"
+              EndConnector="0,27.8596487750857"
               Start="0,0"
-              End="0,21.0263154417524">
+              End="0,20.3596487750857">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,21.0263154417524" />
+                    End="0,20.3596487750857" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -10042,18 +10042,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción 3]"
-          TopLeft="1274.99999091029,292.271928066638">
+          TopLeft="1274.99999091029,287.894734929639">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="29.1249963026632,0"
+              EndConnector="32.8749962467809,0"
               Start="0,0"
-              End="21.6249963026632,0">
+              End="25.3749962467809,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="21.6249963026632,0" />
+                    End="25.3749962467809,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -10064,18 +10064,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción 4]"
-          TopLeft="1416.5624817228,376.710522799942">
+          TopLeft="1420.10414836153,375.622803192611">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,46.13159042217"
+              EndConnector="0,47.2193100295012"
               Start="0,0"
-              End="0,38.63159042217">
+              End="0,39.7193100295012">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,38.63159042217" />
+                    End="0,39.7193100295012" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -10668,7 +10668,7 @@
     design-time-name="Package\DFT_Carga_PresupuestosPorVendedor">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="264,42.6666666666667"
           Id="Package\DFT_Carga_PresupuestosPorVendedor\OE_Carga_PresupuestosPorVendedor"
@@ -10700,9 +10700,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -10724,9 +10722,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -10856,7 +10852,7 @@
     design-time-name="Package\DFT_MesaAyuda">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="185.333333333334,42.6666666666667"
           Id="Package\DFT_MesaAyuda\OLEDBD_MesaAyuda"
@@ -10884,9 +10880,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -10922,7 +10916,7 @@
     design-time-name="Package\DFT_satisfaccionUsuario">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="192,42.6666666666667"
           Id="Package\DFT_satisfaccionUsuario\ES_satisfaccionUsuario"
@@ -10950,9 +10944,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>

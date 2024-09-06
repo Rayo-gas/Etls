@@ -11,8 +11,8 @@
   DTS:LocaleID="9226"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="4"
-  DTS:VersionGUID="{794B3F8B-F9BC-4131-9341-9577E6EC5B5E}">
+  DTS:VersionBuild="5"
+  DTS:VersionGUID="{005F4ADF-FA83-4861-8FC9-EF4CFCBEE0C1}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -2508,7 +2508,7 @@
         <NodeLayout
           Size="176,42.6666666666667"
           Id="Package\DFT_Insertar_Ituran"
-          TopLeft="606.874990956858,32.1578953421347" />
+          TopLeft="658.74999018386,251.105267884328" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -2518,10 +2518,6 @@
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="236,42.6666666666667"
-          Id="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_001_Carros"
-          TopLeft="308.12499540858,24.6315794109968" />
-        <NodeLayout
           Size="233.333333333334,42.6666666666667"
           Id="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes"
           TopLeft="596.874991105869,26.6842110285799" />
@@ -2530,57 +2526,17 @@
           Id="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_003_Actualizar_Odometro"
           TopLeft="884.374986821786,28.0526321069686" />
         <NodeLayout
-          Size="236,42.6666666666667"
-          Id="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_001_Carros"
-          TopLeft="309.374995389953,106.736844114319" />
-        <EdgeLayout
-          Id="Package\DFT_Insertar_Ituran.Paths[OLE DB Source Output]"
-          TopLeft="426.749995399267,67.2982460776634">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,39.438598036656"
-              Start="0,0"
-              End="0,31.938598036656">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,31.938598036656" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
           Size="233.333333333334,42.6666666666667"
           Id="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes"
           TopLeft="598.124991087243,112.210528427874" />
-        <EdgeLayout
-          Id="Package\DFT_Insertar_Ituran.Paths[OLE DB Source Output1]"
-          TopLeft="714.166657763223,69.3508776952465">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,42.8596507326278"
-              Start="0,0"
-              End="0,35.3596507326278">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,35.3596507326278" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+        <NodeLayout
+          Size="236,42.6666666666667"
+          Id="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_001_Carros"
+          TopLeft="308.12499540858,24.6315794109968" />
+        <NodeLayout
+          Size="236,42.6666666666667"
+          Id="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_001_Carros"
+          TopLeft="309.374995389953,106.736844114319" />
         <NodeLayout
           Size="305.333333333334,42.6666666666667"
           Id="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_003_Actualizar_Odometro"
@@ -2607,22 +2563,53 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <EdgeLayout
+          Id="Package\DFT_Insertar_Ituran.Paths[OLE DB Source Output1]"
+          TopLeft="714.166657763223,69.3508776952465">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,42.8596507326278"
+              Start="0,0"
+              End="0,35.3596507326278">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,35.3596507326278" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\DFT_Insertar_Ituran.Paths[OLE DB Source Output]"
+          TopLeft="426.749995399267,67.2982460776634">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,39.438598036656"
+              Start="0,0"
+              End="0,31.938598036656">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,31.938598036656" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_001_Carros">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_002_Viajes">
     <Properties>
@@ -2650,7 +2637,7 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_001_Carros">
+    design-time-name="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -2663,7 +2650,20 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_002_Viajes">
+    design-time-name="Package\DFT_Insertar_Ituran\OLEDBS_Tb_Ituran_001_Carros">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DFT_Insertar_Ituran\OLEDBD_Tb_Ituran_001_Carros">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
