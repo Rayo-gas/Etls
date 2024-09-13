@@ -7,12 +7,12 @@
   DTS:CreatorName="RAYOGAS\jesus.vargas"
   DTS:DTSID="{FE77E3A6-23EA-43DD-825C-D16E57DC87A6}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="16.0.5467.0"
+  DTS:LastModifiedProductVersion="16.0.5556.0"
   DTS:LocaleID="9226"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="63"
-  DTS:VersionGUID="{3CC70A3C-B755-419B-982A-65D926D49510}">
+  DTS:VersionBuild="64"
+  DTS:VersionGUID="{3E6951C4-866A-4505-881E-18F8F2A0E0B1}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -20336,10 +20336,10 @@
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="685.333333333334,300"
-          Size="685.333333333334,342.666666666667"
+          PanelSize="685.333333333334,266.666666666667"
+          Size="685.333333333334,310"
           Id="Package\CS_CloudFleet"
-          TopLeft="233.749996516854,111.52631788868" />
+          TopLeft="233.749996516854,144.587722543644" />
       </GraphLayout>
     </LayoutInfo>
   </Package>

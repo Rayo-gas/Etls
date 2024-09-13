@@ -7,15 +7,39 @@
   DTS:CreatorName="RAYOGAS\jesus.vargas"
   DTS:DTSID="{733DFE37-E69E-4BB9-855D-8FE0995908AC}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="16.0.5467.0"
+  DTS:LastModifiedProductVersion="16.0.5556.0"
   DTS:LocaleID="9226"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="262"
-  DTS:VersionGUID="{0C9732CA-9FF8-403B-8F3C-6E68EF634B4E}">
+  DTS:VersionBuild="265"
+  DTS:VersionGUID="{7D71B188-C270-46D2-8AFB-BC4D848DF59A}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Administrador de conexiones con Excel]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{84DACE45-76C8-478D-B436-9B292FF7CD7B}"
+      DTS:ObjectName="Administrador de conexiones con Excel">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=D:\Rayogas\Sistemas de Información - Estrategia de Datos\7. Fuentes de Información\Xls\Comercial\Subsidios\inicio.xls;Extended Properties=&quot;Excel 8.0;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Administrador de conexiones con Excel 1]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{D69ED16C-899E-4288-B135-310616091A81}"
+      DTS:ObjectName="Administrador de conexiones con Excel 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\Rayogas\Sistemas de Información - Estrategia de Datos\7. Fuentes de Información\Xls\Comercial\Divipola_06_2013.xlsx;Extended Properties=&quot;Excel 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[Dato]"
       DTS:CreationName="EXCEL"
@@ -9913,10 +9937,10 @@
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="226.666666666667,138"
+          PanelSize="226.666666666667,138.666666666667"
           Size="226.666666666667,181.333333333334"
           Id="Package\CBF_Subsidios"
-          TopLeft="1307.87498715707,194.289469859277" />
+          TopLeft="1308.49998712913,193.605259340474" />
         <NodeLayout
           Size="165.333333333334,42"
           Id="Package\CBF_Wizeo\DFT_Carga_Wizeo"
@@ -10042,18 +10066,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción 3]"
-          TopLeft="1274.99999091029,287.894734929639">
+          TopLeft="1274.99999091029,287.552629670237">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="32.8749962467809,0"
+              EndConnector="33.4999962188404,0"
               Start="0,0"
-              End="25.3749962467809,0">
+              End="25.9999962188404,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="25.3749962467809,0" />
+                    End="25.9999962188404,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -10064,18 +10088,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción 4]"
-          TopLeft="1420.10414836153,375.622803192611">
+          TopLeft="1420.41664834756,374.938592673807">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,47.2193100295012"
+              EndConnector="0,47.9035205483049"
               Start="0,0"
-              End="0,39.7193100295012">
+              End="0,40.4035205483049">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,39.7193100295012" />
+                    End="0,40.4035205483049" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>

@@ -7,28 +7,14 @@
   DTS:CreatorName="RAYOGAS\jesus.vargas"
   DTS:DTSID="{6B095A9E-B89E-4581-A5B5-0E74940E5AAC}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="16.0.5467.0"
+  DTS:LastModifiedProductVersion="16.0.5556.0"
   DTS:LocaleID="9226"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="6"
-  DTS:VersionGUID="{03CD785C-EF23-4B20-8A8E-F4722FFE7D85}">
+  DTS:VersionBuild="9"
+  DTS:VersionGUID="{D443A4DE-C185-425F-B9B2-5B839094B665}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
-  <DTS:ConnectionManagers>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[localhost]"
-      DTS:CreationName="MSOLAP100"
-      DTS:DTSID="{A7001C0C-0FE7-4225-AFE8-D38375CFE777}"
-      DTS:ObjectName="localhost">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectRetryCount="0"
-          DTS:ConnectRetryInterval="0"
-          DTS:ConnectionString="Data Source=localhost;PROVIDER=MSOLAP;Impersonation Level=Impersonate;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-  </DTS:ConnectionManagers>
   <DTS:Variables />
   <DTS:Executables>
     <DTS:Executable
@@ -270,7 +256,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[Tb_Terpel_002_Ventas]</property>
+                  name="OpenRowset">[dbo].[Tb_Terpel_002_Ventas]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -313,8 +299,8 @@
               <connections>
                 <connection
                   refId="Package\DFT_Terpel\OLEDBD_Tb_Terpel_002_Ventas.Connections[OleDbConnection]"
-                  connectionManagerID="{B4C05557-1818-4CF2-AB8D-9E14B6CE567E}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[CRM]"
+                  connectionManagerID="{F969E5F0-ED10-48A1-9AD7-51F9863F78B9}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[DataStage]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -1507,14 +1493,10 @@
         <NodeLayout
           Size="136,42.6666666666667"
           Id="Package\DFT_Terpel"
-          TopLeft="862.499987147749,84.6710542253015" />
+          TopLeft="557.500000782311,125.039474834696" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
-  <ConnectionManager
-    design-time-name="Package.ConnectionManagers[localhost]">
-    <ProjectReferenceName></ProjectReferenceName>
-  </ConnectionManager>
   <TaskHost
     design-time-name="Package\DFT_Terpel">
     <LayoutInfo>
@@ -1525,32 +1507,6 @@
           Id="Package\DFT_Terpel\OLEDBS_Tb_Terpel_001_Token"
           TopLeft="419.374993750826,70.4561416644909" />
         <NodeLayout
-          Size="237.333333333334,42"
-          Id="Package\DFT_Terpel\OLEDBD_Tb_Terpel_001_Token"
-          TopLeft="415.624993806705,170.350880386867" />
-        <EdgeLayout
-          Id="Package\DFT_Terpel.Paths[OLE DB Source Output]"
-          TopLeft="536.166660445432,113.122808331158">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,57.2280720557092"
-              Start="0,0"
-              End="0,49.7280720557092">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,49.7280720557092" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
           Size="240,42.6666666666667"
           Id="Package\DFT_Terpel\OLEDBS_Tb_Terpel_002_Ventas"
           TopLeft="836.249987538904,71.157896076213" />
@@ -1558,6 +1514,10 @@
           Size="241.333333333334,44"
           Id="Package\DFT_Terpel\OLEDBD_Tb_Terpel_002_Ventas"
           TopLeft="838.749987501651,166.263161024228" />
+        <NodeLayout
+          Size="237.333333333334,42"
+          Id="Package\DFT_Terpel\OLEDBD_Tb_Terpel_001_Token"
+          TopLeft="415.624993806705,170.350880386867" />
         <EdgeLayout
           Id="Package\DFT_Terpel.Paths[OLE DB Source Output1]"
           TopLeft="957.833320853611,113.82456274288">
@@ -1580,24 +1540,33 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <EdgeLayout
+          Id="Package\DFT_Terpel.Paths[OLE DB Source Output]"
+          TopLeft="536.166660445432,113.122808331158">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,57.2280720557092"
+              Start="0,0"
+              End="0,49.7280720557092">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,49.7280720557092" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
     design-time-name="Package\DFT_Terpel\OLEDBS_Tb_Terpel_001_Token">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\DFT_Terpel\OLEDBD_Tb_Terpel_001_Token">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -1624,6 +1593,19 @@
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\DFT_Terpel\OLEDBD_Tb_Terpel_002_Ventas">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DFT_Terpel\OLEDBD_Tb_Terpel_001_Token">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>

@@ -7,12 +7,12 @@
   DTS:CreatorName="RAYOGAS\jesus.vargas"
   DTS:DTSID="{A60F8F9A-E253-41C2-8BD6-C76F2050B0BD}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="16.0.5467.0"
+  DTS:LastModifiedProductVersion="16.0.5556.0"
   DTS:LocaleID="9226"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="5"
-  DTS:VersionGUID="{005F4ADF-FA83-4861-8FC9-EF4CFCBEE0C1}">
+  DTS:VersionBuild="6"
+  DTS:VersionGUID="{18212DB5-C01E-4FC9-8515-849AD3D6A843}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -2508,7 +2508,7 @@
         <NodeLayout
           Size="176,42.6666666666667"
           Id="Package\DFT_Insertar_Ituran"
-          TopLeft="658.74999018386,251.105267884328" />
+          TopLeft="453.124999376014,145.052637469818" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
