@@ -11,8 +11,8 @@
   DTS:LocaleID="9226"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="265"
-  DTS:VersionGUID="{7D71B188-C270-46D2-8AFB-BC4D848DF59A}">
+  DTS:VersionBuild="266"
+  DTS:VersionGUID="{FEF0B44D-F5EB-4E02-9895-720FB768FCD3}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -6821,6 +6821,8 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <pipeline
+          defaultBufferMaxRows="100000"
+          defaultBufferSize="104857600"
           version="1">
           <components>
             <component
@@ -7381,6 +7383,8 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <pipeline
+          defaultBufferMaxRows="100000"
+          defaultBufferSize="104857600"
           version="1">
           <components>
             <component
@@ -8933,6 +8937,8 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <pipeline
+          defaultBufferMaxRows="100000"
+          defaultBufferSize="104857600"
           version="1">
           <components>
             <component
@@ -9382,6 +9388,8 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <pipeline
+          defaultBufferMaxRows="100000"
+          defaultBufferSize="104857600"
           version="1">
           <components>
             <component
@@ -9911,7 +9919,7 @@
         <NodeLayout
           Size="202.666666666667,42"
           Id="Package\CBF_CLaro_Datos_Excel\DFT_Carga_Archivo_datos"
-          TopLeft="14,28" />
+          TopLeft="12.7500000558795,27.3157894811966" />
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
@@ -10022,18 +10030,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción 1 1]"
-          TopLeft="759.999990910292,286.25">
+          TopLeft="759.666657576959,286.25">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="31,0"
+              EndConnector="31.3333333333334,0"
               Start="0,0"
-              End="23.5,0">
+              End="23.8333333333334,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="23.5,0" />
+                    End="23.8333333333334,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -10048,14 +10056,14 @@
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="29.3333333333334,0"
+              EndConnector="29.3333333333314,0"
               Start="0,0"
-              End="21.8333333333334,0">
+              End="21.8333333333314,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="21.8333333333334,0" />
+                    End="21.8333333333314,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -10530,7 +10538,7 @@
     design-time-name="Package\CBF_Wizeo\DFT_Carga_Wizeo">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="126.666666666667,42"
           Id="Package\CBF_Wizeo\DFT_Carga_Wizeo\OE_Wizeo"
@@ -10562,9 +10570,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -10586,9 +10592,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>

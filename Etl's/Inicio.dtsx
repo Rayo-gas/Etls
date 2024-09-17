@@ -7,12 +7,12 @@
   DTS:CreatorName="RAYOGAS\jesus.vargas"
   DTS:DTSID="{3B96F969-F860-4D83-9113-F216229EDDFC}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="16.0.5467.0"
+  DTS:LastModifiedProductVersion="16.0.5556.0"
   DTS:LocaleID="9226"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="6"
-  DTS:VersionGUID="{6D5E158B-938E-400D-9A76-6A7ED8218612}">
+  DTS:VersionBuild="10"
+  DTS:VersionGUID="{B7A518C6-FBA0-40C8-B3AF-B64C3E41CE68}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -178,37 +178,63 @@
         <NodeLayout
           Size="158.666666666667,42.6666666666667"
           Id="Package\EPT_CloudFleet"
-          TopLeft="718.749989289791,279.877196318005" />
+          TopLeft="414.749989289791,139.877196318005" />
         <NodeLayout
           Size="132,42.6666666666667"
           Id="Package\EPT_Excel"
-          TopLeft="726.874989168718,503.684214209585" />
+          TopLeft="422.874989168718,349.684214209585" />
         <NodeLayout
           Size="133.333333333334,42.6666666666667"
           Id="Package\EPT_Ituran"
-          TopLeft="730.624989112839,349.666671315829" />
+          TopLeft="426.624989112839,207.666671315829" />
         <NodeLayout
           Size="162.666666666667,42.6666666666667"
           Id="Package\EPT_Siesa_CRM"
-          TopLeft="721.249989252538,191.57895097442" />
+          TopLeft="417.249989252538,73.57895097442" />
+        <NodeLayout
+          Size="161.333333333334,42.6666666666667"
+          Id="Package\EPT_Siesa_ERP"
+          TopLeft="419.749989215284,7.263159800765" />
         <NodeLayout
           Size="136,42.6666666666667"
           Id="Package\EPT_Terpel"
-          TopLeft="722.499989233911,431.807021806665" />
+          TopLeft="418.499989233911,275.807021806665" />
         <EdgeLayout
-          Id="Package.PrecedenceConstraints[Restricción 1]"
-          TopLeft="800.333322604498,234.245617641087">
+          Id="Package.PrecedenceConstraints[Restricción]"
+          TopLeft="499.499989233911,49.9298264674317">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,45.6315786769184"
+              EndConnector="0,23.6491245069883"
               Start="0,0"
-              End="0,38.1315786769184">
+              End="0,16.1491245069883">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,38.1315786769184" />
+                    End="0,16.1491245069883" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción 1]"
+          TopLeft="496.333322604498,116.245617641087">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,23.6315786769184"
+              Start="0,0"
+              End="0,16.1315786769184">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,16.1315786769184" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -219,18 +245,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción 2]"
-          TopLeft="797.687489201315,322.543862984672">
+          TopLeft="493.687489201315,182.543862984672">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,27.1228083311576"
+              EndConnector="0,25.1228083311573"
               Start="0,0"
-              End="0,19.6228083311576">
+              End="0,17.6228083311573">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,19.6228083311576" />
+                    End="0,17.6228083311573" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -241,18 +267,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción 3]"
-          TopLeft="793.895822506709,392.333337982496">
+          TopLeft="489.895822506708,250.333337982496">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,39.4736838241694"
+              EndConnector="0,25.4736838241694"
               Start="0,0"
-              End="0,31.9736838241694">
+              End="0,17.9736838241694">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,31.9736838241694" />
+                    End="0,17.9736838241694" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -263,44 +289,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción 4]"
-          TopLeft="791.687489201315,474.473688473332">
+          TopLeft="487.687489201315,318.473688473332">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,29.2105257362537"
+              EndConnector="0,31.2105257362533"
               Start="0,0"
-              End="0,21.7105257362537">
+              End="0,23.7105257362533">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,21.7105257362537" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="161.333333333334,42.6666666666667"
-          Id="Package\EPT_Siesa_ERP"
-          TopLeft="723.749989215284,101.263159800765" />
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Restricción]"
-          TopLeft="803.499989233911,143.929826467431">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,47.6491245069887"
-              Start="0,0"
-              End="0,40.1491245069887">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,40.1491245069887" />
+                    End="0,23.7105257362533" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
