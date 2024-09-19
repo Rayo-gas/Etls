@@ -2,13 +2,13 @@
 <BuildLog xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <ProjectInfo>
     <Name>Etl's</Name>
-    <LastWriteTime>2024-09-16T12:25:24.0175371Z</LastWriteTime>
+    <LastWriteTime>2024-09-19T16:12:50.8235064Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
       <Name>Excel.dtsx</Name>
-      <LastWriteTime>2024-09-16T12:44:00.3188191Z</LastWriteTime>
+      <LastWriteTime>2024-09-19T19:36:52.7160366Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
@@ -18,7 +18,7 @@
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>CloudFleet.dtsx</Name>
-      <LastWriteTime>2024-09-16T12:41:51.6358603Z</LastWriteTime>
+      <LastWriteTime>2024-09-17T19:35:12.3305625Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
@@ -38,7 +38,7 @@
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>Siesa ERP.dtsx</Name>
-      <LastWriteTime>2024-09-16T12:39:30.4886185Z</LastWriteTime>
+      <LastWriteTime>2024-09-17T16:37:21.4350735Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
