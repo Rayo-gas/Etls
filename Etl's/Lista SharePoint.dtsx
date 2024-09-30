@@ -11,8 +11,8 @@
   DTS:LocaleID="9226"
   DTS:ObjectName="Lista SharePoint"
   DTS:PackageType="5"
-  DTS:VersionBuild="8"
-  DTS:VersionGUID="{AFA51324-685C-402D-9C7A-44A564090474}">
+  DTS:VersionBuild="12"
+  DTS:VersionGUID="{7AF348E6-8AA3-4815-8988-7F8037CF1EC6}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -37,32 +37,13 @@
         <ODataConnectionManager
           UserName="licencias@rayogas.com"
           Url="https://grouprayogas.sharepoint.com/sites/Rayogas/Op/_vti_bin/listdata.svc/"
-          ConnectionString="Service Document Url=https://grouprayogas.sharepoint.com/sites/Rayogas/Op/_vti_bin/listdata.svc/;Include Atom Elements=Auto;Include Expanded Entities=False;Integrated Security=False;Cookie=&quot;SPOIDCRL=77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48U1A+VjEzLDBoLmZ8bWVtYmVyc2hpcHwxMDAzMDAwMGFlY2E1MWZmQGxpdmUuY29tLDAjLmZ8bWVtYmVyc2hpcHxsaWNlbmNpYXNAcmF5b2dhcy5jb20sMTMzNzIxOTgyMTcwMDAwMDAwLDEzMzcyMTk2MTA0MDAwMDAwMCwxMzM3MjI4NDYxNzM3MzUxMTEsMC4wLjAuMCwyMDk3MTU2LGFjZWI5NzYwLTJmM2QtNGNkNC1iNGI5LTFjZGUxYzdmZWQ4MCwsLDY1Njk1NWExLWYwNjUtNjAwMC02ZGM4LTQ2OGJkN2I4YzY0YSw2NTY5NTVhMS1mMDY1LTYwMDAtNmRjOC00NjhiZDdiOGM2NGEsLDAsMCwwLCwsLDI2NTA0Njc3NDM5OTk5OTk5OTksMCwsLCwsLCwwLCwxOTI2NzksVXRSUjZIMWttN1YwM3djdTVKUlQyT21iaE00LE9EaGFES3ZvMzgvZ1R0S2pJRmNyLytPcGFWbVlOaW85bnBHb2dmRUNKaDRjWFFFeG5DNC9XL3pyemdjL2ZPeDV2eVlVZGFZT0NpUnpxQTkzTk1IWndRUUNmNS9NUkhJZytzQmNSS2N5SHRMdUM5N2M4WGxxNGoyK2hyS3p5U2xDNlQzZFJmVkM2b0hxaHN1RTgraWhIaTRsY0tneDFKOE1tazV6L2JyaWFySER4cEw4Q1BvWmw3bE5lZXRyM1JTVDNmY1ZzaWtYdXhGYWFzZmx5L1BobkJPdlNoQzB6Uy83Q1NuUnY2STViTHVGWUw3U1BvZnNnRFMvWVNEL25MWUIxcmE4YjJiZXc4SEdzK1ZTcHc3c1ZVZ1BSKzVKRGlDNlhFMXgvdWFyRW1DU3FhQU1BNXRCbU9DTHcwSEtkY0h1NTdlWVJtZzY2bURHUGEwbVVFTmttQT09PC9TUD4=&quot;;User ID=licencias@rayogas.com;Persist Security Info=False;Time Out=600;Schema Sample Size=25;Retry Count=5;Retry Sleep=100;Keep Alive=False;Max Received Message Size=4398046511104"
+          ConnectionString="Service Document Url=https://grouprayogas.sharepoint.com/sites/Rayogas/Op/_vti_bin/listdata.svc/;Include Atom Elements=Auto;Include Expanded Entities=False;Integrated Security=False;Cookie=&quot;SPOIDCRL=77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48U1A+VjEzLDBoLmZ8bWVtYmVyc2hpcHwxMDAzMDAwMGFlY2E1MWZmQGxpdmUuY29tLDAjLmZ8bWVtYmVyc2hpcHxsaWNlbmNpYXNAcmF5b2dhcy5jb20sMTMzNzIxOTk3NTAwMDAwMDAwLDEzMzcyMTk2MTA0MDAwMDAwMCwxMzM3MjI4NjE1MDkyMDUwNjMsMC4wLjAuMCwyMDk3MTU2LGFjZWI5NzYwLTJmM2QtNGNkNC1iNGI5LTFjZGUxYzdmZWQ4MCwsLGRiNmE1NWExLTkwY2MtNjAwMC1hYTkwLWYyNjBkODY2NTA3ZSxkYjZhNTVhMS05MGNjLTYwMDAtYWE5MC1mMjYwZDg2NjUwN2UsLDAsMCwwLCwsLDI2NTA0Njc3NDM5OTk5OTk5OTksMCwsLCwsLCwwLCwxOTI2NzksVXRSUjZIMWttN1YwM3djdTVKUlQyT21iaE00LGRva2ZUQmF3ZWxYcE55UjJPcnlMUkJTOEFkOGVKbmx0dHJYak14NzlUY2s4TFZVeUVLTFVIZ3Z3RGlFWXBhMk1STkowTE42TExjcFQzWFVzU0tXa3VPd2xOYWgvTGpZT0hicUxCNnlNT09STElsQlpxbEZuRVU0N2c3WXZZT2RBUlBWS1A0UFVGYUhvUzRHcVZ0SmNRY05JeGN6amI4dFBEMTJINEFPbDc4cUZOSkRROTZYcWMxT0trMmlucDRRZVBNeFZKYlA1VnJsbFZmYjdPWGROVnUwTit1QXlud2w4by9Oc0ZBcHROY2E1V2wzQ3IwOExzS1ROaCtCUk1KQVNQaXByLzRIU3BobncvOTd1bkJ2ZUVYL3BKNmlXOVZMNkQvZnRTaEVIcHQ0YTJ4KzBZK1pnM0RsVzFEakR2bVhWdDU4Mm45KzR3REo4YUZBaWk0UXl0UT09PC9TUD4=&quot;;User ID=licencias@rayogas.com;Persist Security Info=False;Time Out=600;Schema Sample Size=25;Retry Count=5;Retry Sleep=100;Keep Alive=False;Max Received Message Size=4398046511104"
           MicrosoftOnlineServicesAuth="True"
           AuthType="MicrosoftOnlineService"
           ConnectByProxy="False">
           <Password
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAREu2EwRU5kW2s2HdAxmc0gAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACpu7Rnn9bXyzFk4hErVKOKAAAAAASAAACgAAAAEAAAABIjlDcBscfNpuBFh7A6mbooAAAAW8bDedHbQpB0HGrZbp4svubr0JY4JtXXCtYC73N0JgeIPt+0UEPthBQAAACe2vyE73+JgaHBue8/8uPIYipqfg</Password>
-        </ODataConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Origen OData]"
-      DTS:CreationName="ODATA"
-      DTS:DTSID="{839345D7-4A1B-4069-8839-7F262775D58B}"
-      DTS:ObjectName="Origen OData">
-      <DTS:ObjectData>
-        <ODataConnectionManager
-          UserName="licencias@rayogas.com"
-          Url="https://grouprayogas.sharepoint.com/sites/Rayogas/Op/_vti_bin/listdata.svc/"
-          ConnectionString="Service Document Url=https://grouprayogas.sharepoint.com/sites/Rayogas/Op/_vti_bin/listdata.svc/;Include Atom Elements=Auto;Include Expanded Entities=False;Integrated Security=False;Cookie=&quot;SPOIDCRL=77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48U1A+VjEzLDBoLmZ8bWVtYmVyc2hpcHwxMDAzMDAwMGFlY2E1MWZmQGxpdmUuY29tLDAjLmZ8bWVtYmVyc2hpcHxsaWNlbmNpYXNAcmF5b2dhcy5jb20sMTMzNzIxOTYwNTEwMDAwMDAwLDEzMzcyMTk1OTk1MDAwMDAwMCwxMzM3MjI4MjQ1MTQ4MjkyNTUsMC4wLjAuMCwyMDk3MTU2LGFjZWI5NzYwLTJmM2QtNGNkNC1iNGI5LTFjZGUxYzdmZWQ4MCwsLDU0Njc1NWExLWMwOWUtNjAwMC04YTA5LTE3NDQ3N2ZiNDg4MCw1NDY3NTVhMS1jMDllLTYwMDAtOGEwOS0xNzQ0NzdmYjQ4ODAsLDAsMCwwLCwsLDI2NTA0Njc3NDM5OTk5OTk5OTksMCwsLCwsLCwwLCwxOTI2NzksVXRSUjZIMWttN1YwM3djdTVKUlQyT21iaE00LFpCTVM2WjBDWDdjYTdmamxTbmRNTVFkdjV5YU9iVyt0bmZYT1pYK3RBYnZLbUlVNlhKaEtMSVJMNHNKU0FtNkRiZytpY3RHeWRhNGY5TUJnaXJsNnBCVjRFWHl5Qy9PdkJDV3VPcXNtSmMvOHdVeW1STk9CVE9mdnpubjRXTFNQa2x4MTRGZEhONWY4M0ovUVNLL3hzaHVycHVBM2ZhZE5QeGtuWnQyWUF1b0xXMW84VDhSeXZxbXhZQlJ5dDNLQ0xuWno0TkhGbytDTC90MHE1QTJ2TWpOSjhtYWpzR1JNUU4xUUVKT1lTZTg2QXFZU0FTZndmQXRlNjJianBoazZhK1plbStPdmlHWmRZVnE5djErNTRSaEpMNmNnbTNGSG0rZWJLREM2ZnpoeWZYMkVkdGlHcUJaVFJpQWU0YllSdnBKRG9ycUN1Sm11TTBUSDc4OVhTdz09PC9TUD4=&quot;;User ID=licencias@rayogas.com;Persist Security Info=False;Time Out=600;Schema Sample Size=25;Retry Count=5;Retry Sleep=100;Keep Alive=False;Max Received Message Size=4398046511104"
-          MicrosoftOnlineServicesAuth="True"
-          AuthType="MicrosoftOnlineService"
-          ConnectByProxy="False">
-          <Password
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAREu2EwRU5kW2s2HdAxmc0gAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAuU+4z3mMpC25rzT72WxmGAAAAAASAAACgAAAAEAAAAPVxlNtQZwa2UdwsMTyiQzogAAAAfKLhkRmSQ14dN0vw4tkisDjLUXirDpkYOyHmflIij2cUAAAAvfSTAiaVlfaFKEJAYJfzSFtdsUk</Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAREu2EwRU5kW2s2HdAxmc0gAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAa2wNA5Cryusp8C2+esrnnAAAAAASAAACgAAAAEAAAAO7g39xxoZrVvQQkTZWvJdMoAAAAiU4IbdCAhzBVIxzs6EGNLCT67saOT6ah8z2/RayacfQ1uol0z13zYRQAAACbScqm1NVcDJX9xEJ6ySv6L5EmuA</Password>
         </ODataConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -70,13 +51,13 @@
   <DTS:Variables />
   <DTS:Executables>
     <DTS:Executable
-      DTS:refId="Package\Data Flow Task"
+      DTS:refId="Package\Listas de SharePoint"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
       DTS:DTSID="{3482A987-EF8B-4A36-9357-865BBD3EB567}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
-      DTS:ObjectName="Data Flow Task"
+      DTS:ObjectName="Listas de SharePoint"
       DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
       <DTS:Variables />
       <DTS:ObjectData>
@@ -84,7 +65,7 @@
           version="1">
           <components>
             <component
-              refId="Package\Data Flow Task\Actas"
+              refId="Package\Listas de SharePoint\Actas"
               componentClassID="Microsoft.ManagedComponentHost"
               contactInfo="Componente de origen OData;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;0"
               description="Leer datos de los servicios OData"
@@ -121,7 +102,7 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\Data Flow Task\Actas.Connections[Conexión]"
+                  refId="Package\Listas de SharePoint\Actas.Connections[Conexión]"
                   connectionManagerID="Package.ConnectionManagers[Listas SharePoint]"
                   connectionManagerRefId="Package.ConnectionManagers[Listas SharePoint]"
                   description="Conexión al servicio OData"
@@ -129,390 +110,390 @@
               </connections>
               <outputs>
                 <output
-                  refId="Package\Data Flow Task\Actas.Outputs[Output]"
+                  refId="Package\Listas de SharePoint\Actas.Outputs[Output]"
                   name="Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Data Flow Task\Actas.Outputs[Output].Columns[Identificador]"
+                      refId="Package\Listas de SharePoint\Actas.Outputs[Output].Columns[Identificador]"
                       dataType="i4"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Actas.Outputs[Output].ExternalColumns[Identificador]"
-                      lineageId="Package\Data Flow Task\Actas.Outputs[Output].Columns[Identificador]"
+                      externalMetadataColumnId="Package\Listas de SharePoint\Actas.Outputs[Output].ExternalColumns[Identificador]"
+                      lineageId="Package\Listas de SharePoint\Actas.Outputs[Output].Columns[Identificador]"
                       name="Identificador"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Actas.Outputs[Output].Columns[IdDeTiposDeContenido]"
+                      refId="Package\Listas de SharePoint\Actas.Outputs[Output].Columns[IdDeTiposDeContenido]"
                       dataType="nText"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Actas.Outputs[Output].ExternalColumns[IdDeTiposDeContenido]"
-                      lineageId="Package\Data Flow Task\Actas.Outputs[Output].Columns[IdDeTiposDeContenido]"
+                      externalMetadataColumnId="Package\Listas de SharePoint\Actas.Outputs[Output].ExternalColumns[IdDeTiposDeContenido]"
+                      lineageId="Package\Listas de SharePoint\Actas.Outputs[Output].Columns[IdDeTiposDeContenido]"
                       name="IdDeTiposDeContenido"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Actas.Outputs[Output].Columns[TipoDeContenido]"
+                      refId="Package\Listas de SharePoint\Actas.Outputs[Output].Columns[TipoDeContenido]"
                       dataType="nText"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Actas.Outputs[Output].ExternalColumns[TipoDeContenido]"
-                      lineageId="Package\Data Flow Task\Actas.Outputs[Output].Columns[TipoDeContenido]"
+                      externalMetadataColumnId="Package\Listas de SharePoint\Actas.Outputs[Output].ExternalColumns[TipoDeContenido]"
+                      lineageId="Package\Listas de SharePoint\Actas.Outputs[Output].Columns[TipoDeContenido]"
                       name="TipoDeContenido"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Actas.Outputs[Output].Columns[Creado]"
+                      refId="Package\Listas de SharePoint\Actas.Outputs[Output].Columns[Creado]"
                       dataType="dbTimeStamp"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Actas.Outputs[Output].ExternalColumns[Creado]"
-                      lineageId="Package\Data Flow Task\Actas.Outputs[Output].Columns[Creado]"
+                      externalMetadataColumnId="Package\Listas de SharePoint\Actas.Outputs[Output].ExternalColumns[Creado]"
+                      lineageId="Package\Listas de SharePoint\Actas.Outputs[Output].Columns[Creado]"
                       name="Creado"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Actas.Outputs[Output].Columns[CreadoPorId]"
+                      refId="Package\Listas de SharePoint\Actas.Outputs[Output].Columns[CreadoPorId]"
                       dataType="i4"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Actas.Outputs[Output].ExternalColumns[CreadoPorId]"
-                      lineageId="Package\Data Flow Task\Actas.Outputs[Output].Columns[CreadoPorId]"
+                      externalMetadataColumnId="Package\Listas de SharePoint\Actas.Outputs[Output].ExternalColumns[CreadoPorId]"
+                      lineageId="Package\Listas de SharePoint\Actas.Outputs[Output].Columns[CreadoPorId]"
                       name="CreadoPorId"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Actas.Outputs[Output].Columns[Modificado]"
+                      refId="Package\Listas de SharePoint\Actas.Outputs[Output].Columns[Modificado]"
                       dataType="dbTimeStamp"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Actas.Outputs[Output].ExternalColumns[Modificado]"
-                      lineageId="Package\Data Flow Task\Actas.Outputs[Output].Columns[Modificado]"
+                      externalMetadataColumnId="Package\Listas de SharePoint\Actas.Outputs[Output].ExternalColumns[Modificado]"
+                      lineageId="Package\Listas de SharePoint\Actas.Outputs[Output].Columns[Modificado]"
                       name="Modificado"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Actas.Outputs[Output].Columns[ModificadoPorId]"
+                      refId="Package\Listas de SharePoint\Actas.Outputs[Output].Columns[ModificadoPorId]"
                       dataType="i4"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Actas.Outputs[Output].ExternalColumns[ModificadoPorId]"
-                      lineageId="Package\Data Flow Task\Actas.Outputs[Output].Columns[ModificadoPorId]"
+                      externalMetadataColumnId="Package\Listas de SharePoint\Actas.Outputs[Output].ExternalColumns[ModificadoPorId]"
+                      lineageId="Package\Listas de SharePoint\Actas.Outputs[Output].Columns[ModificadoPorId]"
                       name="ModificadoPorId"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Actas.Outputs[Output].Columns[CopiarOrigen]"
+                      refId="Package\Listas de SharePoint\Actas.Outputs[Output].Columns[CopiarOrigen]"
                       dataType="nText"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Actas.Outputs[Output].ExternalColumns[CopiarOrigen]"
-                      lineageId="Package\Data Flow Task\Actas.Outputs[Output].Columns[CopiarOrigen]"
+                      externalMetadataColumnId="Package\Listas de SharePoint\Actas.Outputs[Output].ExternalColumns[CopiarOrigen]"
+                      lineageId="Package\Listas de SharePoint\Actas.Outputs[Output].Columns[CopiarOrigen]"
                       name="CopiarOrigen"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Actas.Outputs[Output].Columns[EstadoDeAprobación]"
+                      refId="Package\Listas de SharePoint\Actas.Outputs[Output].Columns[EstadoDeAprobación]"
                       dataType="nText"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Actas.Outputs[Output].ExternalColumns[EstadoDeAprobación]"
-                      lineageId="Package\Data Flow Task\Actas.Outputs[Output].Columns[EstadoDeAprobación]"
+                      externalMetadataColumnId="Package\Listas de SharePoint\Actas.Outputs[Output].ExternalColumns[EstadoDeAprobación]"
+                      lineageId="Package\Listas de SharePoint\Actas.Outputs[Output].Columns[EstadoDeAprobación]"
                       name="EstadoDeAprobación"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Actas.Outputs[Output].Columns[RutaDeAcceso]"
+                      refId="Package\Listas de SharePoint\Actas.Outputs[Output].Columns[RutaDeAcceso]"
                       dataType="nText"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Actas.Outputs[Output].ExternalColumns[RutaDeAcceso]"
-                      lineageId="Package\Data Flow Task\Actas.Outputs[Output].Columns[RutaDeAcceso]"
+                      externalMetadataColumnId="Package\Listas de SharePoint\Actas.Outputs[Output].ExternalColumns[RutaDeAcceso]"
+                      lineageId="Package\Listas de SharePoint\Actas.Outputs[Output].Columns[RutaDeAcceso]"
                       name="RutaDeAcceso"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Actas.Outputs[Output].Columns[DesprotegidoParaId]"
+                      refId="Package\Listas de SharePoint\Actas.Outputs[Output].Columns[DesprotegidoParaId]"
                       dataType="i4"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Actas.Outputs[Output].ExternalColumns[DesprotegidoParaId]"
-                      lineageId="Package\Data Flow Task\Actas.Outputs[Output].Columns[DesprotegidoParaId]"
+                      externalMetadataColumnId="Package\Listas de SharePoint\Actas.Outputs[Output].ExternalColumns[DesprotegidoParaId]"
+                      lineageId="Package\Listas de SharePoint\Actas.Outputs[Output].Columns[DesprotegidoParaId]"
                       name="DesprotegidoParaId"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Actas.Outputs[Output].Columns[Nombre]"
+                      refId="Package\Listas de SharePoint\Actas.Outputs[Output].Columns[Nombre]"
                       dataType="nText"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Actas.Outputs[Output].ExternalColumns[Nombre]"
-                      lineageId="Package\Data Flow Task\Actas.Outputs[Output].Columns[Nombre]"
+                      externalMetadataColumnId="Package\Listas de SharePoint\Actas.Outputs[Output].ExternalColumns[Nombre]"
+                      lineageId="Package\Listas de SharePoint\Actas.Outputs[Output].Columns[Nombre]"
                       name="Nombre"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Actas.Outputs[Output].Columns[EstadoDelVirus]"
+                      refId="Package\Listas de SharePoint\Actas.Outputs[Output].Columns[EstadoDelVirus]"
                       dataType="nText"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Actas.Outputs[Output].ExternalColumns[EstadoDelVirus]"
-                      lineageId="Package\Data Flow Task\Actas.Outputs[Output].Columns[EstadoDelVirus]"
+                      externalMetadataColumnId="Package\Listas de SharePoint\Actas.Outputs[Output].ExternalColumns[EstadoDelVirus]"
+                      lineageId="Package\Listas de SharePoint\Actas.Outputs[Output].Columns[EstadoDelVirus]"
                       name="EstadoDelVirus"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Actas.Outputs[Output].Columns[EsLaVersiónActual]"
+                      refId="Package\Listas de SharePoint\Actas.Outputs[Output].Columns[EsLaVersiónActual]"
                       dataType="bool"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Actas.Outputs[Output].ExternalColumns[EsLaVersiónActual]"
-                      lineageId="Package\Data Flow Task\Actas.Outputs[Output].Columns[EsLaVersiónActual]"
+                      externalMetadataColumnId="Package\Listas de SharePoint\Actas.Outputs[Output].ExternalColumns[EsLaVersiónActual]"
+                      lineageId="Package\Listas de SharePoint\Actas.Outputs[Output].Columns[EsLaVersiónActual]"
                       name="EsLaVersiónActual"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Actas.Outputs[Output].Columns[EtiquetaDeColor]"
+                      refId="Package\Listas de SharePoint\Actas.Outputs[Output].Columns[EtiquetaDeColor]"
                       dataType="nText"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Actas.Outputs[Output].ExternalColumns[EtiquetaDeColor]"
-                      lineageId="Package\Data Flow Task\Actas.Outputs[Output].Columns[EtiquetaDeColor]"
+                      externalMetadataColumnId="Package\Listas de SharePoint\Actas.Outputs[Output].ExternalColumns[EtiquetaDeColor]"
+                      lineageId="Package\Listas de SharePoint\Actas.Outputs[Output].Columns[EtiquetaDeColor]"
                       name="EtiquetaDeColor"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Actas.Outputs[Output].Columns[Owshiddenversion]"
+                      refId="Package\Listas de SharePoint\Actas.Outputs[Output].Columns[Owshiddenversion]"
                       dataType="i4"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Actas.Outputs[Output].ExternalColumns[Owshiddenversion]"
-                      lineageId="Package\Data Flow Task\Actas.Outputs[Output].Columns[Owshiddenversion]"
+                      externalMetadataColumnId="Package\Listas de SharePoint\Actas.Outputs[Output].ExternalColumns[Owshiddenversion]"
+                      lineageId="Package\Listas de SharePoint\Actas.Outputs[Output].Columns[Owshiddenversion]"
                       name="Owshiddenversion"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Actas.Outputs[Output].Columns[Versión]"
+                      refId="Package\Listas de SharePoint\Actas.Outputs[Output].Columns[Versión]"
                       dataType="nText"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Actas.Outputs[Output].ExternalColumns[Versión]"
-                      lineageId="Package\Data Flow Task\Actas.Outputs[Output].Columns[Versión]"
+                      externalMetadataColumnId="Package\Listas de SharePoint\Actas.Outputs[Output].ExternalColumns[Versión]"
+                      lineageId="Package\Listas de SharePoint\Actas.Outputs[Output].Columns[Versión]"
                       name="Versión"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Actas.Outputs[Output].Columns[IdDeActivoDeCumplimientoNormativo]"
+                      refId="Package\Listas de SharePoint\Actas.Outputs[Output].Columns[IdDeActivoDeCumplimientoNormativo]"
                       dataType="nText"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Actas.Outputs[Output].ExternalColumns[IdDeActivoDeCumplimientoNormativo]"
-                      lineageId="Package\Data Flow Task\Actas.Outputs[Output].Columns[IdDeActivoDeCumplimientoNormativo]"
+                      externalMetadataColumnId="Package\Listas de SharePoint\Actas.Outputs[Output].ExternalColumns[IdDeActivoDeCumplimientoNormativo]"
+                      lineageId="Package\Listas de SharePoint\Actas.Outputs[Output].Columns[IdDeActivoDeCumplimientoNormativo]"
                       name="IdDeActivoDeCumplimientoNormativo"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Actas.Outputs[Output].Columns[Título]"
+                      refId="Package\Listas de SharePoint\Actas.Outputs[Output].Columns[Título]"
                       dataType="nText"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Actas.Outputs[Output].ExternalColumns[Título]"
-                      lineageId="Package\Data Flow Task\Actas.Outputs[Output].Columns[Título]"
+                      externalMetadataColumnId="Package\Listas de SharePoint\Actas.Outputs[Output].ExternalColumns[Título]"
+                      lineageId="Package\Listas de SharePoint\Actas.Outputs[Output].Columns[Título]"
                       name="Título"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Actas.Outputs[Output].Columns[Descripción]"
+                      refId="Package\Listas de SharePoint\Actas.Outputs[Output].Columns[Descripción]"
                       dataType="nText"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Actas.Outputs[Output].ExternalColumns[Descripción]"
-                      lineageId="Package\Data Flow Task\Actas.Outputs[Output].Columns[Descripción]"
+                      externalMetadataColumnId="Package\Listas de SharePoint\Actas.Outputs[Output].ExternalColumns[Descripción]"
+                      lineageId="Package\Listas de SharePoint\Actas.Outputs[Output].Columns[Descripción]"
                       name="Descripción"
                       truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Actas.Outputs[Output].ExternalColumns[Identificador]"
+                      refId="Package\Listas de SharePoint\Actas.Outputs[Output].ExternalColumns[Identificador]"
                       dataType="i4"
                       name="Identificador" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Actas.Outputs[Output].ExternalColumns[IdDeTiposDeContenido]"
+                      refId="Package\Listas de SharePoint\Actas.Outputs[Output].ExternalColumns[IdDeTiposDeContenido]"
                       dataType="nText"
                       name="IdDeTiposDeContenido" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Actas.Outputs[Output].ExternalColumns[TipoDeContenido]"
+                      refId="Package\Listas de SharePoint\Actas.Outputs[Output].ExternalColumns[TipoDeContenido]"
                       dataType="nText"
                       name="TipoDeContenido" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Actas.Outputs[Output].ExternalColumns[Creado]"
+                      refId="Package\Listas de SharePoint\Actas.Outputs[Output].ExternalColumns[Creado]"
                       dataType="dbTimeStamp"
                       name="Creado" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Actas.Outputs[Output].ExternalColumns[CreadoPorId]"
+                      refId="Package\Listas de SharePoint\Actas.Outputs[Output].ExternalColumns[CreadoPorId]"
                       dataType="i4"
                       name="CreadoPorId" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Actas.Outputs[Output].ExternalColumns[Modificado]"
+                      refId="Package\Listas de SharePoint\Actas.Outputs[Output].ExternalColumns[Modificado]"
                       dataType="dbTimeStamp"
                       name="Modificado" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Actas.Outputs[Output].ExternalColumns[ModificadoPorId]"
+                      refId="Package\Listas de SharePoint\Actas.Outputs[Output].ExternalColumns[ModificadoPorId]"
                       dataType="i4"
                       name="ModificadoPorId" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Actas.Outputs[Output].ExternalColumns[CopiarOrigen]"
+                      refId="Package\Listas de SharePoint\Actas.Outputs[Output].ExternalColumns[CopiarOrigen]"
                       dataType="nText"
                       name="CopiarOrigen" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Actas.Outputs[Output].ExternalColumns[EstadoDeAprobación]"
+                      refId="Package\Listas de SharePoint\Actas.Outputs[Output].ExternalColumns[EstadoDeAprobación]"
                       dataType="nText"
                       name="EstadoDeAprobación" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Actas.Outputs[Output].ExternalColumns[RutaDeAcceso]"
+                      refId="Package\Listas de SharePoint\Actas.Outputs[Output].ExternalColumns[RutaDeAcceso]"
                       dataType="nText"
                       name="RutaDeAcceso" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Actas.Outputs[Output].ExternalColumns[DesprotegidoParaId]"
+                      refId="Package\Listas de SharePoint\Actas.Outputs[Output].ExternalColumns[DesprotegidoParaId]"
                       dataType="i4"
                       name="DesprotegidoParaId" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Actas.Outputs[Output].ExternalColumns[Nombre]"
+                      refId="Package\Listas de SharePoint\Actas.Outputs[Output].ExternalColumns[Nombre]"
                       dataType="nText"
                       name="Nombre" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Actas.Outputs[Output].ExternalColumns[EstadoDelVirus]"
+                      refId="Package\Listas de SharePoint\Actas.Outputs[Output].ExternalColumns[EstadoDelVirus]"
                       dataType="nText"
                       name="EstadoDelVirus" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Actas.Outputs[Output].ExternalColumns[EsLaVersiónActual]"
+                      refId="Package\Listas de SharePoint\Actas.Outputs[Output].ExternalColumns[EsLaVersiónActual]"
                       dataType="bool"
                       name="EsLaVersiónActual" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Actas.Outputs[Output].ExternalColumns[EtiquetaDeColor]"
+                      refId="Package\Listas de SharePoint\Actas.Outputs[Output].ExternalColumns[EtiquetaDeColor]"
                       dataType="nText"
                       name="EtiquetaDeColor" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Actas.Outputs[Output].ExternalColumns[Owshiddenversion]"
+                      refId="Package\Listas de SharePoint\Actas.Outputs[Output].ExternalColumns[Owshiddenversion]"
                       dataType="i4"
                       name="Owshiddenversion" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Actas.Outputs[Output].ExternalColumns[Versión]"
+                      refId="Package\Listas de SharePoint\Actas.Outputs[Output].ExternalColumns[Versión]"
                       dataType="nText"
                       name="Versión" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Actas.Outputs[Output].ExternalColumns[IdDeActivoDeCumplimientoNormativo]"
+                      refId="Package\Listas de SharePoint\Actas.Outputs[Output].ExternalColumns[IdDeActivoDeCumplimientoNormativo]"
                       dataType="nText"
                       name="IdDeActivoDeCumplimientoNormativo" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Actas.Outputs[Output].ExternalColumns[Título]"
+                      refId="Package\Listas de SharePoint\Actas.Outputs[Output].ExternalColumns[Título]"
                       dataType="nText"
                       name="Título" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Actas.Outputs[Output].ExternalColumns[Descripción]"
+                      refId="Package\Listas de SharePoint\Actas.Outputs[Output].ExternalColumns[Descripción]"
                       dataType="nText"
                       name="Descripción" />
                   </externalMetadataColumns>
                 </output>
                 <output
-                  refId="Package\Data Flow Task\Actas.Outputs[Error output]"
+                  refId="Package\Listas de SharePoint\Actas.Outputs[Error output]"
                   isErrorOut="true"
                   name="Error output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Data Flow Task\Actas.Outputs[Error output].Columns[ErrorCode]"
+                      refId="Package\Listas de SharePoint\Actas.Outputs[Error output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\Actas.Outputs[Error output].Columns[ErrorCode]"
+                      lineageId="Package\Listas de SharePoint\Actas.Outputs[Error output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Actas.Outputs[Error output].Columns[ErrorColumn]"
+                      refId="Package\Listas de SharePoint\Actas.Outputs[Error output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\Actas.Outputs[Error output].Columns[ErrorColumn]"
+                      lineageId="Package\Listas de SharePoint\Actas.Outputs[Error output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Actas.Outputs[Error output].Columns[Identificador]"
+                      refId="Package\Listas de SharePoint\Actas.Outputs[Error output].Columns[Identificador]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\Actas.Outputs[Error output].Columns[Identificador]"
+                      lineageId="Package\Listas de SharePoint\Actas.Outputs[Error output].Columns[Identificador]"
                       name="Identificador" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Actas.Outputs[Error output].Columns[IdDeTiposDeContenido]"
+                      refId="Package\Listas de SharePoint\Actas.Outputs[Error output].Columns[IdDeTiposDeContenido]"
                       dataType="nText"
-                      lineageId="Package\Data Flow Task\Actas.Outputs[Error output].Columns[IdDeTiposDeContenido]"
+                      lineageId="Package\Listas de SharePoint\Actas.Outputs[Error output].Columns[IdDeTiposDeContenido]"
                       name="IdDeTiposDeContenido" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Actas.Outputs[Error output].Columns[TipoDeContenido]"
+                      refId="Package\Listas de SharePoint\Actas.Outputs[Error output].Columns[TipoDeContenido]"
                       dataType="nText"
-                      lineageId="Package\Data Flow Task\Actas.Outputs[Error output].Columns[TipoDeContenido]"
+                      lineageId="Package\Listas de SharePoint\Actas.Outputs[Error output].Columns[TipoDeContenido]"
                       name="TipoDeContenido" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Actas.Outputs[Error output].Columns[Creado]"
+                      refId="Package\Listas de SharePoint\Actas.Outputs[Error output].Columns[Creado]"
                       dataType="dbTimeStamp"
-                      lineageId="Package\Data Flow Task\Actas.Outputs[Error output].Columns[Creado]"
+                      lineageId="Package\Listas de SharePoint\Actas.Outputs[Error output].Columns[Creado]"
                       name="Creado" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Actas.Outputs[Error output].Columns[CreadoPorId]"
+                      refId="Package\Listas de SharePoint\Actas.Outputs[Error output].Columns[CreadoPorId]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\Actas.Outputs[Error output].Columns[CreadoPorId]"
+                      lineageId="Package\Listas de SharePoint\Actas.Outputs[Error output].Columns[CreadoPorId]"
                       name="CreadoPorId" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Actas.Outputs[Error output].Columns[Modificado]"
+                      refId="Package\Listas de SharePoint\Actas.Outputs[Error output].Columns[Modificado]"
                       dataType="dbTimeStamp"
-                      lineageId="Package\Data Flow Task\Actas.Outputs[Error output].Columns[Modificado]"
+                      lineageId="Package\Listas de SharePoint\Actas.Outputs[Error output].Columns[Modificado]"
                       name="Modificado" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Actas.Outputs[Error output].Columns[ModificadoPorId]"
+                      refId="Package\Listas de SharePoint\Actas.Outputs[Error output].Columns[ModificadoPorId]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\Actas.Outputs[Error output].Columns[ModificadoPorId]"
+                      lineageId="Package\Listas de SharePoint\Actas.Outputs[Error output].Columns[ModificadoPorId]"
                       name="ModificadoPorId" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Actas.Outputs[Error output].Columns[CopiarOrigen]"
+                      refId="Package\Listas de SharePoint\Actas.Outputs[Error output].Columns[CopiarOrigen]"
                       dataType="nText"
-                      lineageId="Package\Data Flow Task\Actas.Outputs[Error output].Columns[CopiarOrigen]"
+                      lineageId="Package\Listas de SharePoint\Actas.Outputs[Error output].Columns[CopiarOrigen]"
                       name="CopiarOrigen" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Actas.Outputs[Error output].Columns[EstadoDeAprobación]"
+                      refId="Package\Listas de SharePoint\Actas.Outputs[Error output].Columns[EstadoDeAprobación]"
                       dataType="nText"
-                      lineageId="Package\Data Flow Task\Actas.Outputs[Error output].Columns[EstadoDeAprobación]"
+                      lineageId="Package\Listas de SharePoint\Actas.Outputs[Error output].Columns[EstadoDeAprobación]"
                       name="EstadoDeAprobación" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Actas.Outputs[Error output].Columns[RutaDeAcceso]"
+                      refId="Package\Listas de SharePoint\Actas.Outputs[Error output].Columns[RutaDeAcceso]"
                       dataType="nText"
-                      lineageId="Package\Data Flow Task\Actas.Outputs[Error output].Columns[RutaDeAcceso]"
+                      lineageId="Package\Listas de SharePoint\Actas.Outputs[Error output].Columns[RutaDeAcceso]"
                       name="RutaDeAcceso" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Actas.Outputs[Error output].Columns[DesprotegidoParaId]"
+                      refId="Package\Listas de SharePoint\Actas.Outputs[Error output].Columns[DesprotegidoParaId]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\Actas.Outputs[Error output].Columns[DesprotegidoParaId]"
+                      lineageId="Package\Listas de SharePoint\Actas.Outputs[Error output].Columns[DesprotegidoParaId]"
                       name="DesprotegidoParaId" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Actas.Outputs[Error output].Columns[Nombre]"
+                      refId="Package\Listas de SharePoint\Actas.Outputs[Error output].Columns[Nombre]"
                       dataType="nText"
-                      lineageId="Package\Data Flow Task\Actas.Outputs[Error output].Columns[Nombre]"
+                      lineageId="Package\Listas de SharePoint\Actas.Outputs[Error output].Columns[Nombre]"
                       name="Nombre" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Actas.Outputs[Error output].Columns[EstadoDelVirus]"
+                      refId="Package\Listas de SharePoint\Actas.Outputs[Error output].Columns[EstadoDelVirus]"
                       dataType="nText"
-                      lineageId="Package\Data Flow Task\Actas.Outputs[Error output].Columns[EstadoDelVirus]"
+                      lineageId="Package\Listas de SharePoint\Actas.Outputs[Error output].Columns[EstadoDelVirus]"
                       name="EstadoDelVirus" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Actas.Outputs[Error output].Columns[EsLaVersiónActual]"
+                      refId="Package\Listas de SharePoint\Actas.Outputs[Error output].Columns[EsLaVersiónActual]"
                       dataType="bool"
-                      lineageId="Package\Data Flow Task\Actas.Outputs[Error output].Columns[EsLaVersiónActual]"
+                      lineageId="Package\Listas de SharePoint\Actas.Outputs[Error output].Columns[EsLaVersiónActual]"
                       name="EsLaVersiónActual" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Actas.Outputs[Error output].Columns[EtiquetaDeColor]"
+                      refId="Package\Listas de SharePoint\Actas.Outputs[Error output].Columns[EtiquetaDeColor]"
                       dataType="nText"
-                      lineageId="Package\Data Flow Task\Actas.Outputs[Error output].Columns[EtiquetaDeColor]"
+                      lineageId="Package\Listas de SharePoint\Actas.Outputs[Error output].Columns[EtiquetaDeColor]"
                       name="EtiquetaDeColor" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Actas.Outputs[Error output].Columns[Owshiddenversion]"
+                      refId="Package\Listas de SharePoint\Actas.Outputs[Error output].Columns[Owshiddenversion]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\Actas.Outputs[Error output].Columns[Owshiddenversion]"
+                      lineageId="Package\Listas de SharePoint\Actas.Outputs[Error output].Columns[Owshiddenversion]"
                       name="Owshiddenversion" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Actas.Outputs[Error output].Columns[Versión]"
+                      refId="Package\Listas de SharePoint\Actas.Outputs[Error output].Columns[Versión]"
                       dataType="nText"
-                      lineageId="Package\Data Flow Task\Actas.Outputs[Error output].Columns[Versión]"
+                      lineageId="Package\Listas de SharePoint\Actas.Outputs[Error output].Columns[Versión]"
                       name="Versión" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Actas.Outputs[Error output].Columns[IdDeActivoDeCumplimientoNormativo]"
+                      refId="Package\Listas de SharePoint\Actas.Outputs[Error output].Columns[IdDeActivoDeCumplimientoNormativo]"
                       dataType="nText"
-                      lineageId="Package\Data Flow Task\Actas.Outputs[Error output].Columns[IdDeActivoDeCumplimientoNormativo]"
+                      lineageId="Package\Listas de SharePoint\Actas.Outputs[Error output].Columns[IdDeActivoDeCumplimientoNormativo]"
                       name="IdDeActivoDeCumplimientoNormativo" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Actas.Outputs[Error output].Columns[Título]"
+                      refId="Package\Listas de SharePoint\Actas.Outputs[Error output].Columns[Título]"
                       dataType="nText"
-                      lineageId="Package\Data Flow Task\Actas.Outputs[Error output].Columns[Título]"
+                      lineageId="Package\Listas de SharePoint\Actas.Outputs[Error output].Columns[Título]"
                       name="Título" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Actas.Outputs[Error output].Columns[Descripción]"
+                      refId="Package\Listas de SharePoint\Actas.Outputs[Error output].Columns[Descripción]"
                       dataType="nText"
-                      lineageId="Package\Data Flow Task\Actas.Outputs[Error output].Columns[Descripción]"
+                      lineageId="Package\Listas de SharePoint\Actas.Outputs[Error output].Columns[Descripción]"
                       name="Descripción" />
                   </outputColumns>
                   <externalMetadataColumns />
@@ -520,7 +501,641 @@
               </outputs>
             </component>
             <component
-              refId="Package\Data Flow Task\OLE_DB_Actas"
+              refId="Package\Listas de SharePoint\InventarioCilindros"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="Componente de origen OData;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;0"
+              description="Leer datos de los servicios OData"
+              name="InventarioCilindros"
+              usesDispositions="true">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Nombre de la colección que se recuperará del servicio."
+                  expressionType="Notify"
+                  name="CollectionName">InventarioMantenimientoCilindros</property>
+                <property
+                  dataType="System.Int32"
+                  description="La longitud máxima predeterminada de una cadena que no tiene maxlength especificada en el esquema."
+                  name="DefaultStringLength">4000</property>
+                <property
+                  dataType="System.String"
+                  description="Consulta en la dirección URL. "
+                  expressionType="Notify"
+                  name="Query"></property>
+                <property
+                  dataType="System.String"
+                  description="Ruta de acceso a recursos de la colección que se recuperará del servicio."
+                  expressionType="Notify"
+                  name="ResourcePath"></property>
+                <property
+                  dataType="System.Boolean"
+                  description="Cuando se establece en True, use la ruta de acceso a recursos como la colección solicitada; en caso contrario, use el nombre de la colección."
+                  expressionType="Notify"
+                  name="UseResourcePath">false</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.OData</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Listas de SharePoint\InventarioCilindros.Connections[Conexión]"
+                  connectionManagerID="Package.ConnectionManagers[Listas SharePoint]"
+                  connectionManagerRefId="Package.ConnectionManagers[Listas SharePoint]"
+                  description="Conexión al servicio OData"
+                  name="Conexión" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output]"
+                  name="Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].Columns[IdDeTiposDeContenido]"
+                      dataType="nText"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].ExternalColumns[IdDeTiposDeContenido]"
+                      lineageId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].Columns[IdDeTiposDeContenido]"
+                      name="IdDeTiposDeContenido"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].Columns[C_0]"
+                      dataType="nText"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].ExternalColumns[C_0]"
+                      lineageId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].Columns[C_0]"
+                      name="C_0"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].Columns[EtiquetaDeColor]"
+                      dataType="nText"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].ExternalColumns[EtiquetaDeColor]"
+                      lineageId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].Columns[EtiquetaDeColor]"
+                      name="EtiquetaDeColor"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].Columns[IdDeActivoDeCumplimientoNormativo]"
+                      dataType="nText"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].ExternalColumns[IdDeActivoDeCumplimientoNormativo]"
+                      lineageId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].Columns[IdDeActivoDeCumplimientoNormativo]"
+                      name="IdDeActivoDeCumplimientoNormativo"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].Columns[CentroOperacionValue]"
+                      dataType="nText"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].ExternalColumns[CentroOperacionValue]"
+                      lineageId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].Columns[CentroOperacionValue]"
+                      name="CentroOperacionValue"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].Columns[FechaCreación]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].ExternalColumns[FechaCreación]"
+                      lineageId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].Columns[FechaCreación]"
+                      name="FechaCreación"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].Columns[Cantidad1]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].ExternalColumns[Cantidad1]"
+                      lineageId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].Columns[Cantidad1]"
+                      name="Cantidad1"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].Columns[TurnoValue]"
+                      dataType="nText"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].ExternalColumns[TurnoValue]"
+                      lineageId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].Columns[TurnoValue]"
+                      name="TurnoValue"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].Columns[RealizaRegistroValue]"
+                      dataType="nText"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].ExternalColumns[RealizaRegistroValue]"
+                      lineageId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].Columns[RealizaRegistroValue]"
+                      name="RealizaRegistroValue"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].Columns[CilindrosLavados1Value]"
+                      dataType="nText"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].ExternalColumns[CilindrosLavados1Value]"
+                      lineageId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].Columns[CilindrosLavados1Value]"
+                      name="CilindrosLavados1Value"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].Columns[CargoValue]"
+                      dataType="nText"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].ExternalColumns[CargoValue]"
+                      lineageId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].Columns[CargoValue]"
+                      name="CargoValue"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].Columns[CilindrosLavados2Value]"
+                      dataType="nText"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].ExternalColumns[CilindrosLavados2Value]"
+                      lineageId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].Columns[CilindrosLavados2Value]"
+                      name="CilindrosLavados2Value"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].Columns[Cantidad2]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].ExternalColumns[Cantidad2]"
+                      lineageId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].Columns[Cantidad2]"
+                      name="Cantidad2"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].Columns[CilindrosLavados3Value]"
+                      dataType="nText"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].ExternalColumns[CilindrosLavados3Value]"
+                      lineageId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].Columns[CilindrosLavados3Value]"
+                      name="CilindrosLavados3Value"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].Columns[Cantidad3]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].ExternalColumns[Cantidad3]"
+                      lineageId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].Columns[Cantidad3]"
+                      name="Cantidad3"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].Columns[RegistróId]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].ExternalColumns[RegistróId]"
+                      lineageId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].Columns[RegistróId]"
+                      name="RegistróId"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].Columns[CilindrosPintados1Value]"
+                      dataType="nText"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].ExternalColumns[CilindrosPintados1Value]"
+                      lineageId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].Columns[CilindrosPintados1Value]"
+                      name="CilindrosPintados1Value"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].Columns[Cantidad10]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].ExternalColumns[Cantidad10]"
+                      lineageId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].Columns[Cantidad10]"
+                      name="Cantidad10"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].Columns[CilindrosPintados2Value]"
+                      dataType="nText"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].ExternalColumns[CilindrosPintados2Value]"
+                      lineageId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].Columns[CilindrosPintados2Value]"
+                      name="CilindrosPintados2Value"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].Columns[Cantidad20]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].ExternalColumns[Cantidad20]"
+                      lineageId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].Columns[Cantidad20]"
+                      name="Cantidad20"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].Columns[CilindrosPintados3Value]"
+                      dataType="nText"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].ExternalColumns[CilindrosPintados3Value]"
+                      lineageId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].Columns[CilindrosPintados3Value]"
+                      name="CilindrosPintados3Value"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].Columns[Cantidad30]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].ExternalColumns[Cantidad30]"
+                      lineageId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].Columns[Cantidad30]"
+                      name="Cantidad30"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].Columns[Identificador]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].ExternalColumns[Identificador]"
+                      lineageId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].Columns[Identificador]"
+                      name="Identificador"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].Columns[TipoDeContenido]"
+                      dataType="nText"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].ExternalColumns[TipoDeContenido]"
+                      lineageId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].Columns[TipoDeContenido]"
+                      name="TipoDeContenido"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].Columns[Modificado]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].ExternalColumns[Modificado]"
+                      lineageId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].Columns[Modificado]"
+                      name="Modificado"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].Columns[Creado]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].ExternalColumns[Creado]"
+                      lineageId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].Columns[Creado]"
+                      name="Creado"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].Columns[CreadoPorId]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].ExternalColumns[CreadoPorId]"
+                      lineageId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].Columns[CreadoPorId]"
+                      name="CreadoPorId"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].Columns[ModificadoPorId]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].ExternalColumns[ModificadoPorId]"
+                      lineageId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].Columns[ModificadoPorId]"
+                      name="ModificadoPorId"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].Columns[Owshiddenversion]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].ExternalColumns[Owshiddenversion]"
+                      lineageId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].Columns[Owshiddenversion]"
+                      name="Owshiddenversion"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].Columns[Versión]"
+                      dataType="nText"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].ExternalColumns[Versión]"
+                      lineageId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].Columns[Versión]"
+                      name="Versión"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].Columns[RutaDeAcceso]"
+                      dataType="nText"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].ExternalColumns[RutaDeAcceso]"
+                      lineageId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].Columns[RutaDeAcceso]"
+                      name="RutaDeAcceso"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].ExternalColumns[IdDeTiposDeContenido]"
+                      dataType="nText"
+                      name="IdDeTiposDeContenido" />
+                    <externalMetadataColumn
+                      refId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].ExternalColumns[C_0]"
+                      dataType="nText"
+                      name="C_0" />
+                    <externalMetadataColumn
+                      refId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].ExternalColumns[EtiquetaDeColor]"
+                      dataType="nText"
+                      name="EtiquetaDeColor" />
+                    <externalMetadataColumn
+                      refId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].ExternalColumns[IdDeActivoDeCumplimientoNormativo]"
+                      dataType="nText"
+                      name="IdDeActivoDeCumplimientoNormativo" />
+                    <externalMetadataColumn
+                      refId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].ExternalColumns[CentroOperacionValue]"
+                      dataType="nText"
+                      name="CentroOperacionValue" />
+                    <externalMetadataColumn
+                      refId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].ExternalColumns[FechaCreación]"
+                      dataType="dbTimeStamp"
+                      name="FechaCreación" />
+                    <externalMetadataColumn
+                      refId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].ExternalColumns[Cantidad1]"
+                      dataType="r8"
+                      name="Cantidad1" />
+                    <externalMetadataColumn
+                      refId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].ExternalColumns[TurnoValue]"
+                      dataType="nText"
+                      name="TurnoValue" />
+                    <externalMetadataColumn
+                      refId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].ExternalColumns[RealizaRegistroValue]"
+                      dataType="nText"
+                      name="RealizaRegistroValue" />
+                    <externalMetadataColumn
+                      refId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].ExternalColumns[CilindrosLavados1Value]"
+                      dataType="nText"
+                      name="CilindrosLavados1Value" />
+                    <externalMetadataColumn
+                      refId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].ExternalColumns[CargoValue]"
+                      dataType="nText"
+                      name="CargoValue" />
+                    <externalMetadataColumn
+                      refId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].ExternalColumns[CilindrosLavados2Value]"
+                      dataType="nText"
+                      name="CilindrosLavados2Value" />
+                    <externalMetadataColumn
+                      refId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].ExternalColumns[Cantidad2]"
+                      dataType="r8"
+                      name="Cantidad2" />
+                    <externalMetadataColumn
+                      refId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].ExternalColumns[CilindrosLavados3Value]"
+                      dataType="nText"
+                      name="CilindrosLavados3Value" />
+                    <externalMetadataColumn
+                      refId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].ExternalColumns[Cantidad3]"
+                      dataType="r8"
+                      name="Cantidad3" />
+                    <externalMetadataColumn
+                      refId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].ExternalColumns[RegistróId]"
+                      dataType="i4"
+                      name="RegistróId" />
+                    <externalMetadataColumn
+                      refId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].ExternalColumns[CilindrosPintados1Value]"
+                      dataType="nText"
+                      name="CilindrosPintados1Value" />
+                    <externalMetadataColumn
+                      refId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].ExternalColumns[Cantidad10]"
+                      dataType="r8"
+                      name="Cantidad10" />
+                    <externalMetadataColumn
+                      refId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].ExternalColumns[CilindrosPintados2Value]"
+                      dataType="nText"
+                      name="CilindrosPintados2Value" />
+                    <externalMetadataColumn
+                      refId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].ExternalColumns[Cantidad20]"
+                      dataType="r8"
+                      name="Cantidad20" />
+                    <externalMetadataColumn
+                      refId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].ExternalColumns[CilindrosPintados3Value]"
+                      dataType="nText"
+                      name="CilindrosPintados3Value" />
+                    <externalMetadataColumn
+                      refId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].ExternalColumns[Cantidad30]"
+                      dataType="r8"
+                      name="Cantidad30" />
+                    <externalMetadataColumn
+                      refId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].ExternalColumns[Identificador]"
+                      dataType="i4"
+                      name="Identificador" />
+                    <externalMetadataColumn
+                      refId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].ExternalColumns[TipoDeContenido]"
+                      dataType="nText"
+                      name="TipoDeContenido" />
+                    <externalMetadataColumn
+                      refId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].ExternalColumns[Modificado]"
+                      dataType="dbTimeStamp"
+                      name="Modificado" />
+                    <externalMetadataColumn
+                      refId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].ExternalColumns[Creado]"
+                      dataType="dbTimeStamp"
+                      name="Creado" />
+                    <externalMetadataColumn
+                      refId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].ExternalColumns[CreadoPorId]"
+                      dataType="i4"
+                      name="CreadoPorId" />
+                    <externalMetadataColumn
+                      refId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].ExternalColumns[ModificadoPorId]"
+                      dataType="i4"
+                      name="ModificadoPorId" />
+                    <externalMetadataColumn
+                      refId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].ExternalColumns[Owshiddenversion]"
+                      dataType="i4"
+                      name="Owshiddenversion" />
+                    <externalMetadataColumn
+                      refId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].ExternalColumns[Versión]"
+                      dataType="nText"
+                      name="Versión" />
+                    <externalMetadataColumn
+                      refId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].ExternalColumns[RutaDeAcceso]"
+                      dataType="nText"
+                      name="RutaDeAcceso" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Error output]"
+                  isErrorOut="true"
+                  name="Error output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Error output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Error output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Error output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Error output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                    <outputColumn
+                      refId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Error output].Columns[IdDeTiposDeContenido]"
+                      dataType="nText"
+                      lineageId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Error output].Columns[IdDeTiposDeContenido]"
+                      name="IdDeTiposDeContenido" />
+                    <outputColumn
+                      refId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Error output].Columns[C_0]"
+                      dataType="nText"
+                      lineageId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Error output].Columns[C_0]"
+                      name="C_0" />
+                    <outputColumn
+                      refId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Error output].Columns[EtiquetaDeColor]"
+                      dataType="nText"
+                      lineageId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Error output].Columns[EtiquetaDeColor]"
+                      name="EtiquetaDeColor" />
+                    <outputColumn
+                      refId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Error output].Columns[IdDeActivoDeCumplimientoNormativo]"
+                      dataType="nText"
+                      lineageId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Error output].Columns[IdDeActivoDeCumplimientoNormativo]"
+                      name="IdDeActivoDeCumplimientoNormativo" />
+                    <outputColumn
+                      refId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Error output].Columns[CentroOperacionValue]"
+                      dataType="nText"
+                      lineageId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Error output].Columns[CentroOperacionValue]"
+                      name="CentroOperacionValue" />
+                    <outputColumn
+                      refId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Error output].Columns[FechaCreación]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Error output].Columns[FechaCreación]"
+                      name="FechaCreación" />
+                    <outputColumn
+                      refId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Error output].Columns[Cantidad1]"
+                      dataType="r8"
+                      lineageId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Error output].Columns[Cantidad1]"
+                      name="Cantidad1" />
+                    <outputColumn
+                      refId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Error output].Columns[TurnoValue]"
+                      dataType="nText"
+                      lineageId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Error output].Columns[TurnoValue]"
+                      name="TurnoValue" />
+                    <outputColumn
+                      refId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Error output].Columns[RealizaRegistroValue]"
+                      dataType="nText"
+                      lineageId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Error output].Columns[RealizaRegistroValue]"
+                      name="RealizaRegistroValue" />
+                    <outputColumn
+                      refId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Error output].Columns[CilindrosLavados1Value]"
+                      dataType="nText"
+                      lineageId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Error output].Columns[CilindrosLavados1Value]"
+                      name="CilindrosLavados1Value" />
+                    <outputColumn
+                      refId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Error output].Columns[CargoValue]"
+                      dataType="nText"
+                      lineageId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Error output].Columns[CargoValue]"
+                      name="CargoValue" />
+                    <outputColumn
+                      refId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Error output].Columns[CilindrosLavados2Value]"
+                      dataType="nText"
+                      lineageId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Error output].Columns[CilindrosLavados2Value]"
+                      name="CilindrosLavados2Value" />
+                    <outputColumn
+                      refId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Error output].Columns[Cantidad2]"
+                      dataType="r8"
+                      lineageId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Error output].Columns[Cantidad2]"
+                      name="Cantidad2" />
+                    <outputColumn
+                      refId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Error output].Columns[CilindrosLavados3Value]"
+                      dataType="nText"
+                      lineageId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Error output].Columns[CilindrosLavados3Value]"
+                      name="CilindrosLavados3Value" />
+                    <outputColumn
+                      refId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Error output].Columns[Cantidad3]"
+                      dataType="r8"
+                      lineageId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Error output].Columns[Cantidad3]"
+                      name="Cantidad3" />
+                    <outputColumn
+                      refId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Error output].Columns[RegistróId]"
+                      dataType="i4"
+                      lineageId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Error output].Columns[RegistróId]"
+                      name="RegistróId" />
+                    <outputColumn
+                      refId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Error output].Columns[CilindrosPintados1Value]"
+                      dataType="nText"
+                      lineageId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Error output].Columns[CilindrosPintados1Value]"
+                      name="CilindrosPintados1Value" />
+                    <outputColumn
+                      refId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Error output].Columns[Cantidad10]"
+                      dataType="r8"
+                      lineageId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Error output].Columns[Cantidad10]"
+                      name="Cantidad10" />
+                    <outputColumn
+                      refId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Error output].Columns[CilindrosPintados2Value]"
+                      dataType="nText"
+                      lineageId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Error output].Columns[CilindrosPintados2Value]"
+                      name="CilindrosPintados2Value" />
+                    <outputColumn
+                      refId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Error output].Columns[Cantidad20]"
+                      dataType="r8"
+                      lineageId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Error output].Columns[Cantidad20]"
+                      name="Cantidad20" />
+                    <outputColumn
+                      refId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Error output].Columns[CilindrosPintados3Value]"
+                      dataType="nText"
+                      lineageId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Error output].Columns[CilindrosPintados3Value]"
+                      name="CilindrosPintados3Value" />
+                    <outputColumn
+                      refId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Error output].Columns[Cantidad30]"
+                      dataType="r8"
+                      lineageId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Error output].Columns[Cantidad30]"
+                      name="Cantidad30" />
+                    <outputColumn
+                      refId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Error output].Columns[Identificador]"
+                      dataType="i4"
+                      lineageId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Error output].Columns[Identificador]"
+                      name="Identificador" />
+                    <outputColumn
+                      refId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Error output].Columns[TipoDeContenido]"
+                      dataType="nText"
+                      lineageId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Error output].Columns[TipoDeContenido]"
+                      name="TipoDeContenido" />
+                    <outputColumn
+                      refId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Error output].Columns[Modificado]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Error output].Columns[Modificado]"
+                      name="Modificado" />
+                    <outputColumn
+                      refId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Error output].Columns[Creado]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Error output].Columns[Creado]"
+                      name="Creado" />
+                    <outputColumn
+                      refId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Error output].Columns[CreadoPorId]"
+                      dataType="i4"
+                      lineageId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Error output].Columns[CreadoPorId]"
+                      name="CreadoPorId" />
+                    <outputColumn
+                      refId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Error output].Columns[ModificadoPorId]"
+                      dataType="i4"
+                      lineageId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Error output].Columns[ModificadoPorId]"
+                      name="ModificadoPorId" />
+                    <outputColumn
+                      refId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Error output].Columns[Owshiddenversion]"
+                      dataType="i4"
+                      lineageId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Error output].Columns[Owshiddenversion]"
+                      name="Owshiddenversion" />
+                    <outputColumn
+                      refId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Error output].Columns[Versión]"
+                      dataType="nText"
+                      lineageId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Error output].Columns[Versión]"
+                      name="Versión" />
+                    <outputColumn
+                      refId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Error output].Columns[RutaDeAcceso]"
+                      dataType="nText"
+                      lineageId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Error output].Columns[RutaDeAcceso]"
+                      name="RutaDeAcceso" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Listas de SharePoint\OLE_DB_Actas"
               componentClassID="Microsoft.OLEDBDestination"
               contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
               description="OLE DB Destination"
@@ -577,7 +1192,7 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\Data Flow Task\OLE_DB_Actas.Connections[OleDbConnection]"
+                  refId="Package\Listas de SharePoint\OLE_DB_Actas.Connections[OleDbConnection]"
                   connectionManagerID="Package.ConnectionManagers[192.168.0.132.DataStage]"
                   connectionManagerRefId="Package.ConnectionManagers[192.168.0.132.DataStage]"
                   description="The OLE DB runtime connection used to access the database."
@@ -585,213 +1200,213 @@
               </connections>
               <inputs>
                 <input
-                  refId="Package\Data Flow Task\OLE_DB_Actas.Inputs[OLE DB Destination Input]"
+                  refId="Package\Listas de SharePoint\OLE_DB_Actas.Inputs[OLE DB Destination Input]"
                   errorOrTruncationOperation="Insert"
                   errorRowDisposition="FailComponent"
                   hasSideEffects="true"
                   name="OLE DB Destination Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE_DB_Actas.Inputs[OLE DB Destination Input].Columns[Identificador]"
+                      refId="Package\Listas de SharePoint\OLE_DB_Actas.Inputs[OLE DB Destination Input].Columns[Identificador]"
                       cachedDataType="i4"
                       cachedName="Identificador"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE_DB_Actas.Inputs[OLE DB Destination Input].ExternalColumns[Identificador]"
-                      lineageId="Package\Data Flow Task\Actas.Outputs[Output].Columns[Identificador]" />
+                      externalMetadataColumnId="Package\Listas de SharePoint\OLE_DB_Actas.Inputs[OLE DB Destination Input].ExternalColumns[Identificador]"
+                      lineageId="Package\Listas de SharePoint\Actas.Outputs[Output].Columns[Identificador]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE_DB_Actas.Inputs[OLE DB Destination Input].Columns[IdDeTiposDeContenido]"
+                      refId="Package\Listas de SharePoint\OLE_DB_Actas.Inputs[OLE DB Destination Input].Columns[IdDeTiposDeContenido]"
                       cachedDataType="nText"
                       cachedName="IdDeTiposDeContenido"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE_DB_Actas.Inputs[OLE DB Destination Input].ExternalColumns[IdDeTiposDeContenido]"
-                      lineageId="Package\Data Flow Task\Actas.Outputs[Output].Columns[IdDeTiposDeContenido]" />
+                      externalMetadataColumnId="Package\Listas de SharePoint\OLE_DB_Actas.Inputs[OLE DB Destination Input].ExternalColumns[IdDeTiposDeContenido]"
+                      lineageId="Package\Listas de SharePoint\Actas.Outputs[Output].Columns[IdDeTiposDeContenido]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE_DB_Actas.Inputs[OLE DB Destination Input].Columns[TipoDeContenido]"
+                      refId="Package\Listas de SharePoint\OLE_DB_Actas.Inputs[OLE DB Destination Input].Columns[TipoDeContenido]"
                       cachedDataType="nText"
                       cachedName="TipoDeContenido"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE_DB_Actas.Inputs[OLE DB Destination Input].ExternalColumns[TipoDeContenido]"
-                      lineageId="Package\Data Flow Task\Actas.Outputs[Output].Columns[TipoDeContenido]" />
+                      externalMetadataColumnId="Package\Listas de SharePoint\OLE_DB_Actas.Inputs[OLE DB Destination Input].ExternalColumns[TipoDeContenido]"
+                      lineageId="Package\Listas de SharePoint\Actas.Outputs[Output].Columns[TipoDeContenido]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE_DB_Actas.Inputs[OLE DB Destination Input].Columns[Creado]"
+                      refId="Package\Listas de SharePoint\OLE_DB_Actas.Inputs[OLE DB Destination Input].Columns[Creado]"
                       cachedDataType="dbTimeStamp"
                       cachedName="Creado"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE_DB_Actas.Inputs[OLE DB Destination Input].ExternalColumns[Creado]"
-                      lineageId="Package\Data Flow Task\Actas.Outputs[Output].Columns[Creado]" />
+                      externalMetadataColumnId="Package\Listas de SharePoint\OLE_DB_Actas.Inputs[OLE DB Destination Input].ExternalColumns[Creado]"
+                      lineageId="Package\Listas de SharePoint\Actas.Outputs[Output].Columns[Creado]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE_DB_Actas.Inputs[OLE DB Destination Input].Columns[CreadoPorId]"
+                      refId="Package\Listas de SharePoint\OLE_DB_Actas.Inputs[OLE DB Destination Input].Columns[CreadoPorId]"
                       cachedDataType="i4"
                       cachedName="CreadoPorId"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE_DB_Actas.Inputs[OLE DB Destination Input].ExternalColumns[CreadoPorId]"
-                      lineageId="Package\Data Flow Task\Actas.Outputs[Output].Columns[CreadoPorId]" />
+                      externalMetadataColumnId="Package\Listas de SharePoint\OLE_DB_Actas.Inputs[OLE DB Destination Input].ExternalColumns[CreadoPorId]"
+                      lineageId="Package\Listas de SharePoint\Actas.Outputs[Output].Columns[CreadoPorId]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE_DB_Actas.Inputs[OLE DB Destination Input].Columns[Modificado]"
+                      refId="Package\Listas de SharePoint\OLE_DB_Actas.Inputs[OLE DB Destination Input].Columns[Modificado]"
                       cachedDataType="dbTimeStamp"
                       cachedName="Modificado"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE_DB_Actas.Inputs[OLE DB Destination Input].ExternalColumns[Modificado]"
-                      lineageId="Package\Data Flow Task\Actas.Outputs[Output].Columns[Modificado]" />
+                      externalMetadataColumnId="Package\Listas de SharePoint\OLE_DB_Actas.Inputs[OLE DB Destination Input].ExternalColumns[Modificado]"
+                      lineageId="Package\Listas de SharePoint\Actas.Outputs[Output].Columns[Modificado]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE_DB_Actas.Inputs[OLE DB Destination Input].Columns[ModificadoPorId]"
+                      refId="Package\Listas de SharePoint\OLE_DB_Actas.Inputs[OLE DB Destination Input].Columns[ModificadoPorId]"
                       cachedDataType="i4"
                       cachedName="ModificadoPorId"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE_DB_Actas.Inputs[OLE DB Destination Input].ExternalColumns[ModificadoPorId]"
-                      lineageId="Package\Data Flow Task\Actas.Outputs[Output].Columns[ModificadoPorId]" />
+                      externalMetadataColumnId="Package\Listas de SharePoint\OLE_DB_Actas.Inputs[OLE DB Destination Input].ExternalColumns[ModificadoPorId]"
+                      lineageId="Package\Listas de SharePoint\Actas.Outputs[Output].Columns[ModificadoPorId]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE_DB_Actas.Inputs[OLE DB Destination Input].Columns[CopiarOrigen]"
+                      refId="Package\Listas de SharePoint\OLE_DB_Actas.Inputs[OLE DB Destination Input].Columns[CopiarOrigen]"
                       cachedDataType="nText"
                       cachedName="CopiarOrigen"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE_DB_Actas.Inputs[OLE DB Destination Input].ExternalColumns[CopiarOrigen]"
-                      lineageId="Package\Data Flow Task\Actas.Outputs[Output].Columns[CopiarOrigen]" />
+                      externalMetadataColumnId="Package\Listas de SharePoint\OLE_DB_Actas.Inputs[OLE DB Destination Input].ExternalColumns[CopiarOrigen]"
+                      lineageId="Package\Listas de SharePoint\Actas.Outputs[Output].Columns[CopiarOrigen]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE_DB_Actas.Inputs[OLE DB Destination Input].Columns[EstadoDeAprobación]"
+                      refId="Package\Listas de SharePoint\OLE_DB_Actas.Inputs[OLE DB Destination Input].Columns[EstadoDeAprobación]"
                       cachedDataType="nText"
                       cachedName="EstadoDeAprobación"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE_DB_Actas.Inputs[OLE DB Destination Input].ExternalColumns[EstadoDeAprobación]"
-                      lineageId="Package\Data Flow Task\Actas.Outputs[Output].Columns[EstadoDeAprobación]" />
+                      externalMetadataColumnId="Package\Listas de SharePoint\OLE_DB_Actas.Inputs[OLE DB Destination Input].ExternalColumns[EstadoDeAprobación]"
+                      lineageId="Package\Listas de SharePoint\Actas.Outputs[Output].Columns[EstadoDeAprobación]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE_DB_Actas.Inputs[OLE DB Destination Input].Columns[RutaDeAcceso]"
+                      refId="Package\Listas de SharePoint\OLE_DB_Actas.Inputs[OLE DB Destination Input].Columns[RutaDeAcceso]"
                       cachedDataType="nText"
                       cachedName="RutaDeAcceso"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE_DB_Actas.Inputs[OLE DB Destination Input].ExternalColumns[RutaDeAcceso]"
-                      lineageId="Package\Data Flow Task\Actas.Outputs[Output].Columns[RutaDeAcceso]" />
+                      externalMetadataColumnId="Package\Listas de SharePoint\OLE_DB_Actas.Inputs[OLE DB Destination Input].ExternalColumns[RutaDeAcceso]"
+                      lineageId="Package\Listas de SharePoint\Actas.Outputs[Output].Columns[RutaDeAcceso]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE_DB_Actas.Inputs[OLE DB Destination Input].Columns[DesprotegidoParaId]"
+                      refId="Package\Listas de SharePoint\OLE_DB_Actas.Inputs[OLE DB Destination Input].Columns[DesprotegidoParaId]"
                       cachedDataType="i4"
                       cachedName="DesprotegidoParaId"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE_DB_Actas.Inputs[OLE DB Destination Input].ExternalColumns[DesprotegidoParaId]"
-                      lineageId="Package\Data Flow Task\Actas.Outputs[Output].Columns[DesprotegidoParaId]" />
+                      externalMetadataColumnId="Package\Listas de SharePoint\OLE_DB_Actas.Inputs[OLE DB Destination Input].ExternalColumns[DesprotegidoParaId]"
+                      lineageId="Package\Listas de SharePoint\Actas.Outputs[Output].Columns[DesprotegidoParaId]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE_DB_Actas.Inputs[OLE DB Destination Input].Columns[Nombre]"
+                      refId="Package\Listas de SharePoint\OLE_DB_Actas.Inputs[OLE DB Destination Input].Columns[Nombre]"
                       cachedDataType="nText"
                       cachedName="Nombre"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE_DB_Actas.Inputs[OLE DB Destination Input].ExternalColumns[Nombre]"
-                      lineageId="Package\Data Flow Task\Actas.Outputs[Output].Columns[Nombre]" />
+                      externalMetadataColumnId="Package\Listas de SharePoint\OLE_DB_Actas.Inputs[OLE DB Destination Input].ExternalColumns[Nombre]"
+                      lineageId="Package\Listas de SharePoint\Actas.Outputs[Output].Columns[Nombre]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE_DB_Actas.Inputs[OLE DB Destination Input].Columns[EstadoDelVirus]"
+                      refId="Package\Listas de SharePoint\OLE_DB_Actas.Inputs[OLE DB Destination Input].Columns[EstadoDelVirus]"
                       cachedDataType="nText"
                       cachedName="EstadoDelVirus"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE_DB_Actas.Inputs[OLE DB Destination Input].ExternalColumns[EstadoDelVirus]"
-                      lineageId="Package\Data Flow Task\Actas.Outputs[Output].Columns[EstadoDelVirus]" />
+                      externalMetadataColumnId="Package\Listas de SharePoint\OLE_DB_Actas.Inputs[OLE DB Destination Input].ExternalColumns[EstadoDelVirus]"
+                      lineageId="Package\Listas de SharePoint\Actas.Outputs[Output].Columns[EstadoDelVirus]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE_DB_Actas.Inputs[OLE DB Destination Input].Columns[EsLaVersiónActual]"
+                      refId="Package\Listas de SharePoint\OLE_DB_Actas.Inputs[OLE DB Destination Input].Columns[EsLaVersiónActual]"
                       cachedDataType="bool"
                       cachedName="EsLaVersiónActual"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE_DB_Actas.Inputs[OLE DB Destination Input].ExternalColumns[EsLaVersiónActual]"
-                      lineageId="Package\Data Flow Task\Actas.Outputs[Output].Columns[EsLaVersiónActual]" />
+                      externalMetadataColumnId="Package\Listas de SharePoint\OLE_DB_Actas.Inputs[OLE DB Destination Input].ExternalColumns[EsLaVersiónActual]"
+                      lineageId="Package\Listas de SharePoint\Actas.Outputs[Output].Columns[EsLaVersiónActual]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE_DB_Actas.Inputs[OLE DB Destination Input].Columns[EtiquetaDeColor]"
+                      refId="Package\Listas de SharePoint\OLE_DB_Actas.Inputs[OLE DB Destination Input].Columns[EtiquetaDeColor]"
                       cachedDataType="nText"
                       cachedName="EtiquetaDeColor"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE_DB_Actas.Inputs[OLE DB Destination Input].ExternalColumns[EtiquetaDeColor]"
-                      lineageId="Package\Data Flow Task\Actas.Outputs[Output].Columns[EtiquetaDeColor]" />
+                      externalMetadataColumnId="Package\Listas de SharePoint\OLE_DB_Actas.Inputs[OLE DB Destination Input].ExternalColumns[EtiquetaDeColor]"
+                      lineageId="Package\Listas de SharePoint\Actas.Outputs[Output].Columns[EtiquetaDeColor]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE_DB_Actas.Inputs[OLE DB Destination Input].Columns[Owshiddenversion]"
+                      refId="Package\Listas de SharePoint\OLE_DB_Actas.Inputs[OLE DB Destination Input].Columns[Owshiddenversion]"
                       cachedDataType="i4"
                       cachedName="Owshiddenversion"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE_DB_Actas.Inputs[OLE DB Destination Input].ExternalColumns[Owshiddenversion]"
-                      lineageId="Package\Data Flow Task\Actas.Outputs[Output].Columns[Owshiddenversion]" />
+                      externalMetadataColumnId="Package\Listas de SharePoint\OLE_DB_Actas.Inputs[OLE DB Destination Input].ExternalColumns[Owshiddenversion]"
+                      lineageId="Package\Listas de SharePoint\Actas.Outputs[Output].Columns[Owshiddenversion]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE_DB_Actas.Inputs[OLE DB Destination Input].Columns[Versión]"
+                      refId="Package\Listas de SharePoint\OLE_DB_Actas.Inputs[OLE DB Destination Input].Columns[Versión]"
                       cachedDataType="nText"
                       cachedName="Versión"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE_DB_Actas.Inputs[OLE DB Destination Input].ExternalColumns[Versión]"
-                      lineageId="Package\Data Flow Task\Actas.Outputs[Output].Columns[Versión]" />
+                      externalMetadataColumnId="Package\Listas de SharePoint\OLE_DB_Actas.Inputs[OLE DB Destination Input].ExternalColumns[Versión]"
+                      lineageId="Package\Listas de SharePoint\Actas.Outputs[Output].Columns[Versión]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE_DB_Actas.Inputs[OLE DB Destination Input].Columns[IdDeActivoDeCumplimientoNormativo]"
+                      refId="Package\Listas de SharePoint\OLE_DB_Actas.Inputs[OLE DB Destination Input].Columns[IdDeActivoDeCumplimientoNormativo]"
                       cachedDataType="nText"
                       cachedName="IdDeActivoDeCumplimientoNormativo"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE_DB_Actas.Inputs[OLE DB Destination Input].ExternalColumns[IdDeActivoDeCumplimientoNormativo]"
-                      lineageId="Package\Data Flow Task\Actas.Outputs[Output].Columns[IdDeActivoDeCumplimientoNormativo]" />
+                      externalMetadataColumnId="Package\Listas de SharePoint\OLE_DB_Actas.Inputs[OLE DB Destination Input].ExternalColumns[IdDeActivoDeCumplimientoNormativo]"
+                      lineageId="Package\Listas de SharePoint\Actas.Outputs[Output].Columns[IdDeActivoDeCumplimientoNormativo]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE_DB_Actas.Inputs[OLE DB Destination Input].Columns[Título]"
+                      refId="Package\Listas de SharePoint\OLE_DB_Actas.Inputs[OLE DB Destination Input].Columns[Título]"
                       cachedDataType="nText"
                       cachedName="Título"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE_DB_Actas.Inputs[OLE DB Destination Input].ExternalColumns[Título]"
-                      lineageId="Package\Data Flow Task\Actas.Outputs[Output].Columns[Título]" />
+                      externalMetadataColumnId="Package\Listas de SharePoint\OLE_DB_Actas.Inputs[OLE DB Destination Input].ExternalColumns[Título]"
+                      lineageId="Package\Listas de SharePoint\Actas.Outputs[Output].Columns[Título]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE_DB_Actas.Inputs[OLE DB Destination Input].Columns[Descripción]"
+                      refId="Package\Listas de SharePoint\OLE_DB_Actas.Inputs[OLE DB Destination Input].Columns[Descripción]"
                       cachedDataType="nText"
                       cachedName="Descripción"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE_DB_Actas.Inputs[OLE DB Destination Input].ExternalColumns[Descripción]"
-                      lineageId="Package\Data Flow Task\Actas.Outputs[Output].Columns[Descripción]" />
+                      externalMetadataColumnId="Package\Listas de SharePoint\OLE_DB_Actas.Inputs[OLE DB Destination Input].ExternalColumns[Descripción]"
+                      lineageId="Package\Listas de SharePoint\Actas.Outputs[Output].Columns[Descripción]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE_DB_Actas.Inputs[OLE DB Destination Input].ExternalColumns[Identificador]"
+                      refId="Package\Listas de SharePoint\OLE_DB_Actas.Inputs[OLE DB Destination Input].ExternalColumns[Identificador]"
                       dataType="i4"
                       name="Identificador" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE_DB_Actas.Inputs[OLE DB Destination Input].ExternalColumns[IdDeTiposDeContenido]"
+                      refId="Package\Listas de SharePoint\OLE_DB_Actas.Inputs[OLE DB Destination Input].ExternalColumns[IdDeTiposDeContenido]"
                       dataType="nText"
                       name="IdDeTiposDeContenido" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE_DB_Actas.Inputs[OLE DB Destination Input].ExternalColumns[TipoDeContenido]"
+                      refId="Package\Listas de SharePoint\OLE_DB_Actas.Inputs[OLE DB Destination Input].ExternalColumns[TipoDeContenido]"
                       dataType="nText"
                       name="TipoDeContenido" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE_DB_Actas.Inputs[OLE DB Destination Input].ExternalColumns[Creado]"
+                      refId="Package\Listas de SharePoint\OLE_DB_Actas.Inputs[OLE DB Destination Input].ExternalColumns[Creado]"
                       dataType="dbTimeStamp"
                       name="Creado" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE_DB_Actas.Inputs[OLE DB Destination Input].ExternalColumns[CreadoPorId]"
+                      refId="Package\Listas de SharePoint\OLE_DB_Actas.Inputs[OLE DB Destination Input].ExternalColumns[CreadoPorId]"
                       dataType="i4"
                       name="CreadoPorId" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE_DB_Actas.Inputs[OLE DB Destination Input].ExternalColumns[Modificado]"
+                      refId="Package\Listas de SharePoint\OLE_DB_Actas.Inputs[OLE DB Destination Input].ExternalColumns[Modificado]"
                       dataType="dbTimeStamp"
                       name="Modificado" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE_DB_Actas.Inputs[OLE DB Destination Input].ExternalColumns[ModificadoPorId]"
+                      refId="Package\Listas de SharePoint\OLE_DB_Actas.Inputs[OLE DB Destination Input].ExternalColumns[ModificadoPorId]"
                       dataType="i4"
                       name="ModificadoPorId" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE_DB_Actas.Inputs[OLE DB Destination Input].ExternalColumns[CopiarOrigen]"
+                      refId="Package\Listas de SharePoint\OLE_DB_Actas.Inputs[OLE DB Destination Input].ExternalColumns[CopiarOrigen]"
                       dataType="nText"
                       name="CopiarOrigen" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE_DB_Actas.Inputs[OLE DB Destination Input].ExternalColumns[EstadoDeAprobación]"
+                      refId="Package\Listas de SharePoint\OLE_DB_Actas.Inputs[OLE DB Destination Input].ExternalColumns[EstadoDeAprobación]"
                       dataType="nText"
                       name="EstadoDeAprobación" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE_DB_Actas.Inputs[OLE DB Destination Input].ExternalColumns[RutaDeAcceso]"
+                      refId="Package\Listas de SharePoint\OLE_DB_Actas.Inputs[OLE DB Destination Input].ExternalColumns[RutaDeAcceso]"
                       dataType="nText"
                       name="RutaDeAcceso" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE_DB_Actas.Inputs[OLE DB Destination Input].ExternalColumns[DesprotegidoParaId]"
+                      refId="Package\Listas de SharePoint\OLE_DB_Actas.Inputs[OLE DB Destination Input].ExternalColumns[DesprotegidoParaId]"
                       dataType="i4"
                       name="DesprotegidoParaId" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE_DB_Actas.Inputs[OLE DB Destination Input].ExternalColumns[Nombre]"
+                      refId="Package\Listas de SharePoint\OLE_DB_Actas.Inputs[OLE DB Destination Input].ExternalColumns[Nombre]"
                       dataType="nText"
                       name="Nombre" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE_DB_Actas.Inputs[OLE DB Destination Input].ExternalColumns[EstadoDelVirus]"
+                      refId="Package\Listas de SharePoint\OLE_DB_Actas.Inputs[OLE DB Destination Input].ExternalColumns[EstadoDelVirus]"
                       dataType="nText"
                       name="EstadoDelVirus" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE_DB_Actas.Inputs[OLE DB Destination Input].ExternalColumns[EsLaVersiónActual]"
+                      refId="Package\Listas de SharePoint\OLE_DB_Actas.Inputs[OLE DB Destination Input].ExternalColumns[EsLaVersiónActual]"
                       dataType="bool"
                       name="EsLaVersiónActual" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE_DB_Actas.Inputs[OLE DB Destination Input].ExternalColumns[EtiquetaDeColor]"
+                      refId="Package\Listas de SharePoint\OLE_DB_Actas.Inputs[OLE DB Destination Input].ExternalColumns[EtiquetaDeColor]"
                       dataType="nText"
                       name="EtiquetaDeColor" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE_DB_Actas.Inputs[OLE DB Destination Input].ExternalColumns[Owshiddenversion]"
+                      refId="Package\Listas de SharePoint\OLE_DB_Actas.Inputs[OLE DB Destination Input].ExternalColumns[Owshiddenversion]"
                       dataType="i4"
                       name="Owshiddenversion" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE_DB_Actas.Inputs[OLE DB Destination Input].ExternalColumns[Versión]"
+                      refId="Package\Listas de SharePoint\OLE_DB_Actas.Inputs[OLE DB Destination Input].ExternalColumns[Versión]"
                       dataType="nText"
                       name="Versión" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE_DB_Actas.Inputs[OLE DB Destination Input].ExternalColumns[IdDeActivoDeCumplimientoNormativo]"
+                      refId="Package\Listas de SharePoint\OLE_DB_Actas.Inputs[OLE DB Destination Input].ExternalColumns[IdDeActivoDeCumplimientoNormativo]"
                       dataType="nText"
                       name="IdDeActivoDeCumplimientoNormativo" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE_DB_Actas.Inputs[OLE DB Destination Input].ExternalColumns[Título]"
+                      refId="Package\Listas de SharePoint\OLE_DB_Actas.Inputs[OLE DB Destination Input].ExternalColumns[Título]"
                       dataType="nText"
                       name="Título" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE_DB_Actas.Inputs[OLE DB Destination Input].ExternalColumns[Descripción]"
+                      refId="Package\Listas de SharePoint\OLE_DB_Actas.Inputs[OLE DB Destination Input].ExternalColumns[Descripción]"
                       dataType="nText"
                       name="Descripción" />
                   </externalMetadataColumns>
@@ -799,22 +1414,22 @@
               </inputs>
               <outputs>
                 <output
-                  refId="Package\Data Flow Task\OLE_DB_Actas.Outputs[OLE DB Destination Error Output]"
+                  refId="Package\Listas de SharePoint\OLE_DB_Actas.Outputs[OLE DB Destination Error Output]"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="OLE DB Destination Error Output"
-                  synchronousInputId="Package\Data Flow Task\OLE_DB_Actas.Inputs[OLE DB Destination Input]">
+                  synchronousInputId="Package\Listas de SharePoint\OLE_DB_Actas.Inputs[OLE DB Destination Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Data Flow Task\OLE_DB_Actas.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      refId="Package\Listas de SharePoint\OLE_DB_Actas.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\OLE_DB_Actas.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      lineageId="Package\Listas de SharePoint\OLE_DB_Actas.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Data Flow Task\OLE_DB_Actas.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      refId="Package\Listas de SharePoint\OLE_DB_Actas.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\OLE_DB_Actas.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\Listas de SharePoint\OLE_DB_Actas.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -823,436 +1438,413 @@
               </outputs>
             </component>
             <component
-              refId="Package\Data Flow Task\Origen OData 1"
-              componentClassID="Microsoft.ManagedComponentHost"
-              contactInfo="Componente de origen OData;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;0"
-              description="Leer datos de los servicios OData"
-              name="Origen OData 1"
-              usesDispositions="true">
+              refId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE_DB_InventarioCilindros"
+              usesDispositions="true"
+              version="4">
               <properties>
                 <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
                   dataType="System.String"
-                  description="Nombre de la colección que se recuperará del servicio."
-                  expressionType="Notify"
-                  name="CollectionName">Actas</property>
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[InventarioCilindros]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
                 <property
                   dataType="System.Int32"
-                  description="La longitud máxima predeterminada de una cadena que no tiene maxlength especificada en el esquema."
-                  name="DefaultStringLength">4000</property>
-                <property
-                  dataType="System.String"
-                  description="Consulta en la dirección URL. "
-                  expressionType="Notify"
-                  name="Query"></property>
-                <property
-                  dataType="System.String"
-                  description="Ruta de acceso a recursos de la colección que se recuperará del servicio."
-                  expressionType="Notify"
-                  name="ResourcePath"></property>
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
                 <property
                   dataType="System.Boolean"
-                  description="Cuando se establece en True, use la ruta de acceso a recursos como la colección solicitada; en caso contrario, use el nombre de la colección."
-                  expressionType="Notify"
-                  name="UseResourcePath">false</property>
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">true</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">true</property>
                 <property
                   dataType="System.String"
-                  name="UserComponentTypeName">Microsoft.OData</property>
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
               </properties>
               <connections>
                 <connection
-                  refId="Package\Data Flow Task\Origen OData 1.Connections[Conexión]"
-                  connectionManagerID="Package.ConnectionManagers[Listas SharePoint]"
-                  connectionManagerRefId="Package.ConnectionManagers[Listas SharePoint]"
-                  description="Conexión al servicio OData"
-                  name="Conexión" />
+                  refId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[192.168.0.132.DataStage]"
+                  connectionManagerRefId="Package.ConnectionManagers[192.168.0.132.DataStage]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
               </connections>
-              <outputs>
-                <output
-                  refId="Package\Data Flow Task\Origen OData 1.Outputs[Output]"
-                  name="Output">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Data Flow Task\Origen OData 1.Outputs[Output].Columns[Identificador]"
-                      dataType="i4"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Origen OData 1.Outputs[Output].ExternalColumns[Identificador]"
-                      lineageId="Package\Data Flow Task\Origen OData 1.Outputs[Output].Columns[Identificador]"
-                      name="Identificador"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Data Flow Task\Origen OData 1.Outputs[Output].Columns[IdDeTiposDeContenido]"
-                      dataType="nText"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Origen OData 1.Outputs[Output].ExternalColumns[IdDeTiposDeContenido]"
-                      lineageId="Package\Data Flow Task\Origen OData 1.Outputs[Output].Columns[IdDeTiposDeContenido]"
-                      name="IdDeTiposDeContenido"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Data Flow Task\Origen OData 1.Outputs[Output].Columns[TipoDeContenido]"
-                      dataType="nText"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Origen OData 1.Outputs[Output].ExternalColumns[TipoDeContenido]"
-                      lineageId="Package\Data Flow Task\Origen OData 1.Outputs[Output].Columns[TipoDeContenido]"
-                      name="TipoDeContenido"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Data Flow Task\Origen OData 1.Outputs[Output].Columns[Creado]"
-                      dataType="dbTimeStamp"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Origen OData 1.Outputs[Output].ExternalColumns[Creado]"
-                      lineageId="Package\Data Flow Task\Origen OData 1.Outputs[Output].Columns[Creado]"
-                      name="Creado"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Data Flow Task\Origen OData 1.Outputs[Output].Columns[CreadoPorId]"
-                      dataType="i4"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Origen OData 1.Outputs[Output].ExternalColumns[CreadoPorId]"
-                      lineageId="Package\Data Flow Task\Origen OData 1.Outputs[Output].Columns[CreadoPorId]"
-                      name="CreadoPorId"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Data Flow Task\Origen OData 1.Outputs[Output].Columns[Modificado]"
-                      dataType="dbTimeStamp"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Origen OData 1.Outputs[Output].ExternalColumns[Modificado]"
-                      lineageId="Package\Data Flow Task\Origen OData 1.Outputs[Output].Columns[Modificado]"
-                      name="Modificado"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Data Flow Task\Origen OData 1.Outputs[Output].Columns[ModificadoPorId]"
-                      dataType="i4"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Origen OData 1.Outputs[Output].ExternalColumns[ModificadoPorId]"
-                      lineageId="Package\Data Flow Task\Origen OData 1.Outputs[Output].Columns[ModificadoPorId]"
-                      name="ModificadoPorId"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Data Flow Task\Origen OData 1.Outputs[Output].Columns[CopiarOrigen]"
-                      dataType="nText"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Origen OData 1.Outputs[Output].ExternalColumns[CopiarOrigen]"
-                      lineageId="Package\Data Flow Task\Origen OData 1.Outputs[Output].Columns[CopiarOrigen]"
-                      name="CopiarOrigen"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Data Flow Task\Origen OData 1.Outputs[Output].Columns[EstadoDeAprobación]"
-                      dataType="nText"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Origen OData 1.Outputs[Output].ExternalColumns[EstadoDeAprobación]"
-                      lineageId="Package\Data Flow Task\Origen OData 1.Outputs[Output].Columns[EstadoDeAprobación]"
-                      name="EstadoDeAprobación"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Data Flow Task\Origen OData 1.Outputs[Output].Columns[RutaDeAcceso]"
-                      dataType="nText"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Origen OData 1.Outputs[Output].ExternalColumns[RutaDeAcceso]"
-                      lineageId="Package\Data Flow Task\Origen OData 1.Outputs[Output].Columns[RutaDeAcceso]"
-                      name="RutaDeAcceso"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Data Flow Task\Origen OData 1.Outputs[Output].Columns[DesprotegidoParaId]"
-                      dataType="i4"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Origen OData 1.Outputs[Output].ExternalColumns[DesprotegidoParaId]"
-                      lineageId="Package\Data Flow Task\Origen OData 1.Outputs[Output].Columns[DesprotegidoParaId]"
-                      name="DesprotegidoParaId"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Data Flow Task\Origen OData 1.Outputs[Output].Columns[Nombre]"
-                      dataType="nText"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Origen OData 1.Outputs[Output].ExternalColumns[Nombre]"
-                      lineageId="Package\Data Flow Task\Origen OData 1.Outputs[Output].Columns[Nombre]"
-                      name="Nombre"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Data Flow Task\Origen OData 1.Outputs[Output].Columns[EstadoDelVirus]"
-                      dataType="nText"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Origen OData 1.Outputs[Output].ExternalColumns[EstadoDelVirus]"
-                      lineageId="Package\Data Flow Task\Origen OData 1.Outputs[Output].Columns[EstadoDelVirus]"
-                      name="EstadoDelVirus"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Data Flow Task\Origen OData 1.Outputs[Output].Columns[EsLaVersiónActual]"
-                      dataType="bool"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Origen OData 1.Outputs[Output].ExternalColumns[EsLaVersiónActual]"
-                      lineageId="Package\Data Flow Task\Origen OData 1.Outputs[Output].Columns[EsLaVersiónActual]"
-                      name="EsLaVersiónActual"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Data Flow Task\Origen OData 1.Outputs[Output].Columns[EtiquetaDeColor]"
-                      dataType="nText"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Origen OData 1.Outputs[Output].ExternalColumns[EtiquetaDeColor]"
-                      lineageId="Package\Data Flow Task\Origen OData 1.Outputs[Output].Columns[EtiquetaDeColor]"
-                      name="EtiquetaDeColor"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Data Flow Task\Origen OData 1.Outputs[Output].Columns[Owshiddenversion]"
-                      dataType="i4"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Origen OData 1.Outputs[Output].ExternalColumns[Owshiddenversion]"
-                      lineageId="Package\Data Flow Task\Origen OData 1.Outputs[Output].Columns[Owshiddenversion]"
-                      name="Owshiddenversion"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Data Flow Task\Origen OData 1.Outputs[Output].Columns[Versión]"
-                      dataType="nText"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Origen OData 1.Outputs[Output].ExternalColumns[Versión]"
-                      lineageId="Package\Data Flow Task\Origen OData 1.Outputs[Output].Columns[Versión]"
-                      name="Versión"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Data Flow Task\Origen OData 1.Outputs[Output].Columns[IdDeActivoDeCumplimientoNormativo]"
-                      dataType="nText"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Origen OData 1.Outputs[Output].ExternalColumns[IdDeActivoDeCumplimientoNormativo]"
-                      lineageId="Package\Data Flow Task\Origen OData 1.Outputs[Output].Columns[IdDeActivoDeCumplimientoNormativo]"
-                      name="IdDeActivoDeCumplimientoNormativo"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Data Flow Task\Origen OData 1.Outputs[Output].Columns[Título]"
-                      dataType="nText"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Origen OData 1.Outputs[Output].ExternalColumns[Título]"
-                      lineageId="Package\Data Flow Task\Origen OData 1.Outputs[Output].Columns[Título]"
-                      name="Título"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Data Flow Task\Origen OData 1.Outputs[Output].Columns[Descripción]"
-                      dataType="nText"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Origen OData 1.Outputs[Output].ExternalColumns[Descripción]"
-                      lineageId="Package\Data Flow Task\Origen OData 1.Outputs[Output].Columns[Descripción]"
-                      name="Descripción"
-                      truncationRowDisposition="FailComponent" />
-                  </outputColumns>
+              <inputs>
+                <input
+                  refId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Inputs[OLE DB Destination Input].Columns[IdDeTiposDeContenido]"
+                      cachedDataType="nText"
+                      cachedName="IdDeTiposDeContenido"
+                      externalMetadataColumnId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Inputs[OLE DB Destination Input].ExternalColumns[IdDeTiposDeContenido]"
+                      lineageId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].Columns[IdDeTiposDeContenido]" />
+                    <inputColumn
+                      refId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Inputs[OLE DB Destination Input].Columns[C_0]"
+                      cachedDataType="nText"
+                      cachedName="C_0"
+                      externalMetadataColumnId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Inputs[OLE DB Destination Input].ExternalColumns[C_0]"
+                      lineageId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].Columns[C_0]" />
+                    <inputColumn
+                      refId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Inputs[OLE DB Destination Input].Columns[EtiquetaDeColor]"
+                      cachedDataType="nText"
+                      cachedName="EtiquetaDeColor"
+                      externalMetadataColumnId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Inputs[OLE DB Destination Input].ExternalColumns[EtiquetaDeColor]"
+                      lineageId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].Columns[EtiquetaDeColor]" />
+                    <inputColumn
+                      refId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Inputs[OLE DB Destination Input].Columns[IdDeActivoDeCumplimientoNormativo]"
+                      cachedDataType="nText"
+                      cachedName="IdDeActivoDeCumplimientoNormativo"
+                      externalMetadataColumnId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Inputs[OLE DB Destination Input].ExternalColumns[IdDeActivoDeCumplimientoNormativo]"
+                      lineageId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].Columns[IdDeActivoDeCumplimientoNormativo]" />
+                    <inputColumn
+                      refId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Inputs[OLE DB Destination Input].Columns[CentroOperacionValue]"
+                      cachedDataType="nText"
+                      cachedName="CentroOperacionValue"
+                      externalMetadataColumnId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Inputs[OLE DB Destination Input].ExternalColumns[CentroOperacionValue]"
+                      lineageId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].Columns[CentroOperacionValue]" />
+                    <inputColumn
+                      refId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Inputs[OLE DB Destination Input].Columns[FechaCreación]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="FechaCreación"
+                      externalMetadataColumnId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Inputs[OLE DB Destination Input].ExternalColumns[FechaCreación]"
+                      lineageId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].Columns[FechaCreación]" />
+                    <inputColumn
+                      refId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Inputs[OLE DB Destination Input].Columns[Cantidad1]"
+                      cachedDataType="r8"
+                      cachedName="Cantidad1"
+                      externalMetadataColumnId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Inputs[OLE DB Destination Input].ExternalColumns[Cantidad1]"
+                      lineageId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].Columns[Cantidad1]" />
+                    <inputColumn
+                      refId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Inputs[OLE DB Destination Input].Columns[TurnoValue]"
+                      cachedDataType="nText"
+                      cachedName="TurnoValue"
+                      externalMetadataColumnId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Inputs[OLE DB Destination Input].ExternalColumns[TurnoValue]"
+                      lineageId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].Columns[TurnoValue]" />
+                    <inputColumn
+                      refId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Inputs[OLE DB Destination Input].Columns[RealizaRegistroValue]"
+                      cachedDataType="nText"
+                      cachedName="RealizaRegistroValue"
+                      externalMetadataColumnId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Inputs[OLE DB Destination Input].ExternalColumns[RealizaRegistroValue]"
+                      lineageId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].Columns[RealizaRegistroValue]" />
+                    <inputColumn
+                      refId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Inputs[OLE DB Destination Input].Columns[CilindrosLavados1Value]"
+                      cachedDataType="nText"
+                      cachedName="CilindrosLavados1Value"
+                      externalMetadataColumnId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Inputs[OLE DB Destination Input].ExternalColumns[CilindrosLavados1Value]"
+                      lineageId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].Columns[CilindrosLavados1Value]" />
+                    <inputColumn
+                      refId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Inputs[OLE DB Destination Input].Columns[CargoValue]"
+                      cachedDataType="nText"
+                      cachedName="CargoValue"
+                      externalMetadataColumnId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Inputs[OLE DB Destination Input].ExternalColumns[CargoValue]"
+                      lineageId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].Columns[CargoValue]" />
+                    <inputColumn
+                      refId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Inputs[OLE DB Destination Input].Columns[CilindrosLavados2Value]"
+                      cachedDataType="nText"
+                      cachedName="CilindrosLavados2Value"
+                      externalMetadataColumnId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Inputs[OLE DB Destination Input].ExternalColumns[CilindrosLavados2Value]"
+                      lineageId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].Columns[CilindrosLavados2Value]" />
+                    <inputColumn
+                      refId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Inputs[OLE DB Destination Input].Columns[Cantidad2]"
+                      cachedDataType="r8"
+                      cachedName="Cantidad2"
+                      externalMetadataColumnId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Inputs[OLE DB Destination Input].ExternalColumns[Cantidad2]"
+                      lineageId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].Columns[Cantidad2]" />
+                    <inputColumn
+                      refId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Inputs[OLE DB Destination Input].Columns[CilindrosLavados3Value]"
+                      cachedDataType="nText"
+                      cachedName="CilindrosLavados3Value"
+                      externalMetadataColumnId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Inputs[OLE DB Destination Input].ExternalColumns[CilindrosLavados3Value]"
+                      lineageId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].Columns[CilindrosLavados3Value]" />
+                    <inputColumn
+                      refId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Inputs[OLE DB Destination Input].Columns[Cantidad3]"
+                      cachedDataType="r8"
+                      cachedName="Cantidad3"
+                      externalMetadataColumnId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Inputs[OLE DB Destination Input].ExternalColumns[Cantidad3]"
+                      lineageId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].Columns[Cantidad3]" />
+                    <inputColumn
+                      refId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Inputs[OLE DB Destination Input].Columns[RegistróId]"
+                      cachedDataType="i4"
+                      cachedName="RegistróId"
+                      externalMetadataColumnId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Inputs[OLE DB Destination Input].ExternalColumns[RegistróId]"
+                      lineageId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].Columns[RegistróId]" />
+                    <inputColumn
+                      refId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Inputs[OLE DB Destination Input].Columns[CilindrosPintados1Value]"
+                      cachedDataType="nText"
+                      cachedName="CilindrosPintados1Value"
+                      externalMetadataColumnId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Inputs[OLE DB Destination Input].ExternalColumns[CilindrosPintados1Value]"
+                      lineageId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].Columns[CilindrosPintados1Value]" />
+                    <inputColumn
+                      refId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Inputs[OLE DB Destination Input].Columns[Cantidad10]"
+                      cachedDataType="r8"
+                      cachedName="Cantidad10"
+                      externalMetadataColumnId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Inputs[OLE DB Destination Input].ExternalColumns[Cantidad10]"
+                      lineageId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].Columns[Cantidad10]" />
+                    <inputColumn
+                      refId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Inputs[OLE DB Destination Input].Columns[CilindrosPintados2Value]"
+                      cachedDataType="nText"
+                      cachedName="CilindrosPintados2Value"
+                      externalMetadataColumnId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Inputs[OLE DB Destination Input].ExternalColumns[CilindrosPintados2Value]"
+                      lineageId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].Columns[CilindrosPintados2Value]" />
+                    <inputColumn
+                      refId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Inputs[OLE DB Destination Input].Columns[Cantidad20]"
+                      cachedDataType="r8"
+                      cachedName="Cantidad20"
+                      externalMetadataColumnId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Inputs[OLE DB Destination Input].ExternalColumns[Cantidad20]"
+                      lineageId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].Columns[Cantidad20]" />
+                    <inputColumn
+                      refId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Inputs[OLE DB Destination Input].Columns[CilindrosPintados3Value]"
+                      cachedDataType="nText"
+                      cachedName="CilindrosPintados3Value"
+                      externalMetadataColumnId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Inputs[OLE DB Destination Input].ExternalColumns[CilindrosPintados3Value]"
+                      lineageId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].Columns[CilindrosPintados3Value]" />
+                    <inputColumn
+                      refId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Inputs[OLE DB Destination Input].Columns[Cantidad30]"
+                      cachedDataType="r8"
+                      cachedName="Cantidad30"
+                      externalMetadataColumnId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Inputs[OLE DB Destination Input].ExternalColumns[Cantidad30]"
+                      lineageId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].Columns[Cantidad30]" />
+                    <inputColumn
+                      refId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Inputs[OLE DB Destination Input].Columns[Identificador]"
+                      cachedDataType="i4"
+                      cachedName="Identificador"
+                      externalMetadataColumnId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Inputs[OLE DB Destination Input].ExternalColumns[Identificador]"
+                      lineageId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].Columns[Identificador]" />
+                    <inputColumn
+                      refId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Inputs[OLE DB Destination Input].Columns[TipoDeContenido]"
+                      cachedDataType="nText"
+                      cachedName="TipoDeContenido"
+                      externalMetadataColumnId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Inputs[OLE DB Destination Input].ExternalColumns[TipoDeContenido]"
+                      lineageId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].Columns[TipoDeContenido]" />
+                    <inputColumn
+                      refId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Inputs[OLE DB Destination Input].Columns[Modificado]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="Modificado"
+                      externalMetadataColumnId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Inputs[OLE DB Destination Input].ExternalColumns[Modificado]"
+                      lineageId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].Columns[Modificado]" />
+                    <inputColumn
+                      refId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Inputs[OLE DB Destination Input].Columns[Creado]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="Creado"
+                      externalMetadataColumnId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Inputs[OLE DB Destination Input].ExternalColumns[Creado]"
+                      lineageId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].Columns[Creado]" />
+                    <inputColumn
+                      refId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Inputs[OLE DB Destination Input].Columns[CreadoPorId]"
+                      cachedDataType="i4"
+                      cachedName="CreadoPorId"
+                      externalMetadataColumnId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Inputs[OLE DB Destination Input].ExternalColumns[CreadoPorId]"
+                      lineageId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].Columns[CreadoPorId]" />
+                    <inputColumn
+                      refId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Inputs[OLE DB Destination Input].Columns[ModificadoPorId]"
+                      cachedDataType="i4"
+                      cachedName="ModificadoPorId"
+                      externalMetadataColumnId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Inputs[OLE DB Destination Input].ExternalColumns[ModificadoPorId]"
+                      lineageId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].Columns[ModificadoPorId]" />
+                    <inputColumn
+                      refId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Inputs[OLE DB Destination Input].Columns[Owshiddenversion]"
+                      cachedDataType="i4"
+                      cachedName="Owshiddenversion"
+                      externalMetadataColumnId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Inputs[OLE DB Destination Input].ExternalColumns[Owshiddenversion]"
+                      lineageId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].Columns[Owshiddenversion]" />
+                    <inputColumn
+                      refId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Inputs[OLE DB Destination Input].Columns[Versión]"
+                      cachedDataType="nText"
+                      cachedName="Versión"
+                      externalMetadataColumnId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Inputs[OLE DB Destination Input].ExternalColumns[Versión]"
+                      lineageId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].Columns[Versión]" />
+                    <inputColumn
+                      refId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Inputs[OLE DB Destination Input].Columns[RutaDeAcceso]"
+                      cachedDataType="nText"
+                      cachedName="RutaDeAcceso"
+                      externalMetadataColumnId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Inputs[OLE DB Destination Input].ExternalColumns[RutaDeAcceso]"
+                      lineageId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output].Columns[RutaDeAcceso]" />
+                  </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Origen OData 1.Outputs[Output].ExternalColumns[Identificador]"
-                      dataType="i4"
-                      name="Identificador" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\Origen OData 1.Outputs[Output].ExternalColumns[IdDeTiposDeContenido]"
+                      refId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Inputs[OLE DB Destination Input].ExternalColumns[IdDeTiposDeContenido]"
                       dataType="nText"
                       name="IdDeTiposDeContenido" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Origen OData 1.Outputs[Output].ExternalColumns[TipoDeContenido]"
+                      refId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Inputs[OLE DB Destination Input].ExternalColumns[C_0]"
                       dataType="nText"
-                      name="TipoDeContenido" />
+                      name="C_0" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Origen OData 1.Outputs[Output].ExternalColumns[Creado]"
-                      dataType="dbTimeStamp"
-                      name="Creado" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\Origen OData 1.Outputs[Output].ExternalColumns[CreadoPorId]"
-                      dataType="i4"
-                      name="CreadoPorId" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\Origen OData 1.Outputs[Output].ExternalColumns[Modificado]"
-                      dataType="dbTimeStamp"
-                      name="Modificado" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\Origen OData 1.Outputs[Output].ExternalColumns[ModificadoPorId]"
-                      dataType="i4"
-                      name="ModificadoPorId" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\Origen OData 1.Outputs[Output].ExternalColumns[CopiarOrigen]"
-                      dataType="nText"
-                      name="CopiarOrigen" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\Origen OData 1.Outputs[Output].ExternalColumns[EstadoDeAprobación]"
-                      dataType="nText"
-                      name="EstadoDeAprobación" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\Origen OData 1.Outputs[Output].ExternalColumns[RutaDeAcceso]"
-                      dataType="nText"
-                      name="RutaDeAcceso" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\Origen OData 1.Outputs[Output].ExternalColumns[DesprotegidoParaId]"
-                      dataType="i4"
-                      name="DesprotegidoParaId" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\Origen OData 1.Outputs[Output].ExternalColumns[Nombre]"
-                      dataType="nText"
-                      name="Nombre" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\Origen OData 1.Outputs[Output].ExternalColumns[EstadoDelVirus]"
-                      dataType="nText"
-                      name="EstadoDelVirus" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\Origen OData 1.Outputs[Output].ExternalColumns[EsLaVersiónActual]"
-                      dataType="bool"
-                      name="EsLaVersiónActual" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\Origen OData 1.Outputs[Output].ExternalColumns[EtiquetaDeColor]"
+                      refId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Inputs[OLE DB Destination Input].ExternalColumns[EtiquetaDeColor]"
                       dataType="nText"
                       name="EtiquetaDeColor" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Origen OData 1.Outputs[Output].ExternalColumns[Owshiddenversion]"
-                      dataType="i4"
-                      name="Owshiddenversion" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\Origen OData 1.Outputs[Output].ExternalColumns[Versión]"
-                      dataType="nText"
-                      name="Versión" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\Origen OData 1.Outputs[Output].ExternalColumns[IdDeActivoDeCumplimientoNormativo]"
+                      refId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Inputs[OLE DB Destination Input].ExternalColumns[IdDeActivoDeCumplimientoNormativo]"
                       dataType="nText"
                       name="IdDeActivoDeCumplimientoNormativo" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Origen OData 1.Outputs[Output].ExternalColumns[Título]"
+                      refId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Inputs[OLE DB Destination Input].ExternalColumns[CentroOperacionValue]"
                       dataType="nText"
-                      name="Título" />
+                      name="CentroOperacionValue" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Origen OData 1.Outputs[Output].ExternalColumns[Descripción]"
+                      refId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Inputs[OLE DB Destination Input].ExternalColumns[FechaCreación]"
+                      dataType="dbTimeStamp"
+                      name="FechaCreación" />
+                    <externalMetadataColumn
+                      refId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Inputs[OLE DB Destination Input].ExternalColumns[Cantidad1]"
+                      dataType="r8"
+                      name="Cantidad1" />
+                    <externalMetadataColumn
+                      refId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Inputs[OLE DB Destination Input].ExternalColumns[TurnoValue]"
                       dataType="nText"
-                      name="Descripción" />
+                      name="TurnoValue" />
+                    <externalMetadataColumn
+                      refId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Inputs[OLE DB Destination Input].ExternalColumns[RealizaRegistroValue]"
+                      dataType="nText"
+                      name="RealizaRegistroValue" />
+                    <externalMetadataColumn
+                      refId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Inputs[OLE DB Destination Input].ExternalColumns[CilindrosLavados1Value]"
+                      dataType="nText"
+                      name="CilindrosLavados1Value" />
+                    <externalMetadataColumn
+                      refId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Inputs[OLE DB Destination Input].ExternalColumns[CargoValue]"
+                      dataType="nText"
+                      name="CargoValue" />
+                    <externalMetadataColumn
+                      refId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Inputs[OLE DB Destination Input].ExternalColumns[CilindrosLavados2Value]"
+                      dataType="nText"
+                      name="CilindrosLavados2Value" />
+                    <externalMetadataColumn
+                      refId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Inputs[OLE DB Destination Input].ExternalColumns[Cantidad2]"
+                      dataType="r8"
+                      name="Cantidad2" />
+                    <externalMetadataColumn
+                      refId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Inputs[OLE DB Destination Input].ExternalColumns[CilindrosLavados3Value]"
+                      dataType="nText"
+                      name="CilindrosLavados3Value" />
+                    <externalMetadataColumn
+                      refId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Inputs[OLE DB Destination Input].ExternalColumns[Cantidad3]"
+                      dataType="r8"
+                      name="Cantidad3" />
+                    <externalMetadataColumn
+                      refId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Inputs[OLE DB Destination Input].ExternalColumns[RegistróId]"
+                      dataType="i4"
+                      name="RegistróId" />
+                    <externalMetadataColumn
+                      refId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Inputs[OLE DB Destination Input].ExternalColumns[CilindrosPintados1Value]"
+                      dataType="nText"
+                      name="CilindrosPintados1Value" />
+                    <externalMetadataColumn
+                      refId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Inputs[OLE DB Destination Input].ExternalColumns[Cantidad10]"
+                      dataType="r8"
+                      name="Cantidad10" />
+                    <externalMetadataColumn
+                      refId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Inputs[OLE DB Destination Input].ExternalColumns[CilindrosPintados2Value]"
+                      dataType="nText"
+                      name="CilindrosPintados2Value" />
+                    <externalMetadataColumn
+                      refId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Inputs[OLE DB Destination Input].ExternalColumns[Cantidad20]"
+                      dataType="r8"
+                      name="Cantidad20" />
+                    <externalMetadataColumn
+                      refId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Inputs[OLE DB Destination Input].ExternalColumns[CilindrosPintados3Value]"
+                      dataType="nText"
+                      name="CilindrosPintados3Value" />
+                    <externalMetadataColumn
+                      refId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Inputs[OLE DB Destination Input].ExternalColumns[Cantidad30]"
+                      dataType="r8"
+                      name="Cantidad30" />
+                    <externalMetadataColumn
+                      refId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Inputs[OLE DB Destination Input].ExternalColumns[Identificador]"
+                      dataType="i4"
+                      name="Identificador" />
+                    <externalMetadataColumn
+                      refId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Inputs[OLE DB Destination Input].ExternalColumns[TipoDeContenido]"
+                      dataType="nText"
+                      name="TipoDeContenido" />
+                    <externalMetadataColumn
+                      refId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Inputs[OLE DB Destination Input].ExternalColumns[Modificado]"
+                      dataType="dbTimeStamp"
+                      name="Modificado" />
+                    <externalMetadataColumn
+                      refId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Inputs[OLE DB Destination Input].ExternalColumns[Creado]"
+                      dataType="dbTimeStamp"
+                      name="Creado" />
+                    <externalMetadataColumn
+                      refId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Inputs[OLE DB Destination Input].ExternalColumns[CreadoPorId]"
+                      dataType="i4"
+                      name="CreadoPorId" />
+                    <externalMetadataColumn
+                      refId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Inputs[OLE DB Destination Input].ExternalColumns[ModificadoPorId]"
+                      dataType="i4"
+                      name="ModificadoPorId" />
+                    <externalMetadataColumn
+                      refId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Inputs[OLE DB Destination Input].ExternalColumns[Owshiddenversion]"
+                      dataType="i4"
+                      name="Owshiddenversion" />
+                    <externalMetadataColumn
+                      refId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Inputs[OLE DB Destination Input].ExternalColumns[Versión]"
+                      dataType="nText"
+                      name="Versión" />
+                    <externalMetadataColumn
+                      refId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Inputs[OLE DB Destination Input].ExternalColumns[RutaDeAcceso]"
+                      dataType="nText"
+                      name="RutaDeAcceso" />
                   </externalMetadataColumns>
-                </output>
+                </input>
+              </inputs>
+              <outputs>
                 <output
-                  refId="Package\Data Flow Task\Origen OData 1.Outputs[Error output]"
+                  refId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
                   isErrorOut="true"
-                  name="Error output">
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Inputs[OLE DB Destination Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Data Flow Task\Origen OData 1.Outputs[Error output].Columns[ErrorCode]"
+                      refId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\Origen OData 1.Outputs[Error output].Columns[ErrorCode]"
+                      lineageId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Origen OData 1.Outputs[Error output].Columns[ErrorColumn]"
+                      refId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\Origen OData 1.Outputs[Error output].Columns[ErrorColumn]"
+                      lineageId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
-                    <outputColumn
-                      refId="Package\Data Flow Task\Origen OData 1.Outputs[Error output].Columns[Identificador]"
-                      dataType="i4"
-                      lineageId="Package\Data Flow Task\Origen OData 1.Outputs[Error output].Columns[Identificador]"
-                      name="Identificador" />
-                    <outputColumn
-                      refId="Package\Data Flow Task\Origen OData 1.Outputs[Error output].Columns[IdDeTiposDeContenido]"
-                      dataType="nText"
-                      lineageId="Package\Data Flow Task\Origen OData 1.Outputs[Error output].Columns[IdDeTiposDeContenido]"
-                      name="IdDeTiposDeContenido" />
-                    <outputColumn
-                      refId="Package\Data Flow Task\Origen OData 1.Outputs[Error output].Columns[TipoDeContenido]"
-                      dataType="nText"
-                      lineageId="Package\Data Flow Task\Origen OData 1.Outputs[Error output].Columns[TipoDeContenido]"
-                      name="TipoDeContenido" />
-                    <outputColumn
-                      refId="Package\Data Flow Task\Origen OData 1.Outputs[Error output].Columns[Creado]"
-                      dataType="dbTimeStamp"
-                      lineageId="Package\Data Flow Task\Origen OData 1.Outputs[Error output].Columns[Creado]"
-                      name="Creado" />
-                    <outputColumn
-                      refId="Package\Data Flow Task\Origen OData 1.Outputs[Error output].Columns[CreadoPorId]"
-                      dataType="i4"
-                      lineageId="Package\Data Flow Task\Origen OData 1.Outputs[Error output].Columns[CreadoPorId]"
-                      name="CreadoPorId" />
-                    <outputColumn
-                      refId="Package\Data Flow Task\Origen OData 1.Outputs[Error output].Columns[Modificado]"
-                      dataType="dbTimeStamp"
-                      lineageId="Package\Data Flow Task\Origen OData 1.Outputs[Error output].Columns[Modificado]"
-                      name="Modificado" />
-                    <outputColumn
-                      refId="Package\Data Flow Task\Origen OData 1.Outputs[Error output].Columns[ModificadoPorId]"
-                      dataType="i4"
-                      lineageId="Package\Data Flow Task\Origen OData 1.Outputs[Error output].Columns[ModificadoPorId]"
-                      name="ModificadoPorId" />
-                    <outputColumn
-                      refId="Package\Data Flow Task\Origen OData 1.Outputs[Error output].Columns[CopiarOrigen]"
-                      dataType="nText"
-                      lineageId="Package\Data Flow Task\Origen OData 1.Outputs[Error output].Columns[CopiarOrigen]"
-                      name="CopiarOrigen" />
-                    <outputColumn
-                      refId="Package\Data Flow Task\Origen OData 1.Outputs[Error output].Columns[EstadoDeAprobación]"
-                      dataType="nText"
-                      lineageId="Package\Data Flow Task\Origen OData 1.Outputs[Error output].Columns[EstadoDeAprobación]"
-                      name="EstadoDeAprobación" />
-                    <outputColumn
-                      refId="Package\Data Flow Task\Origen OData 1.Outputs[Error output].Columns[RutaDeAcceso]"
-                      dataType="nText"
-                      lineageId="Package\Data Flow Task\Origen OData 1.Outputs[Error output].Columns[RutaDeAcceso]"
-                      name="RutaDeAcceso" />
-                    <outputColumn
-                      refId="Package\Data Flow Task\Origen OData 1.Outputs[Error output].Columns[DesprotegidoParaId]"
-                      dataType="i4"
-                      lineageId="Package\Data Flow Task\Origen OData 1.Outputs[Error output].Columns[DesprotegidoParaId]"
-                      name="DesprotegidoParaId" />
-                    <outputColumn
-                      refId="Package\Data Flow Task\Origen OData 1.Outputs[Error output].Columns[Nombre]"
-                      dataType="nText"
-                      lineageId="Package\Data Flow Task\Origen OData 1.Outputs[Error output].Columns[Nombre]"
-                      name="Nombre" />
-                    <outputColumn
-                      refId="Package\Data Flow Task\Origen OData 1.Outputs[Error output].Columns[EstadoDelVirus]"
-                      dataType="nText"
-                      lineageId="Package\Data Flow Task\Origen OData 1.Outputs[Error output].Columns[EstadoDelVirus]"
-                      name="EstadoDelVirus" />
-                    <outputColumn
-                      refId="Package\Data Flow Task\Origen OData 1.Outputs[Error output].Columns[EsLaVersiónActual]"
-                      dataType="bool"
-                      lineageId="Package\Data Flow Task\Origen OData 1.Outputs[Error output].Columns[EsLaVersiónActual]"
-                      name="EsLaVersiónActual" />
-                    <outputColumn
-                      refId="Package\Data Flow Task\Origen OData 1.Outputs[Error output].Columns[EtiquetaDeColor]"
-                      dataType="nText"
-                      lineageId="Package\Data Flow Task\Origen OData 1.Outputs[Error output].Columns[EtiquetaDeColor]"
-                      name="EtiquetaDeColor" />
-                    <outputColumn
-                      refId="Package\Data Flow Task\Origen OData 1.Outputs[Error output].Columns[Owshiddenversion]"
-                      dataType="i4"
-                      lineageId="Package\Data Flow Task\Origen OData 1.Outputs[Error output].Columns[Owshiddenversion]"
-                      name="Owshiddenversion" />
-                    <outputColumn
-                      refId="Package\Data Flow Task\Origen OData 1.Outputs[Error output].Columns[Versión]"
-                      dataType="nText"
-                      lineageId="Package\Data Flow Task\Origen OData 1.Outputs[Error output].Columns[Versión]"
-                      name="Versión" />
-                    <outputColumn
-                      refId="Package\Data Flow Task\Origen OData 1.Outputs[Error output].Columns[IdDeActivoDeCumplimientoNormativo]"
-                      dataType="nText"
-                      lineageId="Package\Data Flow Task\Origen OData 1.Outputs[Error output].Columns[IdDeActivoDeCumplimientoNormativo]"
-                      name="IdDeActivoDeCumplimientoNormativo" />
-                    <outputColumn
-                      refId="Package\Data Flow Task\Origen OData 1.Outputs[Error output].Columns[Título]"
-                      dataType="nText"
-                      lineageId="Package\Data Flow Task\Origen OData 1.Outputs[Error output].Columns[Título]"
-                      name="Título" />
-                    <outputColumn
-                      refId="Package\Data Flow Task\Origen OData 1.Outputs[Error output].Columns[Descripción]"
-                      dataType="nText"
-                      lineageId="Package\Data Flow Task\Origen OData 1.Outputs[Error output].Columns[Descripción]"
-                      name="Descripción" />
                   </outputColumns>
                   <externalMetadataColumns />
                 </output>
@@ -1261,10 +1853,15 @@
           </components>
           <paths>
             <path
-              refId="Package\Data Flow Task.Paths[Output]"
-              endId="Package\Data Flow Task\OLE_DB_Actas.Inputs[OLE DB Destination Input]"
+              refId="Package\Listas de SharePoint.Paths[Output]"
+              endId="Package\Listas de SharePoint\OLE_DB_Actas.Inputs[OLE DB Destination Input]"
               name="Output"
-              startId="Package\Data Flow Task\Actas.Outputs[Output]" />
+              startId="Package\Listas de SharePoint\Actas.Outputs[Output]" />
+            <path
+              refId="Package\Listas de SharePoint.Paths[Output1]"
+              endId="Package\Listas de SharePoint\OLE_DB_InventarioCilindros.Inputs[OLE DB Destination Input]"
+              name="Output"
+              startId="Package\Listas de SharePoint\InventarioCilindros.Outputs[Output]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -1283,32 +1880,32 @@
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
         <NodeLayout
-          Size="152,42.6666666666667"
-          Id="Package\Data Flow Task"
-          TopLeft="49.9999977648259,90.3499956917764" />
+          Size="174.666666666667,42.6666666666667"
+          Id="Package\Listas de SharePoint"
+          TopLeft="387.499982677401,172.24999178648" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
   <TaskHost
-    design-time-name="Package\Data Flow Task">
+    design-time-name="Package\Listas de SharePoint">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="144,42.6666666666667"
-          Id="Package\Data Flow Task\Origen OData 1"
-          TopLeft="276.874987622724,77.9666678444544" />
-        <NodeLayout
-          Size="104.666666666667,42.6666666666667"
-          Id="Package\Data Flow Task\Actas"
-          TopLeft="111.249995026738,78.6499962496759" />
+          Size="168,42.6666666666667"
+          Id="Package\Listas de SharePoint\InventarioCilindros"
+          TopLeft="339.374984828756,81.2166676894823" />
         <NodeLayout
           Size="149.333333333334,42.6666666666667"
-          Id="Package\Data Flow Task\OLE_DB_Actas"
-          TopLeft="93.1249958369882,162.499992251396" />
+          Id="Package\Listas de SharePoint\OLE_DB_Actas"
+          TopLeft="125.624994384125,162.499992251396" />
+        <NodeLayout
+          Size="104.666666666667,42.6666666666667"
+          Id="Package\Listas de SharePoint\Actas"
+          TopLeft="143.749993573875,78.6499962496759" />
         <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Output]"
-          TopLeft="165.687495431863,121.316662916343">
+          Id="Package\Listas de SharePoint.Paths[Output]"
+          TopLeft="198.187493979,121.316662916343">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -1328,11 +1925,62 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="212,42.6666666666667"
+          Id="Package\Listas de SharePoint\OLE_DB_InventarioCilindros"
+          TopLeft="336.249984968454,163.799992189408" />
+        <EdgeLayout
+          Id="Package\Listas de SharePoint.Paths[Output1]"
+          TopLeft="423.374984828756,123.883334356149">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="18.8750001396976,39.9166578332586"
+              Start="0,0"
+              End="18.8750001396976,32.4166578332586">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,15.9583289166293" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,15.9583289166293"
+                    Point2="0,19.9583289166293"
+                    Point3="4,19.9583289166293" />
+                  <mssgle:LineSegment
+                    End="14.8750001396976,19.9583289166293" />
+                  <mssgle:CubicBezierSegment
+                    Point1="14.8750001396976,19.9583289166293"
+                    Point2="18.8750001396976,19.9583289166293"
+                    Point3="18.8750001396976,23.9583289166293" />
+                  <mssgle:LineSegment
+                    End="18.8750001396976,32.4166578332586" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task\OLE_DB_Actas">
+    design-time-name="Package\Listas de SharePoint\OLE_DB_Actas">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Listas de SharePoint\OLE_DB_InventarioCilindros">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
