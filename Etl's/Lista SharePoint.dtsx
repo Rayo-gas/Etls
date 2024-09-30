@@ -11,8 +11,8 @@
   DTS:LocaleID="9226"
   DTS:ObjectName="Lista SharePoint"
   DTS:PackageType="5"
-  DTS:VersionBuild="13"
-  DTS:VersionGUID="{7326630D-12B5-4F95-8535-C0582A017EF7}">
+  DTS:VersionBuild="14"
+  DTS:VersionGUID="{A1F7D10F-4980-4E58-902A-D57A2DE286B2}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -1878,7 +1878,7 @@
         <NodeLayout
           Size="174.4,42.4"
           Id="Package\Listas de SharePoint"
-          TopLeft="387.499982677401,172.24999178648" />
+          TopLeft="388.333315965203,173.11665844712" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
