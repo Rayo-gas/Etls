@@ -11,8 +11,8 @@
   DTS:LocaleID="9226"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="67"
-  DTS:VersionGUID="{080990B2-EB1A-460F-8845-83C8F63104B8}">
+  DTS:VersionBuild="68"
+  DTS:VersionGUID="{811BFE85-0A93-4763-8A6C-16BEA50EAD75}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -20249,30 +20249,30 @@
         <NodeLayout
           Size="258.666666666667,42.6666666666667"
           Id="Package\DFT_Insertar_CloudFleet_Grupo_0_1"
-          TopLeft="451.249979827554,86.5964895452709" />
+          TopLeft="451.249979827554,87.2807000640742" />
         <NodeLayout
           Size="270.666666666667,42.6666666666667"
           Id="Package\DFT_Insertar_CloudFleet_Grupo_11_12"
-          TopLeft="449.374980023131,388.035080016843" />
+          TopLeft="449.374980023131,388.719290535646" />
         <NodeLayout
           Size="248,42.6666666666667"
           Id="Package\DFT_Insertar_CloudFleet_Grupo_2"
-          TopLeft="451.874990696086,165.98245359898" />
+          TopLeft="451.874990696086,166.666664117783" />
         <NodeLayout
           Size="248,42.6666666666667"
           Id="Package\DFT_Insertar_CloudFleet_Grupo_3"
-          TopLeft="457.499990630896,240.561402513903" />
+          TopLeft="457.499990630896,241.245613032706" />
         <NodeLayout
           Size="265.333333333334,42.6666666666667"
           Id="Package\DFT_Insertar_CloudFleet_Grupo_4_10"
-          TopLeft="451.874979929999,314.22806995543" />
+          TopLeft="451.874979929999,314.912280474233" />
         <NodeLayout
           Size="158.666666666667,42.6666666666667"
           Id="Package\TESQL_truncate"
-          TopLeft="499.999977648259,1.31579005214646" />
+          TopLeft="503.12497750856,0.631579533343174" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción]"
-          TopLeft="578.229151928487,129.263156211938">
+          TopLeft="578.229151928487,129.947366730741">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -20294,7 +20294,7 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción 1]"
-          TopLeft="578.687490663491,208.649120265647">
+          TopLeft="578.687490663491,209.33333078445">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -20316,7 +20316,7 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción 2]"
-          TopLeft="583.020818613781,283.22806918057">
+          TopLeft="583.020818613781,283.912279699373">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -20338,7 +20338,7 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción 3]"
-          TopLeft="584.624979976565,356.894736622097">
+          TopLeft="584.624979976565,357.5789471409">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -20360,18 +20360,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción 4]"
-          TopLeft="579.95831207124,43.9824567188131">
+          TopLeft="581.520812001391,43.2982462000098">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,42.6140328264578"
+              EndConnector="0,43.9824538640644"
               Start="0,0"
-              End="0,35.1140328264578">
+              End="0,36.4824538640644">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,35.1140328264578" />
+                    End="0,36.4824538640644" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>

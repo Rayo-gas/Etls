@@ -11,8 +11,8 @@
   DTS:LocaleID="9226"
   DTS:ObjectName="Lista SharePoint"
   DTS:PackageType="5"
-  DTS:VersionBuild="5"
-  DTS:VersionGUID="{876A1DAB-CBAB-49C9-8288-AB40D43040A4}">
+  DTS:VersionBuild="6"
+  DTS:VersionGUID="{239E1759-ED3C-45FE-9F99-5FC79DA48DD7}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -25,13 +25,13 @@
         <ODataConnectionManager
           UserName="licencias@rayogas.com"
           Url="https://grouprayogas.sharepoint.com/sites/Rayogas/Op/_vti_bin/listdata.svc/"
-          ConnectionString="Service Document Url=https://grouprayogas.sharepoint.com/sites/Rayogas/Op/_vti_bin/listdata.svc/;Include Atom Elements=Auto;Include Expanded Entities=False;Integrated Security=False;Cookie=&quot;SPOIDCRL=77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48U1A+VjEzLDBoLmZ8bWVtYmVyc2hpcHwxMDAzMDAwMGFlY2E1MWZmQGxpdmUuY29tLDAjLmZ8bWVtYmVyc2hpcHxsaWNlbmNpYXNAcmF5b2dhcy5jb20sMTMzNzIxOTc1MTAwMDAwMDAwLDEzMzcyMTk2MTA0MDAwMDAwMCwxMzM3MjI4MzkxMDQ5ODM0OTUsMC4wLjAuMCwyMDk3MTU2LGFjZWI5NzYwLTJmM2QtNGNkNC1iNGI5LTFjZGUxYzdmZWQ4MCwsLGI4Njg1NWExLTMwZDItNjAwMC03OTkwLWQwMDg5YzE5MjJmZCxiODY4NTVhMS0zMGQyLTYwMDAtNzk5MC1kMDA4OWMxOTIyZmQsLDAsMCwwLCwsLDI2NTA0Njc3NDM5OTk5OTk5OTksMCwsLCwsLCwwLCwxOTI2NzksVXRSUjZIMWttN1YwM3djdTVKUlQyT21iaE00LGRZWUx6YkxaYmd4YmNZYkRLM1dFOGxGUWV0NzFhZEJiaThNWE55aGQyU0V1SmlsMHVvZTF6MjhPMVkvTFdLaUZ0ckNrQ01LUHVpU0dpYXlYNHJXdnVEZ2crZFQxWStxYXg0cW9hQ1FNR0JZUm9jUFMvNVRjNkVZN2JENGx0SUxPU3MvYlVNSEVlSEdwODFKTWtiZjFreHFYSHIrbXExTzAvZmg3dmZuckFpbENuYmtSbS8zYmtkVzZnM0huV0l5RUhjSWwyVVJYTk10WW04VDM5dU8xWlZaZEFYRWVTVHRSRUdLTEU4aXRCMEowOEx5c1pCZG93eENYZnpRcmVIT091OHpNaTc1Tld4d05iRlVhQ2dRakNrYTVhUjhxY3ZHY0ZDY3h3N3luLzY1dWRxdGlMYlRybldhSEYrclUxZkQxSE1qNE9BazcySmo3MjZaOTluNkY3Zz09PC9TUD4=&quot;;User ID=licencias@rayogas.com;Persist Security Info=False;Time Out=600;Schema Sample Size=25;Retry Count=5;Retry Sleep=100;Keep Alive=False;Max Received Message Size=4398046511104"
+          ConnectionString="Service Document Url=https://grouprayogas.sharepoint.com/sites/Rayogas/Op/_vti_bin/listdata.svc/;Include Atom Elements=Auto;Include Expanded Entities=False;Integrated Security=False;Cookie=&quot;SPOIDCRL=77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48U1A+VjEzLDBoLmZ8bWVtYmVyc2hpcHwxMDAzMDAwMGFlY2E1MWZmQGxpdmUuY29tLDAjLmZ8bWVtYmVyc2hpcHxsaWNlbmNpYXNAcmF5b2dhcy5jb20sMTMzNzIxOTgxNDQwMDAwMDAwLDEzMzcyMTk2MTA0MDAwMDAwMCwxMzM3MjI4NDU0NDQxNDM2ODcsMC4wLjAuMCwyMDk3MTU2LGFjZWI5NzYwLTJmM2QtNGNkNC1iNGI5LTFjZGUxYzdmZWQ4MCwsLDUzNjk1NWExLWYwOTUtNjAwMC01ZWNkLTMyMDY4Yjg2OGNmOCw1MzY5NTVhMS1mMDk1LTYwMDAtNWVjZC0zMjA2OGI4NjhjZjgsLDAsMCwwLCwsLDI2NTA0Njc3NDM5OTk5OTk5OTksMCwsLCwsLCwwLCwxOTI2NzksVXRSUjZIMWttN1YwM3djdTVKUlQyT21iaE00LFVnZnNubHA0THIxUWVmcjZxUWhUSERhcmlwSm9RNHRXZVlmT1pLUHhxRUMvN0VCcFErNmNmSEZmQjJZRHdGbk1lTFIzOXdkelBCNUQwbWdBaTIzdzFvSlM5bm8rUFNHNE1OMUdoNk9ab2hhRUhFU2VVTUpzbzFsZ2JIbjZaWHVNOWxMSm9QQVA5ZnUxYWVtNTJZWDdvZGdJcFlRckJTMU9vRzdrNzJRbENxcEJhOFI1Vm9Rd3ZMQlk3ZGdsS2NBSzl0aEZnVmdxOUE2SkdhMklHTC9XNVNqM3RvdG9IMEZPbi9zSjVUdXF0K3lqTjFPNDc1c0N1ak1tRXJKZTdaUUdzWUt5OE1YYkdPUWdnOUFiNVExUE1YdXFXaC9GV29XQUV3MzFHNEpFR2p2V1hDZ1BQNlBFZjVEYWJTUnpwRTBsTVlFSTQ0THA0TVk1amRiZmRmdDN2UT09PC9TUD4=&quot;;User ID=licencias@rayogas.com;Persist Security Info=False;Time Out=600;Schema Sample Size=25;Retry Count=5;Retry Sleep=100;Keep Alive=False;Max Received Message Size=4398046511104"
           MicrosoftOnlineServicesAuth="True"
           AuthType="MicrosoftOnlineService"
           ConnectByProxy="False">
           <Password
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAREu2EwRU5kW2s2HdAxmc0gAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADqIQ/xPUIfdURfNbmTBIAyAAAAAASAAACgAAAAEAAAAAeMSaCZV4eNoeKY3h5++KkoAAAAfaeW9FaWTaRGxwpIwJXhd/uKVibmUdhk6muQUKWw+1Tmn6ZdMC3vTBQAAAB/SBUefu/i1YaWTLehyCkoT02/8w</Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAREu2EwRU5kW2s2HdAxmc0gAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAB9VZOZOM3R2ytiHv7fdCoyAAAAAASAAACgAAAAEAAAAIpSzZZVhcokMmu5mGU9UvYoAAAAuepZ9XeUtv/37FS3FhQC/LfdSr2bIDqUAo3en/zZT05NB5oNuoP4axQAAABdpg696PjJi60/iDD06Lo8OppsJQ</Password>
         </ODataConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -50,7 +50,7 @@
           ConnectByProxy="False">
           <Password
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAREu2EwRU5kW2s2HdAxmc0gAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACNpk8WBxOwSJbU4NfH5N1NAAAAAASAAACgAAAAEAAAACkyUA90+kVjAY4BVVfNTvggAAAAPF5c7UqbkdFagjUKGUznIRkGeYJunZfLWWLwrwnvsagUAAAAIKgSUEw2yuFoQZtf9nIwpf94jUU</Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAREu2EwRU5kW2s2HdAxmc0gAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADQwTZC9jmSoXqAOeoiYjLEAAAAAASAAACgAAAAEAAAAH5nWoTDpkIf19WbpCQ9G+ggAAAAMAx6Ok3wNQuDO7l6xzmswjlyl42X10d0NU9uPoUfzfIUAAAAv5UdVhdTZ441GA7i30iAHjRaUnM</Password>
         </ODataConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -1172,12 +1172,12 @@
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
         <NodeLayout
           Size="144,42.6666666666667"
-          Id="Package\Data Flow Task\Origen OData"
-          TopLeft="111.249995026738,78.6499962496759" />
-        <NodeLayout
-          Size="144,42.6666666666667"
           Id="Package\Data Flow Task\Origen OData 1"
           TopLeft="276.874987622724,77.9666678444544" />
+        <NodeLayout
+          Size="144,42.6666666666667"
+          Id="Package\Data Flow Task\Origen OData"
+          TopLeft="111.249995026738,78.6499962496759" />
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
