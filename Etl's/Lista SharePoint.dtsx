@@ -11,8 +11,8 @@
   DTS:LocaleID="9226"
   DTS:ObjectName="Lista SharePoint"
   DTS:PackageType="5"
-  DTS:VersionBuild="14"
-  DTS:VersionGUID="{A1F7D10F-4980-4E58-902A-D57A2DE286B2}">
+  DTS:VersionBuild="15"
+  DTS:VersionGUID="{87DA1CA6-5635-413D-A090-C5E07A83FAEF}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -1939,18 +1939,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Listas de SharePoint.Paths[Output]"
-          TopLeft="198.187493979,121.316662916343">
+          TopLeft="198.287493979,121.049996249676">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,41.1833293350538"
+              EndConnector="0,41.4499960017201"
               Start="0,0"
-              End="0,33.6833293350538">
+              End="0,33.9499960017201">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,33.6833293350538" />
+                    End="0,33.9499960017201" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
