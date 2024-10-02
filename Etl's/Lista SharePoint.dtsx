@@ -5,53 +5,34 @@
   DTS:CreationName="Microsoft.Package"
   DTS:CreatorComputerName="JCASTILLO-1"
   DTS:CreatorName="RAYOGAS\analistabi"
-  DTS:DTSID="{52ECBA2A-B688-4E4C-8275-A39A12F3D892}"
+  DTS:DTSID="{7B94F3E9-2AC7-4C86-95A4-6F6AAB7A8F99}"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="16.0.5556.0"
   DTS:LocaleID="9226"
   DTS:ObjectName="Lista SharePoint"
   DTS:PackageType="5"
-  DTS:VersionBuild="16"
-  DTS:VersionGUID="{EB47F527-911D-4640-A8F6-37A390F3C9B0}">
+  DTS:VersionBuild="12"
+  DTS:VersionGUID="{7AF348E6-8AA3-4815-8988-7F8037CF1EC6}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[192.168.0.132.DataStage]"
       DTS:CreationName="OLEDB"
-      DTS:DTSID="{ADEA01A2-E4F5-4C14-B107-B676EF7A97A8}"
+      DTS:DTSID="{460F4A4A-A034-4541-B1D1-0AF9C8D55B47}"
       DTS:ObjectName="192.168.0.132.DataStage">
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=192.168.0.132;Initial Catalog=DataStage;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Lista SharePoint-{ADEA01A2-E4F5-4C14-B107-B676EF7A97A8}192.168.0.132.DataStage;Auto Translate=False;" />
+          DTS:ConnectionString="Data Source=192.168.0.132;Initial Catalog=DataStage;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Lista SharePoint-{460F4A4A-A034-4541-B1D1-0AF9C8D55B47}192.168.0.132.DataStage;Auto Translate=False;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[Lista SharePoint Tec]"
       DTS:CreationName="ODATA"
-      DTS:DTSID="{0331079B-F0E5-4E1A-8DE7-CF5133B149E4}"
-      DTS:ObjectName="Lista SharePoint Tec">
-      <DTS:ObjectData>
-        <ODataConnectionManager
-          UserName="licencias@rayogas.com"
-          Url="https://grouprayogas.sharepoint.com/sites/Rayogas/Tec/Inv/_vti_bin/listdata.svc"
-          ConnectionString="Service Document Url=https://grouprayogas.sharepoint.com/sites/Rayogas/Tec/Inv/_vti_bin/listdata.svc;Include Atom Elements=Auto;Include Expanded Entities=False;Integrated Security=False;Cookie=&quot;SPOIDCRL=77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48U1A+VjEzLDBoLmZ8bWVtYmVyc2hpcHwxMDAzMDAwMGFlY2E1MWZmQGxpdmUuY29tLDAjLmZ8bWVtYmVyc2hpcHxsaWNlbmNpYXNAcmF5b2dhcy5jb20sMTMzNzIzNTc3ODIwMDAwMDAwLDEzMzcyMTk2MTA0MDAwMDAwMCwxMzM3MjQ0NDE4MjY3ODA3NDMsMC4wLjAuMCwyMDk3MTU2LGFjZWI5NzYwLTJmM2QtNGNkNC1iNGI5LTFjZGUxYzdmZWQ4MCwsLDkxMDE1NmExLTcwYzQtNjAwMC01ZWNkLTNiZTVlMmRkMTk5NSw5MTAxNTZhMS03MGM0LTYwMDAtNWVjZC0zYmU1ZTJkZDE5OTUsLDAsMCwwLCwsLDI2NTA0Njc3NDM5OTk5OTk5OTksMCwsLCwsLCwwLCwxOTI2NzksVXRSUjZIMWttN1YwM3djdTVKUlQyT21iaE00LHhiRGpMVEpQRi80Tks5UzFmTSt6VWZWQUdLUGp1SkR3ZlhzMmRqK2Q5eEVzZTNmMHVjeGpVMlQySTg3RUltUXNWZGpaTi9XNnRvZHV6RnBFSnByUUJmZEJweTM2Z21tcWVJOFdzR2laNkVlSUdRejB2Nkp6VjAxeUJ3d0VLQnUrd1dXZE1CNHY0VWl0ZUk2aytPTGQ3QVJiaTZNOTFHN2tLc2pKU2RIYlpaY1BTVDMxOTBUR2xXUXJQTlBmNHZOalB1ODc0RG0wd1pDMTlYNzhCdjlXNmxHZmgwY3U5VXZwSVVpVGVWQVlMblEzcmRPNFFkUm5mSlhVVTBiZzd4YTRVaDV3c21GenErVm4xQjJSZE5Fa21zN0E4eHc4THRKSXJLaExENmNybTZNUVJlSzJIUWphVXNFeVErYTBuZk1PaVZlQTZZS1QwS3dvd096TVdLbHFUUT09PC9TUD4=&quot;;User ID=licencias@rayogas.com;Persist Security Info=False;Time Out=600;Schema Sample Size=25;Retry Count=5;Retry Sleep=100;Keep Alive=False;Max Received Message Size=4398046511104"
-          MicrosoftOnlineServicesAuth="True"
-          AuthType="MicrosoftOnlineService"
-          ConnectByProxy="False">
-          <Password
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAREu2EwRU5kW2s2HdAxmc0gAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABpGCFNyRDVjs8xsnJIBqvsAAAAAASAAACgAAAAEAAAAJvVyAMviFQzV5m4ojZyfyooAAAA+mJFWFEWZixTtjIIf7ticTlJSyh2aWB9S3f1xIwN5fx4Y3dN3+A5chQAAADb+VFz5Qo8qUvTkcS7wM3282TtZw</Password>
-        </ODataConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Listas SharePoint Ope]"
-      DTS:CreationName="ODATA"
       DTS:DTSID="{5BDD3505-5F80-4E3A-BEA5-7286FE690947}"
-      DTS:ObjectName="Listas SharePoint Ope">
+      DTS:ObjectName="Listas SharePoint">
       <DTS:ObjectData>
         <ODataConnectionManager
           UserName="licencias@rayogas.com"
@@ -62,7 +43,7 @@
           ConnectByProxy="False">
           <Password
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAREu2EwRU5kW2s2HdAxmc0gAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACo14LqkSO5dYlnsjtJ1HUrAAAAAASAAACgAAAAEAAAAN7buKNv8xIJ/Rh+W1u7RzwoAAAA2bVizO6r3w24me/aRAvCAoAuihSMwcmsgOwe/l4xXD8J7pp7/Dw4IhQAAAA//QPZe/6yhz1qKKlMmVEqnVi9pg</Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAREu2EwRU5kW2s2HdAxmc0gAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAa2wNA5Cryusp8C2+esrnnAAAAAASAAACgAAAAEAAAAO7g39xxoZrVvQQkTZWvJdMoAAAAiU4IbdCAhzBVIxzs6EGNLCT67saOT6ah8z2/RayacfQ1uol0z13zYRQAAACbScqm1NVcDJX9xEJ6ySv6L5EmuA</Password>
         </ODataConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -73,7 +54,7 @@
       DTS:refId="Package\Listas de SharePoint"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
-      DTS:DTSID="{3482A987-EF8B-4A36-9357-865BBD3EB567}"
+      DTS:DTSID="{911DA2B8-60A2-4D24-80AA-0F2E2AC8356C}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
       DTS:ObjectName="Listas de SharePoint"
@@ -1802,9 +1783,9 @@
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
         <NodeLayout
-          Size="174.666666666667,42.6666666666667"
+          Size="174.4,42.4"
           Id="Package\Listas de SharePoint"
-          TopLeft="387.499982677401,172.24999178648" />
+          TopLeft="388.333315965203,173.11665844712" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -1814,43 +1795,31 @@
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="212,42.6666666666667"
-          Id="Package\Listas de SharePoint\OLE_DB_InventarioCilindros"
-          TopLeft="346.874984493479,176.149991600514" />
+          Size="168,42.6666666666667"
+          Id="Package\Listas de SharePoint\InventarioCilindros"
+          TopLeft="339.374984828756,81.2166676894823" />
         <NodeLayout
-          Size="192,42.6666666666667"
-          Id="Package\Listas de SharePoint\Ope_InventarioCilindros"
-          TopLeft="339.374984828756,80.5666677204767" />
+          Size="149.333333333334,42.6666666666667"
+          Id="Package\Listas de SharePoint\OLE_DB_Actas"
+          TopLeft="125.624994384125,162.499992251396" />
         <NodeLayout
-          Size="166.666666666667,42.6666666666667"
-          Id="Package\Listas de SharePoint\Tec_RegistroFallas"
+          Size="104.666666666667,42.6666666666667"
+          Id="Package\Listas de SharePoint\Actas"
           TopLeft="143.749993573875,78.6499962496759" />
         <EdgeLayout
           Id="Package\Listas de SharePoint.Paths[Output]"
-          TopLeft="435.374984828756,123.233334387143">
+          TopLeft="198.187493979,121.316662916343">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="17.4999996647235,52.9166572133708"
+              EndConnector="0,41.1833293350538"
               Start="0,0"
-              End="17.4999996647235,45.4166572133708">
+              End="0,33.6833293350538">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,22.4583286066854" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,22.4583286066854"
-                    Point2="0,26.4583286066854"
-                    Point3="4,26.4583286066854" />
-                  <mssgle:LineSegment
-                    End="13.4999996647235,26.4583286066854" />
-                  <mssgle:CubicBezierSegment
-                    Point1="13.4999996647235,26.4583286066854"
-                    Point2="17.4999996647235,26.4583286066854"
-                    Point3="17.4999996647235,30.4583286066854" />
-                  <mssgle:LineSegment
-                    End="17.4999996647235,45.4166572133708" />
+                    End="0,33.6833293350538" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1860,23 +1829,35 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <NodeLayout
-          Size="205.333333333334,42.6666666666667"
-          Id="Package\Listas de SharePoint\OLEDB_Tec_RegistroFallas"
-          TopLeft="120.624994607642,172.24999178648" />
+          Size="212,42.6666666666667"
+          Id="Package\Listas de SharePoint\OLE_DB_InventarioCilindros"
+          TopLeft="336.249984968454,163.799992189408" />
         <EdgeLayout
           Id="Package\Listas de SharePoint.Paths[Output1]"
-          TopLeft="225.187494090759,121.316662916343">
+          TopLeft="423.374984828756,123.883334356149">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,50.9333288701377"
+              EndConnector="18.8750001396976,39.9166578332586"
               Start="0,0"
-              End="0,43.4333288701377">
+              End="18.8750001396976,32.4166578332586">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,43.4333288701377" />
+                    End="0,15.9583289166293" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,15.9583289166293"
+                    Point2="0,19.9583289166293"
+                    Point3="4,19.9583289166293" />
+                  <mssgle:LineSegment
+                    End="14.8750001396976,19.9583289166293" />
+                  <mssgle:CubicBezierSegment
+                    Point1="14.8750001396976,19.9583289166293"
+                    Point2="18.8750001396976,19.9583289166293"
+                    Point3="18.8750001396976,23.9583289166293" />
+                  <mssgle:LineSegment
+                    End="18.8750001396976,32.4166578332586" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
