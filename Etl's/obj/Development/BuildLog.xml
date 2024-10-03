@@ -2,13 +2,13 @@
 <BuildLog xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <ProjectInfo>
     <Name>Etl's</Name>
-    <LastWriteTime>2024-10-02T19:23:02.519965Z</LastWriteTime>
+    <LastWriteTime>2024-10-03T12:17:14.4018651Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
       <Name>Excel.dtsx</Name>
-      <LastWriteTime>2024-10-02T19:23:02.4622382Z</LastWriteTime>
+      <LastWriteTime>2024-10-03T12:17:14.3548826Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
