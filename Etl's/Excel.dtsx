@@ -11,8 +11,8 @@
   DTS:LocaleID="9226"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="339"
-  DTS:VersionGUID="{A6EA4C8A-3B10-41FB-9F7D-77FEE96E1B26}">
+  DTS:VersionBuild="353"
+  DTS:VersionGUID="{6E151782-40AB-4A31-B0B5-4C8552977B46}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -75,7 +75,7 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="0"
           DTS:ConnectRetryInterval="0"
-          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.16.0;Data Source=D:\Rayogas\Sistemas de Información - Estrategia de Datos\7. Fuentes de Información\Xls\TI\Encuesta satisfaccion.xlsx;Extended Properties=&quot;Excel 12.0 XML;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.16.0;Data Source=D:\Rayogas\Sistemas de Información - Estrategia de Datos\7. Fuentes de Información\Xls\TI\Encuesta satisfaccion.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -99,7 +99,7 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="0"
           DTS:ConnectRetryInterval="0"
-          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.16.0;Data Source=D:\Rayogas\Sistemas de Información - Estrategia de Datos\7. Fuentes de Información\Xls\TI\Indicadores TI.xlsx;Extended Properties=&quot;Excel 12.0 XML;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.16.0;Data Source=D:\Rayogas\Sistemas de Información - Estrategia de Datos\7. Fuentes de Información\Xls\TI\Indicadores TI.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -136,6 +136,18 @@
           DTS:ConnectRetryCount="0"
           DTS:ConnectRetryInterval="0"
           DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.16.0;Data Source=D:\Rayogas\Sistemas de Información - Estrategia de Datos\7. Fuentes de Información\Xls\Comercial\vendedor\Presupuestos por vendedor granel y cilindros.xls;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Satisfaccio]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{5754FB19-7909-479B-8BDA-30E28029EACF}"
+      DTS:ObjectName="Satisfaccio">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.16.0;Data Source=D:\Rayogas\Sistemas de Información - Estrategia de Datos\7. Fuentes de Información\Xls\TI\Satisfaccion.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -2040,6 +2052,16 @@
           </DTS:ObjectData>
         </DTS:Executable>
       </DTS:Executables>
+      <DTS:PrecedenceConstraints>
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\CS_Comercial.PrecedenceConstraints[Restricción]"
+          DTS:CreationName=""
+          DTS:DTSID="{4561D7A9-71E5-4BB1-8138-92C8C78C02A0}"
+          DTS:From="Package\CS_Comercial\DFT_Carga_PresupuestosPorVendedor"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Restricción"
+          DTS:To="Package\CS_Comercial\CBF_Subsidios" />
+      </DTS:PrecedenceConstraints>
     </DTS:Executable>
     <DTS:Executable
       DTS:refId="Package\CS_Mantenimiento"
@@ -19828,7 +19850,7 @@
                     <property
                       dataType="System.String"
                       description="Specifies the name of the database object used to open a rowset."
-                      name="OpenRowset">'ManageEngine Report Framework$'</property>
+                      name="OpenRowset">Hoja1$</property>
                     <property
                       dataType="System.String"
                       description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -19996,14 +20018,33 @@
                           name="Técnico"
                           truncationRowDisposition="FailComponent" />
                         <outputColumn
-                          refId="Package\CS_TI\DFT_IndicadoresTI\ES_IndicadoresTI.Outputs[Excel Source Output].Columns[F14]"
+                          refId="Package\CS_TI\DFT_IndicadoresTI\ES_IndicadoresTI.Outputs[Excel Source Output].Columns[Descripción]"
+                          dataType="nText"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CS_TI\DFT_IndicadoresTI\ES_IndicadoresTI.Outputs[Excel Source Output].ExternalColumns[Descripción]"
+                          lineageId="Package\CS_TI\DFT_IndicadoresTI\ES_IndicadoresTI.Outputs[Excel Source Output].Columns[Descripción]"
+                          name="Descripción"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\CS_TI\DFT_IndicadoresTI\ES_IndicadoresTI.Outputs[Excel Source Output].Columns[Tiempo de resolución de SLA]"
                           dataType="wstr"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\CS_TI\DFT_IndicadoresTI\ES_IndicadoresTI.Outputs[Excel Source Output].ExternalColumns[F14]"
+                          externalMetadataColumnId="Package\CS_TI\DFT_IndicadoresTI\ES_IndicadoresTI.Outputs[Excel Source Output].ExternalColumns[Tiempo de resolución de SLA]"
                           length="255"
-                          lineageId="Package\CS_TI\DFT_IndicadoresTI\ES_IndicadoresTI.Outputs[Excel Source Output].Columns[F14]"
-                          name="F14"
+                          lineageId="Package\CS_TI\DFT_IndicadoresTI\ES_IndicadoresTI.Outputs[Excel Source Output].Columns[Tiempo de resolución de SLA]"
+                          name="Tiempo de resolución de SLA"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\CS_TI\DFT_IndicadoresTI\ES_IndicadoresTI.Outputs[Excel Source Output].Columns[Tiempo de respuesta de SLA]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CS_TI\DFT_IndicadoresTI\ES_IndicadoresTI.Outputs[Excel Source Output].ExternalColumns[Tiempo de respuesta de SLA]"
+                          length="255"
+                          lineageId="Package\CS_TI\DFT_IndicadoresTI\ES_IndicadoresTI.Outputs[Excel Source Output].Columns[Tiempo de respuesta de SLA]"
+                          name="Tiempo de respuesta de SLA"
                           truncationRowDisposition="FailComponent" />
                       </outputColumns>
                       <externalMetadataColumns
@@ -20074,10 +20115,19 @@
                           length="255"
                           name="Técnico" />
                         <externalMetadataColumn
-                          refId="Package\CS_TI\DFT_IndicadoresTI\ES_IndicadoresTI.Outputs[Excel Source Output].ExternalColumns[F14]"
+                          refId="Package\CS_TI\DFT_IndicadoresTI\ES_IndicadoresTI.Outputs[Excel Source Output].ExternalColumns[Descripción]"
+                          dataType="nText"
+                          name="Descripción" />
+                        <externalMetadataColumn
+                          refId="Package\CS_TI\DFT_IndicadoresTI\ES_IndicadoresTI.Outputs[Excel Source Output].ExternalColumns[Tiempo de resolución de SLA]"
                           dataType="wstr"
                           length="255"
-                          name="F14" />
+                          name="Tiempo de resolución de SLA" />
+                        <externalMetadataColumn
+                          refId="Package\CS_TI\DFT_IndicadoresTI\ES_IndicadoresTI.Outputs[Excel Source Output].ExternalColumns[Tiempo de respuesta de SLA]"
+                          dataType="wstr"
+                          length="255"
+                          name="Tiempo de respuesta de SLA" />
                       </externalMetadataColumns>
                     </output>
                     <output
@@ -20109,6 +20159,11 @@
                           length="255"
                           lineageId="Package\CS_TI\DFT_IndicadoresTI\ES_IndicadoresTI.Outputs[Excel Source Error Output].Columns[Estado de solicitud]"
                           name="Estado de solicitud" />
+                        <outputColumn
+                          refId="Package\CS_TI\DFT_IndicadoresTI\ES_IndicadoresTI.Outputs[Excel Source Error Output].Columns[Descripción]"
+                          dataType="nText"
+                          lineageId="Package\CS_TI\DFT_IndicadoresTI\ES_IndicadoresTI.Outputs[Excel Source Error Output].Columns[Descripción]"
+                          name="Descripción" />
                         <outputColumn
                           refId="Package\CS_TI\DFT_IndicadoresTI\ES_IndicadoresTI.Outputs[Excel Source Error Output].Columns[Hora de creación]"
                           dataType="wstr"
@@ -20158,17 +20213,23 @@
                           lineageId="Package\CS_TI\DFT_IndicadoresTI\ES_IndicadoresTI.Outputs[Excel Source Error Output].Columns[Tipo de solicitud]"
                           name="Tipo de solicitud" />
                         <outputColumn
+                          refId="Package\CS_TI\DFT_IndicadoresTI\ES_IndicadoresTI.Outputs[Excel Source Error Output].Columns[Tiempo de resolución de SLA]"
+                          dataType="wstr"
+                          length="255"
+                          lineageId="Package\CS_TI\DFT_IndicadoresTI\ES_IndicadoresTI.Outputs[Excel Source Error Output].Columns[Tiempo de resolución de SLA]"
+                          name="Tiempo de resolución de SLA" />
+                        <outputColumn
+                          refId="Package\CS_TI\DFT_IndicadoresTI\ES_IndicadoresTI.Outputs[Excel Source Error Output].Columns[Tiempo de respuesta de SLA]"
+                          dataType="wstr"
+                          length="255"
+                          lineageId="Package\CS_TI\DFT_IndicadoresTI\ES_IndicadoresTI.Outputs[Excel Source Error Output].Columns[Tiempo de respuesta de SLA]"
+                          name="Tiempo de respuesta de SLA" />
+                        <outputColumn
                           refId="Package\CS_TI\DFT_IndicadoresTI\ES_IndicadoresTI.Outputs[Excel Source Error Output].Columns[Técnico]"
                           dataType="wstr"
                           length="255"
                           lineageId="Package\CS_TI\DFT_IndicadoresTI\ES_IndicadoresTI.Outputs[Excel Source Error Output].Columns[Técnico]"
                           name="Técnico" />
-                        <outputColumn
-                          refId="Package\CS_TI\DFT_IndicadoresTI\ES_IndicadoresTI.Outputs[Excel Source Error Output].Columns[F14]"
-                          dataType="wstr"
-                          length="255"
-                          lineageId="Package\CS_TI\DFT_IndicadoresTI\ES_IndicadoresTI.Outputs[Excel Source Error Output].Columns[F14]"
-                          name="F14" />
                         <outputColumn
                           refId="Package\CS_TI\DFT_IndicadoresTI\ES_IndicadoresTI.Outputs[Excel Source Error Output].Columns[ErrorCode]"
                           dataType="i4"
@@ -20623,11 +20684,6 @@
                       <externalMetadataColumns
                         isUsed="True">
                         <externalMetadataColumn
-                          refId="Package\CS_TI\DFT_MesaAyuda\ES_MesaAyuda.Outputs[Excel Source Output].ExternalColumns[F1]"
-                          dataType="wstr"
-                          length="255"
-                          name="F1" />
-                        <externalMetadataColumn
                           refId="Package\CS_TI\DFT_MesaAyuda\ES_MesaAyuda.Outputs[Excel Source Output].ExternalColumns[Categoría]"
                           dataType="wstr"
                           length="255"
@@ -20663,6 +20719,11 @@
                           length="255"
                           name="Modo de solicitud" />
                         <externalMetadataColumn
+                          refId="Package\CS_TI\DFT_MesaAyuda\ES_MesaAyuda.Outputs[Excel Source Output].ExternalColumns[F1]"
+                          dataType="wstr"
+                          length="255"
+                          name="F1" />
+                        <externalMetadataColumn
                           refId="Package\CS_TI\DFT_MesaAyuda\ES_MesaAyuda.Outputs[Excel Source Output].ExternalColumns[F9]"
                           dataType="wstr"
                           length="255"
@@ -20674,6 +20735,18 @@
                       isErrorOut="true"
                       name="Excel Source Error Output">
                       <outputColumns>
+                        <outputColumn
+                          refId="Package\CS_TI\DFT_MesaAyuda\ES_MesaAyuda.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\CS_TI\DFT_MesaAyuda\ES_MesaAyuda.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\CS_TI\DFT_MesaAyuda\ES_MesaAyuda.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\CS_TI\DFT_MesaAyuda\ES_MesaAyuda.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
                         <outputColumn
                           refId="Package\CS_TI\DFT_MesaAyuda\ES_MesaAyuda.Outputs[Excel Source Error Output].Columns[Categoría]"
                           dataType="wstr"
@@ -20716,18 +20789,6 @@
                           length="255"
                           lineageId="Package\CS_TI\DFT_MesaAyuda\ES_MesaAyuda.Outputs[Excel Source Error Output].Columns[Modo de solicitud]"
                           name="Modo de solicitud" />
-                        <outputColumn
-                          refId="Package\CS_TI\DFT_MesaAyuda\ES_MesaAyuda.Outputs[Excel Source Error Output].Columns[ErrorCode]"
-                          dataType="i4"
-                          lineageId="Package\CS_TI\DFT_MesaAyuda\ES_MesaAyuda.Outputs[Excel Source Error Output].Columns[ErrorCode]"
-                          name="ErrorCode"
-                          specialFlags="1" />
-                        <outputColumn
-                          refId="Package\CS_TI\DFT_MesaAyuda\ES_MesaAyuda.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
-                          dataType="i4"
-                          lineageId="Package\CS_TI\DFT_MesaAyuda\ES_MesaAyuda.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
-                          name="ErrorColumn"
-                          specialFlags="2" />
                       </outputColumns>
                       <externalMetadataColumns />
                     </output>
@@ -20927,6 +20988,412 @@
                   endId="Package\CS_TI\DFT_MesaAyuda\OLEDBD_MesaAyuda.Inputs[OLE DB Destination Input]"
                   name="Excel Source Output"
                   startId="Package\CS_TI\DFT_MesaAyuda\ES_MesaAyuda.Outputs[Excel Source Output]" />
+              </paths>
+            </pipeline>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\CS_TI\DFT_Satisfaccion"
+          DTS:CreationName="Microsoft.Pipeline"
+          DTS:Description="Data Flow Task"
+          DTS:DTSID="{DA94FE89-1D78-4C77-B4C6-ACAC7924EC37}"
+          DTS:ExecutableType="Microsoft.Pipeline"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="DFT_Satisfaccion"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <pipeline
+              version="1">
+              <components>
+                <component
+                  refId="Package\CS_TI\DFT_Satisfaccion\ES_Satisfaccion"
+                  componentClassID="Microsoft.ExcelSource"
+                  contactInfo="Excel Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+                  description="Excel Source"
+                  name="ES_Satisfaccion"
+                  usesDispositions="true"
+                  version="1">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">Hoja1$</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.String"
+                      description="The variable that contains the SQL command to be executed."
+                      name="SqlCommandVariable"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">0</property>
+                    <property
+                      dataType="System.String"
+                      description="The mapping from parameters in the SQL command to variables."
+                      name="ParameterMapping"></property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\CS_TI\DFT_Satisfaccion\ES_Satisfaccion.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[Satisfaccio]"
+                      connectionManagerRefId="Package.ConnectionManagers[Satisfaccio]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\CS_TI\DFT_Satisfaccion\ES_Satisfaccion.Outputs[Excel Source Output]"
+                      name="Excel Source Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\CS_TI\DFT_Satisfaccion\ES_Satisfaccion.Outputs[Excel Source Output].Columns[Request Title]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CS_TI\DFT_Satisfaccion\ES_Satisfaccion.Outputs[Excel Source Output].ExternalColumns[Request Title]"
+                          length="255"
+                          lineageId="Package\CS_TI\DFT_Satisfaccion\ES_Satisfaccion.Outputs[Excel Source Output].Columns[Request Title]"
+                          name="Request Title"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\CS_TI\DFT_Satisfaccion\ES_Satisfaccion.Outputs[Excel Source Output].Columns[Requester]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CS_TI\DFT_Satisfaccion\ES_Satisfaccion.Outputs[Excel Source Output].ExternalColumns[Requester]"
+                          length="255"
+                          lineageId="Package\CS_TI\DFT_Satisfaccion\ES_Satisfaccion.Outputs[Excel Source Output].Columns[Requester]"
+                          name="Requester"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\CS_TI\DFT_Satisfaccion\ES_Satisfaccion.Outputs[Excel Source Output].Columns[Request Created Time]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CS_TI\DFT_Satisfaccion\ES_Satisfaccion.Outputs[Excel Source Output].ExternalColumns[Request Created Time]"
+                          length="255"
+                          lineageId="Package\CS_TI\DFT_Satisfaccion\ES_Satisfaccion.Outputs[Excel Source Output].Columns[Request Created Time]"
+                          name="Request Created Time"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\CS_TI\DFT_Satisfaccion\ES_Satisfaccion.Outputs[Excel Source Output].Columns[Technician]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CS_TI\DFT_Satisfaccion\ES_Satisfaccion.Outputs[Excel Source Output].ExternalColumns[Technician]"
+                          length="255"
+                          lineageId="Package\CS_TI\DFT_Satisfaccion\ES_Satisfaccion.Outputs[Excel Source Output].Columns[Technician]"
+                          name="Technician"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\CS_TI\DFT_Satisfaccion\ES_Satisfaccion.Outputs[Excel Source Output].Columns[Completed Time]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CS_TI\DFT_Satisfaccion\ES_Satisfaccion.Outputs[Excel Source Output].ExternalColumns[Completed Time]"
+                          length="255"
+                          lineageId="Package\CS_TI\DFT_Satisfaccion\ES_Satisfaccion.Outputs[Excel Source Output].Columns[Completed Time]"
+                          name="Completed Time"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\CS_TI\DFT_Satisfaccion\ES_Satisfaccion.Outputs[Excel Source Output].Columns[Rating %]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CS_TI\DFT_Satisfaccion\ES_Satisfaccion.Outputs[Excel Source Output].ExternalColumns[Rating %]"
+                          length="255"
+                          lineageId="Package\CS_TI\DFT_Satisfaccion\ES_Satisfaccion.Outputs[Excel Source Output].Columns[Rating %]"
+                          name="Rating %"
+                          truncationRowDisposition="FailComponent" />
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\CS_TI\DFT_Satisfaccion\ES_Satisfaccion.Outputs[Excel Source Output].ExternalColumns[Request Title]"
+                          dataType="wstr"
+                          length="255"
+                          name="Request Title" />
+                        <externalMetadataColumn
+                          refId="Package\CS_TI\DFT_Satisfaccion\ES_Satisfaccion.Outputs[Excel Source Output].ExternalColumns[Requester]"
+                          dataType="wstr"
+                          length="255"
+                          name="Requester" />
+                        <externalMetadataColumn
+                          refId="Package\CS_TI\DFT_Satisfaccion\ES_Satisfaccion.Outputs[Excel Source Output].ExternalColumns[Request Created Time]"
+                          dataType="wstr"
+                          length="255"
+                          name="Request Created Time" />
+                        <externalMetadataColumn
+                          refId="Package\CS_TI\DFT_Satisfaccion\ES_Satisfaccion.Outputs[Excel Source Output].ExternalColumns[Technician]"
+                          dataType="wstr"
+                          length="255"
+                          name="Technician" />
+                        <externalMetadataColumn
+                          refId="Package\CS_TI\DFT_Satisfaccion\ES_Satisfaccion.Outputs[Excel Source Output].ExternalColumns[Completed Time]"
+                          dataType="wstr"
+                          length="255"
+                          name="Completed Time" />
+                        <externalMetadataColumn
+                          refId="Package\CS_TI\DFT_Satisfaccion\ES_Satisfaccion.Outputs[Excel Source Output].ExternalColumns[Rating %]"
+                          dataType="wstr"
+                          length="255"
+                          name="Rating %" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\CS_TI\DFT_Satisfaccion\ES_Satisfaccion.Outputs[Excel Source Error Output]"
+                      isErrorOut="true"
+                      name="Excel Source Error Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\CS_TI\DFT_Satisfaccion\ES_Satisfaccion.Outputs[Excel Source Error Output].Columns[Request Title]"
+                          dataType="wstr"
+                          length="255"
+                          lineageId="Package\CS_TI\DFT_Satisfaccion\ES_Satisfaccion.Outputs[Excel Source Error Output].Columns[Request Title]"
+                          name="Request Title" />
+                        <outputColumn
+                          refId="Package\CS_TI\DFT_Satisfaccion\ES_Satisfaccion.Outputs[Excel Source Error Output].Columns[Requester]"
+                          dataType="wstr"
+                          length="255"
+                          lineageId="Package\CS_TI\DFT_Satisfaccion\ES_Satisfaccion.Outputs[Excel Source Error Output].Columns[Requester]"
+                          name="Requester" />
+                        <outputColumn
+                          refId="Package\CS_TI\DFT_Satisfaccion\ES_Satisfaccion.Outputs[Excel Source Error Output].Columns[Request Created Time]"
+                          dataType="wstr"
+                          length="255"
+                          lineageId="Package\CS_TI\DFT_Satisfaccion\ES_Satisfaccion.Outputs[Excel Source Error Output].Columns[Request Created Time]"
+                          name="Request Created Time" />
+                        <outputColumn
+                          refId="Package\CS_TI\DFT_Satisfaccion\ES_Satisfaccion.Outputs[Excel Source Error Output].Columns[Technician]"
+                          dataType="wstr"
+                          length="255"
+                          lineageId="Package\CS_TI\DFT_Satisfaccion\ES_Satisfaccion.Outputs[Excel Source Error Output].Columns[Technician]"
+                          name="Technician" />
+                        <outputColumn
+                          refId="Package\CS_TI\DFT_Satisfaccion\ES_Satisfaccion.Outputs[Excel Source Error Output].Columns[Completed Time]"
+                          dataType="wstr"
+                          length="255"
+                          lineageId="Package\CS_TI\DFT_Satisfaccion\ES_Satisfaccion.Outputs[Excel Source Error Output].Columns[Completed Time]"
+                          name="Completed Time" />
+                        <outputColumn
+                          refId="Package\CS_TI\DFT_Satisfaccion\ES_Satisfaccion.Outputs[Excel Source Error Output].Columns[Rating %]"
+                          dataType="wstr"
+                          length="255"
+                          lineageId="Package\CS_TI\DFT_Satisfaccion\ES_Satisfaccion.Outputs[Excel Source Error Output].Columns[Rating %]"
+                          name="Rating %" />
+                        <outputColumn
+                          refId="Package\CS_TI\DFT_Satisfaccion\ES_Satisfaccion.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\CS_TI\DFT_Satisfaccion\ES_Satisfaccion.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\CS_TI\DFT_Satisfaccion\ES_Satisfaccion.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\CS_TI\DFT_Satisfaccion\ES_Satisfaccion.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\CS_TI\DFT_Satisfaccion\OLEDB_Satisfaccion"
+                  componentClassID="Microsoft.OLEDBDestination"
+                  contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+                  description="OLE DB Destination"
+                  name="OLEDB_Satisfaccion"
+                  usesDispositions="true"
+                  version="4">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[xls].[Satisfaccion]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">3</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepIdentity">false</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                      name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                      name="FastLoadMaxInsertCommitSize">2147483647</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\CS_TI\DFT_Satisfaccion\OLEDB_Satisfaccion.Connections[OleDbConnection]"
+                      connectionManagerID="{F969E5F0-ED10-48A1-9AD7-51F9863F78B9}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[DataStage]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\CS_TI\DFT_Satisfaccion\OLEDB_Satisfaccion.Inputs[OLE DB Destination Input]"
+                      errorOrTruncationOperation="Insert"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="OLE DB Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\CS_TI\DFT_Satisfaccion\OLEDB_Satisfaccion.Inputs[OLE DB Destination Input].Columns[Requester]"
+                          cachedDataType="wstr"
+                          cachedLength="255"
+                          cachedName="Requester"
+                          externalMetadataColumnId="Package\CS_TI\DFT_Satisfaccion\OLEDB_Satisfaccion.Inputs[OLE DB Destination Input].ExternalColumns[Requester]"
+                          lineageId="Package\CS_TI\DFT_Satisfaccion\ES_Satisfaccion.Outputs[Excel Source Output].Columns[Requester]" />
+                        <inputColumn
+                          refId="Package\CS_TI\DFT_Satisfaccion\OLEDB_Satisfaccion.Inputs[OLE DB Destination Input].Columns[Technician]"
+                          cachedDataType="wstr"
+                          cachedLength="255"
+                          cachedName="Technician"
+                          externalMetadataColumnId="Package\CS_TI\DFT_Satisfaccion\OLEDB_Satisfaccion.Inputs[OLE DB Destination Input].ExternalColumns[Technician]"
+                          lineageId="Package\CS_TI\DFT_Satisfaccion\ES_Satisfaccion.Outputs[Excel Source Output].Columns[Technician]" />
+                        <inputColumn
+                          refId="Package\CS_TI\DFT_Satisfaccion\OLEDB_Satisfaccion.Inputs[OLE DB Destination Input].Columns[Completed Time]"
+                          cachedDataType="wstr"
+                          cachedLength="255"
+                          cachedName="Completed Time"
+                          externalMetadataColumnId="Package\CS_TI\DFT_Satisfaccion\OLEDB_Satisfaccion.Inputs[OLE DB Destination Input].ExternalColumns[CompletedTime]"
+                          lineageId="Package\CS_TI\DFT_Satisfaccion\ES_Satisfaccion.Outputs[Excel Source Output].Columns[Completed Time]" />
+                        <inputColumn
+                          refId="Package\CS_TI\DFT_Satisfaccion\OLEDB_Satisfaccion.Inputs[OLE DB Destination Input].Columns[Request Created Time]"
+                          cachedDataType="wstr"
+                          cachedLength="255"
+                          cachedName="Request Created Time"
+                          externalMetadataColumnId="Package\CS_TI\DFT_Satisfaccion\OLEDB_Satisfaccion.Inputs[OLE DB Destination Input].ExternalColumns[RequestCreatedTime]"
+                          lineageId="Package\CS_TI\DFT_Satisfaccion\ES_Satisfaccion.Outputs[Excel Source Output].Columns[Request Created Time]" />
+                        <inputColumn
+                          refId="Package\CS_TI\DFT_Satisfaccion\OLEDB_Satisfaccion.Inputs[OLE DB Destination Input].Columns[Request Title]"
+                          cachedDataType="wstr"
+                          cachedLength="255"
+                          cachedName="Request Title"
+                          externalMetadataColumnId="Package\CS_TI\DFT_Satisfaccion\OLEDB_Satisfaccion.Inputs[OLE DB Destination Input].ExternalColumns[RequestTitle]"
+                          lineageId="Package\CS_TI\DFT_Satisfaccion\ES_Satisfaccion.Outputs[Excel Source Output].Columns[Request Title]" />
+                        <inputColumn
+                          refId="Package\CS_TI\DFT_Satisfaccion\OLEDB_Satisfaccion.Inputs[OLE DB Destination Input].Columns[Rating %]"
+                          cachedDataType="wstr"
+                          cachedLength="255"
+                          cachedName="Rating %"
+                          externalMetadataColumnId="Package\CS_TI\DFT_Satisfaccion\OLEDB_Satisfaccion.Inputs[OLE DB Destination Input].ExternalColumns[RatingPorcen]"
+                          lineageId="Package\CS_TI\DFT_Satisfaccion\ES_Satisfaccion.Outputs[Excel Source Output].Columns[Rating %]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\CS_TI\DFT_Satisfaccion\OLEDB_Satisfaccion.Inputs[OLE DB Destination Input].ExternalColumns[RequestTitle]"
+                          dataType="wstr"
+                          length="255"
+                          name="RequestTitle" />
+                        <externalMetadataColumn
+                          refId="Package\CS_TI\DFT_Satisfaccion\OLEDB_Satisfaccion.Inputs[OLE DB Destination Input].ExternalColumns[Requester]"
+                          dataType="wstr"
+                          length="255"
+                          name="Requester" />
+                        <externalMetadataColumn
+                          refId="Package\CS_TI\DFT_Satisfaccion\OLEDB_Satisfaccion.Inputs[OLE DB Destination Input].ExternalColumns[RequestCreatedTime]"
+                          dataType="wstr"
+                          length="255"
+                          name="RequestCreatedTime" />
+                        <externalMetadataColumn
+                          refId="Package\CS_TI\DFT_Satisfaccion\OLEDB_Satisfaccion.Inputs[OLE DB Destination Input].ExternalColumns[Technician]"
+                          dataType="wstr"
+                          length="255"
+                          name="Technician" />
+                        <externalMetadataColumn
+                          refId="Package\CS_TI\DFT_Satisfaccion\OLEDB_Satisfaccion.Inputs[OLE DB Destination Input].ExternalColumns[CompletedTime]"
+                          dataType="wstr"
+                          length="255"
+                          name="CompletedTime" />
+                        <externalMetadataColumn
+                          refId="Package\CS_TI\DFT_Satisfaccion\OLEDB_Satisfaccion.Inputs[OLE DB Destination Input].ExternalColumns[RatingPorcen]"
+                          dataType="wstr"
+                          length="255"
+                          name="RatingPorcen" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\CS_TI\DFT_Satisfaccion\OLEDB_Satisfaccion.Outputs[OLE DB Destination Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="OLE DB Destination Error Output"
+                      synchronousInputId="Package\CS_TI\DFT_Satisfaccion\OLEDB_Satisfaccion.Inputs[OLE DB Destination Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\CS_TI\DFT_Satisfaccion\OLEDB_Satisfaccion.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\CS_TI\DFT_Satisfaccion\OLEDB_Satisfaccion.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\CS_TI\DFT_Satisfaccion\OLEDB_Satisfaccion.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\CS_TI\DFT_Satisfaccion\OLEDB_Satisfaccion.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+              </components>
+              <paths>
+                <path
+                  refId="Package\CS_TI\DFT_Satisfaccion.Paths[Excel Source Output]"
+                  endId="Package\CS_TI\DFT_Satisfaccion\OLEDB_Satisfaccion.Inputs[OLE DB Destination Input]"
+                  name="Excel Source Output"
+                  startId="Package\CS_TI\DFT_Satisfaccion\ES_Satisfaccion.Outputs[Excel Source Output]" />
               </paths>
             </pipeline>
           </DTS:ObjectData>
@@ -21651,11 +22118,11 @@
         <DTS:PrecedenceConstraint
           DTS:refId="Package\CS_TI.PrecedenceConstraints[Restricción]"
           DTS:CreationName=""
-          DTS:DTSID="{DD53FB71-BAAA-4C16-A054-3834D461E3C0}"
-          DTS:From="Package\CS_TI\DTF_EncuestaSatisfaccion"
+          DTS:DTSID="{959563CA-B4B8-4F7D-BEE5-1F1DA625985D}"
+          DTS:From="Package\CS_TI\DFT_MesaAyuda"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Restricción"
-          DTS:To="Package\CS_TI\DFT_Carga_LineasRayogas" />
+          DTS:To="Package\CS_TI\DTF_EncuestaSatisfaccion" />
         <DTS:PrecedenceConstraint
           DTS:refId="Package\CS_TI.PrecedenceConstraints[Restricción 1]"
           DTS:CreationName=""
@@ -21664,14 +22131,6 @@
           DTS:LogicalAnd="True"
           DTS:ObjectName="Restricción 1"
           DTS:To="Package\CS_TI\DFT_MesaAyuda" />
-        <DTS:PrecedenceConstraint
-          DTS:refId="Package\CS_TI.PrecedenceConstraints[Restricción 10]"
-          DTS:CreationName=""
-          DTS:DTSID="{01bddaf9-29dc-434e-a061-5bde8e696326}"
-          DTS:From="Package\CS_TI\DFT_IndicadoresTI"
-          DTS:LogicalAnd="True"
-          DTS:ObjectName="Restricción 10"
-          DTS:To="Package\CS_TI\DTF_EncuestaSatisfaccion" />
         <DTS:PrecedenceConstraint
           DTS:refId="Package\CS_TI.PrecedenceConstraints[Restricción 2]"
           DTS:CreationName=""
@@ -21683,19 +22142,35 @@
         <DTS:PrecedenceConstraint
           DTS:refId="Package\CS_TI.PrecedenceConstraints[Restricción 3]"
           DTS:CreationName=""
-          DTS:DTSID="{E702C34F-BA92-40F8-8E38-DB58CDF86AF1}"
-          DTS:From="Package\CS_TI\DFT_satisfaccionUsuario"
+          DTS:DTSID="{B8250B20-00CE-488A-9DE7-0E6504C44A37}"
+          DTS:From="Package\CS_TI\DTF_EncuestaSatisfaccion"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Restricción 3"
-          DTS:To="Package\CS_TI\CBF_CLaro_Datos_Excel" />
-        <DTS:PrecedenceConstraint
-          DTS:refId="Package\CS_TI.PrecedenceConstraints[Restricción 7]"
-          DTS:CreationName=""
-          DTS:DTSID="{ffa260ed-dfa2-42e9-921b-69bf58332054}"
-          DTS:From="Package\CS_TI\DFT_MesaAyuda"
-          DTS:LogicalAnd="True"
-          DTS:ObjectName="Restricción 7"
           DTS:To="Package\CS_TI\DFT_satisfaccionUsuario" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\CS_TI.PrecedenceConstraints[Restricción 4]"
+          DTS:CreationName=""
+          DTS:DTSID="{6D9B1A76-B87E-4E83-A24B-DDE29A745C07}"
+          DTS:From="Package\CS_TI\DFT_IndicadoresTI"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Restricción 4"
+          DTS:To="Package\CS_TI\DFT_Carga_LineasRayogas" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\CS_TI.PrecedenceConstraints[Restricción 5]"
+          DTS:CreationName=""
+          DTS:DTSID="{5DD00F43-69DF-42EB-8685-05103F14FDE2}"
+          DTS:From="Package\CS_TI\DFT_satisfaccionUsuario"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Restricción 5"
+          DTS:To="Package\CS_TI\DFT_Satisfaccion" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\CS_TI.PrecedenceConstraints[Restricción 6]"
+          DTS:CreationName=""
+          DTS:DTSID="{B6967D9A-DB23-4B84-B725-212CCA3CD068}"
+          DTS:From="Package\CS_TI\DFT_Satisfaccion"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Restricción 6"
+          DTS:To="Package\CS_TI\CBF_CLaro_Voz_Excel" />
       </DTS:PrecedenceConstraints>
     </DTS:Executable>
     <DTS:Executable
@@ -21786,9 +22261,93 @@
       <GraphLayout
         Capacity="64" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="160.8,41.6"
-          Id="Package\CS_talento_humano\DFT_Incapacidad"
-          TopLeft="24.7999934434894,24.9333356716897" />
+          Size="188,41.6"
+          Id="Package\CS_Comercial\CBF_Subsidios\DFT_Carga_Subsidios"
+          TopLeft="23.4999999627478,40.3508774505539" />
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="226.4,138.4"
+          Size="226.4,181.6"
+          Id="Package\CS_Comercial\CBF_Subsidios"
+          TopLeft="47.0333098991965,134.671925223671" />
+        <NodeLayout
+          Size="269.6,41.6"
+          Id="Package\CS_Comercial\DFT_Carga_PresupuestosPorVendedor"
+          TopLeft="32.9082925548601,45.4210619363858" />
+        <EdgeLayout
+          Id="Package\CS_Comercial.PrecedenceConstraints[Restricción]"
+          TopLeft="163.970801227028,87.0210619363858">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,47.6508632872851"
+              Start="0,0"
+              End="0,40.1508632872851">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,40.1508632872851" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="586.4,371.2"
+          Size="586.4,414.4"
+          Id="Package\CS_Comercial"
+          TopLeft="84.1666620680026,704.399995696942" />
+        <NodeLayout
+          Size="165.6,41.6"
+          Id="Package\CS_Mantenimiento\CBF_Wizeo\DFT_Carga_Wizeo"
+          TopLeft="18,21.7649122609712" />
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="224,121.6"
+          Size="224,164.8"
+          Id="Package\CS_Mantenimiento\CBF_Wizeo"
+          TopLeft="60.1666194506837,158.533331223991" />
+        <NodeLayout
+          Size="172,42.4"
+          Id="Package\CS_Mantenimiento\DFT_Carga_Terpel"
+          TopLeft="87.6666179481501,75.3333316579129" />
+        <EdgeLayout
+          Id="Package\CS_Mantenimiento.PrecedenceConstraints[Restricción]"
+          TopLeft="172.916618699417,117.733331657913">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,40.7999995660783"
+              Start="0,0"
+              End="0,33.2999995660783">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,33.2999995660783" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="381.6,488.8"
+          Size="381.6,532"
+          Id="Package\CS_Mantenimiento"
+          TopLeft="783.333290533889,106.333332616157" />
         <NodeLayout
           Size="162.4,42.4"
           Id="Package\CS_talento_humano\DFT_Ausentismo"
@@ -21797,6 +22356,14 @@
           Size="166.4,42.4"
           Id="Package\CS_talento_humano\DFT_Documentos"
           TopLeft="251.216651779993,105.115785702461" />
+        <NodeLayout
+          Size="160.8,41.6"
+          Id="Package\CS_talento_humano\DFT_Incapacidad"
+          TopLeft="24.7999934434894,24.9333356716897" />
+        <NodeLayout
+          Size="196,41.6"
+          Id="Package\CS_talento_humano\DFT_InformeIncapacidad"
+          TopLeft="25.3333118425485,102.333329289423" />
         <EdgeLayout
           Id="Package\CS_talento_humano.PrecedenceConstraints[Restricción]"
           TopLeft="185.599993443489,44.545613579413">
@@ -21841,10 +22408,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="196,41.6"
-          Id="Package\CS_talento_humano\DFT_InformeIncapacidad"
-          TopLeft="25.3333118425485,102.333329289423" />
         <EdgeLayout
           Id="Package\CS_talento_humano.PrecedenceConstraints[Restricción 2]"
           TopLeft="251.216651779993,124.724557495942">
@@ -21873,45 +22436,11 @@
           PanelSize="450.4,209.6"
           Size="450.4,252.8"
           Id="Package\CS_talento_humano"
-          TopLeft="727.333288894761,684.333331169751" />
-        <NodeLayout
-          Size="162.4,42.4"
-          Id="Package\TESQL_Truncate"
-          TopLeft="300.208330608696,26.7859653473636" />
-        <NodeLayout
-          Size="167.2,41.6"
-          Id="Package\CS_TI\DFT_IndicadoresTI"
-          TopLeft="77.9665924050776,35.8666680889655" />
-        <NodeLayout
-          Size="204,41.6"
-          Id="Package\CS_TI\DTF_EncuestaSatisfaccion"
-          TopLeft="61.1332634882825,100.799999493758" />
-        <EdgeLayout
-          Id="Package\CS_TI.PrecedenceConstraints[Restricción 10]"
-          TopLeft="162.34992794668,77.4666680889655">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,23.3333314047924"
-              Start="0,0"
-              End="0,15.8333314047924">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,15.8333314047924" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+          TopLeft="756.499953967831,748.466664057109" />
         <NodeLayout
           Size="202.4,41.6"
           Id="Package\CS_TI\CBF_CLaro_Datos_Excel\DFT_Carga_Archivo_datos"
-          TopLeft="12.7500000558795,27.3157894811966" />
+          TopLeft="12.7500000558795,26.4491228205567" />
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
@@ -21933,73 +22462,41 @@
         <NodeLayout
           Size="206.4,41.6"
           Id="Package\CS_TI\DFT_Carga_LineasRayogas"
-          TopLeft="290.199940718216,107.066667872005" />
-        <EdgeLayout
-          Id="Package\CS_TI.PrecedenceConstraints[Restricción]"
-          TopLeft="265.133263488283,124.733333682881">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="25.0666772299335,0"
-              Start="0,0"
-              End="17.5666772299335,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="17.5666772299335,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\CS_TI.PrecedenceConstraints[Restricción 2]"
-          TopLeft="272.166641852096,328.683333737122">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="38.43330432988,0"
-              Start="0,0"
-              End="30.93330432988,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="30.93330432988,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+          TopLeft="295.199940445028,32.5333350569669" />
+        <NodeLayout
+          Size="167.2,41.6"
+          Id="Package\CS_TI\DFT_IndicadoresTI"
+          TopLeft="66.2999263758495,27.2000014825657" />
         <NodeLayout
           Size="162.4,42.4"
           Id="Package\CS_TI\DFT_MesaAyuda"
-          TopLeft="309.574949413665,172.599995823503" />
+          TopLeft="317.074949003883,103.266662972305" />
+        <NodeLayout
+          Size="160.8,41.6"
+          Id="Package\CS_TI\DFT_Satisfaccion"
+          TopLeft="343.033309520451,177.266665105754" />
         <NodeLayout
           Size="198.4,42.4"
           Id="Package\CS_TI\DFT_satisfaccionUsuario"
-          TopLeft="65.1999530116733,171.003504697471" />
+          TopLeft="64.3666197238713,173.603504679391" />
+        <NodeLayout
+          Size="204,41.6"
+          Id="Package\CS_TI\DTF_EncuestaSatisfaccion"
+          TopLeft="58.6332636248763,103.399999475678" />
         <EdgeLayout
-          Id="Package\CS_TI.PrecedenceConstraints[Restricción 7]"
-          TopLeft="309.574949413665,193.001750260487">
+          Id="Package\CS_TI.PrecedenceConstraints[Restricción]"
+          TopLeft="317.074949003883,124.333331223991">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-45.9749964019909,0"
+              EndConnector="-54.4416853790064,0"
               Start="0,0"
-              End="-38.4749964019909,0">
+              End="-46.9416853790064,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="-38.4749964019909,0" />
+                    End="-46.9416853790064,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -22010,18 +22507,40 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package\CS_TI.PrecedenceConstraints[Restricción 1]"
-          TopLeft="392.087445065941,148.666667872005">
+          TopLeft="398.337444724456,74.1333350569669">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,23.9333279514977"
+              EndConnector="0,29.1333279153376"
               Start="0,0"
-              End="0,16.4333279514977">
+              End="0,21.6333279153376">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,16.4333279514977" />
+                    End="0,21.6333279153376" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\CS_TI.PrecedenceConstraints[Restricción 2]"
+          TopLeft="272.166641852095,328.683333737122">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="38.4333043298801,0"
+              Start="0,0"
+              End="30.9333043298801,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="30.9333043298801,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -22032,18 +22551,84 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package\CS_TI.PrecedenceConstraints[Restricción 3]"
-          TopLeft="160.683297431884,213.403504697471">
+          TopLeft="162.099941674374,144.999999475678">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,28.6964958991712"
+              EndConnector="0,28.6035052037131"
               Start="0,0"
-              End="0,21.1964958991712">
+              End="0,21.1035052037131">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,21.1964958991712" />
+                    End="0,21.1035052037131" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\CS_TI.PrecedenceConstraints[Restricción 4]"
+          TopLeft="233.499926375849,50.6666682697663">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="61.7000140691789,0"
+              Start="0,0"
+              End="54.2000140691789,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="54.2000140691789,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\CS_TI.PrecedenceConstraints[Restricción 5]"
+          TopLeft="262.766619723871,196.435084892572">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="80.26668979658,0"
+              Start="0,0"
+              End="72.76668979658,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="72.76668979658,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\CS_TI.PrecedenceConstraints[Restricción 6]"
+          TopLeft="424.616627851213,218.866665105753">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,30.4000017718476"
+              Start="0,0"
+              End="0,22.9000017718476">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,22.9000017718476" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -22060,63 +22645,23 @@
           Id="Package\CS_TI"
           TopLeft="92.499994946023,103.200000289281" />
         <NodeLayout
-          Size="172,42.4"
-          Id="Package\CS_Mantenimiento\DFT_Carga_Terpel"
-          TopLeft="87.6666179481501,75.3333316579129" />
-        <NodeLayout
-          Size="165.6,41.6"
-          Id="Package\CS_Mantenimiento\CBF_Wizeo\DFT_Carga_Wizeo"
-          TopLeft="18,22.6315789216113" />
-        <ContainerLayout
-          HeaderHeight="43"
-          IsExpanded="True"
-          PanelSize="224,121.6"
-          Size="224,164.8"
-          Id="Package\CS_Mantenimiento\CBF_Wizeo"
-          TopLeft="60.1666194506837,158.533331223991" />
-        <EdgeLayout
-          Id="Package\CS_Mantenimiento.PrecedenceConstraints[Restricción]"
-          TopLeft="172.916618699417,117.733331657913">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,40.7999995660783"
-              Start="0,0"
-              End="0,33.2999995660783">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,33.2999995660783" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <ContainerLayout
-          HeaderHeight="43"
-          IsExpanded="True"
-          PanelSize="381.6,488.8"
-          Size="381.6,532"
-          Id="Package\CS_Mantenimiento"
-          TopLeft="753.333292173016,105.466665955517" />
+          Size="162.4,42.4"
+          Id="Package\TESQL_Truncate"
+          TopLeft="300.208330608696,26.7859653473636" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción]"
-          TopLeft="381.15416277736,69.1859653473636">
+          TopLeft="381.154162777359,69.1859653473636">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,34.014034941917"
+              EndConnector="0,34.0140349419174"
               Start="0,0"
-              End="0,26.514034941917">
+              End="0,26.5140349419174">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,26.514034941917" />
+                    End="0,26.5140349419174" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -22127,18 +22672,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción 1]"
-          TopLeft="669.299994946023,372.933333122399">
+          TopLeft="669.299994946023,373.366666452719">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="84.0332972269935,0"
+              EndConnector="114.033295587866,0"
               Start="0,0"
-              End="76.5332972269935,0">
+              End="106.533295587866,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="76.5332972269935,0" />
+                    End="106.533295587866,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -22149,30 +22694,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción 2]"
-          TopLeft="944.133292173016,637.466665955517">
+          TopLeft="977.91662225086,638.333332616157">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="8.3999967217444,46.8666652142343"
+              EndConnector="0,110.133331440952"
               Start="0,0"
-              End="8.3999967217444,39.3666652142343">
+              End="0,102.633331440952">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,19.4333326071172" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,19.4333326071172"
-                    Point2="0,23.4333326071172"
-                    Point3="4,23.4333326071172" />
-                  <mssgle:LineSegment
-                    End="4.3999967217444,23.4333326071172" />
-                  <mssgle:CubicBezierSegment
-                    Point1="4.3999967217444,23.4333326071172"
-                    Point2="8.3999967217444,23.4333326071172"
-                    Point3="8.3999967217444,27.4333326071172" />
-                  <mssgle:LineSegment
-                    End="8.3999967217444,39.3666652142343" />
+                    End="0,102.633331440952" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -22181,54 +22714,32 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="188,41.6"
-          Id="Package\CS_Comercial\CBF_Subsidios\DFT_Carga_Subsidios"
-          TopLeft="23.4999999627478,40.3508774505539" />
-        <ContainerLayout
-          HeaderHeight="43"
-          IsExpanded="True"
-          PanelSize="226.4,138.4"
-          Size="226.4,181.6"
-          Id="Package\CS_Comercial\CBF_Subsidios"
-          TopLeft="60.3666425040287,275.071924247347" />
-        <NodeLayout
-          Size="269.6,41.6"
-          Id="Package\CS_Comercial\DFT_Carga_PresupuestosPorVendedor"
-          TopLeft="32.9082925548601,45.4210619363858" />
-        <ContainerLayout
-          HeaderHeight="43"
-          IsExpanded="True"
-          PanelSize="354.4,534.4"
-          Size="354.4,577.6"
-          Id="Package\CS_Comercial"
-          TopLeft="236.666653735771,677.533329217103" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción 3]"
-          TopLeft="727.333288894761,810.733331169751">
+          TopLeft="756.499953967831,874.866664057109">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-136.26663515899,155.599998047352"
+              EndConnector="-85.9332918998283,36.733331639833"
               Start="0,0"
-              End="-128.76663515899,155.599998047352">
+              End="-78.4332918998283,36.733331639833">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="-64.133317579495,0" />
+                    End="-38.9666459499142,0" />
                   <mssgle:CubicBezierSegment
-                    Point1="-64.133317579495,0"
-                    Point2="-68.133317579495,0"
-                    Point3="-68.133317579495,4" />
+                    Point1="-38.9666459499142,0"
+                    Point2="-42.9666459499142,0"
+                    Point3="-42.9666459499142,4" />
                   <mssgle:LineSegment
-                    End="-68.133317579495,151.599998047352" />
+                    End="-42.9666459499142,32.733331639833" />
                   <mssgle:CubicBezierSegment
-                    Point1="-68.133317579495,151.599998047352"
-                    Point2="-68.133317579495,155.599998047352"
-                    Point3="-72.133317579495,155.599998047352" />
+                    Point1="-42.9666459499142,32.733331639833"
+                    Point2="-42.9666459499142,36.733331639833"
+                    Point3="-46.9666459499142,36.733331639833" />
                   <mssgle:LineSegment
-                    End="-128.76663515899,155.599998047352" />
+                    End="-78.4332918998283,36.733331639833" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -22244,17 +22755,17 @@
     design-time-name="Package\CS_Comercial\CBF_Subsidios\DFT_Carga_Subsidios">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="148,42.6666666666667"
+          Size="148,42.4"
           Id="Package\CS_Comercial\CBF_Subsidios\DFT_Carga_Subsidios\OE_Subsidios"
           TopLeft="580,76" />
         <NodeLayout
-          Size="172,42"
+          Size="172,41.6"
           Id="Package\CS_Comercial\CBF_Subsidios\DFT_Carga_Subsidios\DOLEDB_ Subsidios"
           TopLeft="569,246" />
         <NodeLayout
-          Size="146,42"
+          Size="145.6,41.6"
           Id="Package\CS_Comercial\CBF_Subsidios\DFT_Carga_Subsidios\DC_ Subsidios"
           TopLeft="583,157" />
         <EdgeLayout
@@ -22276,9 +22787,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -22300,9 +22809,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -22334,114 +22841,6 @@
       </Property>
     </Properties>
   </PipelineComponentMetadata>
-  <TaskHost
-    design-time-name="Package\CS_talento_humano\DFT_Incapacidad">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
-        <NodeLayout
-          Size="157.6,42.4"
-          Id="Package\CS_talento_humano\DFT_Incapacidad\ES_Incapacidad"
-          TopLeft="625.624972032384,56.10526254187" />
-        <NodeLayout
-          Size="186.4,42.4"
-          Id="Package\CS_talento_humano\DFT_Incapacidad\OLEDBD_Incapacidad"
-          TopLeft="616.249972451479,151.894735174331" />
-        <EdgeLayout
-          Id="Package\CS_talento_humano\DFT_Incapacidad.Paths[Excel Source Output]"
-          TopLeft="706.937472241931,98.7719292085367">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,53.1228059657944"
-              Start="0,0"
-              End="0,45.6228059657944">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,45.6228059657944" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <TaskHost
-    design-time-name="Package\CS_talento_humano\DFT_Ausentismo">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
-        <NodeLayout
-          Size="185.333333333334,42.6666666666667"
-          Id="Package\CS_talento_humano\DFT_Ausentismo\OLEDBD_Ausentismo"
-          TopLeft="946.190447991803,236.309516766952" />
-        <NodeLayout
-          Size="149.333333333334,42.6666666666667"
-          Id="Package\CS_talento_humano\DFT_Ausentismo\CS_Validacion"
-          TopLeft="966.428542626757,124.99999627471" />
-        <NodeLayout
-          Size="156,42.6666666666667"
-          Id="Package\CS_talento_humano\DFT_Ausentismo\ES_Ausentismo"
-          TopLeft="965.999971210957,18.9999994337559" />
-        <EdgeLayout
-          Id="Package\CS_talento_humano\DFT_Ausentismo.Paths[Excel Source Output]"
-          TopLeft="1042.54759025219,61.6666661004226">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,63.3333301742873"
-              Start="0,0"
-              End="0,55.8333301742873">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,55.8333301742873" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\CS_talento_humano\DFT_Ausentismo.Paths[Conditional Split Default Output]"
-          TopLeft="1039.97616197595,167.666662941377">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,68.6428538255751"
-              Start="0,0"
-              End="0,61.1428538255751">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,61.1428538255751" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-70.61390625,24.7423253502875,141.2278125,11.658203125"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
   <TaskHost
     design-time-name="Package\CS_Comercial\DFT_Carga_PresupuestosPorVendedor">
     <LayoutInfo>
@@ -22532,6 +22931,210 @@
       </Property>
     </Properties>
   </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\CS_Mantenimiento\CBF_Wizeo\DFT_Carga_Wizeo">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="126.666666666667,42"
+          Id="Package\CS_Mantenimiento\CBF_Wizeo\DFT_Carga_Wizeo\OE_Wizeo"
+          TopLeft="587,75" />
+        <NodeLayout
+          Size="126.666666666667,42"
+          Id="Package\CS_Mantenimiento\CBF_Wizeo\DFT_Carga_Wizeo\DC_Wizeo"
+          TopLeft="583,158" />
+        <NodeLayout
+          Size="153.333333333334,42"
+          Id="Package\CS_Mantenimiento\CBF_Wizeo\DFT_Carga_Wizeo\DOLEDB_Wizeo"
+          TopLeft="569,246" />
+        <EdgeLayout
+          Id="Package\CS_Mantenimiento\CBF_Wizeo\DFT_Carga_Wizeo.Paths[Salida de conversión de datos]"
+          TopLeft="646,200">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,46"
+              Start="0,0"
+              End="0,38.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,38.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\CS_Mantenimiento\CBF_Wizeo\DFT_Carga_Wizeo.Paths[Salida de origen de Excel]"
+          TopLeft="648.5,117">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,41"
+              Start="0,0"
+              End="0,33.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,33.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <TaskHost
+    design-time-name="Package\CS_Mantenimiento\DFT_Carga_Terpel">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="162.666666666667,42.6666666666667"
+          Id="Package\CS_Mantenimiento\DFT_Carga_Terpel\DOLEDB_ Terpel"
+          TopLeft="1089.00000722706,222.087719117946" />
+        <NodeLayout
+          Size="131.333333333334,42.6666666666667"
+          Id="Package\CS_Mantenimiento\DFT_Carga_Terpel\OE_Terpel"
+          TopLeft="1103.00000722706,45.421052451279" />
+        <NodeLayout
+          Size="134,42.6666666666667"
+          Id="Package\CS_Mantenimiento\DFT_Carga_Terpel\DC_ Terpel"
+          TopLeft="1104.00000722706,133.087719117946" />
+        <EdgeLayout
+          Id="Package\CS_Mantenimiento\DFT_Carga_Terpel.Paths[Excel Source Output]"
+          TopLeft="1169.8333405604,88.0877191179457">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,45"
+              Start="0,0"
+              End="0,37.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,37.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\CS_Mantenimiento\DFT_Carga_Terpel.Paths[Salida de conversión de datos]"
+          TopLeft="1170.66667389373,175.754385784612">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,46.3333333333333"
+              Start="0,0"
+              End="0,38.8333333333333">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,38.8333333333333" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <TaskHost
+    design-time-name="Package\CS_talento_humano\DFT_Ausentismo">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="185.333333333334,42.6666666666667"
+          Id="Package\CS_talento_humano\DFT_Ausentismo\OLEDBD_Ausentismo"
+          TopLeft="946.190447991803,236.309516766952" />
+        <NodeLayout
+          Size="149.333333333334,42.6666666666667"
+          Id="Package\CS_talento_humano\DFT_Ausentismo\CS_Validacion"
+          TopLeft="966.428542626757,124.99999627471" />
+        <NodeLayout
+          Size="156,42.6666666666667"
+          Id="Package\CS_talento_humano\DFT_Ausentismo\ES_Ausentismo"
+          TopLeft="965.999971210957,18.9999994337559" />
+        <EdgeLayout
+          Id="Package\CS_talento_humano\DFT_Ausentismo.Paths[Excel Source Output]"
+          TopLeft="1042.54759025219,61.6666661004226">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,63.3333301742873"
+              Start="0,0"
+              End="0,55.8333301742873">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,55.8333301742873" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\CS_talento_humano\DFT_Ausentismo.Paths[Conditional Split Default Output]"
+          TopLeft="1039.97616197595,167.666662941377">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,68.6428538255751"
+              Start="0,0"
+              End="0,61.1428538255751">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,61.1428538255751" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-70.61390625,24.7423253502875,141.2278125,11.658203125"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
   <TaskHost
     design-time-name="Package\CS_talento_humano\DFT_Documentos">
     <LayoutInfo>
@@ -22997,6 +23600,44 @@
     </Properties>
   </PipelineComponentMetadata>
   <TaskHost
+    design-time-name="Package\CS_talento_humano\DFT_Incapacidad">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="157.6,42.4"
+          Id="Package\CS_talento_humano\DFT_Incapacidad\ES_Incapacidad"
+          TopLeft="625.624972032384,56.10526254187" />
+        <NodeLayout
+          Size="186.4,42.4"
+          Id="Package\CS_talento_humano\DFT_Incapacidad\OLEDBD_Incapacidad"
+          TopLeft="616.249972451479,151.894735174331" />
+        <EdgeLayout
+          Id="Package\CS_talento_humano\DFT_Incapacidad.Paths[Excel Source Output]"
+          TopLeft="706.937472241931,98.7719292085367">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,53.1228059657944"
+              Start="0,0"
+              End="0,45.6228059657944">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,45.6228059657944" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <TaskHost
     design-time-name="Package\CS_talento_humano\DFT_InformeIncapacidad">
     <LayoutInfo>
       <GraphLayout
@@ -23061,133 +23702,30 @@
     </Properties>
   </PipelineComponentMetadata>
   <TaskHost
-    design-time-name="Package\CS_TI\DFT_IndicadoresTI">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="182.4,41.6"
-          Id="Package\CS_TI\DFT_IndicadoresTI\OLEDB_IndicadoresTI"
-          TopLeft="576.833301856287,180.399998737574" />
-        <NodeLayout
-          Size="160.8,41.6"
-          Id="Package\CS_TI\DFT_IndicadoresTI\ES_IndicadoresTI"
-          TopLeft="584.166634749209,78.8666661182377" />
-        <EdgeLayout
-          Id="Package\CS_TI\DFT_IndicadoresTI.Paths[Excel Source Output]"
-          TopLeft="666.299968302748,120.466666118238">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,59.9333326193362"
-              Start="0,0"
-              End="0,52.4333326193362">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.4333326193362" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\CS_TI\DFT_IndicadoresTI\OLEDB_IndicadoresTI">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <TaskHost
-    design-time-name="Package\CS_TI\DTF_EncuestaSatisfaccion">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
-        <NodeLayout
-          Size="220,41.6"
-          Id="Package\CS_TI\DTF_EncuestaSatisfaccion\OLEDB_Encuesta satisfaccion"
-          TopLeft="998.99998511374,135.999997973442" />
-        <NodeLayout
-          Size="197.6,41.6"
-          Id="Package\CS_TI\DTF_EncuestaSatisfaccion\ES_EncuestaSatisfaccion"
-          TopLeft="1021.99998477101,26.9999995976687" />
-        <EdgeLayout
-          Id="Package\CS_TI\DTF_EncuestaSatisfaccion.Paths[Excel Source Output]"
-          TopLeft="1120.79998477101,68.5999995976687">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-11.7999996572732,67.3999983757734"
-              Start="0,0"
-              End="-11.7999996572732,59.8999983757734">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,29.6999991878867" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,29.6999991878867"
-                    Point2="0,33.6999991878867"
-                    Point3="-4,33.6999991878867" />
-                  <mssgle:LineSegment
-                    End="-7.79999965727325,33.6999991878867" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-7.79999965727325,33.6999991878867"
-                    Point2="-11.7999996572732,33.6999991878867"
-                    Point3="-11.7999996572732,37.6999991878867" />
-                  <mssgle:LineSegment
-                    End="-11.7999996572732,59.8999983757734" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <TaskHost
     design-time-name="Package\CS_TI\CBF_CLaro_Datos_Excel\DFT_Carga_Archivo_datos">
     <LayoutInfo>
       <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="170.666666666667,42"
-          Id="Package\CS_TI\CBF_CLaro_Datos_Excel\DFT_Carga_Archivo_datos\DOLEDB_ClaroDato"
-          TopLeft="467,327" />
-        <NodeLayout
-          Size="149.333333333334,42"
-          Id="Package\CS_TI\CBF_CLaro_Datos_Excel\DFT_Carga_Archivo_datos\OE_ClaroDatos"
-          TopLeft="474,26" />
-        <NodeLayout
-          Size="134,42"
+          Size="134.4,41.6"
           Id="Package\CS_TI\CBF_CLaro_Datos_Excel\DFT_Carga_Archivo_datos\CD_Periodo"
           TopLeft="477,103" />
         <NodeLayout
-          Size="210,42"
+          Size="209.6,41.6"
           Id="Package\CS_TI\CBF_CLaro_Datos_Excel\DFT_Carga_Archivo_datos\DC_Transformar_Tipo_Dato"
           TopLeft="446,252" />
         <NodeLayout
-          Size="158,42"
+          Size="170.4,41.6"
+          Id="Package\CS_TI\CBF_CLaro_Datos_Excel\DFT_Carga_Archivo_datos\DOLEDB_ClaroDato"
+          TopLeft="467,327" />
+        <NodeLayout
+          Size="158.4,41.6"
           Id="Package\CS_TI\CBF_CLaro_Datos_Excel\DFT_Carga_Archivo_datos\CD_PasarGB_MB"
           TopLeft="467,170" />
+        <NodeLayout
+          Size="149.6,41.6"
+          Id="Package\CS_TI\CBF_CLaro_Datos_Excel\DFT_Carga_Archivo_datos\OE_ClaroDatos"
+          TopLeft="474,26" />
         <EdgeLayout
           Id="Package\CS_TI\CBF_CLaro_Datos_Excel\DFT_Carga_Archivo_datos.Paths[Salida de columna derivada1]"
           TopLeft="548.5,212">
@@ -23207,9 +23745,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -23231,9 +23767,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -23255,9 +23789,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -23279,9 +23811,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -23452,45 +23982,184 @@
     </LayoutInfo>
   </TaskHost>
   <TaskHost
-    design-time-name="Package\CS_TI\DFT_MesaAyuda">
+    design-time-name="Package\CS_TI\DFT_IndicadoresTI">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="156,42.6666666666667"
-          Id="Package\CS_TI\DFT_MesaAyuda\ES_MesaAyuda"
-          TopLeft="689.374989727512,49.2631588219936" />
+          Size="182.4,41.6"
+          Id="Package\CS_TI\DFT_IndicadoresTI\OLEDB_IndicadoresTI"
+          TopLeft="576.833301856287,180.399998737574" />
         <NodeLayout
-          Size="185.333333333334,42.6666666666667"
-          Id="Package\CS_TI\DFT_MesaAyuda\OLEDBD_MesaAyuda"
-          TopLeft="679.374989876524,164.89473994584" />
+          Size="160.8,41.6"
+          Id="Package\CS_TI\DFT_IndicadoresTI\ES_IndicadoresTI"
+          TopLeft="584.166634749209,80.8666660884354" />
         <EdgeLayout
-          Id="Package\CS_TI\DFT_MesaAyuda.Paths[Excel Source Output]"
-          TopLeft="769.708323135351,91.9298254886603">
+          Id="Package\CS_TI\DFT_IndicadoresTI.Paths[Excel Source Output]"
+          TopLeft="666.299968302748,122.466666088435">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,72.9649144571793"
+              EndConnector="0,57.9333326491385"
               Start="0,0"
-              End="0,65.4649144571793">
+              End="0,50.4333326491385">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,65.4649144571793" />
+                    End="0,50.4333326491385" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\CS_TI\DFT_IndicadoresTI\ES_IndicadoresTI">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\CS_TI\DFT_IndicadoresTI\OLEDB_IndicadoresTI">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\CS_TI\DFT_MesaAyuda">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="156,42.4"
+          Id="Package\CS_TI\DFT_MesaAyuda\ES_MesaAyuda"
+          TopLeft="688.374989742413,49.2631588219936" />
+        <NodeLayout
+          Size="185.6,42.4"
+          Id="Package\CS_TI\DFT_MesaAyuda\OLEDBD_MesaAyuda"
+          TopLeft="679.374989876524,164.89473994584" />
+        <EdgeLayout
+          Id="Package\CS_TI\DFT_MesaAyuda.Paths[Excel Source Output]"
+          TopLeft="769.274989809468,91.6631588219936">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,73.2315811238464"
+              Start="0,0"
+              End="0,65.7315811238464">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,65.7315811238464" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\CS_TI\DFT_MesaAyuda\ES_MesaAyuda">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\CS_TI\DFT_Satisfaccion">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="154.4,41.6"
+          Id="Package\CS_TI\DFT_Satisfaccion\ES_Satisfaccion"
+          TopLeft="1011.99998492002,79.9999988079071" />
+        <NodeLayout
+          Size="175.2,41.6"
+          Id="Package\CS_TI\DFT_Satisfaccion\OLEDB_Satisfaccion"
+          TopLeft="1002.99998505414,175.999997377396" />
+        <EdgeLayout
+          Id="Package\CS_TI\DFT_Satisfaccion.Paths[Excel Source Output]"
+          TopLeft="1089.89998498708,121.599998807907">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,54.3999985694886"
+              Start="0,0"
+              End="0,46.8999985694886">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,46.8999985694886" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\CS_TI\DFT_Satisfaccion\ES_Satisfaccion">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\CS_TI\DFT_Satisfaccion\OLEDB_Satisfaccion">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\CS_TI\DFT_satisfaccionUsuario">
     <LayoutInfo>
@@ -23532,128 +24201,44 @@
     </LayoutInfo>
   </TaskHost>
   <TaskHost
-    design-time-name="Package\CS_Mantenimiento\DFT_Carga_Terpel">
+    design-time-name="Package\CS_TI\DTF_EncuestaSatisfaccion">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="162.666666666667,42.6666666666667"
-          Id="Package\CS_Mantenimiento\DFT_Carga_Terpel\DOLEDB_ Terpel"
-          TopLeft="1089.00000722706,222.087719117946" />
+          Size="220,41.6"
+          Id="Package\CS_TI\DTF_EncuestaSatisfaccion\OLEDB_Encuesta satisfaccion"
+          TopLeft="998.99998511374,135.999997973442" />
         <NodeLayout
-          Size="131.333333333334,42.6666666666667"
-          Id="Package\CS_Mantenimiento\DFT_Carga_Terpel\OE_Terpel"
-          TopLeft="1103.00000722706,45.421052451279" />
-        <NodeLayout
-          Size="134,42.6666666666667"
-          Id="Package\CS_Mantenimiento\DFT_Carga_Terpel\DC_ Terpel"
-          TopLeft="1104.00000722706,133.087719117946" />
+          Size="197.6,41.6"
+          Id="Package\CS_TI\DTF_EncuestaSatisfaccion\ES_EncuestaSatisfaccion"
+          TopLeft="1021.99998477101,26.9999995976687" />
         <EdgeLayout
-          Id="Package\CS_Mantenimiento\DFT_Carga_Terpel.Paths[Excel Source Output]"
-          TopLeft="1169.8333405604,88.0877191179457">
+          Id="Package\CS_TI\DTF_EncuestaSatisfaccion.Paths[Excel Source Output]"
+          TopLeft="1120.79998477101,68.5999995976687">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,45"
+              EndConnector="-11.7999996572732,67.3999983757734"
               Start="0,0"
-              End="0,37.5">
+              End="-11.7999996572732,59.8999983757734">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,37.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\CS_Mantenimiento\DFT_Carga_Terpel.Paths[Salida de conversión de datos]"
-          TopLeft="1170.66667389373,175.754385784612">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,46.3333333333333"
-              Start="0,0"
-              End="0,38.8333333333333">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
+                    End="0,29.6999991878867" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,29.6999991878867"
+                    Point2="0,33.6999991878867"
+                    Point3="-4,33.6999991878867" />
                   <mssgle:LineSegment
-                    End="0,38.8333333333333" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <TaskHost
-    design-time-name="Package\CS_Mantenimiento\CBF_Wizeo\DFT_Carga_Wizeo">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
-        <NodeLayout
-          Size="126.666666666667,42"
-          Id="Package\CS_Mantenimiento\CBF_Wizeo\DFT_Carga_Wizeo\OE_Wizeo"
-          TopLeft="587,75" />
-        <NodeLayout
-          Size="126.666666666667,42"
-          Id="Package\CS_Mantenimiento\CBF_Wizeo\DFT_Carga_Wizeo\DC_Wizeo"
-          TopLeft="583,158" />
-        <NodeLayout
-          Size="153.333333333334,42"
-          Id="Package\CS_Mantenimiento\CBF_Wizeo\DFT_Carga_Wizeo\DOLEDB_Wizeo"
-          TopLeft="569,246" />
-        <EdgeLayout
-          Id="Package\CS_Mantenimiento\CBF_Wizeo\DFT_Carga_Wizeo.Paths[Salida de conversión de datos]"
-          TopLeft="646,200">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,46"
-              Start="0,0"
-              End="0,38.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
+                    End="-7.79999965727325,33.6999991878867" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-7.79999965727325,33.6999991878867"
+                    Point2="-11.7999996572732,33.6999991878867"
+                    Point3="-11.7999996572732,37.6999991878867" />
                   <mssgle:LineSegment
-                    End="0,38.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\CS_Mantenimiento\CBF_Wizeo\DFT_Carga_Wizeo.Paths[Salida de origen de Excel]"
-          TopLeft="648.5,117">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,41"
-              Start="0,0"
-              End="0,33.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,33.5" />
+                    End="-11.7999996572732,59.8999983757734" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
