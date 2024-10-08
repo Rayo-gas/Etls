@@ -11,8 +11,8 @@
   DTS:LocaleID="9226"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="68"
-  DTS:VersionGUID="{811BFE85-0A93-4763-8A6C-16BEA50EAD75}">
+  DTS:VersionBuild="72"
+  DTS:VersionGUID="{010FCB41-7D81-4E25-BC4A-FEBC0CD0AEF5}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -1537,7 +1537,7 @@
               <connections>
                 <connection
                   refId="Package\DFT_Insertar_CloudFleet_Grupo_0_1\OLEDBS_Tb_000_Log.Connections[OleDbConnection]"
-                  connectionManagerID="{4632C0A1-E45F-4752-AF2F-EB57D4CFF5D6}:external"
+                  connectionManagerID="{73B86999-3A25-4AA2-A2B7-78C563C5932A}:external"
                   connectionManagerRefId="Project.ConnectionManagers[REPOSITORIO_MTTO]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
@@ -1730,7 +1730,7 @@
               <connections>
                 <connection
                   refId="Package\DFT_Insertar_CloudFleet_Grupo_0_1\OLEDBS_Tb_CloudFleet_000_Provenencia.Connections[OleDbConnection]"
-                  connectionManagerID="{4632C0A1-E45F-4752-AF2F-EB57D4CFF5D6}:external"
+                  connectionManagerID="{73B86999-3A25-4AA2-A2B7-78C563C5932A}:external"
                   connectionManagerRefId="Project.ConnectionManagers[REPOSITORIO_MTTO]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
@@ -1860,7 +1860,7 @@
               <connections>
                 <connection
                   refId="Package\DFT_Insertar_CloudFleet_Grupo_0_1\OLEDBS_Tb_CloudFleet_001_Vehiculos.Connections[OleDbConnection]"
-                  connectionManagerID="{4632C0A1-E45F-4752-AF2F-EB57D4CFF5D6}:external"
+                  connectionManagerID="{73B86999-3A25-4AA2-A2B7-78C563C5932A}:external"
                   connectionManagerRefId="Project.ConnectionManagers[REPOSITORIO_MTTO]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
@@ -2650,7 +2650,7 @@
               <connections>
                 <connection
                   refId="Package\DFT_Insertar_CloudFleet_Grupo_0_1\OLEDBS_Tb_CloudFleet_001_Vehiculos_Engine.Connections[OleDbConnection]"
-                  connectionManagerID="{4632C0A1-E45F-4752-AF2F-EB57D4CFF5D6}:external"
+                  connectionManagerID="{73B86999-3A25-4AA2-A2B7-78C563C5932A}:external"
                   connectionManagerRefId="Project.ConnectionManagers[REPOSITORIO_MTTO]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
@@ -2864,7 +2864,7 @@
               <connections>
                 <connection
                   refId="Package\DFT_Insertar_CloudFleet_Grupo_0_1\OLEDBS_Tb_CloudFleet_001_Vehiculos_Odometer.Connections[OleDbConnection]"
-                  connectionManagerID="{4632C0A1-E45F-4752-AF2F-EB57D4CFF5D6}:external"
+                  connectionManagerID="{73B86999-3A25-4AA2-A2B7-78C563C5932A}:external"
                   connectionManagerRefId="Project.ConnectionManagers[REPOSITORIO_MTTO]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
@@ -3054,7 +3054,7 @@
               <connections>
                 <connection
                   refId="Package\DFT_Insertar_CloudFleet_Grupo_0_1\OLEDBS_Tb_CloudFleet_001_Vehiculos_Owner.Connections[OleDbConnection]"
-                  connectionManagerID="{4632C0A1-E45F-4752-AF2F-EB57D4CFF5D6}:external"
+                  connectionManagerID="{73B86999-3A25-4AA2-A2B7-78C563C5932A}:external"
                   connectionManagerRefId="Project.ConnectionManagers[REPOSITORIO_MTTO]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
@@ -3238,7 +3238,7 @@
               <connections>
                 <connection
                   refId="Package\DFT_Insertar_CloudFleet_Grupo_0_1\OLEDBS_Tb_CloudFleet_001_Vehiculos_WeightCapacity.Connections[OleDbConnection]"
-                  connectionManagerID="{4632C0A1-E45F-4752-AF2F-EB57D4CFF5D6}:external"
+                  connectionManagerID="{73B86999-3A25-4AA2-A2B7-78C563C5932A}:external"
                   connectionManagerRefId="Project.ConnectionManagers[REPOSITORIO_MTTO]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
@@ -5284,7 +5284,7 @@
               <connections>
                 <connection
                   refId="Package\DFT_Insertar_CloudFleet_Grupo_11_12\OLEDBS_Tb_CloudFleet_011_Trabajo.Connections[OleDbConnection]"
-                  connectionManagerID="{4632C0A1-E45F-4752-AF2F-EB57D4CFF5D6}:external"
+                  connectionManagerID="{73B86999-3A25-4AA2-A2B7-78C563C5932A}:external"
                   connectionManagerRefId="Project.ConnectionManagers[REPOSITORIO_MTTO]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
@@ -5708,7 +5708,7 @@
               <connections>
                 <connection
                   refId="Package\DFT_Insertar_CloudFleet_Grupo_11_12\OLEDBS_Tb_CloudFleet_011_Trabajo_Invoice.Connections[OleDbConnection]"
-                  connectionManagerID="{4632C0A1-E45F-4752-AF2F-EB57D4CFF5D6}:external"
+                  connectionManagerID="{73B86999-3A25-4AA2-A2B7-78C563C5932A}:external"
                   connectionManagerRefId="Project.ConnectionManagers[REPOSITORIO_MTTO]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
@@ -5922,7 +5922,7 @@
               <connections>
                 <connection
                   refId="Package\DFT_Insertar_CloudFleet_Grupo_11_12\OLEDBS_Tb_CloudFleet_011_Trabajo_MaintenanceType.Connections[OleDbConnection]"
-                  connectionManagerID="{4632C0A1-E45F-4752-AF2F-EB57D4CFF5D6}:external"
+                  connectionManagerID="{73B86999-3A25-4AA2-A2B7-78C563C5932A}:external"
                   connectionManagerRefId="Project.ConnectionManagers[REPOSITORIO_MTTO]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
@@ -6112,7 +6112,7 @@
               <connections>
                 <connection
                   refId="Package\DFT_Insertar_CloudFleet_Grupo_11_12\OLEDBS_Tb_CloudFleet_011_Trabajo_Subsystem.Connections[OleDbConnection]"
-                  connectionManagerID="{4632C0A1-E45F-4752-AF2F-EB57D4CFF5D6}:external"
+                  connectionManagerID="{73B86999-3A25-4AA2-A2B7-78C563C5932A}:external"
                   connectionManagerRefId="Project.ConnectionManagers[REPOSITORIO_MTTO]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
@@ -6285,7 +6285,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[dbo].[Tb_CloudFleet_011_Trabajo_Subsystem]</property>
+                  name="OpenRowset">[dbo].[Tb_CloudFleet_011_Trabajo_System]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -6320,8 +6320,8 @@
               <connections>
                 <connection
                   refId="Package\DFT_Insertar_CloudFleet_Grupo_11_12\OLEDBS_Tb_CloudFleet_011_Trabajo_System.Connections[OleDbConnection]"
-                  connectionManagerID="{F969E5F0-ED10-48A1-9AD7-51F9863F78B9}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[DataStage]"
+                  connectionManagerID="{73B86999-3A25-4AA2-A2B7-78C563C5932A}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[REPOSITORIO_MTTO]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -6528,7 +6528,7 @@
               <connections>
                 <connection
                   refId="Package\DFT_Insertar_CloudFleet_Grupo_11_12\OLEDBS_Tb_CloudFleet_011_Trabajo_Vendor.Connections[OleDbConnection]"
-                  connectionManagerID="{4632C0A1-E45F-4752-AF2F-EB57D4CFF5D6}:external"
+                  connectionManagerID="{73B86999-3A25-4AA2-A2B7-78C563C5932A}:external"
                   connectionManagerRefId="Project.ConnectionManagers[REPOSITORIO_MTTO]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
@@ -6546,15 +6546,6 @@
                       externalMetadataColumnId="Package\DFT_Insertar_CloudFleet_Grupo_11_12\OLEDBS_Tb_CloudFleet_011_Trabajo_Vendor.Outputs[OLE DB Source Output].ExternalColumns[rowid]"
                       lineageId="Package\DFT_Insertar_CloudFleet_Grupo_11_12\OLEDBS_Tb_CloudFleet_011_Trabajo_Vendor.Outputs[OLE DB Source Output].Columns[rowid]"
                       name="rowid"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\DFT_Insertar_CloudFleet_Grupo_11_12\OLEDBS_Tb_CloudFleet_011_Trabajo_Vendor.Outputs[OLE DB Source Output].Columns[IdTrabajo]"
-                      dataType="i4"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT_Insertar_CloudFleet_Grupo_11_12\OLEDBS_Tb_CloudFleet_011_Trabajo_Vendor.Outputs[OLE DB Source Output].ExternalColumns[IdTrabajo]"
-                      lineageId="Package\DFT_Insertar_CloudFleet_Grupo_11_12\OLEDBS_Tb_CloudFleet_011_Trabajo_Vendor.Outputs[OLE DB Source Output].Columns[IdTrabajo]"
-                      name="IdTrabajo"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\DFT_Insertar_CloudFleet_Grupo_11_12\OLEDBS_Tb_CloudFleet_011_Trabajo_Vendor.Outputs[OLE DB Source Output].Columns[Id]"
@@ -6596,6 +6587,15 @@
                       lineageId="Package\DFT_Insertar_CloudFleet_Grupo_11_12\OLEDBS_Tb_CloudFleet_011_Trabajo_Vendor.Outputs[OLE DB Source Output].Columns[FechaEjecucion]"
                       name="FechaEjecucion"
                       truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_Insertar_CloudFleet_Grupo_11_12\OLEDBS_Tb_CloudFleet_011_Trabajo_Vendor.Outputs[OLE DB Source Output].Columns[IdTrabajo]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_Insertar_CloudFleet_Grupo_11_12\OLEDBS_Tb_CloudFleet_011_Trabajo_Vendor.Outputs[OLE DB Source Output].ExternalColumns[IdTrabajo]"
+                      lineageId="Package\DFT_Insertar_CloudFleet_Grupo_11_12\OLEDBS_Tb_CloudFleet_011_Trabajo_Vendor.Outputs[OLE DB Source Output].Columns[IdTrabajo]"
+                      name="IdTrabajo"
+                      truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -6603,10 +6603,6 @@
                       refId="Package\DFT_Insertar_CloudFleet_Grupo_11_12\OLEDBS_Tb_CloudFleet_011_Trabajo_Vendor.Outputs[OLE DB Source Output].ExternalColumns[rowid]"
                       dataType="i4"
                       name="rowid" />
-                    <externalMetadataColumn
-                      refId="Package\DFT_Insertar_CloudFleet_Grupo_11_12\OLEDBS_Tb_CloudFleet_011_Trabajo_Vendor.Outputs[OLE DB Source Output].ExternalColumns[IdTrabajo]"
-                      dataType="i4"
-                      name="IdTrabajo" />
                     <externalMetadataColumn
                       refId="Package\DFT_Insertar_CloudFleet_Grupo_11_12\OLEDBS_Tb_CloudFleet_011_Trabajo_Vendor.Outputs[OLE DB Source Output].ExternalColumns[Id]"
                       dataType="i4"
@@ -6627,6 +6623,10 @@
                       refId="Package\DFT_Insertar_CloudFleet_Grupo_11_12\OLEDBS_Tb_CloudFleet_011_Trabajo_Vendor.Outputs[OLE DB Source Output].ExternalColumns[FechaEjecucion]"
                       dataType="dbTimeStamp"
                       name="FechaEjecucion" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Insertar_CloudFleet_Grupo_11_12\OLEDBS_Tb_CloudFleet_011_Trabajo_Vendor.Outputs[OLE DB Source Output].ExternalColumns[IdTrabajo]"
+                      dataType="i4"
+                      name="IdTrabajo" />
                   </externalMetadataColumns>
                 </output>
                 <output
@@ -6736,7 +6736,7 @@
               <connections>
                 <connection
                   refId="Package\DFT_Insertar_CloudFleet_Grupo_11_12\OLEDBS_Tb_CloudFleet_012_Respuesto.Connections[OleDbConnection]"
-                  connectionManagerID="{4632C0A1-E45F-4752-AF2F-EB57D4CFF5D6}:external"
+                  connectionManagerID="{73B86999-3A25-4AA2-A2B7-78C563C5932A}:external"
                   connectionManagerRefId="Project.ConnectionManagers[REPOSITORIO_MTTO]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
@@ -7178,7 +7178,7 @@
               <connections>
                 <connection
                   refId="Package\DFT_Insertar_CloudFleet_Grupo_11_12\OLEDBS_Tb_CloudFleet_012_Respuesto_Invoice.Connections[OleDbConnection]"
-                  connectionManagerID="{4632C0A1-E45F-4752-AF2F-EB57D4CFF5D6}:external"
+                  connectionManagerID="{73B86999-3A25-4AA2-A2B7-78C563C5932A}:external"
                   connectionManagerRefId="Project.ConnectionManagers[REPOSITORIO_MTTO]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
@@ -7392,7 +7392,7 @@
               <connections>
                 <connection
                   refId="Package\DFT_Insertar_CloudFleet_Grupo_11_12\OLEDBS_Tb_CloudFleet_012_Respuesto_Vendor.Connections[OleDbConnection]"
-                  connectionManagerID="{4632C0A1-E45F-4752-AF2F-EB57D4CFF5D6}:external"
+                  connectionManagerID="{73B86999-3A25-4AA2-A2B7-78C563C5932A}:external"
                   connectionManagerRefId="Project.ConnectionManagers[REPOSITORIO_MTTO]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
@@ -8816,7 +8816,7 @@
               <connections>
                 <connection
                   refId="Package\DFT_Insertar_CloudFleet_Grupo_2\OLEDBS_Tb_CloudFleet_002_Ordenes.Connections[OleDbConnection]"
-                  connectionManagerID="{4632C0A1-E45F-4752-AF2F-EB57D4CFF5D6}:external"
+                  connectionManagerID="{73B86999-3A25-4AA2-A2B7-78C563C5932A}:external"
                   connectionManagerRefId="Project.ConnectionManagers[REPOSITORIO_MTTO]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
@@ -9567,7 +9567,7 @@
               <connections>
                 <connection
                   refId="Package\DFT_Insertar_CloudFleet_Grupo_2\OLEDBS_Tb_CloudFleet_002_Ordenes_MaintenanceLabel.Connections[OleDbConnection]"
-                  connectionManagerID="{4632C0A1-E45F-4752-AF2F-EB57D4CFF5D6}:external"
+                  connectionManagerID="{73B86999-3A25-4AA2-A2B7-78C563C5932A}:external"
                   connectionManagerRefId="Project.ConnectionManagers[REPOSITORIO_MTTO]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
@@ -9781,7 +9781,7 @@
               <connections>
                 <connection
                   refId="Package\DFT_Insertar_CloudFleet_Grupo_2\OLEDBS_Tb_CloudFleet_002_Ordenes_UpdatedBy.Connections[OleDbConnection]"
-                  connectionManagerID="{4632C0A1-E45F-4752-AF2F-EB57D4CFF5D6}:external"
+                  connectionManagerID="{73B86999-3A25-4AA2-A2B7-78C563C5932A}:external"
                   connectionManagerRefId="Project.ConnectionManagers[REPOSITORIO_MTTO]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
@@ -9965,7 +9965,7 @@
               <connections>
                 <connection
                   refId="Package\DFT_Insertar_CloudFleet_Grupo_2\OLEDBS_Tb_CloudFleet_002_Ordenes_Vendor.Connections[OleDbConnection]"
-                  connectionManagerID="{4632C0A1-E45F-4752-AF2F-EB57D4CFF5D6}:external"
+                  connectionManagerID="{73B86999-3A25-4AA2-A2B7-78C563C5932A}:external"
                   connectionManagerRefId="Project.ConnectionManagers[REPOSITORIO_MTTO]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
@@ -10149,7 +10149,7 @@
               <connections>
                 <connection
                   refId="Package\DFT_Insertar_CloudFleet_Grupo_2\OLEDBS_Tb_CloudFleet_002_Ordenes_Voided.Connections[OleDbConnection]"
-                  connectionManagerID="{4632C0A1-E45F-4752-AF2F-EB57D4CFF5D6}:external"
+                  connectionManagerID="{73B86999-3A25-4AA2-A2B7-78C563C5932A}:external"
                   connectionManagerRefId="Project.ConnectionManagers[REPOSITORIO_MTTO]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
@@ -12710,7 +12710,7 @@
               <connections>
                 <connection
                   refId="Package\DFT_Insertar_CloudFleet_Grupo_3\OLEDBS_Tb_CloudFleet_003_Check.Connections[OleDbConnection]"
-                  connectionManagerID="{4632C0A1-E45F-4752-AF2F-EB57D4CFF5D6}:external"
+                  connectionManagerID="{73B86999-3A25-4AA2-A2B7-78C563C5932A}:external"
                   connectionManagerRefId="Project.ConnectionManagers[REPOSITORIO_MTTO]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
@@ -13092,7 +13092,7 @@
               <connections>
                 <connection
                   refId="Package\DFT_Insertar_CloudFleet_Grupo_3\OLEDBS_Tb_CloudFleet_003_Check_Images.Connections[OleDbConnection]"
-                  connectionManagerID="{4632C0A1-E45F-4752-AF2F-EB57D4CFF5D6}:external"
+                  connectionManagerID="{73B86999-3A25-4AA2-A2B7-78C563C5932A}:external"
                   connectionManagerRefId="Project.ConnectionManagers[REPOSITORIO_MTTO]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
@@ -13300,7 +13300,7 @@
               <connections>
                 <connection
                   refId="Package\DFT_Insertar_CloudFleet_Grupo_3\OLEDBS_Tb_CloudFleet_003_Check_Images_CreatedBy.Connections[OleDbConnection]"
-                  connectionManagerID="{4632C0A1-E45F-4752-AF2F-EB57D4CFF5D6}:external"
+                  connectionManagerID="{73B86999-3A25-4AA2-A2B7-78C563C5932A}:external"
                   connectionManagerRefId="Project.ConnectionManagers[REPOSITORIO_MTTO]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
@@ -13502,7 +13502,7 @@
               <connections>
                 <connection
                   refId="Package\DFT_Insertar_CloudFleet_Grupo_3\OLEDBS_Tb_CloudFleet_003_Check_Schedule.Connections[OleDbConnection]"
-                  connectionManagerID="{4632C0A1-E45F-4752-AF2F-EB57D4CFF5D6}:external"
+                  connectionManagerID="{73B86999-3A25-4AA2-A2B7-78C563C5932A}:external"
                   connectionManagerRefId="Project.ConnectionManagers[REPOSITORIO_MTTO]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
@@ -13716,7 +13716,7 @@
               <connections>
                 <connection
                   refId="Package\DFT_Insertar_CloudFleet_Grupo_3\OLEDBS_Tb_CloudFleet_003_Check_Statistics.Connections[OleDbConnection]"
-                  connectionManagerID="{4632C0A1-E45F-4752-AF2F-EB57D4CFF5D6}:external"
+                  connectionManagerID="{73B86999-3A25-4AA2-A2B7-78C563C5932A}:external"
                   connectionManagerRefId="Project.ConnectionManagers[REPOSITORIO_MTTO]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
@@ -13930,7 +13930,7 @@
               <connections>
                 <connection
                   refId="Package\DFT_Insertar_CloudFleet_Grupo_3\OLEDBS_Tb_CloudFleet_003_Check_Status.Connections[OleDbConnection]"
-                  connectionManagerID="{4632C0A1-E45F-4752-AF2F-EB57D4CFF5D6}:external"
+                  connectionManagerID="{73B86999-3A25-4AA2-A2B7-78C563C5932A}:external"
                   connectionManagerRefId="Project.ConnectionManagers[REPOSITORIO_MTTO]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
@@ -14120,7 +14120,7 @@
               <connections>
                 <connection
                   refId="Package\DFT_Insertar_CloudFleet_Grupo_3\OLEDBS_Tb_CloudFleet_003_Check_TypeCheck.Connections[OleDbConnection]"
-                  connectionManagerID="{4632C0A1-E45F-4752-AF2F-EB57D4CFF5D6}:external"
+                  connectionManagerID="{73B86999-3A25-4AA2-A2B7-78C563C5932A}:external"
                   connectionManagerRefId="Project.ConnectionManagers[REPOSITORIO_MTTO]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
@@ -14310,7 +14310,7 @@
               <connections>
                 <connection
                   refId="Package\DFT_Insertar_CloudFleet_Grupo_3\OLEDBS_Tb_CloudFleet_003_Check_Variable.Connections[OleDbConnection]"
-                  connectionManagerID="{4632C0A1-E45F-4752-AF2F-EB57D4CFF5D6}:external"
+                  connectionManagerID="{73B86999-3A25-4AA2-A2B7-78C563C5932A}:external"
                   connectionManagerRefId="Project.ConnectionManagers[REPOSITORIO_MTTO]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
@@ -14548,7 +14548,7 @@
               <connections>
                 <connection
                   refId="Package\DFT_Insertar_CloudFleet_Grupo_3\OLEDBS_Tb_CloudFleet_003_Check_Variable_MaintenanceIssue.Connections[OleDbConnection]"
-                  connectionManagerID="{4632C0A1-E45F-4752-AF2F-EB57D4CFF5D6}:external"
+                  connectionManagerID="{73B86999-3A25-4AA2-A2B7-78C563C5932A}:external"
                   connectionManagerRefId="Project.ConnectionManagers[REPOSITORIO_MTTO]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
@@ -14750,7 +14750,7 @@
               <connections>
                 <connection
                   refId="Package\DFT_Insertar_CloudFleet_Grupo_3\OLEDBS_Tb_CloudFleet_003_Check_Variable_MaintenanceIssue_Priority.Connections[OleDbConnection]"
-                  connectionManagerID="{4632C0A1-E45F-4752-AF2F-EB57D4CFF5D6}:external"
+                  connectionManagerID="{73B86999-3A25-4AA2-A2B7-78C563C5932A}:external"
                   connectionManagerRefId="Project.ConnectionManagers[REPOSITORIO_MTTO]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
@@ -14952,7 +14952,7 @@
               <connections>
                 <connection
                   refId="Package\DFT_Insertar_CloudFleet_Grupo_3\OLEDBS_Tb_CloudFleet_003_Check_Variable_MaintenanceIssue_TaskMain.Connections[OleDbConnection]"
-                  connectionManagerID="{4632C0A1-E45F-4752-AF2F-EB57D4CFF5D6}:external"
+                  connectionManagerID="{73B86999-3A25-4AA2-A2B7-78C563C5932A}:external"
                   connectionManagerRefId="Project.ConnectionManagers[REPOSITORIO_MTTO]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
@@ -15160,7 +15160,7 @@
               <connections>
                 <connection
                   refId="Package\DFT_Insertar_CloudFleet_Grupo_3\OLEDBS_Tb_CloudFleet_003_Check_Variable_StatusVariable.Connections[OleDbConnection]"
-                  connectionManagerID="{4632C0A1-E45F-4752-AF2F-EB57D4CFF5D6}:external"
+                  connectionManagerID="{73B86999-3A25-4AA2-A2B7-78C563C5932A}:external"
                   connectionManagerRefId="Project.ConnectionManagers[REPOSITORIO_MTTO]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
@@ -15368,7 +15368,7 @@
               <connections>
                 <connection
                   refId="Package\DFT_Insertar_CloudFleet_Grupo_3\OLEDBS_Tb_CloudFleet_003_Check_Vehicle.Connections[OleDbConnection]"
-                  connectionManagerID="{4632C0A1-E45F-4752-AF2F-EB57D4CFF5D6}:external"
+                  connectionManagerID="{73B86999-3A25-4AA2-A2B7-78C563C5932A}:external"
                   connectionManagerRefId="Project.ConnectionManagers[REPOSITORIO_MTTO]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
@@ -17615,7 +17615,7 @@
               <connections>
                 <connection
                   refId="Package\DFT_Insertar_CloudFleet_Grupo_4_10\OLEDBS_ Tb_CloudFleet_007_Driver.Connections[OleDbConnection]"
-                  connectionManagerID="{4632C0A1-E45F-4752-AF2F-EB57D4CFF5D6}:external"
+                  connectionManagerID="{73B86999-3A25-4AA2-A2B7-78C563C5932A}:external"
                   connectionManagerRefId="Project.ConnectionManagers[REPOSITORIO_MTTO]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
@@ -17877,7 +17877,7 @@
               <connections>
                 <connection
                   refId="Package\DFT_Insertar_CloudFleet_Grupo_4_10\OLEDBS_Tb_CloudFleet_004_City.Connections[OleDbConnection]"
-                  connectionManagerID="{4632C0A1-E45F-4752-AF2F-EB57D4CFF5D6}:external"
+                  connectionManagerID="{73B86999-3A25-4AA2-A2B7-78C563C5932A}:external"
                   connectionManagerRefId="Project.ConnectionManagers[REPOSITORIO_MTTO]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
@@ -18139,7 +18139,7 @@
               <connections>
                 <connection
                   refId="Package\DFT_Insertar_CloudFleet_Grupo_4_10\OLEDBS_Tb_CloudFleet_005_CostCenter.Connections[OleDbConnection]"
-                  connectionManagerID="{4632C0A1-E45F-4752-AF2F-EB57D4CFF5D6}:external"
+                  connectionManagerID="{73B86999-3A25-4AA2-A2B7-78C563C5932A}:external"
                   connectionManagerRefId="Project.ConnectionManagers[REPOSITORIO_MTTO]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
@@ -18401,7 +18401,7 @@
               <connections>
                 <connection
                   refId="Package\DFT_Insertar_CloudFleet_Grupo_4_10\OLEDBS_Tb_CloudFleet_006_CreatedBy.Connections[OleDbConnection]"
-                  connectionManagerID="{4632C0A1-E45F-4752-AF2F-EB57D4CFF5D6}:external"
+                  connectionManagerID="{73B86999-3A25-4AA2-A2B7-78C563C5932A}:external"
                   connectionManagerRefId="Project.ConnectionManagers[REPOSITORIO_MTTO]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
@@ -18657,7 +18657,7 @@
               <connections>
                 <connection
                   refId="Package\DFT_Insertar_CloudFleet_Grupo_4_10\OLEDBS_Tb_CloudFleet_008_Group1.Connections[OleDbConnection]"
-                  connectionManagerID="{4632C0A1-E45F-4752-AF2F-EB57D4CFF5D6}:external"
+                  connectionManagerID="{73B86999-3A25-4AA2-A2B7-78C563C5932A}:external"
                   connectionManagerRefId="Project.ConnectionManagers[REPOSITORIO_MTTO]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
@@ -18919,7 +18919,7 @@
               <connections>
                 <connection
                   refId="Package\DFT_Insertar_CloudFleet_Grupo_4_10\OLEDBS_Tb_CloudFleet_009_Group2.Connections[OleDbConnection]"
-                  connectionManagerID="{4632C0A1-E45F-4752-AF2F-EB57D4CFF5D6}:external"
+                  connectionManagerID="{73B86999-3A25-4AA2-A2B7-78C563C5932A}:external"
                   connectionManagerRefId="Project.ConnectionManagers[REPOSITORIO_MTTO]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
@@ -19181,7 +19181,7 @@
               <connections>
                 <connection
                   refId="Package\DFT_Insertar_CloudFleet_Grupo_4_10\OLEDBS_Tb_CloudFleet_010_Novedades.Connections[OleDbConnection]"
-                  connectionManagerID="{4632C0A1-E45F-4752-AF2F-EB57D4CFF5D6}:external"
+                  connectionManagerID="{73B86999-3A25-4AA2-A2B7-78C563C5932A}:external"
                   connectionManagerRefId="Project.ConnectionManagers[REPOSITORIO_MTTO]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
@@ -19617,7 +19617,7 @@
               <connections>
                 <connection
                   refId="Package\DFT_Insertar_CloudFleet_Grupo_4_10\OLEDBS_Tb_CloudFleet_010_Novedades_AssociatedLabor.Connections[OleDbConnection]"
-                  connectionManagerID="{4632C0A1-E45F-4752-AF2F-EB57D4CFF5D6}:external"
+                  connectionManagerID="{73B86999-3A25-4AA2-A2B7-78C563C5932A}:external"
                   connectionManagerRefId="Project.ConnectionManagers[REPOSITORIO_MTTO]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
@@ -19801,7 +19801,7 @@
               <connections>
                 <connection
                   refId="Package\DFT_Insertar_CloudFleet_Grupo_4_10\OLEDBS_Tb_CloudFleet_010_Novedades_Reporter.Connections[OleDbConnection]"
-                  connectionManagerID="{4632C0A1-E45F-4752-AF2F-EB57D4CFF5D6}:external"
+                  connectionManagerID="{73B86999-3A25-4AA2-A2B7-78C563C5932A}:external"
                   connectionManagerRefId="Project.ConnectionManagers[REPOSITORIO_MTTO]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
@@ -19985,7 +19985,7 @@
               <connections>
                 <connection
                   refId="Package\DFT_Insertar_CloudFleet_Grupo_4_10\OLEDBS_Tb_CloudFleet_010_Novedades_Responsible.Connections[OleDbConnection]"
-                  connectionManagerID="{4632C0A1-E45F-4752-AF2F-EB57D4CFF5D6}:external"
+                  connectionManagerID="{73B86999-3A25-4AA2-A2B7-78C563C5932A}:external"
                   connectionManagerRefId="Project.ConnectionManagers[REPOSITORIO_MTTO]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
@@ -20247,43 +20247,43 @@
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="258.666666666667,42.6666666666667"
+          Size="258.4,42.4"
           Id="Package\DFT_Insertar_CloudFleet_Grupo_0_1"
           TopLeft="451.249979827554,87.2807000640742" />
         <NodeLayout
-          Size="270.666666666667,42.6666666666667"
+          Size="270.4,42.4"
           Id="Package\DFT_Insertar_CloudFleet_Grupo_11_12"
           TopLeft="449.374980023131,388.719290535646" />
         <NodeLayout
-          Size="248,42.6666666666667"
+          Size="248,42.4"
           Id="Package\DFT_Insertar_CloudFleet_Grupo_2"
-          TopLeft="451.874990696086,166.666664117783" />
+          TopLeft="451.041657408284,166.666664117783" />
         <NodeLayout
-          Size="248,42.6666666666667"
+          Size="248,42.4"
           Id="Package\DFT_Insertar_CloudFleet_Grupo_3"
           TopLeft="457.499990630896,241.245613032706" />
         <NodeLayout
-          Size="265.333333333334,42.6666666666667"
+          Size="265.6,42.4"
           Id="Package\DFT_Insertar_CloudFleet_Grupo_4_10"
           TopLeft="451.874979929999,314.912280474233" />
         <NodeLayout
-          Size="158.666666666667,42.6666666666667"
+          Size="158.4,42.4"
           Id="Package\TESQL_truncate"
           TopLeft="503.12497750856,0.631579533343174" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción]"
-          TopLeft="578.229151928487,129.947366730741">
+          TopLeft="577.745818617919,129.680700064074">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,36.7192973870427"
+              EndConnector="0,36.9859640537088"
               Start="0,0"
-              End="0,29.2192973870427">
+              End="0,29.4859640537088">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,29.2192973870427" />
+                    End="0,29.4859640537088" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -20294,18 +20294,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción 1]"
-          TopLeft="578.687490663491,209.33333078445">
+          TopLeft="578.27082401959,209.066664117783">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,31.912282248256"
+              EndConnector="0,32.178948914923"
               Start="0,0"
-              End="0,24.412282248256">
+              End="0,24.678948914923">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,24.412282248256" />
+                    End="0,24.678948914923" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -20387,85 +20387,83 @@
     design-time-name="Package\DFT_Insertar_CloudFleet_Grupo_0_1">
     <LayoutInfo>
       <GraphLayout
-        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="274.666666666667,42.6666666666667"
+          Size="274.4,42.4"
           Id="Package\DFT_Insertar_CloudFleet_Grupo_0_1\OLEDBS_Tb_CloudFleet_001_Vehiculos"
-          TopLeft="605.624990975484,26.6842110285799" />
+          TopLeft="604.791657687682,25.8175443679399" />
         <NodeLayout
-          Size="356,42.6666666666667"
+          Size="356,42.4"
           Id="Package\DFT_Insertar_CloudFleet_Grupo_0_1\OLEDBS_Tb_CloudFleet_001_Vehiculos_WeightCapacity"
-          TopLeft="424.874993750825,260.035090681368" />
+          TopLeft="424.874993750825,258.301757360088" />
         <NodeLayout
-          Size="189.333333333334,42.6666666666667"
+          Size="189.6,42.4"
           Id="Package\DFT_Insertar_CloudFleet_Grupo_0_1\OLEDBD_Tb_000_Log"
           TopLeft="54.9999991804363,119.736844359012" />
         <NodeLayout
-          Size="314.666666666667,42.6666666666667"
+          Size="314.4,42.4"
           Id="Package\DFT_Insertar_CloudFleet_Grupo_0_1\OLEDBS_Tb_CloudFleet_001_Vehiculos_Engine"
           TopLeft="909.999986439943,28.7368426461629" />
         <NodeLayout
-          Size="313.333333333334,42.6666666666667"
+          Size="313.6,42.4"
           Id="Package\DFT_Insertar_CloudFleet_Grupo_0_1\OLEDBD_Tb_CloudFleet_001_Vehiculos_Owner"
           TopLeft="55.4999992549419,338.824560051259" />
         <NodeLayout
-          Size="328,42.6666666666667"
+          Size="328,42.4"
           Id="Package\DFT_Insertar_CloudFleet_Grupo_0_1\OLEDBS_Tb_CloudFleet_001_Vehiculos_Odometer"
           TopLeft="1269.37498108484,32.8421058813291" />
         <NodeLayout
-          Size="312,42.6666666666667"
+          Size="312,41.6"
           Id="Package\DFT_Insertar_CloudFleet_Grupo_0_1\OLEDBS_Tb_CloudFleet_001_Vehiculos_Owner"
-          TopLeft="60.6249990966169,253.157899501911" />
+          TopLeft="60.6249990966169,253.557899501911" />
         <NodeLayout
-          Size="288,42.6666666666667"
+          Size="288,42.4"
           Id="Package\DFT_Insertar_CloudFleet_Grupo_0_1\OLEDBD_Tb_CloudFleet_000_Provenencia"
           TopLeft="287.999995790422,120.491226473233" />
         <NodeLayout
-          Size="188,42.6666666666667"
+          Size="188,42.4"
           Id="Package\DFT_Insertar_CloudFleet_Grupo_0_1\OLEDBS_Tb_000_Log"
           TopLeft="59.3749992270023,25.9210529406645" />
         <NodeLayout
-          Size="288,42.6666666666667"
+          Size="288,42.4"
           Id="Package\DFT_Insertar_CloudFleet_Grupo_0_1\OLEDBS_Tb_CloudFleet_000_Provenencia"
-          TopLeft="290.249995734543,26.3157899501912" />
+          TopLeft="289.416662446741,27.1824566108312" />
         <NodeLayout
-          Size="314.666666666667,42.6666666666667"
+          Size="314.4,42.4"
           Id="Package\DFT_Insertar_CloudFleet_Grupo_0_1\OLEDBD_Tb_CloudFleet_001_Vehiculos_Engine"
           TopLeft="912.37498648651,119.982444871605" />
         <NodeLayout
-          Size="276,42.6666666666667"
+          Size="276,42.4"
           Id="Package\DFT_Insertar_CloudFleet_Grupo_0_1\OLEDBD_Tb_CloudFleet_001_Vehiculos"
           TopLeft="609.249991003424,115.736838486386" />
         <NodeLayout
-          Size="350.666666666667,42.6666666666667"
+          Size="350.4,42.4"
           Id="Package\DFT_Insertar_CloudFleet_Grupo_0_1\OLEDBDTb_CloudFleet_001_Vehiculos_WeightCapacity"
           TopLeft="423.624993769452,340.228066917161" />
         <NodeLayout
-          Size="329.333333333334,42.6666666666667"
+          Size="329.6,42.4"
           Id="Package\DFT_Insertar_CloudFleet_Grupo_0_1\OLEDBD_Tb_CloudFleet_001_Vehiculos_Odometer"
           TopLeft="1264.87498123385,118.578938005703" />
         <EdgeLayout
           Id="Package\DFT_Insertar_CloudFleet_Grupo_0_1.Paths[OLE DB Source Output5]"
-          TopLeft="214.395832509113,295.824566168578">
+          TopLeft="214.462499175779,295.157899501911">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,42.9999938826811"
+              EndConnector="0,43.666660549348"
               Start="0,0"
-              End="0,35.4999938826811">
+              End="0,36.166660549348">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,35.4999938826811" />
+                    End="0,36.166660549348" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -20487,9 +20485,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -20511,209 +20507,288 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\DFT_Insertar_CloudFleet_Grupo_0_1.Paths[OLE DB Source Output2]"
-          TopLeft="745.104157656121,69.3508776952465">
+          TopLeft="744.620824345553,68.2175443679399">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,46.3859607911396"
+              EndConnector="0,47.5192941184461"
               Start="0,0"
-              End="0,38.8859607911396">
+              End="0,40.0192941184461">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,38.8859607911396" />
+                    End="0,40.0192941184461" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\DFT_Insertar_CloudFleet_Grupo_0_1.Paths[OLE DB Source Output1]"
-          TopLeft="433.124995762483,68.9824566168579">
+          TopLeft="432.708329118582,69.5824566108312">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,51.5087698563751"
+              EndConnector="0,50.9087698624018"
               Start="0,0"
-              End="0,44.0087698563751">
+              End="0,43.4087698624018">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,44.0087698563751" />
+                    End="0,43.4087698624018" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\DFT_Insertar_CloudFleet_Grupo_0_1.Paths[OLE DB Source Output]"
-          TopLeft="151.520832537053,68.5877196073312">
+          TopLeft="151.587499203719,68.3210529406645">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,51.1491247516808"
+              EndConnector="0,51.4157914183475"
               Start="0,0"
-              End="0,43.6491247516808">
+              End="0,43.9157914183475">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,43.6491247516808" />
+                    End="0,43.9157914183475" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\DFT_Insertar_CloudFleet_Grupo_0_1.Paths[OLE DB Source Output6]"
-          TopLeft="600.916660426805,302.701757348035">
+          TopLeft="600.849993760139,300.701757360088">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,37.5263095691264"
+              EndConnector="0,39.526309557073"
               Start="0,0"
-              End="0,30.0263095691264">
+              End="0,32.026309557073">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,30.0263095691264" />
+                    End="0,32.026309557073" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\DFT_Insertar_CloudFleet_Grupo_0_1\OLEDBS_Tb_CloudFleet_001_Vehiculos">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DFT_Insertar_CloudFleet_Grupo_0_1\OLEDBS_Tb_CloudFleet_001_Vehiculos_WeightCapacity">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DFT_Insertar_CloudFleet_Grupo_0_1\OLEDBS_Tb_CloudFleet_001_Vehiculos_Engine">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DFT_Insertar_CloudFleet_Grupo_0_1\OLEDBS_Tb_CloudFleet_001_Vehiculos_Odometer">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DFT_Insertar_CloudFleet_Grupo_0_1\OLEDBS_Tb_CloudFleet_001_Vehiculos_Owner">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DFT_Insertar_CloudFleet_Grupo_0_1\OLEDBS_Tb_000_Log">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DFT_Insertar_CloudFleet_Grupo_0_1\OLEDBS_Tb_CloudFleet_000_Provenencia">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\DFT_Insertar_CloudFleet_Grupo_11_12">
     <LayoutInfo>
       <GraphLayout
-        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="324,42.6666666666667"
+          Size="324,42.4"
           Id="Package\DFT_Insertar_CloudFleet_Grupo_11_12\OLEDBD_Tb_CloudFleet_011_Trabajo_Subsystem"
           TopLeft="1131,130.333333333333" />
         <NodeLayout
-          Size="280,42.6666666666667"
+          Size="280,42.4"
           Id="Package\DFT_Insertar_CloudFleet_Grupo_11_12\OLEDBS_Tb_CloudFleet_012_Respuesto"
           TopLeft="418,236" />
         <NodeLayout
-          Size="304,42.6666666666667"
+          Size="304,42.4"
           Id="Package\DFT_Insertar_CloudFleet_Grupo_11_12\OLEDBS_Tb_CloudFleet_011_Trabajo_Invoice"
-          TopLeft="381,32.6666666666666" />
+          TopLeft="380.000000014901,32.6666666666666" />
         <NodeLayout
-          Size="320,42.6666666666667"
+          Size="320,42.4"
           Id="Package\DFT_Insertar_CloudFleet_Grupo_11_12\OLEDBS_Tb_CloudFleet_012_Respuesto_Vendor"
-          TopLeft="1104,238.333333333333" />
+          TopLeft="1104,239.333333318432" />
         <NodeLayout
-          Size="306.666666666667,42.6666666666667"
+          Size="306.4,42.4"
           Id="Package\DFT_Insertar_CloudFleet_Grupo_11_12\OLEDBD_Tb_CloudFleet_011_Trabajo_System"
           TopLeft="1496,130" />
         <NodeLayout
-          Size="356,42.6666666666667"
+          Size="356,42.4"
           Id="Package\DFT_Insertar_CloudFleet_Grupo_11_12\OLEDBS_Tb_CloudFleet_011_Trabajo_MaintenanceType"
           TopLeft="731,36.3333333333333" />
         <NodeLayout
-          Size="320,42.6666666666667"
+          Size="320,42.4"
           Id="Package\DFT_Insertar_CloudFleet_Grupo_11_12\OLEDBD_Tb_CloudFleet_012_Respuesto_Invoice"
           TopLeft="730,334.333333333333" />
         <NodeLayout
-          Size="305.333333333334,42.6666666666667"
+          Size="305.6,42.4"
           Id="Package\DFT_Insertar_CloudFleet_Grupo_11_12\OLEDBS_Tb_CloudFleet_011_Trabajo_Vendor"
-          TopLeft="83.0000000000001,234.333333333333" />
+          TopLeft="82.0000000149013,232.333333363135" />
         <NodeLayout
-          Size="305.333333333334,42.6666666666667"
+          Size="305.6,42.4"
           Id="Package\DFT_Insertar_CloudFleet_Grupo_11_12\OLEDBD_Tb_CloudFleet_011_Trabajo_Vendor"
           TopLeft="86.0000000000001,330" />
         <NodeLayout
-          Size="306.666666666667,42.6666666666667"
+          Size="306.4,42.4"
           Id="Package\DFT_Insertar_CloudFleet_Grupo_11_12\OLEDBS_Tb_CloudFleet_011_Trabajo_System"
           TopLeft="1496,37.6666666666667" />
         <NodeLayout
-          Size="324,42.6666666666667"
+          Size="324,42.4"
           Id="Package\DFT_Insertar_CloudFleet_Grupo_11_12\OLEDBS_Tb_CloudFleet_011_Trabajo_Subsystem"
           TopLeft="1129,36.9999999999999" />
         <NodeLayout
-          Size="305.333333333334,42.6666666666667"
+          Size="305.6,42.4"
           Id="Package\DFT_Insertar_CloudFleet_Grupo_11_12\OLEDBD_Tb_CloudFleet_011_Trabajo_Invoice"
           TopLeft="387,137" />
         <NodeLayout
-          Size="320,42.6666666666667"
+          Size="320,42.4"
           Id="Package\DFT_Insertar_CloudFleet_Grupo_11_12\OLEDBD_Tb_CloudFleet_012_Respuesto_Vendor"
           TopLeft="1099,339" />
         <NodeLayout
-          Size="318.666666666667,42.6666666666667"
+          Size="318.4,42.4"
           Id="Package\DFT_Insertar_CloudFleet_Grupo_11_12\OLEDBS_Tb_CloudFleet_012_Respuesto_Invoice"
           TopLeft="733,237.666666666667" />
         <NodeLayout
-          Size="280,42.6666666666667"
+          Size="280,42.4"
           Id="Package\DFT_Insertar_CloudFleet_Grupo_11_12\OLEDBD_Tb_CloudFleet_012_Respuesto"
           TopLeft="417,333.666666666667" />
         <NodeLayout
-          Size="356,42.6666666666667"
+          Size="356,42.4"
           Id="Package\DFT_Insertar_CloudFleet_Grupo_11_12\OLEDBD_Tb_CloudFleet_011_Trabajo_MaintenanceType"
           TopLeft="730,133.666666666667" />
         <NodeLayout
-          Size="265.333333333334,42.6666666666667"
+          Size="265.6,42.4"
           Id="Package\DFT_Insertar_CloudFleet_Grupo_11_12\OLEDBS_Tb_CloudFleet_011_Trabajo"
           TopLeft="83,32" />
         <NodeLayout
-          Size="265.333333333334,42.6666666666667"
+          Size="265.6,42.4"
           Id="Package\DFT_Insertar_CloudFleet_Grupo_11_12\OLEDBD_Tb_CloudFleet_011_Trabajo"
           TopLeft="86,135" />
         <EdgeLayout
           Id="Package\DFT_Insertar_CloudFleet_Grupo_11_12.Paths[OLE DB Source Output8]"
-          TopLeft="1261.5,281">
+          TopLeft="1261.5,281.733333318432">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,57.9999999999999"
+              EndConnector="0,57.2666666815682"
               Start="0,0"
-              End="0,50.4999999999999">
+              End="0,49.7666666815682">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,50.4999999999999" />
+                    End="0,49.7666666815682" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -20735,9 +20810,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -20759,33 +20832,29 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\DFT_Insertar_CloudFleet_Grupo_11_12.Paths[OLE DB Source Output5]"
-          TopLeft="237.166666666667,277">
+          TopLeft="236.800000007451,274.733333363135">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,53.0000000000001"
+              EndConnector="0,55.2666666368647"
               Start="0,0"
-              End="0,45.5000000000001">
+              End="0,47.7666666368647">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,45.5000000000001" />
+                    End="0,47.7666666368647" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -20807,9 +20876,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -20831,9 +20898,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -20855,339 +20920,518 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\DFT_Insertar_CloudFleet_Grupo_11_12.Paths[OLE DB Source Output1]"
-          TopLeft="536.333333333333,75.3333333333333">
+          TopLeft="535.900000007451,75.0666666666666">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,61.6666666666667"
+              EndConnector="0,61.9333333333334"
               Start="0,0"
-              End="0,54.1666666666667">
+              End="0,54.4333333333334">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,54.1666666666667" />
+                    End="0,54.4333333333334" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\DFT_Insertar_CloudFleet_Grupo_11_12.Paths[OLE DB Source Output]"
-          TopLeft="217.166666666667,74.6666666666667">
+          TopLeft="217.3,74.4">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,60.3333333333333"
+              EndConnector="0,60.6"
               Start="0,0"
-              End="0,52.8333333333333">
+              End="0,53.1">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,52.8333333333333" />
+                    End="0,53.1" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\DFT_Insertar_CloudFleet_Grupo_11_12\OLEDBS_Tb_CloudFleet_012_Respuesto">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DFT_Insertar_CloudFleet_Grupo_11_12\OLEDBS_Tb_CloudFleet_011_Trabajo_Invoice">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DFT_Insertar_CloudFleet_Grupo_11_12\OLEDBS_Tb_CloudFleet_012_Respuesto_Vendor">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DFT_Insertar_CloudFleet_Grupo_11_12\OLEDBS_Tb_CloudFleet_011_Trabajo_MaintenanceType">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DFT_Insertar_CloudFleet_Grupo_11_12\OLEDBS_Tb_CloudFleet_011_Trabajo_Vendor">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DFT_Insertar_CloudFleet_Grupo_11_12\OLEDBD_Tb_CloudFleet_011_Trabajo_Vendor">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DFT_Insertar_CloudFleet_Grupo_11_12\OLEDBS_Tb_CloudFleet_011_Trabajo_System">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DFT_Insertar_CloudFleet_Grupo_11_12\OLEDBS_Tb_CloudFleet_011_Trabajo_Subsystem">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DFT_Insertar_CloudFleet_Grupo_11_12\OLEDBS_Tb_CloudFleet_012_Respuesto_Invoice">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DFT_Insertar_CloudFleet_Grupo_11_12\OLEDBS_Tb_CloudFleet_011_Trabajo">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\DFT_Insertar_CloudFleet_Grupo_2">
     <LayoutInfo>
       <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="310.666666666667,42.6666666666667"
+          Size="310.4,42.4"
           Id="Package\DFT_Insertar_CloudFleet_Grupo_2\OLEDBD_Tb_CloudFleet_002_Ordenes_Vendor"
           TopLeft="1113.85714285714,142" />
         <NodeLayout
-          Size="328,42.6666666666667"
+          Size="328,42.4"
           Id="Package\DFT_Insertar_CloudFleet_Grupo_2\OLEDBS_Tb_CloudFleet_002_Ordenes_UpdatedBy"
           TopLeft="747.857142857143,52.7619047619047" />
         <NodeLayout
-          Size="308,42.6666666666667"
+          Size="308,42.4"
           Id="Package\DFT_Insertar_CloudFleet_Grupo_2\OLEDBS_Tb_CloudFleet_002_Ordenes_Voided"
-          TopLeft="1467.85714285714,55.9999999999999" />
+          TopLeft="1466.85714287204,55.000000014901" />
         <NodeLayout
-          Size="362.666666666667,42.6666666666667"
+          Size="362.4,42.4"
           Id="Package\DFT_Insertar_CloudFleet_Grupo_2\OLEDBD_Tb_CloudFleet_002_Ordenes_MaintenanceLabel"
           TopLeft="343.857142857143,136.666666666667" />
         <NodeLayout
-          Size="309.333333333334,42.6666666666667"
+          Size="309.6,42.4"
           Id="Package\DFT_Insertar_CloudFleet_Grupo_2\OLEDBS_Tb_CloudFleet_002_Ordenes_Vendor"
-          TopLeft="1115.14285714286,55.8571428571428" />
+          TopLeft="1114.14285715776,55.8571428571428" />
         <NodeLayout
-          Size="309.333333333334,42.6666666666667"
+          Size="309.6,42.4"
           Id="Package\DFT_Insertar_CloudFleet_Grupo_2\OLEDBD_Tb_CloudFleet_002_Ordenes_Voided"
           TopLeft="1465.85714285714,143.666666666667" />
         <NodeLayout
-          Size="269.333333333334,42.6666666666667"
+          Size="269.6,42.4"
           Id="Package\DFT_Insertar_CloudFleet_Grupo_2\OLEDBS_Tb_CloudFleet_002_Ordenes"
-          TopLeft="43.8571428571429,50.7142857142857" />
+          TopLeft="42.8571428720441,50.7142857142857" />
         <NodeLayout
-          Size="328,42.6666666666667"
+          Size="328,42.4"
           Id="Package\DFT_Insertar_CloudFleet_Grupo_2\OLEDBD_Tb_CloudFleet_002_Ordenes_UpdatedBy"
           TopLeft="746.857142857143,139.333333333333" />
         <NodeLayout
-          Size="269.333333333334,42.6666666666667"
+          Size="269.6,42.4"
           Id="Package\DFT_Insertar_CloudFleet_Grupo_2\OLEDBD_Tb_CloudFleet_002_Ordenes"
           TopLeft="44,130" />
         <NodeLayout
-          Size="362.666666666667,42.6666666666667"
+          Size="362.4,42.4"
           Id="Package\DFT_Insertar_CloudFleet_Grupo_2\OLEDBS_Tb_CloudFleet_002_Ordenes_MaintenanceLabel"
-          TopLeft="339.571428571429,54.095238095238" />
-        <EdgeLayout
-          Id="Package\DFT_Insertar_CloudFleet_Grupo_2.Paths[OLE DB Source Output2]"
-          TopLeft="911.357142857143,95.4285714285714">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,43.904761904762"
-              Start="0,0"
-              End="0,36.404761904762">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,36.404761904762" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\DFT_Insertar_CloudFleet_Grupo_2.Paths[OLE DB Source Output1]"
-          TopLeft="523.047619047619,96.7619047619047">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,39.904761904762"
-              Start="0,0"
-              End="0,32.404761904762">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,32.404761904762" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\DFT_Insertar_CloudFleet_Grupo_2.Paths[OLE DB Source Output]"
-          TopLeft="178.595238095238,93.3809523809524">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,36.6190476190477"
-              Start="0,0"
-              End="0,29.1190476190477">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,29.1190476190477" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+          TopLeft="339.571428571429,55.0952380803368" />
         <EdgeLayout
           Id="Package\DFT_Insertar_CloudFleet_Grupo_2.Paths[OLE DB Source Output4]"
-          TopLeft="1621.19047619048,98.6666666666666">
+          TopLeft="1620.75714286459,97.4000000149011">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,45.0000000000002"
+              EndConnector="0,46.2666666517659"
               Start="0,0"
-              End="0,37.5000000000002">
+              End="0,38.7666666517659">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,37.5000000000002" />
+                    End="0,38.7666666517659" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\DFT_Insertar_CloudFleet_Grupo_2.Paths[OLE DB Source Output3]"
-          TopLeft="1269.5,98.5238095238095">
+          TopLeft="1269.00000000745,98.2571428571428">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,43.4761904761906"
+              EndConnector="0,43.7428571428572"
               Start="0,0"
-              End="0,35.9761904761906">
+              End="0,36.2428571428572">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,35.9761904761906" />
+                    End="0,36.2428571428572" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\DFT_Insertar_CloudFleet_Grupo_2.Paths[OLE DB Source Output2]"
+          TopLeft="911.357142857143,95.1619047619047">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,44.1714285714283"
+              Start="0,0"
+              End="0,36.6714285714283">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,36.6714285714283" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\DFT_Insertar_CloudFleet_Grupo_2.Paths[OLE DB Source Output1]"
+          TopLeft="522.914285714286,97.4952380803368">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,39.1714285863302"
+              Start="0,0"
+              End="0,31.6714285863302">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,31.6714285863302" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\DFT_Insertar_CloudFleet_Grupo_2.Paths[OLE DB Source Output]"
+          TopLeft="178.228571436022,93.1142857142857">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,36.8857142857143"
+              Start="0,0"
+              End="0,29.3857142857143">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,29.3857142857143" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\DFT_Insertar_CloudFleet_Grupo_2\OLEDBS_Tb_CloudFleet_002_Ordenes_UpdatedBy">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DFT_Insertar_CloudFleet_Grupo_2\OLEDBS_Tb_CloudFleet_002_Ordenes_Voided">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DFT_Insertar_CloudFleet_Grupo_2\OLEDBS_Tb_CloudFleet_002_Ordenes_Vendor">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DFT_Insertar_CloudFleet_Grupo_2\OLEDBS_Tb_CloudFleet_002_Ordenes">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DFT_Insertar_CloudFleet_Grupo_2\OLEDBS_Tb_CloudFleet_002_Ordenes_MaintenanceLabel">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\DFT_Insertar_CloudFleet_Grupo_3">
     <LayoutInfo>
       <GraphLayout
-        Capacity="64" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="64" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="396,42.6666666666667"
-          Id="Package\DFT_Insertar_CloudFleet_Grupo_3\OLEDBS_Tb_CloudFleet_003_Check_Variable_MaintenanceIssue"
-          TopLeft="1047.08332500731,225.105261032931" />
-        <NodeLayout
-          Size="308,42.6666666666667"
-          Id="Package\DFT_Insertar_CloudFleet_Grupo_3\OLEDBS_Tb_CloudFleet_003_Check_Statistics"
-          TopLeft="1408.66664975385,36.1929806402628" />
-        <NodeLayout
-          Size="380,42.6666666666667"
-          Id="Package\DFT_Insertar_CloudFleet_Grupo_3\OLEDBD_Tb_CloudFleet_003_Check_Variable_StatusVariable"
-          TopLeft="1038.62498628162,534.877177966047" />
-        <NodeLayout
-          Size="318.666666666667,42.6666666666667"
-          Id="Package\DFT_Insertar_CloudFleet_Grupo_3\OLEDBS_Tb_CloudFleet_003_Check_TypeCheck"
-          TopLeft="335.208335615073,242.175438725277" />
-        <NodeLayout
-          Size="304,42.6666666666667"
-          Id="Package\DFT_Insertar_CloudFleet_Grupo_3\OLEDBD_Tb_CloudFleet_003_Check_Variable"
-          TopLeft="687.999991506339,328.614031623384" />
-        <NodeLayout
-          Size="300,42.6666666666667"
-          Id="Package\DFT_Insertar_CloudFleet_Grupo_3\OLEDBD_Tb_CloudFleet_003_Check_Vehicle"
-          TopLeft="1452.59257553904,537.641333592321" />
-        <NodeLayout
-          Size="309.333333333334,42.6666666666667"
-          Id="Package\DFT_Insertar_CloudFleet_Grupo_3\OLEDBS_Tb_CloudFleet_003_Check_Schedule"
-          TopLeft="1056.45832486761,29.3157894608056" />
-        <NodeLayout
-          Size="309.333333333334,42.6666666666667"
-          Id="Package\DFT_Insertar_CloudFleet_Grupo_3\OLEDBD_Tb_CloudFleet_003_Check_Schedule"
-          TopLeft="1054.24998604879,125.315786035106" />
-        <NodeLayout
-          Size="300,42.6666666666667"
-          Id="Package\DFT_Insertar_CloudFleet_Grupo_3\OLEDBS_Tb_CloudFleet_003_Check_Vehicle"
-          TopLeft="1453.98146440723,441.851858105111" />
-        <NodeLayout
-          Size="397.333333333334,42.6666666666667"
-          Id="Package\DFT_Insertar_CloudFleet_Grupo_3\OLEDBD_Tb_CloudFleet_003_Check_Variable_MaintenanceIssue"
-          TopLeft="1042.99998621643,324.543854175732" />
-        <NodeLayout
-          Size="294.666666666667,42.6666666666667"
-          Id="Package\DFT_Insertar_CloudFleet_Grupo_3\OLEDBS_Tb_CloudFleet_003_Check_Status"
-          TopLeft="10.8750007171185,240.122807107693" />
-        <NodeLayout
-          Size="378.666666666667,42.6666666666667"
-          Id="Package\DFT_Insertar_CloudFleet_Grupo_3\OLEDBS_Tb_CloudFleet_003_Check_Variable_StatusVariable"
-          TopLeft="1036.79165529522,440.59649509164" />
-        <NodeLayout
-          Size="308,42.6666666666667"
-          Id="Package\DFT_Insertar_CloudFleet_Grupo_3\OLEDBD_Tb_CloudFleet_003_Check_Statistics"
-          TopLeft="1406.24997904524,121.421039482562" />
-        <NodeLayout
-          Size="258.666666666667,42.6666666666667"
-          Id="Package\DFT_Insertar_CloudFleet_Grupo_3\OLEDBS_Tb_CloudFleet_003_Check"
-          TopLeft="17.1250006239861,27.9473683824169" />
-        <NodeLayout
-          Size="448,42.6666666666667"
-          Id="Package\DFT_Insertar_CloudFleet_Grupo_3\OLEDBS_Tb_CloudFleet_003_Check_Variable_MaintenanceIssue_TaskMain"
-          TopLeft="501.166663276653,440.631580879153" />
-        <NodeLayout
-          Size="436,42.6666666666667"
-          Id="Package\DFT_Insertar_CloudFleet_Grupo_3\OLEDBD_Tb_CloudFleet_003_Check_Variable_MaintenanceIssue_Priority"
-          TopLeft="24.5000022724277,544.210523044634" />
-        <NodeLayout
-          Size="296,42.6666666666667"
-          Id="Package\DFT_Insertar_CloudFleet_Grupo_3\OLEDBD_Tb_CloudFleet_003_Check_Status"
-          TopLeft="15.8750006426124,327.403497567576" />
-        <NodeLayout
-          Size="304,42.6666666666667"
-          Id="Package\DFT_Insertar_CloudFleet_Grupo_3\OLEDBS_Tb_CloudFleet_003_Check_Variable"
-          TopLeft="686.45833038104,243.508774016153" />
-        <NodeLayout
-          Size="449.333333333334,42.6666666666667"
-          Id="Package\DFT_Insertar_CloudFleet_Grupo_3\OLEDBD_Tb_CloudFleet_003_Check_Variable_MaintenanceIssue_TaskMain"
-          TopLeft="505.874993341044,543.052618648867" />
-        <NodeLayout
-          Size="300,42.6666666666667"
-          Id="Package\DFT_Insertar_CloudFleet_Grupo_3\OLEDBD_Tb_CloudFleet_003_Check_Images"
-          TopLeft="324.624996041879,121.140351224914" />
-        <NodeLayout
-          Size="436,42.6666666666667"
+          Size="436,42.4"
           Id="Package\DFT_Insertar_CloudFleet_Grupo_3\OLEDBS_Tb_CloudFleet_003_Check_Variable_MaintenanceIssue_Priority"
           TopLeft="19.0000005960464,439.298245588278" />
         <NodeLayout
-          Size="318.666666666667,42.6666666666667"
-          Id="Package\DFT_Insertar_CloudFleet_Grupo_3\OLEDBD_Tb_CloudFleet_003_Check_TypeCheck"
-          TopLeft="341.499995790422,327.894735296677" />
+          Size="296,42.4"
+          Id="Package\DFT_Insertar_CloudFleet_Grupo_3\OLEDBD_Tb_CloudFleet_003_Check_Status"
+          TopLeft="15.8750006426124,327.403497567576" />
         <NodeLayout
-          Size="356,42.6666666666667"
+          Size="318.4,42.4"
+          Id="Package\DFT_Insertar_CloudFleet_Grupo_3\OLEDBS_Tb_CloudFleet_003_Check_TypeCheck"
+          TopLeft="334.208335629974,243.175438710376" />
+        <NodeLayout
+          Size="356,42.4"
+          Id="Package\DFT_Insertar_CloudFleet_Grupo_3\OLEDBD_Tb_CloudFleet_003_Check_Images_CreatedBy"
+          TopLeft="663.999990984798,124.596489708399" />
+        <NodeLayout
+          Size="397.6,42.4"
+          Id="Package\DFT_Insertar_CloudFleet_Grupo_3\OLEDBD_Tb_CloudFleet_003_Check_Variable_MaintenanceIssue"
+          TopLeft="1042.99998621643,324.543854175732" />
+        <NodeLayout
+          Size="380,42.4"
+          Id="Package\DFT_Insertar_CloudFleet_Grupo_3\OLEDBD_Tb_CloudFleet_003_Check_Variable_StatusVariable"
+          TopLeft="1038.62498628162,534.877177966047" />
+        <NodeLayout
+          Size="309.6,42.4"
+          Id="Package\DFT_Insertar_CloudFleet_Grupo_3\OLEDBS_Tb_CloudFleet_003_Check_Schedule"
+          TopLeft="1056.45832486761,29.3157894608056" />
+        <NodeLayout
+          Size="378.4,42.4"
+          Id="Package\DFT_Insertar_CloudFleet_Grupo_3\OLEDBS_Tb_CloudFleet_003_Check_Variable_StatusVariable"
+          TopLeft="1036.79165529522,439.596495106541" />
+        <NodeLayout
+          Size="396,42.4"
+          Id="Package\DFT_Insertar_CloudFleet_Grupo_3\OLEDBS_Tb_CloudFleet_003_Check_Variable_MaintenanceIssue"
+          TopLeft="1048.08332499241,225.105261032931" />
+        <NodeLayout
+          Size="304,42.4"
+          Id="Package\DFT_Insertar_CloudFleet_Grupo_3\OLEDBD_Tb_CloudFleet_003_Check_Variable"
+          TopLeft="687.999991506339,328.614031623384" />
+        <NodeLayout
+          Size="294.4,42.4"
+          Id="Package\DFT_Insertar_CloudFleet_Grupo_3\OLEDBS_Tb_CloudFleet_003_Check_Status"
+          TopLeft="10.8750007171185,240.122807107693" />
+        <NodeLayout
+          Size="300,42.4"
+          Id="Package\DFT_Insertar_CloudFleet_Grupo_3\OLEDBD_Tb_CloudFleet_003_Check_Images"
+          TopLeft="324.624996041879,121.140351224914" />
+        <NodeLayout
+          Size="308,42.4"
+          Id="Package\DFT_Insertar_CloudFleet_Grupo_3\OLEDBD_Tb_CloudFleet_003_Check_Statistics"
+          TopLeft="1406.24997904524,121.421039482562" />
+        <NodeLayout
+          Size="449.6,42.4"
+          Id="Package\DFT_Insertar_CloudFleet_Grupo_3\OLEDBD_Tb_CloudFleet_003_Check_Variable_MaintenanceIssue_TaskMain"
+          TopLeft="505.874993341044,543.052618648867" />
+        <NodeLayout
+          Size="258.4,42.4"
+          Id="Package\DFT_Insertar_CloudFleet_Grupo_3\OLEDBS_Tb_CloudFleet_003_Check"
+          TopLeft="16.1250006388872,30.9473683377134" />
+        <NodeLayout
+          Size="356,42.4"
           Id="Package\DFT_Insertar_CloudFleet_Grupo_3\OLEDBS_Tb_CloudFleet_003_Check_Images_CreatedBy"
           TopLeft="664.624990975484,30.719296326708" />
         <NodeLayout
-          Size="258.666666666667,42.6666666666667"
+          Size="448,42.4"
+          Id="Package\DFT_Insertar_CloudFleet_Grupo_3\OLEDBS_Tb_CloudFleet_003_Check_Variable_MaintenanceIssue_TaskMain"
+          TopLeft="502.166663261752,440.631580879153" />
+        <NodeLayout
+          Size="308,42.4"
+          Id="Package\DFT_Insertar_CloudFleet_Grupo_3\OLEDBS_Tb_CloudFleet_003_Check_Statistics"
+          TopLeft="1407.66664976875,36.1929806402628" />
+        <NodeLayout
+          Size="304,42.4"
+          Id="Package\DFT_Insertar_CloudFleet_Grupo_3\OLEDBS_Tb_CloudFleet_003_Check_Variable"
+          TopLeft="686.45833038104,243.508774016153" />
+        <NodeLayout
+          Size="309.6,42.4"
+          Id="Package\DFT_Insertar_CloudFleet_Grupo_3\OLEDBD_Tb_CloudFleet_003_Check_Schedule"
+          TopLeft="1054.24998604879,125.315786035106" />
+        <NodeLayout
+          Size="318.4,42.4"
+          Id="Package\DFT_Insertar_CloudFleet_Grupo_3\OLEDBD_Tb_CloudFleet_003_Check_TypeCheck"
+          TopLeft="341.499995790422,327.894735296677" />
+        <NodeLayout
+          Size="436,42.4"
+          Id="Package\DFT_Insertar_CloudFleet_Grupo_3\OLEDBD_Tb_CloudFleet_003_Check_Variable_MaintenanceIssue_Priority"
+          TopLeft="24.5000022724277,544.210523044634" />
+        <NodeLayout
+          Size="300,42.4"
+          Id="Package\DFT_Insertar_CloudFleet_Grupo_3\OLEDBD_Tb_CloudFleet_003_Check_Vehicle"
+          TopLeft="1452.59257553904,537.641333592321" />
+        <NodeLayout
+          Size="300,42.4"
+          Id="Package\DFT_Insertar_CloudFleet_Grupo_3\OLEDBS_Tb_CloudFleet_003_Check_Vehicle"
+          TopLeft="1453.98146440723,441.851858105111" />
+        <NodeLayout
+          Size="258.4,42.4"
           Id="Package\DFT_Insertar_CloudFleet_Grupo_3\OLEDBD_Tb_CloudFleet_003_Check"
           TopLeft="20.6249996926636,117.000002202234" />
         <NodeLayout
-          Size="300,42.6666666666667"
+          Size="300,42.4"
           Id="Package\DFT_Insertar_CloudFleet_Grupo_3\OLEDBS_Tb_CloudFleet_003_Check_Images"
           TopLeft="321.791665949549,31.3684210783887" />
-        <NodeLayout
-          Size="356,42.6666666666667"
-          Id="Package\DFT_Insertar_CloudFleet_Grupo_3\OLEDBD_Tb_CloudFleet_003_Check_Images_CreatedBy"
-          TopLeft="663.999990984798,124.596489708399" />
         <EdgeLayout
           Id="Package\DFT_Insertar_CloudFleet_Grupo_3.Paths[OLE DB Source Output12]"
           TopLeft="1603.28701997314,484.518524771778">
@@ -21207,57 +21451,51 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\DFT_Insertar_CloudFleet_Grupo_3.Paths[OLE DB Source Output11]"
-          TopLeft="1227.37498745509,483.263161758307">
+          TopLeft="1227.30832078842,481.996495106541">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,51.6140162077403"
+              EndConnector="0,52.8806828595059"
               Start="0,0"
-              End="0,44.1140162077403">
+              End="0,45.3806828595059">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,44.1140162077403" />
+                    End="0,45.3806828595059" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\DFT_Insertar_CloudFleet_Grupo_3.Paths[OLE DB Source Output10]"
-          TopLeft="727.854161642182,483.29824754582">
+          TopLeft="728.420828301398,483.031580879153">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,59.754371103047"
+              EndConnector="0,60.021037769714"
               Start="0,0"
-              End="0,52.254371103047">
+              End="0,52.521037769714">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,52.254371103047" />
+                    End="0,52.521037769714" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -21279,33 +21517,29 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\DFT_Insertar_CloudFleet_Grupo_3.Paths[OLE DB Source Output8]"
-          TopLeft="1243.3749889452,267.771927699598">
+          TopLeft="1243.94165560442,267.505261032931">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,56.771926476134"
+              EndConnector="0,57.038593142801"
               Start="0,0"
-              End="0,49.271926476134">
+              End="0,49.538593142801">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,49.271926476134" />
+                    End="0,49.538593142801" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -21327,33 +21561,29 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\DFT_Insertar_CloudFleet_Grupo_3.Paths[OLE DB Source Output6]"
-          TopLeft="497.687499036081,284.842105391943">
+          TopLeft="497.054165710198,285.575438710376">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,43.0526299047335"
+              EndConnector="0,42.3192965863012"
               Start="0,0"
-              End="0,35.5526299047335">
+              End="0,34.8192965863012">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,35.5526299047335" />
+                    End="0,34.8192965863012" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -21375,33 +21605,29 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\DFT_Insertar_CloudFleet_Grupo_3.Paths[OLE DB Source Output4]"
-          TopLeft="1561.45831439955,78.8596473069295">
+          TopLeft="1560.958314407,78.5929806402628">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,42.5613921756328"
+              EndConnector="0,42.8280588422992"
               Start="0,0"
-              End="0,35.0613921756328">
+              End="0,35.3280588422992">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,35.0613921756328" />
+                    End="0,35.3280588422992" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -21423,9 +21649,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -21447,9 +21671,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -21471,169 +21693,330 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\DFT_Insertar_CloudFleet_Grupo_3.Paths[OLE DB Source Output]"
-          TopLeft="148.208333491658,70.6140350490836">
+          TopLeft="147.575000165775,73.3473683377134">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,46.3859671531509"
+              EndConnector="0,43.6526338645206"
               Start="0,0"
-              End="0,38.8859671531509">
+              End="0,36.1526338645206">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,38.8859671531509" />
+                    End="0,36.1526338645206" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\DFT_Insertar_CloudFleet_Grupo_3\OLEDBS_Tb_CloudFleet_003_Check_Variable_MaintenanceIssue">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DFT_Insertar_CloudFleet_Grupo_3\OLEDBS_Tb_CloudFleet_003_Check_Statistics">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DFT_Insertar_CloudFleet_Grupo_3\OLEDBS_Tb_CloudFleet_003_Check_TypeCheck">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DFT_Insertar_CloudFleet_Grupo_3\OLEDBS_Tb_CloudFleet_003_Check_Schedule">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DFT_Insertar_CloudFleet_Grupo_3\OLEDBS_Tb_CloudFleet_003_Check_Vehicle">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DFT_Insertar_CloudFleet_Grupo_3\OLEDBS_Tb_CloudFleet_003_Check_Status">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DFT_Insertar_CloudFleet_Grupo_3\OLEDBS_Tb_CloudFleet_003_Check_Variable_StatusVariable">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DFT_Insertar_CloudFleet_Grupo_3\OLEDBS_Tb_CloudFleet_003_Check">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DFT_Insertar_CloudFleet_Grupo_3\OLEDBS_Tb_CloudFleet_003_Check_Variable_MaintenanceIssue_TaskMain">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DFT_Insertar_CloudFleet_Grupo_3\OLEDBS_Tb_CloudFleet_003_Check_Variable">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DFT_Insertar_CloudFleet_Grupo_3\OLEDBS_Tb_CloudFleet_003_Check_Variable_MaintenanceIssue_Priority">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DFT_Insertar_CloudFleet_Grupo_3\OLEDBS_Tb_CloudFleet_003_Check_Images_CreatedBy">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DFT_Insertar_CloudFleet_Grupo_3\OLEDBS_Tb_CloudFleet_003_Check_Images">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\DFT_Insertar_CloudFleet_Grupo_4_10">
     <LayoutInfo>
       <GraphLayout
-        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="346.666666666667,42.6666666666667"
+          Size="346.4,42.4"
           Id="Package\DFT_Insertar_CloudFleet_Grupo_4_10\OLEDBS_Tb_CloudFleet_010_Novedades_Responsible"
-          TopLeft="1481,232.666666666667" />
+          TopLeft="1481,230.666666696469" />
         <NodeLayout
-          Size="282.666666666667,42.6666666666667"
+          Size="282.4,42.4"
           Id="Package\DFT_Insertar_CloudFleet_Grupo_4_10\OLEDBD_Tb_CloudFleet_005_CostCenter"
           TopLeft="357,121" />
         <NodeLayout
-          Size="264,42.6666666666667"
+          Size="264,42.4"
           Id="Package\DFT_Insertar_CloudFleet_Grupo_4_10\OLEDBS_Tb_CloudFleet_009_Group2"
           TopLeft="74,229" />
         <NodeLayout
-          Size="280,42.6666666666667"
+          Size="280,42.4"
           Id="Package\DFT_Insertar_CloudFleet_Grupo_4_10\OLEDBD_Tb_CloudFleet_006_CreatedBy"
           TopLeft="673,123.666666666667" />
         <NodeLayout
-          Size="264,42.6666666666667"
+          Size="264,42.4"
           Id="Package\DFT_Insertar_CloudFleet_Grupo_4_10\OLEDBD_Tb_CloudFleet_008_Group1"
           TopLeft="1309,124.666666666667" />
         <NodeLayout
-          Size="330,42.6666666666667"
+          Size="329.6,42.4"
           Id="Package\DFT_Insertar_CloudFleet_Grupo_4_10\OLEDBD_Tb_CloudFleet_010_Novedades_Reporter"
           TopLeft="1102,318.666666666667" />
         <NodeLayout
-          Size="368,42.6666666666667"
+          Size="368,42.4"
           Id="Package\DFT_Insertar_CloudFleet_Grupo_4_10\OLEDBS_Tb_CloudFleet_010_Novedades_AssociatedLabor"
           TopLeft="702,231.666666666667" />
         <NodeLayout
-          Size="282.666666666667,42.6666666666667"
+          Size="282.4,42.4"
           Id="Package\DFT_Insertar_CloudFleet_Grupo_4_10\OLEDBD_Tb_CloudFleet_010_Novedades"
           TopLeft="388,311" />
         <NodeLayout
-          Size="282.666666666667,42.6666666666667"
+          Size="282.4,42.4"
           Id="Package\DFT_Insertar_CloudFleet_Grupo_4_10\OLEDBS_Tb_CloudFleet_005_CostCenter"
-          TopLeft="361,28" />
+          TopLeft="361,28.9999999850988" />
         <NodeLayout
-          Size="278.666666666667,42.6666666666667"
+          Size="278.4,42.4"
           Id="Package\DFT_Insertar_CloudFleet_Grupo_4_10\OLEDBS_Tb_CloudFleet_006_CreatedBy"
-          TopLeft="677,27.6666666666667" />
+          TopLeft="676.000000014901,28.6666666517655" />
         <NodeLayout
-          Size="264,42.6666666666667"
+          Size="264,42.4"
           Id="Package\DFT_Insertar_CloudFleet_Grupo_4_10\OLEDBS_Tb_CloudFleet_008_Group1"
           TopLeft="1304,36.3333333333334" />
         <NodeLayout
-          Size="282.666666666667,42.6666666666667"
+          Size="282.4,42.4"
           Id="Package\DFT_Insertar_CloudFleet_Grupo_4_10\OLEDBS_Tb_CloudFleet_010_Novedades"
-          TopLeft="385,231" />
+          TopLeft="384.000000014901,231" />
         <NodeLayout
-          Size="348,42.6666666666667"
+          Size="348,42.4"
           Id="Package\DFT_Insertar_CloudFleet_Grupo_4_10\OLEDBD_Tb_CloudFleet_010_Novedades_Responsible"
           TopLeft="1475,325.666666666667" />
         <NodeLayout
-          Size="329.333333333334,42.6666666666667"
+          Size="329.6,42.4"
           Id="Package\DFT_Insertar_CloudFleet_Grupo_4_10\OLEDBS_Tb_CloudFleet_010_Novedades_Reporter"
           TopLeft="1096,232.333333333333" />
         <NodeLayout
-          Size="264,42.6666666666667"
+          Size="264,42.4"
           Id="Package\DFT_Insertar_CloudFleet_Grupo_4_10\OLEDBD_Tb_CloudFleet_009_Group2"
           TopLeft="77,310.333333333333" />
         <NodeLayout
-          Size="368,42.6666666666667"
+          Size="368,42.4"
           Id="Package\DFT_Insertar_CloudFleet_Grupo_4_10\OLEDBD_Tb_CloudFleet_010_Novedades_AssociatedLabor"
           TopLeft="698,313.666666666667" />
         <NodeLayout
-          Size="260,42.6666666666667"
+          Size="260,42.4"
           Id="Package\DFT_Insertar_CloudFleet_Grupo_4_10\OLEDBS_ Tb_CloudFleet_007_Driver"
           TopLeft="988,31.6666666666667" />
         <NodeLayout
-          Size="246.666666666667,42.6666666666667"
+          Size="246.4,42.4"
           Id="Package\DFT_Insertar_CloudFleet_Grupo_4_10\OLEDBS_Tb_CloudFleet_004_City"
-          TopLeft="76,23" />
+          TopLeft="75.0000000149011,23.9999999850988" />
         <NodeLayout
-          Size="260,42.6666666666667"
+          Size="260,42.4"
           Id="Package\DFT_Insertar_CloudFleet_Grupo_4_10\OLEDBD_ Tb_CloudFleet_007_Driver"
           TopLeft="990,120.666666666667" />
         <NodeLayout
-          Size="248,42.6666666666667"
+          Size="248,42.4"
           Id="Package\DFT_Insertar_CloudFleet_Grupo_4_10\OLEDBD_Tb_CloudFleet_004_City"
           TopLeft="81,121" />
         <EdgeLayout
           Id="Package\DFT_Insertar_CloudFleet_Grupo_4_10.Paths[OLE DB Source Output]"
-          TopLeft="202.166666666667,65.6666666666667">
+          TopLeft="201.600000007451,66.3999999850988">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,55.3333333333333"
+              EndConnector="0,54.6000000149011"
               Start="0,0"
-              End="0,47.8333333333333">
+              End="0,47.1000000149011">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,47.8333333333333" />
+                    End="0,47.1000000149011" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\DFT_Insertar_CloudFleet_Grupo_4_10.Paths[OLE DB Source Output9]"
-          TopLeft="1651.66666666667,275.333333333334">
+          TopLeft="1651.6,273.066666696469">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,50.3333333333334"
+              EndConnector="0,52.5999999701977"
               Start="0,0"
-              End="0,42.8333333333334">
+              End="0,45.0999999701977">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,42.8333333333334" />
+                    End="0,45.0999999701977" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -21655,9 +22038,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -21679,33 +22060,29 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\DFT_Insertar_CloudFleet_Grupo_4_10.Paths[OLE DB Source Output6]"
-          TopLeft="527.833333333333,273.666666666667">
+          TopLeft="527.200000007451,273.4">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,37.3333333333333"
+              EndConnector="0,37.6"
               Start="0,0"
-              End="0,29.8333333333333">
+              End="0,30.1">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,29.8333333333333" />
+                    End="0,30.1" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -21727,9 +22104,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -21751,9 +22126,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -21775,61 +22148,185 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\DFT_Insertar_CloudFleet_Grupo_4_10.Paths[OLE DB Source Output2]"
-          TopLeft="814.666666666667,70.3333333333333">
+          TopLeft="814.100000007451,71.0666666517655">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,53.3333333333334"
+              EndConnector="0,52.6000000149014"
               Start="0,0"
-              End="0,45.8333333333334">
+              End="0,45.1000000149014">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,45.8333333333334" />
+                    End="0,45.1000000149014" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\DFT_Insertar_CloudFleet_Grupo_4_10.Paths[OLE DB Source Output1]"
-          TopLeft="500.333333333333,70.6666666666667">
+          TopLeft="500.2,71.3999999850988">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,50.3333333333334"
+              EndConnector="0,49.6000000149011"
               Start="0,0"
-              End="0,42.8333333333334">
+              End="0,42.1000000149011">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,42.8333333333334" />
+                    End="0,42.1000000149011" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\DFT_Insertar_CloudFleet_Grupo_4_10\OLEDBS_Tb_CloudFleet_010_Novedades_Responsible">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DFT_Insertar_CloudFleet_Grupo_4_10\OLEDBS_Tb_CloudFleet_009_Group2">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DFT_Insertar_CloudFleet_Grupo_4_10\OLEDBS_Tb_CloudFleet_010_Novedades_AssociatedLabor">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DFT_Insertar_CloudFleet_Grupo_4_10\OLEDBS_Tb_CloudFleet_005_CostCenter">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DFT_Insertar_CloudFleet_Grupo_4_10\OLEDBS_Tb_CloudFleet_006_CreatedBy">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DFT_Insertar_CloudFleet_Grupo_4_10\OLEDBS_Tb_CloudFleet_008_Group1">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DFT_Insertar_CloudFleet_Grupo_4_10\OLEDBS_Tb_CloudFleet_010_Novedades">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DFT_Insertar_CloudFleet_Grupo_4_10\OLEDBS_Tb_CloudFleet_010_Novedades_Reporter">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DFT_Insertar_CloudFleet_Grupo_4_10\OLEDBS_ Tb_CloudFleet_007_Driver">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DFT_Insertar_CloudFleet_Grupo_4_10\OLEDBS_Tb_CloudFleet_004_City">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
 </Objects>]]></DTS:DesignTimeProperties>
 </DTS:Executable>
