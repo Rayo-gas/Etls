@@ -11,11 +11,23 @@
   DTS:LocaleID="9226"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="353"
-  DTS:VersionGUID="{6E151782-40AB-4A31-B0B5-4C8552977B46}">
+  DTS:VersionBuild="364"
+  DTS:VersionGUID="{36A4F77F-CB85-4058-AA70-4228CCC5DE10}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[AsignacionOPC]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{58462FF0-E984-4DA6-A11C-4473B510BA66}"
+      DTS:ObjectName="AsignacionOPC">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.16.0;Data Source=D:\Rayogas\Sistemas de Información - Estrategia de Datos\7. Fuentes de Información\Xls\Comercial\Presupuesto\Formato Asignación OPC.xls;Extended Properties=&quot;Excel 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[Ausentismo]"
       DTS:CreationName="EXCEL"
@@ -26,6 +38,18 @@
           DTS:ConnectRetryCount="0"
           DTS:ConnectRetryInterval="0"
           DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.16.0;Data Source=D:\Rayogas\Sistemas de Información - Estrategia de Datos\7. Fuentes de Información\Xls\Talento Humano\Indicador Ausentismo.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[AuxilioEmbajadoresKLS]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{63E37FCD-CEBD-48F8-84EC-BA34B9594317}"
+      DTS:ObjectName="AuxilioEmbajadoresKLS">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.16.0;Data Source=D:\Rayogas\Sistemas de Información - Estrategia de Datos\7. Fuentes de Información\Xls\Comercial\Presupuesto\1. Formato Auxilio Embajadores - KLS.xlsx;Extended Properties=&quot;Excel 12.0 XML;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -124,6 +148,18 @@
           DTS:ConnectRetryCount="0"
           DTS:ConnectRetryInterval="0"
           DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.16.0;Data Source=D:\Rayogas\Sistemas de Información - Estrategia de Datos\7. Fuentes de Información\Xls\TI\Mesa de ayuda\Service desk.xls;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[MetaComercial]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{7A93B9D5-EFEC-4F35-9BFC-338C3B61D636}"
+      DTS:ObjectName="MetaComercial">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.16.0;Data Source=D:\Rayogas\Sistemas de Información - Estrategia de Datos\7. Fuentes de Información\Xls\Comercial\Presupuesto\2. Formato Meta Comercial.xls;Extended Properties=&quot;Excel 12.0 XML;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -1490,6 +1526,1405 @@
           </DTS:ForEachVariableMappings>
         </DTS:Executable>
         <DTS:Executable
+          DTS:refId="Package\CS_Comercial\DFT_ MetaComercial"
+          DTS:CreationName="Microsoft.Pipeline"
+          DTS:Description="Data Flow Task"
+          DTS:DTSID="{97BD4557-1374-4FF1-AD4A-14027CF87C44}"
+          DTS:ExecutableType="Microsoft.Pipeline"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="DFT_ MetaComercial"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <pipeline
+              version="1">
+              <components>
+                <component
+                  refId="Package\CS_Comercial\DFT_ MetaComercial\ES_MetaComercial"
+                  componentClassID="Microsoft.ExcelSource"
+                  contactInfo="Excel Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+                  description="Excel Source"
+                  name="ES_MetaComercial"
+                  usesDispositions="true"
+                  version="1">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">Hoja1$</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.String"
+                      description="The variable that contains the SQL command to be executed."
+                      name="SqlCommandVariable"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">0</property>
+                    <property
+                      dataType="System.String"
+                      description="The mapping from parameters in the SQL command to variables."
+                      name="ParameterMapping"></property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\CS_Comercial\DFT_ MetaComercial\ES_MetaComercial.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[MetaComercial]"
+                      connectionManagerRefId="Package.ConnectionManagers[MetaComercial]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\CS_Comercial\DFT_ MetaComercial\ES_MetaComercial.Outputs[Excel Source Output]"
+                      name="Excel Source Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\CS_Comercial\DFT_ MetaComercial\ES_MetaComercial.Outputs[Excel Source Output].Columns[Fecha]"
+                          dataType="date"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CS_Comercial\DFT_ MetaComercial\ES_MetaComercial.Outputs[Excel Source Output].ExternalColumns[Fecha]"
+                          lineageId="Package\CS_Comercial\DFT_ MetaComercial\ES_MetaComercial.Outputs[Excel Source Output].Columns[Fecha]"
+                          name="Fecha"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\CS_Comercial\DFT_ MetaComercial\ES_MetaComercial.Outputs[Excel Source Output].Columns[U#N#]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CS_Comercial\DFT_ MetaComercial\ES_MetaComercial.Outputs[Excel Source Output].ExternalColumns[U#N#]"
+                          length="255"
+                          lineageId="Package\CS_Comercial\DFT_ MetaComercial\ES_MetaComercial.Outputs[Excel Source Output].Columns[U#N#]"
+                          name="U#N#"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\CS_Comercial\DFT_ MetaComercial\ES_MetaComercial.Outputs[Excel Source Output].Columns[Nombre vendedor]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CS_Comercial\DFT_ MetaComercial\ES_MetaComercial.Outputs[Excel Source Output].ExternalColumns[Nombre vendedor]"
+                          length="255"
+                          lineageId="Package\CS_Comercial\DFT_ MetaComercial\ES_MetaComercial.Outputs[Excel Source Output].Columns[Nombre vendedor]"
+                          name="Nombre vendedor"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\CS_Comercial\DFT_ MetaComercial\ES_MetaComercial.Outputs[Excel Source Output].Columns[Kilos]"
+                          dataType="r8"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CS_Comercial\DFT_ MetaComercial\ES_MetaComercial.Outputs[Excel Source Output].ExternalColumns[Kilos]"
+                          lineageId="Package\CS_Comercial\DFT_ MetaComercial\ES_MetaComercial.Outputs[Excel Source Output].Columns[Kilos]"
+                          name="Kilos"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\CS_Comercial\DFT_ MetaComercial\ES_MetaComercial.Outputs[Excel Source Output].Columns[Margen_Primo]"
+                          dataType="cy"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CS_Comercial\DFT_ MetaComercial\ES_MetaComercial.Outputs[Excel Source Output].ExternalColumns[Margen_Primo]"
+                          lineageId="Package\CS_Comercial\DFT_ MetaComercial\ES_MetaComercial.Outputs[Excel Source Output].Columns[Margen_Primo]"
+                          name="Margen_Primo"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\CS_Comercial\DFT_ MetaComercial\ES_MetaComercial.Outputs[Excel Source Output].Columns[MP_Millones]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CS_Comercial\DFT_ MetaComercial\ES_MetaComercial.Outputs[Excel Source Output].ExternalColumns[MP_Millones]"
+                          length="255"
+                          lineageId="Package\CS_Comercial\DFT_ MetaComercial\ES_MetaComercial.Outputs[Excel Source Output].Columns[MP_Millones]"
+                          name="MP_Millones"
+                          truncationRowDisposition="FailComponent" />
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\CS_Comercial\DFT_ MetaComercial\ES_MetaComercial.Outputs[Excel Source Output].ExternalColumns[Fecha]"
+                          dataType="date"
+                          name="Fecha" />
+                        <externalMetadataColumn
+                          refId="Package\CS_Comercial\DFT_ MetaComercial\ES_MetaComercial.Outputs[Excel Source Output].ExternalColumns[U#N#]"
+                          dataType="wstr"
+                          length="255"
+                          name="U#N#" />
+                        <externalMetadataColumn
+                          refId="Package\CS_Comercial\DFT_ MetaComercial\ES_MetaComercial.Outputs[Excel Source Output].ExternalColumns[Nombre vendedor]"
+                          dataType="wstr"
+                          length="255"
+                          name="Nombre vendedor" />
+                        <externalMetadataColumn
+                          refId="Package\CS_Comercial\DFT_ MetaComercial\ES_MetaComercial.Outputs[Excel Source Output].ExternalColumns[Kilos]"
+                          dataType="r8"
+                          name="Kilos" />
+                        <externalMetadataColumn
+                          refId="Package\CS_Comercial\DFT_ MetaComercial\ES_MetaComercial.Outputs[Excel Source Output].ExternalColumns[Margen_Primo]"
+                          dataType="cy"
+                          name="Margen_Primo" />
+                        <externalMetadataColumn
+                          refId="Package\CS_Comercial\DFT_ MetaComercial\ES_MetaComercial.Outputs[Excel Source Output].ExternalColumns[MP_Millones]"
+                          dataType="wstr"
+                          length="255"
+                          name="MP_Millones" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\CS_Comercial\DFT_ MetaComercial\ES_MetaComercial.Outputs[Excel Source Error Output]"
+                      isErrorOut="true"
+                      name="Excel Source Error Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\CS_Comercial\DFT_ MetaComercial\ES_MetaComercial.Outputs[Excel Source Error Output].Columns[Fecha]"
+                          dataType="date"
+                          lineageId="Package\CS_Comercial\DFT_ MetaComercial\ES_MetaComercial.Outputs[Excel Source Error Output].Columns[Fecha]"
+                          name="Fecha" />
+                        <outputColumn
+                          refId="Package\CS_Comercial\DFT_ MetaComercial\ES_MetaComercial.Outputs[Excel Source Error Output].Columns[U#N#]"
+                          dataType="wstr"
+                          length="255"
+                          lineageId="Package\CS_Comercial\DFT_ MetaComercial\ES_MetaComercial.Outputs[Excel Source Error Output].Columns[U#N#]"
+                          name="U#N#" />
+                        <outputColumn
+                          refId="Package\CS_Comercial\DFT_ MetaComercial\ES_MetaComercial.Outputs[Excel Source Error Output].Columns[Nombre vendedor]"
+                          dataType="wstr"
+                          length="255"
+                          lineageId="Package\CS_Comercial\DFT_ MetaComercial\ES_MetaComercial.Outputs[Excel Source Error Output].Columns[Nombre vendedor]"
+                          name="Nombre vendedor" />
+                        <outputColumn
+                          refId="Package\CS_Comercial\DFT_ MetaComercial\ES_MetaComercial.Outputs[Excel Source Error Output].Columns[Kilos]"
+                          dataType="r8"
+                          lineageId="Package\CS_Comercial\DFT_ MetaComercial\ES_MetaComercial.Outputs[Excel Source Error Output].Columns[Kilos]"
+                          name="Kilos" />
+                        <outputColumn
+                          refId="Package\CS_Comercial\DFT_ MetaComercial\ES_MetaComercial.Outputs[Excel Source Error Output].Columns[Margen_Primo]"
+                          dataType="cy"
+                          lineageId="Package\CS_Comercial\DFT_ MetaComercial\ES_MetaComercial.Outputs[Excel Source Error Output].Columns[Margen_Primo]"
+                          name="Margen_Primo" />
+                        <outputColumn
+                          refId="Package\CS_Comercial\DFT_ MetaComercial\ES_MetaComercial.Outputs[Excel Source Error Output].Columns[MP_Millones]"
+                          dataType="wstr"
+                          length="255"
+                          lineageId="Package\CS_Comercial\DFT_ MetaComercial\ES_MetaComercial.Outputs[Excel Source Error Output].Columns[MP_Millones]"
+                          name="MP_Millones" />
+                        <outputColumn
+                          refId="Package\CS_Comercial\DFT_ MetaComercial\ES_MetaComercial.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\CS_Comercial\DFT_ MetaComercial\ES_MetaComercial.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\CS_Comercial\DFT_ MetaComercial\ES_MetaComercial.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\CS_Comercial\DFT_ MetaComercial\ES_MetaComercial.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\CS_Comercial\DFT_ MetaComercial\OLEDBD_ MetaComercial"
+                  componentClassID="Microsoft.OLEDBDestination"
+                  contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+                  description="OLE DB Destination"
+                  name="OLEDBD_ MetaComercial"
+                  usesDispositions="true"
+                  version="4">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[xls].[MetaComercial]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">3</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepIdentity">false</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                      name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                      name="FastLoadMaxInsertCommitSize">2147483647</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\CS_Comercial\DFT_ MetaComercial\OLEDBD_ MetaComercial.Connections[OleDbConnection]"
+                      connectionManagerID="{F969E5F0-ED10-48A1-9AD7-51F9863F78B9}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[DataStage]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\CS_Comercial\DFT_ MetaComercial\OLEDBD_ MetaComercial.Inputs[OLE DB Destination Input]"
+                      errorOrTruncationOperation="Insert"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="OLE DB Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\CS_Comercial\DFT_ MetaComercial\OLEDBD_ MetaComercial.Inputs[OLE DB Destination Input].Columns[Fecha]"
+                          cachedDataType="date"
+                          cachedName="Fecha"
+                          externalMetadataColumnId="Package\CS_Comercial\DFT_ MetaComercial\OLEDBD_ MetaComercial.Inputs[OLE DB Destination Input].ExternalColumns[Fecha]"
+                          lineageId="Package\CS_Comercial\DFT_ MetaComercial\ES_MetaComercial.Outputs[Excel Source Output].Columns[Fecha]" />
+                        <inputColumn
+                          refId="Package\CS_Comercial\DFT_ MetaComercial\OLEDBD_ MetaComercial.Inputs[OLE DB Destination Input].Columns[Kilos]"
+                          cachedDataType="r8"
+                          cachedName="Kilos"
+                          externalMetadataColumnId="Package\CS_Comercial\DFT_ MetaComercial\OLEDBD_ MetaComercial.Inputs[OLE DB Destination Input].ExternalColumns[Kilos]"
+                          lineageId="Package\CS_Comercial\DFT_ MetaComercial\ES_MetaComercial.Outputs[Excel Source Output].Columns[Kilos]" />
+                        <inputColumn
+                          refId="Package\CS_Comercial\DFT_ MetaComercial\OLEDBD_ MetaComercial.Inputs[OLE DB Destination Input].Columns[Margen_Primo]"
+                          cachedDataType="cy"
+                          cachedName="Margen_Primo"
+                          externalMetadataColumnId="Package\CS_Comercial\DFT_ MetaComercial\OLEDBD_ MetaComercial.Inputs[OLE DB Destination Input].ExternalColumns[Margen_Primo]"
+                          lineageId="Package\CS_Comercial\DFT_ MetaComercial\ES_MetaComercial.Outputs[Excel Source Output].Columns[Margen_Primo]" />
+                        <inputColumn
+                          refId="Package\CS_Comercial\DFT_ MetaComercial\OLEDBD_ MetaComercial.Inputs[OLE DB Destination Input].Columns[MP_Millones]"
+                          cachedDataType="wstr"
+                          cachedLength="255"
+                          cachedName="MP_Millones"
+                          externalMetadataColumnId="Package\CS_Comercial\DFT_ MetaComercial\OLEDBD_ MetaComercial.Inputs[OLE DB Destination Input].ExternalColumns[MP_Millones]"
+                          lineageId="Package\CS_Comercial\DFT_ MetaComercial\ES_MetaComercial.Outputs[Excel Source Output].Columns[MP_Millones]" />
+                        <inputColumn
+                          refId="Package\CS_Comercial\DFT_ MetaComercial\OLEDBD_ MetaComercial.Inputs[OLE DB Destination Input].Columns[U#N#]"
+                          cachedDataType="wstr"
+                          cachedLength="255"
+                          cachedName="U#N#"
+                          externalMetadataColumnId="Package\CS_Comercial\DFT_ MetaComercial\OLEDBD_ MetaComercial.Inputs[OLE DB Destination Input].ExternalColumns[UN]"
+                          lineageId="Package\CS_Comercial\DFT_ MetaComercial\ES_MetaComercial.Outputs[Excel Source Output].Columns[U#N#]" />
+                        <inputColumn
+                          refId="Package\CS_Comercial\DFT_ MetaComercial\OLEDBD_ MetaComercial.Inputs[OLE DB Destination Input].Columns[Nombre vendedor]"
+                          cachedDataType="wstr"
+                          cachedLength="255"
+                          cachedName="Nombre vendedor"
+                          externalMetadataColumnId="Package\CS_Comercial\DFT_ MetaComercial\OLEDBD_ MetaComercial.Inputs[OLE DB Destination Input].ExternalColumns[Nombre_vendedor]"
+                          lineageId="Package\CS_Comercial\DFT_ MetaComercial\ES_MetaComercial.Outputs[Excel Source Output].Columns[Nombre vendedor]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\CS_Comercial\DFT_ MetaComercial\OLEDBD_ MetaComercial.Inputs[OLE DB Destination Input].ExternalColumns[Fecha]"
+                          dataType="dbTimeStamp"
+                          name="Fecha" />
+                        <externalMetadataColumn
+                          refId="Package\CS_Comercial\DFT_ MetaComercial\OLEDBD_ MetaComercial.Inputs[OLE DB Destination Input].ExternalColumns[UN]"
+                          dataType="wstr"
+                          length="255"
+                          name="UN" />
+                        <externalMetadataColumn
+                          refId="Package\CS_Comercial\DFT_ MetaComercial\OLEDBD_ MetaComercial.Inputs[OLE DB Destination Input].ExternalColumns[Nombre_vendedor]"
+                          dataType="wstr"
+                          length="255"
+                          name="Nombre_vendedor" />
+                        <externalMetadataColumn
+                          refId="Package\CS_Comercial\DFT_ MetaComercial\OLEDBD_ MetaComercial.Inputs[OLE DB Destination Input].ExternalColumns[Kilos]"
+                          dataType="r8"
+                          name="Kilos" />
+                        <externalMetadataColumn
+                          refId="Package\CS_Comercial\DFT_ MetaComercial\OLEDBD_ MetaComercial.Inputs[OLE DB Destination Input].ExternalColumns[Margen_Primo]"
+                          dataType="cy"
+                          name="Margen_Primo" />
+                        <externalMetadataColumn
+                          refId="Package\CS_Comercial\DFT_ MetaComercial\OLEDBD_ MetaComercial.Inputs[OLE DB Destination Input].ExternalColumns[MP_Millones]"
+                          dataType="wstr"
+                          length="255"
+                          name="MP_Millones" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\CS_Comercial\DFT_ MetaComercial\OLEDBD_ MetaComercial.Outputs[OLE DB Destination Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="OLE DB Destination Error Output"
+                      synchronousInputId="Package\CS_Comercial\DFT_ MetaComercial\OLEDBD_ MetaComercial.Inputs[OLE DB Destination Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\CS_Comercial\DFT_ MetaComercial\OLEDBD_ MetaComercial.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\CS_Comercial\DFT_ MetaComercial\OLEDBD_ MetaComercial.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\CS_Comercial\DFT_ MetaComercial\OLEDBD_ MetaComercial.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\CS_Comercial\DFT_ MetaComercial\OLEDBD_ MetaComercial.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+              </components>
+              <paths>
+                <path
+                  refId="Package\CS_Comercial\DFT_ MetaComercial.Paths[Excel Source Output]"
+                  endId="Package\CS_Comercial\DFT_ MetaComercial\OLEDBD_ MetaComercial.Inputs[OLE DB Destination Input]"
+                  name="Excel Source Output"
+                  startId="Package\CS_Comercial\DFT_ MetaComercial\ES_MetaComercial.Outputs[Excel Source Output]" />
+              </paths>
+            </pipeline>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\CS_Comercial\DFT_AsignacionOPC"
+          DTS:CreationName="Microsoft.Pipeline"
+          DTS:Description="Data Flow Task"
+          DTS:DTSID="{44483A54-D9CB-4FA8-8A69-7B345E09AD1D}"
+          DTS:ExecutableType="Microsoft.Pipeline"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="DFT_AsignacionOPC"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <pipeline
+              version="1">
+              <components>
+                <component
+                  refId="Package\CS_Comercial\DFT_AsignacionOPC\ES_AsignacionOPC"
+                  componentClassID="Microsoft.ExcelSource"
+                  contactInfo="Excel Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+                  description="Excel Source"
+                  name="ES_AsignacionOPC"
+                  usesDispositions="true"
+                  version="1">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">Hoja1$</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.String"
+                      description="The variable that contains the SQL command to be executed."
+                      name="SqlCommandVariable"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">0</property>
+                    <property
+                      dataType="System.String"
+                      description="The mapping from parameters in the SQL command to variables."
+                      name="ParameterMapping"></property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\CS_Comercial\DFT_AsignacionOPC\ES_AsignacionOPC.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[AsignacionOPC]"
+                      connectionManagerRefId="Package.ConnectionManagers[AsignacionOPC]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\CS_Comercial\DFT_AsignacionOPC\ES_AsignacionOPC.Outputs[Excel Source Output]"
+                      name="Excel Source Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\CS_Comercial\DFT_AsignacionOPC\ES_AsignacionOPC.Outputs[Excel Source Output].Columns[Row_id]"
+                          dataType="r8"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CS_Comercial\DFT_AsignacionOPC\ES_AsignacionOPC.Outputs[Excel Source Output].ExternalColumns[Row_id]"
+                          lineageId="Package\CS_Comercial\DFT_AsignacionOPC\ES_AsignacionOPC.Outputs[Excel Source Output].Columns[Row_id]"
+                          name="Row_id"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\CS_Comercial\DFT_AsignacionOPC\ES_AsignacionOPC.Outputs[Excel Source Output].Columns[Id_cia]"
+                          dataType="r8"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CS_Comercial\DFT_AsignacionOPC\ES_AsignacionOPC.Outputs[Excel Source Output].ExternalColumns[Id_cia]"
+                          lineageId="Package\CS_Comercial\DFT_AsignacionOPC\ES_AsignacionOPC.Outputs[Excel Source Output].Columns[Id_cia]"
+                          name="Id_cia"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\CS_Comercial\DFT_AsignacionOPC\ES_AsignacionOPC.Outputs[Excel Source Output].Columns[Razon_Social]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CS_Comercial\DFT_AsignacionOPC\ES_AsignacionOPC.Outputs[Excel Source Output].ExternalColumns[Razon_Social]"
+                          length="255"
+                          lineageId="Package\CS_Comercial\DFT_AsignacionOPC\ES_AsignacionOPC.Outputs[Excel Source Output].Columns[Razon_Social]"
+                          name="Razon_Social"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\CS_Comercial\DFT_AsignacionOPC\ES_AsignacionOPC.Outputs[Excel Source Output].Columns[Nit]"
+                          dataType="r8"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CS_Comercial\DFT_AsignacionOPC\ES_AsignacionOPC.Outputs[Excel Source Output].ExternalColumns[Nit]"
+                          lineageId="Package\CS_Comercial\DFT_AsignacionOPC\ES_AsignacionOPC.Outputs[Excel Source Output].Columns[Nit]"
+                          name="Nit"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\CS_Comercial\DFT_AsignacionOPC\ES_AsignacionOPC.Outputs[Excel Source Output].Columns[Fuente]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CS_Comercial\DFT_AsignacionOPC\ES_AsignacionOPC.Outputs[Excel Source Output].ExternalColumns[Fuente]"
+                          length="255"
+                          lineageId="Package\CS_Comercial\DFT_AsignacionOPC\ES_AsignacionOPC.Outputs[Excel Source Output].Columns[Fuente]"
+                          name="Fuente"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\CS_Comercial\DFT_AsignacionOPC\ES_AsignacionOPC.Outputs[Excel Source Output].Columns[Ano]"
+                          dataType="r8"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CS_Comercial\DFT_AsignacionOPC\ES_AsignacionOPC.Outputs[Excel Source Output].ExternalColumns[Ano]"
+                          lineageId="Package\CS_Comercial\DFT_AsignacionOPC\ES_AsignacionOPC.Outputs[Excel Source Output].Columns[Ano]"
+                          name="Ano"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\CS_Comercial\DFT_AsignacionOPC\ES_AsignacionOPC.Outputs[Excel Source Output].Columns[Mes]"
+                          dataType="r8"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CS_Comercial\DFT_AsignacionOPC\ES_AsignacionOPC.Outputs[Excel Source Output].ExternalColumns[Mes]"
+                          lineageId="Package\CS_Comercial\DFT_AsignacionOPC\ES_AsignacionOPC.Outputs[Excel Source Output].Columns[Mes]"
+                          name="Mes"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\CS_Comercial\DFT_AsignacionOPC\ES_AsignacionOPC.Outputs[Excel Source Output].Columns[Asignacion]"
+                          dataType="r8"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CS_Comercial\DFT_AsignacionOPC\ES_AsignacionOPC.Outputs[Excel Source Output].ExternalColumns[Asignacion]"
+                          lineageId="Package\CS_Comercial\DFT_AsignacionOPC\ES_AsignacionOPC.Outputs[Excel Source Output].Columns[Asignacion]"
+                          name="Asignacion"
+                          truncationRowDisposition="FailComponent" />
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\CS_Comercial\DFT_AsignacionOPC\ES_AsignacionOPC.Outputs[Excel Source Output].ExternalColumns[Row_id]"
+                          dataType="r8"
+                          name="Row_id" />
+                        <externalMetadataColumn
+                          refId="Package\CS_Comercial\DFT_AsignacionOPC\ES_AsignacionOPC.Outputs[Excel Source Output].ExternalColumns[Id_cia]"
+                          dataType="r8"
+                          name="Id_cia" />
+                        <externalMetadataColumn
+                          refId="Package\CS_Comercial\DFT_AsignacionOPC\ES_AsignacionOPC.Outputs[Excel Source Output].ExternalColumns[Razon_Social]"
+                          dataType="wstr"
+                          length="255"
+                          name="Razon_Social" />
+                        <externalMetadataColumn
+                          refId="Package\CS_Comercial\DFT_AsignacionOPC\ES_AsignacionOPC.Outputs[Excel Source Output].ExternalColumns[Nit]"
+                          dataType="r8"
+                          name="Nit" />
+                        <externalMetadataColumn
+                          refId="Package\CS_Comercial\DFT_AsignacionOPC\ES_AsignacionOPC.Outputs[Excel Source Output].ExternalColumns[Fuente]"
+                          dataType="wstr"
+                          length="255"
+                          name="Fuente" />
+                        <externalMetadataColumn
+                          refId="Package\CS_Comercial\DFT_AsignacionOPC\ES_AsignacionOPC.Outputs[Excel Source Output].ExternalColumns[Ano]"
+                          dataType="r8"
+                          name="Ano" />
+                        <externalMetadataColumn
+                          refId="Package\CS_Comercial\DFT_AsignacionOPC\ES_AsignacionOPC.Outputs[Excel Source Output].ExternalColumns[Mes]"
+                          dataType="r8"
+                          name="Mes" />
+                        <externalMetadataColumn
+                          refId="Package\CS_Comercial\DFT_AsignacionOPC\ES_AsignacionOPC.Outputs[Excel Source Output].ExternalColumns[Asignacion]"
+                          dataType="r8"
+                          name="Asignacion" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\CS_Comercial\DFT_AsignacionOPC\ES_AsignacionOPC.Outputs[Excel Source Error Output]"
+                      isErrorOut="true"
+                      name="Excel Source Error Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\CS_Comercial\DFT_AsignacionOPC\ES_AsignacionOPC.Outputs[Excel Source Error Output].Columns[Row_id]"
+                          dataType="r8"
+                          lineageId="Package\CS_Comercial\DFT_AsignacionOPC\ES_AsignacionOPC.Outputs[Excel Source Error Output].Columns[Row_id]"
+                          name="Row_id" />
+                        <outputColumn
+                          refId="Package\CS_Comercial\DFT_AsignacionOPC\ES_AsignacionOPC.Outputs[Excel Source Error Output].Columns[Id_cia]"
+                          dataType="r8"
+                          lineageId="Package\CS_Comercial\DFT_AsignacionOPC\ES_AsignacionOPC.Outputs[Excel Source Error Output].Columns[Id_cia]"
+                          name="Id_cia" />
+                        <outputColumn
+                          refId="Package\CS_Comercial\DFT_AsignacionOPC\ES_AsignacionOPC.Outputs[Excel Source Error Output].Columns[Razon_Social]"
+                          dataType="wstr"
+                          length="255"
+                          lineageId="Package\CS_Comercial\DFT_AsignacionOPC\ES_AsignacionOPC.Outputs[Excel Source Error Output].Columns[Razon_Social]"
+                          name="Razon_Social" />
+                        <outputColumn
+                          refId="Package\CS_Comercial\DFT_AsignacionOPC\ES_AsignacionOPC.Outputs[Excel Source Error Output].Columns[Nit]"
+                          dataType="r8"
+                          lineageId="Package\CS_Comercial\DFT_AsignacionOPC\ES_AsignacionOPC.Outputs[Excel Source Error Output].Columns[Nit]"
+                          name="Nit" />
+                        <outputColumn
+                          refId="Package\CS_Comercial\DFT_AsignacionOPC\ES_AsignacionOPC.Outputs[Excel Source Error Output].Columns[Fuente]"
+                          dataType="wstr"
+                          length="255"
+                          lineageId="Package\CS_Comercial\DFT_AsignacionOPC\ES_AsignacionOPC.Outputs[Excel Source Error Output].Columns[Fuente]"
+                          name="Fuente" />
+                        <outputColumn
+                          refId="Package\CS_Comercial\DFT_AsignacionOPC\ES_AsignacionOPC.Outputs[Excel Source Error Output].Columns[Ano]"
+                          dataType="r8"
+                          lineageId="Package\CS_Comercial\DFT_AsignacionOPC\ES_AsignacionOPC.Outputs[Excel Source Error Output].Columns[Ano]"
+                          name="Ano" />
+                        <outputColumn
+                          refId="Package\CS_Comercial\DFT_AsignacionOPC\ES_AsignacionOPC.Outputs[Excel Source Error Output].Columns[Mes]"
+                          dataType="r8"
+                          lineageId="Package\CS_Comercial\DFT_AsignacionOPC\ES_AsignacionOPC.Outputs[Excel Source Error Output].Columns[Mes]"
+                          name="Mes" />
+                        <outputColumn
+                          refId="Package\CS_Comercial\DFT_AsignacionOPC\ES_AsignacionOPC.Outputs[Excel Source Error Output].Columns[Asignacion]"
+                          dataType="r8"
+                          lineageId="Package\CS_Comercial\DFT_AsignacionOPC\ES_AsignacionOPC.Outputs[Excel Source Error Output].Columns[Asignacion]"
+                          name="Asignacion" />
+                        <outputColumn
+                          refId="Package\CS_Comercial\DFT_AsignacionOPC\ES_AsignacionOPC.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\CS_Comercial\DFT_AsignacionOPC\ES_AsignacionOPC.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\CS_Comercial\DFT_AsignacionOPC\ES_AsignacionOPC.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\CS_Comercial\DFT_AsignacionOPC\ES_AsignacionOPC.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\CS_Comercial\DFT_AsignacionOPC\OLEDBD_AsignacionOPC"
+                  componentClassID="Microsoft.OLEDBDestination"
+                  contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+                  description="OLE DB Destination"
+                  name="OLEDBD_AsignacionOPC"
+                  usesDispositions="true"
+                  version="4">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[xls].[AsignacionOPC]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">3</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepIdentity">false</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                      name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                      name="FastLoadMaxInsertCommitSize">2147483647</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\CS_Comercial\DFT_AsignacionOPC\OLEDBD_AsignacionOPC.Connections[OleDbConnection]"
+                      connectionManagerID="{F969E5F0-ED10-48A1-9AD7-51F9863F78B9}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[DataStage]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\CS_Comercial\DFT_AsignacionOPC\OLEDBD_AsignacionOPC.Inputs[OLE DB Destination Input]"
+                      errorOrTruncationOperation="Insert"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="OLE DB Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\CS_Comercial\DFT_AsignacionOPC\OLEDBD_AsignacionOPC.Inputs[OLE DB Destination Input].Columns[Row_id]"
+                          cachedDataType="r8"
+                          cachedName="Row_id"
+                          externalMetadataColumnId="Package\CS_Comercial\DFT_AsignacionOPC\OLEDBD_AsignacionOPC.Inputs[OLE DB Destination Input].ExternalColumns[Row_id]"
+                          lineageId="Package\CS_Comercial\DFT_AsignacionOPC\ES_AsignacionOPC.Outputs[Excel Source Output].Columns[Row_id]" />
+                        <inputColumn
+                          refId="Package\CS_Comercial\DFT_AsignacionOPC\OLEDBD_AsignacionOPC.Inputs[OLE DB Destination Input].Columns[Id_cia]"
+                          cachedDataType="r8"
+                          cachedName="Id_cia"
+                          externalMetadataColumnId="Package\CS_Comercial\DFT_AsignacionOPC\OLEDBD_AsignacionOPC.Inputs[OLE DB Destination Input].ExternalColumns[Id_cia]"
+                          lineageId="Package\CS_Comercial\DFT_AsignacionOPC\ES_AsignacionOPC.Outputs[Excel Source Output].Columns[Id_cia]" />
+                        <inputColumn
+                          refId="Package\CS_Comercial\DFT_AsignacionOPC\OLEDBD_AsignacionOPC.Inputs[OLE DB Destination Input].Columns[Razon_Social]"
+                          cachedDataType="wstr"
+                          cachedLength="255"
+                          cachedName="Razon_Social"
+                          externalMetadataColumnId="Package\CS_Comercial\DFT_AsignacionOPC\OLEDBD_AsignacionOPC.Inputs[OLE DB Destination Input].ExternalColumns[Razon_Social]"
+                          lineageId="Package\CS_Comercial\DFT_AsignacionOPC\ES_AsignacionOPC.Outputs[Excel Source Output].Columns[Razon_Social]" />
+                        <inputColumn
+                          refId="Package\CS_Comercial\DFT_AsignacionOPC\OLEDBD_AsignacionOPC.Inputs[OLE DB Destination Input].Columns[Nit]"
+                          cachedDataType="r8"
+                          cachedName="Nit"
+                          externalMetadataColumnId="Package\CS_Comercial\DFT_AsignacionOPC\OLEDBD_AsignacionOPC.Inputs[OLE DB Destination Input].ExternalColumns[Nit]"
+                          lineageId="Package\CS_Comercial\DFT_AsignacionOPC\ES_AsignacionOPC.Outputs[Excel Source Output].Columns[Nit]" />
+                        <inputColumn
+                          refId="Package\CS_Comercial\DFT_AsignacionOPC\OLEDBD_AsignacionOPC.Inputs[OLE DB Destination Input].Columns[Fuente]"
+                          cachedDataType="wstr"
+                          cachedLength="255"
+                          cachedName="Fuente"
+                          externalMetadataColumnId="Package\CS_Comercial\DFT_AsignacionOPC\OLEDBD_AsignacionOPC.Inputs[OLE DB Destination Input].ExternalColumns[Fuente]"
+                          lineageId="Package\CS_Comercial\DFT_AsignacionOPC\ES_AsignacionOPC.Outputs[Excel Source Output].Columns[Fuente]" />
+                        <inputColumn
+                          refId="Package\CS_Comercial\DFT_AsignacionOPC\OLEDBD_AsignacionOPC.Inputs[OLE DB Destination Input].Columns[Ano]"
+                          cachedDataType="r8"
+                          cachedName="Ano"
+                          externalMetadataColumnId="Package\CS_Comercial\DFT_AsignacionOPC\OLEDBD_AsignacionOPC.Inputs[OLE DB Destination Input].ExternalColumns[Ano]"
+                          lineageId="Package\CS_Comercial\DFT_AsignacionOPC\ES_AsignacionOPC.Outputs[Excel Source Output].Columns[Ano]" />
+                        <inputColumn
+                          refId="Package\CS_Comercial\DFT_AsignacionOPC\OLEDBD_AsignacionOPC.Inputs[OLE DB Destination Input].Columns[Mes]"
+                          cachedDataType="r8"
+                          cachedName="Mes"
+                          externalMetadataColumnId="Package\CS_Comercial\DFT_AsignacionOPC\OLEDBD_AsignacionOPC.Inputs[OLE DB Destination Input].ExternalColumns[Mes]"
+                          lineageId="Package\CS_Comercial\DFT_AsignacionOPC\ES_AsignacionOPC.Outputs[Excel Source Output].Columns[Mes]" />
+                        <inputColumn
+                          refId="Package\CS_Comercial\DFT_AsignacionOPC\OLEDBD_AsignacionOPC.Inputs[OLE DB Destination Input].Columns[Asignacion]"
+                          cachedDataType="r8"
+                          cachedName="Asignacion"
+                          externalMetadataColumnId="Package\CS_Comercial\DFT_AsignacionOPC\OLEDBD_AsignacionOPC.Inputs[OLE DB Destination Input].ExternalColumns[Asignacion]"
+                          lineageId="Package\CS_Comercial\DFT_AsignacionOPC\ES_AsignacionOPC.Outputs[Excel Source Output].Columns[Asignacion]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\CS_Comercial\DFT_AsignacionOPC\OLEDBD_AsignacionOPC.Inputs[OLE DB Destination Input].ExternalColumns[Row_id]"
+                          dataType="r8"
+                          name="Row_id" />
+                        <externalMetadataColumn
+                          refId="Package\CS_Comercial\DFT_AsignacionOPC\OLEDBD_AsignacionOPC.Inputs[OLE DB Destination Input].ExternalColumns[Id_cia]"
+                          dataType="r8"
+                          name="Id_cia" />
+                        <externalMetadataColumn
+                          refId="Package\CS_Comercial\DFT_AsignacionOPC\OLEDBD_AsignacionOPC.Inputs[OLE DB Destination Input].ExternalColumns[Razon_Social]"
+                          dataType="wstr"
+                          length="255"
+                          name="Razon_Social" />
+                        <externalMetadataColumn
+                          refId="Package\CS_Comercial\DFT_AsignacionOPC\OLEDBD_AsignacionOPC.Inputs[OLE DB Destination Input].ExternalColumns[Nit]"
+                          dataType="r8"
+                          name="Nit" />
+                        <externalMetadataColumn
+                          refId="Package\CS_Comercial\DFT_AsignacionOPC\OLEDBD_AsignacionOPC.Inputs[OLE DB Destination Input].ExternalColumns[Fuente]"
+                          dataType="wstr"
+                          length="255"
+                          name="Fuente" />
+                        <externalMetadataColumn
+                          refId="Package\CS_Comercial\DFT_AsignacionOPC\OLEDBD_AsignacionOPC.Inputs[OLE DB Destination Input].ExternalColumns[Ano]"
+                          dataType="r8"
+                          name="Ano" />
+                        <externalMetadataColumn
+                          refId="Package\CS_Comercial\DFT_AsignacionOPC\OLEDBD_AsignacionOPC.Inputs[OLE DB Destination Input].ExternalColumns[Mes]"
+                          dataType="r8"
+                          name="Mes" />
+                        <externalMetadataColumn
+                          refId="Package\CS_Comercial\DFT_AsignacionOPC\OLEDBD_AsignacionOPC.Inputs[OLE DB Destination Input].ExternalColumns[Asignacion]"
+                          dataType="r8"
+                          name="Asignacion" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\CS_Comercial\DFT_AsignacionOPC\OLEDBD_AsignacionOPC.Outputs[OLE DB Destination Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="OLE DB Destination Error Output"
+                      synchronousInputId="Package\CS_Comercial\DFT_AsignacionOPC\OLEDBD_AsignacionOPC.Inputs[OLE DB Destination Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\CS_Comercial\DFT_AsignacionOPC\OLEDBD_AsignacionOPC.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\CS_Comercial\DFT_AsignacionOPC\OLEDBD_AsignacionOPC.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\CS_Comercial\DFT_AsignacionOPC\OLEDBD_AsignacionOPC.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\CS_Comercial\DFT_AsignacionOPC\OLEDBD_AsignacionOPC.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+              </components>
+              <paths>
+                <path
+                  refId="Package\CS_Comercial\DFT_AsignacionOPC.Paths[Excel Source Output]"
+                  endId="Package\CS_Comercial\DFT_AsignacionOPC\OLEDBD_AsignacionOPC.Inputs[OLE DB Destination Input]"
+                  name="Excel Source Output"
+                  startId="Package\CS_Comercial\DFT_AsignacionOPC\ES_AsignacionOPC.Outputs[Excel Source Output]" />
+              </paths>
+            </pipeline>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS"
+          DTS:CreationName="Microsoft.Pipeline"
+          DTS:Description="Data Flow Task"
+          DTS:DTSID="{0AF48087-2E49-4722-ABC9-A14D3785088E}"
+          DTS:ExecutableType="Microsoft.Pipeline"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="DFT_AuxilioEmbajadoresKLS"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <pipeline
+              version="1">
+              <components>
+                <component
+                  refId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\ES_ AuxilioEmbajadoresKLS"
+                  componentClassID="Microsoft.ExcelSource"
+                  contactInfo="Excel Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+                  description="Excel Source"
+                  name="ES_ AuxilioEmbajadoresKLS"
+                  usesDispositions="true"
+                  version="1">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">Hoja1$</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.String"
+                      description="The variable that contains the SQL command to be executed."
+                      name="SqlCommandVariable"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">0</property>
+                    <property
+                      dataType="System.String"
+                      description="The mapping from parameters in the SQL command to variables."
+                      name="ParameterMapping"></property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\ES_ AuxilioEmbajadoresKLS.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[AuxilioEmbajadoresKLS]"
+                      connectionManagerRefId="Package.ConnectionManagers[AuxilioEmbajadoresKLS]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\ES_ AuxilioEmbajadoresKLS.Outputs[Excel Source Output]"
+                      name="Excel Source Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\ES_ AuxilioEmbajadoresKLS.Outputs[Excel Source Output].Columns[Dia]"
+                          dataType="date"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\ES_ AuxilioEmbajadoresKLS.Outputs[Excel Source Output].ExternalColumns[Dia]"
+                          lineageId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\ES_ AuxilioEmbajadoresKLS.Outputs[Excel Source Output].Columns[Dia]"
+                          name="Dia"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\ES_ AuxilioEmbajadoresKLS.Outputs[Excel Source Output].Columns[Cod Sucursal]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\ES_ AuxilioEmbajadoresKLS.Outputs[Excel Source Output].ExternalColumns[Cod Sucursal]"
+                          length="255"
+                          lineageId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\ES_ AuxilioEmbajadoresKLS.Outputs[Excel Source Output].Columns[Cod Sucursal]"
+                          name="Cod Sucursal"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\ES_ AuxilioEmbajadoresKLS.Outputs[Excel Source Output].Columns[Zona]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\ES_ AuxilioEmbajadoresKLS.Outputs[Excel Source Output].ExternalColumns[Zona]"
+                          length="255"
+                          lineageId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\ES_ AuxilioEmbajadoresKLS.Outputs[Excel Source Output].Columns[Zona]"
+                          name="Zona"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\ES_ AuxilioEmbajadoresKLS.Outputs[Excel Source Output].Columns[C#O]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\ES_ AuxilioEmbajadoresKLS.Outputs[Excel Source Output].ExternalColumns[C#O]"
+                          length="255"
+                          lineageId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\ES_ AuxilioEmbajadoresKLS.Outputs[Excel Source Output].Columns[C#O]"
+                          name="C#O"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\ES_ AuxilioEmbajadoresKLS.Outputs[Excel Source Output].Columns[U#N]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\ES_ AuxilioEmbajadoresKLS.Outputs[Excel Source Output].ExternalColumns[U#N]"
+                          length="255"
+                          lineageId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\ES_ AuxilioEmbajadoresKLS.Outputs[Excel Source Output].Columns[U#N]"
+                          name="U#N"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\ES_ AuxilioEmbajadoresKLS.Outputs[Excel Source Output].Columns[Placa]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\ES_ AuxilioEmbajadoresKLS.Outputs[Excel Source Output].ExternalColumns[Placa]"
+                          length="255"
+                          lineageId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\ES_ AuxilioEmbajadoresKLS.Outputs[Excel Source Output].Columns[Placa]"
+                          name="Placa"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\ES_ AuxilioEmbajadoresKLS.Outputs[Excel Source Output].Columns[Documento_Conductor]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\ES_ AuxilioEmbajadoresKLS.Outputs[Excel Source Output].ExternalColumns[Documento_Conductor]"
+                          length="255"
+                          lineageId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\ES_ AuxilioEmbajadoresKLS.Outputs[Excel Source Output].Columns[Documento_Conductor]"
+                          name="Documento_Conductor"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\ES_ AuxilioEmbajadoresKLS.Outputs[Excel Source Output].Columns[Nombre_Conductor]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\ES_ AuxilioEmbajadoresKLS.Outputs[Excel Source Output].ExternalColumns[Nombre_Conductor]"
+                          length="255"
+                          lineageId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\ES_ AuxilioEmbajadoresKLS.Outputs[Excel Source Output].Columns[Nombre_Conductor]"
+                          name="Nombre_Conductor"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\ES_ AuxilioEmbajadoresKLS.Outputs[Excel Source Output].Columns[Documento_Relevador]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\ES_ AuxilioEmbajadoresKLS.Outputs[Excel Source Output].ExternalColumns[Documento_Relevador]"
+                          length="255"
+                          lineageId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\ES_ AuxilioEmbajadoresKLS.Outputs[Excel Source Output].Columns[Documento_Relevador]"
+                          name="Documento_Relevador"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\ES_ AuxilioEmbajadoresKLS.Outputs[Excel Source Output].Columns[Nombre_Relevador]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\ES_ AuxilioEmbajadoresKLS.Outputs[Excel Source Output].ExternalColumns[Nombre_Relevador]"
+                          length="255"
+                          lineageId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\ES_ AuxilioEmbajadoresKLS.Outputs[Excel Source Output].Columns[Nombre_Relevador]"
+                          name="Nombre_Relevador"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\ES_ AuxilioEmbajadoresKLS.Outputs[Excel Source Output].Columns[Canal]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\ES_ AuxilioEmbajadoresKLS.Outputs[Excel Source Output].ExternalColumns[Canal]"
+                          length="255"
+                          lineageId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\ES_ AuxilioEmbajadoresKLS.Outputs[Excel Source Output].Columns[Canal]"
+                          name="Canal"
+                          truncationRowDisposition="FailComponent" />
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\ES_ AuxilioEmbajadoresKLS.Outputs[Excel Source Output].ExternalColumns[Dia]"
+                          dataType="date"
+                          name="Dia" />
+                        <externalMetadataColumn
+                          refId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\ES_ AuxilioEmbajadoresKLS.Outputs[Excel Source Output].ExternalColumns[Cod Sucursal]"
+                          dataType="wstr"
+                          length="255"
+                          name="Cod Sucursal" />
+                        <externalMetadataColumn
+                          refId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\ES_ AuxilioEmbajadoresKLS.Outputs[Excel Source Output].ExternalColumns[Zona]"
+                          dataType="wstr"
+                          length="255"
+                          name="Zona" />
+                        <externalMetadataColumn
+                          refId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\ES_ AuxilioEmbajadoresKLS.Outputs[Excel Source Output].ExternalColumns[C#O]"
+                          dataType="wstr"
+                          length="255"
+                          name="C#O" />
+                        <externalMetadataColumn
+                          refId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\ES_ AuxilioEmbajadoresKLS.Outputs[Excel Source Output].ExternalColumns[U#N]"
+                          dataType="wstr"
+                          length="255"
+                          name="U#N" />
+                        <externalMetadataColumn
+                          refId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\ES_ AuxilioEmbajadoresKLS.Outputs[Excel Source Output].ExternalColumns[Placa]"
+                          dataType="wstr"
+                          length="255"
+                          name="Placa" />
+                        <externalMetadataColumn
+                          refId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\ES_ AuxilioEmbajadoresKLS.Outputs[Excel Source Output].ExternalColumns[Documento_Conductor]"
+                          dataType="wstr"
+                          length="255"
+                          name="Documento_Conductor" />
+                        <externalMetadataColumn
+                          refId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\ES_ AuxilioEmbajadoresKLS.Outputs[Excel Source Output].ExternalColumns[Nombre_Conductor]"
+                          dataType="wstr"
+                          length="255"
+                          name="Nombre_Conductor" />
+                        <externalMetadataColumn
+                          refId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\ES_ AuxilioEmbajadoresKLS.Outputs[Excel Source Output].ExternalColumns[Documento_Relevador]"
+                          dataType="wstr"
+                          length="255"
+                          name="Documento_Relevador" />
+                        <externalMetadataColumn
+                          refId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\ES_ AuxilioEmbajadoresKLS.Outputs[Excel Source Output].ExternalColumns[Nombre_Relevador]"
+                          dataType="wstr"
+                          length="255"
+                          name="Nombre_Relevador" />
+                        <externalMetadataColumn
+                          refId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\ES_ AuxilioEmbajadoresKLS.Outputs[Excel Source Output].ExternalColumns[Canal]"
+                          dataType="wstr"
+                          length="255"
+                          name="Canal" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\ES_ AuxilioEmbajadoresKLS.Outputs[Excel Source Error Output]"
+                      isErrorOut="true"
+                      name="Excel Source Error Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\ES_ AuxilioEmbajadoresKLS.Outputs[Excel Source Error Output].Columns[Dia]"
+                          dataType="date"
+                          lineageId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\ES_ AuxilioEmbajadoresKLS.Outputs[Excel Source Error Output].Columns[Dia]"
+                          name="Dia" />
+                        <outputColumn
+                          refId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\ES_ AuxilioEmbajadoresKLS.Outputs[Excel Source Error Output].Columns[Cod Sucursal]"
+                          dataType="wstr"
+                          length="255"
+                          lineageId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\ES_ AuxilioEmbajadoresKLS.Outputs[Excel Source Error Output].Columns[Cod Sucursal]"
+                          name="Cod Sucursal" />
+                        <outputColumn
+                          refId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\ES_ AuxilioEmbajadoresKLS.Outputs[Excel Source Error Output].Columns[Zona]"
+                          dataType="wstr"
+                          length="255"
+                          lineageId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\ES_ AuxilioEmbajadoresKLS.Outputs[Excel Source Error Output].Columns[Zona]"
+                          name="Zona" />
+                        <outputColumn
+                          refId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\ES_ AuxilioEmbajadoresKLS.Outputs[Excel Source Error Output].Columns[C#O]"
+                          dataType="wstr"
+                          length="255"
+                          lineageId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\ES_ AuxilioEmbajadoresKLS.Outputs[Excel Source Error Output].Columns[C#O]"
+                          name="C#O" />
+                        <outputColumn
+                          refId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\ES_ AuxilioEmbajadoresKLS.Outputs[Excel Source Error Output].Columns[U#N]"
+                          dataType="wstr"
+                          length="255"
+                          lineageId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\ES_ AuxilioEmbajadoresKLS.Outputs[Excel Source Error Output].Columns[U#N]"
+                          name="U#N" />
+                        <outputColumn
+                          refId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\ES_ AuxilioEmbajadoresKLS.Outputs[Excel Source Error Output].Columns[Placa]"
+                          dataType="wstr"
+                          length="255"
+                          lineageId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\ES_ AuxilioEmbajadoresKLS.Outputs[Excel Source Error Output].Columns[Placa]"
+                          name="Placa" />
+                        <outputColumn
+                          refId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\ES_ AuxilioEmbajadoresKLS.Outputs[Excel Source Error Output].Columns[Documento_Conductor]"
+                          dataType="wstr"
+                          length="255"
+                          lineageId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\ES_ AuxilioEmbajadoresKLS.Outputs[Excel Source Error Output].Columns[Documento_Conductor]"
+                          name="Documento_Conductor" />
+                        <outputColumn
+                          refId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\ES_ AuxilioEmbajadoresKLS.Outputs[Excel Source Error Output].Columns[Nombre_Conductor]"
+                          dataType="wstr"
+                          length="255"
+                          lineageId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\ES_ AuxilioEmbajadoresKLS.Outputs[Excel Source Error Output].Columns[Nombre_Conductor]"
+                          name="Nombre_Conductor" />
+                        <outputColumn
+                          refId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\ES_ AuxilioEmbajadoresKLS.Outputs[Excel Source Error Output].Columns[Documento_Relevador]"
+                          dataType="wstr"
+                          length="255"
+                          lineageId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\ES_ AuxilioEmbajadoresKLS.Outputs[Excel Source Error Output].Columns[Documento_Relevador]"
+                          name="Documento_Relevador" />
+                        <outputColumn
+                          refId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\ES_ AuxilioEmbajadoresKLS.Outputs[Excel Source Error Output].Columns[Nombre_Relevador]"
+                          dataType="wstr"
+                          length="255"
+                          lineageId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\ES_ AuxilioEmbajadoresKLS.Outputs[Excel Source Error Output].Columns[Nombre_Relevador]"
+                          name="Nombre_Relevador" />
+                        <outputColumn
+                          refId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\ES_ AuxilioEmbajadoresKLS.Outputs[Excel Source Error Output].Columns[Canal]"
+                          dataType="wstr"
+                          length="255"
+                          lineageId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\ES_ AuxilioEmbajadoresKLS.Outputs[Excel Source Error Output].Columns[Canal]"
+                          name="Canal" />
+                        <outputColumn
+                          refId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\ES_ AuxilioEmbajadoresKLS.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\ES_ AuxilioEmbajadoresKLS.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\ES_ AuxilioEmbajadoresKLS.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\ES_ AuxilioEmbajadoresKLS.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\OLEDBD_AuxilioEmbajadoresKLS"
+                  componentClassID="Microsoft.OLEDBDestination"
+                  contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+                  description="OLE DB Destination"
+                  name="OLEDBD_AuxilioEmbajadoresKLS"
+                  usesDispositions="true"
+                  version="4">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[xls].[AuxilioEmbajadoresKLS]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">3</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepIdentity">false</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                      name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                      name="FastLoadMaxInsertCommitSize">2147483647</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\OLEDBD_AuxilioEmbajadoresKLS.Connections[OleDbConnection]"
+                      connectionManagerID="{F969E5F0-ED10-48A1-9AD7-51F9863F78B9}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[DataStage]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\OLEDBD_AuxilioEmbajadoresKLS.Inputs[OLE DB Destination Input]"
+                      errorOrTruncationOperation="Insert"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="OLE DB Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\OLEDBD_AuxilioEmbajadoresKLS.Inputs[OLE DB Destination Input].Columns[Dia]"
+                          cachedDataType="date"
+                          cachedName="Dia"
+                          externalMetadataColumnId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\OLEDBD_AuxilioEmbajadoresKLS.Inputs[OLE DB Destination Input].ExternalColumns[Dia]"
+                          lineageId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\ES_ AuxilioEmbajadoresKLS.Outputs[Excel Source Output].Columns[Dia]" />
+                        <inputColumn
+                          refId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\OLEDBD_AuxilioEmbajadoresKLS.Inputs[OLE DB Destination Input].Columns[Cod Sucursal]"
+                          cachedDataType="wstr"
+                          cachedLength="255"
+                          cachedName="Cod Sucursal"
+                          externalMetadataColumnId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\OLEDBD_AuxilioEmbajadoresKLS.Inputs[OLE DB Destination Input].ExternalColumns[Cod Sucursal]"
+                          lineageId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\ES_ AuxilioEmbajadoresKLS.Outputs[Excel Source Output].Columns[Cod Sucursal]" />
+                        <inputColumn
+                          refId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\OLEDBD_AuxilioEmbajadoresKLS.Inputs[OLE DB Destination Input].Columns[Zona]"
+                          cachedDataType="wstr"
+                          cachedLength="255"
+                          cachedName="Zona"
+                          externalMetadataColumnId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\OLEDBD_AuxilioEmbajadoresKLS.Inputs[OLE DB Destination Input].ExternalColumns[Zona]"
+                          lineageId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\ES_ AuxilioEmbajadoresKLS.Outputs[Excel Source Output].Columns[Zona]" />
+                        <inputColumn
+                          refId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\OLEDBD_AuxilioEmbajadoresKLS.Inputs[OLE DB Destination Input].Columns[C#O]"
+                          cachedDataType="wstr"
+                          cachedLength="255"
+                          cachedName="C#O"
+                          externalMetadataColumnId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\OLEDBD_AuxilioEmbajadoresKLS.Inputs[OLE DB Destination Input].ExternalColumns[C#O]"
+                          lineageId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\ES_ AuxilioEmbajadoresKLS.Outputs[Excel Source Output].Columns[C#O]" />
+                        <inputColumn
+                          refId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\OLEDBD_AuxilioEmbajadoresKLS.Inputs[OLE DB Destination Input].Columns[U#N]"
+                          cachedDataType="wstr"
+                          cachedLength="255"
+                          cachedName="U#N"
+                          externalMetadataColumnId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\OLEDBD_AuxilioEmbajadoresKLS.Inputs[OLE DB Destination Input].ExternalColumns[U#N]"
+                          lineageId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\ES_ AuxilioEmbajadoresKLS.Outputs[Excel Source Output].Columns[U#N]" />
+                        <inputColumn
+                          refId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\OLEDBD_AuxilioEmbajadoresKLS.Inputs[OLE DB Destination Input].Columns[Placa]"
+                          cachedDataType="wstr"
+                          cachedLength="255"
+                          cachedName="Placa"
+                          externalMetadataColumnId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\OLEDBD_AuxilioEmbajadoresKLS.Inputs[OLE DB Destination Input].ExternalColumns[Placa]"
+                          lineageId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\ES_ AuxilioEmbajadoresKLS.Outputs[Excel Source Output].Columns[Placa]" />
+                        <inputColumn
+                          refId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\OLEDBD_AuxilioEmbajadoresKLS.Inputs[OLE DB Destination Input].Columns[Documento_Conductor]"
+                          cachedDataType="wstr"
+                          cachedLength="255"
+                          cachedName="Documento_Conductor"
+                          externalMetadataColumnId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\OLEDBD_AuxilioEmbajadoresKLS.Inputs[OLE DB Destination Input].ExternalColumns[Documento_Conductor]"
+                          lineageId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\ES_ AuxilioEmbajadoresKLS.Outputs[Excel Source Output].Columns[Documento_Conductor]" />
+                        <inputColumn
+                          refId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\OLEDBD_AuxilioEmbajadoresKLS.Inputs[OLE DB Destination Input].Columns[Nombre_Conductor]"
+                          cachedDataType="wstr"
+                          cachedLength="255"
+                          cachedName="Nombre_Conductor"
+                          externalMetadataColumnId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\OLEDBD_AuxilioEmbajadoresKLS.Inputs[OLE DB Destination Input].ExternalColumns[Nombre_Conductor]"
+                          lineageId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\ES_ AuxilioEmbajadoresKLS.Outputs[Excel Source Output].Columns[Nombre_Conductor]" />
+                        <inputColumn
+                          refId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\OLEDBD_AuxilioEmbajadoresKLS.Inputs[OLE DB Destination Input].Columns[Documento_Relevador]"
+                          cachedDataType="wstr"
+                          cachedLength="255"
+                          cachedName="Documento_Relevador"
+                          externalMetadataColumnId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\OLEDBD_AuxilioEmbajadoresKLS.Inputs[OLE DB Destination Input].ExternalColumns[Documento_Relevador]"
+                          lineageId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\ES_ AuxilioEmbajadoresKLS.Outputs[Excel Source Output].Columns[Documento_Relevador]" />
+                        <inputColumn
+                          refId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\OLEDBD_AuxilioEmbajadoresKLS.Inputs[OLE DB Destination Input].Columns[Nombre_Relevador]"
+                          cachedDataType="wstr"
+                          cachedLength="255"
+                          cachedName="Nombre_Relevador"
+                          externalMetadataColumnId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\OLEDBD_AuxilioEmbajadoresKLS.Inputs[OLE DB Destination Input].ExternalColumns[Nombre_Relevador]"
+                          lineageId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\ES_ AuxilioEmbajadoresKLS.Outputs[Excel Source Output].Columns[Nombre_Relevador]" />
+                        <inputColumn
+                          refId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\OLEDBD_AuxilioEmbajadoresKLS.Inputs[OLE DB Destination Input].Columns[Canal]"
+                          cachedDataType="wstr"
+                          cachedLength="255"
+                          cachedName="Canal"
+                          externalMetadataColumnId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\OLEDBD_AuxilioEmbajadoresKLS.Inputs[OLE DB Destination Input].ExternalColumns[Canal]"
+                          lineageId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\ES_ AuxilioEmbajadoresKLS.Outputs[Excel Source Output].Columns[Canal]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\OLEDBD_AuxilioEmbajadoresKLS.Inputs[OLE DB Destination Input].ExternalColumns[Dia]"
+                          dataType="dbTimeStamp"
+                          name="Dia" />
+                        <externalMetadataColumn
+                          refId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\OLEDBD_AuxilioEmbajadoresKLS.Inputs[OLE DB Destination Input].ExternalColumns[Cod Sucursal]"
+                          dataType="wstr"
+                          length="255"
+                          name="Cod Sucursal" />
+                        <externalMetadataColumn
+                          refId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\OLEDBD_AuxilioEmbajadoresKLS.Inputs[OLE DB Destination Input].ExternalColumns[Zona]"
+                          dataType="wstr"
+                          length="255"
+                          name="Zona" />
+                        <externalMetadataColumn
+                          refId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\OLEDBD_AuxilioEmbajadoresKLS.Inputs[OLE DB Destination Input].ExternalColumns[C#O]"
+                          dataType="wstr"
+                          length="255"
+                          name="C#O" />
+                        <externalMetadataColumn
+                          refId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\OLEDBD_AuxilioEmbajadoresKLS.Inputs[OLE DB Destination Input].ExternalColumns[U#N]"
+                          dataType="wstr"
+                          length="255"
+                          name="U#N" />
+                        <externalMetadataColumn
+                          refId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\OLEDBD_AuxilioEmbajadoresKLS.Inputs[OLE DB Destination Input].ExternalColumns[Placa]"
+                          dataType="wstr"
+                          length="255"
+                          name="Placa" />
+                        <externalMetadataColumn
+                          refId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\OLEDBD_AuxilioEmbajadoresKLS.Inputs[OLE DB Destination Input].ExternalColumns[Documento_Conductor]"
+                          dataType="wstr"
+                          length="255"
+                          name="Documento_Conductor" />
+                        <externalMetadataColumn
+                          refId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\OLEDBD_AuxilioEmbajadoresKLS.Inputs[OLE DB Destination Input].ExternalColumns[Nombre_Conductor]"
+                          dataType="wstr"
+                          length="255"
+                          name="Nombre_Conductor" />
+                        <externalMetadataColumn
+                          refId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\OLEDBD_AuxilioEmbajadoresKLS.Inputs[OLE DB Destination Input].ExternalColumns[Documento_Relevador]"
+                          dataType="wstr"
+                          length="255"
+                          name="Documento_Relevador" />
+                        <externalMetadataColumn
+                          refId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\OLEDBD_AuxilioEmbajadoresKLS.Inputs[OLE DB Destination Input].ExternalColumns[Nombre_Relevador]"
+                          dataType="wstr"
+                          length="255"
+                          name="Nombre_Relevador" />
+                        <externalMetadataColumn
+                          refId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\OLEDBD_AuxilioEmbajadoresKLS.Inputs[OLE DB Destination Input].ExternalColumns[Canal]"
+                          dataType="wstr"
+                          length="255"
+                          name="Canal" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\OLEDBD_AuxilioEmbajadoresKLS.Outputs[OLE DB Destination Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="OLE DB Destination Error Output"
+                      synchronousInputId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\OLEDBD_AuxilioEmbajadoresKLS.Inputs[OLE DB Destination Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\OLEDBD_AuxilioEmbajadoresKLS.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\OLEDBD_AuxilioEmbajadoresKLS.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\OLEDBD_AuxilioEmbajadoresKLS.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\OLEDBD_AuxilioEmbajadoresKLS.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+              </components>
+              <paths>
+                <path
+                  refId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS.Paths[Excel Source Output]"
+                  endId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\OLEDBD_AuxilioEmbajadoresKLS.Inputs[OLE DB Destination Input]"
+                  name="Excel Source Output"
+                  startId="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\ES_ AuxilioEmbajadoresKLS.Outputs[Excel Source Output]" />
+              </paths>
+            </pipeline>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
           DTS:refId="Package\CS_Comercial\DFT_Carga_PresupuestosPorVendedor"
           DTS:CreationName="Microsoft.Pipeline"
           DTS:Description="Data Flow Task"
@@ -2056,10 +3491,34 @@
         <DTS:PrecedenceConstraint
           DTS:refId="Package\CS_Comercial.PrecedenceConstraints[Restricción]"
           DTS:CreationName=""
-          DTS:DTSID="{4561D7A9-71E5-4BB1-8138-92C8C78C02A0}"
+          DTS:DTSID="{4131AAF8-2E76-4934-9409-130BEE12E652}"
           DTS:From="Package\CS_Comercial\DFT_Carga_PresupuestosPorVendedor"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Restricción"
+          DTS:To="Package\CS_Comercial\DFT_AsignacionOPC" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\CS_Comercial.PrecedenceConstraints[Restricción 1]"
+          DTS:CreationName=""
+          DTS:DTSID="{50BA7B41-360A-483A-B642-03BC866F91C8}"
+          DTS:From="Package\CS_Comercial\DFT_AsignacionOPC"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Restricción 1"
+          DTS:To="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\CS_Comercial.PrecedenceConstraints[Restricción 2]"
+          DTS:CreationName=""
+          DTS:DTSID="{4BA795E2-C770-4671-8894-66CCAAAFDE62}"
+          DTS:From="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Restricción 2"
+          DTS:To="Package\CS_Comercial\DFT_ MetaComercial" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\CS_Comercial.PrecedenceConstraints[Restricción 3]"
+          DTS:CreationName=""
+          DTS:DTSID="{2EF4CD5D-22AE-43A0-979A-3C6607FEC82D}"
+          DTS:From="Package\CS_Comercial\DFT_ MetaComercial"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Restricción 3"
           DTS:To="Package\CS_Comercial\CBF_Subsidios" />
       </DTS:PrecedenceConstraints>
     </DTS:Executable>
@@ -22270,25 +23729,103 @@
           PanelSize="226.4,138.4"
           Size="226.4,181.6"
           Id="Package\CS_Comercial\CBF_Subsidios"
-          TopLeft="47.0333098991965,134.671925223671" />
+          TopLeft="47.8666431869985,128.605258599191" />
         <NodeLayout
           Size="269.6,41.6"
           Id="Package\CS_Comercial\DFT_Carga_PresupuestosPorVendedor"
-          TopLeft="32.9082925548601,45.4210619363858" />
+          TopLeft="32.074959267058,46.2877285970255" />
+        <NodeLayout
+          Size="177.6,41.6"
+          Id="Package\CS_Comercial\DFT_AsignacionOPC"
+          TopLeft="335.166643764411,52.0666634062267" />
         <EdgeLayout
           Id="Package\CS_Comercial.PrecedenceConstraints[Restricción]"
-          TopLeft="163.970801227028,87.0210619363858">
+          TopLeft="301.674959267058,69.9771960016261">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,47.6508632872851"
+              EndConnector="33.4916844973529,0"
               Start="0,0"
-              End="0,40.1508632872851">
+              End="25.9916844973529,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,40.1508632872851" />
+                    End="25.9916844973529,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="216,41.6"
+          Id="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS"
+          TopLeft="315.166644857163,121.399996257424" />
+        <EdgeLayout
+          Id="Package\CS_Comercial.PrecedenceConstraints[Restricción 1]"
+          TopLeft="423.566644310787,93.6666634062267">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,27.7333328511977"
+              Start="0,0"
+              End="0,20.2333328511977">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,20.2333328511977" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="176.8,41.6"
+          Id="Package\CS_Comercial\DFT_ MetaComercial"
+          TopLeft="336.833310340015,195.933329072462" />
+        <EdgeLayout
+          Id="Package\CS_Comercial.PrecedenceConstraints[Restricción 2]"
+          TopLeft="424.199977598589,162.999996257424">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,32.9333328150377"
+              Start="0,0"
+              End="0,25.4333328150377">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,25.4333328150377" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\CS_Comercial.PrecedenceConstraints[Restricción 3]"
+          TopLeft="336.833310340015,218.069293835827">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-62.5666671530161,0"
+              Start="0,0"
+              End="-55.0666671530161,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-55.0666671530161,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -22311,28 +23848,28 @@
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="224,121.6"
-          Size="224,164.8"
+          PanelSize="208.8,121.6"
+          Size="208.8,164.8"
           Id="Package\CS_Mantenimiento\CBF_Wizeo"
           TopLeft="60.1666194506837,158.533331223991" />
         <NodeLayout
           Size="172,42.4"
           Id="Package\CS_Mantenimiento\DFT_Carga_Terpel"
-          TopLeft="87.6666179481501,75.3333316579129" />
+          TopLeft="70.9999521921098,73.599998336633" />
         <EdgeLayout
           Id="Package\CS_Mantenimiento.PrecedenceConstraints[Restricción]"
-          TopLeft="172.916618699417,117.733331657913">
+          TopLeft="160.783285821397,115.999998336633">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,40.7999995660783"
+              EndConnector="0,42.5333328873581"
               Start="0,0"
-              End="0,33.2999995660783">
+              End="0,35.0333328873581">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,33.2999995660783" />
+                    End="0,35.0333328873581" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -22436,7 +23973,7 @@
           PanelSize="450.4,209.6"
           Size="450.4,252.8"
           Id="Package\CS_talento_humano"
-          TopLeft="756.499953967831,748.466664057109" />
+          TopLeft="752.333287528821,779.666663840148" />
         <NodeLayout
           Size="202.4,41.6"
           Id="Package\CS_TI\CBF_CLaro_Datos_Excel\DFT_Carga_Archivo_datos"
@@ -22694,18 +24231,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción 2]"
-          TopLeft="977.91662225086,638.333332616157">
+          TopLeft="975.833289031355,638.333332616157">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,110.133331440952"
+              EndConnector="0,141.333331223991"
               Start="0,0"
-              End="0,102.633331440952">
+              End="0,133.833331223991">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,102.633331440952" />
+                    End="0,133.833331223991" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -22716,30 +24253,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción 3]"
-          TopLeft="756.499953967831,874.866664057109">
+          TopLeft="752.333287528821,908.833329768545">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-85.9332918998283,36.733331639833"
+              EndConnector="-81.7666254608182,0"
               Start="0,0"
-              End="-78.4332918998283,36.733331639833">
+              End="-74.2666254608182,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="-38.9666459499142,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-38.9666459499142,0"
-                    Point2="-42.9666459499142,0"
-                    Point3="-42.9666459499142,4" />
-                  <mssgle:LineSegment
-                    End="-42.9666459499142,32.733331639833" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-42.9666459499142,32.733331639833"
-                    Point2="-42.9666459499142,36.733331639833"
-                    Point3="-46.9666459499142,36.733331639833" />
-                  <mssgle:LineSegment
-                    End="-78.4332918998283,36.733331639833" />
+                    End="-74.2666254608182,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -22755,7 +24280,7 @@
     design-time-name="Package\CS_Comercial\CBF_Subsidios\DFT_Carga_Subsidios">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="148,42.4"
           Id="Package\CS_Comercial\CBF_Subsidios\DFT_Carga_Subsidios\OE_Subsidios"
@@ -22787,7 +24312,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -22809,7 +24336,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -22845,7 +24374,7 @@
     design-time-name="Package\CS_Comercial\DFT_Carga_PresupuestosPorVendedor">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="264,42.4"
           Id="Package\CS_Comercial\DFT_Carga_PresupuestosPorVendedor\OE_Carga_PresupuestosPorVendedor"
@@ -22877,7 +24406,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -22899,7 +24430,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -23017,30 +24550,6 @@
           Id="Package\CS_Mantenimiento\DFT_Carga_Terpel\DC_ Terpel"
           TopLeft="1104.00000722706,133.087719117946" />
         <EdgeLayout
-          Id="Package\CS_Mantenimiento\DFT_Carga_Terpel.Paths[Excel Source Output]"
-          TopLeft="1169.8333405604,88.0877191179457">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,45"
-              Start="0,0"
-              End="0,37.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,37.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
           Id="Package\CS_Mantenimiento\DFT_Carga_Terpel.Paths[Salida de conversión de datos]"
           TopLeft="1170.66667389373,175.754385784612">
           <EdgeLayout.Curve>
@@ -23054,6 +24563,30 @@
                   Capacity="5">
                   <mssgle:LineSegment
                     End="0,38.8333333333333" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\CS_Mantenimiento\DFT_Carga_Terpel.Paths[Excel Source Output]"
+          TopLeft="1169.8333405604,88.0877191179457">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,45"
+              Start="0,0"
+              End="0,37.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,37.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -23603,7 +25136,7 @@
     design-time-name="Package\CS_talento_humano\DFT_Incapacidad">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="157.6,42.4"
           Id="Package\CS_talento_humano\DFT_Incapacidad\ES_Incapacidad"
@@ -23631,7 +25164,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -23641,15 +25176,15 @@
     design-time-name="Package\CS_talento_humano\DFT_InformeIncapacidad">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="189.6,41.6"
-          Id="Package\CS_talento_humano\DFT_InformeIncapacidad\ES_InformeIncapacidad"
-          TopLeft="1122.999983266,65.9999990165234" />
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="171.2,41.6"
           Id="Package\CS_talento_humano\DFT_InformeIncapacidad\OLE DB Destination"
           TopLeft="1132.99998311698,164.999997541308" />
+        <NodeLayout
+          Size="189.6,41.6"
+          Id="Package\CS_talento_humano\DFT_InformeIncapacidad\ES_InformeIncapacidad"
+          TopLeft="1122.999983266,65.9999990165234" />
         <EdgeLayout
           Id="Package\CS_talento_humano\DFT_InformeIncapacidad.Paths[Excel Source Output]"
           TopLeft="1218.19998319149,107.599999016523">
@@ -23669,7 +25204,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -23931,30 +25468,6 @@
           Id="Package\CS_TI\DFT_Carga_LineasRayogas\DOLEDB_Lineas"
           TopLeft="570,245" />
         <EdgeLayout
-          Id="Package\CS_TI\DFT_Carga_LineasRayogas.Paths[Salida de conversión de datos]"
-          TopLeft="647.5,200">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,45"
-              Start="0,0"
-              End="0,37.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,37.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
           Id="Package\CS_TI\DFT_Carga_LineasRayogas.Paths[Salida de origen de Excel]"
           TopLeft="651.5,121">
           <EdgeLayout.Curve>
@@ -23978,6 +25491,30 @@
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <EdgeLayout
+          Id="Package\CS_TI\DFT_Carga_LineasRayogas.Paths[Salida de conversión de datos]"
+          TopLeft="647.5,200">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,45"
+              Start="0,0"
+              End="0,37.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,37.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
@@ -23985,15 +25522,15 @@
     design-time-name="Package\CS_TI\DFT_IndicadoresTI">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="182.4,41.6"
-          Id="Package\CS_TI\DFT_IndicadoresTI\OLEDB_IndicadoresTI"
-          TopLeft="576.833301856287,180.399998737574" />
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="160.8,41.6"
           Id="Package\CS_TI\DFT_IndicadoresTI\ES_IndicadoresTI"
           TopLeft="584.166634749209,80.8666660884354" />
+        <NodeLayout
+          Size="182.4,41.6"
+          Id="Package\CS_TI\DFT_IndicadoresTI\OLEDB_IndicadoresTI"
+          TopLeft="576.833301856287,180.399998737574" />
         <EdgeLayout
           Id="Package\CS_TI\DFT_IndicadoresTI.Paths[Excel Source Output]"
           TopLeft="666.299968302748,122.466666088435">
@@ -24013,7 +25550,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -24049,15 +25588,15 @@
     design-time-name="Package\CS_TI\DFT_MesaAyuda">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="156,42.4"
-          Id="Package\CS_TI\DFT_MesaAyuda\ES_MesaAyuda"
-          TopLeft="688.374989742413,49.2631588219936" />
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="185.6,42.4"
           Id="Package\CS_TI\DFT_MesaAyuda\OLEDBD_MesaAyuda"
           TopLeft="679.374989876524,164.89473994584" />
+        <NodeLayout
+          Size="156,42.4"
+          Id="Package\CS_TI\DFT_MesaAyuda\ES_MesaAyuda"
+          TopLeft="688.374989742413,49.2631588219936" />
         <EdgeLayout
           Id="Package\CS_TI\DFT_MesaAyuda.Paths[Excel Source Output]"
           TopLeft="769.274989809468,91.6631588219936">
@@ -24077,7 +25616,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -24100,15 +25641,15 @@
     design-time-name="Package\CS_TI\DFT_Satisfaccion">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="154.4,41.6"
-          Id="Package\CS_TI\DFT_Satisfaccion\ES_Satisfaccion"
-          TopLeft="1011.99998492002,79.9999988079071" />
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="175.2,41.6"
           Id="Package\CS_TI\DFT_Satisfaccion\OLEDB_Satisfaccion"
           TopLeft="1002.99998505414,175.999997377396" />
+        <NodeLayout
+          Size="154.4,41.6"
+          Id="Package\CS_TI\DFT_Satisfaccion\ES_Satisfaccion"
+          TopLeft="1011.99998492002,79.9999988079071" />
         <EdgeLayout
           Id="Package\CS_TI\DFT_Satisfaccion.Paths[Excel Source Output]"
           TopLeft="1089.89998498708,121.599998807907">
@@ -24128,7 +25669,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -24252,5 +25795,197 @@
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <TaskHost
+    design-time-name="Package\CS_Comercial\DFT_AsignacionOPC">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="171.2,41.6"
+          Id="Package\CS_Comercial\DFT_AsignacionOPC\ES_AsignacionOPC"
+          TopLeft="982.999985352159,24.999999627471" />
+        <NodeLayout
+          Size="200.8,41.6"
+          Id="Package\CS_Comercial\DFT_AsignacionOPC\OLEDBD_AsignacionOPC"
+          TopLeft="970.999985530973,130.999998047948" />
+        <EdgeLayout
+          Id="Package\CS_Comercial\DFT_AsignacionOPC.Paths[Excel Source Output]"
+          TopLeft="1069.99998544157,66.599999627471">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,64.3999984204769"
+              Start="0,0"
+              End="0,56.8999984204769">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,56.8999984204769" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\CS_Comercial\DFT_AsignacionOPC\ES_AsignacionOPC">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\CS_Comercial\DFT_AsignacionOPC\OLEDBD_AsignacionOPC">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="212.8,41.6"
+          Id="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\ES_ AuxilioEmbajadoresKLS"
+          TopLeft="1071.99998402596,62.9999990612269" />
+        <NodeLayout
+          Size="238.4,41.6"
+          Id="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\OLEDBD_AuxilioEmbajadoresKLS"
+          TopLeft="1055.99998426437,165.999997526407" />
+        <EdgeLayout
+          Id="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS.Paths[Excel Source Output]"
+          TopLeft="1176.79998414516,104.599999061227">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,61.3999984651803"
+              Start="0,0"
+              End="0,53.8999984651803">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,53.8999984651803" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\ES_ AuxilioEmbajadoresKLS">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\OLEDBD_AuxilioEmbajadoresKLS">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\CS_Comercial\DFT_ MetaComercial">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="168,41.6"
+          Id="Package\CS_Comercial\DFT_ MetaComercial\ES_MetaComercial"
+          TopLeft="940.999985978008,68.9999989718198" />
+        <NodeLayout
+          Size="200,41.6"
+          Id="Package\CS_Comercial\DFT_ MetaComercial\OLEDBD_ MetaComercial"
+          TopLeft="923.999986231327,181.999997287989" />
+        <EdgeLayout
+          Id="Package\CS_Comercial\DFT_ MetaComercial.Paths[Excel Source Output]"
+          TopLeft="1024.49998610467,110.59999897182">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,71.3999983161688"
+              Start="0,0"
+              End="0,63.8999983161688">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,63.8999983161688" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\CS_Comercial\DFT_ MetaComercial\ES_MetaComercial">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\CS_Comercial\DFT_ MetaComercial\OLEDBD_ MetaComercial">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
 </Objects>]]></DTS:DesignTimeProperties>
 </DTS:Executable>
