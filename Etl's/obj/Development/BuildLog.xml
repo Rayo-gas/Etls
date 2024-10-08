@@ -2,7 +2,7 @@
 <BuildLog xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <ProjectInfo>
     <Name>Etl's</Name>
-    <LastWriteTime>2024-10-08T15:28:10.5645998Z</LastWriteTime>
+    <LastWriteTime>2024-10-08T16:47:41.3861294Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
@@ -18,17 +18,17 @@
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>CloudFleet.dtsx</Name>
-      <LastWriteTime>2024-09-23T16:27:03.990716Z</LastWriteTime>
+      <LastWriteTime>2024-10-08T16:52:50.0367049Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>ituran.dtsx</Name>
-      <LastWriteTime>2024-09-23T16:27:04.1841276Z</LastWriteTime>
+      <LastWriteTime>2024-10-08T17:24:13.4985328Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>Terpel.dtsx</Name>
-      <LastWriteTime>2024-09-23T16:27:04.1672549Z</LastWriteTime>
+      <LastWriteTime>2024-10-08T17:23:15.6582315Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
@@ -48,12 +48,7 @@
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>Merge.dtsx</Name>
-      <LastWriteTime>2024-10-08T15:53:51.4414025Z</LastWriteTime>
-      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
-    </ProjectBuildItemInfo>
-    <ProjectBuildItemInfo>
-      <Name>Meger_SP.dtsx</Name>
-      <LastWriteTime>2024-10-08T15:28:10.5425937Z</LastWriteTime>
+      <LastWriteTime>2024-10-08T21:49:45.4105498Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>

@@ -11,8 +11,8 @@
   DTS:LocaleID="9226"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="11"
-  DTS:VersionGUID="{4E16BE88-BCBE-47CF-A474-35D9DCEC53E8}">
+  DTS:VersionBuild="12"
+  DTS:VersionGUID="{B6C28485-7D15-4CD3-B122-2365C4CC13C1}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -672,7 +672,7 @@
               <connections>
                 <connection
                   refId="Package\DFT_Terpel\OLEDBS_Tb_Terpel_001_Token.Connections[OleDbConnection]"
-                  connectionManagerID="{4632C0A1-E45F-4752-AF2F-EB57D4CFF5D6}:external"
+                  connectionManagerID="{73B86999-3A25-4AA2-A2B7-78C563C5932A}:external"
                   connectionManagerRefId="Project.ConnectionManagers[REPOSITORIO_MTTO]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
@@ -946,7 +946,7 @@
               <connections>
                 <connection
                   refId="Package\DFT_Terpel\OLEDBS_Tb_Terpel_002_Ventas.Connections[OleDbConnection]"
-                  connectionManagerID="{4632C0A1-E45F-4752-AF2F-EB57D4CFF5D6}:external"
+                  connectionManagerID="{73B86999-3A25-4AA2-A2B7-78C563C5932A}:external"
                   connectionManagerRefId="Project.ConnectionManagers[REPOSITORIO_MTTO]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
@@ -1520,27 +1520,27 @@
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="136,42.6666666666667"
+          Size="136,42.4"
           Id="Package\DFT_Terpel"
-          TopLeft="557.500000782311,125.039474834696" />
+          TopLeft="273.333349641826,127.639474816616" />
         <NodeLayout
-          Size="158.666666666667,42.6666666666667"
+          Size="158.4,42.4"
           Id="Package\TESQL_truncate"
-          TopLeft="546.874975552783,48.5789468350338" />
+          TopLeft="263.5416577001,51.1789468169537" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción]"
-          TopLeft="625.854154834214,91.2456135017005">
+          TopLeft="342.037503670963,93.5789468169537">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,33.7938613329955"
+              EndConnector="0,34.0605279996622"
               Start="0,0"
-              End="0,26.2938613329955">
+              End="0,26.5605279996622">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,26.2938613329955" />
+                    End="0,26.5605279996622" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1558,19 +1558,19 @@
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="237.333333333334,42.6666666666667"
+          Size="237.6,42.4"
           Id="Package\DFT_Terpel\OLEDBS_Tb_Terpel_001_Token"
           TopLeft="419.374993750826,70.4561416644909" />
         <NodeLayout
-          Size="240,42.6666666666667"
+          Size="240,42.4"
           Id="Package\DFT_Terpel\OLEDBS_Tb_Terpel_002_Ventas"
           TopLeft="836.249987538904,71.157896076213" />
         <NodeLayout
-          Size="241.333333333334,44"
+          Size="241.6,44"
           Id="Package\DFT_Terpel\OLEDBD_Tb_Terpel_002_Ventas"
           TopLeft="838.749987501651,166.263161024228" />
         <NodeLayout
-          Size="237.333333333334,42"
+          Size="237.6,41.6"
           Id="Package\DFT_Terpel\OLEDBD_Tb_Terpel_001_Token"
           TopLeft="415.624993806705,170.350880386867" />
         <EdgeLayout
