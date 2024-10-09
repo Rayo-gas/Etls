@@ -11,8 +11,8 @@
   DTS:LocaleID="9226"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="364"
-  DTS:VersionGUID="{36A4F77F-CB85-4058-AA70-4228CCC5DE10}">
+  DTS:VersionBuild="365"
+  DTS:VersionGUID="{40641199-EB59-4C22-93E4-A755A311AC23}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -25,7 +25,7 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="0"
           DTS:ConnectRetryInterval="0"
-          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.16.0;Data Source=D:\Rayogas\Sistemas de Información - Estrategia de Datos\7. Fuentes de Información\Xls\Comercial\Presupuesto\Formato Asignación OPC.xls;Extended Properties=&quot;Excel 12.0 XML;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.16.0;Data Source=D:\Rayogas\Sistemas de Información - Estrategia de Datos\7. Fuentes de Información\Xls\Comercial\Presupuesto\Formato Asignación OPC.xls;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -49,7 +49,7 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="0"
           DTS:ConnectRetryInterval="0"
-          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.16.0;Data Source=D:\Rayogas\Sistemas de Información - Estrategia de Datos\7. Fuentes de Información\Xls\Comercial\Presupuesto\1. Formato Auxilio Embajadores - KLS.xlsx;Extended Properties=&quot;Excel 12.0 XML;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.16.0;Data Source=D:\Rayogas\Sistemas de Información - Estrategia de Datos\7. Fuentes de Información\Xls\Comercial\Presupuesto\1. Formato Auxilio Embajadores - KLS.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -159,7 +159,7 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="0"
           DTS:ConnectRetryInterval="0"
-          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.16.0;Data Source=D:\Rayogas\Sistemas de Información - Estrategia de Datos\7. Fuentes de Información\Xls\Comercial\Presupuesto\2. Formato Meta Comercial.xls;Extended Properties=&quot;Excel 12.0 XML;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.16.0;Data Source=D:\Rayogas\Sistemas de Información - Estrategia de Datos\7. Fuentes de Información\Xls\Comercial\Presupuesto\2. Formato Meta Comercial.xls;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -23731,13 +23731,21 @@
           Id="Package\CS_Comercial\CBF_Subsidios"
           TopLeft="47.8666431869985,128.605258599191" />
         <NodeLayout
-          Size="269.6,41.6"
-          Id="Package\CS_Comercial\DFT_Carga_PresupuestosPorVendedor"
-          TopLeft="32.074959267058,46.2877285970255" />
+          Size="176.8,41.6"
+          Id="Package\CS_Comercial\DFT_ MetaComercial"
+          TopLeft="336.833310340015,195.933329072462" />
         <NodeLayout
           Size="177.6,41.6"
           Id="Package\CS_Comercial\DFT_AsignacionOPC"
           TopLeft="335.166643764411,52.0666634062267" />
+        <NodeLayout
+          Size="216,41.6"
+          Id="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS"
+          TopLeft="315.166644857163,121.399996257424" />
+        <NodeLayout
+          Size="269.6,41.6"
+          Id="Package\CS_Comercial\DFT_Carga_PresupuestosPorVendedor"
+          TopLeft="32.074959267058,46.2877285970255" />
         <EdgeLayout
           Id="Package\CS_Comercial.PrecedenceConstraints[Restricción]"
           TopLeft="301.674959267058,69.9771960016261">
@@ -23760,24 +23768,20 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="216,41.6"
-          Id="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS"
-          TopLeft="315.166644857163,121.399996257424" />
         <EdgeLayout
           Id="Package\CS_Comercial.PrecedenceConstraints[Restricción 1]"
           TopLeft="423.566644310787,93.6666634062267">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,27.7333328511977"
+              EndConnector="0,27.7333328511973"
               Start="0,0"
-              End="0,20.2333328511977">
+              End="0,20.2333328511973">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,20.2333328511977" />
+                    End="0,20.2333328511973" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -23786,10 +23790,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="176.8,41.6"
-          Id="Package\CS_Comercial\DFT_ MetaComercial"
-          TopLeft="336.833310340015,195.933329072462" />
         <EdgeLayout
           Id="Package\CS_Comercial.PrecedenceConstraints[Restricción 2]"
           TopLeft="424.199977598589,162.999996257424">
@@ -24359,6 +24359,198 @@
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\CS_Comercial\CBF_Subsidios\DFT_Carga_Subsidios\DOLEDB_ Subsidios">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\CS_Comercial\DFT_ MetaComercial">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="168,41.6"
+          Id="Package\CS_Comercial\DFT_ MetaComercial\ES_MetaComercial"
+          TopLeft="940.999985978008,68.9999989718198" />
+        <NodeLayout
+          Size="200,41.6"
+          Id="Package\CS_Comercial\DFT_ MetaComercial\OLEDBD_ MetaComercial"
+          TopLeft="923.999986231327,181.999997287989" />
+        <EdgeLayout
+          Id="Package\CS_Comercial\DFT_ MetaComercial.Paths[Excel Source Output]"
+          TopLeft="1024.49998610467,110.59999897182">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,71.3999983161688"
+              Start="0,0"
+              End="0,63.8999983161688">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,63.8999983161688" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\CS_Comercial\DFT_ MetaComercial\ES_MetaComercial">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\CS_Comercial\DFT_ MetaComercial\OLEDBD_ MetaComercial">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\CS_Comercial\DFT_AsignacionOPC">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="171.2,41.6"
+          Id="Package\CS_Comercial\DFT_AsignacionOPC\ES_AsignacionOPC"
+          TopLeft="982.999985352159,24.999999627471" />
+        <NodeLayout
+          Size="200.8,41.6"
+          Id="Package\CS_Comercial\DFT_AsignacionOPC\OLEDBD_AsignacionOPC"
+          TopLeft="970.999985530973,130.999998047948" />
+        <EdgeLayout
+          Id="Package\CS_Comercial\DFT_AsignacionOPC.Paths[Excel Source Output]"
+          TopLeft="1069.99998544157,66.599999627471">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,64.3999984204769"
+              Start="0,0"
+              End="0,56.8999984204769">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,56.8999984204769" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\CS_Comercial\DFT_AsignacionOPC\ES_AsignacionOPC">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\CS_Comercial\DFT_AsignacionOPC\OLEDBD_AsignacionOPC">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="212.8,41.6"
+          Id="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\ES_ AuxilioEmbajadoresKLS"
+          TopLeft="1071.99998402596,62.9999990612269" />
+        <NodeLayout
+          Size="238.4,41.6"
+          Id="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\OLEDBD_AuxilioEmbajadoresKLS"
+          TopLeft="1055.99998426437,165.999997526407" />
+        <EdgeLayout
+          Id="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS.Paths[Excel Source Output]"
+          TopLeft="1176.79998414516,104.599999061227">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,61.3999984651803"
+              Start="0,0"
+              End="0,53.8999984651803">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,53.8999984651803" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\ES_ AuxilioEmbajadoresKLS">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\OLEDBD_AuxilioEmbajadoresKLS">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -25795,197 +25987,5 @@
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
-  <TaskHost
-    design-time-name="Package\CS_Comercial\DFT_AsignacionOPC">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="171.2,41.6"
-          Id="Package\CS_Comercial\DFT_AsignacionOPC\ES_AsignacionOPC"
-          TopLeft="982.999985352159,24.999999627471" />
-        <NodeLayout
-          Size="200.8,41.6"
-          Id="Package\CS_Comercial\DFT_AsignacionOPC\OLEDBD_AsignacionOPC"
-          TopLeft="970.999985530973,130.999998047948" />
-        <EdgeLayout
-          Id="Package\CS_Comercial\DFT_AsignacionOPC.Paths[Excel Source Output]"
-          TopLeft="1069.99998544157,66.599999627471">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,64.3999984204769"
-              Start="0,0"
-              End="0,56.8999984204769">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,56.8999984204769" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\CS_Comercial\DFT_AsignacionOPC\ES_AsignacionOPC">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\CS_Comercial\DFT_AsignacionOPC\OLEDBD_AsignacionOPC">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <TaskHost
-    design-time-name="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="212.8,41.6"
-          Id="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\ES_ AuxilioEmbajadoresKLS"
-          TopLeft="1071.99998402596,62.9999990612269" />
-        <NodeLayout
-          Size="238.4,41.6"
-          Id="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\OLEDBD_AuxilioEmbajadoresKLS"
-          TopLeft="1055.99998426437,165.999997526407" />
-        <EdgeLayout
-          Id="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS.Paths[Excel Source Output]"
-          TopLeft="1176.79998414516,104.599999061227">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,61.3999984651803"
-              Start="0,0"
-              End="0,53.8999984651803">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,53.8999984651803" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\ES_ AuxilioEmbajadoresKLS">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\CS_Comercial\DFT_AuxilioEmbajadoresKLS\OLEDBD_AuxilioEmbajadoresKLS">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <TaskHost
-    design-time-name="Package\CS_Comercial\DFT_ MetaComercial">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="168,41.6"
-          Id="Package\CS_Comercial\DFT_ MetaComercial\ES_MetaComercial"
-          TopLeft="940.999985978008,68.9999989718198" />
-        <NodeLayout
-          Size="200,41.6"
-          Id="Package\CS_Comercial\DFT_ MetaComercial\OLEDBD_ MetaComercial"
-          TopLeft="923.999986231327,181.999997287989" />
-        <EdgeLayout
-          Id="Package\CS_Comercial\DFT_ MetaComercial.Paths[Excel Source Output]"
-          TopLeft="1024.49998610467,110.59999897182">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,71.3999983161688"
-              Start="0,0"
-              End="0,63.8999983161688">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,63.8999983161688" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\CS_Comercial\DFT_ MetaComercial\ES_MetaComercial">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\CS_Comercial\DFT_ MetaComercial\OLEDBD_ MetaComercial">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
 </Objects>]]></DTS:DesignTimeProperties>
 </DTS:Executable>
