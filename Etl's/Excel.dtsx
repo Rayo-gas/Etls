@@ -11,8 +11,8 @@
   DTS:LocaleID="9226"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="371"
-  DTS:VersionGUID="{C9412DF4-EC97-4E20-86E4-BA4F117C33A9}">
+  DTS:VersionBuild="372"
+  DTS:VersionGUID="{81B7E912-F2DC-4268-9A34-5F5B60D8F4B9}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -207,7 +207,7 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="0"
           DTS:ConnectRetryInterval="0"
-          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.16.0;Data Source=D:\Rayogas\Sistemas de Información - Estrategia de Datos\7. Fuentes de Información\Xls\Comercial\Subsidios\SUBSIDIOS GLP.xlsx;Extended Properties=&quot;Excel 12.0 XML;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.16.0;Data Source=D:\Rayogas\Sistemas de Información - Estrategia de Datos\7. Fuentes de Información\Xls\Comercial\Subsidios\SUBSIDIOS GLP.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -23687,7 +23687,7 @@
         <NodeLayout
           Size="176.666666666667,41.3333333333334"
           Id="Package\CS_Comercial\DFT_ MetaComercial"
-          TopLeft="336.833310340015,195.933329072462" />
+          TopLeft="80.5833217952821,122.483332574831" />
         <NodeLayout
           Size="177.333333333334,41.3333333333334"
           Id="Package\CS_Comercial\DFT_AsignacionOPC"
@@ -23700,6 +23700,10 @@
           Size="269.333333333334,41.3333333333334"
           Id="Package\CS_Comercial\DFT_Carga_PresupuestosPorVendedor"
           TopLeft="32.074959267058,46.2877285970255" />
+        <NodeLayout
+          Size="160,42.6666666666667"
+          Id="Package\CS_Comercial\DFT_Carga_Subs"
+          TopLeft="82.8749925401069,188.649986331463" />
         <EdgeLayout
           Id="Package\CS_Comercial.PrecedenceConstraints[Restricción]"
           TopLeft="301.674959267058,69.9771960016261">
@@ -23746,18 +23750,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package\CS_Comercial.PrecedenceConstraints[Restricción 2]"
-          TopLeft="424.199977598589,162.999996257424">
+          TopLeft="315.166644857163,142.608331082794">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,32.9333328150377"
+              EndConnector="-57.9166563952143,0"
               Start="0,0"
-              End="0,25.4333328150377">
+              End="-50.4166563952143,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,25.4333328150377" />
+                    End="-50.4166563952143,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -23766,24 +23770,20 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="160,42.6666666666667"
-          Id="Package\CS_Comercial\DFT_Carga_Subs"
-          TopLeft="142.874989857898,189.299986300469" />
         <EdgeLayout
           Id="Package\CS_Comercial.PrecedenceConstraints[Restricción 3]"
-          TopLeft="336.833310340015,213.616657686466">
+          TopLeft="165.895823834361,163.816665908164">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-33.9583204821175,0"
+              EndConnector="0,24.8333204232992"
               Start="0,0"
-              End="-26.4583204821175,0">
+              End="0,17.3333204232992">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="-26.4583204821175,0" />
+                    End="0,17.3333204232992" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -23795,10 +23795,10 @@
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="586.666666666667,371.333333333334"
-          Size="586.666666666667,414.666666666667"
+          PanelSize="569.333333333334,289.333333333334"
+          Size="569.333333333334,332"
           Id="Package\CS_Comercial"
-          TopLeft="84.1666620680026,704.399995696942" />
+          TopLeft="102.916661229812,685.466669306357" />
         <NodeLayout
           Size="165.333333333334,41.3333333333334"
           Id="Package\CS_Mantenimiento\CBF_Wizeo\DFT_Carga_Wizeo"
@@ -23928,10 +23928,10 @@
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="450.666666666667,210"
+          PanelSize="450.666666666667,209.333333333334"
           Size="450.666666666667,252.666666666667"
           Id="Package\CS_talento_humano"
-          TopLeft="752.333287528821,779.666663840148" />
+          TopLeft="746.083287808218,723.766666505668" />
         <NodeLayout
           Size="202.666666666667,41.3333333333334"
           Id="Package\CS_TI\CBF_CLaro_Datos_Excel\DFT_Carga_Archivo_datos"
@@ -23939,7 +23939,7 @@
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="230.666666666667,127.333333333334"
+          PanelSize="230.666666666667,128"
           Size="230.666666666667,170.666666666667"
           Id="Package\CS_TI\CBF_CLaro_Datos_Excel"
           TopLeft="41.7666418520949,242.100000596642" />
@@ -24135,7 +24135,7 @@
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="576.666666666667,499.333333333334"
+          PanelSize="576.666666666667,500"
           Size="576.666666666667,542.666666666667"
           Id="Package\CS_TI"
           TopLeft="92.499994946023,103.200000289281" />
@@ -24189,18 +24189,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción 2]"
-          TopLeft="975.833289031355,638.333332616157">
+          TopLeft="972.708289171053,638.333332616157">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,141.333331223991"
+              EndConnector="0,85.4333338895107"
               Start="0,0"
-              End="0,133.833331223991">
+              End="0,77.9333338895107">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,133.833331223991" />
+                    End="0,77.9333338895107" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -24211,18 +24211,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción 3]"
-          TopLeft="752.333287528821,908.866663101878">
+          TopLeft="746.083287808218,850.783334572679">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-81.4999587941517,0"
+              EndConnector="-73.833293245072,0"
               Start="0,0"
-              End="-73.9999587941517,0">
+              End="-66.333293245072,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="-73.9999587941517,0" />
+                    End="-66.333293245072,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -24515,6 +24515,83 @@
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\CS_Comercial\DFT_Carga_PresupuestosPorVendedor\DOLEDB_ PresupuestosPorVendedor">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\CS_Comercial\DFT_Carga_Subs">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="148,42.6666666666667"
+          Id="Package\CS_Comercial\DFT_Carga_Subs\OE_Subsidios"
+          TopLeft="580,76.6499999690056" />
+        <NodeLayout
+          Size="172,41.3333333333334"
+          Id="Package\CS_Comercial\DFT_Carga_Subs\DOLEDB_ Subsidios"
+          TopLeft="569,246" />
+        <NodeLayout
+          Size="145.333333333334,41.3333333333334"
+          Id="Package\CS_Comercial\DFT_Carga_Subs\DC_ Subsidios"
+          TopLeft="583,157" />
+        <EdgeLayout
+          Id="Package\CS_Comercial\DFT_Carga_Subs.Paths[Salida de origen de Excel]"
+          TopLeft="654.833333333333,119.316666635672">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,37.6833333643278"
+              Start="0,0"
+              End="0,30.1833333643278">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,30.1833333643278" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\CS_Comercial\DFT_Carga_Subs.Paths[Salida de conversión de datos]"
+          TopLeft="655.5,199">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,47"
+              Start="0,0"
+              End="0,39.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,39.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\CS_Comercial\DFT_Carga_Subs\OE_Subsidios">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -25865,82 +25942,5 @@
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
-  <TaskHost
-    design-time-name="Package\CS_Comercial\DFT_Carga_Subs">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="148,42.6666666666667"
-          Id="Package\CS_Comercial\DFT_Carga_Subs\OE_Subsidios"
-          TopLeft="580,76.6499999690056" />
-        <NodeLayout
-          Size="172,41.3333333333334"
-          Id="Package\CS_Comercial\DFT_Carga_Subs\DOLEDB_ Subsidios"
-          TopLeft="569,246" />
-        <NodeLayout
-          Size="145.333333333334,41.3333333333334"
-          Id="Package\CS_Comercial\DFT_Carga_Subs\DC_ Subsidios"
-          TopLeft="583,157" />
-        <EdgeLayout
-          Id="Package\CS_Comercial\DFT_Carga_Subs.Paths[Salida de origen de Excel]"
-          TopLeft="654.833333333333,119.316666635672">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,37.6833333643278"
-              Start="0,0"
-              End="0,30.1833333643278">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,30.1833333643278" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\CS_Comercial\DFT_Carga_Subs.Paths[Salida de conversión de datos]"
-          TopLeft="655.5,199">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,47"
-              Start="0,0"
-              End="0,39.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,39.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\CS_Comercial\DFT_Carga_Subs\OE_Subsidios">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
 </Objects>]]></DTS:DesignTimeProperties>
 </DTS:Executable>
