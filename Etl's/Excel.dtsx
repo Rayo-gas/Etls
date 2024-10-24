@@ -7,15 +7,39 @@
   DTS:CreatorName="RAYOGAS\jesus.vargas"
   DTS:DTSID="{733DFE37-E69E-4BB9-855D-8FE0995908AC}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="16.0.5685.0"
+  DTS:LastModifiedProductVersion="16.0.5556.0"
   DTS:LocaleID="9226"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="376"
-  DTS:VersionGUID="{8383C014-5A17-49C2-913C-DD1C6E58450B}">
+  DTS:VersionBuild="382"
+  DTS:VersionGUID="{6672449A-F319-449F-BA51-5BA4068EBE5E}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[192.168.0.132.DataStage]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{F580FDAD-3B5A-4D71-9428-876BC6F24EB9}"
+      DTS:ObjectName="192.168.0.132.DataStage">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=192.168.0.132;Initial Catalog=DataStage;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Package-{F580FDAD-3B5A-4D71-9428-876BC6F24EB9}192.168.0.132.DataStage;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Administrador de conexiones con Excel]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{D5C93494-C808-47D7-9EF6-C9917F303665}"
+      DTS:ObjectName="Administrador de conexiones con Excel">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.16.0;Data Source=D:\Rayogas\Sistemas de Información - Estrategia de Datos\7. Fuentes de Información\Xls\Operaciones\PUC.xlsx;Extended Properties=&quot;Excel 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[AsignacionOPC]"
       DTS:CreationName="EXCEL"
@@ -183,7 +207,7 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="0"
           DTS:ConnectRetryInterval="0"
-          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.16.0;Data Source=D:\Rayogas\Sistemas de Información - Estrategia de Datos\7. Fuentes de Información\Xls\Rayocarga\Habitos RayoCarga.xlsx;Extended Properties=&quot;Excel 12.0 XML;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.16.0;Data Source=D:\Rayogas\Sistemas de Información - Estrategia de Datos\7. Fuentes de Información\Xls\Rayocarga\Habitos RayoCarga.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -7089,6 +7113,828 @@
           DTS:ObjectName="Restricción"
           DTS:To="Package\CS_Mantenimiento\CBF_Wizeo" />
       </DTS:PrecedenceConstraints>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\CS_Operaciones"
+      DTS:CreationName="STOCK:SEQUENCE"
+      DTS:Description="Contenedor de secuencias"
+      DTS:DTSID="{ad371743-bac7-42a8-b803-9241e03a6da3}"
+      DTS:ExecutableType="STOCK:SEQUENCE"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="CS_Operaciones">
+      <DTS:Variables />
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\CS_Operaciones\DFT_PUC"
+          DTS:CreationName="Microsoft.Pipeline"
+          DTS:Description="Data Flow Task"
+          DTS:DTSID="{43425065-7FAD-442D-A171-615D21189550}"
+          DTS:ExecutableType="Microsoft.Pipeline"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="DFT_PUC"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <pipeline
+              version="1">
+              <components>
+                <component
+                  refId="Package\CS_Operaciones\DFT_PUC\OLEDBD_PUC_Operaciones"
+                  componentClassID="Microsoft.OLEDBDestination"
+                  contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+                  description="OLE DB Destination"
+                  name="OLEDBD_PUC_Operaciones"
+                  usesDispositions="true"
+                  version="4">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[xls].[PUC_Operaciones]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">0</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepIdentity">false</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                      name="FastLoadOptions"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                      name="FastLoadMaxInsertCommitSize">2147483647</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\CS_Operaciones\DFT_PUC\OLEDBD_PUC_Operaciones.Connections[OleDbConnection]"
+                      connectionManagerID="{F969E5F0-ED10-48A1-9AD7-51F9863F78B9}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[DataStage]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\CS_Operaciones\DFT_PUC\OLEDBD_PUC_Operaciones.Inputs[OLE DB Destination Input]"
+                      errorOrTruncationOperation="Insert"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="OLE DB Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\CS_Operaciones\DFT_PUC\OLEDBD_PUC_Operaciones.Inputs[OLE DB Destination Input].Columns[Empresa]"
+                          cachedDataType="r8"
+                          cachedName="Empresa"
+                          externalMetadataColumnId="Package\CS_Operaciones\DFT_PUC\OLEDBD_PUC_Operaciones.Inputs[OLE DB Destination Input].ExternalColumns[Empresa]"
+                          lineageId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Output].Columns[Empresa]" />
+                        <inputColumn
+                          refId="Package\CS_Operaciones\DFT_PUC\OLEDBD_PUC_Operaciones.Inputs[OLE DB Destination Input].Columns[CUENTA ]"
+                          cachedDataType="wstr"
+                          cachedLength="255"
+                          cachedName="CUENTA "
+                          externalMetadataColumnId="Package\CS_Operaciones\DFT_PUC\OLEDBD_PUC_Operaciones.Inputs[OLE DB Destination Input].ExternalColumns[CUENTA ]"
+                          lineageId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Output].Columns[CUENTA ]" />
+                        <inputColumn
+                          refId="Package\CS_Operaciones\DFT_PUC\OLEDBD_PUC_Operaciones.Inputs[OLE DB Destination Input].Columns[Descripcion]"
+                          cachedDataType="wstr"
+                          cachedLength="255"
+                          cachedName="Descripcion"
+                          externalMetadataColumnId="Package\CS_Operaciones\DFT_PUC\OLEDBD_PUC_Operaciones.Inputs[OLE DB Destination Input].ExternalColumns[Descripcion]"
+                          lineageId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Output].Columns[Descripcion]" />
+                        <inputColumn
+                          refId="Package\CS_Operaciones\DFT_PUC\OLEDBD_PUC_Operaciones.Inputs[OLE DB Destination Input].Columns[Grupo en Modelo]"
+                          cachedDataType="wstr"
+                          cachedLength="255"
+                          cachedName="Grupo en Modelo"
+                          externalMetadataColumnId="Package\CS_Operaciones\DFT_PUC\OLEDBD_PUC_Operaciones.Inputs[OLE DB Destination Input].ExternalColumns[Grupo en Modelo]"
+                          lineageId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Output].Columns[Grupo en Modelo]" />
+                        <inputColumn
+                          refId="Package\CS_Operaciones\DFT_PUC\OLEDBD_PUC_Operaciones.Inputs[OLE DB Destination Input].Columns[Subgrupo en Modelo]"
+                          cachedDataType="wstr"
+                          cachedLength="255"
+                          cachedName="Subgrupo en Modelo"
+                          externalMetadataColumnId="Package\CS_Operaciones\DFT_PUC\OLEDBD_PUC_Operaciones.Inputs[OLE DB Destination Input].ExternalColumns[Subgrupo en Modelo]"
+                          lineageId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Output].Columns[Subgrupo en Modelo]" />
+                        <inputColumn
+                          refId="Package\CS_Operaciones\DFT_PUC\OLEDBD_PUC_Operaciones.Inputs[OLE DB Destination Input].Columns[Area Que Gestiona]"
+                          cachedDataType="wstr"
+                          cachedLength="255"
+                          cachedName="Area Que Gestiona"
+                          externalMetadataColumnId="Package\CS_Operaciones\DFT_PUC\OLEDBD_PUC_Operaciones.Inputs[OLE DB Destination Input].ExternalColumns[Area Que Gestiona]"
+                          lineageId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Output].Columns[Area Que Gestiona]" />
+                        <inputColumn
+                          refId="Package\CS_Operaciones\DFT_PUC\OLEDBD_PUC_Operaciones.Inputs[OLE DB Destination Input].Columns[Nivel I]"
+                          cachedDataType="r8"
+                          cachedName="Nivel I"
+                          externalMetadataColumnId="Package\CS_Operaciones\DFT_PUC\OLEDBD_PUC_Operaciones.Inputs[OLE DB Destination Input].ExternalColumns[Nivel I]"
+                          lineageId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Output].Columns[Nivel I]" />
+                        <inputColumn
+                          refId="Package\CS_Operaciones\DFT_PUC\OLEDBD_PUC_Operaciones.Inputs[OLE DB Destination Input].Columns[Nivel II]"
+                          cachedDataType="r8"
+                          cachedName="Nivel II"
+                          externalMetadataColumnId="Package\CS_Operaciones\DFT_PUC\OLEDBD_PUC_Operaciones.Inputs[OLE DB Destination Input].ExternalColumns[Nivel II]"
+                          lineageId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Output].Columns[Nivel II]" />
+                        <inputColumn
+                          refId="Package\CS_Operaciones\DFT_PUC\OLEDBD_PUC_Operaciones.Inputs[OLE DB Destination Input].Columns[Nivel III]"
+                          cachedDataType="r8"
+                          cachedName="Nivel III"
+                          externalMetadataColumnId="Package\CS_Operaciones\DFT_PUC\OLEDBD_PUC_Operaciones.Inputs[OLE DB Destination Input].ExternalColumns[Nivel III]"
+                          lineageId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Output].Columns[Nivel III]" />
+                        <inputColumn
+                          refId="Package\CS_Operaciones\DFT_PUC\OLEDBD_PUC_Operaciones.Inputs[OLE DB Destination Input].Columns[Nivel IV]"
+                          cachedDataType="r8"
+                          cachedName="Nivel IV"
+                          externalMetadataColumnId="Package\CS_Operaciones\DFT_PUC\OLEDBD_PUC_Operaciones.Inputs[OLE DB Destination Input].ExternalColumns[Nivel IV]"
+                          lineageId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Output].Columns[Nivel IV]" />
+                        <inputColumn
+                          refId="Package\CS_Operaciones\DFT_PUC\OLEDBD_PUC_Operaciones.Inputs[OLE DB Destination Input].Columns[Nombre I]"
+                          cachedDataType="wstr"
+                          cachedLength="255"
+                          cachedName="Nombre I"
+                          externalMetadataColumnId="Package\CS_Operaciones\DFT_PUC\OLEDBD_PUC_Operaciones.Inputs[OLE DB Destination Input].ExternalColumns[Nombre I]"
+                          lineageId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Output].Columns[Nombre I]" />
+                        <inputColumn
+                          refId="Package\CS_Operaciones\DFT_PUC\OLEDBD_PUC_Operaciones.Inputs[OLE DB Destination Input].Columns[Nombre II]"
+                          cachedDataType="wstr"
+                          cachedLength="255"
+                          cachedName="Nombre II"
+                          externalMetadataColumnId="Package\CS_Operaciones\DFT_PUC\OLEDBD_PUC_Operaciones.Inputs[OLE DB Destination Input].ExternalColumns[Nombre II]"
+                          lineageId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Output].Columns[Nombre II]" />
+                        <inputColumn
+                          refId="Package\CS_Operaciones\DFT_PUC\OLEDBD_PUC_Operaciones.Inputs[OLE DB Destination Input].Columns[Nombre III]"
+                          cachedDataType="wstr"
+                          cachedLength="255"
+                          cachedName="Nombre III"
+                          externalMetadataColumnId="Package\CS_Operaciones\DFT_PUC\OLEDBD_PUC_Operaciones.Inputs[OLE DB Destination Input].ExternalColumns[Nombre III]"
+                          lineageId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Output].Columns[Nombre III]" />
+                        <inputColumn
+                          refId="Package\CS_Operaciones\DFT_PUC\OLEDBD_PUC_Operaciones.Inputs[OLE DB Destination Input].Columns[Nombre IV]"
+                          cachedDataType="wstr"
+                          cachedLength="255"
+                          cachedName="Nombre IV"
+                          externalMetadataColumnId="Package\CS_Operaciones\DFT_PUC\OLEDBD_PUC_Operaciones.Inputs[OLE DB Destination Input].ExternalColumns[Nombre IV]"
+                          lineageId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Output].Columns[Nombre IV]" />
+                        <inputColumn
+                          refId="Package\CS_Operaciones\DFT_PUC\OLEDBD_PUC_Operaciones.Inputs[OLE DB Destination Input].Columns[Cuenta Nombre I]"
+                          cachedDataType="wstr"
+                          cachedLength="255"
+                          cachedName="Cuenta Nombre I"
+                          externalMetadataColumnId="Package\CS_Operaciones\DFT_PUC\OLEDBD_PUC_Operaciones.Inputs[OLE DB Destination Input].ExternalColumns[Cuenta Nombre I]"
+                          lineageId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Output].Columns[Cuenta Nombre I]" />
+                        <inputColumn
+                          refId="Package\CS_Operaciones\DFT_PUC\OLEDBD_PUC_Operaciones.Inputs[OLE DB Destination Input].Columns[Cuenta Nombre II]"
+                          cachedDataType="wstr"
+                          cachedLength="255"
+                          cachedName="Cuenta Nombre II"
+                          externalMetadataColumnId="Package\CS_Operaciones\DFT_PUC\OLEDBD_PUC_Operaciones.Inputs[OLE DB Destination Input].ExternalColumns[Cuenta Nombre II]"
+                          lineageId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Output].Columns[Cuenta Nombre II]" />
+                        <inputColumn
+                          refId="Package\CS_Operaciones\DFT_PUC\OLEDBD_PUC_Operaciones.Inputs[OLE DB Destination Input].Columns[Cuenta Nombre III]"
+                          cachedDataType="wstr"
+                          cachedLength="255"
+                          cachedName="Cuenta Nombre III"
+                          externalMetadataColumnId="Package\CS_Operaciones\DFT_PUC\OLEDBD_PUC_Operaciones.Inputs[OLE DB Destination Input].ExternalColumns[Cuenta Nombre III]"
+                          lineageId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Output].Columns[Cuenta Nombre III]" />
+                        <inputColumn
+                          refId="Package\CS_Operaciones\DFT_PUC\OLEDBD_PUC_Operaciones.Inputs[OLE DB Destination Input].Columns[Cuenta Nombre IV]"
+                          cachedDataType="wstr"
+                          cachedLength="255"
+                          cachedName="Cuenta Nombre IV"
+                          externalMetadataColumnId="Package\CS_Operaciones\DFT_PUC\OLEDBD_PUC_Operaciones.Inputs[OLE DB Destination Input].ExternalColumns[Cuenta Nombre IV]"
+                          lineageId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Output].Columns[Cuenta Nombre IV]" />
+                        <inputColumn
+                          refId="Package\CS_Operaciones\DFT_PUC\OLEDBD_PUC_Operaciones.Inputs[OLE DB Destination Input].Columns[linea modelo]"
+                          cachedDataType="wstr"
+                          cachedLength="255"
+                          cachedName="linea modelo"
+                          externalMetadataColumnId="Package\CS_Operaciones\DFT_PUC\OLEDBD_PUC_Operaciones.Inputs[OLE DB Destination Input].ExternalColumns[linea modelo]"
+                          lineageId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Output].Columns[linea modelo]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\CS_Operaciones\DFT_PUC\OLEDBD_PUC_Operaciones.Inputs[OLE DB Destination Input].ExternalColumns[Empresa]"
+                          dataType="r8"
+                          name="Empresa" />
+                        <externalMetadataColumn
+                          refId="Package\CS_Operaciones\DFT_PUC\OLEDBD_PUC_Operaciones.Inputs[OLE DB Destination Input].ExternalColumns[CUENTA ]"
+                          dataType="wstr"
+                          length="255"
+                          name="CUENTA " />
+                        <externalMetadataColumn
+                          refId="Package\CS_Operaciones\DFT_PUC\OLEDBD_PUC_Operaciones.Inputs[OLE DB Destination Input].ExternalColumns[Descripcion]"
+                          dataType="wstr"
+                          length="255"
+                          name="Descripcion" />
+                        <externalMetadataColumn
+                          refId="Package\CS_Operaciones\DFT_PUC\OLEDBD_PUC_Operaciones.Inputs[OLE DB Destination Input].ExternalColumns[Grupo en Modelo]"
+                          dataType="wstr"
+                          length="255"
+                          name="Grupo en Modelo" />
+                        <externalMetadataColumn
+                          refId="Package\CS_Operaciones\DFT_PUC\OLEDBD_PUC_Operaciones.Inputs[OLE DB Destination Input].ExternalColumns[Subgrupo en Modelo]"
+                          dataType="wstr"
+                          length="255"
+                          name="Subgrupo en Modelo" />
+                        <externalMetadataColumn
+                          refId="Package\CS_Operaciones\DFT_PUC\OLEDBD_PUC_Operaciones.Inputs[OLE DB Destination Input].ExternalColumns[Area Que Gestiona]"
+                          dataType="wstr"
+                          length="255"
+                          name="Area Que Gestiona" />
+                        <externalMetadataColumn
+                          refId="Package\CS_Operaciones\DFT_PUC\OLEDBD_PUC_Operaciones.Inputs[OLE DB Destination Input].ExternalColumns[Nivel I]"
+                          dataType="r8"
+                          name="Nivel I" />
+                        <externalMetadataColumn
+                          refId="Package\CS_Operaciones\DFT_PUC\OLEDBD_PUC_Operaciones.Inputs[OLE DB Destination Input].ExternalColumns[Nivel II]"
+                          dataType="r8"
+                          name="Nivel II" />
+                        <externalMetadataColumn
+                          refId="Package\CS_Operaciones\DFT_PUC\OLEDBD_PUC_Operaciones.Inputs[OLE DB Destination Input].ExternalColumns[Nivel III]"
+                          dataType="r8"
+                          name="Nivel III" />
+                        <externalMetadataColumn
+                          refId="Package\CS_Operaciones\DFT_PUC\OLEDBD_PUC_Operaciones.Inputs[OLE DB Destination Input].ExternalColumns[Nivel IV]"
+                          dataType="r8"
+                          name="Nivel IV" />
+                        <externalMetadataColumn
+                          refId="Package\CS_Operaciones\DFT_PUC\OLEDBD_PUC_Operaciones.Inputs[OLE DB Destination Input].ExternalColumns[Nombre I]"
+                          dataType="wstr"
+                          length="255"
+                          name="Nombre I" />
+                        <externalMetadataColumn
+                          refId="Package\CS_Operaciones\DFT_PUC\OLEDBD_PUC_Operaciones.Inputs[OLE DB Destination Input].ExternalColumns[Nombre II]"
+                          dataType="wstr"
+                          length="255"
+                          name="Nombre II" />
+                        <externalMetadataColumn
+                          refId="Package\CS_Operaciones\DFT_PUC\OLEDBD_PUC_Operaciones.Inputs[OLE DB Destination Input].ExternalColumns[Nombre III]"
+                          dataType="wstr"
+                          length="255"
+                          name="Nombre III" />
+                        <externalMetadataColumn
+                          refId="Package\CS_Operaciones\DFT_PUC\OLEDBD_PUC_Operaciones.Inputs[OLE DB Destination Input].ExternalColumns[Nombre IV]"
+                          dataType="wstr"
+                          length="255"
+                          name="Nombre IV" />
+                        <externalMetadataColumn
+                          refId="Package\CS_Operaciones\DFT_PUC\OLEDBD_PUC_Operaciones.Inputs[OLE DB Destination Input].ExternalColumns[Cuenta Nombre I]"
+                          dataType="wstr"
+                          length="255"
+                          name="Cuenta Nombre I" />
+                        <externalMetadataColumn
+                          refId="Package\CS_Operaciones\DFT_PUC\OLEDBD_PUC_Operaciones.Inputs[OLE DB Destination Input].ExternalColumns[Cuenta Nombre II]"
+                          dataType="wstr"
+                          length="255"
+                          name="Cuenta Nombre II" />
+                        <externalMetadataColumn
+                          refId="Package\CS_Operaciones\DFT_PUC\OLEDBD_PUC_Operaciones.Inputs[OLE DB Destination Input].ExternalColumns[Cuenta Nombre III]"
+                          dataType="wstr"
+                          length="255"
+                          name="Cuenta Nombre III" />
+                        <externalMetadataColumn
+                          refId="Package\CS_Operaciones\DFT_PUC\OLEDBD_PUC_Operaciones.Inputs[OLE DB Destination Input].ExternalColumns[Cuenta Nombre IV]"
+                          dataType="wstr"
+                          length="255"
+                          name="Cuenta Nombre IV" />
+                        <externalMetadataColumn
+                          refId="Package\CS_Operaciones\DFT_PUC\OLEDBD_PUC_Operaciones.Inputs[OLE DB Destination Input].ExternalColumns[linea modelo]"
+                          dataType="wstr"
+                          length="255"
+                          name="linea modelo" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\CS_Operaciones\DFT_PUC\OLEDBD_PUC_Operaciones.Outputs[OLE DB Destination Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="OLE DB Destination Error Output"
+                      synchronousInputId="Package\CS_Operaciones\DFT_PUC\OLEDBD_PUC_Operaciones.Inputs[OLE DB Destination Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\CS_Operaciones\DFT_PUC\OLEDBD_PUC_Operaciones.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\CS_Operaciones\DFT_PUC\OLEDBD_PUC_Operaciones.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\CS_Operaciones\DFT_PUC\OLEDBD_PUC_Operaciones.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\CS_Operaciones\DFT_PUC\OLEDBD_PUC_Operaciones.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones"
+                  componentClassID="Microsoft.ExcelSource"
+                  contactInfo="Excel Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+                  description="Excel Source"
+                  name="PUC_Operaciones"
+                  usesDispositions="true"
+                  version="1">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">Hoja1$</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.String"
+                      description="The variable that contains the SQL command to be executed."
+                      name="SqlCommandVariable"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">0</property>
+                    <property
+                      dataType="System.String"
+                      description="The mapping from parameters in the SQL command to variables."
+                      name="ParameterMapping"></property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[Administrador de conexiones con Excel]"
+                      connectionManagerRefId="Package.ConnectionManagers[Administrador de conexiones con Excel]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Output]"
+                      name="Excel Source Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Output].Columns[Empresa]"
+                          dataType="r8"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Output].ExternalColumns[Empresa]"
+                          lineageId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Output].Columns[Empresa]"
+                          name="Empresa"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Output].Columns[CUENTA ]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Output].ExternalColumns[CUENTA ]"
+                          length="255"
+                          lineageId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Output].Columns[CUENTA ]"
+                          name="CUENTA "
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Output].Columns[Descripcion]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Output].ExternalColumns[Descripcion]"
+                          length="255"
+                          lineageId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Output].Columns[Descripcion]"
+                          name="Descripcion"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Output].Columns[Grupo en Modelo]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Output].ExternalColumns[Grupo en Modelo]"
+                          length="255"
+                          lineageId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Output].Columns[Grupo en Modelo]"
+                          name="Grupo en Modelo"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Output].Columns[Subgrupo en Modelo]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Output].ExternalColumns[Subgrupo en Modelo]"
+                          length="255"
+                          lineageId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Output].Columns[Subgrupo en Modelo]"
+                          name="Subgrupo en Modelo"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Output].Columns[Area Que Gestiona]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Output].ExternalColumns[Area Que Gestiona]"
+                          length="255"
+                          lineageId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Output].Columns[Area Que Gestiona]"
+                          name="Area Que Gestiona"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Output].Columns[Nivel I]"
+                          dataType="r8"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Output].ExternalColumns[Nivel I]"
+                          lineageId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Output].Columns[Nivel I]"
+                          name="Nivel I"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Output].Columns[Nivel II]"
+                          dataType="r8"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Output].ExternalColumns[Nivel II]"
+                          lineageId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Output].Columns[Nivel II]"
+                          name="Nivel II"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Output].Columns[Nivel III]"
+                          dataType="r8"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Output].ExternalColumns[Nivel III]"
+                          lineageId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Output].Columns[Nivel III]"
+                          name="Nivel III"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Output].Columns[Nivel IV]"
+                          dataType="r8"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Output].ExternalColumns[Nivel IV]"
+                          lineageId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Output].Columns[Nivel IV]"
+                          name="Nivel IV"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Output].Columns[Nombre I]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Output].ExternalColumns[Nombre I]"
+                          length="255"
+                          lineageId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Output].Columns[Nombre I]"
+                          name="Nombre I"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Output].Columns[Nombre II]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Output].ExternalColumns[Nombre II]"
+                          length="255"
+                          lineageId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Output].Columns[Nombre II]"
+                          name="Nombre II"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Output].Columns[Nombre III]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Output].ExternalColumns[Nombre III]"
+                          length="255"
+                          lineageId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Output].Columns[Nombre III]"
+                          name="Nombre III"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Output].Columns[Nombre IV]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Output].ExternalColumns[Nombre IV]"
+                          length="255"
+                          lineageId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Output].Columns[Nombre IV]"
+                          name="Nombre IV"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Output].Columns[Cuenta Nombre I]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Output].ExternalColumns[Cuenta Nombre I]"
+                          length="255"
+                          lineageId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Output].Columns[Cuenta Nombre I]"
+                          name="Cuenta Nombre I"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Output].Columns[Cuenta Nombre II]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Output].ExternalColumns[Cuenta Nombre II]"
+                          length="255"
+                          lineageId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Output].Columns[Cuenta Nombre II]"
+                          name="Cuenta Nombre II"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Output].Columns[Cuenta Nombre III]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Output].ExternalColumns[Cuenta Nombre III]"
+                          length="255"
+                          lineageId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Output].Columns[Cuenta Nombre III]"
+                          name="Cuenta Nombre III"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Output].Columns[Cuenta Nombre IV]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Output].ExternalColumns[Cuenta Nombre IV]"
+                          length="255"
+                          lineageId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Output].Columns[Cuenta Nombre IV]"
+                          name="Cuenta Nombre IV"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Output].Columns[linea modelo]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Output].ExternalColumns[linea modelo]"
+                          length="255"
+                          lineageId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Output].Columns[linea modelo]"
+                          name="linea modelo"
+                          truncationRowDisposition="FailComponent" />
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Output].ExternalColumns[Empresa]"
+                          dataType="r8"
+                          name="Empresa" />
+                        <externalMetadataColumn
+                          refId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Output].ExternalColumns[CUENTA ]"
+                          dataType="wstr"
+                          length="255"
+                          name="CUENTA " />
+                        <externalMetadataColumn
+                          refId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Output].ExternalColumns[Descripcion]"
+                          dataType="wstr"
+                          length="255"
+                          name="Descripcion" />
+                        <externalMetadataColumn
+                          refId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Output].ExternalColumns[Grupo en Modelo]"
+                          dataType="wstr"
+                          length="255"
+                          name="Grupo en Modelo" />
+                        <externalMetadataColumn
+                          refId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Output].ExternalColumns[Subgrupo en Modelo]"
+                          dataType="wstr"
+                          length="255"
+                          name="Subgrupo en Modelo" />
+                        <externalMetadataColumn
+                          refId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Output].ExternalColumns[Area Que Gestiona]"
+                          dataType="wstr"
+                          length="255"
+                          name="Area Que Gestiona" />
+                        <externalMetadataColumn
+                          refId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Output].ExternalColumns[Nivel I]"
+                          dataType="r8"
+                          name="Nivel I" />
+                        <externalMetadataColumn
+                          refId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Output].ExternalColumns[Nivel II]"
+                          dataType="r8"
+                          name="Nivel II" />
+                        <externalMetadataColumn
+                          refId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Output].ExternalColumns[Nivel III]"
+                          dataType="r8"
+                          name="Nivel III" />
+                        <externalMetadataColumn
+                          refId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Output].ExternalColumns[Nivel IV]"
+                          dataType="r8"
+                          name="Nivel IV" />
+                        <externalMetadataColumn
+                          refId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Output].ExternalColumns[Nombre I]"
+                          dataType="wstr"
+                          length="255"
+                          name="Nombre I" />
+                        <externalMetadataColumn
+                          refId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Output].ExternalColumns[Nombre II]"
+                          dataType="wstr"
+                          length="255"
+                          name="Nombre II" />
+                        <externalMetadataColumn
+                          refId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Output].ExternalColumns[Nombre III]"
+                          dataType="wstr"
+                          length="255"
+                          name="Nombre III" />
+                        <externalMetadataColumn
+                          refId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Output].ExternalColumns[Nombre IV]"
+                          dataType="wstr"
+                          length="255"
+                          name="Nombre IV" />
+                        <externalMetadataColumn
+                          refId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Output].ExternalColumns[Cuenta Nombre I]"
+                          dataType="wstr"
+                          length="255"
+                          name="Cuenta Nombre I" />
+                        <externalMetadataColumn
+                          refId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Output].ExternalColumns[Cuenta Nombre II]"
+                          dataType="wstr"
+                          length="255"
+                          name="Cuenta Nombre II" />
+                        <externalMetadataColumn
+                          refId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Output].ExternalColumns[Cuenta Nombre III]"
+                          dataType="wstr"
+                          length="255"
+                          name="Cuenta Nombre III" />
+                        <externalMetadataColumn
+                          refId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Output].ExternalColumns[Cuenta Nombre IV]"
+                          dataType="wstr"
+                          length="255"
+                          name="Cuenta Nombre IV" />
+                        <externalMetadataColumn
+                          refId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Output].ExternalColumns[linea modelo]"
+                          dataType="wstr"
+                          length="255"
+                          name="linea modelo" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Error Output]"
+                      isErrorOut="true"
+                      name="Excel Source Error Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Error Output].Columns[Empresa]"
+                          dataType="r8"
+                          lineageId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Error Output].Columns[Empresa]"
+                          name="Empresa" />
+                        <outputColumn
+                          refId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Error Output].Columns[CUENTA ]"
+                          dataType="wstr"
+                          length="255"
+                          lineageId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Error Output].Columns[CUENTA ]"
+                          name="CUENTA " />
+                        <outputColumn
+                          refId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Error Output].Columns[Descripcion]"
+                          dataType="wstr"
+                          length="255"
+                          lineageId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Error Output].Columns[Descripcion]"
+                          name="Descripcion" />
+                        <outputColumn
+                          refId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Error Output].Columns[Grupo en Modelo]"
+                          dataType="wstr"
+                          length="255"
+                          lineageId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Error Output].Columns[Grupo en Modelo]"
+                          name="Grupo en Modelo" />
+                        <outputColumn
+                          refId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Error Output].Columns[Subgrupo en Modelo]"
+                          dataType="wstr"
+                          length="255"
+                          lineageId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Error Output].Columns[Subgrupo en Modelo]"
+                          name="Subgrupo en Modelo" />
+                        <outputColumn
+                          refId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Error Output].Columns[Area Que Gestiona]"
+                          dataType="wstr"
+                          length="255"
+                          lineageId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Error Output].Columns[Area Que Gestiona]"
+                          name="Area Que Gestiona" />
+                        <outputColumn
+                          refId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Error Output].Columns[Nivel I]"
+                          dataType="r8"
+                          lineageId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Error Output].Columns[Nivel I]"
+                          name="Nivel I" />
+                        <outputColumn
+                          refId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Error Output].Columns[Nivel II]"
+                          dataType="r8"
+                          lineageId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Error Output].Columns[Nivel II]"
+                          name="Nivel II" />
+                        <outputColumn
+                          refId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Error Output].Columns[Nivel III]"
+                          dataType="r8"
+                          lineageId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Error Output].Columns[Nivel III]"
+                          name="Nivel III" />
+                        <outputColumn
+                          refId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Error Output].Columns[Nivel IV]"
+                          dataType="r8"
+                          lineageId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Error Output].Columns[Nivel IV]"
+                          name="Nivel IV" />
+                        <outputColumn
+                          refId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Error Output].Columns[Nombre I]"
+                          dataType="wstr"
+                          length="255"
+                          lineageId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Error Output].Columns[Nombre I]"
+                          name="Nombre I" />
+                        <outputColumn
+                          refId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Error Output].Columns[Nombre II]"
+                          dataType="wstr"
+                          length="255"
+                          lineageId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Error Output].Columns[Nombre II]"
+                          name="Nombre II" />
+                        <outputColumn
+                          refId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Error Output].Columns[Nombre III]"
+                          dataType="wstr"
+                          length="255"
+                          lineageId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Error Output].Columns[Nombre III]"
+                          name="Nombre III" />
+                        <outputColumn
+                          refId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Error Output].Columns[Nombre IV]"
+                          dataType="wstr"
+                          length="255"
+                          lineageId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Error Output].Columns[Nombre IV]"
+                          name="Nombre IV" />
+                        <outputColumn
+                          refId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Error Output].Columns[Cuenta Nombre I]"
+                          dataType="wstr"
+                          length="255"
+                          lineageId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Error Output].Columns[Cuenta Nombre I]"
+                          name="Cuenta Nombre I" />
+                        <outputColumn
+                          refId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Error Output].Columns[Cuenta Nombre II]"
+                          dataType="wstr"
+                          length="255"
+                          lineageId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Error Output].Columns[Cuenta Nombre II]"
+                          name="Cuenta Nombre II" />
+                        <outputColumn
+                          refId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Error Output].Columns[Cuenta Nombre III]"
+                          dataType="wstr"
+                          length="255"
+                          lineageId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Error Output].Columns[Cuenta Nombre III]"
+                          name="Cuenta Nombre III" />
+                        <outputColumn
+                          refId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Error Output].Columns[Cuenta Nombre IV]"
+                          dataType="wstr"
+                          length="255"
+                          lineageId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Error Output].Columns[Cuenta Nombre IV]"
+                          name="Cuenta Nombre IV" />
+                        <outputColumn
+                          refId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Error Output].Columns[linea modelo]"
+                          dataType="wstr"
+                          length="255"
+                          lineageId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Error Output].Columns[linea modelo]"
+                          name="linea modelo" />
+                        <outputColumn
+                          refId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+              </components>
+              <paths>
+                <path
+                  refId="Package\CS_Operaciones\DFT_PUC.Paths[Excel Source Output]"
+                  endId="Package\CS_Operaciones\DFT_PUC\OLEDBD_PUC_Operaciones.Inputs[OLE DB Destination Input]"
+                  name="Excel Source Output"
+                  startId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Outputs[Excel Source Output]" />
+              </paths>
+            </pipeline>
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
     </DTS:Executable>
     <DTS:Executable
       DTS:refId="Package\CS_RayoCarga"
@@ -24639,11 +25485,11 @@
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Restricción 2]"
       DTS:CreationName=""
-      DTS:DTSID="{ED280DAF-9C37-49CE-ABBC-BBF33110C38D}"
+      DTS:DTSID="{735C6D39-EE1A-4A3A-BBFB-01A9043A5567}"
       DTS:From="Package\CS_Mantenimiento"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Restricción 2"
-      DTS:To="Package\CS_talento_humano" />
+      DTS:To="Package\CS_RayoCarga" />
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Restricción 3]"
       DTS:CreationName=""
@@ -24652,6 +25498,22 @@
       DTS:LogicalAnd="True"
       DTS:ObjectName="Restricción 3"
       DTS:To="Package\CS_Comercial" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción 4]"
+      DTS:CreationName=""
+      DTS:DTSID="{E311083D-2D68-47BF-9945-AF85DAB3ED9D}"
+      DTS:From="Package\CS_RayoCarga"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción 4"
+      DTS:To="Package\CS_Operaciones" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción 5]"
+      DTS:CreationName=""
+      DTS:DTSID="{0CC8FC7F-7D0A-4657-81D5-AF113A259079}"
+      DTS:From="Package\CS_Operaciones"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción 5"
+      DTS:To="Package\CS_talento_humano" />
   </DTS:PrecedenceConstraints>
   <DTS:EventHandlers>
     <DTS:EventHandler
@@ -24799,7 +25661,7 @@
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="569.333333333334,289.333333333334"
+          PanelSize="569.333333333334,290"
           Size="569.333333333334,332.666666666667"
           Id="Package\CS_Comercial"
           TopLeft="102.916661229812,685.466669306357" />
@@ -24810,7 +25672,7 @@
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="208.666666666667,121.333333333334"
+          PanelSize="208.666666666667,122"
           Size="208.666666666667,164.666666666667"
           Id="Package\CS_Mantenimiento\CBF_Wizeo"
           TopLeft="64.5416192551059,110.433333517578" />
@@ -24843,10 +25705,32 @@
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="381.333333333334,489.333333333334"
+          PanelSize="381.333333333334,490"
           Size="381.333333333334,532.666666666667"
           Id="Package\CS_Mantenimiento"
           TopLeft="783.333290533889,106.333332616157" />
+        <NodeLayout
+          Size="124,42.6666666666667"
+          Id="Package\CS_Operaciones\DFT_PUC"
+          TopLeft="151.416613972437,34.5999911975865" />
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="450.666666666667,209.333333333334"
+          Size="450.666666666667,252.666666666667"
+          Id="Package\CS_Operaciones"
+          TopLeft="1272.54162769082,341.983343220552" />
+        <NodeLayout
+          Size="153.333333333334,42.6666666666667"
+          Id="Package\CS_RayoCarga\DFT_Rayocarga"
+          TopLeft="38.8332735424265,25.7833254917465" />
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="232.666666666667,124"
+          Size="232.666666666667,166.666666666667"
+          Id="Package\CS_RayoCarga"
+          TopLeft="1298.74994194135,115.049994513989" />
         <NodeLayout
           Size="162.666666666667,42.6666666666667"
           Id="Package\CS_talento_humano\DFT_Ausentismo"
@@ -24932,8 +25816,8 @@
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="450.666666666667,210"
-          Size="450.666666666667,252.666666666667"
+          PanelSize="480.666666666667,516"
+          Size="480.666666666667,558.666666666667"
           Id="Package\CS_talento_humano"
           TopLeft="746.083287808218,723.766666505668" />
         <NodeLayout
@@ -25193,18 +26077,30 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción 2]"
-          TopLeft="972.708289171053,638.999999282824">
+          TopLeft="1164.66662386722,372.66666594949">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,84.7666672228444"
+              EndConnector="134.083318074128,-174.283338102168"
               Start="0,0"
-              End="0,77.2666672228444">
+              End="126.583318074128,-174.283338102168">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,77.2666672228444" />
+                    End="63.0416590370638,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="63.0416590370638,0"
+                    Point2="67.0416590370638,0"
+                    Point3="67.0416590370638,-4" />
+                  <mssgle:LineSegment
+                    End="67.0416590370638,-170.283338102168" />
+                  <mssgle:CubicBezierSegment
+                    Point1="67.0416590370638,-170.283338102168"
+                    Point2="67.0416590370638,-174.283338102168"
+                    Point3="71.0416590370638,-174.283338102168" />
+                  <mssgle:LineSegment
+                    End="126.583318074128,-174.283338102168" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -25215,18 +26111,30 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción 3]"
-          TopLeft="746.083287808218,850.950001239346">
+          TopLeft="746.083287808218,1003.099999839">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-73.8332932450726,0"
+              EndConnector="-73.8332932450726,-151.299997199311"
               Start="0,0"
-              End="-66.3332932450726,0">
+              End="-66.3332932450726,-151.299997199311">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="-66.3332932450726,0" />
+                    End="-32.9166466225363,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-32.9166466225363,0"
+                    Point2="-36.9166466225363,0"
+                    Point3="-36.9166466225363,-4" />
+                  <mssgle:LineSegment
+                    End="-36.9166466225363,-147.299997199311" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-36.9166466225363,-147.299997199311"
+                    Point2="-36.9166466225363,-151.299997199311"
+                    Point3="-40.9166466225363,-151.299997199311" />
+                  <mssgle:LineSegment
+                    End="-66.3332932450726,-151.299997199311" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -25235,17 +26143,74 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="153.333333333334,42.6666666666667"
-          Id="Package\CS_RayoCarga\DFT_Rayocarga"
-          TopLeft="38.8332735424265,25.7833254917465" />
-        <ContainerLayout
-          HeaderHeight="43"
-          IsExpanded="True"
-          PanelSize="232.666666666667,123.333333333334"
-          Size="232.666666666667,166.666666666667"
-          Id="Package\CS_RayoCarga"
-          TopLeft="1298.74994194135,115.049994513989" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción 4]"
+          TopLeft="1415.08327527468,281.716661180656">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="82.7916857494695,60.2666820398962"
+              Start="0,0"
+              End="82.7916857494695,52.7666820398962">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,26.1333410199481" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,26.1333410199481"
+                    Point2="0,30.1333410199481"
+                    Point3="4,30.1333410199481" />
+                  <mssgle:LineSegment
+                    End="78.7916857494695,30.1333410199481" />
+                  <mssgle:CubicBezierSegment
+                    Point1="78.7916857494695,30.1333410199481"
+                    Point2="82.7916857494695,30.1333410199481"
+                    Point3="82.7916857494695,34.1333410199481" />
+                  <mssgle:LineSegment
+                    End="82.7916857494695,52.7666820398962" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción 5]"
+          TopLeft="1497.87496102415,594.650009887219">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-511.458339882601,129.11665661845"
+              Start="0,0"
+              End="-511.458339882601,121.61665661845">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,60.5583283092248" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,60.5583283092248"
+                    Point2="0,64.5583283092248"
+                    Point3="-4,64.5583283092248" />
+                  <mssgle:LineSegment
+                    End="-507.458339882601,64.5583283092248" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-507.458339882601,64.5583283092248"
+                    Point2="-511.458339882601,64.5583283092248"
+                    Point3="-511.458339882601,68.5583283092248" />
+                  <mssgle:LineSegment
+                    End="-511.458339882601,121.61665661845" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -25752,6 +26717,70 @@
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <TaskHost
+    design-time-name="Package\CS_RayoCarga\DFT_Rayocarga">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="146.666666666667,42.6666666666667"
+          Id="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga"
+          TopLeft="632.499971725048,30.5499985432626" />
+        <NodeLayout
+          Size="174.666666666667,42.6666666666667"
+          Id="Package\CS_RayoCarga\DFT_Rayocarga\OLEDBD_Rayocarga"
+          TopLeft="615.624972479419,144.949993088246" />
+        <EdgeLayout
+          Id="Package\CS_RayoCarga\DFT_Rayocarga.Paths[Excel Source Output]"
+          TopLeft="704.395805435566,73.2166652099292">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,71.7333278783164"
+              Start="0,0"
+              End="0,64.2333278783164">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,64.2333278783164" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\CS_RayoCarga\DFT_Rayocarga\OLEDBD_Rayocarga">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\CS_talento_humano\DFT_Ausentismo">
     <LayoutInfo>
@@ -26954,32 +27983,44 @@
     </LayoutInfo>
   </TaskHost>
   <TaskHost
-    design-time-name="Package\CS_RayoCarga\DFT_Rayocarga">
+    design-time-name="Package\CS_Operaciones\DFT_PUC">
     <LayoutInfo>
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="146.666666666667,42.6666666666667"
-          Id="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga"
-          TopLeft="632.499971725048,30.5499985432626" />
+          Size="162.666666666667,42.6666666666667"
+          Id="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones"
+          TopLeft="569.999974519015,69.5499966835977" />
         <NodeLayout
-          Size="174.666666666667,42.6666666666667"
-          Id="Package\CS_RayoCarga\DFT_Rayocarga\OLEDBD_Rayocarga"
-          TopLeft="615.624972479419,144.949993088246" />
+          Size="208,42.6666666666667"
+          Id="Package\CS_Operaciones\DFT_PUC\OLEDBD_PUC_Operaciones"
+          TopLeft="663.749970328064,200.849990422726" />
         <EdgeLayout
-          Id="Package\CS_RayoCarga\DFT_Rayocarga.Paths[Excel Source Output]"
-          TopLeft="704.395805435566,73.2166652099292">
+          Id="Package\CS_Operaciones\DFT_PUC.Paths[Excel Source Output]"
+          TopLeft="651.333307852349,112.216663350264">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,71.7333278783164"
+              EndConnector="116.416662475715,88.6333270724617"
               Start="0,0"
-              End="0,64.2333278783164">
+              End="116.416662475715,81.1333270724617">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,64.2333278783164" />
+                    End="0,40.3166635362308" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,40.3166635362308"
+                    Point2="0,44.3166635362308"
+                    Point3="4,44.3166635362308" />
+                  <mssgle:LineSegment
+                    End="112.416662475715,44.3166635362308" />
+                  <mssgle:CubicBezierSegment
+                    Point1="112.416662475715,44.3166635362308"
+                    Point2="116.416662475715,44.3166635362308"
+                    Point3="116.416662475715,48.3166635362308" />
+                  <mssgle:LineSegment
+                    End="116.416662475715,81.1333270724617" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -26992,7 +28033,7 @@
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga">
+    design-time-name="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -27005,7 +28046,7 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\CS_RayoCarga\DFT_Rayocarga\OLEDBD_Rayocarga">
+    design-time-name="Package\CS_Operaciones\DFT_PUC\OLEDBD_PUC_Operaciones">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
