@@ -11,8 +11,8 @@
   DTS:LocaleID="9226"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="372"
-  DTS:VersionGUID="{81B7E912-F2DC-4268-9A34-5F5B60D8F4B9}">
+  DTS:VersionBuild="376"
+  DTS:VersionGUID="{8383C014-5A17-49C2-913C-DD1C6E58450B}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -172,6 +172,18 @@
           DTS:ConnectRetryCount="0"
           DTS:ConnectRetryInterval="0"
           DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.16.0;Data Source=D:\Rayogas\Sistemas de Información - Estrategia de Datos\7. Fuentes de Información\Xls\Comercial\vendedor\Presupuestos por vendedor granel y cilindros.xls;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Rayocarga]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{0F2CEF5E-9609-45C6-8DED-ED8398D39282}"
+      DTS:ObjectName="Rayocarga">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.16.0;Data Source=D:\Rayogas\Sistemas de Información - Estrategia de Datos\7. Fuentes de Información\Xls\Rayocarga\Habitos RayoCarga.xlsx;Extended Properties=&quot;Excel 12.0 XML;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -524,6 +536,35 @@
                           lineageId="Package\CS_Comercial\DFT_ MetaComercial\ES_MetaComercial.Outputs[Excel Source Output].Columns[MP_Millones]"
                           name="MP_Millones"
                           truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\CS_Comercial\DFT_ MetaComercial\ES_MetaComercial.Outputs[Excel Source Output].Columns[CeCo]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CS_Comercial\DFT_ MetaComercial\ES_MetaComercial.Outputs[Excel Source Output].ExternalColumns[CeCo]"
+                          length="255"
+                          lineageId="Package\CS_Comercial\DFT_ MetaComercial\ES_MetaComercial.Outputs[Excel Source Output].Columns[CeCo]"
+                          name="CeCo"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\CS_Comercial\DFT_ MetaComercial\ES_MetaComercial.Outputs[Excel Source Output].Columns[CeCo descripcion]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CS_Comercial\DFT_ MetaComercial\ES_MetaComercial.Outputs[Excel Source Output].ExternalColumns[CeCo descripcion]"
+                          length="255"
+                          lineageId="Package\CS_Comercial\DFT_ MetaComercial\ES_MetaComercial.Outputs[Excel Source Output].Columns[CeCo descripcion]"
+                          name="CeCo descripcion"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\CS_Comercial\DFT_ MetaComercial\ES_MetaComercial.Outputs[Excel Source Output].Columns[Cedula]"
+                          dataType="r8"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CS_Comercial\DFT_ MetaComercial\ES_MetaComercial.Outputs[Excel Source Output].ExternalColumns[Cedula]"
+                          lineageId="Package\CS_Comercial\DFT_ MetaComercial\ES_MetaComercial.Outputs[Excel Source Output].Columns[Cedula]"
+                          name="Cedula"
+                          truncationRowDisposition="FailComponent" />
                       </outputColumns>
                       <externalMetadataColumns
                         isUsed="True">
@@ -554,6 +595,30 @@
                           dataType="wstr"
                           length="255"
                           name="MP_Millones" />
+                        <externalMetadataColumn
+                          refId="Package\CS_Comercial\DFT_ MetaComercial\ES_MetaComercial.Outputs[Excel Source Output].ExternalColumns[CeCo]"
+                          dataType="wstr"
+                          length="255"
+                          name="CeCo" />
+                        <externalMetadataColumn
+                          refId="Package\CS_Comercial\DFT_ MetaComercial\ES_MetaComercial.Outputs[Excel Source Output].ExternalColumns[CeCo descripcion]"
+                          dataType="wstr"
+                          length="255"
+                          name="CeCo descripcion" />
+                        <externalMetadataColumn
+                          refId="Package\CS_Comercial\DFT_ MetaComercial\ES_MetaComercial.Outputs[Excel Source Output].ExternalColumns[Cedula]"
+                          dataType="r8"
+                          name="Cedula" />
+                        <externalMetadataColumn
+                          refId="Package\CS_Comercial\DFT_ MetaComercial\ES_MetaComercial.Outputs[Excel Source Output].ExternalColumns[F10]"
+                          dataType="wstr"
+                          length="255"
+                          name="F10" />
+                        <externalMetadataColumn
+                          refId="Package\CS_Comercial\DFT_ MetaComercial\ES_MetaComercial.Outputs[Excel Source Output].ExternalColumns[F11]"
+                          dataType="wstr"
+                          length="255"
+                          name="F11" />
                       </externalMetadataColumns>
                     </output>
                     <output
@@ -572,6 +637,23 @@
                           length="255"
                           lineageId="Package\CS_Comercial\DFT_ MetaComercial\ES_MetaComercial.Outputs[Excel Source Error Output].Columns[U#N#]"
                           name="U#N#" />
+                        <outputColumn
+                          refId="Package\CS_Comercial\DFT_ MetaComercial\ES_MetaComercial.Outputs[Excel Source Error Output].Columns[CeCo]"
+                          dataType="wstr"
+                          length="255"
+                          lineageId="Package\CS_Comercial\DFT_ MetaComercial\ES_MetaComercial.Outputs[Excel Source Error Output].Columns[CeCo]"
+                          name="CeCo" />
+                        <outputColumn
+                          refId="Package\CS_Comercial\DFT_ MetaComercial\ES_MetaComercial.Outputs[Excel Source Error Output].Columns[CeCo descripcion]"
+                          dataType="wstr"
+                          length="255"
+                          lineageId="Package\CS_Comercial\DFT_ MetaComercial\ES_MetaComercial.Outputs[Excel Source Error Output].Columns[CeCo descripcion]"
+                          name="CeCo descripcion" />
+                        <outputColumn
+                          refId="Package\CS_Comercial\DFT_ MetaComercial\ES_MetaComercial.Outputs[Excel Source Error Output].Columns[Cedula]"
+                          dataType="r8"
+                          lineageId="Package\CS_Comercial\DFT_ MetaComercial\ES_MetaComercial.Outputs[Excel Source Error Output].Columns[Cedula]"
+                          name="Cedula" />
                         <outputColumn
                           refId="Package\CS_Comercial\DFT_ MetaComercial\ES_MetaComercial.Outputs[Excel Source Error Output].Columns[Nombre vendedor]"
                           dataType="wstr"
@@ -722,6 +804,26 @@
                           cachedName="Nombre vendedor"
                           externalMetadataColumnId="Package\CS_Comercial\DFT_ MetaComercial\OLEDBD_ MetaComercial.Inputs[OLE DB Destination Input].ExternalColumns[Nombre_vendedor]"
                           lineageId="Package\CS_Comercial\DFT_ MetaComercial\ES_MetaComercial.Outputs[Excel Source Output].Columns[Nombre vendedor]" />
+                        <inputColumn
+                          refId="Package\CS_Comercial\DFT_ MetaComercial\OLEDBD_ MetaComercial.Inputs[OLE DB Destination Input].Columns[CeCo]"
+                          cachedDataType="wstr"
+                          cachedLength="255"
+                          cachedName="CeCo"
+                          externalMetadataColumnId="Package\CS_Comercial\DFT_ MetaComercial\OLEDBD_ MetaComercial.Inputs[OLE DB Destination Input].ExternalColumns[CeCo]"
+                          lineageId="Package\CS_Comercial\DFT_ MetaComercial\ES_MetaComercial.Outputs[Excel Source Output].Columns[CeCo]" />
+                        <inputColumn
+                          refId="Package\CS_Comercial\DFT_ MetaComercial\OLEDBD_ MetaComercial.Inputs[OLE DB Destination Input].Columns[CeCo descripcion]"
+                          cachedDataType="wstr"
+                          cachedLength="255"
+                          cachedName="CeCo descripcion"
+                          externalMetadataColumnId="Package\CS_Comercial\DFT_ MetaComercial\OLEDBD_ MetaComercial.Inputs[OLE DB Destination Input].ExternalColumns[CeCo descripcion]"
+                          lineageId="Package\CS_Comercial\DFT_ MetaComercial\ES_MetaComercial.Outputs[Excel Source Output].Columns[CeCo descripcion]" />
+                        <inputColumn
+                          refId="Package\CS_Comercial\DFT_ MetaComercial\OLEDBD_ MetaComercial.Inputs[OLE DB Destination Input].Columns[Cedula]"
+                          cachedDataType="r8"
+                          cachedName="Cedula"
+                          externalMetadataColumnId="Package\CS_Comercial\DFT_ MetaComercial\OLEDBD_ MetaComercial.Inputs[OLE DB Destination Input].ExternalColumns[Cedula]"
+                          lineageId="Package\CS_Comercial\DFT_ MetaComercial\ES_MetaComercial.Outputs[Excel Source Output].Columns[Cedula]" />
                       </inputColumns>
                       <externalMetadataColumns
                         isUsed="True">
@@ -752,6 +854,20 @@
                           dataType="wstr"
                           length="255"
                           name="MP_Millones" />
+                        <externalMetadataColumn
+                          refId="Package\CS_Comercial\DFT_ MetaComercial\OLEDBD_ MetaComercial.Inputs[OLE DB Destination Input].ExternalColumns[CeCo]"
+                          dataType="wstr"
+                          length="255"
+                          name="CeCo" />
+                        <externalMetadataColumn
+                          refId="Package\CS_Comercial\DFT_ MetaComercial\OLEDBD_ MetaComercial.Inputs[OLE DB Destination Input].ExternalColumns[CeCo descripcion]"
+                          dataType="wstr"
+                          length="255"
+                          name="CeCo descripcion" />
+                        <externalMetadataColumn
+                          refId="Package\CS_Comercial\DFT_ MetaComercial\OLEDBD_ MetaComercial.Inputs[OLE DB Destination Input].ExternalColumns[Cedula]"
+                          dataType="r8"
+                          name="Cedula" />
                       </externalMetadataColumns>
                     </input>
                   </inputs>
@@ -6973,6 +7089,918 @@
           DTS:ObjectName="Restricción"
           DTS:To="Package\CS_Mantenimiento\CBF_Wizeo" />
       </DTS:PrecedenceConstraints>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\CS_RayoCarga"
+      DTS:CreationName="STOCK:SEQUENCE"
+      DTS:Description="Contenedor de secuencias"
+      DTS:DTSID="{FAF16890-7124-4E71-9948-1B3E02CBCC8B}"
+      DTS:ExecutableType="STOCK:SEQUENCE"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="CS_RayoCarga">
+      <DTS:Variables />
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\CS_RayoCarga\DFT_Rayocarga"
+          DTS:CreationName="Microsoft.Pipeline"
+          DTS:Description="Data Flow Task"
+          DTS:DTSID="{3E5BF960-01D9-49FA-8849-93FD7B2B71C3}"
+          DTS:ExecutableType="Microsoft.Pipeline"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="DFT_Rayocarga"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <pipeline
+              version="1">
+              <components>
+                <component
+                  refId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga"
+                  componentClassID="Microsoft.ExcelSource"
+                  contactInfo="Excel Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+                  description="Excel Source"
+                  name="ES_Rayocarga"
+                  usesDispositions="true"
+                  version="1">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">Hoja1$</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.String"
+                      description="The variable that contains the SQL command to be executed."
+                      name="SqlCommandVariable"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">0</property>
+                    <property
+                      dataType="System.String"
+                      description="The mapping from parameters in the SQL command to variables."
+                      name="ParameterMapping"></property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[Rayocarga]"
+                      connectionManagerRefId="Package.ConnectionManagers[Rayocarga]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output]"
+                      name="Excel Source Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].Columns[Descripcion]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].ExternalColumns[Descripcion]"
+                          length="255"
+                          lineageId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].Columns[Descripcion]"
+                          name="Descripcion"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].Columns[Grupo]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].ExternalColumns[Grupo]"
+                          length="255"
+                          lineageId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].Columns[Grupo]"
+                          name="Grupo"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].Columns[**Distancia (km)]"
+                          dataType="r8"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].ExternalColumns[**Distancia (km)]"
+                          lineageId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].Columns[**Distancia (km)]"
+                          name="**Distancia (km)"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].Columns[Velocidad maxima (km)]"
+                          dataType="r8"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].ExternalColumns[Velocidad maxima (km)]"
+                          lineageId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].Columns[Velocidad maxima (km)]"
+                          name="Velocidad maxima (km)"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].Columns[Velocidad promedio (km)]"
+                          dataType="r8"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].ExternalColumns[Velocidad promedio (km)]"
+                          lineageId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].Columns[Velocidad promedio (km)]"
+                          name="Velocidad promedio (km)"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].Columns[Tiempo en Ralenti]"
+                          dataType="date"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].ExternalColumns[Tiempo en Ralenti]"
+                          lineageId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].Columns[Tiempo en Ralenti]"
+                          name="Tiempo en Ralenti"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].Columns[Puntuacion total]"
+                          dataType="cy"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].ExternalColumns[Puntuacion total]"
+                          lineageId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].Columns[Puntuacion total]"
+                          name="Puntuacion total"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].Columns[Clasificacion de puntuacion]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].ExternalColumns[Clasificacion de puntuacion]"
+                          length="255"
+                          lineageId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].Columns[Clasificacion de puntuacion]"
+                          name="Clasificacion de puntuacion"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].Columns[**Aceleracion Brusca Rayocarga Mack]"
+                          dataType="cy"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].ExternalColumns[**Aceleracion Brusca Rayocarga Mack]"
+                          lineageId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].Columns[**Aceleracion Brusca Rayocarga Mack]"
+                          name="**Aceleracion Brusca Rayocarga Mack"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].Columns[**Frenada Brusca Kenworth]"
+                          dataType="cy"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].ExternalColumns[**Frenada Brusca Kenworth]"
+                          lineageId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].Columns[**Frenada Brusca Kenworth]"
+                          name="**Frenada Brusca Kenworth"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].Columns[**Giro Brusco Rayocarga General]"
+                          dataType="cy"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].ExternalColumns[**Giro Brusco Rayocarga General]"
+                          lineageId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].Columns[**Giro Brusco Rayocarga General]"
+                          name="**Giro Brusco Rayocarga General"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].Columns[**Tiempo en Ralenti Rayocarga Nacional]"
+                          dataType="cy"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].ExternalColumns[**Tiempo en Ralenti Rayocarga Nacional]"
+                          lineageId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].Columns[**Tiempo en Ralenti Rayocarga Nacional]"
+                          name="**Tiempo en Ralenti Rayocarga Nacional"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].Columns[**Excesos de RPM Rayocarga KENWORTH T800]"
+                          dataType="cy"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].ExternalColumns[**Excesos de RPM Rayocarga KENWORTH T800]"
+                          lineageId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].Columns[**Excesos de RPM Rayocarga KENWORTH T800]"
+                          name="**Excesos de RPM Rayocarga KENWORTH T800"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].Columns[**Exceso de Velocidad Rayocarga 75 Km/h]"
+                          dataType="cy"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].ExternalColumns[**Exceso de Velocidad Rayocarga 75 Km/h]"
+                          lineageId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].Columns[**Exceso de Velocidad Rayocarga 75 Km/h]"
+                          name="**Exceso de Velocidad Rayocarga 75 Km/h"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].Columns[Total de ocurrencias]"
+                          dataType="r8"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].ExternalColumns[Total de ocurrencias]"
+                          lineageId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].Columns[Total de ocurrencias]"
+                          name="Total de ocurrencias"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].Columns[Include]"
+                          dataType="bool"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].ExternalColumns[Include]"
+                          lineageId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].Columns[Include]"
+                          name="Include"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].Columns[**Aceleracion Brusca Rayocarga Mack1]"
+                          dataType="r8"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].ExternalColumns[**Aceleracion Brusca Rayocarga Mack1]"
+                          lineageId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].Columns[**Aceleracion Brusca Rayocarga Mack1]"
+                          name="**Aceleracion Brusca Rayocarga Mack1"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].Columns[**Frenada Brusca Kenworth1]"
+                          dataType="r8"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].ExternalColumns[**Frenada Brusca Kenworth1]"
+                          lineageId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].Columns[**Frenada Brusca Kenworth1]"
+                          name="**Frenada Brusca Kenworth1"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].Columns[**Giro Brusco Rayocarga General1]"
+                          dataType="r8"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].ExternalColumns[**Giro Brusco Rayocarga General1]"
+                          lineageId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].Columns[**Giro Brusco Rayocarga General1]"
+                          name="**Giro Brusco Rayocarga General1"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].Columns[**Tiempo en Ralenti Rayocarga Nacional1]"
+                          dataType="r8"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].ExternalColumns[**Tiempo en Ralenti Rayocarga Nacional1]"
+                          lineageId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].Columns[**Tiempo en Ralenti Rayocarga Nacional1]"
+                          name="**Tiempo en Ralenti Rayocarga Nacional1"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].Columns[**Excesos de RPM Rayocarga KENWORTH T8001]"
+                          dataType="r8"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].ExternalColumns[**Excesos de RPM Rayocarga KENWORTH T8001]"
+                          lineageId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].Columns[**Excesos de RPM Rayocarga KENWORTH T8001]"
+                          name="**Excesos de RPM Rayocarga KENWORTH T8001"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].Columns[**Exceso de Velocidad Rayocarga 75 Km/h1]"
+                          dataType="r8"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].ExternalColumns[**Exceso de Velocidad Rayocarga 75 Km/h1]"
+                          lineageId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].Columns[**Exceso de Velocidad Rayocarga 75 Km/h1]"
+                          name="**Exceso de Velocidad Rayocarga 75 Km/h1"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].Columns[Periodo]"
+                          dataType="r8"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].ExternalColumns[Periodo]"
+                          lineageId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].Columns[Periodo]"
+                          name="Periodo"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].Columns[Empresa]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].ExternalColumns[Empresa]"
+                          length="255"
+                          lineageId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].Columns[Empresa]"
+                          name="Empresa"
+                          truncationRowDisposition="FailComponent" />
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].ExternalColumns[Descripcion]"
+                          dataType="wstr"
+                          length="255"
+                          name="Descripcion" />
+                        <externalMetadataColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].ExternalColumns[Grupo]"
+                          dataType="wstr"
+                          length="255"
+                          name="Grupo" />
+                        <externalMetadataColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].ExternalColumns[**Distancia (km)]"
+                          dataType="r8"
+                          name="**Distancia (km)" />
+                        <externalMetadataColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].ExternalColumns[Velocidad maxima (km)]"
+                          dataType="r8"
+                          name="Velocidad maxima (km)" />
+                        <externalMetadataColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].ExternalColumns[Velocidad promedio (km)]"
+                          dataType="r8"
+                          name="Velocidad promedio (km)" />
+                        <externalMetadataColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].ExternalColumns[Tiempo en Ralenti]"
+                          dataType="date"
+                          name="Tiempo en Ralenti" />
+                        <externalMetadataColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].ExternalColumns[Puntuacion total]"
+                          dataType="cy"
+                          name="Puntuacion total" />
+                        <externalMetadataColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].ExternalColumns[Clasificacion de puntuacion]"
+                          dataType="wstr"
+                          length="255"
+                          name="Clasificacion de puntuacion" />
+                        <externalMetadataColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].ExternalColumns[**Aceleracion Brusca Rayocarga Mack]"
+                          dataType="cy"
+                          name="**Aceleracion Brusca Rayocarga Mack" />
+                        <externalMetadataColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].ExternalColumns[**Frenada Brusca Kenworth]"
+                          dataType="cy"
+                          name="**Frenada Brusca Kenworth" />
+                        <externalMetadataColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].ExternalColumns[**Giro Brusco Rayocarga General]"
+                          dataType="cy"
+                          name="**Giro Brusco Rayocarga General" />
+                        <externalMetadataColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].ExternalColumns[**Tiempo en Ralenti Rayocarga Nacional]"
+                          dataType="cy"
+                          name="**Tiempo en Ralenti Rayocarga Nacional" />
+                        <externalMetadataColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].ExternalColumns[**Excesos de RPM Rayocarga KENWORTH T800]"
+                          dataType="cy"
+                          name="**Excesos de RPM Rayocarga KENWORTH T800" />
+                        <externalMetadataColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].ExternalColumns[**Exceso de Velocidad Rayocarga 75 Km/h]"
+                          dataType="cy"
+                          name="**Exceso de Velocidad Rayocarga 75 Km/h" />
+                        <externalMetadataColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].ExternalColumns[Total de ocurrencias]"
+                          dataType="r8"
+                          name="Total de ocurrencias" />
+                        <externalMetadataColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].ExternalColumns[Include]"
+                          dataType="bool"
+                          name="Include" />
+                        <externalMetadataColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].ExternalColumns[**Aceleracion Brusca Rayocarga Mack1]"
+                          dataType="r8"
+                          name="**Aceleracion Brusca Rayocarga Mack1" />
+                        <externalMetadataColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].ExternalColumns[**Frenada Brusca Kenworth1]"
+                          dataType="r8"
+                          name="**Frenada Brusca Kenworth1" />
+                        <externalMetadataColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].ExternalColumns[**Giro Brusco Rayocarga General1]"
+                          dataType="r8"
+                          name="**Giro Brusco Rayocarga General1" />
+                        <externalMetadataColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].ExternalColumns[**Tiempo en Ralenti Rayocarga Nacional1]"
+                          dataType="r8"
+                          name="**Tiempo en Ralenti Rayocarga Nacional1" />
+                        <externalMetadataColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].ExternalColumns[**Excesos de RPM Rayocarga KENWORTH T8001]"
+                          dataType="r8"
+                          name="**Excesos de RPM Rayocarga KENWORTH T8001" />
+                        <externalMetadataColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].ExternalColumns[**Exceso de Velocidad Rayocarga 75 Km/h1]"
+                          dataType="r8"
+                          name="**Exceso de Velocidad Rayocarga 75 Km/h1" />
+                        <externalMetadataColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].ExternalColumns[Periodo]"
+                          dataType="r8"
+                          name="Periodo" />
+                        <externalMetadataColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].ExternalColumns[Empresa]"
+                          dataType="wstr"
+                          length="255"
+                          name="Empresa" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Error Output]"
+                      isErrorOut="true"
+                      name="Excel Source Error Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Error Output].Columns[Descripcion]"
+                          dataType="wstr"
+                          length="255"
+                          lineageId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Error Output].Columns[Descripcion]"
+                          name="Descripcion" />
+                        <outputColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Error Output].Columns[Grupo]"
+                          dataType="wstr"
+                          length="255"
+                          lineageId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Error Output].Columns[Grupo]"
+                          name="Grupo" />
+                        <outputColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Error Output].Columns[**Distancia (km)]"
+                          dataType="r8"
+                          lineageId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Error Output].Columns[**Distancia (km)]"
+                          name="**Distancia (km)" />
+                        <outputColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Error Output].Columns[Velocidad maxima (km)]"
+                          dataType="r8"
+                          lineageId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Error Output].Columns[Velocidad maxima (km)]"
+                          name="Velocidad maxima (km)" />
+                        <outputColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Error Output].Columns[Velocidad promedio (km)]"
+                          dataType="r8"
+                          lineageId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Error Output].Columns[Velocidad promedio (km)]"
+                          name="Velocidad promedio (km)" />
+                        <outputColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Error Output].Columns[Tiempo en Ralenti]"
+                          dataType="date"
+                          lineageId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Error Output].Columns[Tiempo en Ralenti]"
+                          name="Tiempo en Ralenti" />
+                        <outputColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Error Output].Columns[Puntuacion total]"
+                          dataType="cy"
+                          lineageId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Error Output].Columns[Puntuacion total]"
+                          name="Puntuacion total" />
+                        <outputColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Error Output].Columns[Clasificacion de puntuacion]"
+                          dataType="wstr"
+                          length="255"
+                          lineageId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Error Output].Columns[Clasificacion de puntuacion]"
+                          name="Clasificacion de puntuacion" />
+                        <outputColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Error Output].Columns[**Aceleracion Brusca Rayocarga Mack]"
+                          dataType="cy"
+                          lineageId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Error Output].Columns[**Aceleracion Brusca Rayocarga Mack]"
+                          name="**Aceleracion Brusca Rayocarga Mack" />
+                        <outputColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Error Output].Columns[**Frenada Brusca Kenworth]"
+                          dataType="cy"
+                          lineageId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Error Output].Columns[**Frenada Brusca Kenworth]"
+                          name="**Frenada Brusca Kenworth" />
+                        <outputColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Error Output].Columns[**Giro Brusco Rayocarga General]"
+                          dataType="cy"
+                          lineageId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Error Output].Columns[**Giro Brusco Rayocarga General]"
+                          name="**Giro Brusco Rayocarga General" />
+                        <outputColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Error Output].Columns[**Tiempo en Ralenti Rayocarga Nacional]"
+                          dataType="cy"
+                          lineageId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Error Output].Columns[**Tiempo en Ralenti Rayocarga Nacional]"
+                          name="**Tiempo en Ralenti Rayocarga Nacional" />
+                        <outputColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Error Output].Columns[**Excesos de RPM Rayocarga KENWORTH T800]"
+                          dataType="cy"
+                          lineageId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Error Output].Columns[**Excesos de RPM Rayocarga KENWORTH T800]"
+                          name="**Excesos de RPM Rayocarga KENWORTH T800" />
+                        <outputColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Error Output].Columns[**Exceso de Velocidad Rayocarga 75 Km/h]"
+                          dataType="cy"
+                          lineageId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Error Output].Columns[**Exceso de Velocidad Rayocarga 75 Km/h]"
+                          name="**Exceso de Velocidad Rayocarga 75 Km/h" />
+                        <outputColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Error Output].Columns[Total de ocurrencias]"
+                          dataType="r8"
+                          lineageId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Error Output].Columns[Total de ocurrencias]"
+                          name="Total de ocurrencias" />
+                        <outputColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Error Output].Columns[Include]"
+                          dataType="bool"
+                          lineageId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Error Output].Columns[Include]"
+                          name="Include" />
+                        <outputColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Error Output].Columns[**Aceleracion Brusca Rayocarga Mack1]"
+                          dataType="r8"
+                          lineageId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Error Output].Columns[**Aceleracion Brusca Rayocarga Mack1]"
+                          name="**Aceleracion Brusca Rayocarga Mack1" />
+                        <outputColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Error Output].Columns[**Frenada Brusca Kenworth1]"
+                          dataType="r8"
+                          lineageId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Error Output].Columns[**Frenada Brusca Kenworth1]"
+                          name="**Frenada Brusca Kenworth1" />
+                        <outputColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Error Output].Columns[**Giro Brusco Rayocarga General1]"
+                          dataType="r8"
+                          lineageId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Error Output].Columns[**Giro Brusco Rayocarga General1]"
+                          name="**Giro Brusco Rayocarga General1" />
+                        <outputColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Error Output].Columns[**Tiempo en Ralenti Rayocarga Nacional1]"
+                          dataType="r8"
+                          lineageId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Error Output].Columns[**Tiempo en Ralenti Rayocarga Nacional1]"
+                          name="**Tiempo en Ralenti Rayocarga Nacional1" />
+                        <outputColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Error Output].Columns[**Excesos de RPM Rayocarga KENWORTH T8001]"
+                          dataType="r8"
+                          lineageId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Error Output].Columns[**Excesos de RPM Rayocarga KENWORTH T8001]"
+                          name="**Excesos de RPM Rayocarga KENWORTH T8001" />
+                        <outputColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Error Output].Columns[**Exceso de Velocidad Rayocarga 75 Km/h1]"
+                          dataType="r8"
+                          lineageId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Error Output].Columns[**Exceso de Velocidad Rayocarga 75 Km/h1]"
+                          name="**Exceso de Velocidad Rayocarga 75 Km/h1" />
+                        <outputColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Error Output].Columns[Periodo]"
+                          dataType="r8"
+                          lineageId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Error Output].Columns[Periodo]"
+                          name="Periodo" />
+                        <outputColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Error Output].Columns[Empresa]"
+                          dataType="wstr"
+                          length="255"
+                          lineageId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Error Output].Columns[Empresa]"
+                          name="Empresa" />
+                        <outputColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\CS_RayoCarga\DFT_Rayocarga\OLEDBD_Rayocarga"
+                  componentClassID="Microsoft.OLEDBDestination"
+                  contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+                  description="OLE DB Destination"
+                  name="OLEDBD_Rayocarga"
+                  usesDispositions="true"
+                  version="4">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[xls].[Habitos_Rayocarga]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">3</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepIdentity">false</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                      name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                      name="FastLoadMaxInsertCommitSize">2147483647</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\CS_RayoCarga\DFT_Rayocarga\OLEDBD_Rayocarga.Connections[OleDbConnection]"
+                      connectionManagerID="{F969E5F0-ED10-48A1-9AD7-51F9863F78B9}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[DataStage]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\CS_RayoCarga\DFT_Rayocarga\OLEDBD_Rayocarga.Inputs[OLE DB Destination Input]"
+                      errorOrTruncationOperation="Insert"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="OLE DB Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\OLEDBD_Rayocarga.Inputs[OLE DB Destination Input].Columns[Descripcion]"
+                          cachedDataType="wstr"
+                          cachedLength="255"
+                          cachedName="Descripcion"
+                          externalMetadataColumnId="Package\CS_RayoCarga\DFT_Rayocarga\OLEDBD_Rayocarga.Inputs[OLE DB Destination Input].ExternalColumns[Descripcion]"
+                          lineageId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].Columns[Descripcion]" />
+                        <inputColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\OLEDBD_Rayocarga.Inputs[OLE DB Destination Input].Columns[Grupo]"
+                          cachedDataType="wstr"
+                          cachedLength="255"
+                          cachedName="Grupo"
+                          externalMetadataColumnId="Package\CS_RayoCarga\DFT_Rayocarga\OLEDBD_Rayocarga.Inputs[OLE DB Destination Input].ExternalColumns[Grupo]"
+                          lineageId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].Columns[Grupo]" />
+                        <inputColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\OLEDBD_Rayocarga.Inputs[OLE DB Destination Input].Columns[Include]"
+                          cachedDataType="bool"
+                          cachedName="Include"
+                          externalMetadataColumnId="Package\CS_RayoCarga\DFT_Rayocarga\OLEDBD_Rayocarga.Inputs[OLE DB Destination Input].ExternalColumns[Include]"
+                          lineageId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].Columns[Include]" />
+                        <inputColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\OLEDBD_Rayocarga.Inputs[OLE DB Destination Input].Columns[Periodo]"
+                          cachedDataType="r8"
+                          cachedName="Periodo"
+                          externalMetadataColumnId="Package\CS_RayoCarga\DFT_Rayocarga\OLEDBD_Rayocarga.Inputs[OLE DB Destination Input].ExternalColumns[Periodo]"
+                          lineageId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].Columns[Periodo]" />
+                        <inputColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\OLEDBD_Rayocarga.Inputs[OLE DB Destination Input].Columns[Empresa]"
+                          cachedDataType="wstr"
+                          cachedLength="255"
+                          cachedName="Empresa"
+                          externalMetadataColumnId="Package\CS_RayoCarga\DFT_Rayocarga\OLEDBD_Rayocarga.Inputs[OLE DB Destination Input].ExternalColumns[Empresa]"
+                          lineageId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].Columns[Empresa]" />
+                        <inputColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\OLEDBD_Rayocarga.Inputs[OLE DB Destination Input].Columns[**Distancia (km)]"
+                          cachedDataType="r8"
+                          cachedName="**Distancia (km)"
+                          externalMetadataColumnId="Package\CS_RayoCarga\DFT_Rayocarga\OLEDBD_Rayocarga.Inputs[OLE DB Destination Input].ExternalColumns[Distancia (km)]"
+                          lineageId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].Columns[**Distancia (km)]" />
+                        <inputColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\OLEDBD_Rayocarga.Inputs[OLE DB Destination Input].Columns[Velocidad maxima (km)]"
+                          cachedDataType="r8"
+                          cachedName="Velocidad maxima (km)"
+                          externalMetadataColumnId="Package\CS_RayoCarga\DFT_Rayocarga\OLEDBD_Rayocarga.Inputs[OLE DB Destination Input].ExternalColumns[VelocidadMaxima (km)]"
+                          lineageId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].Columns[Velocidad maxima (km)]" />
+                        <inputColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\OLEDBD_Rayocarga.Inputs[OLE DB Destination Input].Columns[Velocidad promedio (km)]"
+                          cachedDataType="r8"
+                          cachedName="Velocidad promedio (km)"
+                          externalMetadataColumnId="Package\CS_RayoCarga\DFT_Rayocarga\OLEDBD_Rayocarga.Inputs[OLE DB Destination Input].ExternalColumns[VelocidadPromedio (km)]"
+                          lineageId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].Columns[Velocidad promedio (km)]" />
+                        <inputColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\OLEDBD_Rayocarga.Inputs[OLE DB Destination Input].Columns[Tiempo en Ralenti]"
+                          cachedDataType="date"
+                          cachedName="Tiempo en Ralenti"
+                          externalMetadataColumnId="Package\CS_RayoCarga\DFT_Rayocarga\OLEDBD_Rayocarga.Inputs[OLE DB Destination Input].ExternalColumns[TiempoRalenti]"
+                          lineageId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].Columns[Tiempo en Ralenti]" />
+                        <inputColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\OLEDBD_Rayocarga.Inputs[OLE DB Destination Input].Columns[Puntuacion total]"
+                          cachedDataType="cy"
+                          cachedName="Puntuacion total"
+                          externalMetadataColumnId="Package\CS_RayoCarga\DFT_Rayocarga\OLEDBD_Rayocarga.Inputs[OLE DB Destination Input].ExternalColumns[PuntuacionTotal]"
+                          lineageId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].Columns[Puntuacion total]" />
+                        <inputColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\OLEDBD_Rayocarga.Inputs[OLE DB Destination Input].Columns[Clasificacion de puntuacion]"
+                          cachedDataType="wstr"
+                          cachedLength="255"
+                          cachedName="Clasificacion de puntuacion"
+                          externalMetadataColumnId="Package\CS_RayoCarga\DFT_Rayocarga\OLEDBD_Rayocarga.Inputs[OLE DB Destination Input].ExternalColumns[ClasificacionPuntuacion]"
+                          lineageId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].Columns[Clasificacion de puntuacion]" />
+                        <inputColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\OLEDBD_Rayocarga.Inputs[OLE DB Destination Input].Columns[**Aceleracion Brusca Rayocarga Mack]"
+                          cachedDataType="cy"
+                          cachedName="**Aceleracion Brusca Rayocarga Mack"
+                          externalMetadataColumnId="Package\CS_RayoCarga\DFT_Rayocarga\OLEDBD_Rayocarga.Inputs[OLE DB Destination Input].ExternalColumns[AceleracionBruscaRayocargaMack]"
+                          lineageId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].Columns[**Aceleracion Brusca Rayocarga Mack]" />
+                        <inputColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\OLEDBD_Rayocarga.Inputs[OLE DB Destination Input].Columns[**Frenada Brusca Kenworth]"
+                          cachedDataType="cy"
+                          cachedName="**Frenada Brusca Kenworth"
+                          externalMetadataColumnId="Package\CS_RayoCarga\DFT_Rayocarga\OLEDBD_Rayocarga.Inputs[OLE DB Destination Input].ExternalColumns[FrenadaBruscaKenworth]"
+                          lineageId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].Columns[**Frenada Brusca Kenworth]" />
+                        <inputColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\OLEDBD_Rayocarga.Inputs[OLE DB Destination Input].Columns[**Giro Brusco Rayocarga General]"
+                          cachedDataType="cy"
+                          cachedName="**Giro Brusco Rayocarga General"
+                          externalMetadataColumnId="Package\CS_RayoCarga\DFT_Rayocarga\OLEDBD_Rayocarga.Inputs[OLE DB Destination Input].ExternalColumns[GiroBruscoRayocargaGeneral]"
+                          lineageId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].Columns[**Giro Brusco Rayocarga General]" />
+                        <inputColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\OLEDBD_Rayocarga.Inputs[OLE DB Destination Input].Columns[**Tiempo en Ralenti Rayocarga Nacional]"
+                          cachedDataType="cy"
+                          cachedName="**Tiempo en Ralenti Rayocarga Nacional"
+                          externalMetadataColumnId="Package\CS_RayoCarga\DFT_Rayocarga\OLEDBD_Rayocarga.Inputs[OLE DB Destination Input].ExternalColumns[TiempoRalentiRayocargaNacional]"
+                          lineageId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].Columns[**Tiempo en Ralenti Rayocarga Nacional]" />
+                        <inputColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\OLEDBD_Rayocarga.Inputs[OLE DB Destination Input].Columns[**Excesos de RPM Rayocarga KENWORTH T800]"
+                          cachedDataType="cy"
+                          cachedName="**Excesos de RPM Rayocarga KENWORTH T800"
+                          externalMetadataColumnId="Package\CS_RayoCarga\DFT_Rayocarga\OLEDBD_Rayocarga.Inputs[OLE DB Destination Input].ExternalColumns[ExcesosRPMRayocargaKENWORTHT800]"
+                          lineageId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].Columns[**Excesos de RPM Rayocarga KENWORTH T800]" />
+                        <inputColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\OLEDBD_Rayocarga.Inputs[OLE DB Destination Input].Columns[**Exceso de Velocidad Rayocarga 75 Km/h]"
+                          cachedDataType="cy"
+                          cachedName="**Exceso de Velocidad Rayocarga 75 Km/h"
+                          externalMetadataColumnId="Package\CS_RayoCarga\DFT_Rayocarga\OLEDBD_Rayocarga.Inputs[OLE DB Destination Input].ExternalColumns[ExcesoVelocidadRayocarga75Km/h]"
+                          lineageId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].Columns[**Exceso de Velocidad Rayocarga 75 Km/h]" />
+                        <inputColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\OLEDBD_Rayocarga.Inputs[OLE DB Destination Input].Columns[Total de ocurrencias]"
+                          cachedDataType="r8"
+                          cachedName="Total de ocurrencias"
+                          externalMetadataColumnId="Package\CS_RayoCarga\DFT_Rayocarga\OLEDBD_Rayocarga.Inputs[OLE DB Destination Input].ExternalColumns[TotalOcurrencias]"
+                          lineageId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].Columns[Total de ocurrencias]" />
+                        <inputColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\OLEDBD_Rayocarga.Inputs[OLE DB Destination Input].Columns[**Aceleracion Brusca Rayocarga Mack1]"
+                          cachedDataType="r8"
+                          cachedName="**Aceleracion Brusca Rayocarga Mack1"
+                          externalMetadataColumnId="Package\CS_RayoCarga\DFT_Rayocarga\OLEDBD_Rayocarga.Inputs[OLE DB Destination Input].ExternalColumns[AceleracionBruscaRayocargaMack1]"
+                          lineageId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].Columns[**Aceleracion Brusca Rayocarga Mack1]" />
+                        <inputColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\OLEDBD_Rayocarga.Inputs[OLE DB Destination Input].Columns[**Frenada Brusca Kenworth1]"
+                          cachedDataType="r8"
+                          cachedName="**Frenada Brusca Kenworth1"
+                          externalMetadataColumnId="Package\CS_RayoCarga\DFT_Rayocarga\OLEDBD_Rayocarga.Inputs[OLE DB Destination Input].ExternalColumns[FrenadaBruscaKenworth1]"
+                          lineageId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].Columns[**Frenada Brusca Kenworth1]" />
+                        <inputColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\OLEDBD_Rayocarga.Inputs[OLE DB Destination Input].Columns[**Giro Brusco Rayocarga General1]"
+                          cachedDataType="r8"
+                          cachedName="**Giro Brusco Rayocarga General1"
+                          externalMetadataColumnId="Package\CS_RayoCarga\DFT_Rayocarga\OLEDBD_Rayocarga.Inputs[OLE DB Destination Input].ExternalColumns[GiroBruscoRayocargaGeneral1]"
+                          lineageId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].Columns[**Giro Brusco Rayocarga General1]" />
+                        <inputColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\OLEDBD_Rayocarga.Inputs[OLE DB Destination Input].Columns[**Tiempo en Ralenti Rayocarga Nacional1]"
+                          cachedDataType="r8"
+                          cachedName="**Tiempo en Ralenti Rayocarga Nacional1"
+                          externalMetadataColumnId="Package\CS_RayoCarga\DFT_Rayocarga\OLEDBD_Rayocarga.Inputs[OLE DB Destination Input].ExternalColumns[TiempoRalentiRayocargaNacional1]"
+                          lineageId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].Columns[**Tiempo en Ralenti Rayocarga Nacional1]" />
+                        <inputColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\OLEDBD_Rayocarga.Inputs[OLE DB Destination Input].Columns[**Excesos de RPM Rayocarga KENWORTH T8001]"
+                          cachedDataType="r8"
+                          cachedName="**Excesos de RPM Rayocarga KENWORTH T8001"
+                          externalMetadataColumnId="Package\CS_RayoCarga\DFT_Rayocarga\OLEDBD_Rayocarga.Inputs[OLE DB Destination Input].ExternalColumns[ExcesosRPMRayocargaKENWORTHT8001]"
+                          lineageId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].Columns[**Excesos de RPM Rayocarga KENWORTH T8001]" />
+                        <inputColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\OLEDBD_Rayocarga.Inputs[OLE DB Destination Input].Columns[**Exceso de Velocidad Rayocarga 75 Km/h1]"
+                          cachedDataType="r8"
+                          cachedName="**Exceso de Velocidad Rayocarga 75 Km/h1"
+                          externalMetadataColumnId="Package\CS_RayoCarga\DFT_Rayocarga\OLEDBD_Rayocarga.Inputs[OLE DB Destination Input].ExternalColumns[ExcesoVelocidadRayocarga75Km/h1]"
+                          lineageId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output].Columns[**Exceso de Velocidad Rayocarga 75 Km/h1]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\OLEDBD_Rayocarga.Inputs[OLE DB Destination Input].ExternalColumns[Descripcion]"
+                          dataType="wstr"
+                          length="255"
+                          name="Descripcion" />
+                        <externalMetadataColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\OLEDBD_Rayocarga.Inputs[OLE DB Destination Input].ExternalColumns[Grupo]"
+                          dataType="wstr"
+                          length="255"
+                          name="Grupo" />
+                        <externalMetadataColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\OLEDBD_Rayocarga.Inputs[OLE DB Destination Input].ExternalColumns[Distancia (km)]"
+                          dataType="r8"
+                          name="Distancia (km)" />
+                        <externalMetadataColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\OLEDBD_Rayocarga.Inputs[OLE DB Destination Input].ExternalColumns[VelocidadMaxima (km)]"
+                          dataType="r8"
+                          name="VelocidadMaxima (km)" />
+                        <externalMetadataColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\OLEDBD_Rayocarga.Inputs[OLE DB Destination Input].ExternalColumns[VelocidadPromedio (km)]"
+                          dataType="r8"
+                          name="VelocidadPromedio (km)" />
+                        <externalMetadataColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\OLEDBD_Rayocarga.Inputs[OLE DB Destination Input].ExternalColumns[TiempoRalenti]"
+                          dataType="dbTimeStamp"
+                          name="TiempoRalenti" />
+                        <externalMetadataColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\OLEDBD_Rayocarga.Inputs[OLE DB Destination Input].ExternalColumns[PuntuacionTotal]"
+                          dataType="cy"
+                          name="PuntuacionTotal" />
+                        <externalMetadataColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\OLEDBD_Rayocarga.Inputs[OLE DB Destination Input].ExternalColumns[ClasificacionPuntuacion]"
+                          dataType="wstr"
+                          length="255"
+                          name="ClasificacionPuntuacion" />
+                        <externalMetadataColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\OLEDBD_Rayocarga.Inputs[OLE DB Destination Input].ExternalColumns[AceleracionBruscaRayocargaMack]"
+                          dataType="cy"
+                          name="AceleracionBruscaRayocargaMack" />
+                        <externalMetadataColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\OLEDBD_Rayocarga.Inputs[OLE DB Destination Input].ExternalColumns[FrenadaBruscaKenworth]"
+                          dataType="cy"
+                          name="FrenadaBruscaKenworth" />
+                        <externalMetadataColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\OLEDBD_Rayocarga.Inputs[OLE DB Destination Input].ExternalColumns[GiroBruscoRayocargaGeneral]"
+                          dataType="cy"
+                          name="GiroBruscoRayocargaGeneral" />
+                        <externalMetadataColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\OLEDBD_Rayocarga.Inputs[OLE DB Destination Input].ExternalColumns[TiempoRalentiRayocargaNacional]"
+                          dataType="cy"
+                          name="TiempoRalentiRayocargaNacional" />
+                        <externalMetadataColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\OLEDBD_Rayocarga.Inputs[OLE DB Destination Input].ExternalColumns[ExcesosRPMRayocargaKENWORTHT800]"
+                          dataType="cy"
+                          name="ExcesosRPMRayocargaKENWORTHT800" />
+                        <externalMetadataColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\OLEDBD_Rayocarga.Inputs[OLE DB Destination Input].ExternalColumns[ExcesoVelocidadRayocarga75Km/h]"
+                          dataType="cy"
+                          name="ExcesoVelocidadRayocarga75Km/h" />
+                        <externalMetadataColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\OLEDBD_Rayocarga.Inputs[OLE DB Destination Input].ExternalColumns[TotalOcurrencias]"
+                          dataType="r8"
+                          name="TotalOcurrencias" />
+                        <externalMetadataColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\OLEDBD_Rayocarga.Inputs[OLE DB Destination Input].ExternalColumns[Include]"
+                          dataType="bool"
+                          name="Include" />
+                        <externalMetadataColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\OLEDBD_Rayocarga.Inputs[OLE DB Destination Input].ExternalColumns[AceleracionBruscaRayocargaMack1]"
+                          dataType="r8"
+                          name="AceleracionBruscaRayocargaMack1" />
+                        <externalMetadataColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\OLEDBD_Rayocarga.Inputs[OLE DB Destination Input].ExternalColumns[FrenadaBruscaKenworth1]"
+                          dataType="r8"
+                          name="FrenadaBruscaKenworth1" />
+                        <externalMetadataColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\OLEDBD_Rayocarga.Inputs[OLE DB Destination Input].ExternalColumns[GiroBruscoRayocargaGeneral1]"
+                          dataType="r8"
+                          name="GiroBruscoRayocargaGeneral1" />
+                        <externalMetadataColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\OLEDBD_Rayocarga.Inputs[OLE DB Destination Input].ExternalColumns[TiempoRalentiRayocargaNacional1]"
+                          dataType="r8"
+                          name="TiempoRalentiRayocargaNacional1" />
+                        <externalMetadataColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\OLEDBD_Rayocarga.Inputs[OLE DB Destination Input].ExternalColumns[ExcesosRPMRayocargaKENWORTHT8001]"
+                          dataType="r8"
+                          name="ExcesosRPMRayocargaKENWORTHT8001" />
+                        <externalMetadataColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\OLEDBD_Rayocarga.Inputs[OLE DB Destination Input].ExternalColumns[ExcesoVelocidadRayocarga75Km/h1]"
+                          dataType="r8"
+                          name="ExcesoVelocidadRayocarga75Km/h1" />
+                        <externalMetadataColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\OLEDBD_Rayocarga.Inputs[OLE DB Destination Input].ExternalColumns[Periodo]"
+                          dataType="r8"
+                          name="Periodo" />
+                        <externalMetadataColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\OLEDBD_Rayocarga.Inputs[OLE DB Destination Input].ExternalColumns[Empresa]"
+                          dataType="wstr"
+                          length="255"
+                          name="Empresa" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\CS_RayoCarga\DFT_Rayocarga\OLEDBD_Rayocarga.Outputs[OLE DB Destination Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="OLE DB Destination Error Output"
+                      synchronousInputId="Package\CS_RayoCarga\DFT_Rayocarga\OLEDBD_Rayocarga.Inputs[OLE DB Destination Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\OLEDBD_Rayocarga.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\CS_RayoCarga\DFT_Rayocarga\OLEDBD_Rayocarga.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\CS_RayoCarga\DFT_Rayocarga\OLEDBD_Rayocarga.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\CS_RayoCarga\DFT_Rayocarga\OLEDBD_Rayocarga.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+              </components>
+              <paths>
+                <path
+                  refId="Package\CS_RayoCarga\DFT_Rayocarga.Paths[Excel Source Output]"
+                  endId="Package\CS_RayoCarga\DFT_Rayocarga\OLEDBD_Rayocarga.Inputs[OLE DB Destination Input]"
+                  name="Excel Source Output"
+                  startId="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga.Outputs[Excel Source Output]" />
+              </paths>
+            </pipeline>
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
     </DTS:Executable>
     <DTS:Executable
       DTS:refId="Package\CS_talento_humano"
@@ -21902,30 +22930,6 @@
                           dataType="wstr"
                           length="255"
                           name="Técnico" />
-                        <externalMetadataColumn
-                          refId="Package\CS_TI\DFT_IndicadoresTI\OLEDB_IndicadoresTI.Inputs[OLE DB Destination Input].ExternalColumns[anio]"
-                          dataType="i4"
-                          name="anio" />
-                        <externalMetadataColumn
-                          refId="Package\CS_TI\DFT_IndicadoresTI\OLEDB_IndicadoresTI.Inputs[OLE DB Destination Input].ExternalColumns[mes]"
-                          dataType="i4"
-                          name="mes" />
-                        <externalMetadataColumn
-                          refId="Package\CS_TI\DFT_IndicadoresTI\OLEDB_IndicadoresTI.Inputs[OLE DB Destination Input].ExternalColumns[dia]"
-                          dataType="i4"
-                          name="dia" />
-                        <externalMetadataColumn
-                          refId="Package\CS_TI\DFT_IndicadoresTI\OLEDB_IndicadoresTI.Inputs[OLE DB Destination Input].ExternalColumns[anioFin]"
-                          dataType="i4"
-                          name="anioFin" />
-                        <externalMetadataColumn
-                          refId="Package\CS_TI\DFT_IndicadoresTI\OLEDB_IndicadoresTI.Inputs[OLE DB Destination Input].ExternalColumns[mesFin]"
-                          dataType="i4"
-                          name="mesFin" />
-                        <externalMetadataColumn
-                          refId="Package\CS_TI\DFT_IndicadoresTI\OLEDB_IndicadoresTI.Inputs[OLE DB Destination Input].ExternalColumns[diaFin]"
-                          dataType="i4"
-                          name="diaFin" />
                       </externalMetadataColumns>
                     </input>
                   </inputs>
@@ -23687,7 +24691,7 @@
         <NodeLayout
           Size="176.666666666667,41.3333333333334"
           Id="Package\CS_Comercial\DFT_ MetaComercial"
-          TopLeft="80.5833217952821,122.483332574831" />
+          TopLeft="79.3333218511614,119.883332698809" />
         <NodeLayout
           Size="177.333333333334,41.3333333333334"
           Id="Package\CS_Comercial\DFT_AsignacionOPC"
@@ -23750,18 +24754,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package\CS_Comercial.PrecedenceConstraints[Restricción 2]"
-          TopLeft="315.166644857163,142.608331082794">
+          TopLeft="315.166644857163,141.308331144783">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-57.9166563952143,0"
+              EndConnector="-59.1666563393349,0"
               Start="0,0"
-              End="-50.4166563952143,0">
+              End="-51.6666563393349,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="-50.4166563952143,0" />
+                    End="-51.6666563393349,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -23772,18 +24776,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package\CS_Comercial.PrecedenceConstraints[Restricción 3]"
-          TopLeft="165.895823834361,163.816665908164">
+          TopLeft="165.270823862301,161.216666032142">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,24.8333204232992"
+              EndConnector="0,27.4333202993208"
               Start="0,0"
-              End="0,17.3333204232992">
+              End="0,19.9333202993208">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,17.3333204232992" />
+                    End="0,19.9333202993208" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -23796,7 +24800,7 @@
           HeaderHeight="43"
           IsExpanded="True"
           PanelSize="569.333333333334,289.333333333334"
-          Size="569.333333333334,332"
+          Size="569.333333333334,332.666666666667"
           Id="Package\CS_Comercial"
           TopLeft="102.916661229812,685.466669306357" />
         <NodeLayout
@@ -23806,28 +24810,28 @@
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="208.666666666667,122"
+          PanelSize="208.666666666667,121.333333333334"
           Size="208.666666666667,164.666666666667"
           Id="Package\CS_Mantenimiento\CBF_Wizeo"
-          TopLeft="60.1666194506837,158.533331223991" />
+          TopLeft="64.5416192551059,110.433333517578" />
         <NodeLayout
           Size="172,42.6666666666667"
           Id="Package\CS_Mantenimiento\DFT_Carga_Terpel"
-          TopLeft="70.9999521921098,73.599998336633" />
+          TopLeft="87.8749514377386,30.0500004132587" />
         <EdgeLayout
           Id="Package\CS_Mantenimiento.PrecedenceConstraints[Restricción]"
-          TopLeft="160.783285821397,115.999998336633">
+          TopLeft="171.374952013089,72.7166670799254">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,42.5333328873581"
+              EndConnector="0,37.7166664376523"
               Start="0,0"
-              End="0,35.0333328873581">
+              End="0,30.2166664376523">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,35.0333328873581" />
+                    End="0,30.2166664376523" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -23840,7 +24844,7 @@
           HeaderHeight="43"
           IsExpanded="True"
           PanelSize="381.333333333334,489.333333333334"
-          Size="381.333333333334,532"
+          Size="381.333333333334,532.666666666667"
           Id="Package\CS_Mantenimiento"
           TopLeft="783.333290533889,106.333332616157" />
         <NodeLayout
@@ -23928,7 +24932,7 @@
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="450.666666666667,209.333333333334"
+          PanelSize="450.666666666667,210"
           Size="450.666666666667,252.666666666667"
           Id="Package\CS_talento_humano"
           TopLeft="746.083287808218,723.766666505668" />
@@ -23953,7 +24957,7 @@
           PanelSize="230.666666666667,118.666666666667"
           Size="230.666666666667,161.333333333334"
           Id="Package\CS_TI\CBF_CLaro_Voz_Excel"
-          TopLeft="310.599946181975,249.266666877601" />
+          TopLeft="310.599946181975,249.916666846607" />
         <NodeLayout
           Size="206.666666666667,41.3333333333334"
           Id="Package\CS_TI\DFT_Carga_LineasRayogas"
@@ -24024,18 +25028,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package\CS_TI.PrecedenceConstraints[Restricción 2]"
-          TopLeft="272.166641852095,328.683333737122">
+          TopLeft="272.433308518762,329.008333721624">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="38.4333043298801,0"
+              EndConnector="38.1666376632134,0"
               Start="0,0"
-              End="30.9333043298801,0">
+              End="30.6666376632134,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="30.9333043298801,0" />
+                    End="30.6666376632134,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -24112,18 +25116,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package\CS_TI.PrecedenceConstraints[Restricción 6]"
-          TopLeft="424.616627851213,218.866665105753">
+          TopLeft="424.649961184546,218.599998439087">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,30.4000017718476"
+              EndConnector="0,31.3166684075192"
               Start="0,0"
-              End="0,22.9000017718476">
+              End="0,23.8166684075192">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,22.9000017718476" />
+                    End="0,23.8166684075192" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -24145,18 +25149,18 @@
           TopLeft="300.208330608696,26.7859653473636" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción]"
-          TopLeft="381.154162777359,69.1859653473636">
+          TopLeft="381.187496110693,69.4526320140303">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,34.0140349419174"
+              EndConnector="0,33.7473682752507"
               Start="0,0"
-              End="0,26.5140349419174">
+              End="0,26.2473682752507">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,26.5140349419174" />
+                    End="0,26.2473682752507" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -24167,18 +25171,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción 1]"
-          TopLeft="669.299994946023,373.366666452719">
+          TopLeft="669.16666161269,373.599999786052">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="114.033295587866,0"
+              EndConnector="114.166628921199,0"
               Start="0,0"
-              End="106.533295587866,0">
+              End="106.666628921199,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="106.533295587866,0" />
+                    End="106.666628921199,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -24189,18 +25193,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción 2]"
-          TopLeft="972.708289171053,638.333332616157">
+          TopLeft="972.708289171053,638.999999282824">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,85.4333338895107"
+              EndConnector="0,84.7666672228444"
               Start="0,0"
-              End="0,77.9333338895107">
+              End="0,77.2666672228444">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,77.9333338895107" />
+                    End="0,77.2666672228444" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -24211,18 +25215,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción 3]"
-          TopLeft="746.083287808218,850.783334572679">
+          TopLeft="746.083287808218,850.950001239346">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-73.833293245072,0"
+              EndConnector="-73.8332932450726,0"
               Start="0,0"
-              End="-66.333293245072,0">
+              End="-66.3332932450726,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="-66.333293245072,0" />
+                    End="-66.3332932450726,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -24231,6 +25235,17 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="153.333333333334,42.6666666666667"
+          Id="Package\CS_RayoCarga\DFT_Rayocarga"
+          TopLeft="38.8332735424265,25.7833254917465" />
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="232.666666666667,123.333333333334"
+          Size="232.666666666667,166.666666666667"
+          Id="Package\CS_RayoCarga"
+          TopLeft="1298.74994194135,115.049994513989" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -24238,37 +25253,35 @@
     design-time-name="Package\CS_Comercial\DFT_ MetaComercial">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="200,41.6"
+          Size="200,41.3333333333334"
           Id="Package\CS_Comercial\DFT_ MetaComercial\OLEDBD_ MetaComercial"
-          TopLeft="923.999986231327,181.999997287989" />
+          TopLeft="922.999986261129,180.999997317791" />
         <NodeLayout
-          Size="168,41.6"
+          Size="168,41.3333333333334"
           Id="Package\CS_Comercial\DFT_ MetaComercial\ES_MetaComercial"
           TopLeft="940.999985978008,68.9999989718198" />
         <EdgeLayout
           Id="Package\CS_Comercial\DFT_ MetaComercial.Paths[Excel Source Output]"
-          TopLeft="1024.49998610467,110.59999897182">
+          TopLeft="1023.99998611957,110.333332305153">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,71.3999983161688"
+              EndConnector="0,70.6666650126382"
               Start="0,0"
-              End="0,63.8999983161688">
+              End="0,63.1666650126382">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,63.8999983161688" />
+                    End="0,63.1666650126382" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -24436,17 +25449,17 @@
     design-time-name="Package\CS_Comercial\DFT_Carga_PresupuestosPorVendedor">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="264,42.4"
+          Size="264,42.6666666666667"
           Id="Package\CS_Comercial\DFT_Carga_PresupuestosPorVendedor\OE_Carga_PresupuestosPorVendedor"
           TopLeft="1223,89" />
         <NodeLayout
-          Size="232,42.4"
+          Size="232,42.6666666666667"
           Id="Package\CS_Comercial\DFT_Carga_PresupuestosPorVendedor\DC_ PresupuestosPorVendedor"
           TopLeft="1238,191.666666666667" />
         <NodeLayout
-          Size="260,42.4"
+          Size="260,42.6666666666667"
           Id="Package\CS_Comercial\DFT_Carga_PresupuestosPorVendedor\DOLEDB_ PresupuestosPorVendedor"
           TopLeft="1223,280.666666666667" />
         <EdgeLayout
@@ -24468,9 +25481,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -24492,9 +25503,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -24530,7 +25539,7 @@
     design-time-name="Package\CS_Comercial\DFT_Carga_Subs">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="148,42.6666666666667"
           Id="Package\CS_Comercial\DFT_Carga_Subs\OE_Subsidios"
@@ -24562,7 +25571,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -24584,7 +25595,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -25275,13 +26288,13 @@
     design-time-name="Package\CS_talento_humano\DFT_Incapacidad">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="157.6,42.4"
+          Size="157.333333333334,42.6666666666667"
           Id="Package\CS_talento_humano\DFT_Incapacidad\ES_Incapacidad"
           TopLeft="625.624972032384,56.10526254187" />
         <NodeLayout
-          Size="186.4,42.4"
+          Size="186.666666666667,42.6666666666667"
           Id="Package\CS_talento_humano\DFT_Incapacidad\OLEDBD_Incapacidad"
           TopLeft="616.249972451479,151.894735174331" />
         <EdgeLayout
@@ -25303,9 +26316,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -25671,11 +26682,11 @@
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="160.8,41.6"
+          Size="160.666666666667,41.3333333333334"
           Id="Package\CS_TI\DFT_IndicadoresTI\ES_IndicadoresTI"
           TopLeft="584.166634749209,80.8666660884354" />
         <NodeLayout
-          Size="182.4,41.6"
+          Size="182.666666666667,41.3333333333334"
           Id="Package\CS_TI\DFT_IndicadoresTI\OLEDB_IndicadoresTI"
           TopLeft="576.833301856287,180.399998737574" />
         <EdgeLayout
@@ -25942,5 +26953,69 @@
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <TaskHost
+    design-time-name="Package\CS_RayoCarga\DFT_Rayocarga">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="146.666666666667,42.6666666666667"
+          Id="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga"
+          TopLeft="632.499971725048,30.5499985432626" />
+        <NodeLayout
+          Size="174.666666666667,42.6666666666667"
+          Id="Package\CS_RayoCarga\DFT_Rayocarga\OLEDBD_Rayocarga"
+          TopLeft="615.624972479419,144.949993088246" />
+        <EdgeLayout
+          Id="Package\CS_RayoCarga\DFT_Rayocarga.Paths[Excel Source Output]"
+          TopLeft="704.395805435566,73.2166652099292">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,71.7333278783164"
+              Start="0,0"
+              End="0,64.2333278783164">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,64.2333278783164" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\CS_RayoCarga\DFT_Rayocarga\OLEDBD_Rayocarga">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
 </Objects>]]></DTS:DesignTimeProperties>
 </DTS:Executable>
