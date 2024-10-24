@@ -7,12 +7,12 @@
   DTS:CreatorName="RAYOGAS\jesus.vargas"
   DTS:DTSID="{733DFE37-E69E-4BB9-855D-8FE0995908AC}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="16.0.5685.0"
+  DTS:LastModifiedProductVersion="16.0.5556.0"
   DTS:LocaleID="9226"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="383"
-  DTS:VersionGUID="{C271240C-05CC-4DB5-994B-794BC34B8087}">
+  DTS:VersionBuild="388"
+  DTS:VersionGUID="{8026E812-C05C-4320-BB9A-3D9B33ECE760}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -172,6 +172,18 @@
           DTS:ConnectRetryCount="0"
           DTS:ConnectRetryInterval="0"
           DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.16.0;Data Source=D:\Rayogas\Sistemas de Información - Estrategia de Datos\7. Fuentes de Información\Xls\Comercial\Presupuesto\2. Formato Meta Comercial.xls;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[PresupuestoOperaciones]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{AC9E1EA8-EBEC-4CF2-BF6C-A0861047290D}"
+      DTS:ObjectName="PresupuestoOperaciones">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.16.0;Data Source=D:\Rayogas\Sistemas de Información - Estrategia de Datos\7. Fuentes de Información\Xls\Operaciones\Presupuesto_Operaciones.xlsx;Extended Properties=&quot;Excel 12.0 XML;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -7125,6 +7137,340 @@
       <DTS:Variables />
       <DTS:Executables>
         <DTS:Executable
+          DTS:refId="Package\CS_Operaciones\DFT_Presupuesto"
+          DTS:CreationName="Microsoft.Pipeline"
+          DTS:Description="Data Flow Task"
+          DTS:DTSID="{ED9A60FA-7840-40A8-84F0-EC451883A136}"
+          DTS:ExecutableType="Microsoft.Pipeline"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="DFT_Presupuesto"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <pipeline
+              version="1">
+              <components>
+                <component
+                  refId="Package\CS_Operaciones\DFT_Presupuesto\OLEDBD_Presupuesto"
+                  componentClassID="Microsoft.OLEDBDestination"
+                  contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+                  description="OLE DB Destination"
+                  name="OLEDBD_Presupuesto"
+                  usesDispositions="true"
+                  version="4">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[xls].[PresupuestoOperaciones]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">3</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepIdentity">false</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                      name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                      name="FastLoadMaxInsertCommitSize">2147483647</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\CS_Operaciones\DFT_Presupuesto\OLEDBD_Presupuesto.Connections[OleDbConnection]"
+                      connectionManagerID="{F969E5F0-ED10-48A1-9AD7-51F9863F78B9}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[DataStage]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\CS_Operaciones\DFT_Presupuesto\OLEDBD_Presupuesto.Inputs[OLE DB Destination Input]"
+                      errorOrTruncationOperation="Insert"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="OLE DB Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\CS_Operaciones\DFT_Presupuesto\OLEDBD_Presupuesto.Inputs[OLE DB Destination Input].Columns[Centro de operación]"
+                          cachedDataType="wstr"
+                          cachedLength="255"
+                          cachedName="Centro de operación"
+                          externalMetadataColumnId="Package\CS_Operaciones\DFT_Presupuesto\OLEDBD_Presupuesto.Inputs[OLE DB Destination Input].ExternalColumns[Centro de operación]"
+                          lineageId="Package\CS_Operaciones\DFT_Presupuesto\Presupuesto.Outputs[Excel Source Output].Columns[Centro de operación]" />
+                        <inputColumn
+                          refId="Package\CS_Operaciones\DFT_Presupuesto\OLEDBD_Presupuesto.Inputs[OLE DB Destination Input].Columns[Item]"
+                          cachedDataType="wstr"
+                          cachedLength="255"
+                          cachedName="Item"
+                          externalMetadataColumnId="Package\CS_Operaciones\DFT_Presupuesto\OLEDBD_Presupuesto.Inputs[OLE DB Destination Input].ExternalColumns[Item]"
+                          lineageId="Package\CS_Operaciones\DFT_Presupuesto\Presupuesto.Outputs[Excel Source Output].Columns[Item]" />
+                        <inputColumn
+                          refId="Package\CS_Operaciones\DFT_Presupuesto\OLEDBD_Presupuesto.Inputs[OLE DB Destination Input].Columns[Fecha]"
+                          cachedDataType="date"
+                          cachedName="Fecha"
+                          externalMetadataColumnId="Package\CS_Operaciones\DFT_Presupuesto\OLEDBD_Presupuesto.Inputs[OLE DB Destination Input].ExternalColumns[Fecha]"
+                          lineageId="Package\CS_Operaciones\DFT_Presupuesto\Presupuesto.Outputs[Excel Source Output].Columns[Fecha]" />
+                        <inputColumn
+                          refId="Package\CS_Operaciones\DFT_Presupuesto\OLEDBD_Presupuesto.Inputs[OLE DB Destination Input].Columns[Valor]"
+                          cachedDataType="cy"
+                          cachedName="Valor"
+                          externalMetadataColumnId="Package\CS_Operaciones\DFT_Presupuesto\OLEDBD_Presupuesto.Inputs[OLE DB Destination Input].ExternalColumns[Valor]"
+                          lineageId="Package\CS_Operaciones\DFT_Presupuesto\Presupuesto.Outputs[Excel Source Output].Columns[Valor]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\CS_Operaciones\DFT_Presupuesto\OLEDBD_Presupuesto.Inputs[OLE DB Destination Input].ExternalColumns[Centro de operación]"
+                          dataType="wstr"
+                          length="255"
+                          name="Centro de operación" />
+                        <externalMetadataColumn
+                          refId="Package\CS_Operaciones\DFT_Presupuesto\OLEDBD_Presupuesto.Inputs[OLE DB Destination Input].ExternalColumns[Item]"
+                          dataType="wstr"
+                          length="255"
+                          name="Item" />
+                        <externalMetadataColumn
+                          refId="Package\CS_Operaciones\DFT_Presupuesto\OLEDBD_Presupuesto.Inputs[OLE DB Destination Input].ExternalColumns[Fecha]"
+                          dataType="dbTimeStamp"
+                          name="Fecha" />
+                        <externalMetadataColumn
+                          refId="Package\CS_Operaciones\DFT_Presupuesto\OLEDBD_Presupuesto.Inputs[OLE DB Destination Input].ExternalColumns[Valor]"
+                          dataType="cy"
+                          name="Valor" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\CS_Operaciones\DFT_Presupuesto\OLEDBD_Presupuesto.Outputs[OLE DB Destination Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="OLE DB Destination Error Output"
+                      synchronousInputId="Package\CS_Operaciones\DFT_Presupuesto\OLEDBD_Presupuesto.Inputs[OLE DB Destination Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\CS_Operaciones\DFT_Presupuesto\OLEDBD_Presupuesto.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\CS_Operaciones\DFT_Presupuesto\OLEDBD_Presupuesto.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\CS_Operaciones\DFT_Presupuesto\OLEDBD_Presupuesto.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\CS_Operaciones\DFT_Presupuesto\OLEDBD_Presupuesto.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\CS_Operaciones\DFT_Presupuesto\Presupuesto"
+                  componentClassID="Microsoft.ExcelSource"
+                  contactInfo="Excel Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+                  description="Excel Source"
+                  name="Presupuesto"
+                  usesDispositions="true"
+                  version="1">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">Hoja1$</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.String"
+                      description="The variable that contains the SQL command to be executed."
+                      name="SqlCommandVariable"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">0</property>
+                    <property
+                      dataType="System.String"
+                      description="The mapping from parameters in the SQL command to variables."
+                      name="ParameterMapping"></property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\CS_Operaciones\DFT_Presupuesto\Presupuesto.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[PresupuestoOperaciones]"
+                      connectionManagerRefId="Package.ConnectionManagers[PresupuestoOperaciones]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\CS_Operaciones\DFT_Presupuesto\Presupuesto.Outputs[Excel Source Output]"
+                      name="Excel Source Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\CS_Operaciones\DFT_Presupuesto\Presupuesto.Outputs[Excel Source Output].Columns[Centro de operación]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CS_Operaciones\DFT_Presupuesto\Presupuesto.Outputs[Excel Source Output].ExternalColumns[Centro de operación]"
+                          length="255"
+                          lineageId="Package\CS_Operaciones\DFT_Presupuesto\Presupuesto.Outputs[Excel Source Output].Columns[Centro de operación]"
+                          name="Centro de operación"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\CS_Operaciones\DFT_Presupuesto\Presupuesto.Outputs[Excel Source Output].Columns[Item]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CS_Operaciones\DFT_Presupuesto\Presupuesto.Outputs[Excel Source Output].ExternalColumns[Item]"
+                          length="255"
+                          lineageId="Package\CS_Operaciones\DFT_Presupuesto\Presupuesto.Outputs[Excel Source Output].Columns[Item]"
+                          name="Item"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\CS_Operaciones\DFT_Presupuesto\Presupuesto.Outputs[Excel Source Output].Columns[Fecha]"
+                          dataType="date"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CS_Operaciones\DFT_Presupuesto\Presupuesto.Outputs[Excel Source Output].ExternalColumns[Fecha]"
+                          lineageId="Package\CS_Operaciones\DFT_Presupuesto\Presupuesto.Outputs[Excel Source Output].Columns[Fecha]"
+                          name="Fecha"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\CS_Operaciones\DFT_Presupuesto\Presupuesto.Outputs[Excel Source Output].Columns[Valor]"
+                          dataType="cy"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CS_Operaciones\DFT_Presupuesto\Presupuesto.Outputs[Excel Source Output].ExternalColumns[Valor]"
+                          lineageId="Package\CS_Operaciones\DFT_Presupuesto\Presupuesto.Outputs[Excel Source Output].Columns[Valor]"
+                          name="Valor"
+                          truncationRowDisposition="FailComponent" />
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\CS_Operaciones\DFT_Presupuesto\Presupuesto.Outputs[Excel Source Output].ExternalColumns[Centro de operación]"
+                          dataType="wstr"
+                          length="255"
+                          name="Centro de operación" />
+                        <externalMetadataColumn
+                          refId="Package\CS_Operaciones\DFT_Presupuesto\Presupuesto.Outputs[Excel Source Output].ExternalColumns[Item]"
+                          dataType="wstr"
+                          length="255"
+                          name="Item" />
+                        <externalMetadataColumn
+                          refId="Package\CS_Operaciones\DFT_Presupuesto\Presupuesto.Outputs[Excel Source Output].ExternalColumns[Fecha]"
+                          dataType="date"
+                          name="Fecha" />
+                        <externalMetadataColumn
+                          refId="Package\CS_Operaciones\DFT_Presupuesto\Presupuesto.Outputs[Excel Source Output].ExternalColumns[Valor]"
+                          dataType="cy"
+                          name="Valor" />
+                        <externalMetadataColumn
+                          refId="Package\CS_Operaciones\DFT_Presupuesto\Presupuesto.Outputs[Excel Source Output].ExternalColumns[F5]"
+                          dataType="cy"
+                          name="F5" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\CS_Operaciones\DFT_Presupuesto\Presupuesto.Outputs[Excel Source Error Output]"
+                      isErrorOut="true"
+                      name="Excel Source Error Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\CS_Operaciones\DFT_Presupuesto\Presupuesto.Outputs[Excel Source Error Output].Columns[Centro de operación]"
+                          dataType="wstr"
+                          length="255"
+                          lineageId="Package\CS_Operaciones\DFT_Presupuesto\Presupuesto.Outputs[Excel Source Error Output].Columns[Centro de operación]"
+                          name="Centro de operación" />
+                        <outputColumn
+                          refId="Package\CS_Operaciones\DFT_Presupuesto\Presupuesto.Outputs[Excel Source Error Output].Columns[Item]"
+                          dataType="wstr"
+                          length="255"
+                          lineageId="Package\CS_Operaciones\DFT_Presupuesto\Presupuesto.Outputs[Excel Source Error Output].Columns[Item]"
+                          name="Item" />
+                        <outputColumn
+                          refId="Package\CS_Operaciones\DFT_Presupuesto\Presupuesto.Outputs[Excel Source Error Output].Columns[Fecha]"
+                          dataType="date"
+                          lineageId="Package\CS_Operaciones\DFT_Presupuesto\Presupuesto.Outputs[Excel Source Error Output].Columns[Fecha]"
+                          name="Fecha" />
+                        <outputColumn
+                          refId="Package\CS_Operaciones\DFT_Presupuesto\Presupuesto.Outputs[Excel Source Error Output].Columns[Valor]"
+                          dataType="cy"
+                          lineageId="Package\CS_Operaciones\DFT_Presupuesto\Presupuesto.Outputs[Excel Source Error Output].Columns[Valor]"
+                          name="Valor" />
+                        <outputColumn
+                          refId="Package\CS_Operaciones\DFT_Presupuesto\Presupuesto.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\CS_Operaciones\DFT_Presupuesto\Presupuesto.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\CS_Operaciones\DFT_Presupuesto\Presupuesto.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\CS_Operaciones\DFT_Presupuesto\Presupuesto.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+              </components>
+              <paths>
+                <path
+                  refId="Package\CS_Operaciones\DFT_Presupuesto.Paths[Excel Source Output]"
+                  endId="Package\CS_Operaciones\DFT_Presupuesto\OLEDBD_Presupuesto.Inputs[OLE DB Destination Input]"
+                  name="Excel Source Output"
+                  startId="Package\CS_Operaciones\DFT_Presupuesto\Presupuesto.Outputs[Excel Source Output]" />
+              </paths>
+            </pipeline>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
           DTS:refId="Package\CS_Operaciones\DFT_PUC"
           DTS:CreationName="Microsoft.Pipeline"
           DTS:Description="Data Flow Task"
@@ -7935,6 +8281,16 @@
           </DTS:ObjectData>
         </DTS:Executable>
       </DTS:Executables>
+      <DTS:PrecedenceConstraints>
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\CS_Operaciones.PrecedenceConstraints[Restricción]"
+          DTS:CreationName=""
+          DTS:DTSID="{F9E9D96A-6994-44A7-B9E5-3B64F82FEC19}"
+          DTS:From="Package\CS_Operaciones\DFT_PUC"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Restricción"
+          DTS:To="Package\CS_Operaciones\DFT_Presupuesto" />
+      </DTS:PrecedenceConstraints>
     </DTS:Executable>
     <DTS:Executable
       DTS:refId="Package\CS_RayoCarga"
@@ -25712,12 +26068,38 @@
         <NodeLayout
           Size="124,42.6666666666667"
           Id="Package\CS_Operaciones\DFT_PUC"
-          TopLeft="151.416613972437,34.5999911975865" />
+          TopLeft="47.6666186104235,29.3999914455418" />
+        <NodeLayout
+          Size="162.666666666667,42.6666666666667"
+          Id="Package\CS_Operaciones\DFT_Presupuesto"
+          TopLeft="202.041611709323,33.3333246548975" />
+        <EdgeLayout
+          Id="Package\CS_Operaciones.PrecedenceConstraints[Restricción]"
+          TopLeft="171.666618610423,52.699991383553">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="30.3749930988999,0"
+              Start="0,0"
+              End="22.8749930988999,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="22.8749930988999,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
           PanelSize="450.666666666667,210"
-          Size="450.666666666667,252.666666666667"
+          Size="450.666666666667,253.333333333334"
           Id="Package\CS_Operaciones"
           TopLeft="1272.54162769082,341.983343220552" />
         <NodeLayout
@@ -26030,10 +26412,10 @@
         <NodeLayout
           Size="162.666666666667,42.6666666666667"
           Id="Package\TESQL_Truncate"
-          TopLeft="300.208330608696,26.7859653473636" />
+          TopLeft="298.958330664575,26.7859653473636" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción]"
-          TopLeft="381.187496110693,69.4526320140303">
+          TopLeft="380.562496138632,69.4526320140303">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -26149,26 +26531,26 @@
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="82.7916857494695,60.2666820398962"
+              EndConnector="82.7916857494699,60.2666820398964"
               Start="0,0"
-              End="82.7916857494695,52.7666820398962">
+              End="82.7916857494699,52.7666820398964">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,26.1333410199481" />
+                    End="0,26.1333410199482" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,26.1333410199481"
-                    Point2="0,30.1333410199481"
-                    Point3="4,30.1333410199481" />
+                    Point1="0,26.1333410199482"
+                    Point2="0,30.1333410199482"
+                    Point3="4,30.1333410199482" />
                   <mssgle:LineSegment
-                    End="78.7916857494695,30.1333410199481" />
+                    End="78.7916857494699,30.1333410199482" />
                   <mssgle:CubicBezierSegment
-                    Point1="78.7916857494695,30.1333410199481"
-                    Point2="82.7916857494695,30.1333410199481"
-                    Point3="82.7916857494695,34.1333410199481" />
+                    Point1="78.7916857494699,30.1333410199482"
+                    Point2="82.7916857494699,30.1333410199482"
+                    Point3="82.7916857494699,34.1333410199482" />
                   <mssgle:LineSegment
-                    End="82.7916857494695,52.7666820398962" />
+                    End="82.7916857494699,52.7666820398964" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -26179,30 +26561,30 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción 5]"
-          TopLeft="1497.87496102415,594.650009887219">
+          TopLeft="1497.87496102415,595.316676553885">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-511.458339882601,129.11665661845"
+              EndConnector="-511.458339882602,128.449989951783"
               Start="0,0"
-              End="-511.458339882601,121.61665661845">
+              End="-511.458339882602,120.949989951783">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,60.5583283092248" />
+                    End="0,60.2249949758914" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,60.5583283092248"
-                    Point2="0,64.5583283092248"
-                    Point3="-4,64.5583283092248" />
+                    Point1="0,60.2249949758914"
+                    Point2="0,64.2249949758914"
+                    Point3="-4,64.2249949758914" />
                   <mssgle:LineSegment
-                    End="-507.458339882601,64.5583283092248" />
+                    End="-507.458339882602,64.2249949758914" />
                   <mssgle:CubicBezierSegment
-                    Point1="-507.458339882601,64.5583283092248"
-                    Point2="-511.458339882601,64.5583283092248"
-                    Point3="-511.458339882601,68.5583283092248" />
+                    Point1="-507.458339882602,64.2249949758914"
+                    Point2="-511.458339882602,64.2249949758914"
+                    Point3="-511.458339882602,68.2249949758914" />
                   <mssgle:LineSegment
-                    End="-511.458339882601,121.61665661845" />
+                    End="-511.458339882602,120.949989951783" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -26218,7 +26600,7 @@
     design-time-name="Package\CS_Comercial\DFT_ MetaComercial">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="200,41.3333333333334"
           Id="Package\CS_Comercial\DFT_ MetaComercial\OLEDBD_ MetaComercial"
@@ -26246,7 +26628,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -26414,7 +26798,7 @@
     design-time-name="Package\CS_Comercial\DFT_Carga_PresupuestosPorVendedor">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="264,42.6666666666667"
           Id="Package\CS_Comercial\DFT_Carga_PresupuestosPorVendedor\OE_Carga_PresupuestosPorVendedor"
@@ -26446,7 +26830,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -26468,7 +26854,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -26797,15 +27185,15 @@
     design-time-name="Package\CS_RayoCarga\DFT_Rayocarga">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="146.666666666667,42.6666666666667"
-          Id="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga"
-          TopLeft="632.499971725048,30.5499985432626" />
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="174.666666666667,42.6666666666667"
           Id="Package\CS_RayoCarga\DFT_Rayocarga\OLEDBD_Rayocarga"
           TopLeft="615.624972479419,144.949993088246" />
+        <NodeLayout
+          Size="146.666666666667,42.6666666666667"
+          Id="Package\CS_RayoCarga\DFT_Rayocarga\ES_Rayocarga"
+          TopLeft="632.499971725048,30.5499985432626" />
         <EdgeLayout
           Id="Package\CS_RayoCarga\DFT_Rayocarga.Paths[Excel Source Output]"
           TopLeft="704.395805435566,73.2166652099292">
@@ -26825,7 +27213,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -27393,7 +27783,7 @@
     design-time-name="Package\CS_talento_humano\DFT_Incapacidad">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="157.333333333334,42.6666666666667"
           Id="Package\CS_talento_humano\DFT_Incapacidad\ES_Incapacidad"
@@ -27421,7 +27811,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -28058,5 +28450,81 @@
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <TaskHost
+    design-time-name="Package\CS_Operaciones\DFT_Presupuesto">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="137.333333333334,42.6666666666667"
+          Id="Package\CS_Operaciones\DFT_Presupuesto\Presupuesto"
+          TopLeft="685.999979555607,72.9999978244305" />
+        <NodeLayout
+          Size="182.666666666667,42.6666666666667"
+          Id="Package\CS_Operaciones\DFT_Presupuesto\OLEDBD_Presupuesto"
+          TopLeft="797.333309570949,205.999993860722" />
+        <EdgeLayout
+          Id="Package\CS_Operaciones\DFT_Presupuesto.Paths[Excel Source Output]"
+          TopLeft="754.666646222274,115.666664491097">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="133.999996682008,90.3333293696246"
+              Start="0,0"
+              End="133.999996682008,82.8333293696246">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,41.1666646848123" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,41.1666646848123"
+                    Point2="0,45.1666646848123"
+                    Point3="4,45.1666646848123" />
+                  <mssgle:LineSegment
+                    End="129.999996682008,45.1666646848123" />
+                  <mssgle:CubicBezierSegment
+                    Point1="129.999996682008,45.1666646848123"
+                    Point2="133.999996682008,45.1666646848123"
+                    Point3="133.999996682008,49.1666646848123" />
+                  <mssgle:LineSegment
+                    End="133.999996682008,82.8333293696246" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\CS_Operaciones\DFT_Presupuesto\Presupuesto">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\CS_Operaciones\DFT_Presupuesto\OLEDBD_Presupuesto">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
 </Objects>]]></DTS:DesignTimeProperties>
 </DTS:Executable>
