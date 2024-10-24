@@ -7,12 +7,12 @@
   DTS:CreatorName="RAYOGAS\jesus.vargas"
   DTS:DTSID="{733DFE37-E69E-4BB9-855D-8FE0995908AC}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="16.0.5556.0"
+  DTS:LastModifiedProductVersion="16.0.5685.0"
   DTS:LocaleID="9226"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="382"
-  DTS:VersionGUID="{6672449A-F319-449F-BA51-5BA4068EBE5E}">
+  DTS:VersionBuild="383"
+  DTS:VersionGUID="{C271240C-05CC-4DB5-994B-794BC34B8087}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -26,18 +26,6 @@
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
           DTS:ConnectionString="Data Source=192.168.0.132;Initial Catalog=DataStage;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Package-{F580FDAD-3B5A-4D71-9428-876BC6F24EB9}192.168.0.132.DataStage;Auto Translate=False;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Administrador de conexiones con Excel]"
-      DTS:CreationName="EXCEL"
-      DTS:DTSID="{D5C93494-C808-47D7-9EF6-C9917F303665}"
-      DTS:ObjectName="Administrador de conexiones con Excel">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectRetryCount="0"
-          DTS:ConnectRetryInterval="0"
-          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.16.0;Data Source=D:\Rayogas\Sistemas de Información - Estrategia de Datos\7. Fuentes de Información\Xls\Operaciones\PUC.xlsx;Extended Properties=&quot;Excel 12.0 XML;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -196,6 +184,18 @@
           DTS:ConnectRetryCount="0"
           DTS:ConnectRetryInterval="0"
           DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.16.0;Data Source=D:\Rayogas\Sistemas de Información - Estrategia de Datos\7. Fuentes de Información\Xls\Comercial\vendedor\Presupuestos por vendedor granel y cilindros.xls;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Puc_Operaciones]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{D5C93494-C808-47D7-9EF6-C9917F303665}"
+      DTS:ObjectName="Puc_Operaciones">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.16.0;Data Source=D:\Rayogas\Sistemas de Información - Estrategia de Datos\7. Fuentes de Información\Xls\Operaciones\PUC.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -7502,8 +7502,8 @@
                   <connections>
                     <connection
                       refId="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[Administrador de conexiones con Excel]"
-                      connectionManagerRefId="Package.ConnectionManagers[Administrador de conexiones con Excel]"
+                      connectionManagerID="Package.ConnectionManagers[Puc_Operaciones]"
+                      connectionManagerRefId="Package.ConnectionManagers[Puc_Operaciones]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -25716,7 +25716,7 @@
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="450.666666666667,209.333333333334"
+          PanelSize="450.666666666667,210"
           Size="450.666666666667,252.666666666667"
           Id="Package\CS_Operaciones"
           TopLeft="1272.54162769082,341.983343220552" />
@@ -26717,6 +26717,82 @@
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <TaskHost
+    design-time-name="Package\CS_Operaciones\DFT_PUC">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="208,42.6666666666667"
+          Id="Package\CS_Operaciones\DFT_PUC\OLEDBD_PUC_Operaciones"
+          TopLeft="663.749970328064,200.849990422726" />
+        <NodeLayout
+          Size="162.666666666667,42.6666666666667"
+          Id="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones"
+          TopLeft="569.999974519015,69.5499966835977" />
+        <EdgeLayout
+          Id="Package\CS_Operaciones\DFT_PUC.Paths[Excel Source Output]"
+          TopLeft="651.333307852349,112.216663350264">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="116.416662475715,88.6333270724617"
+              Start="0,0"
+              End="116.416662475715,81.1333270724617">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,40.3166635362308" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,40.3166635362308"
+                    Point2="0,44.3166635362308"
+                    Point3="4,44.3166635362308" />
+                  <mssgle:LineSegment
+                    End="112.416662475715,44.3166635362308" />
+                  <mssgle:CubicBezierSegment
+                    Point1="112.416662475715,44.3166635362308"
+                    Point2="116.416662475715,44.3166635362308"
+                    Point3="116.416662475715,48.3166635362308" />
+                  <mssgle:LineSegment
+                    End="116.416662475715,81.1333270724617" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\CS_Operaciones\DFT_PUC\OLEDBD_PUC_Operaciones">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\CS_RayoCarga\DFT_Rayocarga">
     <LayoutInfo>
@@ -27982,81 +28058,5 @@
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
-  <TaskHost
-    design-time-name="Package\CS_Operaciones\DFT_PUC">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="162.666666666667,42.6666666666667"
-          Id="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones"
-          TopLeft="569.999974519015,69.5499966835977" />
-        <NodeLayout
-          Size="208,42.6666666666667"
-          Id="Package\CS_Operaciones\DFT_PUC\OLEDBD_PUC_Operaciones"
-          TopLeft="663.749970328064,200.849990422726" />
-        <EdgeLayout
-          Id="Package\CS_Operaciones\DFT_PUC.Paths[Excel Source Output]"
-          TopLeft="651.333307852349,112.216663350264">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="116.416662475715,88.6333270724617"
-              Start="0,0"
-              End="116.416662475715,81.1333270724617">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,40.3166635362308" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,40.3166635362308"
-                    Point2="0,44.3166635362308"
-                    Point3="4,44.3166635362308" />
-                  <mssgle:LineSegment
-                    End="112.416662475715,44.3166635362308" />
-                  <mssgle:CubicBezierSegment
-                    Point1="112.416662475715,44.3166635362308"
-                    Point2="116.416662475715,44.3166635362308"
-                    Point3="116.416662475715,48.3166635362308" />
-                  <mssgle:LineSegment
-                    End="116.416662475715,81.1333270724617" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\CS_Operaciones\DFT_PUC\PUC_Operaciones">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\CS_Operaciones\DFT_PUC\OLEDBD_PUC_Operaciones">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
 </Objects>]]></DTS:DesignTimeProperties>
 </DTS:Executable>
