@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+﻿<?xml version="1.0"?>
 <DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:refId="Package"
   DTS:CreationDate="10/16/2024 12:16:27 PM"
@@ -11,9 +11,1187 @@
   DTS:LocaleID="9226"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionGUID="{93D3AE78-569F-426D-96A8-64D6EAA43A39}">
+  DTS:VersionBuild="3"
+  DTS:VersionGUID="{3A5C48A4-93AC-4C65-BAF4-58F3537444F2}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Operaciones]"
+      DTS:CreationName="ODATA"
+      DTS:DTSID="{35D49A65-DDF1-4745-B091-54209242459B}"
+      DTS:ObjectName="Operaciones">
+      <DTS:ObjectData>
+        <ODataConnectionManager
+          UserName="licencias@rayogas.com"
+          Url="https://grouprayogas.sharepoint.com/sites/Rayogas/Op/_vti_bin/listdata.svc/"
+          ConnectionString="Service Document Url=https://grouprayogas.sharepoint.com/sites/Rayogas/Op/_vti_bin/listdata.svc/;Include Atom Elements=Auto;Include Expanded Entities=False;Integrated Security=False;Cookie=&quot;SPOIDCRL=77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48U1A+VjEzLDBoLmZ8bWVtYmVyc2hpcHwxMDAzMDAwMGFlY2E1MWZmQGxpdmUuY29tLDAjLmZ8bWVtYmVyc2hpcHxsaWNlbmNpYXNAcmF5b2dhcy5jb20sMTMzNzQ2MDM0MjUwMDAwMDAwLDEzMzcyMTk2MTA0MDAwMDAwMCwxMzM3NDY4OTgyNTIxODc4NDcsMC4wLjAuMCwyMDk3MTU2LGFjZWI5NzYwLTJmM2QtNGNkNC1iNGI5LTFjZGUxYzdmZWQ4MCwsLDJlNWY1ZWExLTUwNTYtNjAwMC1jMjI5LWJjZWU4ODk4NWUyMCwyZTVmNWVhMS01MDU2LTYwMDAtYzIyOS1iY2VlODg5ODVlMjAsLDAsMCwwLCwsLDI2NTA0Njc3NDM5OTk5OTk5OTksMCwsLCwsLCwwLCwxOTI2NzksdVhlaFFKUGxlVmpOQ2Jha1VoR0Q2SXlGUVFrLEl5UWNORlc4UGZ0ektWUkk4d1RmalpNUTJ6RisxUUIzMXVjdVNwYzZrcGJ6R1gzMGlRK2lhQ1lKNFJpQWpBTlY5TWFrL0FTZCtCS1VCUC9PN0p3bnNuSis0V3ZWZFQwOVZQb0dpQ0h4RStQT2c1L1hHYlZNdFBZakJmaHhFa3lBdUlCTmc5bTd4ZGJ6NzdMYWZiM0I1WjZUY1U0TEV2cGY1OGdWK3BvSjVyYnNXck55cjBVTnR3TEpONmFBaS84YlI5dkpVcHZHK3A3am43SmE1bXpiRXdnMWp4ZTQxenJBNTlob1RwdEsyQUMrcVJiRU1ENVg4MjViL1Rzbmpwd1R4dkV5ZGM0WDc1RGJsSG5qNnlLeUNjUkIrZkNKK01UYmNYOFJVVHd5OTNtMTZSTGIvbFRJODRTYXpMTmJIT0h4bkVKNkFYd3NxSTlkL3JZVjViRmJrdz09PC9TUD4=&quot;;User ID=licencias@rayogas.com;Persist Security Info=False;Time Out=600;Schema Sample Size=25;Retry Count=5;Retry Sleep=100;Keep Alive=False;Max Received Message Size=4398046511104"
+          MicrosoftOnlineServicesAuth="True"
+          AuthType="MicrosoftOnlineService"
+          ConnectByProxy="False">
+          <Password
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAsWOFCbWyNE2mQ58FULc26gAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABrwTQhLV0fN2hRv0hySAeeAAAAAASAAACgAAAAEAAAALtjnh/hR0xcyp/utDDHsJAoAAAAOAApJtbF/K/lGy/DxitRHx9eDlcM5aorZIz+9MeHxdymwrT/Q4T3aBQAAABuvpLs2p6G54Je/xYj3L3LnHtH3A</Password>
+        </ODataConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
   <DTS:Variables />
-  <DTS:Executables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Data Flow Task"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{4F89CAE9-6D69-42DC-BEA3-46FDDADEA935}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Data Flow Task"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Data Flow Task\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[xls].[Destination]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="{F969E5F0-ED10-48A1-9AD7-51F9863F78B9}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[DataStage]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[IdDeTiposDeContenido]"
+                      cachedDataType="nText"
+                      cachedName="IdDeTiposDeContenido"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[IdDeTiposDeContenido]"
+                      lineageId="Package\Data Flow Task\Origen OData.Outputs[Output].Columns[IdDeTiposDeContenido]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[C_0]"
+                      cachedDataType="nText"
+                      cachedName="C_0"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[C_0]"
+                      lineageId="Package\Data Flow Task\Origen OData.Outputs[Output].Columns[C_0]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[EtiquetaDeColor]"
+                      cachedDataType="nText"
+                      cachedName="EtiquetaDeColor"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[EtiquetaDeColor]"
+                      lineageId="Package\Data Flow Task\Origen OData.Outputs[Output].Columns[EtiquetaDeColor]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[IdDeActivoDeCumplimientoNormativo]"
+                      cachedDataType="nText"
+                      cachedName="IdDeActivoDeCumplimientoNormativo"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[IdDeActivoDeCumplimientoNormativo]"
+                      lineageId="Package\Data Flow Task\Origen OData.Outputs[Output].Columns[IdDeActivoDeCumplimientoNormativo]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CentroOperacionValue]"
+                      cachedDataType="nText"
+                      cachedName="CentroOperacionValue"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CentroOperacionValue]"
+                      lineageId="Package\Data Flow Task\Origen OData.Outputs[Output].Columns[CentroOperacionValue]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[FechaCreación]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="FechaCreación"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FechaCreación]"
+                      lineageId="Package\Data Flow Task\Origen OData.Outputs[Output].Columns[FechaCreación]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Cantidad1]"
+                      cachedDataType="r8"
+                      cachedName="Cantidad1"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Cantidad1]"
+                      lineageId="Package\Data Flow Task\Origen OData.Outputs[Output].Columns[Cantidad1]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TurnoValue]"
+                      cachedDataType="nText"
+                      cachedName="TurnoValue"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TurnoValue]"
+                      lineageId="Package\Data Flow Task\Origen OData.Outputs[Output].Columns[TurnoValue]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[RealizaRegistroValue]"
+                      cachedDataType="nText"
+                      cachedName="RealizaRegistroValue"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[RealizaRegistroValue]"
+                      lineageId="Package\Data Flow Task\Origen OData.Outputs[Output].Columns[RealizaRegistroValue]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CilindrosLavados1Value]"
+                      cachedDataType="nText"
+                      cachedName="CilindrosLavados1Value"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CilindrosLavados1Value]"
+                      lineageId="Package\Data Flow Task\Origen OData.Outputs[Output].Columns[CilindrosLavados1Value]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CargoValue]"
+                      cachedDataType="nText"
+                      cachedName="CargoValue"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CargoValue]"
+                      lineageId="Package\Data Flow Task\Origen OData.Outputs[Output].Columns[CargoValue]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CilindrosLavados2Value]"
+                      cachedDataType="nText"
+                      cachedName="CilindrosLavados2Value"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CilindrosLavados2Value]"
+                      lineageId="Package\Data Flow Task\Origen OData.Outputs[Output].Columns[CilindrosLavados2Value]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Cantidad2]"
+                      cachedDataType="r8"
+                      cachedName="Cantidad2"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Cantidad2]"
+                      lineageId="Package\Data Flow Task\Origen OData.Outputs[Output].Columns[Cantidad2]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CilindrosLavados3Value]"
+                      cachedDataType="nText"
+                      cachedName="CilindrosLavados3Value"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CilindrosLavados3Value]"
+                      lineageId="Package\Data Flow Task\Origen OData.Outputs[Output].Columns[CilindrosLavados3Value]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Cantidad3]"
+                      cachedDataType="r8"
+                      cachedName="Cantidad3"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Cantidad3]"
+                      lineageId="Package\Data Flow Task\Origen OData.Outputs[Output].Columns[Cantidad3]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[RegistróId]"
+                      cachedDataType="i4"
+                      cachedName="RegistróId"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[RegistróId]"
+                      lineageId="Package\Data Flow Task\Origen OData.Outputs[Output].Columns[RegistróId]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CilindrosPintados1Value]"
+                      cachedDataType="nText"
+                      cachedName="CilindrosPintados1Value"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CilindrosPintados1Value]"
+                      lineageId="Package\Data Flow Task\Origen OData.Outputs[Output].Columns[CilindrosPintados1Value]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Cantidad10]"
+                      cachedDataType="r8"
+                      cachedName="Cantidad10"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Cantidad10]"
+                      lineageId="Package\Data Flow Task\Origen OData.Outputs[Output].Columns[Cantidad10]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CilindrosPintados2Value]"
+                      cachedDataType="nText"
+                      cachedName="CilindrosPintados2Value"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CilindrosPintados2Value]"
+                      lineageId="Package\Data Flow Task\Origen OData.Outputs[Output].Columns[CilindrosPintados2Value]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Cantidad20]"
+                      cachedDataType="r8"
+                      cachedName="Cantidad20"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Cantidad20]"
+                      lineageId="Package\Data Flow Task\Origen OData.Outputs[Output].Columns[Cantidad20]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CilindrosPintados3Value]"
+                      cachedDataType="nText"
+                      cachedName="CilindrosPintados3Value"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CilindrosPintados3Value]"
+                      lineageId="Package\Data Flow Task\Origen OData.Outputs[Output].Columns[CilindrosPintados3Value]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Cantidad30]"
+                      cachedDataType="r8"
+                      cachedName="Cantidad30"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Cantidad30]"
+                      lineageId="Package\Data Flow Task\Origen OData.Outputs[Output].Columns[Cantidad30]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Identificador]"
+                      cachedDataType="i4"
+                      cachedName="Identificador"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Identificador]"
+                      lineageId="Package\Data Flow Task\Origen OData.Outputs[Output].Columns[Identificador]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TipoDeContenido]"
+                      cachedDataType="nText"
+                      cachedName="TipoDeContenido"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TipoDeContenido]"
+                      lineageId="Package\Data Flow Task\Origen OData.Outputs[Output].Columns[TipoDeContenido]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Modificado]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="Modificado"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Modificado]"
+                      lineageId="Package\Data Flow Task\Origen OData.Outputs[Output].Columns[Modificado]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Creado]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="Creado"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Creado]"
+                      lineageId="Package\Data Flow Task\Origen OData.Outputs[Output].Columns[Creado]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CreadoPorId]"
+                      cachedDataType="i4"
+                      cachedName="CreadoPorId"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CreadoPorId]"
+                      lineageId="Package\Data Flow Task\Origen OData.Outputs[Output].Columns[CreadoPorId]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ModificadoPorId]"
+                      cachedDataType="i4"
+                      cachedName="ModificadoPorId"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ModificadoPorId]"
+                      lineageId="Package\Data Flow Task\Origen OData.Outputs[Output].Columns[ModificadoPorId]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Owshiddenversion]"
+                      cachedDataType="i4"
+                      cachedName="Owshiddenversion"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Owshiddenversion]"
+                      lineageId="Package\Data Flow Task\Origen OData.Outputs[Output].Columns[Owshiddenversion]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Versión]"
+                      cachedDataType="nText"
+                      cachedName="Versión"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Versión]"
+                      lineageId="Package\Data Flow Task\Origen OData.Outputs[Output].Columns[Versión]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[RutaDeAcceso]"
+                      cachedDataType="nText"
+                      cachedName="RutaDeAcceso"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[RutaDeAcceso]"
+                      lineageId="Package\Data Flow Task\Origen OData.Outputs[Output].Columns[RutaDeAcceso]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[IdDeTiposDeContenido]"
+                      dataType="nText"
+                      name="IdDeTiposDeContenido" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[C_0]"
+                      dataType="nText"
+                      name="C_0" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[EtiquetaDeColor]"
+                      dataType="nText"
+                      name="EtiquetaDeColor" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[IdDeActivoDeCumplimientoNormativo]"
+                      dataType="nText"
+                      name="IdDeActivoDeCumplimientoNormativo" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CentroOperacionValue]"
+                      dataType="nText"
+                      name="CentroOperacionValue" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FechaCreación]"
+                      dataType="dbTimeStamp"
+                      name="FechaCreación" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Cantidad1]"
+                      dataType="r8"
+                      name="Cantidad1" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TurnoValue]"
+                      dataType="nText"
+                      name="TurnoValue" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[RealizaRegistroValue]"
+                      dataType="nText"
+                      name="RealizaRegistroValue" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CilindrosLavados1Value]"
+                      dataType="nText"
+                      name="CilindrosLavados1Value" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CargoValue]"
+                      dataType="nText"
+                      name="CargoValue" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CilindrosLavados2Value]"
+                      dataType="nText"
+                      name="CilindrosLavados2Value" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Cantidad2]"
+                      dataType="r8"
+                      name="Cantidad2" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CilindrosLavados3Value]"
+                      dataType="nText"
+                      name="CilindrosLavados3Value" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Cantidad3]"
+                      dataType="r8"
+                      name="Cantidad3" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[RegistróId]"
+                      dataType="i4"
+                      name="RegistróId" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CilindrosPintados1Value]"
+                      dataType="nText"
+                      name="CilindrosPintados1Value" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Cantidad10]"
+                      dataType="r8"
+                      name="Cantidad10" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CilindrosPintados2Value]"
+                      dataType="nText"
+                      name="CilindrosPintados2Value" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Cantidad20]"
+                      dataType="r8"
+                      name="Cantidad20" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CilindrosPintados3Value]"
+                      dataType="nText"
+                      name="CilindrosPintados3Value" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Cantidad30]"
+                      dataType="r8"
+                      name="Cantidad30" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Identificador]"
+                      dataType="i4"
+                      name="Identificador" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TipoDeContenido]"
+                      dataType="nText"
+                      name="TipoDeContenido" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Modificado]"
+                      dataType="dbTimeStamp"
+                      name="Modificado" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Creado]"
+                      dataType="dbTimeStamp"
+                      name="Creado" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CreadoPorId]"
+                      dataType="i4"
+                      name="CreadoPorId" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ModificadoPorId]"
+                      dataType="i4"
+                      name="ModificadoPorId" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Owshiddenversion]"
+                      dataType="i4"
+                      name="Owshiddenversion" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Versión]"
+                      dataType="nText"
+                      name="Versión" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[RutaDeAcceso]"
+                      dataType="nText"
+                      name="RutaDeAcceso" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\Origen OData"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="Componente de origen OData;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;0"
+              description="Leer datos de los servicios OData"
+              name="Origen OData"
+              usesDispositions="true">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Nombre de la colección que se recuperará del servicio."
+                  expressionType="Notify"
+                  name="CollectionName">InventarioMantenimientoCilindros</property>
+                <property
+                  dataType="System.Int32"
+                  description="La longitud máxima predeterminada de una cadena que no tiene maxlength especificada en el esquema."
+                  name="DefaultStringLength">4000</property>
+                <property
+                  dataType="System.String"
+                  description="Consulta en la dirección URL. "
+                  expressionType="Notify"
+                  name="Query">https://grouprayogas.sharepoint.com/sites/Rayogas/Op/_vti_bin/listdata.svc/InventarioMantenimientoCilindros</property>
+                <property
+                  dataType="System.String"
+                  description="Ruta de acceso a recursos de la colección que se recuperará del servicio."
+                  expressionType="Notify"
+                  name="ResourcePath"></property>
+                <property
+                  dataType="System.Boolean"
+                  description="Cuando se establece en True, use la ruta de acceso a recursos como la colección solicitada; en caso contrario, use el nombre de la colección."
+                  expressionType="Notify"
+                  name="UseResourcePath">false</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.OData</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\Origen OData.Connections[Conexión]"
+                  connectionManagerID="Package.ConnectionManagers[Operaciones]"
+                  connectionManagerRefId="Package.ConnectionManagers[Operaciones]"
+                  description="Conexión al servicio OData"
+                  name="Conexión" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\Origen OData.Outputs[Output]"
+                  name="Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen OData.Outputs[Output].Columns[IdDeTiposDeContenido]"
+                      dataType="nText"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Origen OData.Outputs[Output].ExternalColumns[IdDeTiposDeContenido]"
+                      lineageId="Package\Data Flow Task\Origen OData.Outputs[Output].Columns[IdDeTiposDeContenido]"
+                      name="IdDeTiposDeContenido"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen OData.Outputs[Output].Columns[C_0]"
+                      dataType="nText"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Origen OData.Outputs[Output].ExternalColumns[C_0]"
+                      lineageId="Package\Data Flow Task\Origen OData.Outputs[Output].Columns[C_0]"
+                      name="C_0"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen OData.Outputs[Output].Columns[EtiquetaDeColor]"
+                      dataType="nText"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Origen OData.Outputs[Output].ExternalColumns[EtiquetaDeColor]"
+                      lineageId="Package\Data Flow Task\Origen OData.Outputs[Output].Columns[EtiquetaDeColor]"
+                      name="EtiquetaDeColor"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen OData.Outputs[Output].Columns[IdDeActivoDeCumplimientoNormativo]"
+                      dataType="nText"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Origen OData.Outputs[Output].ExternalColumns[IdDeActivoDeCumplimientoNormativo]"
+                      lineageId="Package\Data Flow Task\Origen OData.Outputs[Output].Columns[IdDeActivoDeCumplimientoNormativo]"
+                      name="IdDeActivoDeCumplimientoNormativo"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen OData.Outputs[Output].Columns[CentroOperacionValue]"
+                      dataType="nText"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Origen OData.Outputs[Output].ExternalColumns[CentroOperacionValue]"
+                      lineageId="Package\Data Flow Task\Origen OData.Outputs[Output].Columns[CentroOperacionValue]"
+                      name="CentroOperacionValue"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen OData.Outputs[Output].Columns[FechaCreación]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Origen OData.Outputs[Output].ExternalColumns[FechaCreación]"
+                      lineageId="Package\Data Flow Task\Origen OData.Outputs[Output].Columns[FechaCreación]"
+                      name="FechaCreación"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen OData.Outputs[Output].Columns[Cantidad1]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Origen OData.Outputs[Output].ExternalColumns[Cantidad1]"
+                      lineageId="Package\Data Flow Task\Origen OData.Outputs[Output].Columns[Cantidad1]"
+                      name="Cantidad1"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen OData.Outputs[Output].Columns[TurnoValue]"
+                      dataType="nText"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Origen OData.Outputs[Output].ExternalColumns[TurnoValue]"
+                      lineageId="Package\Data Flow Task\Origen OData.Outputs[Output].Columns[TurnoValue]"
+                      name="TurnoValue"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen OData.Outputs[Output].Columns[RealizaRegistroValue]"
+                      dataType="nText"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Origen OData.Outputs[Output].ExternalColumns[RealizaRegistroValue]"
+                      lineageId="Package\Data Flow Task\Origen OData.Outputs[Output].Columns[RealizaRegistroValue]"
+                      name="RealizaRegistroValue"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen OData.Outputs[Output].Columns[CilindrosLavados1Value]"
+                      dataType="nText"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Origen OData.Outputs[Output].ExternalColumns[CilindrosLavados1Value]"
+                      lineageId="Package\Data Flow Task\Origen OData.Outputs[Output].Columns[CilindrosLavados1Value]"
+                      name="CilindrosLavados1Value"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen OData.Outputs[Output].Columns[CargoValue]"
+                      dataType="nText"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Origen OData.Outputs[Output].ExternalColumns[CargoValue]"
+                      lineageId="Package\Data Flow Task\Origen OData.Outputs[Output].Columns[CargoValue]"
+                      name="CargoValue"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen OData.Outputs[Output].Columns[CilindrosLavados2Value]"
+                      dataType="nText"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Origen OData.Outputs[Output].ExternalColumns[CilindrosLavados2Value]"
+                      lineageId="Package\Data Flow Task\Origen OData.Outputs[Output].Columns[CilindrosLavados2Value]"
+                      name="CilindrosLavados2Value"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen OData.Outputs[Output].Columns[Cantidad2]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Origen OData.Outputs[Output].ExternalColumns[Cantidad2]"
+                      lineageId="Package\Data Flow Task\Origen OData.Outputs[Output].Columns[Cantidad2]"
+                      name="Cantidad2"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen OData.Outputs[Output].Columns[CilindrosLavados3Value]"
+                      dataType="nText"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Origen OData.Outputs[Output].ExternalColumns[CilindrosLavados3Value]"
+                      lineageId="Package\Data Flow Task\Origen OData.Outputs[Output].Columns[CilindrosLavados3Value]"
+                      name="CilindrosLavados3Value"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen OData.Outputs[Output].Columns[Cantidad3]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Origen OData.Outputs[Output].ExternalColumns[Cantidad3]"
+                      lineageId="Package\Data Flow Task\Origen OData.Outputs[Output].Columns[Cantidad3]"
+                      name="Cantidad3"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen OData.Outputs[Output].Columns[RegistróId]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Origen OData.Outputs[Output].ExternalColumns[RegistróId]"
+                      lineageId="Package\Data Flow Task\Origen OData.Outputs[Output].Columns[RegistróId]"
+                      name="RegistróId"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen OData.Outputs[Output].Columns[CilindrosPintados1Value]"
+                      dataType="nText"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Origen OData.Outputs[Output].ExternalColumns[CilindrosPintados1Value]"
+                      lineageId="Package\Data Flow Task\Origen OData.Outputs[Output].Columns[CilindrosPintados1Value]"
+                      name="CilindrosPintados1Value"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen OData.Outputs[Output].Columns[Cantidad10]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Origen OData.Outputs[Output].ExternalColumns[Cantidad10]"
+                      lineageId="Package\Data Flow Task\Origen OData.Outputs[Output].Columns[Cantidad10]"
+                      name="Cantidad10"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen OData.Outputs[Output].Columns[CilindrosPintados2Value]"
+                      dataType="nText"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Origen OData.Outputs[Output].ExternalColumns[CilindrosPintados2Value]"
+                      lineageId="Package\Data Flow Task\Origen OData.Outputs[Output].Columns[CilindrosPintados2Value]"
+                      name="CilindrosPintados2Value"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen OData.Outputs[Output].Columns[Cantidad20]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Origen OData.Outputs[Output].ExternalColumns[Cantidad20]"
+                      lineageId="Package\Data Flow Task\Origen OData.Outputs[Output].Columns[Cantidad20]"
+                      name="Cantidad20"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen OData.Outputs[Output].Columns[CilindrosPintados3Value]"
+                      dataType="nText"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Origen OData.Outputs[Output].ExternalColumns[CilindrosPintados3Value]"
+                      lineageId="Package\Data Flow Task\Origen OData.Outputs[Output].Columns[CilindrosPintados3Value]"
+                      name="CilindrosPintados3Value"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen OData.Outputs[Output].Columns[Cantidad30]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Origen OData.Outputs[Output].ExternalColumns[Cantidad30]"
+                      lineageId="Package\Data Flow Task\Origen OData.Outputs[Output].Columns[Cantidad30]"
+                      name="Cantidad30"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen OData.Outputs[Output].Columns[Identificador]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Origen OData.Outputs[Output].ExternalColumns[Identificador]"
+                      lineageId="Package\Data Flow Task\Origen OData.Outputs[Output].Columns[Identificador]"
+                      name="Identificador"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen OData.Outputs[Output].Columns[TipoDeContenido]"
+                      dataType="nText"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Origen OData.Outputs[Output].ExternalColumns[TipoDeContenido]"
+                      lineageId="Package\Data Flow Task\Origen OData.Outputs[Output].Columns[TipoDeContenido]"
+                      name="TipoDeContenido"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen OData.Outputs[Output].Columns[Modificado]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Origen OData.Outputs[Output].ExternalColumns[Modificado]"
+                      lineageId="Package\Data Flow Task\Origen OData.Outputs[Output].Columns[Modificado]"
+                      name="Modificado"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen OData.Outputs[Output].Columns[Creado]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Origen OData.Outputs[Output].ExternalColumns[Creado]"
+                      lineageId="Package\Data Flow Task\Origen OData.Outputs[Output].Columns[Creado]"
+                      name="Creado"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen OData.Outputs[Output].Columns[CreadoPorId]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Origen OData.Outputs[Output].ExternalColumns[CreadoPorId]"
+                      lineageId="Package\Data Flow Task\Origen OData.Outputs[Output].Columns[CreadoPorId]"
+                      name="CreadoPorId"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen OData.Outputs[Output].Columns[ModificadoPorId]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Origen OData.Outputs[Output].ExternalColumns[ModificadoPorId]"
+                      lineageId="Package\Data Flow Task\Origen OData.Outputs[Output].Columns[ModificadoPorId]"
+                      name="ModificadoPorId"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen OData.Outputs[Output].Columns[Owshiddenversion]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Origen OData.Outputs[Output].ExternalColumns[Owshiddenversion]"
+                      lineageId="Package\Data Flow Task\Origen OData.Outputs[Output].Columns[Owshiddenversion]"
+                      name="Owshiddenversion"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen OData.Outputs[Output].Columns[Versión]"
+                      dataType="nText"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Origen OData.Outputs[Output].ExternalColumns[Versión]"
+                      lineageId="Package\Data Flow Task\Origen OData.Outputs[Output].Columns[Versión]"
+                      name="Versión"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen OData.Outputs[Output].Columns[RutaDeAcceso]"
+                      dataType="nText"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Origen OData.Outputs[Output].ExternalColumns[RutaDeAcceso]"
+                      lineageId="Package\Data Flow Task\Origen OData.Outputs[Output].Columns[RutaDeAcceso]"
+                      name="RutaDeAcceso"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Origen OData.Outputs[Output].ExternalColumns[IdDeTiposDeContenido]"
+                      dataType="nText"
+                      name="IdDeTiposDeContenido" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Origen OData.Outputs[Output].ExternalColumns[C_0]"
+                      dataType="nText"
+                      name="C_0" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Origen OData.Outputs[Output].ExternalColumns[EtiquetaDeColor]"
+                      dataType="nText"
+                      name="EtiquetaDeColor" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Origen OData.Outputs[Output].ExternalColumns[IdDeActivoDeCumplimientoNormativo]"
+                      dataType="nText"
+                      name="IdDeActivoDeCumplimientoNormativo" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Origen OData.Outputs[Output].ExternalColumns[CentroOperacionValue]"
+                      dataType="nText"
+                      name="CentroOperacionValue" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Origen OData.Outputs[Output].ExternalColumns[FechaCreación]"
+                      dataType="dbTimeStamp"
+                      name="FechaCreación" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Origen OData.Outputs[Output].ExternalColumns[Cantidad1]"
+                      dataType="r8"
+                      name="Cantidad1" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Origen OData.Outputs[Output].ExternalColumns[TurnoValue]"
+                      dataType="nText"
+                      name="TurnoValue" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Origen OData.Outputs[Output].ExternalColumns[RealizaRegistroValue]"
+                      dataType="nText"
+                      name="RealizaRegistroValue" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Origen OData.Outputs[Output].ExternalColumns[CilindrosLavados1Value]"
+                      dataType="nText"
+                      name="CilindrosLavados1Value" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Origen OData.Outputs[Output].ExternalColumns[CargoValue]"
+                      dataType="nText"
+                      name="CargoValue" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Origen OData.Outputs[Output].ExternalColumns[CilindrosLavados2Value]"
+                      dataType="nText"
+                      name="CilindrosLavados2Value" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Origen OData.Outputs[Output].ExternalColumns[Cantidad2]"
+                      dataType="r8"
+                      name="Cantidad2" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Origen OData.Outputs[Output].ExternalColumns[CilindrosLavados3Value]"
+                      dataType="nText"
+                      name="CilindrosLavados3Value" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Origen OData.Outputs[Output].ExternalColumns[Cantidad3]"
+                      dataType="r8"
+                      name="Cantidad3" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Origen OData.Outputs[Output].ExternalColumns[RegistróId]"
+                      dataType="i4"
+                      name="RegistróId" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Origen OData.Outputs[Output].ExternalColumns[CilindrosPintados1Value]"
+                      dataType="nText"
+                      name="CilindrosPintados1Value" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Origen OData.Outputs[Output].ExternalColumns[Cantidad10]"
+                      dataType="r8"
+                      name="Cantidad10" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Origen OData.Outputs[Output].ExternalColumns[CilindrosPintados2Value]"
+                      dataType="nText"
+                      name="CilindrosPintados2Value" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Origen OData.Outputs[Output].ExternalColumns[Cantidad20]"
+                      dataType="r8"
+                      name="Cantidad20" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Origen OData.Outputs[Output].ExternalColumns[CilindrosPintados3Value]"
+                      dataType="nText"
+                      name="CilindrosPintados3Value" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Origen OData.Outputs[Output].ExternalColumns[Cantidad30]"
+                      dataType="r8"
+                      name="Cantidad30" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Origen OData.Outputs[Output].ExternalColumns[Identificador]"
+                      dataType="i4"
+                      name="Identificador" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Origen OData.Outputs[Output].ExternalColumns[TipoDeContenido]"
+                      dataType="nText"
+                      name="TipoDeContenido" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Origen OData.Outputs[Output].ExternalColumns[Modificado]"
+                      dataType="dbTimeStamp"
+                      name="Modificado" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Origen OData.Outputs[Output].ExternalColumns[Creado]"
+                      dataType="dbTimeStamp"
+                      name="Creado" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Origen OData.Outputs[Output].ExternalColumns[CreadoPorId]"
+                      dataType="i4"
+                      name="CreadoPorId" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Origen OData.Outputs[Output].ExternalColumns[ModificadoPorId]"
+                      dataType="i4"
+                      name="ModificadoPorId" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Origen OData.Outputs[Output].ExternalColumns[Owshiddenversion]"
+                      dataType="i4"
+                      name="Owshiddenversion" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Origen OData.Outputs[Output].ExternalColumns[Versión]"
+                      dataType="nText"
+                      name="Versión" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Origen OData.Outputs[Output].ExternalColumns[RutaDeAcceso]"
+                      dataType="nText"
+                      name="RutaDeAcceso" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Data Flow Task\Origen OData.Outputs[Error output]"
+                  isErrorOut="true"
+                  name="Error output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen OData.Outputs[Error output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Origen OData.Outputs[Error output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen OData.Outputs[Error output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Origen OData.Outputs[Error output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen OData.Outputs[Error output].Columns[IdDeTiposDeContenido]"
+                      dataType="nText"
+                      lineageId="Package\Data Flow Task\Origen OData.Outputs[Error output].Columns[IdDeTiposDeContenido]"
+                      name="IdDeTiposDeContenido" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen OData.Outputs[Error output].Columns[C_0]"
+                      dataType="nText"
+                      lineageId="Package\Data Flow Task\Origen OData.Outputs[Error output].Columns[C_0]"
+                      name="C_0" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen OData.Outputs[Error output].Columns[EtiquetaDeColor]"
+                      dataType="nText"
+                      lineageId="Package\Data Flow Task\Origen OData.Outputs[Error output].Columns[EtiquetaDeColor]"
+                      name="EtiquetaDeColor" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen OData.Outputs[Error output].Columns[IdDeActivoDeCumplimientoNormativo]"
+                      dataType="nText"
+                      lineageId="Package\Data Flow Task\Origen OData.Outputs[Error output].Columns[IdDeActivoDeCumplimientoNormativo]"
+                      name="IdDeActivoDeCumplimientoNormativo" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen OData.Outputs[Error output].Columns[CentroOperacionValue]"
+                      dataType="nText"
+                      lineageId="Package\Data Flow Task\Origen OData.Outputs[Error output].Columns[CentroOperacionValue]"
+                      name="CentroOperacionValue" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen OData.Outputs[Error output].Columns[FechaCreación]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\Data Flow Task\Origen OData.Outputs[Error output].Columns[FechaCreación]"
+                      name="FechaCreación" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen OData.Outputs[Error output].Columns[Cantidad1]"
+                      dataType="r8"
+                      lineageId="Package\Data Flow Task\Origen OData.Outputs[Error output].Columns[Cantidad1]"
+                      name="Cantidad1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen OData.Outputs[Error output].Columns[TurnoValue]"
+                      dataType="nText"
+                      lineageId="Package\Data Flow Task\Origen OData.Outputs[Error output].Columns[TurnoValue]"
+                      name="TurnoValue" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen OData.Outputs[Error output].Columns[RealizaRegistroValue]"
+                      dataType="nText"
+                      lineageId="Package\Data Flow Task\Origen OData.Outputs[Error output].Columns[RealizaRegistroValue]"
+                      name="RealizaRegistroValue" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen OData.Outputs[Error output].Columns[CilindrosLavados1Value]"
+                      dataType="nText"
+                      lineageId="Package\Data Flow Task\Origen OData.Outputs[Error output].Columns[CilindrosLavados1Value]"
+                      name="CilindrosLavados1Value" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen OData.Outputs[Error output].Columns[CargoValue]"
+                      dataType="nText"
+                      lineageId="Package\Data Flow Task\Origen OData.Outputs[Error output].Columns[CargoValue]"
+                      name="CargoValue" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen OData.Outputs[Error output].Columns[CilindrosLavados2Value]"
+                      dataType="nText"
+                      lineageId="Package\Data Flow Task\Origen OData.Outputs[Error output].Columns[CilindrosLavados2Value]"
+                      name="CilindrosLavados2Value" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen OData.Outputs[Error output].Columns[Cantidad2]"
+                      dataType="r8"
+                      lineageId="Package\Data Flow Task\Origen OData.Outputs[Error output].Columns[Cantidad2]"
+                      name="Cantidad2" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen OData.Outputs[Error output].Columns[CilindrosLavados3Value]"
+                      dataType="nText"
+                      lineageId="Package\Data Flow Task\Origen OData.Outputs[Error output].Columns[CilindrosLavados3Value]"
+                      name="CilindrosLavados3Value" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen OData.Outputs[Error output].Columns[Cantidad3]"
+                      dataType="r8"
+                      lineageId="Package\Data Flow Task\Origen OData.Outputs[Error output].Columns[Cantidad3]"
+                      name="Cantidad3" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen OData.Outputs[Error output].Columns[RegistróId]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Origen OData.Outputs[Error output].Columns[RegistróId]"
+                      name="RegistróId" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen OData.Outputs[Error output].Columns[CilindrosPintados1Value]"
+                      dataType="nText"
+                      lineageId="Package\Data Flow Task\Origen OData.Outputs[Error output].Columns[CilindrosPintados1Value]"
+                      name="CilindrosPintados1Value" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen OData.Outputs[Error output].Columns[Cantidad10]"
+                      dataType="r8"
+                      lineageId="Package\Data Flow Task\Origen OData.Outputs[Error output].Columns[Cantidad10]"
+                      name="Cantidad10" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen OData.Outputs[Error output].Columns[CilindrosPintados2Value]"
+                      dataType="nText"
+                      lineageId="Package\Data Flow Task\Origen OData.Outputs[Error output].Columns[CilindrosPintados2Value]"
+                      name="CilindrosPintados2Value" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen OData.Outputs[Error output].Columns[Cantidad20]"
+                      dataType="r8"
+                      lineageId="Package\Data Flow Task\Origen OData.Outputs[Error output].Columns[Cantidad20]"
+                      name="Cantidad20" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen OData.Outputs[Error output].Columns[CilindrosPintados3Value]"
+                      dataType="nText"
+                      lineageId="Package\Data Flow Task\Origen OData.Outputs[Error output].Columns[CilindrosPintados3Value]"
+                      name="CilindrosPintados3Value" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen OData.Outputs[Error output].Columns[Cantidad30]"
+                      dataType="r8"
+                      lineageId="Package\Data Flow Task\Origen OData.Outputs[Error output].Columns[Cantidad30]"
+                      name="Cantidad30" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen OData.Outputs[Error output].Columns[Identificador]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Origen OData.Outputs[Error output].Columns[Identificador]"
+                      name="Identificador" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen OData.Outputs[Error output].Columns[TipoDeContenido]"
+                      dataType="nText"
+                      lineageId="Package\Data Flow Task\Origen OData.Outputs[Error output].Columns[TipoDeContenido]"
+                      name="TipoDeContenido" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen OData.Outputs[Error output].Columns[Modificado]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\Data Flow Task\Origen OData.Outputs[Error output].Columns[Modificado]"
+                      name="Modificado" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen OData.Outputs[Error output].Columns[Creado]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\Data Flow Task\Origen OData.Outputs[Error output].Columns[Creado]"
+                      name="Creado" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen OData.Outputs[Error output].Columns[CreadoPorId]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Origen OData.Outputs[Error output].Columns[CreadoPorId]"
+                      name="CreadoPorId" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen OData.Outputs[Error output].Columns[ModificadoPorId]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Origen OData.Outputs[Error output].Columns[ModificadoPorId]"
+                      name="ModificadoPorId" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen OData.Outputs[Error output].Columns[Owshiddenversion]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Origen OData.Outputs[Error output].Columns[Owshiddenversion]"
+                      name="Owshiddenversion" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen OData.Outputs[Error output].Columns[Versión]"
+                      dataType="nText"
+                      lineageId="Package\Data Flow Task\Origen OData.Outputs[Error output].Columns[Versión]"
+                      name="Versión" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Origen OData.Outputs[Error output].Columns[RutaDeAcceso]"
+                      dataType="nText"
+                      lineageId="Package\Data Flow Task\Origen OData.Outputs[Error output].Columns[RutaDeAcceso]"
+                      name="RutaDeAcceso" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Data Flow Task.Paths[Output]"
+              endId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Output"
+              startId="Package\Data Flow Task\Origen OData.Outputs[Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--Esta sección CDATA contiene la información de diseño del paquete. Esta sección incluye información como, por ejemplo, las coordenadas (x,y), el ancho y el alto.-->
+<!--Si edita manualmente esta sección y comete un error, puede eliminarlo. -->
+<!--El paquete podrá cargarse normalmente, pero se perderá la información de diseño anterior y el diseñador reorganizará los elementos automáticamente en la superficie de diseño.-->
+<Objects
+  Version="8">
+  <!--Cada uno de los nodos siguientes contiene propiedades que no afectan al comportamiento en tiempo de ejecución.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="152,42.6666666666667"
+          Id="Package\Data Flow Task"
+          TopLeft="201.874990975484,111.149994699955" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Data Flow Task">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="144,42.6666666666667"
+          Id="Package\Data Flow Task\Origen OData"
+          TopLeft="283.749987315387,105.949994947911" />
+        <NodeLayout
+          Size="172,42.6666666666667"
+          Id="Package\Data Flow Task\OLE DB Destination"
+          TopLeft="353.124984214083,269.099987168313" />
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Output]"
+          TopLeft="355.749987315387,148.616661614577">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="83.374996898696,120.483325553735"
+              Start="0,0"
+              End="83.374996898696,112.983325553735">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,56.2416627768677" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,56.2416627768677"
+                    Point2="0,60.2416627768677"
+                    Point3="4,60.2416627768677" />
+                  <mssgle:LineSegment
+                    End="79.374996898696,60.2416627768677" />
+                  <mssgle:CubicBezierSegment
+                    Point1="79.374996898696,60.2416627768677"
+                    Point2="83.374996898696,60.2416627768677"
+                    Point3="83.374996898696,64.2416627768677" />
+                  <mssgle:LineSegment
+                    End="83.374996898696,112.983325553735" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
 </DTS:Executable>
