@@ -1,0 +1,12 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="192.168.0.132.DataStage"
+  DTS:DTSID="{18611CE2-53E4-45DB-BFC3-290B70F776B0}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=192.168.0.132;Initial Catalog=DataStage;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-ETL Excel-{18611CE2-53E4-45DB-BFC3-290B70F776B0}192.168.0.132.DataStage;Auto Translate=False;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
