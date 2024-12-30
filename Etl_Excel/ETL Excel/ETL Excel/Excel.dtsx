@@ -11,8 +11,8 @@
   DTS:LocaleID="9226"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="82"
-  DTS:VersionGUID="{BBEE799A-AD68-4D7C-987B-1E3BDBB7E6E9}">
+  DTS:VersionBuild="94"
+  DTS:VersionGUID="{373AB6F3-AC42-4C9A-8242-3607BB271581}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -2152,16 +2152,6 @@
                       name="Fecha"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\DFT_Archivos_Comercial\ES_MetaComercial.Outputs[Excel Source Output].Columns[U#N#]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT_Archivos_Comercial\ES_MetaComercial.Outputs[Excel Source Output].ExternalColumns[U#N#]"
-                      length="255"
-                      lineageId="Package\DFT_Archivos_Comercial\ES_MetaComercial.Outputs[Excel Source Output].Columns[U#N#]"
-                      name="U#N#"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
                       refId="Package\DFT_Archivos_Comercial\ES_MetaComercial.Outputs[Excel Source Output].Columns[CeCo]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
@@ -2172,26 +2162,6 @@
                       name="CeCo"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\DFT_Archivos_Comercial\ES_MetaComercial.Outputs[Excel Source Output].Columns[CeCo descripcion]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT_Archivos_Comercial\ES_MetaComercial.Outputs[Excel Source Output].ExternalColumns[CeCo descripcion]"
-                      length="255"
-                      lineageId="Package\DFT_Archivos_Comercial\ES_MetaComercial.Outputs[Excel Source Output].Columns[CeCo descripcion]"
-                      name="CeCo descripcion"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\DFT_Archivos_Comercial\ES_MetaComercial.Outputs[Excel Source Output].Columns[CeCo descripcion Ajustado]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT_Archivos_Comercial\ES_MetaComercial.Outputs[Excel Source Output].ExternalColumns[CeCo descripcion Ajustado]"
-                      length="255"
-                      lineageId="Package\DFT_Archivos_Comercial\ES_MetaComercial.Outputs[Excel Source Output].Columns[CeCo descripcion Ajustado]"
-                      name="CeCo descripcion Ajustado"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
                       refId="Package\DFT_Archivos_Comercial\ES_MetaComercial.Outputs[Excel Source Output].Columns[Cedula]"
                       dataType="r8"
                       errorOrTruncationOperation="Conversion"
@@ -2199,16 +2169,6 @@
                       externalMetadataColumnId="Package\DFT_Archivos_Comercial\ES_MetaComercial.Outputs[Excel Source Output].ExternalColumns[Cedula]"
                       lineageId="Package\DFT_Archivos_Comercial\ES_MetaComercial.Outputs[Excel Source Output].Columns[Cedula]"
                       name="Cedula"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\DFT_Archivos_Comercial\ES_MetaComercial.Outputs[Excel Source Output].Columns[Nombre vendedor]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT_Archivos_Comercial\ES_MetaComercial.Outputs[Excel Source Output].ExternalColumns[Nombre vendedor]"
-                      length="255"
-                      lineageId="Package\DFT_Archivos_Comercial\ES_MetaComercial.Outputs[Excel Source Output].Columns[Nombre vendedor]"
-                      name="Nombre vendedor"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\DFT_Archivos_Comercial\ES_MetaComercial.Outputs[Excel Source Output].Columns[Kilos]"
@@ -2238,33 +2198,44 @@
                       name="MP_Millones"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\DFT_Archivos_Comercial\ES_MetaComercial.Outputs[Excel Source Output].Columns[F11]"
+                      refId="Package\DFT_Archivos_Comercial\ES_MetaComercial.Outputs[Excel Source Output].Columns[UN]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT_Archivos_Comercial\ES_MetaComercial.Outputs[Excel Source Output].ExternalColumns[F11]"
+                      externalMetadataColumnId="Package\DFT_Archivos_Comercial\ES_MetaComercial.Outputs[Excel Source Output].ExternalColumns[UN]"
                       length="255"
-                      lineageId="Package\DFT_Archivos_Comercial\ES_MetaComercial.Outputs[Excel Source Output].Columns[F11]"
-                      name="F11"
+                      lineageId="Package\DFT_Archivos_Comercial\ES_MetaComercial.Outputs[Excel Source Output].Columns[UN]"
+                      name="UN"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\DFT_Archivos_Comercial\ES_MetaComercial.Outputs[Excel Source Output].Columns[F12]"
+                      refId="Package\DFT_Archivos_Comercial\ES_MetaComercial.Outputs[Excel Source Output].Columns[Nombre_Vendedor]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT_Archivos_Comercial\ES_MetaComercial.Outputs[Excel Source Output].ExternalColumns[F12]"
+                      externalMetadataColumnId="Package\DFT_Archivos_Comercial\ES_MetaComercial.Outputs[Excel Source Output].ExternalColumns[Nombre_Vendedor]"
                       length="255"
-                      lineageId="Package\DFT_Archivos_Comercial\ES_MetaComercial.Outputs[Excel Source Output].Columns[F12]"
-                      name="F12"
+                      lineageId="Package\DFT_Archivos_Comercial\ES_MetaComercial.Outputs[Excel Source Output].Columns[Nombre_Vendedor]"
+                      name="Nombre_Vendedor"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\DFT_Archivos_Comercial\ES_MetaComercial.Outputs[Excel Source Output].Columns[F13]"
-                      dataType="r8"
+                      refId="Package\DFT_Archivos_Comercial\ES_MetaComercial.Outputs[Excel Source Output].Columns[CeCo_descripcion_Ajustado]"
+                      dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT_Archivos_Comercial\ES_MetaComercial.Outputs[Excel Source Output].ExternalColumns[F13]"
-                      lineageId="Package\DFT_Archivos_Comercial\ES_MetaComercial.Outputs[Excel Source Output].Columns[F13]"
-                      name="F13"
+                      externalMetadataColumnId="Package\DFT_Archivos_Comercial\ES_MetaComercial.Outputs[Excel Source Output].ExternalColumns[CeCo_descripcion_Ajustado]"
+                      length="255"
+                      lineageId="Package\DFT_Archivos_Comercial\ES_MetaComercial.Outputs[Excel Source Output].Columns[CeCo_descripcion_Ajustado]"
+                      name="CeCo_descripcion_Ajustado"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DFT_Archivos_Comercial\ES_MetaComercial.Outputs[Excel Source Output].Columns[CeCo_descripcion]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_Archivos_Comercial\ES_MetaComercial.Outputs[Excel Source Output].ExternalColumns[CeCo_descripcion]"
+                      length="255"
+                      lineageId="Package\DFT_Archivos_Comercial\ES_MetaComercial.Outputs[Excel Source Output].Columns[CeCo_descripcion]"
+                      name="CeCo_descripcion"
                       truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
@@ -2274,34 +2245,14 @@
                       dataType="date"
                       name="Fecha" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Archivos_Comercial\ES_MetaComercial.Outputs[Excel Source Output].ExternalColumns[U#N#]"
-                      dataType="wstr"
-                      length="255"
-                      name="U#N#" />
-                    <externalMetadataColumn
                       refId="Package\DFT_Archivos_Comercial\ES_MetaComercial.Outputs[Excel Source Output].ExternalColumns[CeCo]"
                       dataType="wstr"
                       length="255"
                       name="CeCo" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Archivos_Comercial\ES_MetaComercial.Outputs[Excel Source Output].ExternalColumns[CeCo descripcion]"
-                      dataType="wstr"
-                      length="255"
-                      name="CeCo descripcion" />
-                    <externalMetadataColumn
-                      refId="Package\DFT_Archivos_Comercial\ES_MetaComercial.Outputs[Excel Source Output].ExternalColumns[CeCo descripcion Ajustado]"
-                      dataType="wstr"
-                      length="255"
-                      name="CeCo descripcion Ajustado" />
-                    <externalMetadataColumn
                       refId="Package\DFT_Archivos_Comercial\ES_MetaComercial.Outputs[Excel Source Output].ExternalColumns[Cedula]"
                       dataType="r8"
                       name="Cedula" />
-                    <externalMetadataColumn
-                      refId="Package\DFT_Archivos_Comercial\ES_MetaComercial.Outputs[Excel Source Output].ExternalColumns[Nombre vendedor]"
-                      dataType="wstr"
-                      length="255"
-                      name="Nombre vendedor" />
                     <externalMetadataColumn
                       refId="Package\DFT_Archivos_Comercial\ES_MetaComercial.Outputs[Excel Source Output].ExternalColumns[Kilos]"
                       dataType="r8"
@@ -2328,6 +2279,26 @@
                       refId="Package\DFT_Archivos_Comercial\ES_MetaComercial.Outputs[Excel Source Output].ExternalColumns[F13]"
                       dataType="r8"
                       name="F13" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Archivos_Comercial\ES_MetaComercial.Outputs[Excel Source Output].ExternalColumns[UN]"
+                      dataType="wstr"
+                      length="255"
+                      name="UN" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Archivos_Comercial\ES_MetaComercial.Outputs[Excel Source Output].ExternalColumns[CeCo_descripcion]"
+                      dataType="wstr"
+                      length="255"
+                      name="CeCo_descripcion" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Archivos_Comercial\ES_MetaComercial.Outputs[Excel Source Output].ExternalColumns[CeCo_descripcion_Ajustado]"
+                      dataType="wstr"
+                      length="255"
+                      name="CeCo_descripcion_Ajustado" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Archivos_Comercial\ES_MetaComercial.Outputs[Excel Source Output].ExternalColumns[Nombre_Vendedor]"
+                      dataType="wstr"
+                      length="255"
+                      name="Nombre_Vendedor" />
                   </externalMetadataColumns>
                 </output>
                 <output
@@ -2341,11 +2312,11 @@
                       lineageId="Package\DFT_Archivos_Comercial\ES_MetaComercial.Outputs[Excel Source Error Output].Columns[Fecha]"
                       name="Fecha" />
                     <outputColumn
-                      refId="Package\DFT_Archivos_Comercial\ES_MetaComercial.Outputs[Excel Source Error Output].Columns[U#N#]"
+                      refId="Package\DFT_Archivos_Comercial\ES_MetaComercial.Outputs[Excel Source Error Output].Columns[UN]"
                       dataType="wstr"
                       length="255"
-                      lineageId="Package\DFT_Archivos_Comercial\ES_MetaComercial.Outputs[Excel Source Error Output].Columns[U#N#]"
-                      name="U#N#" />
+                      lineageId="Package\DFT_Archivos_Comercial\ES_MetaComercial.Outputs[Excel Source Error Output].Columns[UN]"
+                      name="UN" />
                     <outputColumn
                       refId="Package\DFT_Archivos_Comercial\ES_MetaComercial.Outputs[Excel Source Error Output].Columns[CeCo]"
                       dataType="wstr"
@@ -2353,28 +2324,16 @@
                       lineageId="Package\DFT_Archivos_Comercial\ES_MetaComercial.Outputs[Excel Source Error Output].Columns[CeCo]"
                       name="CeCo" />
                     <outputColumn
-                      refId="Package\DFT_Archivos_Comercial\ES_MetaComercial.Outputs[Excel Source Error Output].Columns[CeCo descripcion]"
-                      dataType="wstr"
-                      length="255"
-                      lineageId="Package\DFT_Archivos_Comercial\ES_MetaComercial.Outputs[Excel Source Error Output].Columns[CeCo descripcion]"
-                      name="CeCo descripcion" />
-                    <outputColumn
-                      refId="Package\DFT_Archivos_Comercial\ES_MetaComercial.Outputs[Excel Source Error Output].Columns[CeCo descripcion Ajustado]"
-                      dataType="wstr"
-                      length="255"
-                      lineageId="Package\DFT_Archivos_Comercial\ES_MetaComercial.Outputs[Excel Source Error Output].Columns[CeCo descripcion Ajustado]"
-                      name="CeCo descripcion Ajustado" />
-                    <outputColumn
                       refId="Package\DFT_Archivos_Comercial\ES_MetaComercial.Outputs[Excel Source Error Output].Columns[Cedula]"
                       dataType="r8"
                       lineageId="Package\DFT_Archivos_Comercial\ES_MetaComercial.Outputs[Excel Source Error Output].Columns[Cedula]"
                       name="Cedula" />
                     <outputColumn
-                      refId="Package\DFT_Archivos_Comercial\ES_MetaComercial.Outputs[Excel Source Error Output].Columns[Nombre vendedor]"
+                      refId="Package\DFT_Archivos_Comercial\ES_MetaComercial.Outputs[Excel Source Error Output].Columns[Nombre_Vendedor]"
                       dataType="wstr"
                       length="255"
-                      lineageId="Package\DFT_Archivos_Comercial\ES_MetaComercial.Outputs[Excel Source Error Output].Columns[Nombre vendedor]"
-                      name="Nombre vendedor" />
+                      lineageId="Package\DFT_Archivos_Comercial\ES_MetaComercial.Outputs[Excel Source Error Output].Columns[Nombre_Vendedor]"
+                      name="Nombre_Vendedor" />
                     <outputColumn
                       refId="Package\DFT_Archivos_Comercial\ES_MetaComercial.Outputs[Excel Source Error Output].Columns[Kilos]"
                       dataType="r8"
@@ -2391,23 +2350,6 @@
                       lineageId="Package\DFT_Archivos_Comercial\ES_MetaComercial.Outputs[Excel Source Error Output].Columns[MP_Millones]"
                       name="MP_Millones" />
                     <outputColumn
-                      refId="Package\DFT_Archivos_Comercial\ES_MetaComercial.Outputs[Excel Source Error Output].Columns[F11]"
-                      dataType="wstr"
-                      length="255"
-                      lineageId="Package\DFT_Archivos_Comercial\ES_MetaComercial.Outputs[Excel Source Error Output].Columns[F11]"
-                      name="F11" />
-                    <outputColumn
-                      refId="Package\DFT_Archivos_Comercial\ES_MetaComercial.Outputs[Excel Source Error Output].Columns[F12]"
-                      dataType="wstr"
-                      length="255"
-                      lineageId="Package\DFT_Archivos_Comercial\ES_MetaComercial.Outputs[Excel Source Error Output].Columns[F12]"
-                      name="F12" />
-                    <outputColumn
-                      refId="Package\DFT_Archivos_Comercial\ES_MetaComercial.Outputs[Excel Source Error Output].Columns[F13]"
-                      dataType="r8"
-                      lineageId="Package\DFT_Archivos_Comercial\ES_MetaComercial.Outputs[Excel Source Error Output].Columns[F13]"
-                      name="F13" />
-                    <outputColumn
                       refId="Package\DFT_Archivos_Comercial\ES_MetaComercial.Outputs[Excel Source Error Output].Columns[ErrorCode]"
                       dataType="i4"
                       lineageId="Package\DFT_Archivos_Comercial\ES_MetaComercial.Outputs[Excel Source Error Output].Columns[ErrorCode]"
@@ -2419,6 +2361,18 @@
                       lineageId="Package\DFT_Archivos_Comercial\ES_MetaComercial.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
+                    <outputColumn
+                      refId="Package\DFT_Archivos_Comercial\ES_MetaComercial.Outputs[Excel Source Error Output].Columns[CeCo_descripcion_Ajustado]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\DFT_Archivos_Comercial\ES_MetaComercial.Outputs[Excel Source Error Output].Columns[CeCo_descripcion_Ajustado]"
+                      name="CeCo_descripcion_Ajustado" />
+                    <outputColumn
+                      refId="Package\DFT_Archivos_Comercial\ES_MetaComercial.Outputs[Excel Source Error Output].Columns[CeCo_descripcion]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\DFT_Archivos_Comercial\ES_MetaComercial.Outputs[Excel Source Error Output].Columns[CeCo_descripcion]"
+                      name="CeCo_descripcion" />
                   </outputColumns>
                   <externalMetadataColumns />
                 </output>
@@ -3478,13 +3432,6 @@
                       externalMetadataColumnId="Package\DFT_Archivos_Comercial\OLEDBD_MetaComercial.Inputs[OLE DB Destination Input].ExternalColumns[CeCo]"
                       lineageId="Package\DFT_Archivos_Comercial\ES_MetaComercial.Outputs[Excel Source Output].Columns[CeCo]" />
                     <inputColumn
-                      refId="Package\DFT_Archivos_Comercial\OLEDBD_MetaComercial.Inputs[OLE DB Destination Input].Columns[CeCo descripcion]"
-                      cachedDataType="wstr"
-                      cachedLength="255"
-                      cachedName="CeCo descripcion"
-                      externalMetadataColumnId="Package\DFT_Archivos_Comercial\OLEDBD_MetaComercial.Inputs[OLE DB Destination Input].ExternalColumns[CeCo descripcion]"
-                      lineageId="Package\DFT_Archivos_Comercial\ES_MetaComercial.Outputs[Excel Source Output].Columns[CeCo descripcion]" />
-                    <inputColumn
                       refId="Package\DFT_Archivos_Comercial\OLEDBD_MetaComercial.Inputs[OLE DB Destination Input].Columns[Cedula]"
                       cachedDataType="r8"
                       cachedName="Cedula"
@@ -3509,19 +3456,33 @@
                       externalMetadataColumnId="Package\DFT_Archivos_Comercial\OLEDBD_MetaComercial.Inputs[OLE DB Destination Input].ExternalColumns[MP_Millones]"
                       lineageId="Package\DFT_Archivos_Comercial\ES_MetaComercial.Outputs[Excel Source Output].Columns[MP_Millones]" />
                     <inputColumn
-                      refId="Package\DFT_Archivos_Comercial\OLEDBD_MetaComercial.Inputs[OLE DB Destination Input].Columns[U#N#]"
+                      refId="Package\DFT_Archivos_Comercial\OLEDBD_MetaComercial.Inputs[OLE DB Destination Input].Columns[UN]"
                       cachedDataType="wstr"
                       cachedLength="255"
-                      cachedName="U#N#"
+                      cachedName="UN"
                       externalMetadataColumnId="Package\DFT_Archivos_Comercial\OLEDBD_MetaComercial.Inputs[OLE DB Destination Input].ExternalColumns[UN]"
-                      lineageId="Package\DFT_Archivos_Comercial\ES_MetaComercial.Outputs[Excel Source Output].Columns[U#N#]" />
+                      lineageId="Package\DFT_Archivos_Comercial\ES_MetaComercial.Outputs[Excel Source Output].Columns[UN]" />
                     <inputColumn
-                      refId="Package\DFT_Archivos_Comercial\OLEDBD_MetaComercial.Inputs[OLE DB Destination Input].Columns[Nombre vendedor]"
+                      refId="Package\DFT_Archivos_Comercial\OLEDBD_MetaComercial.Inputs[OLE DB Destination Input].Columns[Nombre_Vendedor]"
                       cachedDataType="wstr"
                       cachedLength="255"
-                      cachedName="Nombre vendedor"
+                      cachedName="Nombre_Vendedor"
                       externalMetadataColumnId="Package\DFT_Archivos_Comercial\OLEDBD_MetaComercial.Inputs[OLE DB Destination Input].ExternalColumns[Nombre_vendedor]"
-                      lineageId="Package\DFT_Archivos_Comercial\ES_MetaComercial.Outputs[Excel Source Output].Columns[Nombre vendedor]" />
+                      lineageId="Package\DFT_Archivos_Comercial\ES_MetaComercial.Outputs[Excel Source Output].Columns[Nombre_Vendedor]" />
+                    <inputColumn
+                      refId="Package\DFT_Archivos_Comercial\OLEDBD_MetaComercial.Inputs[OLE DB Destination Input].Columns[CeCo_descripcion]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="CeCo_descripcion"
+                      externalMetadataColumnId="Package\DFT_Archivos_Comercial\OLEDBD_MetaComercial.Inputs[OLE DB Destination Input].ExternalColumns[CeCo descripcion]"
+                      lineageId="Package\DFT_Archivos_Comercial\ES_MetaComercial.Outputs[Excel Source Output].Columns[CeCo_descripcion]" />
+                    <inputColumn
+                      refId="Package\DFT_Archivos_Comercial\OLEDBD_MetaComercial.Inputs[OLE DB Destination Input].Columns[CeCo_descripcion_Ajustado]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="CeCo_descripcion_Ajustado"
+                      externalMetadataColumnId="Package\DFT_Archivos_Comercial\OLEDBD_MetaComercial.Inputs[OLE DB Destination Input].ExternalColumns[CeCo descripcion_Ajustado]"
+                      lineageId="Package\DFT_Archivos_Comercial\ES_MetaComercial.Outputs[Excel Source Output].Columns[CeCo_descripcion_Ajustado]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -3566,6 +3527,11 @@
                       refId="Package\DFT_Archivos_Comercial\OLEDBD_MetaComercial.Inputs[OLE DB Destination Input].ExternalColumns[Cedula]"
                       dataType="r8"
                       name="Cedula" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Archivos_Comercial\OLEDBD_MetaComercial.Inputs[OLE DB Destination Input].ExternalColumns[CeCo descripcion_Ajustado]"
+                      dataType="wstr"
+                      length="255"
+                      name="CeCo descripcion_Ajustado" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -21499,7 +21465,7 @@
         <NodeLayout
           Size="196,42.6666666666667"
           Id="Package\DFT_Archivos_Comercial"
-          TopLeft="644.374964488672,42.0500124907489" />
+          TopLeft="645.624964432792,40.7500125527377" />
         <NodeLayout
           Size="220,42.6666666666667"
           Id="Package\DFT_Archivos_Mantenimiento"
@@ -21523,7 +21489,7 @@
         <NodeLayout
           Size="210.666666666667,42.6666666666667"
           Id="Package\TESQL_Truncate_Comercial"
-          TopLeft="408.874975552782,38.9999981403352" />
+          TopLeft="408.874975552782,40.2999980783464" />
         <NodeLayout
           Size="233.333333333334,42.6666666666667"
           Id="Package\TESQL_Truncate_Mantenimiento"
@@ -21539,7 +21505,7 @@
         <NodeLayout
           Size="238.666666666667,42.6666666666667"
           Id="Package\TESQL_Truncate_TalentoHumano"
-          TopLeft="863.958332187812,45.2333529837919" />
+          TopLeft="867.958332187812,45.2333529837919" />
         <NodeLayout
           Size="174.666666666667,42.6666666666667"
           Id="Package\TESQL_Truncate_TI"
@@ -21572,14 +21538,14 @@
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="24.8333222692233,0"
+              EndConnector="26.0833222133433,0"
               Start="0,0"
-              End="17.3333222692233,0">
+              End="18.5833222133433,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="17.3333222692233,0" />
+                    End="18.5833222133433,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -21612,18 +21578,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción 2]"
-          TopLeft="384.333361496527,60.883338695367">
+          TopLeft="384.333361496527,61.5333386643726">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="24.5416140562546,0"
+              EndConnector="24.541614056255,0"
               Start="0,0"
-              End="17.0416140562546,0">
+              End="17.041614056255,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="17.0416140562546,0" />
+                    End="17.041614056255,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -21634,18 +21600,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción 3]"
-          TopLeft="840.374964488672,64.9750160706037">
+          TopLeft="841.624964432792,64.3250161015981">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="23.5833676991399,0"
+              EndConnector="26.3333677550199,0"
               Start="0,0"
-              End="16.0833676991399,0">
+              End="18.8333677550199,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="16.0833676991399,0" />
+                    End="18.8333677550199,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -21656,18 +21622,30 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción 4]"
-          TopLeft="981.124973149977,87.9000196504586">
+          TopLeft="987.291665521145,87.9000196504586">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,34.1999892139435"
+              EndConnector="-8.33338474233699,34.1999892139434"
               Start="0,0"
-              End="0,26.6999892139435">
+              End="-8.33338474233699,26.6999892139434">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,26.6999892139435" />
+                    End="0,13.0999946069717" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,13.0999946069717"
+                    Point2="0,17.0999946069717"
+                    Point3="-4,17.0999946069717" />
+                  <mssgle:LineSegment
+                    End="-4.33338474233699,17.0999946069717" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-4.33338474233699,17.0999946069717"
+                    Point2="-8.33338474233699,17.0999946069717"
+                    Point3="-8.33338474233699,21.0999946069717" />
+                  <mssgle:LineSegment
+                    End="-8.33338474233699,26.6999892139434" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -21801,7 +21779,7 @@
         <NodeLayout
           Size="142.666666666667,42.6666666666667"
           Id="Package\DFT_Archivos_Comercial\OE_Subsidios"
-          TopLeft="1048.33330968022,44.9999986588955" />
+          TopLeft="1125.67705622269,33.6249992012977" />
         <NodeLayout
           Size="168,42.6666666666667"
           Id="Package\DFT_Archivos_Comercial\ES_AsignacionOPC"
@@ -21809,7 +21787,7 @@
         <NodeLayout
           Size="146.666666666667,42.6666666666667"
           Id="Package\DFT_Archivos_Comercial\DC_ Subsidios"
-          TopLeft="1046.99997638662,123.666662981112" />
+          TopLeft="1124.34372292909,112.291663523514" />
         <NodeLayout
           Size="253.333333333334,42.6666666666667"
           Id="Package\DFT_Archivos_Comercial\ES_Carga_PresupuestosPorVendedor"
@@ -21825,7 +21803,7 @@
         <NodeLayout
           Size="166.666666666667,42.6666666666667"
           Id="Package\DFT_Archivos_Comercial\ES_MetaComercial"
-          TopLeft="845.999974623313,36.66666863362" />
+          TopLeft="845.374974651253,36.66666863362" />
         <NodeLayout
           Size="194.666666666667,42.6666666666667"
           Id="Package\DFT_Archivos_Comercial\OLEDBD_MetaComercial"
@@ -21833,7 +21811,7 @@
         <NodeLayout
           Size="172,42.6666666666667"
           Id="Package\DFT_Archivos_Comercial\DOLEDB_ Subsidios"
-          TopLeft="1031.66664351026,200.833327348033" />
+          TopLeft="1109.01039005273,189.458327890435" />
         <NodeLayout
           Size="206.666666666667,42.6666666666667"
           Id="Package\DFT_Archivos_Comercial\ES_AuxilioEmbajadoresKLS"
@@ -21844,7 +21822,7 @@
           TopLeft="60.9999981820546,124.99999627471" />
         <EdgeLayout
           Id="Package\DFT_Archivos_Comercial.Paths[Excel Source Output4]"
-          TopLeft="1119.99997636676,87.6666653255622">
+          TopLeft="1197.34372290923,76.2916658679644">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -21866,18 +21844,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package\DFT_Archivos_Comercial.Paths[Excel Source Output3]"
-          TopLeft="925.833308351533,79.333335300286">
+          TopLeft="925.520808365501,79.3333353002867">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,48.4999974469345"
+              EndConnector="0,48.4999974469343"
               Start="0,0"
-              End="0,40.9999974469345">
+              End="0,40.9999974469343">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,40.9999974469345" />
+                    End="0,40.9999974469343" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -21954,7 +21932,7 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package\DFT_Archivos_Comercial.Paths[Data Conversion Output1]"
-          TopLeft="1118.99997661511,166.333329647779">
+          TopLeft="1196.34372315758,154.958330190181">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -21999,19 +21977,65 @@
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\DFT_Archivos_Comercial\ES_MetaComercial">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DFT_Archivos_Comercial\OLEDBD_MetaComercial">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\DFT_Archivos_Mantenimiento">
     <LayoutInfo>
       <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="153.333333333334,42.6666666666667"
+          Id="Package\DFT_Archivos_Mantenimiento\OLEDBD_Wizeo"
+          TopLeft="328.576913448481,183.96153314297" />
+        <NodeLayout
+          Size="154.666666666667,42.6666666666667"
+          Id="Package\DFT_Archivos_Mantenimiento\OLEDBD_Terpel"
+          TopLeft="114.61538119958,106.923073736521" />
+        <NodeLayout
+          Size="180,42.6666666666667"
+          Id="Package\DFT_Archivos_Mantenimiento\ES_CloudFleet_ACPM"
+          TopLeft="548.461522116111,29.2307683596245" />
+        <NodeLayout
+          Size="206.666666666667,42.6666666666667"
+          Id="Package\DFT_Archivos_Mantenimiento\OLEDBD_CloudFleet_ACPM"
+          TopLeft="535.384599428911,119.230765677416" />
         <NodeLayout
           Size="126.666666666667,42.6666666666667"
           Id="Package\DFT_Archivos_Mantenimiento\ES_Terpel"
           TopLeft="129.230765379392,23.9999992847443" />
         <NodeLayout
-          Size="154.666666666667,42.6666666666667"
-          Id="Package\DFT_Archivos_Mantenimiento\OLEDBD_Terpel"
-          TopLeft="114.61538119958,106.923073736521" />
+          Size="125.333333333334,42.6666666666667"
+          Id="Package\DFT_Archivos_Mantenimiento\ES_Wizeo"
+          TopLeft="340.769220613516,29.9999991059304" />
+        <NodeLayout
+          Size="128,42.6666666666667"
+          Id="Package\DFT_Archivos_Mantenimiento\DC_Wizeo"
+          TopLeft="340.769220613517,110.769227468051" />
         <EdgeLayout
           Id="Package\DFT_Archivos_Mantenimiento.Paths[Excel Source Output]"
           TopLeft="192.256406622819,66.666665951411">
@@ -22031,43 +22055,11 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="125.333333333334,42.6666666666667"
-          Id="Package\DFT_Archivos_Mantenimiento\ES_Wizeo"
-          TopLeft="340.769220613516,29.9999991059304" />
-        <NodeLayout
-          Size="128,42.6666666666667"
-          Id="Package\DFT_Archivos_Mantenimiento\DC_Wizeo"
-          TopLeft="340.769220613517,110.769227468051" />
-        <EdgeLayout
-          Id="Package\DFT_Archivos_Mantenimiento.Paths[Excel Source Output1]"
-          TopLeft="404.10255394685,72.6666657725971">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,38.1025616954535"
-              Start="0,0"
-              End="0,30.6025616954535">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,30.6025616954535" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="153.333333333334,42.6666666666667"
-          Id="Package\DFT_Archivos_Mantenimiento\OLEDBD_Wizeo"
-          TopLeft="328.576913448481,183.96153314297" />
         <EdgeLayout
           Id="Package\DFT_Archivos_Mantenimiento.Paths[Data Conversion Output]"
           TopLeft="405.006400364332,153.435894134717">
@@ -22087,17 +22079,11 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="180,42.6666666666667"
-          Id="Package\DFT_Archivos_Mantenimiento\ES_CloudFleet_ACPM"
-          TopLeft="548.461522116111,29.2307683596245" />
-        <NodeLayout
-          Size="206.666666666667,42.6666666666667"
-          Id="Package\DFT_Archivos_Mantenimiento\OLEDBD_CloudFleet_ACPM"
-          TopLeft="535.384599428911,119.230765677416" />
         <EdgeLayout
           Id="Package\DFT_Archivos_Mantenimiento.Paths[Excel Source Output2]"
           TopLeft="638.589727439178,71.8974350262911">
@@ -22117,7 +22103,33 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\DFT_Archivos_Mantenimiento.Paths[Excel Source Output1]"
+          TopLeft="404.10255394685,72.6666657725971">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,38.1025616954535"
+              Start="0,0"
+              End="0,30.6025616954535">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,30.6025616954535" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -22205,7 +22217,7 @@
     design-time-name="Package\DFT_Archivos_Operaciones">
     <LayoutInfo>
       <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="121.333333333334,42.6666666666667"
           Id="Package\DFT_Archivos_Operaciones\ES_troya"
@@ -22249,7 +22261,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -22271,7 +22285,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -22293,7 +22309,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -22329,75 +22347,31 @@
     design-time-name="Package\DFT_Archivos_Rayocarga">
     <LayoutInfo>
       <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="133.333333333334,42.6666666666667"
-          Id="Package\DFT_Archivos_Rayocarga\ES_Habitos"
-          TopLeft="78.8461514963552,27.7692299416433" />
-        <NodeLayout
-          Size="160,42.6666666666667"
-          Id="Package\DFT_Archivos_Rayocarga\OLEDBD_Habitos"
-          TopLeft="59.8461520625994,127.769226961411" />
-        <EdgeLayout
-          Id="Package\DFT_Archivos_Rayocarga.Paths[Excel Source Output]"
-          TopLeft="142.679485112811,70.4358966083099">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,57.3333303531012"
-              Start="0,0"
-              End="0,49.8333303531012">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,49.8333303531012" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="181.333333333334,42.6666666666667"
-          Id="Package\DFT_Archivos_Rayocarga\ES_TiemposEjecucion"
-          TopLeft="275.756402038229,33.9358964245289" />
+          Size="194.666666666667,42.6666666666667"
+          Id="Package\DFT_Archivos_Rayocarga\OLEDBD_Preoperacional"
+          TopLeft="513.846138532346,134.615380603534" />
         <NodeLayout
           Size="209.333333333334,42.6666666666667"
           Id="Package\DFT_Archivos_Rayocarga\OLEDBD_TiemposEjecucion"
           TopLeft="266.92306896815,133.076919110922" />
-        <EdgeLayout
-          Id="Package\DFT_Archivos_Rayocarga.Paths[Excel Source Output1]"
-          TopLeft="369.006402169856,76.6025630911955">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,56.4743560197263"
-              Start="0,0"
-              End="0,48.9743560197263">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,48.9743560197263" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <NodeLayout
           Size="166.666666666667,42.6666666666667"
           Id="Package\DFT_Archivos_Rayocarga\ES_Preoperacional"
           TopLeft="527.692291965851,39.9999988079072" />
         <NodeLayout
-          Size="194.666666666667,42.6666666666667"
-          Id="Package\DFT_Archivos_Rayocarga\OLEDBD_Preoperacional"
-          TopLeft="513.846138532346,134.615380603534" />
+          Size="160,42.6666666666667"
+          Id="Package\DFT_Archivos_Rayocarga\OLEDBD_Habitos"
+          TopLeft="59.8461520625994,127.769226961411" />
+        <NodeLayout
+          Size="133.333333333334,42.6666666666667"
+          Id="Package\DFT_Archivos_Rayocarga\ES_Habitos"
+          TopLeft="78.8461514963552,27.7692299416433" />
+        <NodeLayout
+          Size="181.333333333334,42.6666666666667"
+          Id="Package\DFT_Archivos_Rayocarga\ES_TiemposEjecucion"
+          TopLeft="275.756402038229,33.9358964245289" />
         <EdgeLayout
           Id="Package\DFT_Archivos_Rayocarga.Paths[Excel Source Output2]"
           TopLeft="611.102548582432,82.6666654745738">
@@ -22417,7 +22391,57 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\DFT_Archivos_Rayocarga.Paths[Excel Source Output1]"
+          TopLeft="369.006402169856,76.6025630911955">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,56.4743560197263"
+              Start="0,0"
+              End="0,48.9743560197263">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,48.9743560197263" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\DFT_Archivos_Rayocarga.Paths[Excel Source Output]"
+          TopLeft="142.679485112811,70.4358966083099">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,57.3333303531012"
+              Start="0,0"
+              End="0,49.8333303531012">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,49.8333303531012" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -22553,7 +22577,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -22599,7 +22625,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -22621,7 +22649,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -22631,7 +22661,7 @@
     design-time-name="Package\DFT_Archivos_TI">
     <LayoutInfo>
       <GraphLayout
-        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="148,42"
           Id="Package\DFT_Archivos_TI\DC_Tipo_Dato 1"
@@ -22727,7 +22757,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -22749,7 +22781,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -22771,7 +22805,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -22793,7 +22829,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -22815,7 +22853,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -22837,7 +22877,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -22859,7 +22901,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -22881,7 +22925,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -22903,7 +22949,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -22925,7 +22973,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -22947,7 +22997,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -22969,7 +23021,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
